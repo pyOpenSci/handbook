@@ -33,8 +33,8 @@ https://docs.google.com/document/d/10SRfCMSk85uqVhShyOspngJ9wx3C38k1XmhblpQrt5M/
     * Carpentries info: http://static.carpentries.org/governance/
     * NumFocus info: https://numfocus.org/community/people
     * How to make the project more inclusive (avenues to get involved)
-    * https://github.com/jupyter/governance/issues/60 ← Jupyter governance research
-    * QGIS (https://qgis.org/en/site/getinvolved/governance/index.html)?
+    * Jupyter governance research: https://github.com/jupyter/governance/issues/60 
+    * QGIS: https://qgis.org/en/site/getinvolved/governance/index.html
     * Python PEP 8000 for governance: https://www.python.org/dev/peps/pep-8000/
     * Voting: https://www.python.org/dev/peps/pep-8001/
     * Survey: https://www.python.org/dev/peps/pep-8002/
