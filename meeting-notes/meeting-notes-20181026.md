@@ -1,5 +1,16 @@
-# Notes From 26 October 2018 meeting
-Attendees: Chris Holdgraf, Leah Wasser, Carson Farmer, Max Joseph, Jenny Palomino
+# Meeting Notes - 26 Oct 2018
+
+Attendees
+=========
+
+* Chris Holdgraf
+* Leah Wasser
+* Max Joseph
+* Carson Farmer
+* Jenny Palomino
+
+Agenda Items
+============
 
 * GRA at CU Boulder description
 https://docs.google.com/document/d/1VUJFcXNTrqDYEtV-ocyFuJmhtXz8GTE5Gq-CSngfacw/edit

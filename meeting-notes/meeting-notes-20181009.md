@@ -1,5 +1,15 @@
-# Notes From 9 October 2018 meeting
-Attendees:  Chris Holdgraf, Leah Wasser, Carson Farmer, Max Joseph
+# Meeting Notes - 9 Oct 2018
+
+Attendees
+=========
+
+* Chris Holdgraf
+* Leah Wasser
+* Max Joseph
+* Carson Farmer
+
+Agenda Items
+============
 
 * Getting reviewers could be hard - we may need to take advantage of people we know and reach out to people strategically and individually at the beginning. 
 * Propose Session at scipy -- on reviewing packages??

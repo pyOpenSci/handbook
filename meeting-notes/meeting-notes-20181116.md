@@ -1,0 +1,48 @@
+# Meeting Notes - 16 Nov 2018
+
+Attendees
+=========
+
+* Chris Holdgraf
+* Leah Wasser
+* Max Joseph
+* Jenny Palomino
+
+Agenda Items
+============
+
+* GRA spring 2019 hire!
+    * identify a few packages that would be willing to be the first to work on this; get some package maintainers on board
+    * collect some data on state of Python for scientists
+    * draft of review process
+* Inviting others to join (Matt Perry? GeoPandas - Joris or James or both)
+    * having a more final version of the scope document would be helpful for this
+    * have a meeting with rOpenSci and adopt their structure, so we can present this formally to interested parties
+    * we can start with that and then reach out to people to find editors and package reviewers
+        * We know rOpenSci has an onboarding process -- and we will need to identify editors
+        * GRA Task: get him to work on the onboarding process as derive from Ropensci
+* Everyone should review the relevant documentation from rOpenSci and then we should have a meeting with Karthik and Carl 
+    * Relevant docs from rOpenSci:
+        * Repository that contains the package review etc. (see issues) https://github.com/ropensci/onboarding
+        * Repository that contains the information on how to package libraries, review, edit, etc.: https://github.com/ropensci/dev_guide
+    * Potentially ask them to serve on a advisory board
+* Scoping out the code review for the spring that our gra will work on and what the paper will look like generally  (to ensure we collect the right data)
+* Brainstorm funding opportunities
+    * Kek 1 pager (I don’t have high hopes for it but it’s worth formalizing our ideas to use for other opportunities)
+    * Sloan, more, mozilla, others??
+    * Budget should include some funded leadership
+        * rOpenSci has 3 funded developers and a position that organizes and mobilizes the community
+        * sustainability needs to be in mind early on
+
+
+## Next Steps
+
+### Fall 2018 Tasks
+- [ ] Meeting with Carl and Karthik - suggest if they'd like to be on our board -- Leah will email Carl and Karthik --  
+- [ ] Grab pyopenscience twitter ??
+
+### Spring 2019 Tasks
+- [ ] GRA -- could convert the R docs dev, testing, etc?? to jupyter books implementation
+
+
+

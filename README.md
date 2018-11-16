@@ -22,8 +22,10 @@ at the following HackMD link:
 The pyOpenScience community meets roughly every 3 weeks. This is a place to collect
 links to the notes from those meetings.
 
+* [2018-11-16](https://hackmd.io/mpaocsIZSbSBO_31iIbEdg#)
 * [2018-10-26](https://hackmd.io/NrTiwrktQ0WsWQp8lBJpcg)
 * [2018-10-09](https://hackmd.io/3CwpAEFRRbGJ1CuS3B2R7g)
+
 
 ## Scope
 
