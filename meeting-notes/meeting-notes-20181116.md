@@ -1,5 +1,7 @@
 # Meeting Notes - 16 Nov 2018
 
+https://hackmd.io/mpaocsIZSbSBO_31iIbEdg#
+
 Attendees
 =========
 
@@ -21,7 +23,7 @@ Agenda Items
     * we can start with that and then reach out to people to find editors and package reviewers
         * We know rOpenSci has an onboarding process -- and we will need to identify editors
         * GRA Task: get him to work on the onboarding process as derive from Ropensci
-* Everyone should review the relevant documentation from rOpenSci and then we should have a meeting with Karthik and Carl 
+* Everyone should review the relevant documentation from rOpenSci and then we should have a meeting with Karthik and Carl
     * Relevant docs from rOpenSci:
         * Repository that contains the package review etc. (see issues) https://github.com/ropensci/onboarding
         * Repository that contains the information on how to package libraries, review, edit, etc.: https://github.com/ropensci/dev_guide
@@ -43,6 +45,3 @@ Agenda Items
 
 ### Spring 2019 Tasks
 - [ ] GRA -- could convert the R docs dev, testing, etc?? to jupyter books implementation
-
-
-
