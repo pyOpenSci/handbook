@@ -19,11 +19,9 @@ at the following HackMD link:
 
 ## Meetings
 
-The pyOpenScience community meets roughly every 3 weeks. This is a place to collect
-links to the notes from those meetings.
+The pyOpenScience community meets roughly every 3 weeks.
 
-* [2018-10-26](https://hackmd.io/NrTiwrktQ0WsWQp8lBJpcg)
-* [2018-10-09](https://hackmd.io/3CwpAEFRRbGJ1CuS3B2R7g)
+[Meeting Notes](meeting-notes/)
 
 ## Scope
 
@@ -33,4 +31,3 @@ It is subject to change, and input/feedback is welcome!
 Currently, the pyOpenScience scoping document can be found as a Google Doc at this link:
 
 * [pyOpenScience scoping document](https://docs.google.com/document/d/10SRfCMSk85uqVhShyOspngJ9wx3C38k1XmhblpQrt5M/edit#)
-
