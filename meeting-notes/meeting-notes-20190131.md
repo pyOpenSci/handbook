@@ -1,0 +1,82 @@
+# PyOpenSci Meeting Notes - 31 Jan 2019
+
+https://hackmd.io/sLhsQOtoTCq7594xNapLWg#
+
+## Attendees
+* Leah Wasser
+* Kylen Solvik
+* Jenny Palomino
+* Chris Holdgraf
+* Max Joseph
+* Carson Farmer
+
+
+## AGENDA
+
+### Cookie Cutter Python package updates (Kylen)
+* Packaging guide
+    * a template to make it easier for someone to setup core package infrastructure with
+        * testing - pytest
+        * CI -- Travis, Circle, Azure
+	    * should have CI for all platforms; our cookie cutter does not do this right now
+	        * good, better, and best model
+	        * provide minimal req to perfect example
+		        * ex: how to test on Windows is still tricky
+	    * Hopefully people will want to contribute to help with CI and testing protocols
+        * read the docs documentation
+            * autodoc...
+        * what else???
+    * Minimize difference between our template and the cookiecutter template
+        * Ensure it's easy to merge in upstream changes
+        * Removing things is probably fine
+
+### Project Scope - in the review processing & guidelines
+* https://pyopensci.github.io/dev_guide/peer_review/peer_review_proc#aims-and-scope
+
+#### Current Scope List
+
+* Data retrieval: Packages for accessing and downloading data from online sources. Includes wrappers for accessing APIs.
+* Data extraction: Packages that aid in retrieving data from unstructured sources such as text, images and PDFs.
+* Data munging: Tools for processing data from scientific data formats.
+* Data deposition: Tools for depositing data in scientific research repositories.
+* Data visualization: Packages for visualizing and analyzing data.
+* Reproducibility: Tools to scientists ensure that their research is reproducible. E.g. version control, automated testing, or citation tools.
+* Geospatial: Packages focused on the retrieval, manipulation, and analysis of spatial data.
+* Education: Packages to aid with instruction.
+* Statistics/Machine Learning: Packages implementing established ML or statistics methods. Note that this does not include new methods, only implemntations of previously published algorithms/techniques.
+    
+Comments
+* Max: let's follow what ropensci is doing; ML may be hard to test (e.g. stochastic algorithms) 
+* Chris: ML is more complex, may be hard to get reviewers; 
+* rOpenSci doesn't include data viz -- do we want to include that or consider that?? 
+    * Chris will ask Karthik about not including data viz in rOpenSci
+    * Geoplot -- as an example... https://github.com/ResidentMario/geoplot
+
+### Dev guide feedback 
+* https://pyopensci.github.io/dev_guide
+    * Comment on the 2 pull req?
+        * https://github.com/pyOpenSci/dev_guide/pull/2
+        * https://github.com/pyOpenSci/dev_guide/pull/4
+    * Comments on scope and package guide from the group would be helpful
+    * COC -- exists but should be more highlighted in the dev-guide... 
+ 
+### BOF -- SciPy proposed session - summer 
+* Submission form: https://docs.google.com/forms/d/e/1FAIpQLScNO_scayKeQapQxZRNeFOqql35HY9nRc6gCpxEk8VkZBAkLQ/viewform
+    * asks for Moderator, Title, Abstract, Format = Open Discussion 
+        * March 18, 2019: BoF call for submissions opens
+        * Jun 18, 2019: BoF submissions due
+        * Jul 10-12, 2019: SciPy 2019 General Conference
+* Can we spend some time thinking about how people can engage with us... 
+    *  Mozilla concept of Mountain of Engagement
+* Can we get the **BOF text from last year from Paige???**
+
+### JOSS (UPDATE)
+* Leah reports successful/positive conversation; will follow up more
+
+### Presubmission template added! 
+* https://github.com/pyOpenSci/software-review/blob/master/.github/ISSUE_TEMPLATE/presubmission-inquiry.md
+    * https://github.com/ropensci/software-review
+    * reviewer database??? rOpenSci has one to keep track of reviewers, their last review, etc (uses https://airtable.com/)
+    * analog to rOpenSci software review repo (there is also an onboarding repo once the package is accepted)
+    * https://github.com/pyOpenSci/pyApiToolkit/issues/1 -- USER: https://github.com/simkimsia
+    * Should treat this first submission as a partnership to help the pyOpenSci submission workflow; ask the user for feedback; help us develop a proof of concept
