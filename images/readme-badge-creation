@@ -1,0 +1,5 @@
+To create a custom badge for pyopensci we:
+
+1. created a custom badge in shields.io
+2. Created a svg graphic with the Py open image and Finally
+3. convert that image to b64 using this site: http://b64.io/
