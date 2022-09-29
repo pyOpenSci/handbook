@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'governance'
-copyright = '2022, Leah Wasser'
+copyright = '2022, pyOpenSci'
 author = 'Leah Wasser'
 
 # The full version, including alpha/beta/rc tags
