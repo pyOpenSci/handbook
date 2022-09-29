@@ -1,31 +1,7 @@
-# Sphinx documentation
-docs/_build/
-
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# pyenv
-.python-version
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# MAC stuff
+_build
+.vscode
+*/.ipynb_checkpoints/*
+tmp/
 .DS_Store
+.nox
+__pycache__
