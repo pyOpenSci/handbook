@@ -8,11 +8,24 @@
 
 ## What is pyOpenSci?
 
-The pyOpenSci project draws inspiration from [rOpenSci](https://ropensci.org/), a
-community to help promote, teach, and grow best-practices in software development for the
-Scientific R stack.
+pyOpenSci is devoted to building diverse, supportive community around
+the Python open source tools that drive open science. We do this through:
+
+* open peer review
+* mentorship and 
+* training.
+
+pyOpenSci is an independent organization, fiscally sponsored by Community 
+Initiatives.  
+
+We draw inspiration from [rOpenSci](https://ropensci.org/), a
+community to help promote, teach, and grow best-practices in software development 
+for the Scientific `R` stack.
 
 :construction: Construction note :construction:
+
+This repository is currently under heavy construction. So please note that if
+you are working through the content!
 
 ## Contributing statement
 
