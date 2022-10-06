@@ -53,7 +53,6 @@ more
 
 :::{grid-item-card}
 :link: https://www.pyopensci.org/contributing-guide/intro.html
-:link-type: doc
 :class-header: bg-light
 
 See our contributing guide ✨
@@ -64,7 +63,6 @@ This guide will walk you through the editorial process.
 
 :::{grid-item-card}
 :link: https://www.pyopensci.org/contributing-guide
-:link-type: doc
 :class-header: bg-light
 
 Are you a reviewer? ✨
@@ -79,7 +77,7 @@ process step-by-step.
 
 ```{toctree}
 :caption: Functional Areas
-:maxdepth: 3
+:maxdepth: 1
 
 organization/index
 reference/index
