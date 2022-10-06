@@ -6,7 +6,7 @@ on:
       - '*'
 
 jobs:
-  deploy:
+  build-book:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
@@ -35,6 +35,12 @@ jobs:
         run: python3 -m pip install nox
 
       - run: nox -s docs
+
+      - name: Check HTML using htmlproofer
+        uses: chabad360/htmlproofer@master
+        with:
+          directory: '_build'
+          arguments: --ignore-files '/html/_static/'
 
       - name: Push to gh-pages branch for publication from main
         if: github.ref == 'refs/heads/main'
