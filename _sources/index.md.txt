@@ -1,9 +1,6 @@
 # pyOpenSci Governance  
 
-:construction: Construction note :construction:
 
-This repository is currently under heavy construction. So please note that if
-you are working through the content!
 
 ::::{grid} 2
 :reverse:
@@ -79,15 +76,6 @@ process step-by-step.
 ::::
 
 
-```{toctree}
-:caption: Functional Areas
-:maxdepth: 1
-
-organization/index
-reference/index
-
-```
-
 ## Why pyOpenSci?
 pyOpenSci promotes open and reproducible research through peer-review of 
 scientific Python packages. We also build technical capacity by providing a 
@@ -96,3 +84,25 @@ and share their own software. We hope to foster a greater sense of community
 among scientific Python users so that we can help each other become better 
 programmers and researchers.
 
+
+```{toctree}
+:hidden:
+intro.md
+```
+
+```{toctree}
+:hidden:
+:caption: Organization Structure
+
+organization/index.md
+organization/mission-values
+organization/structure
+```
+
+```{toctree}
+:hidden:
+:caption: Reference information
+
+reference/index.md
+reference/2018-notes.md
+```

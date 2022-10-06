@@ -1,0 +1,600 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Structure and leadership &#8212; pyOpenSci Governance</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Meeting Notes Archive" href="../reference/index.html" />
+    <link rel="prev" title="Mission and values" href="mission-values.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-141260825-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">🚧 UNDER CONSTRUCTION: this guide is under heavy construction right now. 🚧</div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">pyOpenSci Governance</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Organization Structure
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   Organization intro
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mission-values.html">
+   Mission and values
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Structure and leadership
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Reference information
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/index.html">
+   Meeting Notes Archive
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../reference/2018-notes.html">
+   Meeting Notes - 7 Dec 2018
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/pyopensci/governance"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/organization/structure.md.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#governing-committees">
+   Governing Committees
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#advisory-committee">
+     Advisory Committee
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#peer-review-advisory-committee">
+     Peer review advisory committee
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#staff-roles-within-the-organization">
+   Staff roles within the organization
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#executive-director">
+     Executive Director
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#community-manager">
+     Community manager
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#open-peer-review-program-program-level-leadership-structure">
+   Open Peer Review Program: Program level leadership structure
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#software-review-lead">
+     Software review lead
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#editor-in-chief">
+     Editor in Chief
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#editorial-board-editors">
+     Editorial Board (Editors)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#volunteer-reviewers">
+     Volunteer reviewers
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fiscal-sponsorship">
+   Fiscal sponsorship
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Structure and leadership</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#governing-committees">
+   Governing Committees
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#advisory-committee">
+     Advisory Committee
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#peer-review-advisory-committee">
+     Peer review advisory committee
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#staff-roles-within-the-organization">
+   Staff roles within the organization
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#executive-director">
+     Executive Director
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#community-manager">
+     Community manager
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#open-peer-review-program-program-level-leadership-structure">
+   Open Peer Review Program: Program level leadership structure
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#software-review-lead">
+     Software review lead
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#editor-in-chief">
+     Editor in Chief
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#editorial-board-editors">
+     Editorial Board (Editors)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#volunteer-reviewers">
+     Volunteer reviewers
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fiscal-sponsorship">
+   Fiscal sponsorship
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="structure-and-leadership">
+<h1>Structure and leadership<a class="headerlink" href="#structure-and-leadership" title="Permalink to this headline">#</a></h1>
+<p>This page describes the organizational structure of pyOpenSci as they
+related to governance and operations.</p>
+<p>There are two levels of leadership described below.
+The first is organizational level. The second is program level.</p>
+<section id="governing-committees">
+<h2>Governing Committees<a class="headerlink" href="#governing-committees" title="Permalink to this headline">#</a></h2>
+<section id="advisory-committee">
+<h3>Advisory Committee<a class="headerlink" href="#advisory-committee" title="Permalink to this headline">#</a></h3>
+<p>The advisory committee defines and steers the high-level
+mission, vision and values of pyOpenSci. It also sets the strategic direction and vision for the organization.
+The Executive Director (discussed below) is a voting member of the advisory committee.</p>
+</section>
+<section id="peer-review-advisory-committee">
+<h3>Peer review advisory committee<a class="headerlink" href="#peer-review-advisory-committee" title="Permalink to this headline">#</a></h3>
+<p>The peer review advisory committee consists of leaders in the open source community
+that will help pyOpenSci make decisions about it’s open peer review process.
+These decisions including but are not limited to:</p>
+<ul class="simple">
+<li><p>Decisions about the scope of packages accepted into the ecosystem</p></li>
+<li><p>Decisions about how we enforce / support ongoing maintenance of accepted packages.</p></li>
+<li><p>Decisions about how we test for, evaluate and report package quality and health.</p></li>
+<li><p>Metrics that we collect surrounding the peer review process</p></li>
+</ul>
+</section>
+</section>
+<section id="staff-roles-within-the-organization">
+<h2>Staff roles within the organization<a class="headerlink" href="#staff-roles-within-the-organization" title="Permalink to this headline">#</a></h2>
+<section id="executive-director">
+<h3>Executive Director<a class="headerlink" href="#executive-director" title="Permalink to this headline">#</a></h3>
+<p>The Executive Director creates and oversees the execution of the mission and
+strategy of pyOpenSci supported by the Advisory Committee. The Executive Director
+also:</p>
+<ul class="simple">
+<li><p>is the the primary interface to the organization’s fiscal sponsor;</p></li>
+<li><p>coordinates day to day activities</p></li>
+<li><p>develops programs that drive the organizations mission</p></li>
+<li><p>oversees staff and volunteers</p></li>
+<li><p>makes tie-breaking decisions if they are at an impasse in decision-making.</p></li>
+</ul>
+<p>The Executive Director reports to the Advisory Committee.</p>
+<p>In the early stages of the organization’s development the Executive Director
+will take on other responsibilities including:</p>
+<ul class="simple">
+<li><p>Managing the community in Slack and twitter</p></li>
+<li><p>Serving as the defacto Software Peer Review Lead (below) until that position is funded.</p></li>
+</ul>
+</section>
+<section id="community-manager">
+<h3>Community manager<a class="headerlink" href="#community-manager" title="Permalink to this headline">#</a></h3>
+<p>The Community Manager is a future position to be created within the pyOpenSci
+organization. This position will:</p>
+<ul class="simple">
+<li><p>Oversee social media communications</p></li>
+<li><p>Create strategic communication plans</p></li>
+<li><p>Write and oversee writing of blogs</p></li>
+<li><p>Manage website content</p></li>
+<li><p>Support communications within our online communication platforms (e.g. Slack, discourse, etc)</p></li>
+</ul>
+<p>The Community Manager is a paid position in the pyOpenSci organization.</p>
+</section>
+</section>
+<section id="open-peer-review-program-program-level-leadership-structure">
+<h2>Open Peer Review Program: Program level leadership structure<a class="headerlink" href="#open-peer-review-program-program-level-leadership-structure" title="Permalink to this headline">#</a></h2>
+<p>The peer review process is driven by several roles and groups:</p>
+<section id="software-review-lead">
+<h3>Software review lead<a class="headerlink" href="#software-review-lead" title="Permalink to this headline">#</a></h3>
+<p>This role is responsible for overseeing the entire software review process. They are responsible for:</p>
+<ul class="simple">
+<li><p>ensuring a diverse and active editorial board infrastructure development to support  peer review</p></li>
+<li><p>Maintaining the contributing guide</p></li>
+</ul>
+<p>This role will also help manage conflict if it arises in the peer review process.</p>
+</section>
+<section id="editor-in-chief">
+<h3>Editor in Chief<a class="headerlink" href="#editor-in-chief" title="Permalink to this headline">#</a></h3>
+<p>The Editor in Chief role is a rotating position
+that is held by someone on the editorial board. <a class="reference external" href="https://www.pyopensci.org/contributing-guide/open-source-software-submissions/editor-in-chief-guide.html">More on this position can be
+found in the contributing guide here.</a></p>
+</section>
+<section id="editorial-board-editors">
+<h3>Editorial Board (Editors)<a class="headerlink" href="#editorial-board-editors" title="Permalink to this headline">#</a></h3>
+<p>The editorial board consists of a set of editors whose job it is to oversee
+review of a specific package. More on the
+<a class="reference external" href="https://www.pyopensci.org/contributing-guide/open-source-software-submissions/editors-guide.html">editorial board can be found here.</a></p>
+</section>
+<section id="volunteer-reviewers">
+<h3>Volunteer reviewers<a class="headerlink" href="#volunteer-reviewers" title="Permalink to this headline">#</a></h3>
+<p>The review process is supported by volunteer reviewers.
+<a class="reference external" href="https://www.pyopensci.org/contributing-guide/open-source-software-submissions/reviewer-guide.html">More on the role of reviewers can be found in our peer review guide.</a></p>
+</section>
+</section>
+<section id="fiscal-sponsorship">
+<h2>Fiscal sponsorship<a class="headerlink" href="#fiscal-sponsorship" title="Permalink to this headline">#</a></h2>
+<p>pyOpenSci is a fiscally sponsored project of <a class="reference external" href="https://www.communityin.org">Community
+Initiatives</a>.</p>
+<p>pyOpenSci does not have its own standalone non-profit status. Instead,
+it inherits this status by being a fiscally sponsored project. This
+means that it relies on its fiscal sponsor for major administrative and
+legal services, including 501(c)(3) status and financial management.</p>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="mission-values.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Mission and values</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../reference/index.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Meeting Notes Archive</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Leah Wasser<br/>
+  
+      &copy; Copyright 2022, pyOpenSci.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
