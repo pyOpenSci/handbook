@@ -1,0 +1,21 @@
+format: jb-book
+root: intro
+parts:
+- caption: Organization structure
+  chapters:
+  - file: organization/intro
+    title: Intro 
+  - file: organization/structure
+    title: Community & Leadership Structure
+  - file: organization/mission-values
+    title: Mission & values 
+  - file: organization/code-of-conduct
+    title: Code of conduct
+- caption: Programs
+  chapters:
+  - file: programs/intro
+    title: Programs structure
+- caption: Reference
+  chapters:
+  - file: reference/intro
+    title: Meeting notes
