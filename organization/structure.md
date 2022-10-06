@@ -1,0 +1,108 @@
+# Structure and leadership
+
+This page describes the organizational structure of pyOpenSci as they 
+related to governance and operations. 
+
+There are two levels of leadership described below. 
+The first is organizational level. The second is program level.
+
+## Governing Committees
+
+### Advisory Committee 
+
+The advisory committee defines and steers the high-level 
+mission, vision and values of pyOpenSci. It also sets the strategic direction and vision for the organization.
+The Executive Director (discussed below) is a voting member of the advisory committee. 
+
+% TODO - add how we communicate
+
+% TODO: link to website list of current committee members (i want to make the website better in this regard)
+
+### Peer review advisory committee
+The peer review advisory committee consists of leaders in the open source community
+that will help pyOpenSci make decisions about it's open peer review process. 
+These decisions including but are not limited to:
+
+* Decisions about the scope of packages accepted into the ecosystem
+* Decisions about how we enforce / support ongoing maintenance of accepted packages.
+* Decisions about how we test for, evaluate and report package quality and health. 
+* Metrics that we collect surrounding the peer review process
+
+## Staff roles within the organization
+
+### Executive Director 
+The Executive Director creates and oversees the execution of the mission and 
+strategy of pyOpenSci supported by the Advisory Committee. The Executive Director
+also:
+
+* is the the primary interface to the organization's fiscal sponsor;
+* coordinates day to day activities
+* develops programs that drive the organizations mission
+* oversees staff and volunteers
+* makes tie-breaking decisions if they are at an impasse in decision-making.
+ 
+ The Executive Director reports to the Advisory Committee.
+
+ In the early stages of the organization's development the Executive Director
+ will take on other responsibilities including:
+
+ *  Managing the community in Slack and twitter
+ *  Serving as the defacto Software Peer Review Lead (below) until that position is funded.
+
+ ### Community manager 
+ The Community Manager is a future position to be created within the pyOpenSci
+ organization. This position will:
+ 
+ * Oversee social media communications
+ * Create strategic communication plans
+ * Write and oversee writing of blogs
+ * Manage website content
+ * Support communications within our online communication platforms (e.g. Slack, discourse, etc) 
+
+The Community Manager is a paid position in the pyOpenSci organization.
+
+## Open Peer Review Program: Program level leadership structure
+
+The peer review process is driven by several roles and groups:
+
+% <TODO: right now the leadership of peer review is kind of clear in my head
+% but not clear in the documentation for peer review. Fix this. Add a 
+% Peer review structure document or section somewhere... >
+
+### Software review lead
+
+This role is responsible for overseeing the entire software review process. They are responsible for:
+* ensuring a diverse and active editorial board infrastructure development to support  peer review
+* Maintaining the contributing guide
+
+This role will also help manage conflict if it arises in the peer review process.
+
+
+### Editor in Chief
+
+The Editor in Chief role is a rotating position
+that is held by someone on the editorial board. [More on this position can be 
+found in the contributing guide here.](https://www.pyopensci.org/contributing-guide/open-source-software-submissions/editor-in-chief-guide.html)
+
+
+### Editorial Board (Editors)
+
+The editorial board consists of a set of editors whose job it is to oversee
+review of a specific package. More on the 
+[editorial board can be found here.](https://www.pyopensci.org/contributing-guide/open-source-software-submissions/editors-guide.html)
+
+
+### Volunteer reviewers
+
+The review process is supported by volunteer reviewers.
+[More on the role of reviewers can be found in our peer review guide.](https://www.pyopensci.org/contributing-guide/open-source-software-submissions/reviewer-guide.html)
+
+## Fiscal sponsorship
+
+pyOpenSci is a fiscally sponsored project of [Community
+Initiatives](https://www.communityin.org).
+
+pyOpenSci does not have its own standalone non-profit status. Instead, 
+it inherits this status by being a fiscally sponsored project. This 
+means that it relies on its fiscal sponsor for major administrative and 
+legal services, including 501(c)(3) status and financial management.
