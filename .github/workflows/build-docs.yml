@@ -39,7 +39,7 @@ jobs:
       - name: Check HTML using htmlproofer
         uses: chabad360/htmlproofer@master
         with:
-          directory: '_build'
+          directory: '_build/html'
           arguments: --ignore-files '/html/_static/'
 
       - name: Push to gh-pages branch for publication from main

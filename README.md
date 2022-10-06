@@ -24,6 +24,9 @@ for the Scientific `R` stack.
 
 :construction: Construction note :construction:
 
+This repository is currently under heavy construction. So please note that if
+you are working through the content!
+
 ## Contributing statement
 
 
