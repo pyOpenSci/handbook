@@ -1,7 +1,0 @@
-_build
-.vscode
-*/.ipynb_checkpoints/*
-tmp/
-.DS_Store
-.nox
-__pycache__
