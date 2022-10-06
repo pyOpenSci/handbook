@@ -45,7 +45,12 @@ myst_enable_extensions = ["colon_fence"]
 # Link to our repo for easy PR/ editing
 html_theme_options = {
     "repository_url": "https://github.com/pyopensci/governance",
-    "use_repository_button": True
+    "use_repository_button": True,
+    "google_analytics_id": "UA-141260825-1",
+    "external_links": [
+      {"name": "link-one-name", "url": "https://pyopensci.org"},
+      {"name": "link-two-name", "url": "https://pyopensci.org"}
+  ]
 }
 
 # Add any paths that contain templates here, relative to this directory.
@@ -60,7 +65,9 @@ exclude_patterns = [
     ".DS_Store", 
     ".github", 
     ".nox", 
-    "README.md"]
+    "README.md",
+    "reference/2018-2020-orig-meeting-notes"
+    ]
 
 
 # -- Options for HTML output -------------------------------------------------

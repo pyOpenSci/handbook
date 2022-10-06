@@ -31,18 +31,17 @@ that support operations of pyOpenSci.
 :gutter: 4
 
 :::{grid-item-card}
-:link: organization/code-of-conduct
+:link: organization/index
 :link-type: doc
 :class-header: bg-light
 
 Code of conduct ✏️
 ^^^
-We should probably create this as an include file that can be 
-used in several places?
+Coming soon
 :::
 
 :::{grid-item-card}
-:link: organization/intro
+:link: organization/index
 :link-type: doc
 :class-header: bg-light
 
@@ -53,18 +52,18 @@ more
 :::
 
 :::{grid-item-card}
-:link: organization/intro
+:link: https://www.pyopensci.org/contributing-guide/intro.html
 :link-type: doc
 :class-header: bg-light
 
-Are you an Editor? ✨
+See our contributing guide ✨
 ^^^
 
 This guide will walk you through the editorial process.
 :::
 
 :::{grid-item-card}
-:link: organization/intro
+:link: https://www.pyopensci.org/contributing-guide
 :link-type: doc
 :class-header: bg-light
 
