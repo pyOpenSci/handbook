@@ -50,8 +50,11 @@ html_theme_options = {
     "external_links": [
       {"name": "link-one-name", "url": "https://pyopensci.org"},
       {"name": "link-two-name", "url": "https://pyopensci.org"}
-  ]
+  ],
+  "announcement": "🚧 UNDER CONSTRUCTION: this guide is under heavy construction right now. 🚧"
 }
+
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -78,6 +81,7 @@ exclude_patterns = [
 html_theme = 'sphinx_book_theme'
 html_static_path = ["_static"]
 html_title = "pyOpenSci Governance"
+html_logo = "images/logo/logo.png"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
