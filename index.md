@@ -1,5 +1,9 @@
 # pyOpenSci Governance  
 
+:construction: Construction note :construction:
+
+This repository is currently under heavy construction. So please note that if
+you are working through the content!
 
 ::::{grid} 2
 :reverse:
