@@ -40,7 +40,7 @@ jobs:
         uses: chabad360/htmlproofer@master
         with:
           directory: '_build/html'
-          arguments: --ignore-files "/html/_static/, /reference/meeting-notes/2019/"
+          arguments: --ignore-files "/html/_static/, _build/html/reference/meeting-notes/2019/"
 
 
       - name: Push to gh-pages branch for publication from main
