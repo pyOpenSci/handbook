@@ -40,7 +40,8 @@ jobs:
         uses: chabad360/htmlproofer@master
         with:
           directory: '_build/html'
-          arguments: --ignore-files '/html/_static/'
+          arguments: --ignore-files "/html/_static/, /html/reference/meeting-notes/"
+
 
       - name: Push to gh-pages branch for publication from main
         if: github.ref == 'refs/heads/main'
