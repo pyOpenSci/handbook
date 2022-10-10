@@ -65,7 +65,7 @@ Challenges with mentored sprints
 *  knowing what issue to work on
 
 
-# Outcomes
+## Outcomes
 we will go to scipy and SPY
 
 ducky app for video chat?!
