@@ -41,7 +41,7 @@ jobs:
         with:
           directory: '_build/html'
           arguments: |
-           --ignore-files "/_static/, /meeting-notes/"
+           --ignore-files "/_static/, /2019/"
        
       - name: Push to gh-pages branch for publication from main
         if: github.ref == 'refs/heads/main'
