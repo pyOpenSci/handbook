@@ -1,4 +1,4 @@
-# JOSS / pyopensci Collaboration
+# pyOpenSci meeting notes: 3-14-2019 JOSS / pyopensci Collaboration
 
 https://hackmd.io/DAiHv0QhRXCBg-P5GtDzJw#
 
