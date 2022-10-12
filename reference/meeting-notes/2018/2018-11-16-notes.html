@@ -1,0 +1,593 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Meeting Notes - 16 Nov 2018 &#8212; pyOpenSci Governance</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Meeting Notes - 7 Dec 2018" href="2018-12-07-notes.html" />
+    <link rel="prev" title="Meeting Notes - 26 Oct 2018" href="2018-10-26-notes.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-141260825-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">🚧 UNDER CONSTRUCTION: this guide is under heavy construction right now. 🚧</div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">pyOpenSci Governance</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Organization Structure
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../organization/index.html">
+   Organization intro
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../organization/mission-values.html">
+   Mission and values
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../organization/structure.html">
+   Structure and leadership
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Reference information
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../index.html">
+   Meeting Notes Archive
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2021/2021-05-17-software-review-scipy-notes.html">
+     Meeting Notes 17 May 2021
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2020/2020-02-28-notes.html">
+     pyOpenSci Meeting Notes - 28 Feb 2020
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2020/2020-04-09-notes.html">
+     pyOpenSci Meeting Notes - 9 April 2020
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2019/2019-01-31-notes.html">
+     PyOpenSci Meeting Notes - 31 Jan 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2019/2019-03-06-notes.html">
+     pyOpenSci Meeting Notes - 6 March 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2019/2019-03-14-joss-discussion-notes.html">
+     pyOpenSci meeting notes: 3-14-2019 JOSS / pyopensci Collaboration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2019/2019-04-04-notes.html">
+     pyOpenSci Meeting Notes - 4 April 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2019/2019-04-18-notes.html">
+     pyOpenSci Meeting Notes - 18 April 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2019/2019-05-09-notes.html">
+     pyOpenSci Meeting Notes - 9 May 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2019/2019-05-30-notes.html">
+     pyOpenSci Meeting Notes - 30 May 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2019/2019-06-20-notes.html">
+     pyOpenSci Meeting Notes - 20 June 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2019/2019-08-01-notes.html">
+     pyOpenSci Meeting Notes - 1 August 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2019/2019-08-22-notes.html">
+     pyOpenSci Meeting Notes - 22 August 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2019/2019-09-20-notes.html">
+     pyOpenSci Meeting Notes - 20 September
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2019/2019-10-03-notes.html">
+     pyOpenSci Meeting Notes - 3 October 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2018-10-09-notes.html">
+     10 October 2018: JOSS / pyopensci Collaboration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2018-10-26-notes.html">
+     Meeting Notes - 26 Oct 2018
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Meeting Notes - 16 Nov 2018
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2018-12-07-notes.html">
+     Meeting Notes - 7 Dec 2018
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/pyopensci/governance"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../_sources/reference/meeting-notes/2018/2018-11-16-notes.md.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#attendees">
+   Attendees
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#agenda-items">
+   Agenda Items
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#next-steps">
+   Next Steps
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fall-2018-tasks">
+     Fall 2018 Tasks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#spring-2019-tasks">
+     Spring 2019 Tasks
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Meeting Notes - 16 Nov 2018</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#attendees">
+   Attendees
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#agenda-items">
+   Agenda Items
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#next-steps">
+   Next Steps
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fall-2018-tasks">
+     Fall 2018 Tasks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#spring-2019-tasks">
+     Spring 2019 Tasks
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="meeting-notes-16-nov-2018">
+<h1>Meeting Notes - 16 Nov 2018<a class="headerlink" href="#meeting-notes-16-nov-2018" title="Permalink to this headline">#</a></h1>
+<p>https://hackmd.io/mpaocsIZSbSBO_31iIbEdg#</p>
+<section id="attendees">
+<h2>Attendees<a class="headerlink" href="#attendees" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Chris Holdgraf</p></li>
+<li><p>Leah Wasser</p></li>
+<li><p>Max Joseph</p></li>
+<li><p>Jenny Palomino</p></li>
+</ul>
+</section>
+<section id="agenda-items">
+<h2>Agenda Items<a class="headerlink" href="#agenda-items" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>GRA spring 2019 hire!</p>
+<ul>
+<li><p>identify a few packages that would be willing to be the first to work on this; get some package maintainers on board</p></li>
+<li><p>collect some data on state of Python for scientists</p></li>
+<li><p>draft of review process</p></li>
+</ul>
+</li>
+<li><p>Inviting others to join (Matt Perry? GeoPandas - Joris or James or both)</p>
+<ul>
+<li><p>having a more final version of the scope document would be helpful for this</p></li>
+<li><p>have a meeting with rOpenSci and adopt their structure, so we can present this formally to interested parties</p></li>
+<li><p>we can start with that and then reach out to people to find editors and package reviewers</p>
+<ul>
+<li><p>We know rOpenSci has an onboarding process – and we will need to identify editors</p></li>
+<li><p>GRA Task: get him to work on the onboarding process as derive from Ropensci</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Everyone should review the relevant documentation from rOpenSci and then we should have a meeting with Karthik and Carl</p>
+<ul>
+<li><p>Relevant docs from rOpenSci:</p>
+<ul>
+<li><p>Repository that contains the package review etc. (see issues) https://github.com/ropensci/onboarding</p></li>
+<li><p>Repository that contains the information on how to package libraries, review, edit, etc.: https://github.com/ropensci/dev_guide</p></li>
+</ul>
+</li>
+<li><p>Potentially ask them to serve on a advisory board</p></li>
+</ul>
+</li>
+<li><p>Scoping out the code review for the spring that our gra will work on and what the paper will look like generally  (to ensure we collect the right data)</p></li>
+<li><p>Brainstorm funding opportunities</p>
+<ul>
+<li><p>Kek 1 pager (I don’t have high hopes for it but it’s worth formalizing our ideas to use for other opportunities)</p></li>
+<li><p>Sloan, more, mozilla, others??</p></li>
+<li><p>Budget should include some funded leadership</p>
+<ul>
+<li><p>rOpenSci has 3 funded developers and a position that organizes and mobilizes the community</p></li>
+<li><p>sustainability needs to be in mind early on</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="next-steps">
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">#</a></h2>
+<section id="fall-2018-tasks">
+<h3>Fall 2018 Tasks<a class="headerlink" href="#fall-2018-tasks" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>[ ] Meeting with Carl and Karthik - suggest if they’d like to be on our board – Leah will email Carl and Karthik –</p></li>
+<li><p>[ ] Grab pyopenscience twitter ??</p></li>
+</ul>
+</section>
+<section id="spring-2019-tasks">
+<h3>Spring 2019 Tasks<a class="headerlink" href="#spring-2019-tasks" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>[ ] GRA – could convert the R docs dev, testing, etc?? to jupyter books implementation</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="2018-10-26-notes.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Meeting Notes - 26 Oct 2018</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="2018-12-07-notes.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Meeting Notes - 7 Dec 2018</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Leah Wasser<br/>
+  
+      &copy; Copyright 2022, pyOpenSci.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

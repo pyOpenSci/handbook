@@ -1,0 +1,792 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>pyOpenSci Meeting Notes - 30 May 2019 &#8212; pyOpenSci Governance</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="pyOpenSci Meeting Notes - 20 June 2019" href="2019-06-20-notes.html" />
+    <link rel="prev" title="pyOpenSci Meeting Notes - 9 May 2019" href="2019-05-09-notes.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-141260825-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">🚧 UNDER CONSTRUCTION: this guide is under heavy construction right now. 🚧</div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">pyOpenSci Governance</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Organization Structure
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../organization/index.html">
+   Organization intro
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../organization/mission-values.html">
+   Mission and values
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../organization/structure.html">
+   Structure and leadership
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Reference information
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../index.html">
+   Meeting Notes Archive
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2021/2021-05-17-software-review-scipy-notes.html">
+     Meeting Notes 17 May 2021
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2020/2020-02-28-notes.html">
+     pyOpenSci Meeting Notes - 28 Feb 2020
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2020/2020-04-09-notes.html">
+     pyOpenSci Meeting Notes - 9 April 2020
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-01-31-notes.html">
+     PyOpenSci Meeting Notes - 31 Jan 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-03-06-notes.html">
+     pyOpenSci Meeting Notes - 6 March 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-03-14-joss-discussion-notes.html">
+     pyOpenSci meeting notes: 3-14-2019 JOSS / pyopensci Collaboration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-04-04-notes.html">
+     pyOpenSci Meeting Notes - 4 April 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-04-18-notes.html">
+     pyOpenSci Meeting Notes - 18 April 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-05-09-notes.html">
+     pyOpenSci Meeting Notes - 9 May 2019
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     pyOpenSci Meeting Notes - 30 May 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-06-20-notes.html">
+     pyOpenSci Meeting Notes - 20 June 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-08-01-notes.html">
+     pyOpenSci Meeting Notes - 1 August 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-08-22-notes.html">
+     pyOpenSci Meeting Notes - 22 August 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-09-20-notes.html">
+     pyOpenSci Meeting Notes - 20 September
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-10-03-notes.html">
+     pyOpenSci Meeting Notes - 3 October 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2018/2018-10-09-notes.html">
+     10 October 2018: JOSS / pyopensci Collaboration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2018/2018-10-26-notes.html">
+     Meeting Notes - 26 Oct 2018
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2018/2018-11-16-notes.html">
+     Meeting Notes - 16 Nov 2018
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2018/2018-12-07-notes.html">
+     Meeting Notes - 7 Dec 2018
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/pyopensci/governance"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../_sources/reference/meeting-notes/2019/2019-05-30-notes.md.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#attendees">
+   Attendees
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#agenda">
+   Agenda
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#leadership-3-5">
+   Leadership (3-5):
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#community-social-media-outreach-website-future-or-someone-doing-part">
+   Community, Social Media, Outreach, Website (?future or someone doing part):
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#editors-in-chief-2-3">
+   Editors in Chief (2-3?):
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pool-of-associate-editors-8">
+   Pool of Associate Editors (8+)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#advisory-4">
+   Advisory (4*):
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#funding-business-development">
+   Funding &amp; Business Development
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#funding-numfocus-support-vs-moore-funding">
+   Funding – numfocus support vs moore funding
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>pyOpenSci Meeting Notes - 30 May 2019</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#attendees">
+   Attendees
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#agenda">
+   Agenda
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#leadership-3-5">
+   Leadership (3-5):
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#community-social-media-outreach-website-future-or-someone-doing-part">
+   Community, Social Media, Outreach, Website (?future or someone doing part):
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#editors-in-chief-2-3">
+   Editors in Chief (2-3?):
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pool-of-associate-editors-8">
+   Pool of Associate Editors (8+)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#advisory-4">
+   Advisory (4*):
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#funding-business-development">
+   Funding &amp; Business Development
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#funding-numfocus-support-vs-moore-funding">
+   Funding – numfocus support vs moore funding
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="pyopensci-meeting-notes-30-may-2019">
+<h1>pyOpenSci Meeting Notes - 30 May 2019<a class="headerlink" href="#pyopensci-meeting-notes-30-may-2019" title="Permalink to this headline">#</a></h1>
+<p><a class="reference external" href="https://hackmd.io/J-viMRm9RXOqnoqqfr53rA?both">Hackmd document link</a></p>
+<section id="attendees">
+<h2>Attendees<a class="headerlink" href="#attendees" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Leah Wasser (Earth Lab, CU Boulder)</p></li>
+<li><p>Martin Skarzynski (National Cancer Institute and FAES)</p></li>
+<li><p>Luiz Irber (UC Davis)</p></li>
+<li><p>Neil Chue Hong (Software Sustainability Institute, University of Edinburgh)</p></li>
+<li><p>Filipe Fernandes (IOOS/NOAA)</p></li>
+<li><p>Levi John Wolf (University of Bristol) – core geopandas dev &amp; pysal!</p></li>
+<li><p>Max Joseph (Earth Lab, CU Boulder)</p></li>
+<li><p>Carson Farmer (Textile.io)</p></li>
+<li><p>Leonardo Uieda (U of Hawaii)</p></li>
+</ul>
+<p>note–</p>
+<ul class="simple">
+<li><p>Chris and Kylen are traveling / in meetings today</p></li>
+</ul>
+</section>
+<section id="agenda">
+<h2>Agenda<a class="headerlink" href="#agenda" title="Permalink to this headline">#</a></h2>
+<ol class="arabic simple">
+<li><p>Communication – What is the best way for us to communicate and who wants to be involved in what types of communication?
+Some options</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://pyopensci.discourse.group">Discourse</a></p>
+<ul>
+<li><p>discuss could be the way to go for this</p></li>
+<li><p>private group in discuss …</p></li>
+<li><p>we might separate editorial vs governance in the future..</p></li>
+<li><p>conda-forge has subchannels - github and discuss</p></li>
+<li><p>teams on github…</p></li>
+</ul>
+</li>
+<li><p>Slack – unless you pay for it - you don’t have a record of messages. There is a 10k message limit.</p></li>
+</ul>
+</li>
+</ol>
+<p>For now we will focus on discuss and github!</p>
+<ul class="simple">
+<li><p>Gitter</p></li>
+<li><p>github organizations???</p></li>
+<li><p>Other??</p></li>
+<li><p>What do folks prefer?</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Governance / define roles and associated task timelines (is this in the dev_guide)</p>
+<ul class="simple">
+<li><p>Editor in Chief (Leah, Luiz, Martin, Carson?) -</p></li>
+<li><p>Associate Editors (Carson?) -</p></li>
+<li><p>Reviewers (Filipe, Martin, Carson)</p>
+<ul>
+<li><p>How do we track new reviewers?</p></li>
+<li><p>Is there a concise, “how to start a review” document?</p></li>
+</ul>
+</li>
+<li><p>Social media &amp; Website</p>
+<ul>
+<li><p>Twitter (Martin)</p></li>
+<li><p>Website</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Role Definition (please feel free to edit this or leave comments!!)</p></li>
+</ol>
+<p>Starting with the <a class="reference external" href="https://ropensci.org/about/">rOpenSci structure</a> but we may want to adjust accordingly. And ofcourse the time commitment can really be flexible but just trying to give folks a sense of time that might be associated with each role.</p>
+</section>
+<section id="leadership-3-5">
+<h2>Leadership (3-5):<a class="headerlink" href="#leadership-3-5" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Responsible for making final decisions about the direction of POS</p></li>
+<li><p>POS</p></li>
+<li><p>Communication: weekly / bi weekly, slack, discuss private forum (Chris H can help us set this up i think??, emails)</p></li>
+</ul>
+</section>
+<section id="community-social-media-outreach-website-future-or-someone-doing-part">
+<h2>Community, Social Media, Outreach, Website (?future or someone doing part):<a class="headerlink" href="#community-social-media-outreach-website-future-or-someone-doing-part" title="Permalink to this headline">#</a></h2>
+<p>Ropensci has an outreach person. I wonder if we could start with anyone who had
+just a bit of time to help us start to build an online presense. Potential for a fall intern…
+(Neil: we could also apply to https://www.outreachy.org/)</p>
+<ul class="simple">
+<li><p>website</p></li>
+<li><p>twitter</p></li>
+<li><p>spreading the word (easy peasy just tell people about us)</p></li>
+</ul>
+</section>
+<section id="editors-in-chief-2-3">
+<h2>Editors in Chief (2-3?):<a class="headerlink" href="#editors-in-chief-2-3" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>All editors will be pinged when a new package is submitted. Then based on workload, one will be assigned to it as an editor.</p>
+<ul>
+<li><p>Luiz: I would like to be in this group, to eventually hy hy hy hy hy h</p></li>
+<li><p><em>Depending on load, this might be an area Carson could contribute as well</em></p></li>
+<li><p>Martin</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="pool-of-associate-editors-8">
+<h2>Pool of Associate Editors (8+)<a class="headerlink" href="#pool-of-associate-editors-8" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Associated editors are a group of people who are willing to fill the editor role for a single package at a time throughout the year.</p></li>
+<li><p>Associate editors will be pinged by the core editor group to assess their time availability and expertise relative to serving in an editor capacity for a particular capacity. Their time can be more limited than the time of the editors in chief.</p></li>
+<li><p>General contribution load: 2-4 packages a year?? (<em>just throwing out a number here</em>)</p></li>
+</ul>
+<p>NEIL / LEO – JOSS model – Joss has a small number (4) of editors in chief. each week one is on call and responsible for everything. has a larger pool of associated editors. this might work better if there is a larger community who want to jump in here and there.</p>
+</section>
+<section id="advisory-4">
+<h2>Advisory (4*):<a class="headerlink" href="#advisory-4" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Responsible for providing feedback &amp; guidance regarding the direction of POS</p></li>
+<li><p>Spread the word about POS</p></li>
+<li><p>Communication: every other month / quarterly? meetings??</p></li>
+<li><p><em>Carson would be happy to be an external/industry advisor</em></p></li>
+<li><p>Neil feels this is probably the best role for his input, but also happy to help out with funding</p></li>
+</ul>
+</section>
+<section id="funding-business-development">
+<h2>Funding &amp; Business Development<a class="headerlink" href="#funding-business-development" title="Permalink to this headline">#</a></h2>
+<p>This role helps guide the direction we go in terms of funding the organization. Ideally this person has expertise working with various funding types and connections in the community. But this role could also be someone who is keen to help us write proposals – 1 pagers 3 pagers etc that go to organizations that may be willing to fund us.</p>
+<ul class="simple">
+<li><p>Neil ??</p></li>
+</ul>
+<p>Reviewers (∞):</p>
+<ul class="simple">
+<li><p>Available to review software packages (no more than 1 at a time and x a year or something manageable)</p></li>
+<li><p>Communication - as packages come in that may be in your area of expertise</p></li>
+<li><p>Time: as you have available</p></li>
+</ul>
+<ul class="simple">
+<li><p>filipe would like to be a reviewer</p></li>
+<li><p>leo would too</p></li>
+<li><p>Max</p></li>
+<li><p>Martin</p></li>
+<li><p>Levi</p></li>
+<li><p>Neil happy to do occasional reviews</p></li>
+</ul>
+<ul class="simple">
+<li><p>I just started with a number from ROS.</p></li>
+</ul>
+<p>Community Members, Supporters (∞):</p>
+<ul class="simple">
+<li><p>Attend community calls (monthly?)</p></li>
+</ul>
+<p>Who is interested in interfacing with RopenSci on their slack channel</p>
+<ul class="simple">
+<li><p>marskar&#64;gmail.com martin is interested in interfacing with the ropensci communications</p></li>
+<li><p>Luiz (slack&#64;luizirber.org)</p></li>
+</ul>
+</section>
+<section id="funding-numfocus-support-vs-moore-funding">
+<h2>Funding – numfocus support vs moore funding<a class="headerlink" href="#funding-numfocus-support-vs-moore-funding" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>focusing on numfocus for funding / support in kind. they are looking into many options</p></li>
+<li><p>Filipe’s suggestion: conda-forge – they put them on “probation” for a year first… try to get associated soon… at scypi try to setup in person talks… Filipe can provide names. maybe we could talk with them together?? Neil used to be directly involved. levi – pysal is approaching them.</p></li>
+<li><p>Numfocus provides legal advice and has a diversity subgroup… review websites, etc etc</p></li>
+<li><p>*carpentries moved away from numfocus but neil feels like those issues have been since resolved</p></li>
+</ul>
+<p>other option - code for science and society – but neil things they are more focused on small software projects… danielle robinson</p>
+<ol class="arabic simple">
+<li><p>Updates: 6 packages in the submission queue!</p></li>
+</ol>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/2">pacifica</a> – we need to make a decision on it. it’s an envt / set of tools. So the question at hand is DOES pyopensci accept these types of submissions? Or do we prefer individual submissions at this point. It would be good to decide this week</p>
+<ul>
+<li><p>Luiz: I think it’s a good submission in the future, but it’s a really hard submission at the moment (due to complexity).</p></li>
+<li><p>https://github.com/pyOpenSci/software-review/issues/2#issuecomment-494076938</p></li>
+<li><p>filipe – maybe a platform is a bit much for us to review</p></li>
+<li><p>leah agrees with this …let’s suggest we may consider it in the future but we don’t have the capacity now!</p></li>
+</ul>
+</li>
+<li><p>Three packages submitted by one author. We probably can’t review 3 at once. so we should consider a one at a time per submittor policy. Can each person pick one of these to have a look at to recommend review or not review in the next week?</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/4">nbless</a> - Easiest to review / use. Only uses python, 2 dependencies, jupyter &amp; click</p></li>
+<li><p>Reviewers:</p>
+<ul>
+<li><p>Filipe – this week</p></li>
+<li><p>Leo</p></li>
+</ul>
+</li>
+<li><p>Editor:</p></li>
+<li><p><a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/5">rmdawn</a></p>
+<ul>
+<li><p>Interfaces with (and requires) R for most commands. Brings up scoping considerations - are we ok with reviewing things that interface with other langs? If so, which? -MJ. Based on discussions, if we use the capacity to review a package as a pre-requisite, we can review this.</p></li>
+</ul>
+</li>
+<li><p>Reviewers:</p>
+<ul>
+<li><p>Max</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/6">gitone</a></p>
+<ul>
+<li><p>relies on gitpython,</p></li>
+<li><p>this is how Martin uses git now</p></li>
+</ul>
+</li>
+<li><p>Reviewers:</p>
+<ul>
+<li><p>Filipe</p></li>
+<li><p>Leo this week?</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>General comments – the review process</p>
+<ul class="simple">
+<li><p>from leo – larger review – larger chunk of text vs</p></li>
+<li><p>opening smaller issues</p></li>
+<li><p>Use checkboxes on github (<code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">]</span></code>)</p></li>
+<li><p>Leo: I usually include this when starting a review “Please include a mention of the review issue in any issues and PRs (<code class="docutils literal notranslate"><span class="pre">pyOpenSci/software-review#6</span></code>) so that we can keep track of progress”</p></li>
+</ul>
+<p>what joss does</p>
+<ul class="simple">
+<li><p>smaller questions they post as comments</p></li>
+<li><p>but they encourage people to open issues in the software repo – but they are linked in the review thread.
+[x] add a checkbox – that the author is OK with “opening issues upstream”</p></li>
+</ul>
+<p>General questions</p>
+<ul class="simple">
+<li><p>do we want to accept packages that have other language dependencies. If our criteria to decide is our expertise – we do have combined R and python in this group</p></li>
+<li><p>scope vs capacity to review.</p></li>
+</ul>
+<p>TO DO – change the submission template to add a text box for “the reviewers opening issues in their repo”</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/pyOpenSci/software-review/commit/236b482fbad4b0b3b9b8bdd37d992e656d9583e0">Added check box to allow for issues submitted via a review in the review rather than all text written out in the review.</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pyOpenSci/software-review/pull/8">Added a link to the reviewer templates to the BOTTOM of the software submission template</a></p></li>
+<li><p>we should space out reviews –</p></li>
+<li><p>Martin: Becoming a NumFOCUS affialated project should be a priority in my opinion.</p>
+<ul>
+<li><p>just a note that leah will look into a few options given right now we do have some support via cu and that is how ropensci started. BUT leah needs to chat with Karthik and Carl and Noam a bit more about this!!</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="2019-05-09-notes.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">pyOpenSci Meeting Notes - 9 May 2019</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="2019-06-20-notes.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">pyOpenSci Meeting Notes - 20 June 2019</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Leah Wasser<br/>
+  
+      &copy; Copyright 2022, pyOpenSci.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,172 @@
+---
+tags: pyopensci, python
+---
+
+# pyOpenSci Meeting Notes - 20 June 2019
+
+[Hackmd document link](https://hackmd.io/N_A_TpCkTUaYvTrbigcMuA)
+
+Looks like you need to signin to hackmd to contribute to this document! but you can sign in using your github user. welcome guest!!
+
+## Attendees
+
+* Leah Wasser, Earth Lab, University of Colorado, Boulder
+* Luiz Irber, UC Davis
+* Max Joseph, Earth Lab, University of Colorado, Boulder
+* Jenny Palomino, Earth Lab, University of Colorado, Boulder
+* Lindsey Heagy, UC Berkeley
+* Martin Skarzynski, National Cancer Institute
+* Leonardo Uieda, University of Hawaii at Manoa
+
+
+## Agenda
+
+
+1. SciPy BOF (1 hour)
+    * Thursday 11 July 2019 6-7pm in Room 204
+   * We could plan to get a drink or food after informally to discuss pyOpenSci more as well. (SciPy scheduled happy hour 7-11pm)
+   
+    * What should the structure be?
+    * Suggested Outline:
+        * Overview of goals
+            * Set expectations surrounding what we can accept now! 
+        * Overview of what we have done
+        * Overview of what is next / what we could use
+        * Avenue of how to get involved - discuss roles
+            * identify areas where help is needed
+            * this could be now and/or in the future so we don't end up trying to onboard too many new people at once 
+        * Are there other discussions that we could have
+            * ask the community what they would like to see from pyOpenSci (if they have a stake in what it is, there is more buy-in)
+        * Our goal Outcomes: 
+            * people on board to submit packages
+            * people on board to review
+            * associated editors
+
+* Create a shared hackmd and post it on the discourse forum. 
+    * for onboarding -- we want name, email, github username, what they work on (what domain they are in) what they may want to contibute??
+    * Joss has a google form that they can submit if they want to be a reviewer.
+        * [JOSS reviewer list](https://docs.google.com/spreadsheets/d/1PAPRJ63yq9aPC1COLjaQp8mHmEq3rZUzwUYxTulyu78/edit?usp=sharing)
+    * How does rOpenSci keep track of / pick / rotate reviewers?
+    * joss has a dashboard to keep track of reviewers / reviews. might be worth chatting with Arfon about how that works. 
+
+* If you will be at SciPy, please add your name below:
+    * Leah
+    * Jenny
+
+2. Open Reviews -- [ERDAPPY](https://github.com/pyOpenSci/software-review/issues/1)
+    * How do we handle disagreements between reviewers and submitters? Can we setup criteria around things like usability that can help resolve disputes?
+    * https://ioos.github.io/erddapy/
+    
+    * Maybe we find a good example of a well document package
+
+### Examples of Good Documentation 
+* We could add this to the criteria
+    * [*shameless self-promotion* by Martin](https://py4ds.github.io/nbless/)
+    * JOSS: “docs” criteria https://joss.readthedocs.io/en/latest/review_checklist.html#documentation
+    * https://www.fatiando.org/verde/latest/
+    * https://altair-viz.github.io/
+
+* Standard criteria
+    * These things should be readily findable from the docs & the readme
+        * clear statement of need
+        * installation instructions
+        * example use
+        * api docs
+        * communication guidelines 
+
+* We should be careful about being too specific for instance
+
+* contains a README with instructions for installing the development version.
+    * does it matter if it's in the readme vs in the docs. it really doesn't. there could be links in the readme 
+    * things just need to be easily findable 
+
+
+* Clearly establish the goal of the review. The goal should be not only passing tests, but to improve the package as a whole in terms of usability. This would ensure we are not bound to the check items in the template. 
+
+* Right now the checks are only "technical checks". But there is not discussion of usability in the review template. 
+    * does it align with common practices
+    * there is more space then for additional feedback then...
+
+
+* Actional feedback in the review. right now it's a HUGE issue. (so much text). But we didn't open issues in this particular example. 
+
+* Resolution: 
+    * Reboot this review and potentially update the template in this issue. 
+    * Do we want to start fresh given lessons learned??
+
+* If we are encouraging reviewers to open issues - could they also open PR's ? That would be a nice way to help the author along in their improvements to the package. 
+
+* Make this an opt out?? opt out of having issues and pr's in your repo. we could have it checked by default an they can open out by unchecking it.  
+    * update the checkbox to allow for people opening issues and pr's 
+
+3. [Earthpy](https://github.com/pyOpenSci/software-review/issues/3) - need reviewers?
+    If the list below works, Luiz can update the issue and we can start again! If that is happening i may update the version as we just bumped it!! 
+    * leo
+    * Martin (FYI, I am a bio (not geo) person😃)
+    * > [name=Leah Wasser]i think that is fine!
+        * Luiz: that's sort of on purpose, you could focus more on package org and docs, and leo on the geo parts =]
+        
+4. Nbless -- Status: need a second reviewer if leo does earthpy
+    * Filipe (Thank you for completing this review!)
+    * Second reviewer wanted: who is interested? kylen perhaps?
+        * [Kylen volunteered](https://github.com/pyOpenSci/software-review/issues/7#issuecomment-504101498) 
+    * feedback (if there is time). We implemented a process that included opening issues in the package repo and that seemed to work great!
+
+5. Open Issues
+How should we handle this todo list? maybe a space in our discourse forum that gets referenced in our checkins?? This gets into task management which i think we can do in github but i have always used asana :) 
+Open Issues 
+- [ ] https://github.com/pyOpenSci/dev_guide/issues/17
+    - [ ] sign up here
+- [ ] https://github.com/pyOpenSci/dev_guide/issues/27
+- [ ] https://github.com/pyOpenSci/dev_guide/issues/28
+
+4. Plan to discuss gitter for pyOpenSci in future meeting
+
+5. Roles reminder (we can skip this if there's not time today)
+
+## Role Definition Revisited (please feel free to edit this or leave comments!!)
+
+Starting with the [rOpenSci structure](https://ropensci.org/about/) but we may want to adjust accordingly. And ofcourse the time commitment can really be flexible but just trying to give folks a sense of time that might be associated with each role. 
+
+## Leadership (3-5): 
+* Responsible for making final decisions about the direction of POS
+* POS
+* Communication: weekly / bi weekly, slack, discuss private forum (Chris H can help us set this up i think??, emails)
+    * Gitter https://gitter.im/pyOpenSci/
+
+## Community, Social Media, Outreach, Website (?future or someone doing part):
+Ropensci has an outreach person. I wonder if we could start with anyone who had
+just a bit of time to help us start to build an online presence. Potential for a fall intern... 
+(Neil: we could also apply to https://www.outreachy.org/)
+* website
+* twitter
+* spreading the word (easy peasy just tell people about us)
+
+## Editors in Chief (2-3?):
+* What about defining this initially as editors ?
+* All editors will be pinged when a new package is submitted. Then based on workload, one will be assigned to it as an editor. 
+    * Luiz: I would like to be in this group, to eventually bootstrap the bioinformatics area =]
+    * _Depending on load, this might be an area Carson could contribute as well_
+    * Martin
+
+##  Pool of Associate Editors (8+)
+A group of people who are willing to fill the editor role for a single package for a shorter duration of  time throughout the year. Associate editors will be pinged by the core editor group to assess their time availability and expertise relative to serving in an editor capacity for a particular capacity. Their time can be more limited than the time required of the editors in chief. 
+* General contribution load: 2-4 packages a year?? (_just throwing out a number here_)
+
+NOTES: JOSS model: Joss has a small number (4) of editors in chief. each week one is on call and responsible for everything. has a larger pool of associated editors. this might work better if there is a larger community who want to jump in here and there. 
+
+## Advisory (4*):
+### Responsibilities:
+* Provide feedback & guidance regarding the direction of POS
+* Spread the word about POS
+* Communication: every other month / quarterly? meetings??
+---
+* Carson  (external/industry advisor)
+* Neil
+
+## Funding & Business Development 
+
+This role helps guide the direction we go in terms of funding the organization. Ideally this person has expertise working with various funding types and connections in the community. But this role could also be someone who is keen to help us write proposals -- 1 pagers 3 pagers etc that go to organizations that may be willing to fund us.
+
+---
+* Neil ??

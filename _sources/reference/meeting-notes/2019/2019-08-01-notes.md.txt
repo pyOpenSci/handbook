@@ -1,0 +1,66 @@
+---
+tags: pyopensci, python
+---
+
+# pyOpenSci Meeting Notes - 1 August 2019
+
+
+## Attendees
+Please add your name to the list below!
+* Leah Wasser - Earth Lab!
+* Filipe Fernandes - NOAA/IOOS
+* Daniel Chen - Virginia Tech + RStudio intern @chendaniely
+* Chris Holdgraf - UC Berkeley - @choldgraf
+* Ivan Ogasawara - SciPy Latin America Community - @xmnlab
+* Mike Trizna - Smithsonian Institution - @miketrizna
+* Jenny Palomino - CU Boulder Earth Lab @jlpalomino
+
+## Agenda
+
+* BoF Overview!
+    * ~35 people in attendance
+* First package NBLESS submitted and approved! 
+    * [Discourse discussion on badge](https://pyopensci.discourse.group/t/we-have-our-first-package-through-review-now-we-need-a-badge/)
+    * [Vote on a badge on discourse!!](https://pyopensci.discourse.group/t/vote-on-a-pyopensci-badge/68) (+)
+        * Badge vote please
+* Current reviews
+    *  [View completed Nbless submission](https://github.com/pyOpenSci/software-review/issues/7)
+    * Check in on errdapy review & earthpy reviews
+        * Leah to check in with Luiz about earthpy review
+        * Updated review of erddapy by Chris and Jenny complete
+* Add your github name to be added to the pyopensci repo here
+    * [chendaniely](https://github.com/chendaniely)
+    * [MikeTrizna](https://github.com/MikeTrizna)
+    * [xmnlab](https://github.com/xmnlab)
+    * [ocefpaf](https://github.com/ocefpaf)
+        * Check the [People page](https://github.com/orgs/pyOpenSci/people) for a status of public
+* Social media checkin??
+    * give multiple people to pyopensci for the time being
+        * twitter bot to retweet @pyopensci 
+    * Send credentials to:
+        * Chris 
+        * Martin 
+* Website 
+    * who's involved -- generate this programmatically? pull from the list of anyone in the organization -- someone would have to build this - twitter api / travis -- They do this for jupyter hub .. 
+    * Chris might be able to copy over what jupyter hub does -- https://jupyterhub-team-compass.readthedocs.io/en/latest/team.html#jupyterhub-team read the docs will build it 
+        * Following the all contributors specs!! https://github.com/jupyterhub/team-compass/blob/master/docs/team/contributors-jupyterhub.yaml -- Chris can work on that next 
+        * https://github.com/jupyterhub/team-compass/tree/master/docs/team
+    * Website -- links that take you to a github search that filters by tag! -- easy quick (Leah can add this!)
+        * in the future we can automate this 
+* Create design repository in the org -- and place the images and branding items in it!! (leah can do this as well)
+* Funding
+    * pyopensci -- [working draft of 2-3 pager]( https://docs.google.com/document/d/13S_HOGS89Zm1j257gC8Oja_Yol3j6xCp68Sr2Ln5MM0/edit) 
+    * IDEA -- fund a fellowship position that works full time?? or focuses on this organization 
+        * hire them as a contractor -- could be remote, etc
+    * Martin, Daniel, and Mike are both in DC area -- NIH (National Institute of Health)
+        * workshop on packaging your project -- to get more exposure
+            * partnership with Carpentries would be good
+            * other existing online resources: [ Molecular Sciences Software Institute (MolSSI) materials](https://molssi-education.github.io/CMS-Python-DevOps/) 
+        * Martin - organizer for a local meetup
+            * Stats Programmign DC: https://www.meetup.com/stats-prog-dc/ 
+     * Leah to followup with nunmfocus about sponsorship
+
+* Agu event potentially?? Open source software session presentation
+    * Leo --- ask about something associated with the plenary or something else!! 
+* other topics??
+* ** 

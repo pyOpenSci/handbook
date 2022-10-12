@@ -1,0 +1,835 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>pyOpenSci Meeting Notes - 20 June 2019 &#8212; pyOpenSci Governance</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="pyOpenSci Meeting Notes - 1 August 2019" href="2019-08-01-notes.html" />
+    <link rel="prev" title="pyOpenSci Meeting Notes - 30 May 2019" href="2019-05-30-notes.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-141260825-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">🚧 UNDER CONSTRUCTION: this guide is under heavy construction right now. 🚧</div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">pyOpenSci Governance</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Organization Structure
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../organization/index.html">
+   Organization intro
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../organization/mission-values.html">
+   Mission and values
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../organization/structure.html">
+   Structure and leadership
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Reference information
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../index.html">
+   Meeting Notes Archive
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2021/2021-05-17-software-review-scipy-notes.html">
+     Meeting Notes 17 May 2021
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2020/2020-02-28-notes.html">
+     pyOpenSci Meeting Notes - 28 Feb 2020
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2020/2020-04-09-notes.html">
+     pyOpenSci Meeting Notes - 9 April 2020
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-01-31-notes.html">
+     PyOpenSci Meeting Notes - 31 Jan 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-03-06-notes.html">
+     pyOpenSci Meeting Notes - 6 March 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-03-14-joss-discussion-notes.html">
+     pyOpenSci meeting notes: 3-14-2019 JOSS / pyopensci Collaboration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-04-04-notes.html">
+     pyOpenSci Meeting Notes - 4 April 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-04-18-notes.html">
+     pyOpenSci Meeting Notes - 18 April 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-05-09-notes.html">
+     pyOpenSci Meeting Notes - 9 May 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-05-30-notes.html">
+     pyOpenSci Meeting Notes - 30 May 2019
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     pyOpenSci Meeting Notes - 20 June 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-08-01-notes.html">
+     pyOpenSci Meeting Notes - 1 August 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-08-22-notes.html">
+     pyOpenSci Meeting Notes - 22 August 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-09-20-notes.html">
+     pyOpenSci Meeting Notes - 20 September
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="2019-10-03-notes.html">
+     pyOpenSci Meeting Notes - 3 October 2019
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2018/2018-10-09-notes.html">
+     10 October 2018: JOSS / pyopensci Collaboration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2018/2018-10-26-notes.html">
+     Meeting Notes - 26 Oct 2018
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2018/2018-11-16-notes.html">
+     Meeting Notes - 16 Nov 2018
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2018/2018-12-07-notes.html">
+     Meeting Notes - 7 Dec 2018
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/pyopensci/governance"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../_sources/reference/meeting-notes/2019/2019-06-20-notes.md.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#attendees">
+   Attendees
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#agenda">
+   Agenda
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#examples-of-good-documentation">
+     Examples of Good Documentation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#role-definition-revisited-please-feel-free-to-edit-this-or-leave-comments">
+   Role Definition Revisited (please feel free to edit this or leave comments!!)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#leadership-3-5">
+   Leadership (3-5):
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#community-social-media-outreach-website-future-or-someone-doing-part">
+   Community, Social Media, Outreach, Website (?future or someone doing part):
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#editors-in-chief-2-3">
+   Editors in Chief (2-3?):
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pool-of-associate-editors-8">
+   Pool of Associate Editors (8+)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#advisory-4">
+   Advisory (4*):
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#responsibilities">
+     Responsibilities:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#funding-business-development">
+   Funding &amp; Business Development
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>pyOpenSci Meeting Notes - 20 June 2019</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#attendees">
+   Attendees
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#agenda">
+   Agenda
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#examples-of-good-documentation">
+     Examples of Good Documentation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#role-definition-revisited-please-feel-free-to-edit-this-or-leave-comments">
+   Role Definition Revisited (please feel free to edit this or leave comments!!)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#leadership-3-5">
+   Leadership (3-5):
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#community-social-media-outreach-website-future-or-someone-doing-part">
+   Community, Social Media, Outreach, Website (?future or someone doing part):
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#editors-in-chief-2-3">
+   Editors in Chief (2-3?):
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pool-of-associate-editors-8">
+   Pool of Associate Editors (8+)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#advisory-4">
+   Advisory (4*):
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#responsibilities">
+     Responsibilities:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#funding-business-development">
+   Funding &amp; Business Development
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="pyopensci-meeting-notes-20-june-2019">
+<h1>pyOpenSci Meeting Notes - 20 June 2019<a class="headerlink" href="#pyopensci-meeting-notes-20-june-2019" title="Permalink to this headline">#</a></h1>
+<p><a class="reference external" href="https://hackmd.io/N_A_TpCkTUaYvTrbigcMuA">Hackmd document link</a></p>
+<p>Looks like you need to signin to hackmd to contribute to this document! but you can sign in using your github user. welcome guest!!</p>
+<section id="attendees">
+<h2>Attendees<a class="headerlink" href="#attendees" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Leah Wasser, Earth Lab, University of Colorado, Boulder</p></li>
+<li><p>Luiz Irber, UC Davis</p></li>
+<li><p>Max Joseph, Earth Lab, University of Colorado, Boulder</p></li>
+<li><p>Jenny Palomino, Earth Lab, University of Colorado, Boulder</p></li>
+<li><p>Lindsey Heagy, UC Berkeley</p></li>
+<li><p>Martin Skarzynski, National Cancer Institute</p></li>
+<li><p>Leonardo Uieda, University of Hawaii at Manoa</p></li>
+</ul>
+</section>
+<section id="agenda">
+<h2>Agenda<a class="headerlink" href="#agenda" title="Permalink to this headline">#</a></h2>
+<ol class="arabic simple">
+<li><p>SciPy BOF (1 hour)</p>
+<ul class="simple">
+<li><p>Thursday 11 July 2019 6-7pm in Room 204</p></li>
+<li><p>We could plan to get a drink or food after informally to discuss pyOpenSci more as well. (SciPy scheduled happy hour 7-11pm)</p></li>
+<li><p>What should the structure be?</p></li>
+<li><p>Suggested Outline:</p>
+<ul>
+<li><p>Overview of goals</p>
+<ul>
+<li><p>Set expectations surrounding what we can accept now!</p></li>
+</ul>
+</li>
+<li><p>Overview of what we have done</p></li>
+<li><p>Overview of what is next / what we could use</p></li>
+<li><p>Avenue of how to get involved - discuss roles</p>
+<ul>
+<li><p>identify areas where help is needed</p></li>
+<li><p>this could be now and/or in the future so we don’t end up trying to onboard too many new people at once</p></li>
+</ul>
+</li>
+<li><p>Are there other discussions that we could have</p>
+<ul>
+<li><p>ask the community what they would like to see from pyOpenSci (if they have a stake in what it is, there is more buy-in)</p></li>
+</ul>
+</li>
+<li><p>Our goal Outcomes:</p>
+<ul>
+<li><p>people on board to submit packages</p></li>
+<li><p>people on board to review</p></li>
+<li><p>associated editors</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<ul class="simple">
+<li><p>Create a shared hackmd and post it on the discourse forum.</p>
+<ul>
+<li><p>for onboarding – we want name, email, github username, what they work on (what domain they are in) what they may want to contibute??</p></li>
+<li><p>Joss has a google form that they can submit if they want to be a reviewer.</p>
+<ul>
+<li><p><a class="reference external" href="https://docs.google.com/spreadsheets/d/1PAPRJ63yq9aPC1COLjaQp8mHmEq3rZUzwUYxTulyu78/edit?usp=sharing">JOSS reviewer list</a></p></li>
+</ul>
+</li>
+<li><p>How does rOpenSci keep track of / pick / rotate reviewers?</p></li>
+<li><p>joss has a dashboard to keep track of reviewers / reviews. might be worth chatting with Arfon about how that works.</p></li>
+</ul>
+</li>
+<li><p>If you will be at SciPy, please add your name below:</p>
+<ul>
+<li><p>Leah</p></li>
+<li><p>Jenny</p></li>
+</ul>
+</li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Open Reviews – <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/1">ERDAPPY</a></p>
+<ul class="simple">
+<li><p>How do we handle disagreements between reviewers and submitters? Can we setup criteria around things like usability that can help resolve disputes?</p></li>
+<li><p>https://ioos.github.io/erddapy/</p></li>
+<li><p>Maybe we find a good example of a well document package</p></li>
+</ul>
+</li>
+</ol>
+<section id="examples-of-good-documentation">
+<h3>Examples of Good Documentation<a class="headerlink" href="#examples-of-good-documentation" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>We could add this to the criteria</p>
+<ul>
+<li><p><a class="reference external" href="https://py4ds.github.io/nbless/"><em>shameless self-promotion</em> by Martin</a></p></li>
+<li><p>JOSS: “docs” criteria https://joss.readthedocs.io/en/latest/review_checklist.html#documentation</p></li>
+<li><p>https://www.fatiando.org/verde/latest/</p></li>
+<li><p>https://altair-viz.github.io/</p></li>
+</ul>
+</li>
+<li><p>Standard criteria</p>
+<ul>
+<li><p>These things should be readily findable from the docs &amp; the readme</p>
+<ul>
+<li><p>clear statement of need</p></li>
+<li><p>installation instructions</p></li>
+<li><p>example use</p></li>
+<li><p>api docs</p></li>
+<li><p>communication guidelines</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>We should be careful about being too specific for instance</p></li>
+<li><p>contains a README with instructions for installing the development version.</p>
+<ul>
+<li><p>does it matter if it’s in the readme vs in the docs. it really doesn’t. there could be links in the readme</p></li>
+<li><p>things just need to be easily findable</p></li>
+</ul>
+</li>
+<li><p>Clearly establish the goal of the review. The goal should be not only passing tests, but to improve the package as a whole in terms of usability. This would ensure we are not bound to the check items in the template.</p></li>
+<li><p>Right now the checks are only “technical checks”. But there is not discussion of usability in the review template.</p>
+<ul>
+<li><p>does it align with common practices</p></li>
+<li><p>there is more space then for additional feedback then…</p></li>
+</ul>
+</li>
+<li><p>Actional feedback in the review. right now it’s a HUGE issue. (so much text). But we didn’t open issues in this particular example.</p></li>
+<li><p>Resolution:</p>
+<ul>
+<li><p>Reboot this review and potentially update the template in this issue.</p></li>
+<li><p>Do we want to start fresh given lessons learned??</p></li>
+</ul>
+</li>
+<li><p>If we are encouraging reviewers to open issues - could they also open PR’s ? That would be a nice way to help the author along in their improvements to the package.</p></li>
+<li><p>Make this an opt out?? opt out of having issues and pr’s in your repo. we could have it checked by default an they can open out by unchecking it.</p>
+<ul>
+<li><p>update the checkbox to allow for people opening issues and pr’s</p></li>
+</ul>
+</li>
+</ul>
+<ol class="arabic" start="3">
+<li><p><a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/3">Earthpy</a> - need reviewers?
+If the list below works, Luiz can update the issue and we can start again! If that is happening i may update the version as we just bumped it!!</p>
+<ul>
+<li><p>leo</p></li>
+<li><p>Martin (FYI, I am a bio (not geo) person😃)</p></li>
+<li><blockquote>
+<div><p>[name=Leah Wasser]i think that is fine!</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Luiz: that’s sort of on purpose, you could focus more on package org and docs, and leo on the geo parts =]</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Nbless – Status: need a second reviewer if leo does earthpy</p>
+<ul class="simple">
+<li><p>Filipe (Thank you for completing this review!)</p></li>
+<li><p>Second reviewer wanted: who is interested? kylen perhaps?</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/7#issuecomment-504101498">Kylen volunteered</a></p></li>
+</ul>
+</li>
+<li><p>feedback (if there is time). We implemented a process that included opening issues in the package repo and that seemed to work great!</p></li>
+</ul>
+</li>
+<li><p>Open Issues
+How should we handle this todo list? maybe a space in our discourse forum that gets referenced in our checkins?? This gets into task management which i think we can do in github but i have always used asana :)
+Open Issues</p></li>
+</ol>
+<ul class="simple">
+<li><p>[ ] https://github.com/pyOpenSci/dev_guide/issues/17</p>
+<ul>
+<li><p>[ ] sign up here</p></li>
+</ul>
+</li>
+<li><p>[ ] https://github.com/pyOpenSci/dev_guide/issues/27</p></li>
+<li><p>[ ] https://github.com/pyOpenSci/dev_guide/issues/28</p></li>
+</ul>
+<ol class="arabic simple" start="4">
+<li><p>Plan to discuss gitter for pyOpenSci in future meeting</p></li>
+<li><p>Roles reminder (we can skip this if there’s not time today)</p></li>
+</ol>
+</section>
+</section>
+<section id="role-definition-revisited-please-feel-free-to-edit-this-or-leave-comments">
+<h2>Role Definition Revisited (please feel free to edit this or leave comments!!)<a class="headerlink" href="#role-definition-revisited-please-feel-free-to-edit-this-or-leave-comments" title="Permalink to this headline">#</a></h2>
+<p>Starting with the <a class="reference external" href="https://ropensci.org/about/">rOpenSci structure</a> but we may want to adjust accordingly. And ofcourse the time commitment can really be flexible but just trying to give folks a sense of time that might be associated with each role.</p>
+</section>
+<section id="leadership-3-5">
+<h2>Leadership (3-5):<a class="headerlink" href="#leadership-3-5" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Responsible for making final decisions about the direction of POS</p></li>
+<li><p>POS</p></li>
+<li><p>Communication: weekly / bi weekly, slack, discuss private forum (Chris H can help us set this up i think??, emails)</p>
+<ul>
+<li><p>Gitter https://gitter.im/pyOpenSci/</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="community-social-media-outreach-website-future-or-someone-doing-part">
+<h2>Community, Social Media, Outreach, Website (?future or someone doing part):<a class="headerlink" href="#community-social-media-outreach-website-future-or-someone-doing-part" title="Permalink to this headline">#</a></h2>
+<p>Ropensci has an outreach person. I wonder if we could start with anyone who had
+just a bit of time to help us start to build an online presence. Potential for a fall intern…
+(Neil: we could also apply to https://www.outreachy.org/)</p>
+<ul class="simple">
+<li><p>website</p></li>
+<li><p>twitter</p></li>
+<li><p>spreading the word (easy peasy just tell people about us)</p></li>
+</ul>
+</section>
+<section id="editors-in-chief-2-3">
+<h2>Editors in Chief (2-3?):<a class="headerlink" href="#editors-in-chief-2-3" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>What about defining this initially as editors ?</p></li>
+<li><p>All editors will be pinged when a new package is submitted. Then based on workload, one will be assigned to it as an editor.</p>
+<ul>
+<li><p>Luiz: I would like to be in this group, to eventually bootstrap the bioinformatics area =]</p></li>
+<li><p><em>Depending on load, this might be an area Carson could contribute as well</em></p></li>
+<li><p>Martin</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="pool-of-associate-editors-8">
+<h2>Pool of Associate Editors (8+)<a class="headerlink" href="#pool-of-associate-editors-8" title="Permalink to this headline">#</a></h2>
+<p>A group of people who are willing to fill the editor role for a single package for a shorter duration of  time throughout the year. Associate editors will be pinged by the core editor group to assess their time availability and expertise relative to serving in an editor capacity for a particular capacity. Their time can be more limited than the time required of the editors in chief.</p>
+<ul class="simple">
+<li><p>General contribution load: 2-4 packages a year?? (<em>just throwing out a number here</em>)</p></li>
+</ul>
+<p>NOTES: JOSS model: Joss has a small number (4) of editors in chief. each week one is on call and responsible for everything. has a larger pool of associated editors. this might work better if there is a larger community who want to jump in here and there.</p>
+</section>
+<section id="advisory-4">
+<h2>Advisory (4*):<a class="headerlink" href="#advisory-4" title="Permalink to this headline">#</a></h2>
+<section id="responsibilities">
+<h3>Responsibilities:<a class="headerlink" href="#responsibilities" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Provide feedback &amp; guidance regarding the direction of POS</p></li>
+<li><p>Spread the word about POS</p></li>
+<li><p>Communication: every other month / quarterly? meetings??</p></li>
+</ul>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Carson  (external/industry advisor)</p></li>
+<li><p>Neil</p></li>
+</ul>
+</section>
+</section>
+<section id="funding-business-development">
+<h2>Funding &amp; Business Development<a class="headerlink" href="#funding-business-development" title="Permalink to this headline">#</a></h2>
+<p>This role helps guide the direction we go in terms of funding the organization. Ideally this person has expertise working with various funding types and connections in the community. But this role could also be someone who is keen to help us write proposals – 1 pagers 3 pagers etc that go to organizations that may be willing to fund us.</p>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Neil ??</p></li>
+</ul>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="2019-05-30-notes.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">pyOpenSci Meeting Notes - 30 May 2019</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="2019-08-01-notes.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">pyOpenSci Meeting Notes - 1 August 2019</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Leah Wasser<br/>
+  
+      &copy; Copyright 2022, pyOpenSci.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

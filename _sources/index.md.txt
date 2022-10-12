@@ -104,5 +104,5 @@ organization/structure
 :caption: Reference information
 
 reference/index.md
-reference/2018-notes.md
+
 ```
