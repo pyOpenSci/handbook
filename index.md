@@ -66,7 +66,7 @@ This guide will walk you through the editorial process.
 :link: https://www.pyopensci.org/contributing-guide
 :class-header: bg-light
 
-Are you a reviewer? ✨
+Are you a Reviewer? ✨
 ^^^
 
 Click here to read our reviewer guide which will walk you through the review
