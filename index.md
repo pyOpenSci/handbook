@@ -32,13 +32,12 @@ that support operations of pyOpenSci.
 :gutter: 4
 
 :::{grid-item-card}
-:link: organization/index
-:link-type: doc
+:link: ../CODE_OF_CONDUCT.html
 :class-header: bg-light
 
 Code of conduct ✏️
 ^^^
-Coming soon
+Our code of conduct applies to all members of the pyOpenSci community. And to those participating in pyOpenSci supported events. 
 :::
 
 :::{grid-item-card}
@@ -53,20 +52,20 @@ more
 :::
 
 :::{grid-item-card}
-:link: https://www.pyopensci.org/contributing-guide/intro.html
+:link: https://www.pyopensci.org/peer-review-guide/
 :class-header: bg-light
 
-See our contributing guide ✨
+See our peer review guide ✨
 ^^^
 
 This guide will walk you through the editorial process.
 :::
 
 :::{grid-item-card}
-:link: https://www.pyopensci.org/contributing-guide
+:link: ../reference/index.html
 :class-header: bg-light
 
-Are you a Reviewer? ✨
+Early meeting notes archive ✨
 ^^^
 
 Click here to read our reviewer guide which will walk you through the review
@@ -76,19 +75,6 @@ process step-by-step.
 ::::
 
 
-<<<<<<< HEAD
-=======
-```{toctree}
-:caption: Functional Areas
-:maxdepth: 1
-
-organization/index
-reference/index
-Code of conduct <CODE_OF_CONDUCT.md>
-
-```
-
->>>>>>> ebe1c0b (coc edits p1)
 ## Why pyOpenSci?
 pyOpenSci promotes open and reproducible research through peer-review of 
 scientific Python packages. We also build technical capacity by providing a 
@@ -110,6 +96,7 @@ intro.md
 organization/index.md
 organization/mission-values
 organization/structure
+Code of conduct <CODE_OF_CONDUCT.md>
 ```
 
 ```{toctree}
