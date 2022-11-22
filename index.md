@@ -76,6 +76,19 @@ process step-by-step.
 ::::
 
 
+<<<<<<< HEAD
+=======
+```{toctree}
+:caption: Functional Areas
+:maxdepth: 1
+
+organization/index
+reference/index
+Code of conduct <CODE_OF_CONDUCT.md>
+
+```
+
+>>>>>>> ebe1c0b (coc edits p1)
 ## Why pyOpenSci?
 pyOpenSci promotes open and reproducible research through peer-review of 
 scientific Python packages. We also build technical capacity by providing a 
