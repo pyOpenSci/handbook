@@ -8,25 +8,31 @@ The first is organizational level. The second is program level.
 
 ## Governing Committees
 
-### Advisory Committee 
+### Executive Council 
 
-The advisory committee defines and steers the high-level 
+The Executive Council defines and steers the high-level 
 mission, vision and values of pyOpenSci. It also sets the strategic direction and vision for the organization.
-The Executive Director (discussed below) is a voting member of the advisory committee. 
+The Executive Director (discussed below) is a voting member of the executive council. 
 
-% TODO - add how we communicate
+[Click here to view current executive council members](https://www.pyopensci.org/our-community/#external-advisory-committee--leadership)
 
-% TODO: link to website list of current committee members (i want to make the website better in this regard)
+### pyOpenSci advisory council 
 
-### Peer review advisory committee
-The peer review advisory committee consists of leaders in the open source community
-that will help pyOpenSci make decisions about it's open peer review process. 
-These decisions including but are not limited to:
+[Click here to view current executive council members.](https://www.pyopensci.org/our-community/#pyopensci-working-advisory-committee) 
 
-* Decisions about the scope of packages accepted into the ecosystem
-* Decisions about how we enforce / support ongoing maintenance of accepted packages.
-* Decisions about how we test for, evaluate and report package quality and health. 
-* Metrics that we collect surrounding the peer review process
+The advisory council is comprised of leaders in the Python scientific 
+open source ecosystem. This council advises the executive director 
+in both organization level and day to day decision making around 
+
+* Python packaging guidelines
+* Peer review processes and guidelines 
+* Program development that supports pyOpenSci's mission  
+* Community engagement 
+
+Most of the communication supporting advisory council activities 
+happens in the pyOpenSci slack. The executive director will also 
+organize several executive council meetings a year that will focus 
+on high level goals of pyOpenSci programs.
 
 ## Staff roles within the organization
 
@@ -77,20 +83,30 @@ This role is responsible for overseeing the entire software review process. They
 
 This role will also help manage conflict if it arises in the peer review process.
 
+### Peer review editorial board 
+
+[Click here to view the current editorial board](https://www.pyopensci.org/about-peer-review/#our-editorial-board)
+
+The peer review editorial board is a group of volunteers who are 
+advocates for open source software peer review. This 
+group helps pyOpenSci make decisions about it's open peer review process. 
+These decisions including but are not limited to:
+
+* Decisions about the scope of packages accepted into the ecosystem
+* Decisions about how we enforce / support ongoing maintenance of accepted packages.
+* Decisions about how we test for, evaluate and report package quality and health. 
+* Metrics that we collect surrounding the peer review process
+
+Volunteers on the editorial board will serve for 1-2 years.
+
+The editors oversee 3-4 packages a year. 
+[editorial board can be found here.](https://www.pyopensci.org/contributing-guide/open-source-software-submissions/editors-guide.html)
 
 ### Editor in Chief
 
 The Editor in Chief role is a rotating position
 that is held by someone on the editorial board. [More on this position can be 
-found in the contributing guide here.](https://www.pyopensci.org/contributing-guide/open-source-software-submissions/editor-in-chief-guide.html)
-
-
-### Editorial Board (Editors)
-
-The editorial board consists of a set of editors whose job it is to oversee
-review of a specific package. More on the 
-[editorial board can be found here.](https://www.pyopensci.org/contributing-guide/open-source-software-submissions/editors-guide.html)
-
+found in the contributing guide here.](https://www.pyopensci.org/contributing-guide/open-source-software-submissions/editor-in-chief-guide.html).
 
 ### Volunteer reviewers
 
