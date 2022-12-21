@@ -118,15 +118,26 @@ The person will not be welcome in any physical or digital spaces covered by the 
 If we verify unwelcome, but non-abusive behavior, we will have a 
 conversation with the person about their behavior. The goal of the conversation will be to ensure that they understand the expectation that they not repeat the behavior or other behaviors that would violate the Code of Conduct a second time. 
 
-### Response Protocol steps
-The pyOpenSci executive Director and the Advisory Council will use the steps below to respond to reports of code of conduct violations.
+### Response protocol steps
+The pyOpenSci Executive Director and the Executive Council will use the steps below to respond to reports of code of conduct violations.
 
 1. The report will be read carefully to determine whether there has been a code of conduct violation
 2. We will followup with the person who reported the violation 
 3. We will followup with the community member who violated the code of conduct 
 
-## TODO: Reporting code of conduct violations
-* This is what 2i2c has: https://team-compass.2i2c.org/en/latest/code-of-conduct/index.html#reporting but they also have their steering committee go through violation trianing. which id on't even think i have access to? maybe ask chris? 
+## Reporting code of conduct violations
+
+If you see a violation of our code of conduct, [please report it to our 
+pyOpenSci Code of Conduct Stewards using this form.](https://forms.gle/7MR7tCpDuprtStWP9) This is a short Google Form that will be sent to 
+any Executive Council member acting as a Code of Conduct Steward (see below for details). Alternatively, if you wish to report to one of the Code of Conduct stewards specifically, email them directly.
+
+###  Why should I report code of conduct violations?
+
+* You are a part of the pyOpenSci community. Everyone in this community has a shared responsibility for making pyOpenSci a safe and comfortable space. The pyOpenSci Team and Executive Council members are active in the community, but given our communities size and the number of online spaces that we manage, it is easy to miss an incident that violates of code of conduct. We thus need your help to enforce the code of conduct.
+
+* The consequences to our community, of not reporting bad behavior outweigh the consequences for one person of reporting it. We sometimes hear “I don’t want X person to face consequences because I told someone about their bad behavior.” You were likely not the only one impacted by this even. Consider the potential impact on others if this behavior continues! We thank you in advance for reporting it to us. 
+
+* pyOpenSci is an open, participatory, community-driven community. Our community depends upon shared trust between community members. Reporting code of conduct violations helps us identify when this trust is broken. Your report helps us prevent the behavior from happening again.
 
 ## Code of conduct related notes
 
@@ -144,24 +155,5 @@ We arrived at these policies by a combination of:
 ## License
 The pyOpenSci code of conduct is available under the terms of the CC0 license.
 
-Significant parts of this code of conduct are adapted from the [2i2c Code of Conduct](https://team-compass.2i2c.org/en/latest/code-of-conduct/index.html) which is under the [CCO license](https://creativecommons.org/share-your-work/public-domain/cc0/) and the rOpenSci code of conduct > - what license?? <add link here>
+Significant parts of this code of conduct are adapted from the [2i2c Code of Conduct](https://team-compass.2i2c.org/en/latest/code-of-conduct/index.html) which is under the [CCO license](https://creativecommons.org/share-your-work/public-domain/cc0/).
 
-
-## Original text is below
-
-- Please avoid using openly sexual nicknames or other nicknames that might detract from a friendly, safe and welcoming environment for all.
-- Please be kind and courteous. There’s no need to be mean or rude.
-- Respect that people have differences of opinion and that every design or implementation choice carries a trade-off and numerous costs. There is seldom a right answer.
-- Please keep unstructured critique to a minimum. If you have solid ideas you want to experiment with, make a fork and see how it works.
-- We will exclude you from interaction if you insult, demean or harass anyone. That is not welcome behavior. We interpret the term “harassment” as including the definition in the Citizen Code of Conduct; if you have any lack of clarity about what might be included in that concept, please read their definition. In particular, we don’t tolerate behavior that excludes people in socially marginalized groups.
-- Private harassment is also unacceptable. 
-- Likewise, any spamming, trolling, flaming, baiting or other attention-stealing behavior are not welcome.
-- Avoid the use of personal pronouns in code comments or documentation. There is no need to address persons when explaining code (e.g. “When the developer”). The focus should be on the code, not the author.
-
-## Enforcement
-No matter who you are, if you feel you have been or are being harassed or 
-made uncomfortable by a community member, please contact us at leah at 
-pyopensci dot org immediately with a capture (log, photo, email, link) of 
-the harassment if possible. Whether you’re a regular contributor or a 
-newcomer, we care about making this community a safe place for you and 
-we’ve got your back.
