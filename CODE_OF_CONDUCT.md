@@ -6,10 +6,10 @@ science. We do this through a combination of community building,
 mentorship, peer review of software and education and outreach. 
 
 We are building the pyOpenSci community in a way that promotes fairness 
-and justice for all particular focus on supporting those from 
-traditionally marginalized groups. We want every member of our community 
-to thrive; we want to make a positive impact on our community members work 
-and on the work of others. 
+and justice for all, with a particular focus on supporting those from 
+traditionally marginalized / underrepresented groups. We want every member of 
+our community to thrive; we want to make a positive impact on our community 
+members' work and on the work of others. 
 
 ### What this code of conduct defines 
 
@@ -49,20 +49,28 @@ explicitly racist, sexist, homophobic, or transphobic statements).
  > For example, arguing that some people are less intelligent because 
  > of their gender, race, religion. 
  
-#### Subtle and unintentional micro-aggressions 
+#### Repeated, subtle and unintentional micro-aggressions 
 Subtle acts of aggression refer to small, unintentionally harmful
-mistakes made in conversation. These are not necessarily a code of conduct 
+mistakes made in conversation. These acts are not necessarily a code of conduct 
 violation when made by mistake. 
 
-However, repeating something after it has 
-been pointed out to you that you broke a social rule, or antagonizing or 
-arguing with someone who has pointed out your micro-aggression is 
-considered unwelcoming behavior, and is not allowed in the pyOpenSci community.
+However, repeating something after it has been pointed out to you that you 
+broke a social rule, or antagonizing or arguing with someone who has pointed 
+out your micro-aggression is considered unwelcoming behavior, and is not 
+allowed in the pyOpenSci community.
 
 #### Maliciousness towards other community members
-Maliciousness towards other community members: deliberately attempting to make others feel bad, name-calling, singling out others for derision or exclusion. For example, telling someone they’re not a real programmer or that they don’t belong at pyOpenSci. If somebody makes such a statement without malice, they may still be in violation of the Code of Conduct if their actions are deemed especially/repeatedly unpleasant (see below).
+Maliciousness towards other community members: deliberately attempting to 
+make others feel bad, name-calling, singling out others for derision or 
+exclusion. For example, telling someone they’re not a real programmer or that 
+they don’t belong at pyOpenSci. If somebody makes such a statement without 
+malice, they may still be in violation of the Code of Conduct if their actions 
+are deemed especially/repeatedly unpleasant (see below).
 
-Being especially or repeatedly unpleasant: for example, if we’ve received reports from multiple pyOpenSci users, team members, or collaborators of agitating, rude, or especially distracting behavior over an extended period of time.
+Being especially or repeatedly unpleasant: for example, if we’ve received 
+reports from multiple pyOpenSci users, team members, or collaborators of 
+agitating, rude, or especially distracting behavior over an extended period of 
+time.
 
 
 ## Scope in which the pyOpenSci code of conduct is applied
@@ -119,17 +127,27 @@ If we verify unwelcome, but non-abusive behavior, we will have a
 conversation with the person about their behavior. The goal of the conversation will be to ensure that they understand the expectation that they not repeat the behavior or other behaviors that would violate the Code of Conduct a second time. 
 
 ### Response protocol steps
-The pyOpenSci Executive Director and the Executive Council will use the steps below to respond to reports of code of conduct violations.
+The pyOpenSci Executive Director and the Executive Council will use the steps 
+below to respond to reports of code of conduct violations.
 
-1. The report will be read carefully to determine whether there has been a code of conduct violation
+1. The report will be read carefully
 2. We will followup with the person who reported the violation 
-3. We will followup with the community member who violated the code of conduct 
+3. We will followup with the community member whose behavior was reported as violating the code of conduct 
+
+Based upon the above steps, we will to determine whether there has been a code 
+of conduct violation
 
 ## Reporting code of conduct violations
 
 If you see a violation of our code of conduct, [please report it to our 
-pyOpenSci Code of Conduct Stewards using this form.](https://forms.gle/7MR7tCpDuprtStWP9) This is a short Google Form that will be sent to 
-any Executive Council member acting as a Code of Conduct Steward (see below for details). Alternatively, if you wish to report to one of the Code of Conduct stewards specifically, email them directly.
+pyOpenSci Code of Conduct Stewards using this form.](https://forms.gle/7MR7tCpDuprtStWP9) 
+This is a short Google Form that will be sent to any Executive Council member 
+acting as a Code of Conduct Steward (see below for details). Alternatively, if 
+you wish to report to one of the Code of Conduct stewards specifically, email 
+them directly.
+
+### Current COC stewards:
+* Leah Wasser, Executive Director - pyOpenSci (EMAIL: leah at pyopensci.org)
 
 ###  Why should I report code of conduct violations?
 
