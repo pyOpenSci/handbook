@@ -90,7 +90,7 @@ media, or interact with each other in other communities.
 Abusive or unwelcoming behavior between community members still has a 
 profound impact on individuals and on the community when it happens beyond 
 our walls. The pyOpenSci code of conduct stewards will 
-use our discretion when deciding how to respond to reports of such behavior and how to proceed with enforcement which may include potentially remove someone from the pyOpenSci community. We will take into account the 
+use our discretion when deciding how to respond to reports of such behavior and how to proceed with enforcement which may include potentially removing someone from the pyOpenSci community. We will take into account the 
 impact on the individual community members involved as well as the impact 
 on the community at large.
 
