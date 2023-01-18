@@ -23,7 +23,7 @@ Anyone who participates in a pyOpenSci activity either online or in person is ex
 * in our Discourse online forum 
 * during in-person events, 
 * when representing pyOpenSci in public, 
-* or in any event online or in person where pyOpenSci is involved.  
+* or in any event online or in person where pyOpenSci is leading the event.  
 
 To make sure that everyone has a common understanding of “show respect and courtesy to each other,” we have adopted the following code of conduct. The code of conduct is enforced by the pyOpenSci Executive Director and the Advisory Council.
 
