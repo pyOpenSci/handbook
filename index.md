@@ -1,4 +1,4 @@
-# pyOpenSci Governance  
+# pyOpenSci Governance
 
 
 
@@ -8,13 +8,13 @@
 :::{grid-item}
 :columns: 4
 :class: sd-m-auto
-:::  
+:::
 
 :::{grid-item}
 :columns: 8
 :class: sd-fs-3
-This guide is designed to define the structure and processes 
-that support operations of pyOpenSci. 
+This guide is designed to define the structure and processes
+that support operations of pyOpenSci.
 
 % The SVG rendering breaks latex builds for the GitHub badge, so only include in HTML
 ```{only} html
@@ -37,7 +37,7 @@ that support operations of pyOpenSci.
 
 Code of conduct ✏️
 ^^^
-Our code of conduct applies to all members of the pyOpenSci community. And to those participating in pyOpenSci supported events. 
+Our code of conduct applies to all members of the pyOpenSci community. And to those participating in pyOpenSci supported events.
 :::
 
 :::{grid-item-card}
@@ -52,7 +52,7 @@ more
 :::
 
 :::{grid-item-card}
-:link: https://www.pyopensci.org/peer-review-guide/
+:link: https://www.pyopensci.org/software-peer-review/
 :class-header: bg-light
 
 See our peer review guide ✨
@@ -76,11 +76,11 @@ process step-by-step.
 
 
 ## Why pyOpenSci?
-pyOpenSci promotes open and reproducible research through peer-review of 
-scientific Python packages. We also build technical capacity by providing a 
-curated repository of high-quality packages and enabling scientists to write 
-and share their own software. We hope to foster a greater sense of community 
-among scientific Python users so that we can help each other become better 
+pyOpenSci promotes open and reproducible research through peer-review of
+scientific Python packages. We also build technical capacity by providing a
+curated repository of high-quality packages and enabling scientists to write
+and share their own software. We hope to foster a greater sense of community
+among scientific Python users so that we can help each other become better
 programmers and researchers.
 
 
