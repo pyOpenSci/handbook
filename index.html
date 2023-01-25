@@ -101,7 +101,14 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p aria-level="2" class="caption" role="heading">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   🏠 Home
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Organization Structure
  </span>
@@ -124,7 +131,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="CODE_OF_CONDUCT.html">
-   Code of conduct
+   Code of Conduct
   </a>
  </li>
 </ul>
@@ -134,6 +141,11 @@
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="CHANGELOG.html">
+   Governance Changelog
+  </a>
+ </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="reference/index.html">
    Meeting Notes Archive
@@ -144,100 +156,163 @@
    </i>
   </label>
   <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reference/meeting-notes/2021/2021-05-17-software-review-scipy-notes.html">
-     Meeting Notes 17 May 2021
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="reference/meeting-notes/2021/intro-2021.html">
+     2021 Notes
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2021/2021-05-17-software-review-scipy-notes.html">
+       Meeting Notes 17 May 2021
+      </a>
+     </li>
+    </ul>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reference/meeting-notes/2020/2020-02-28-notes.html">
-     pyOpenSci Meeting Notes - 28 Feb 2020
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="reference/meeting-notes/2020/intro-2020.html">
+     2020 Notes
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2020/2020-02-28-notes.html">
+       pyOpenSci Meeting Notes - 28 Feb 2020
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2020/2020-04-09-notes.html">
+       pyOpenSci Meeting Notes - 9 April 2020
+      </a>
+     </li>
+    </ul>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reference/meeting-notes/2020/2020-04-09-notes.html">
-     pyOpenSci Meeting Notes - 9 April 2020
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="reference/meeting-notes/2019/intro-2019.html">
+     2019 Notes
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2019/2019-01-11-notes.html">
+       PyOpenSci Meeting Notes - 11 Jan 2019
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2019/2019-01-31-notes.html">
+       PyOpenSci Meeting Notes - 31 Jan 2019
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2019/2019-03-06-notes.html">
+       pyOpenSci Meeting Notes - 6 March 2019
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2019/2019-03-14-joss-discussion-notes.html">
+       pyOpenSci meeting notes: 3-14-2019 JOSS / pyopensci Collaboration
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2019/2019-03-21-notes.html">
+       pyOpenSci Meeting Notes - 21 March 2019
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2019/2019-04-04-notes.html">
+       pyOpenSci Meeting Notes - 4 April 2019
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2019/2019-04-18-notes.html">
+       pyOpenSci Meeting Notes - 18 April 2019
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2019/2019-05-09-notes.html">
+       pyOpenSci Meeting Notes - 9 May 2019
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2019/2019-05-30-notes.html">
+       pyOpenSci Meeting Notes - 30 May 2019
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2019/2019-06-20-notes.html">
+       pyOpenSci Meeting Notes - 20 June 2019
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2019/2019-08-01-notes.html">
+       pyOpenSci Meeting Notes - 1 August 2019
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2019/2019-08-22-notes.html">
+       pyOpenSci Meeting Notes - 22 August 2019
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2019/2019-09-20-notes.html">
+       pyOpenSci Meeting Notes - 20 September
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2019/2019-10-03-notes.html">
+       pyOpenSci Meeting Notes - 3 October 2019
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2019/2019-10-24-notes.html">
+       pyOpenSci Meeting Notes - 24 october 2019
+      </a>
+     </li>
+    </ul>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reference/meeting-notes/2019/2019-01-31-notes.html">
-     PyOpenSci Meeting Notes - 31 Jan 2019
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="reference/meeting-notes/2018/intro-2018.html">
+     2018 Notes
     </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reference/meeting-notes/2019/2019-03-06-notes.html">
-     pyOpenSci Meeting Notes - 6 March 2019
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reference/meeting-notes/2019/2019-03-14-joss-discussion-notes.html">
-     pyOpenSci meeting notes: 3-14-2019 JOSS / pyopensci Collaboration
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reference/meeting-notes/2019/2019-04-04-notes.html">
-     pyOpenSci Meeting Notes - 4 April 2019
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reference/meeting-notes/2019/2019-04-18-notes.html">
-     pyOpenSci Meeting Notes - 18 April 2019
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reference/meeting-notes/2019/2019-05-09-notes.html">
-     pyOpenSci Meeting Notes - 9 May 2019
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reference/meeting-notes/2019/2019-05-30-notes.html">
-     pyOpenSci Meeting Notes - 30 May 2019
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reference/meeting-notes/2019/2019-06-20-notes.html">
-     pyOpenSci Meeting Notes - 20 June 2019
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reference/meeting-notes/2019/2019-08-01-notes.html">
-     pyOpenSci Meeting Notes - 1 August 2019
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reference/meeting-notes/2019/2019-08-22-notes.html">
-     pyOpenSci Meeting Notes - 22 August 2019
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reference/meeting-notes/2019/2019-09-20-notes.html">
-     pyOpenSci Meeting Notes - 20 September
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reference/meeting-notes/2019/2019-10-03-notes.html">
-     pyOpenSci Meeting Notes - 3 October 2019
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reference/meeting-notes/2018/2018-10-09-notes.html">
-     10 October 2018: JOSS / pyopensci Collaboration
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reference/meeting-notes/2018/2018-10-26-notes.html">
-     Meeting Notes - 26 Oct 2018
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reference/meeting-notes/2018/2018-11-16-notes.html">
-     Meeting Notes - 16 Nov 2018
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reference/meeting-notes/2018/2018-12-07-notes.html">
-     Meeting Notes - 7 Dec 2018
-    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2018/2018-10-09-notes.html">
+       10 October 2018: JOSS / pyopensci Collaboration
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2018/2018-10-26-notes.html">
+       Meeting Notes - 26 Oct 2018
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2018/2018-11-16-notes.html">
+       Meeting Notes - 16 Nov 2018
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="reference/meeting-notes/2018/2018-12-07-notes.html">
+       Meeting Notes - 7 Dec 2018
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -454,7 +529,7 @@ that support operations of pyOpenSci.</p>
 <div class="sd-card-body docutils">
 <p class="sd-card-text">Our code of conduct applies to all members of the pyOpenSci community. And to those participating in pyOpenSci supported events.</p>
 </div>
-<a class="sd-stretched-link reference external" href="../CODE_OF_CONDUCT.html"></a></div>
+<a class="sd-stretched-link reference internal" href="CODE_OF_CONDUCT.html"><span class="doc"></span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
