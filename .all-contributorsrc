@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "kcranston",
+      "name": "Karen Cranston",
+      "avatar_url": "https://avatars.githubusercontent.com/u/312034?v=4",
+      "profile": "https://karencranston.ca/",
+      "contributions": [
+        "code",
+        "design",
+        "review"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "governance",
+  "projectOwner": "pyOpenSci"
+}
