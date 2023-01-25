@@ -16,6 +16,17 @@
         "design",
         "review"
       ]
+    },
+    {
+      "login": "tracykteal",
+      "name": "Tracy Teal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/889238?v=4",
+      "profile": "https://github.com/tracykteal",
+      "contributions": [
+        "code",
+        "review",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
