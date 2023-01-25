@@ -1,7 +1,7 @@
 # Meeting Notes Archive
- 
+
 pyOpenSci began officially meeting in the fall of 2018. Below
-are the meeting notes from those early meetings. 
+are the meeting notes from those early meetings.
 
 
 ```{toctree}
@@ -46,7 +46,7 @@ meeting-notes/2019/2019-08-22-notes.md
 meeting-notes/2019/2019-09-20-notes.md
 meeting-notes/2019/2019-10-03-notes.md
 
-```    
+```
 
 ```{toctree}
 ---

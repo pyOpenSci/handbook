@@ -11,11 +11,11 @@
 
 
 ### Notes on Scope Categories
-- pyOpenSci is still developing as a community. If your scientific Python 
-package does not fit into one of the categories or if you have any other 
+- pyOpenSci is still developing as a community. If your scientific Python
+package does not fit into one of the categories or if you have any other
 questions, we'd encourage you to open a pre-submission inquiry. We're happy to help.
-- Data visualization packages come in many varieties, ranging from small 
-hyper-specific methods for one type of data to general, do-it-all packages 
-(e.g. matplotlib). pyOpenSci accepts packages that are somewhere in between the 
-two. If you're interested in submitting your data visualization package, please 
+- Data visualization packages come in many varieties, ranging from small
+hyper-specific methods for one type of data to general, do-it-all packages
+(e.g. matplotlib). pyOpenSci accepts packages that are somewhere in between the
+two. If you're interested in submitting your data visualization package, please
 open a pre-submission inquiry on first.

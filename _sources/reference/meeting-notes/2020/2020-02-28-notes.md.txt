@@ -25,9 +25,9 @@ What is our good enough requirement for documentation
 Current language in our dev guide:
 
 * MINIMUM: Some examples of how to use the functions
-* Better: Docstring generated 
+* Better: Docstring generated
 
- * Chris will email alison hill (r studio ) who gave a good talk on docs. 
+ * Chris will email alison hill (r studio ) who gave a good talk on docs.
  * Create a little survey on what people expect for documentation?
 
 JOSS REQUIREMENTS
@@ -42,16 +42,16 @@ New language below:
 
 **ok (required)**: all user facing functions (inputs and outputs) are documented both in the code and in the user-facing documentation.
 **better**: all user facing functions are documented with examples (in tutorials or doc strings)
-**best**: all user facing functions are documented and there is are tutorials (vignettes) that demonstrate example user workflows 
+**best**: all user facing functions are documented and there is are tutorials (vignettes) that demonstrate example user workflows
 
 
 
 ```
-README 
+README
 All packages should have a README.md in their root directory. The README should include, from top to bottom:
 
 The package name
-Badges for continuous integration and test coverage, the badge for pyOpenSci peer-review once it has started (see below), a repostatus.org badge, and any other badges. If the README has many more badges, you might want to consider using a table for badges, see this example, that one and that one. Such a table shoud be more wide than high.
+Badges for continuous integration and test coverage, the badge for pyOpenSci peer-review once it has started (see below), a repostatus.org badge, and any other badges. If the README has many more badges, you might want to consider using a table for badges, see this example, that one and that one. Such a table should be more wide than high.
 Short description of goals of package, with descriptive links to all vignettes (rendered, i.e. readable, cf the documentation website section) unless the package is small and there’s only one vignette repeating the README.
 Installation instructions
 Any additional setup required (authentication tokens, etc)
@@ -65,7 +65,7 @@ Good: README with name, description, installation instructions, and direction to
 Better/Best: All the above plus usage examples, citation information, and CI and/or test coverage badges.
 
 
-Documentation 
+Documentation
 All external package functions, classes, and methods should be fully documented with examples.
 
 Good/Better/Best:
@@ -80,12 +80,12 @@ Best (optional): Also consider automatically generated documentation from docstr
   * [Discourse discussion on Good, Better, Best](https://pyopensci.discourse.group/t/good-better-best-required-versus-recommended-changes-by-reviewers-your-feedback-is-requested/160)
 
 ### Reviews
-one created a google doc. i can see why this is useful but i may need to copy some of it into the issue just in case that doc ever disappears. in the future as the editor i should make sure that the text is in the issue itself. 
+one created a google doc. i can see why this is useful but i may need to copy some of it into the issue just in case that doc ever disappears. in the future as the editor i should make sure that the text is in the issue itself.
 
 ### Similarly, Testing - What if Tests Are Failing?
 
 * maybe this is a space for community feedback as well? what if tests fail? How much do we want to enforce test integrity?
-* expected to fail tests 
+* expected to fail tests
 
 
 ### Meeting time

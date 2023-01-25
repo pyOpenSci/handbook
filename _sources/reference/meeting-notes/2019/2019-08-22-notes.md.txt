@@ -1,7 +1,7 @@
 ---
 tags: pyopensci, python
 ---
-hackmd: https://hackmd.io/SnhLlLmgQlWIxcVWXpYsqQ?both 
+hackmd: https://hackmd.io/SnhLlLmgQlWIxcVWXpYsqQ?both
 
 *this note has been pushed to github in our governance dir. If you update it please push it via hackmd here meeting-notes/2019-08-22-notes.md *
 
@@ -23,24 +23,24 @@ David Nicholson
 1. Will anyone be at [pydata (New York)](https://pydata.org/nyc2019/)? @noamross had a few talk ideas but wanted to know if anyone from this team might be there. i will not. please let us know if you will be there!
     * offer noam resources to help build his talk and include pyopensci??
 1. Mechanisms to ensure the review process happens in a timely manner: How do we handle timing of things when people are busy? setup a chain of command where the person who may be overwhelmed with things on their plate, suggests alternative folks to step in?
-    * Maybe we can have something in writing for what happens when people don't have time to complete a review.  
+    * Maybe we can have something in writing for what happens when people don't have time to complete a review.
     * If it's the maintainer -- maybe we don't give them deadlines??
     * Tania -- Joss guidelines / expectations -- out of office bot??
-        * the bot will provide a message if you are not in the office... [editorial guide](https://joss.readthedocs.io/en/latest/editing.html#expectations-on-joss-editors) . -- 
+        * the bot will provide a message if you are not in the office... [editorial guide](https://joss.readthedocs.io/en/latest/editing.html#expectations-on-joss-editors) . --
         * let's check ropensci's timeline too?? https://devguide.ropensci.org/guide-for-authors.html
         * editor respond within 5 business days
         * reviewers -- within 3 weeks
-        * authors **respond** within 2 weeks 
+        * authors **respond** within 2 weeks
 * Tania -- sometimes changes can take a long time! (8 months even) -- note this was an exceptionally long time for a submission
-    * luiz -- sometimes the maintainer might need support / help to implement changes - some mentorship might be required 
+    * luiz -- sometimes the maintainer might need support / help to implement changes - some mentorship might be required
 3. getting caught up on items such as review that are behind (we have a few that are behind and a few new packages to discuss!!)
     * [Erdapy (Filipe)](https://github.com/pyOpenSci/software-review/issues/1)
-        * Leah will followup with 
-    * [Earthpy](https://github.com/pyOpenSci/software-review/issues/3) 
+        * Leah will followup with
+    * [Earthpy](https://github.com/pyOpenSci/software-review/issues/3)
         * - Important: the clip module is moving to geopandas now!!! yay!
-        * luiz will followup to get the review going - be it with two new reviewers or one or if people have time they can do the review. 
+        * luiz will followup to get the review going - be it with two new reviewers or one or if people have time they can do the review.
     * [one new submission - pandera](https://github.com/pyOpenSci/software-review/issues/12) (cosmicbboy)
-        * max -- max is happy to implement the first review  
+        * max -- max is happy to implement the first review
         * ivan -- ivan will followup --
     * [one new pre-submission: pyBHL](https://github.com/pyOpenSci/software-review/issues/13)
         * LUIZ: This is great!! because JOSS doesn't accept API wrappers
@@ -50,39 +50,39 @@ David Nicholson
 
    * FUNDING pyopensci (leah) -- [working draft of 2-3 pager]( https://docs.google.com/document/d/13S_HOGS89Zm1j257gC8Oja_Yol3j6xCp68Sr2Ln5MM0/edit)
 > [name=Chris H] I can help w/ this in the coming weeks. Do we have an ongoing conversation with Moore on this, or has it been a while since we've discussed with them? I've heard Moore may be stepping back from funding some of this stuff, so we may need to explore other sources
-> [name=Leah w] Sloan just approached me to review something so i'd be happy to explore both moore and sloan?? Tracy said moore might support this BUT that was ... gosh 6 months ago. maybe we can divide and conquer to decide?? 
-> 
-* ropensci unconference -- could we find sponsors for this ?? (max) - microsoft, rstudio ... 
-    * Tania -- microsoft reactors -- leah can email Tania -- san fransi 
-        * https://developer.microsoft.com/en-us/reactor/  
+> [name=Leah w] Sloan just approached me to review something so i'd be happy to explore both moore and sloan?? Tracy said moore might support this BUT that was ... gosh 6 months ago. maybe we can divide and conquer to decide??
+>
+* ropensci unconference -- could we find sponsors for this ?? (max) - microsoft, rstudio ...
+    * Tania -- microsoft reactors -- leah can email Tania -- san fransi
+        * https://developer.microsoft.com/en-us/reactor/ 
     * Ivan is at quansight -- they might be able to support an unconference as well...
- 
+
  Next steps
-     * work on that overview document -- 
-         * add discsusion of unconference event and outcomes and what suppport we would need, 
+     * work on that overview document --
+         * add discsusion of unconference event and outcomes and what support we would need,
           * what having 1-2 people full or part time would add to the effort..
-     * computational infrastructure, such as a GitHub pro level for organization, Zoom account etc. ?? 
-     
+     * computational infrastructure, such as a GitHub pro level for organization, Zoom account etc. ??
+
 8. wrap up items that were done / not done after the last meeting.
    * adding contributors to our docs like jupyter has (chris??)
 
-> [name=Chris H]I'm not sure where I put it, but I can't find my suggestion now. I'm wondering whether folks are interested in just using the [all contributors bot](https://allcontributors.org/docs/en/bot/installation) for this. It's a github bot that you can use to add people's images to the README (or the docs) 
+> [name=Chris H]I'm not sure where I put it, but I can't find my suggestion now. I'm wondering whether folks are interested in just using the [all contributors bot](https://allcontributors.org/docs/en/bot/installation) for this. It's a github bot that you can use to add people's images to the README (or the docs)
 
-> [name=Leah Wasser] i've used the bot! it's really nice but my experience was it didn't support ``.Rst` for docs. Chris -- did you find a way around that?? i'm happy to consider using it as it works really well otherwise. 
+> [name=Leah Wasser] i've used the bot! it's really nice but my experience was it didn't support ``.Rst` for docs. Chris -- did you find a way around that?? i'm happy to consider using it as it works really well otherwise.
 
 Does it work with markdown??
 
 - Looks like it does based on the commit history of their repo's README.md file: https://github.com/all-contributors/all-contributors/blob/master/README.md
 
-ISSUE HERE: https://github.com/pyOpenSci/pyopensci.github.io/issues/4 
+ISSUE HERE: https://github.com/pyOpenSci/pyopensci.github.io/issues/4
 
--- luiz can look into this! 
+-- luiz can look into this!
 
 
    * AGU?
-    
-> [name=Chris H] I'm around the Bay Area, so happy to stop by if I can be helpful for a session or something 
-> 
+
+> [name=Chris H] I'm around the Bay Area, so happy to stop by if I can be helpful for a session or something
+>
 ### Next Steps
 
 * Leah will followup on funding
@@ -90,8 +90,7 @@ ISSUE HERE: https://github.com/pyOpenSci/pyopensci.github.io/issues/4
     * Sloan (jeremy?)
     * add to 2-3 pager  text about the unconference event and what type of staff we'd like to have working on this
 
-* Luiz will look into the all-contrbutors bot to use in our repo to track who's contributing. 
+* Luiz will look into the all-contrbutors bot to use in our repo to track who's contributing.
 * Luiz will look for two new (potentially) reviewers for earthpy or will checkin with reviewers aout it...
-* We have two reviewers for pandera: max and ivan, leah will be the editor 
+* We have two reviewers for pandera: max and ivan, leah will be the editor
 * Followup on erdapy (leah can ping filipe)
-

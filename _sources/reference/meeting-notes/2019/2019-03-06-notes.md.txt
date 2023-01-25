@@ -31,7 +31,7 @@ Luiz: cookie cutter is a good start. we can iterate in the future as more people
 ## Dev Guide
 
 * not a lot of new features - link cleanup and the "good better best" options for package dev
-* package release guidelines for pypi
+* package release guidelines for PyPI
 
 2. Meeting with Joss next week!
 3. Review participant list -- anyone to add? who can contact whom on the list?
@@ -51,7 +51,7 @@ Luiz: cookie cutter is a good start. we can iterate in the future as more people
 
 rOpenSci:
 * once reviewed, the package CAN be transferred to ropensci repo (As an option)
-* they expect the submitter to maintain the package, but in some cases they provide some level of maintainence and support.
+* they expect the submitter to maintain the package, but in some cases they provide some level of maintenance and support.
     * example: if package breaks on cran, the maintainer is given 3 months to address the issue; if no response, rOpenSci steps in
     * Something to consider when targeting packages: can we maintain it if the maintainer is not available?
     * Potentially identify as second/backup maintainer

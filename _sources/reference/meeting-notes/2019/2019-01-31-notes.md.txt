@@ -43,7 +43,7 @@ https://hackmd.io/sLhsQOtoTCq7594xNapLWg#
 * Reproducibility: Tools to scientists ensure that their research is reproducible. E.g. version control, automated testing, or citation tools.
 * Geospatial: Packages focused on the retrieval, manipulation, and analysis of spatial data.
 * Education: Packages to aid with instruction.
-* Statistics/Machine Learning: Packages implementing established ML or statistics methods. Note that this does not include new methods, only implemntations of previously published algorithms/techniques.
+* Statistics/Machine Learning: Packages implementing established ML or statistics methods. Note that this does not include new methods, only implementations of previously published algorithms/techniques.
 
 Comments
 * Max: let's follow what ropensci is doing; ML may be hard to test (e.g. stochastic algorithms)
