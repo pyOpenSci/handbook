@@ -1,0 +1,49 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "kcranston",
+      "name": "Karen Cranston",
+      "avatar_url": "https://avatars.githubusercontent.com/u/312034?v=4",
+      "profile": "https://karencranston.ca/",
+      "contributions": [
+        "code",
+        "design",
+        "review"
+      ]
+    },
+    {
+      "login": "tracykteal",
+      "name": "Tracy Teal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/889238?v=4",
+      "profile": "https://github.com/tracykteal",
+      "contributions": [
+        "code",
+        "review",
+        "design"
+      ]
+    },
+    {
+      "login": "lwasser",
+      "name": "Leah Wasser",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7649194?v=4",
+      "profile": "http://www.leahwasser.com",
+      "contributions": [
+        "code",
+        "review",
+        "design"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "governance",
+  "projectOwner": "pyOpenSci"
+}
