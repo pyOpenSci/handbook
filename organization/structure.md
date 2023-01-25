@@ -18,7 +18,8 @@ The Executive Director (discussed below) is a voting member of the executive cou
 
 ### pyOpenSci advisory council
 
-[Click here to view current executive council members.](https://www.pyopensci.org/our-community/#pyopensci-working-advisory-committee)
+
+[Click here to view current advisory council members.](https://www.pyopensci.org/our-community/#pyopensci-advisory-council)
 
 The advisory council is comprised of leaders in the Python scientific
 open source ecosystem. This council advises the executive director
@@ -100,18 +101,18 @@ These decisions including but are not limited to:
 Volunteers on the editorial board will serve for 1-2 years.
 
 The editors oversee 3-4 packages a year.
-[editorial board can be found here.](https://www.pyopensci.org/contributing-guide/open-source-software-submissions/editors-guide.html)
+[editorial board can be found here.](https://www.pyopensci.org/about-peer-review/#our-editorial-board)
 
 ### Editor in Chief
 
 The Editor in Chief role is a rotating position
 that is held by someone on the editorial board. [More on this position can be
-found in the contributing guide here.](https://www.pyopensci.org/contributing-guide/open-source-software-submissions/editor-in-chief-guide.html).
+found in the contributing guide here.](https://www.pyopensci.org/software-peer-review/how-to/editor-in-chief-guide.html).
 
 ### Volunteer reviewers
 
 The review process is supported by volunteer reviewers.
-[More on the role of reviewers can be found in our peer review guide.](https://www.pyopensci.org/contributing-guide/open-source-software-submissions/reviewer-guide.html)
+[More on the role of reviewers can be found in our peer review guide.](https://www.pyopensci.org/software-peer-review/how-to/reviewer-guide.html)
 
 ## Fiscal sponsorship
 
