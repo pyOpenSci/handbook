@@ -5,7 +5,7 @@
 :::info
 - **Date:** Nov 1, 2030 2:30 PM (CET)
 - **Agenda**
-1. Sofware Review sync `10min`
+1. Software Review sync `10min`
 2. Editorial Board `20min`
   + domain area "buckets"
   + how to find editors for each "bucket"
@@ -18,7 +18,7 @@
 
 :::
 
-## Notes 
+## Notes
 <!-- Other important details discussed during the meeting can be entered here. -->
 1. softare review sync
  + devicely
@@ -28,7 +28,7 @@
    + LW: pymedphys -- actually a set of tools -  similar to astropy
  + some issues we should close  - close all of the old presumbissions
 2. editorial board
-  +  Lets start with Ivan, David and Leah 
+  +  Lets start with Ivan, David and Leah
   +  We might consider domain "buckets"
   + ROpenSci + JOSS like model
   + who do we want, how long do they serve
@@ -45,18 +45,18 @@
 ## SciPy Mentored Sprints (David) - Tania Allard
 * they are doing these springs at pycon
   * https://mentored-sprints.netlify.app/
-  * https://www.youtube.com/watch?v=SGUHyP8ki_Q 
-* could we use pyopensci maintainers to participate in the mentored sprints? 
+  * https://www.youtube.com/watch?v=SGUHyP8ki_Q
+* could we use pyopensci maintainers to participate in the mentored sprints?
     * Have them bring friends who can contribute to the sprints?
     * maintainers would need to identify things to fix
     * Then they would come to the sprint
     * Do they have to register for scipy?
     * sprints are run in discord
     * git help desk
-    * maintainers volunteer time to 
+    * maintainers volunteer time to
         * find issues ahead of time
         * work with people  who want to submit PRs
-        * ask them to do things that aren't code contributions like run through a tutorial and raise issues, etc. 
+        * ask them to do things that aren't code contributions like run through a tutorial and raise issues, etc.
     * Open science labs - they do hae training materials already in (spanish?)
 
 
@@ -69,4 +69,3 @@ Challenges with mentored sprints
 we will go to scipy and SPY
 
 ducky app for video chat?!
-
