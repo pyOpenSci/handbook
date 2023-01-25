@@ -32,7 +32,8 @@ that support operations of pyOpenSci.
 :gutter: 4
 
 :::{grid-item-card}
-:link: ../CODE_OF_CONDUCT.html
+:link: CODE_OF_CONDUCT
+:link-type: doc
 :class-header: bg-light
 
 Code of conduct ✏️
@@ -86,7 +87,7 @@ programmers and researchers.
 
 ```{toctree}
 :hidden:
-intro.md
+🏠 Home <self>
 ```
 
 ```{toctree}
@@ -96,13 +97,14 @@ intro.md
 organization/index.md
 organization/mission-values
 organization/structure
-Code of conduct <CODE_OF_CONDUCT.md>
+Code of Conduct <CODE_OF_CONDUCT.md>
 ```
 
 ```{toctree}
 :hidden:
 :caption: Reference information
 
+Governance Changelog <../CHANGELOG>
 reference/index.md
 
 ```
