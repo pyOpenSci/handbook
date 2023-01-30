@@ -1,7 +1,5 @@
 # pyOpenSci Governance
 
-
-
 ::::{grid} 2
 :reverse:
 
@@ -46,10 +44,21 @@ Our code of conduct applies to all members of the pyOpenSci community. And to th
 :link-type: doc
 :class-header: bg-light
 
-Our team ✨
+✨ Our Structure and Values ✨
 ^^^
 
-more
+Learn more about the governance structure of pyOpenSci.
+:::
+
+:::{grid-item-card}
+:link: ../reference/index.html
+:class-header: bg-light
+
+✨ Meeting Notes✨
+^^^
+
+These are notes taken during 2018-2021 - the early meetings when
+we were developing and founding pyOpenSci.
 :::
 
 :::{grid-item-card}
@@ -62,16 +71,7 @@ See our peer review guide ✨
 This guide will walk you through the editorial process.
 :::
 
-:::{grid-item-card}
-:link: ../reference/index.html
-:class-header: bg-light
 
-Early meeting notes archive ✨
-^^^
-
-Click here to read our reviewer guide which will walk you through the review
-process step-by-step.
-:::
 
 ::::
 
@@ -92,19 +92,21 @@ programmers and researchers.
 
 ```{toctree}
 :hidden:
-:caption: Organization Structure
+:caption: Mission, Leadership, Code of Conduct
 
-organization/index.md
-organization/mission-values
-organization/structure
+Our Structure & Values <organization/index>
+```
+
+```{toctree}
+:hidden:
+:caption: Mission, Leadership, Code of Conduct
+
 Code of Conduct <CODE_OF_CONDUCT.md>
 ```
 
 ```{toctree}
 :hidden:
-:caption: Reference information
+:caption: Mission, Leadership, Code of Conduct
 
-Governance Changelog <../CHANGELOG>
-reference/index.md
-
+Changelog <CHANGELOG.md>
 ```
