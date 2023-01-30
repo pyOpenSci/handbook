@@ -2,7 +2,7 @@
 
 ###### tags: `Meeting`
 
-:::info
+
 - **Date:** Nov 1, 2030 2:30 PM (CET)
 - **Agenda**
 1. Software Review sync `10min`
@@ -16,7 +16,6 @@
     - Ivan Ogasawara (OW)
     - David Nicholson (DN)
 
-:::
 
 ## Notes
 <!-- Other important details discussed during the meeting can be entered here. -->
