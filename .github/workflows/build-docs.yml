@@ -1,9 +1,10 @@
 name: Build Push github pages
 
 on:
+  pull_request:
   push:
     branches:
-      - '*'
+      - main
 
 jobs:
   build-book:
