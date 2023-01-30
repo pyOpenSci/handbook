@@ -1,0 +1,30 @@
+{
+    "creators": [
+      {
+        "affiliation": "pyOpenSci",
+        "name": "Wasser, Leah",
+        "orcid": "0000-0002-8177-6550"
+      },
+      {
+        "affiliation": "Posix",
+        "name": "Teal, Tracy"
+      },
+      {
+        "affiliation": "",
+        "name": "Cranston, Karen",
+        "orcid": "0000-0002-4798-9499"
+      }
+    ],
+    "keywords": [
+      "open source software",
+      "Python",
+      "open peer review",
+      "data science",
+      "open reproducible science",
+      "science",
+      "governance"
+    ],
+    "license": "CC-BY-SA-4.0",
+    "upload_type": "publication",
+    "publication_type": "book"
+  }
