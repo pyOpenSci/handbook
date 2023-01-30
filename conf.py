@@ -68,6 +68,10 @@ html_theme_options = {
     "twitter_url": "https://twitter.com/pyopensci",
 }
 
+html_theme_options["analytics"] = {
+    "google_analytics_id": "UA-141260825-1",
+}
+
 html_context = {
     "github_user": "pyopensci",
     "github_repo": "governance",
