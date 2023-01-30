@@ -60,6 +60,11 @@ html_theme_options = {
             "name": "Peer Review Guide",
         },
     ],
+    "logo": {
+        "text": "pyOpenSci Governance",
+        "image_dark": "logo.png",
+        "alt_text": "pyOpenSci Governance documentation. The pyOpenSci logo is blue and yellow following the Python logo",
+    },
     "header_links_before_dropdown": 4,
     "use_edit_page_button": True,
     "show_toc_level": 1,
@@ -113,7 +118,7 @@ exclude_patterns = [
 html_theme = 'pydata_sphinx_theme'
 html_static_path = ["_static"]
 html_title = "pyOpenSci Governance"
-html_logo = "images/logo/logo.png"
+html_logo = "_static/logo.png"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

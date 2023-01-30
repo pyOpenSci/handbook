@@ -32,7 +32,6 @@ that support operations of pyOpenSci.
 :::{grid-item-card}
 :link: CODE_OF_CONDUCT
 :link-type: doc
-:class-header: bg-light
 
 Code of conduct ✏️
 ^^^
@@ -42,7 +41,6 @@ Our code of conduct applies to all members of the pyOpenSci community. And to th
 :::{grid-item-card}
 :link: organization/index
 :link-type: doc
-:class-header: bg-light
 
 ✨ Our Structure and Values ✨
 ^^^
@@ -52,7 +50,6 @@ Learn more about the governance structure of pyOpenSci.
 
 :::{grid-item-card}
 :link: ../reference/index.html
-:class-header: bg-light
 
 ✨ Meeting Notes✨
 ^^^
@@ -63,7 +60,6 @@ we were developing and founding pyOpenSci.
 
 :::{grid-item-card}
 :link: https://www.pyopensci.org/software-peer-review/
-:class-header: bg-light
 
 See our peer review guide ✨
 ^^^
