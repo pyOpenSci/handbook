@@ -19,7 +19,7 @@ and guidelines that help create such a community.
 Anyone who participates in a pyOpenSci activity either online or in person is expected to show respect and courtesy to others in all interactions. These interactions may occur in a variety of locations including:
 
 * in GitHub repositories
-* in our Slack channel## v 0.2
+* in our Slack channel
 * in our Discourse online forum
 * during in-person events,
 * when representing pyOpenSci in public,
