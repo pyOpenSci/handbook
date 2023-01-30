@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'governance'
-copyright = '2022, pyOpenSci'
-author = 'Leah Wasser'
+copyright = '2023, pyOpenSci'
+author = 'pyOpenSci'
 
 # The full version, including alpha/beta/rc tags
 release = '0.1'
@@ -43,18 +43,46 @@ myst_enable_extensions = ["colon_fence"]
 
 
 # Link to our repo for easy PR/ editing
+
 html_theme_options = {
-    "repository_url": "https://github.com/pyopensci/governance",
-    "use_repository_button": True,
-    "google_analytics_id": "UA-141260825-1",
+    "announcement": "<p><a href='https://www.pyopensci.org/software-peer-review/about/intro.html'>Submit Your Python Package for Peer Review - Learn More!</a></p>",
     "external_links": [
-      {"name": "link-one-name", "url": "https://pyopensci.org"},
-      {"name": "link-two-name", "url": "https://pyopensci.org"}
-  ],
-  "announcement": "🚧 UNDER CONSTRUCTION: this guide is under heavy construction right now. 🚧"
+        {
+            "url": "https://www.pyopensci.org",
+            "name": "pyOpenSci Website",
+        },
+        {
+            "url": "https://www.pyopensci.org/python-package-guide",
+            "name": "Packaging Guide",
+        },
+        {
+            "url": "https://pyopensci.org/python-package-guide",
+            "name": "Peer Review Guide",
+        },
+    ],
+    "header_links_before_dropdown": 4,
+    "use_edit_page_button": True,
+    "show_toc_level": 1,
+    "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
+    "github_url": "https://github.com/pyopensci/governance",
+    "twitter_url": "https://twitter.com/pyopensci",
 }
 
+html_context = {
+    "github_user": "pyopensci",
+    "github_repo": "governance",
+    "github_version": "main",
+}
 
+#     "repository_url": "https://github.com/pyopensci/governance",
+#     "use_repository_button": True,
+#     "google_analytics_id": "UA-141260825-1",
+#     "external_links": [
+#       {"name": "link-one-name", "url": "https://pyopensci.org"},
+#       {"name": "link-two-name", "url": "https://pyopensci.org"}
+#   ],
+#   "announcement": "✨ <a href="https://www.pyopensci.org/software-peer-review/about/intro.html">Learn more about our peer review process</a> ✨"
+# }
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -78,7 +106,7 @@ exclude_patterns = [
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_book_theme'
+html_theme = 'pydata_sphinx_theme'
 html_static_path = ["_static"]
 html_title = "pyOpenSci Governance"
 html_logo = "images/logo/logo.png"

@@ -1,5 +1,4 @@
-#ipython
-sphinx-book-theme
+pydata-sphinx-theme
 myst-parser[linkify]
 myst-nb
 sphinx

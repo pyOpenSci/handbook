@@ -11,7 +11,7 @@ traditionally marginalized / underrepresented groups. We want every member of
 our community to thrive; we want to make a positive impact on our community
 members' work and on the work of others.
 
-### What this code of conduct defines
+## What this code of conduct defines
 
 Our Code of Conduct defines expected behavior
 and guidelines that help create such a community.
@@ -19,7 +19,7 @@ and guidelines that help create such a community.
 Anyone who participates in a pyOpenSci activity either online or in person is expected to show respect and courtesy to others in all interactions. These interactions may occur in a variety of locations including:
 
 * in GitHub repositories
-* in our Slack channel
+* in our Slack channel## v 0.2
 * in our Discourse online forum
 * during in-person events,
 * when representing pyOpenSci in public,
@@ -145,15 +145,15 @@ you wish to report to one of the Code of Conduct stewards specifically, email
 them directly.
 
 ### Current COC stewards:
-You can email the entire CIC steward committee at:
+You can email the entire COC steward committee at:
 
 coc at pyopensci.org
 
-Or you <canvas></canvas> directly contact one of us below:
+Or you can directly contact one of us below:
 
-* Leah Wasser, Executive Director - pyOpenSci (EMAIL: leah at pyopensci.org)
+* Leah Wasser, pyOpenSci Executive Director (EMAIL: leah at pyopensci.org)
+* Ivan Ogasawara, pyOpenSci Advisory Council Member (ivan.ogasawara at gmail.com)
 
-Note: we plan to add additional people to this stewardship committee.
 
 ###  Why should I report code of conduct violations?
 
