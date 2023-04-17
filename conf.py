@@ -17,12 +17,12 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'governance'
-copyright = '2023, pyOpenSci'
-author = 'pyOpenSci'
+project = "governance"
+copyright = "2023, pyOpenSci"
+author = "pyOpenSci"
 
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+release = "0.1"
 
 
 # -- General configuration ---------------------------------------------------
@@ -35,7 +35,7 @@ extensions = [
     # "myst_parser",
     "sphinx_design",
     "sphinx_copybutton",
-    "sphinx.ext.intersphinx"
+    "sphinx.ext.intersphinx",
 ]
 
 # colon fence for card support in md
@@ -61,9 +61,10 @@ html_theme_options = {
         },
     ],
     "logo": {
-        "text": "pyOpenSci Governance",
-        "image_dark": "logo.png",
-        "alt_text": "pyOpenSci Governance documentation. The pyOpenSci logo is blue and yellow following the Python logo",
+        "text": "Governance",
+        "image_dark": "logo-dark-mode.png",
+        "image_light": "logo-light-mode.png",
+        "alt_text": "pyOpenSci Governance documentation. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower",
     },
     "header_links_before_dropdown": 4,
     "use_edit_page_button": True,
@@ -95,7 +96,7 @@ html_context = {
 # }
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ["_templates"]
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -107,8 +108,8 @@ exclude_patterns = [
     ".github",
     ".nox",
     "README.md",
-    "reference/2018-2020-orig-meeting-notes"
-    ]
+    "reference/2018-2020-orig-meeting-notes",
+]
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -116,7 +117,7 @@ exclude_patterns = [
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'pydata_sphinx_theme'
+html_theme = "pydata_sphinx_theme"
 html_static_path = ["_static"]
 html_title = "pyOpenSci Governance"
 html_logo = "_static/logo.png"
@@ -124,4 +125,4 @@ html_logo = "_static/logo.png"
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ["_static"]
