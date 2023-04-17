@@ -14,10 +14,9 @@ The Executive Council defines and steers the high-level
 mission, vision and values of pyOpenSci. It also sets the strategic direction and vision for the organization.
 The Executive Director (discussed below) is a voting member of the executive council.
 
-[Click here to view current executive council members](https://www.pyopensci.org/our-community/#external-advisory-committee--leadership)
+[Click here to view current executive council members](https://www.pyopensci.org/our-community/#executive-council--leadership)
 
 ### pyOpenSci advisory council
-
 
 [Click here to view current advisory council members.](https://www.pyopensci.org/our-community/#pyopensci-advisory-council)
 
@@ -25,10 +24,10 @@ The advisory council is comprised of leaders in the Python scientific
 open source ecosystem. This council advises the executive director
 in both organization level and day to day decision making around
 
-* Python packaging guidelines
-* Peer review processes and guidelines
-* Program development that supports pyOpenSci's mission
-* Community engagement
+- Python packaging guidelines
+- Peer review processes and guidelines
+- Program development that supports pyOpenSci's mission
+- Community engagement
 
 Most of the communication supporting advisory council activities
 happens in the pyOpenSci slack. The executive director will also
@@ -38,33 +37,35 @@ on high level goals of pyOpenSci programs.
 ## Staff roles within the organization
 
 ### Executive Director
+
 The Executive Director creates and oversees the execution of the mission and
 strategy of pyOpenSci supported by the Advisory Committee. The Executive Director
 also:
 
-* is the the primary interface to the organization's fiscal sponsor;
-* coordinates day to day activities
-* develops programs that drive the organizations mission
-* oversees staff and volunteers
-* makes tie-breaking decisions if they are at an impasse in decision-making.
+- is the the primary interface to the organization's fiscal sponsor;
+- coordinates day to day activities
+- develops programs that drive the organizations mission
+- oversees staff and volunteers
+- makes tie-breaking decisions if they are at an impasse in decision-making.
 
- The Executive Director reports to the Advisory Committee.
+The Executive Director reports to the Advisory Committee.
 
- In the early stages of the organization's development the Executive Director
- will take on other responsibilities including:
+In the early stages of the organization's development the Executive Director
+will take on other responsibilities including:
 
- *  Managing the community in Slack and twitter
- *  Serving as the defacto Software Peer Review Lead (below) until that position is funded.
+- Managing the community in Slack and twitter
+- Serving as the defacto Software Peer Review Lead (below) until that position is funded.
 
- ### Community manager
- The Community Manager is a future position to be created within the pyOpenSci
- organization. This position will:
+### Community manager
 
- * Oversee social media communications
- * Create strategic communication plans
- * Write and oversee writing of blogs
- * Manage website content
- * Support communications within our online communication platforms (e.g. Slack, discourse, etc)
+The Community Manager is a future position to be created within the pyOpenSci
+organization. This position will:
+
+- Oversee social media communications
+- Create strategic communication plans
+- Write and oversee writing of blogs
+- Manage website content
+- Support communications within our online communication platforms (e.g. Slack, discourse, etc)
 
 The Community Manager is a paid position in the pyOpenSci organization.
 
@@ -79,8 +80,9 @@ The peer review process is driven by several roles and groups:
 ### Software review lead
 
 This role is responsible for overseeing the entire software review process. They are responsible for:
-* ensuring a diverse and active editorial board infrastructure development to support  peer review
-* Maintaining the contributing guide
+
+- ensuring a diverse and active editorial board infrastructure development to support peer review
+- Maintaining the contributing guide
 
 This role will also help manage conflict if it arises in the peer review process.
 
@@ -93,10 +95,10 @@ advocates for open source software peer review. This
 group helps pyOpenSci make decisions about it's open peer review process.
 These decisions including but are not limited to:
 
-* Decisions about the scope of packages accepted into the ecosystem
-* Decisions about how we enforce / support ongoing maintenance of accepted packages.
-* Decisions about how we test for, evaluate and report package quality and health.
-* Metrics that we collect surrounding the peer review process
+- Decisions about the scope of packages accepted into the ecosystem
+- Decisions about how we enforce / support ongoing maintenance of accepted packages.
+- Decisions about how we test for, evaluate and report package quality and health.
+- Metrics that we collect surrounding the peer review process
 
 Volunteers on the editorial board will serve for 1-2 years.
 
