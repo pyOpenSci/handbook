@@ -15,6 +15,7 @@ This guide is designed to define the structure and processes
 that support operations of pyOpenSci.
 
 % The SVG rendering breaks latex builds for the GitHub badge, so only include in HTML
+
 ```{only} html
 <!-- [![](https://img.shields.io/github/stars/pyopensci/contributing-guide?style=social)](https://github.com/pyopensci/contributing-guide)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7101778.svg)](https://doi.org/10.5281/zenodo.7101778) -->
@@ -23,9 +24,10 @@ that support operations of pyOpenSci.
 :::
 
 ::::
+
 <!-- I think this is the end of the header - below begins the next grid-->
 
-::::{grid} 1 1 2 2
+::::{grid} 1 1 3 3
 :class-container: text-center
 :gutter: 4
 
@@ -33,9 +35,19 @@ that support operations of pyOpenSci.
 :link: CODE_OF_CONDUCT
 :link-type: doc
 
-Code of conduct ✏️
+Code of Conduct ✏️
 ^^^
 Our code of conduct applies to all members of the pyOpenSci community. And to those participating in pyOpenSci supported events.
+:::
+
+:::{grid-item-card}
+:link: CONTRIBUTING
+:link-type: doc
+
+Contributing Guide ✏️
+^^^
+Our contributing guide applicable to all repositories in our pyOpenSci GitHub organization. You can find specific resources for
+local development builds of content in individual pyOpenSci repositories.
 :::
 
 :::{grid-item-card}
@@ -49,7 +61,7 @@ Learn more about the governance structure of pyOpenSci.
 :::
 
 :::{grid-item-card}
-:link: ../reference/index.html
+:link: reference/index.html
 
 ✨ Meeting Notes✨
 ^^^
@@ -67,19 +79,16 @@ See our peer review guide ✨
 This guide will walk you through the editorial process.
 :::
 
-
-
 ::::
 
-
 ## Why pyOpenSci?
+
 pyOpenSci promotes open and reproducible research through peer-review of
 scientific Python packages. We also build technical capacity by providing a
 curated repository of high-quality packages and enabling scientists to write
 and share their own software. We hope to foster a greater sense of community
 among scientific Python users so that we can help each other become better
 programmers and researchers.
-
 
 ```{toctree}
 :hidden:
@@ -102,7 +111,8 @@ Code of Conduct <CODE_OF_CONDUCT.md>
 
 ```{toctree}
 :hidden:
-:caption: Mission, Leadership, Code of Conduct
+:caption: Contributing
 
+Contributing <CONTRIBUTING.md>
 Changelog <CHANGELOG.md>
 ```
