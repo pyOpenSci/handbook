@@ -61,7 +61,7 @@ Learn more about the governance structure of pyOpenSci.
 :::
 
 :::{grid-item-card}
-:link: ../reference/index.html
+:link: reference/index.html
 
 ✨ Meeting Notes✨
 ^^^
