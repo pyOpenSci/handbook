@@ -114,7 +114,11 @@ browser to see the docs update as you make updates to files.
 ### CircleCI Previews
 
 Each book is setup with a GitHub action redirect that will take you to a online
-build of the current pull request in CircleCI.
+build of the current pull request in CircleCI. To view the build, click on
+the GitHub action after it's run at the bottom of your pull request. It will
+take you directly to circle ci. The home page of the guidebook will be called:
+
+output/index.html
 
 ### Website build
 
