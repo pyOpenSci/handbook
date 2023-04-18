@@ -113,6 +113,9 @@ browser to see the docs update as you make updates to files.
 
 ### CircleCI Previews
 
+Each book is setup with a GitHub action redirect that will take you to a online
+build of the current pull request in CircleCI.
+
 ### Website build
 
 Our website is a `jekyll`/`markdown` driven site. Thus, you will need to install `ruby`, and the gems needed to build the website following the contributing guide in our pyopensci.github.io repository.
