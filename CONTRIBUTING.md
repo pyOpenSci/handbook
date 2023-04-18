@@ -25,17 +25,6 @@ GitHub organization](https://github.com/pyopensci).
 3. If you submit a pull request please be sure to use a branch in your fork. Do not use the `main` branch from your fork to submit a pull request.
 4. Please try to spell check and editor pull requests before opening them in our repository. This will save us time when reviewing your suggested change(s)!
 
-## Instructions for local development
-
-Some of our online content may need to be built locally.
-On this general contributing guidelines page, you will only find general contribution guidelines. Each repository contains instructions for local development setup
-in the `CONTRIBUTING.md` file for that specific repository.
-
-For instance, our peer review and python packaging guidebook are built using the `pydata_sphinx_theme`. We have created builds
-for those repositories using `nox`.
-
-Our website is a `jekyll`/`markdown` driven site. Thus, you will need to install `ruby`, and the gems needed to build the website following the contributing guide in our pyopensci.github.io repository.
-
 ## Contributor attributions
 
 We welcome and value contributions of all kinds. Some ways that
@@ -70,3 +59,62 @@ Every time we make a release, everyone who has made a commit to the repository s
 
 > **Note**: These policies may be adapted or changed to
 > accommodate the growth of our organization and the preferences of our community over time.
+
+## Instructions for local development
+
+Some of our online content may need to be built locally.
+On this general contributing guidelines page, you will only find general contribution guidelines. Each repository contains instructions for local development setup
+in the `CONTRIBUTING.md` file for that specific repository.
+
+### Development guide our guidebooks
+
+This repo (governance), our peer review guide and python packaging guidebook are built using the `pydata_sphinx_theme`. We have created builds
+for those repositories using `nox`.
+
+If you wish to contribute by working on the guide book locally, you
+will first need to
+
+1. Fork this repository
+2. Clone it locally
+3. Build the documentation locally
+
+## Instructions for building the documentation locally on your computer
+
+The easiest way to build the documentation in this repository is to use `nox`,
+a tool for quickly building environments and running commands within them.
+Nox ensures that your environment has all the dependencies needed to build the documentation.
+
+If you plan to submit a pull request with changes to the guide, you can chose to submit a pr and view the associated build online in Circle CI. Or you can choose to build the documentation locally to test a pull request.
+
+To build locally, follow these steps:
+
+1. Install `nox` into the environment where you plan to work. Nox will create a virtual environment that you can use to build the docs.
+
+   ```
+   pip install nox
+   ```
+
+This should create a local environment in a `.nox` folder, build the documentation (as specified in the `noxfile.py` configuration), and the output will be in `_build/html`.
+
+2. Once nox is installed, you can build the documentation. You have two options, to build the documentation once and look at the output in a browser use:
+
+   ```
+   nox -s docs
+   ```
+
+To build live documentation that updates when you update local files, run::
+
+    ```
+    nox -s docs-live
+    ```
+
+The docs-live command will provide ou with a url that you can enter into your
+browser to see the docs update as you make updates to files.
+
+### Website build
+
+Our website is a `jekyll`/`markdown` driven site. Thus, you will need to install `ruby`, and the gems needed to build the website following the contributing guide in our pyopensci.github.io repository.
+
+```
+
+```
