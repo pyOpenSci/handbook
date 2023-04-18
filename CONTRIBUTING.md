@@ -108,8 +108,10 @@ To build live documentation that updates when you update local files, run::
     nox -s docs-live
     ```
 
-The docs-live command will provide ou with a url that you can enter into your
+The `docs-live` command will provide ou with a url that you can enter into your
 browser to see the docs update as you make updates to files.
+
+### CircleCI Previews
 
 ### Website build
 
