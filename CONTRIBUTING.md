@@ -118,7 +118,7 @@ build of the current pull request in CircleCI. To view the build, click on
 the GitHub action after it's run at the bottom of your pull request. It will
 take you directly to circle ci. The home page of the guidebook will be called:
 
-output/index.html
+`output/index.html`
 
 ### Website build
 
