@@ -515,15 +515,6 @@ GitHub organization</a>.</p>
 <li><p>Please try to spell check and editor pull requests before opening them in our repository. This will save us time when reviewing your suggested change(s)!</p></li>
 </ol>
 </section>
-<section id="instructions-for-local-development">
-<h2>Instructions for local development<a class="headerlink" href="#instructions-for-local-development" title="Permalink to this heading">#</a></h2>
-<p>Some of our online content may need to be built locally.
-On this general contributing guidelines page, you will only find general contribution guidelines. Each repository contains instructions for local development setup
-in the <code class="docutils literal notranslate"><span class="pre">CONTRIBUTING.md</span></code> file for that specific repository.</p>
-<p>For instance, our peer review and python packaging guidebook are built using the <code class="docutils literal notranslate"><span class="pre">pydata_sphinx_theme</span></code>. We have created builds
-for those repositories using <code class="docutils literal notranslate"><span class="pre">nox</span></code>.</p>
-<p>Our website is a <code class="docutils literal notranslate"><span class="pre">jekyll</span></code>/<code class="docutils literal notranslate"><span class="pre">markdown</span></code> driven site. Thus, you will need to install <code class="docutils literal notranslate"><span class="pre">ruby</span></code>, and the gems needed to build the website following the contributing guide in our pyopensci.github.io repository.</p>
-</section>
 <section id="contributor-attributions">
 <h2>Contributor attributions<a class="headerlink" href="#contributor-attributions" title="Permalink to this heading">#</a></h2>
 <p>We welcome and value contributions of all kinds. Some ways that
@@ -555,6 +546,67 @@ Zenodo DOI. As such, we periodically update authorship for those documents prior
 <div><p><strong>Note</strong>: These policies may be adapted or changed to
 accommodate the growth of our organization and the preferences of our community over time.</p>
 </div></blockquote>
+</section>
+<section id="instructions-for-local-development">
+<h2>Instructions for local development<a class="headerlink" href="#instructions-for-local-development" title="Permalink to this heading">#</a></h2>
+<p>Some of our online content may need to be built locally.
+On this general contributing guidelines page, you will only find general contribution guidelines. Each repository contains instructions for local development setup
+in the <code class="docutils literal notranslate"><span class="pre">CONTRIBUTING.md</span></code> file for that specific repository.</p>
+<section id="development-guide-our-guidebooks">
+<h3>Development guide our guidebooks<a class="headerlink" href="#development-guide-our-guidebooks" title="Permalink to this heading">#</a></h3>
+<p>This repo (governance), our peer review guide and python packaging guidebook are built using the <code class="docutils literal notranslate"><span class="pre">pydata_sphinx_theme</span></code>. We have created builds
+for those repositories using <code class="docutils literal notranslate"><span class="pre">nox</span></code>.</p>
+<p>If you wish to contribute by working on the guide book locally, you
+will first need to</p>
+<ol class="arabic simple">
+<li><p>Fork this repository</p></li>
+<li><p>Clone it locally</p></li>
+<li><p>Build the documentation locally</p></li>
+</ol>
+</section>
+</section>
+<section id="instructions-for-building-the-documentation-locally-on-your-computer">
+<h2>Instructions for building the documentation locally on your computer<a class="headerlink" href="#instructions-for-building-the-documentation-locally-on-your-computer" title="Permalink to this heading">#</a></h2>
+<p>The easiest way to build the documentation in this repository is to use <code class="docutils literal notranslate"><span class="pre">nox</span></code>,
+a tool for quickly building environments and running commands within them.
+Nox ensures that your environment has all the dependencies needed to build the documentation.</p>
+<p>If you plan to submit a pull request with changes to the guide, you can chose to submit a pr and view the associated build online in Circle CI. Or you can choose to build the documentation locally to test a pull request.</p>
+<p>To build locally, follow these steps:</p>
+<ol class="arabic">
+<li><p>Install <code class="docutils literal notranslate"><span class="pre">nox</span></code> into the environment where you plan to work. Nox will create a virtual environment that you can use to build the docs.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">nox</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>This should create a local environment in a <code class="docutils literal notranslate"><span class="pre">.nox</span></code> folder, build the documentation (as specified in the <code class="docutils literal notranslate"><span class="pre">noxfile.py</span></code> configuration), and the output will be in <code class="docutils literal notranslate"><span class="pre">_build/html</span></code>.</p>
+<ol class="arabic" start="2">
+<li><p>Once nox is installed, you can build the documentation. You have two options, to build the documentation once and look at the output in a browser use:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nox</span> <span class="o">-</span><span class="n">s</span> <span class="n">docs</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>To build live documentation that updates when you update local files, run::</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>```
+nox -s docs-live
+```
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">docs-live</span></code> command will provide ou with a url that you can enter into your
+browser to see the docs update as you make updates to files.</p>
+<section id="circleci-previews">
+<h3>CircleCI Previews<a class="headerlink" href="#circleci-previews" title="Permalink to this heading">#</a></h3>
+<p>Each book is setup with a GitHub action redirect that will take you to a online
+build of the current pull request in CircleCI.</p>
+</section>
+<section id="website-build">
+<h3>Website build<a class="headerlink" href="#website-build" title="Permalink to this heading">#</a></h3>
+<p>Our website is a <code class="docutils literal notranslate"><span class="pre">jekyll</span></code>/<code class="docutils literal notranslate"><span class="pre">markdown</span></code> driven site. Thus, you will need to install <code class="docutils literal notranslate"><span class="pre">ruby</span></code>, and the gems needed to build the website following the contributing guide in our pyopensci.github.io repository.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</section>
 </section>
 </section>
 
@@ -606,9 +658,17 @@ accommodate the growth of our organization and the preferences of our community 
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#high-level-guidelines">High level guidelines</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-local-development">Instructions for local development</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributor-attributions">Contributor attributions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributor-authorship">Contributor authorship</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-local-development">Instructions for local development</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#development-guide-our-guidebooks">Development guide our guidebooks</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-building-the-documentation-locally-on-your-computer">Instructions for building the documentation locally on your computer</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circleci-previews">CircleCI Previews</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#website-build">Website build</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
