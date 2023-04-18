@@ -598,7 +598,15 @@ browser to see the docs update as you make updates to files.</p>
 <section id="circleci-previews">
 <h3>CircleCI Previews<a class="headerlink" href="#circleci-previews" title="Permalink to this heading">#</a></h3>
 <p>Each book is setup with a GitHub action redirect that will take you to a online
-build of the current pull request in CircleCI.</p>
+build of the current pull request in CircleCI. To view the build:</p>
+<ul class="simple">
+<li><p>Click on the GitHub action called <code class="docutils literal notranslate"><span class="pre">ci/circleci:</span> <span class="pre">build_book</span></code> after it has run at the bottom of your pull request. This will
+take you directly to CircleCi.</p></li>
+<li><p>Once in CircleCi, click on the artifacts tab. The home page of the guidebook will be called:</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">output/index.html</span></code></p>
+<p>Click on that item to view the built online version of the guidebook in your
+browser.</p>
 </section>
 <section id="website-build">
 <h3>Website build<a class="headerlink" href="#website-build" title="Permalink to this heading">#</a></h3>
