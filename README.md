@@ -64,7 +64,7 @@ To build live documentation that updates when you update local files, run the fo
 ```console
 $ nox -s docs-live
 ```
-
+The governance page should automatically open in a new browser window. If it does not, check your terminal for the text "Serving on http://XXX.X.X.X:XXXX". The HTTP address is a link that you can click (or copy and paste into your browser) in order to open the governance page for live editing.
 
 ## Contributing to this guide
 
