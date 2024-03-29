@@ -82,7 +82,7 @@ html_theme_options = {
             "name": "Packaging Guide",
         },
         {
-            "url": "https://pyopensci.org/python-package-guide",
+            "url": "https://pyopensci.org/peer-review-guide",
             "name": "Peer Review Guide",
         },
     ],
@@ -137,7 +137,7 @@ exclude_patterns = [
 ]
 
 # For sitemap generation
-html_baseurl = "https://www.pyopensci.org/python-package-guide/"
+html_baseurl = "https://www.pyopensci.org/governance/"
 sitemap_url_scheme = "{link}"
 
 # -- Options for HTML output -------------------------------------------------
