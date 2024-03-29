@@ -14,16 +14,29 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+from datetime import datetime
+import subprocess
+
+current_year = datetime.now().year
+organization_name = "pyOpenSci"
 
 # -- Project information -----------------------------------------------------
 
-project = "governance"
-copyright = "2023, pyOpenSci"
+project = "pyOpenSci Handbook"
+copyright = f"{current_year}, {organization_name}"
 author = "pyOpenSci"
 
-# The full version, including alpha/beta/rc tags
-release = "0.1"
+# Get the latest Git tag - there might be a prettier way to do this but...
+try:
+    release_value = (
+        subprocess.check_output(["git", "describe", "--tags"]).decode("utf-8").strip()
+    )
+    release_value = release_value[:4]
+except subprocess.CalledProcessError:
+    release_value = "0.1"  # Default value in case there's no tag
 
+# Update the release value
+release = release_value
 
 # -- General configuration ---------------------------------------------------
 
@@ -32,17 +45,30 @@ release = "0.1"
 # ones.
 extensions = [
     "myst_nb",
-    # "myst_parser",
     "sphinx_design",
     "sphinx_copybutton",
     "sphinx.ext.intersphinx",
+    "sphinx.ext.todo",
+    "sphinx_sitemap",
+    "sphinxext.opengraph",
+    "sphinx_favicon",
 ]
 
 # colon fence for card support in md
-myst_enable_extensions = ["colon_fence"]
+myst_enable_extensions = [
+    "colon_fence",
+    "deflist",
+    "attrs_block",
+]
 
+myst_heading_anchors = 3
+# Link to our repo
 
-# Link to our repo for easy PR/ editing
+# Sphinx_favicon is used now in favor of built in support
+# https://pypi.org/project/sphinx-favicon/
+favicons = [
+    {"href": "https://www.pyopensci.org/images/favicon.ico"},
+]
 
 html_theme_options = {
     "announcement": "<p><a href='https://www.pyopensci.org/software-peer-review/about/intro.html'>Submit Your Python Package for Peer Review - Learn More!</a></p>",
@@ -56,44 +82,43 @@ html_theme_options = {
             "name": "Packaging Guide",
         },
         {
-            "url": "https://pyopensci.org/python-package-guide",
+            "url": "https://pyopensci.org/peer-review-guide",
             "name": "Peer Review Guide",
+        },
+    ],
+    "icon_links": [
+        {
+            "name": "Mastodon",
+            "url": "https://fosstodon.org/@pyOpenSci",
+            "icon": "fa-brands fa-mastodon",
         },
     ],
     "logo": {
         "text": "Governance",
         "image_dark": "logo-dark-mode.png",
         "image_light": "logo-light-mode.png",
-        "alt_text": "pyOpenSci Governance documentation. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower",
+        "alt_text": "pyOpenSci Handbook. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower",
     },
     "header_links_before_dropdown": 4,
     "use_edit_page_button": True,
+    "show_nav_level": 2,
+    "navigation_depth": 3,
     "show_toc_level": 1,
-    "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
+    # "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
     "github_url": "https://github.com/pyopensci/governance",
-    "twitter_url": "https://twitter.com/pyopensci",
-    "footer_items": ["copyright"],
+    "footer_start": ["copyright"],
+    "footer_end": [],
 }
 
-html_theme_options["analytics"] = {
-    "google_analytics_id": "UA-141260825-1",
-}
+# html_theme_options["analytics"] = {
+#     "google_analytics_id": "UA-141260825-1",
+# }
 
 html_context = {
     "github_user": "pyopensci",
     "github_repo": "governance",
     "github_version": "main",
 }
-
-#     "repository_url": "https://github.com/pyopensci/governance",
-#     "use_repository_button": True,
-#     "google_analytics_id": "UA-141260825-1",
-#     "external_links": [
-#       {"name": "link-one-name", "url": "https://pyopensci.org"},
-#       {"name": "link-two-name", "url": "https://pyopensci.org"}
-#   ],
-#   "announcement": "✨ <a href="https://www.pyopensci.org/software-peer-review/about/intro.html">Learn more about our peer review process</a> ✨"
-# }
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -111,6 +136,9 @@ exclude_patterns = [
     "reference/2018-2020-orig-meeting-notes",
 ]
 
+# For sitemap generation
+html_baseurl = "https://www.pyopensci.org/governance/"
+sitemap_url_scheme = "{link}"
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -118,11 +146,20 @@ exclude_patterns = [
 # a list of builtin themes.
 #
 html_theme = "pydata_sphinx_theme"
-html_static_path = ["_static"]
 html_title = "pyOpenSci Governance"
 html_logo = "_static/logo.png"
+html_js_files = ["matomo.js"]
+html_css_files = ["pyos.css"]
+
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
+
+# Social cards
+ogp_site_url = "https://www.pyopensci.org/governance/"
+ogp_social_cards = {
+    "line_color": "#6D597A",
+    "image": "_static/pyopensci-logo-package-guide.png",
+}
