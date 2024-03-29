@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "handbook"
+dynamic = [
+    "version"
+]
+dependencies = [
+    "pydata-sphinx-theme==0.15.2",
+    "myst-nb",
+    "sphinx",
+    "sphinx-autobuild",
+    "sphinx-copybutton",
+    "sphinx-design",
+    "sphinx-favicon",
+    # XML feed for analytics
+    "sphinx-sitemap",
+    # Support for social / adds meta tags
+    "sphinxext-opengraph",
+    "sphinx-inline-tabs",
+    # for project cards
+    "matplotlib"
+]
+
+[tool.hatch.build.targets.wheel]
+bypass-selection = true
+
+[tool.hatch]
+version.source = "vcs"
+
+
+# https://github.com/codespell-project/codespell#usage
+[tool.codespell]
+ignore-words = "codespell-ignore.txt"
+skip = "./.git,./.nox,./_static,./_build,codespell-ignore.txt,*.svg"

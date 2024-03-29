@@ -149,6 +149,8 @@ html_theme = "pydata_sphinx_theme"
 html_title = "pyOpenSci Governance"
 html_logo = "_static/logo.png"
 html_js_files = ["matomo.js"]
+html_css_files = ["pyos.css"]
+
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
