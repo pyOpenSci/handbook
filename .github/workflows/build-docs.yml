@@ -12,11 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch main
-        run: |
-          git fetch origin main --depth 1
-          git branch
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -37,6 +32,7 @@ jobs:
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
+
       - name: Install dependencies
         run: python3 -m pip install nox
 
@@ -49,24 +45,11 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_build/html
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      # Test for bad links and ensure alt tags for usability
+      - name: Check HTML using htmlproofer
+        uses: chabad360/htmlproofer@V2
         with:
-          ruby-version: 3
-
-      - name: Install gems
-        run: |
-          gem install html-proofer
-          gem install typhoeus
-
-      - name: Cache HTMLProofer
-        id: cache-htmlproofer
-        uses: actions/cache@v4
-        with:
-          path: tmp/.htmlproofer
-          key: ${{ runner.os }}-htmlproofer
-
-      - name: Run htmlproofer
-        run: |
-          ruby scripts/htmlproofer.rb
-          ls
+          directory: '_build/html'
+          arguments: |
+            --ignore-files "/.+\/_static\/.+/,/genindex.html/"
+            --ignore-status-codes "302, 404, 403, 429, 503"
