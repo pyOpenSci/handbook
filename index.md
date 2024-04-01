@@ -3,7 +3,7 @@
 This guide is designed to define the structure and processes
 that support operations of pyOpenSci.
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/governance?color=purple&display_name=tag&style=plastic)  [![DOI](https://zenodo.org/badge/161679308.svg)](https://zenodo.org/badge/latestdoi/161679308) [![All Contributors](https://img.shields.io/badge/all_contributors-3-blue.svg?style=flat-square)](#contributors-)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/governance?color=purple&display_name=tag&style=plastic)  [![DOI](https://zenodo.org/badge/161679308.svg)](https://zenodo.org/badge/latestdoi/161679308) [![All Contributors](https://img.shields.io/badge/all_contributors-3-blue.svg?style=flat-square)]()
 
 :::::{grid} 1 1 3 3
 :class-container: text-center
