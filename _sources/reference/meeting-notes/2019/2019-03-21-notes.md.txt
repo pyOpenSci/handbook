@@ -49,7 +49,7 @@ Agenda Items
     * decision on where the repository will live
         * they can keep in their space if organization
         * or they can decide to port it over to pyOpenSci
-    * accepted packages will be listed on pyOpenSci website and send out via social media annnouncements
+    * accepted packages will be listed on pyOpenSci website and send out via social media announcements
     * One goal of pyOpenSci is provide a space/mechanism for faster discovery of packages
     * So one benefit of the review is that it is a community approved package and will now be easier for others to discover and use
 3. Outreach efforts - https://docs.google.com/document/d/1OpAgnky2NxD0KghRhINVLmtvoaq4PCBikfHgH9HjgCI/edit

@@ -1,14 +1,24 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Contributing Guide for pyOpenSci" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.pyopensci.org/governance/CONTRIBUTING.html" />
+<meta property="og:site_name" content="pyOpenSci Handbook" />
+<meta property="og:description" content="This guide is a high level contributing guide that provide guidelines for contributing to resources across our organization. You will find specific contributing guidelines in each of the repositori..." />
+<meta property="og:image:width" content="1146" />
+<meta property="og:image:height" content="600" />
+<meta property="og:image" content="https://www.pyopensci.org/governance/_images/social_previews/summary_CONTRIBUTING_9033ccc2.png" />
+<meta property="og:image:alt" content="This guide is a high level contributing guide that provide guidelines for contributing to resources across our organization. You will find specific contribut..." />
+<meta name="description" content="This guide is a high level contributing guide that provide guidelines for contributing to resources across our organization. You will find specific contributing guidelines in each of the repositori..." />
+<meta name="twitter:card" content="summary_large_image" />
+    <link href="https://www.pyopensci.org/images/favicon.ico" rel="icon" type="image/x-icon">
     <title>Contributing Guide for pyOpenSci &#8212; pyOpenSci Governance</title>
   
   
@@ -19,46 +29,40 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="_static/pyos.css?v=ba8f538e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx_highlight.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/design-tabs.js"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-141260825-1"></script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'UA-141260825-1');
-            </script>
+    <script src="_static/documentation_options.js?v=2709fde1"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'CONTRIBUTING';</script>
+    <script src="_static/matomo.js?v=918da087"></script>
+    <link rel="canonical" href="https://www.pyopensci.org/governance/CONTRIBUTING.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Change Log" href="CHANGELOG.html" />
-    <link rel="prev" title="Programs" href="programs/index.html" />
+    <link rel="prev" title="Organization Handbook" href="handbook/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -68,7 +72,15 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -109,18 +121,21 @@
   </div>
 
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
 <div class="bd-header__inner bd-page-width">
   <label class="sidebar-toggle primary-toggle" for="__primary">
     <span class="fa-solid fa-bars"></span>
   </label>
   
-  <div class="navbar-header-items__start">
+  
+  <div class="col-lg-3 navbar-header-items__start">
     
       <div class="navbar-item">
+
   
 
 <a class="navbar-brand logo" href="index.html">
+  
   
   
   
@@ -130,8 +145,8 @@
       
     
     
-    <img src="_static/logo-light-mode.png" class="logo__image only-light" alt="pyOpenSci Governance documentation. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower"/>
-    <script>document.write(`<img src="_static/logo-dark-mode.png" class="logo__image only-dark" alt="pyOpenSci Governance documentation. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower"/>`);</script>
+    <img src="_static/logo-light-mode.png" class="logo__image only-light" alt="pyOpenSci Handbook. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower"/>
+    <script>document.write(`<img src="_static/logo-dark-mode.png" class="logo__image only-dark" alt="pyOpenSci Handbook. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower"/>`);</script>
   
   
     <p class="title logo__title">Governance</p>
@@ -140,30 +155,24 @@
     
   </div>
   
-  
-  <div class=" navbar-header-items">
+  <div class="col-lg-9 navbar-header-items">
     
     <div class="me-auto navbar-header-items__center">
       
-        <div class="navbar-item"><nav class="navbar-nav">
-  <p class="sidebar-header-items__title"
-     role="heading"
-     aria-level="1"
-     aria-label="Site Navigation">
-    Site Navigation
-  </p>
+        <div class="navbar-item">
+<nav class="navbar-nav">
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="index.html">
-                        🏠 Home
+                      <a class="nav-link nav-internal" href="organization/index.html">
+                        Structure & Values
                       </a>
                     </li>
                 
 
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="organization/index.html">
-                        Our Structure & Values
+                      <a class="nav-link nav-internal" href="handbook/index.html">
+                        Handbook
                       </a>
                     </li>
                 
@@ -181,41 +190,41 @@
                       </a>
                     </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
                     More
                 </button>
-                <div class="dropdown-menu">
+                <ul id="pst-nav-more-links" class="dropdown-menu">
                     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="CHANGELOG.html">
+                      <a class="nav-link dropdown-item nav-internal" href="CHANGELOG.html">
                         Changelog
                       </a>
                     </li>
                 
 
                 <li class="nav-item">
-                  <a class="nav-link nav-external" href="https://www.pyopensci.org">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.pyopensci.org">
                     pyOpenSci Website
                   </a>
                 </li>
                 
 
                 <li class="nav-item">
-                  <a class="nav-link nav-external" href="https://www.pyopensci.org/python-package-guide">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.pyopensci.org/python-package-guide">
                     Packaging Guide
                   </a>
                 </li>
                 
 
                 <li class="nav-item">
-                  <a class="nav-link nav-external" href="https://pyopensci.org/python-package-guide">
+                  <a class="nav-link dropdown-item nav-external" href="https://pyopensci.org/peer-review-guide">
                     Peer Review Guide
                   </a>
                 </li>
                 
-                </div>
-            </div>
+                </ul>
+            </li>
             
   </ul>
 </nav></div>
@@ -227,23 +236,27 @@
       
         <div class="navbar-item navbar-persistent--container">
           
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
         </div>
       
       
         <div class="navbar-item">
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script></div>
@@ -259,8 +272,8 @@ document.write(`
           
           
           
-          <a href="https://github.com/pyopensci/governance" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
-            <label class="sr-only">GitHub</label></a>
+          <a href="https://github.com/pyopensci/governance" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
           
@@ -271,8 +284,8 @@ document.write(`
           
           
           
-          <a href="https://twitter.com/pyopensci" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-twitter"></i></span>
-            <label class="sr-only">Twitter</label></a>
+          <a href="https://fosstodon.org/@pyOpenSci" title="Mastodon" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-mastodon fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Mastodon</span></a>
         </li>
 </ul></div>
       
@@ -282,29 +295,35 @@ document.write(`
   
   
     <div class="navbar-persistent--mobile">
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
     </div>
   
 
   
-    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
       <span class="fa-solid fa-outdent"></span>
     </label>
   
 </div>
 
-    </nav>
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -313,25 +332,20 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item"><nav class="navbar-nav">
-  <p class="sidebar-header-items__title"
-     role="heading"
-     aria-level="1"
-     aria-label="Site Navigation">
-    Site Navigation
-  </p>
+          <div class="navbar-item">
+<nav class="navbar-nav">
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="index.html">
-                        🏠 Home
+                      <a class="nav-link nav-internal" href="organization/index.html">
+                        Structure & Values
                       </a>
                     </li>
                 
 
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="organization/index.html">
-                        Our Structure & Values
+                      <a class="nav-link nav-internal" href="handbook/index.html">
+                        Handbook
                       </a>
                     </li>
                 
@@ -349,41 +363,41 @@ document.write(`
                       </a>
                     </li>
                 
-            <div class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links-2">
                     More
                 </button>
-                <div class="dropdown-menu">
+                <ul id="pst-nav-more-links-2" class="dropdown-menu">
                     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="CHANGELOG.html">
+                      <a class="nav-link dropdown-item nav-internal" href="CHANGELOG.html">
                         Changelog
                       </a>
                     </li>
                 
 
                 <li class="nav-item">
-                  <a class="nav-link nav-external" href="https://www.pyopensci.org">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.pyopensci.org">
                     pyOpenSci Website
                   </a>
                 </li>
                 
 
                 <li class="nav-item">
-                  <a class="nav-link nav-external" href="https://www.pyopensci.org/python-package-guide">
+                  <a class="nav-link dropdown-item nav-external" href="https://www.pyopensci.org/python-package-guide">
                     Packaging Guide
                   </a>
                 </li>
                 
 
                 <li class="nav-item">
-                  <a class="nav-link nav-external" href="https://pyopensci.org/python-package-guide">
+                  <a class="nav-link dropdown-item nav-external" href="https://pyopensci.org/peer-review-guide">
                     Peer Review Guide
                   </a>
                 </li>
                 
-                </div>
-            </div>
+                </ul>
+            </li>
             
   </ul>
 </nav></div>
@@ -395,12 +409,13 @@ document.write(`
       <div class="sidebar-header-items__end">
         
           <div class="navbar-item">
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script></div>
@@ -416,8 +431,8 @@ document.write(`
           
           
           
-          <a href="https://github.com/pyopensci/governance" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
-            <label class="sr-only">GitHub</label></a>
+          <a href="https://github.com/pyopensci/governance" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
           
@@ -428,14 +443,23 @@ document.write(`
           
           
           
-          <a href="https://twitter.com/pyopensci" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-twitter"></i></span>
-            <label class="sr-only">Twitter</label></a>
+          <a href="https://fosstodon.org/@pyOpenSci" title="Mastodon" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-mastodon fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Mastodon</span></a>
         </li>
 </ul></div>
         
       </div>
     
   </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"></div>
+</nav></div>
+    </div>
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
@@ -461,15 +485,15 @@ document.write(`
 
 
 
-<nav aria-label="Breadcrumbs">
-  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
       <a href="index.html" class="nav-link" aria-label="Home">
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page">Contributing Guide for pyOpenSci</li>
+    <li class="breadcrumb-item active" aria-current="page">Contributing...</li>
   </ul>
 </nav>
 </div>
@@ -484,16 +508,16 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="contributing-guide-for-pyopensci">
-<h1>Contributing Guide for pyOpenSci<a class="headerlink" href="#contributing-guide-for-pyopensci" title="Permalink to this heading">#</a></h1>
+<h1>Contributing Guide for pyOpenSci<a class="headerlink" href="#contributing-guide-for-pyopensci" title="Link to this heading">#</a></h1>
 <p>This guide is a high level contributing guide that provide guidelines for
 contributing to resources across our organization. You will find specific contributing guidelines in each of the repositories that
 we maintain.</p>
 <p>pyOpenSci develops and maintains numerous community resources including:</p>
 <ul class="simple">
-<li><p><span class="xref myst">Python packaging guide</span></p></li>
+<li><p><a class="reference internal" href="#"><span class="xref myst">Python packaging guide</span></a></p></li>
 <li><p>Python <a class="reference external" href="https://github.com/pyOpenSci/software-peer-review">software peer review guide</a></p></li>
 <li><p>Our <a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io">pyopensci.org website</a></p></li>
 <li><p>Our <a class="reference external" href="https://github.com/pyOpenSci/software-submission">software review repo</a>: contains templates templates for software submission and a small ci build</p></li>
@@ -502,7 +526,7 @@ we maintain.</p>
 contribute to. Most of our content lives in the <a class="reference external" href="https://github.com/pyopensci">pyOpenSci
 GitHub organization</a>.</p>
 <section id="high-level-guidelines">
-<h2>High level guidelines<a class="headerlink" href="#high-level-guidelines" title="Permalink to this heading">#</a></h2>
+<h2>High level guidelines<a class="headerlink" href="#high-level-guidelines" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Anyone contributing to pyOpenSci must follow our <a class="reference external" href="https://www.pyopensci.org/governance/CODE_OF_CONDUCT.html">organization-wide code of conduct</a>.</p></li>
 <li><p>Please open an issue before submitting a pull request with new or revised content. Issues will allow us to discussed the changes with you before they are submitted. Submitting an issue first will expedite the speed at which your pull request is merged.</p></li>
@@ -516,7 +540,7 @@ GitHub organization</a>.</p>
 </ol>
 </section>
 <section id="contributor-attributions">
-<h2>Contributor attributions<a class="headerlink" href="#contributor-attributions" title="Permalink to this heading">#</a></h2>
+<h2>Contributor attributions<a class="headerlink" href="#contributor-attributions" title="Link to this heading">#</a></h2>
 <p>We welcome and value contributions of all kinds. Some ways that
 you can contribute to pyOpenSci include:</p>
 <ul class="simple">
@@ -533,7 +557,7 @@ using the all-contributors bot. Approximately once a month, we aggregate the con
 list</a>.</p>
 </section>
 <section id="contributor-authorship">
-<h2>Contributor authorship<a class="headerlink" href="#contributor-authorship" title="Permalink to this heading">#</a></h2>
+<h2>Contributor authorship<a class="headerlink" href="#contributor-authorship" title="Link to this heading">#</a></h2>
 <p>We are deeply thankful to everyone who has helped develop and review the pyOpenSci
 online documentation. here, we establish guidelines
 for giving credit to contributors for their work.</p>
@@ -548,12 +572,12 @@ accommodate the growth of our organization and the preferences of our community 
 </div></blockquote>
 </section>
 <section id="instructions-for-local-development">
-<h2>Instructions for local development<a class="headerlink" href="#instructions-for-local-development" title="Permalink to this heading">#</a></h2>
+<h2>Instructions for local development<a class="headerlink" href="#instructions-for-local-development" title="Link to this heading">#</a></h2>
 <p>Some of our online content may need to be built locally.
 On this general contributing guidelines page, you will only find general contribution guidelines. Each repository contains instructions for local development setup
 in the <code class="docutils literal notranslate"><span class="pre">CONTRIBUTING.md</span></code> file for that specific repository.</p>
 <section id="development-guide-our-guidebooks">
-<h3>Development guide our guidebooks<a class="headerlink" href="#development-guide-our-guidebooks" title="Permalink to this heading">#</a></h3>
+<h3>Development guide our guidebooks<a class="headerlink" href="#development-guide-our-guidebooks" title="Link to this heading">#</a></h3>
 <p>This repo (governance), our peer review guide and python packaging guidebook are built using the <code class="docutils literal notranslate"><span class="pre">pydata_sphinx_theme</span></code>. We have created builds
 for those repositories using <code class="docutils literal notranslate"><span class="pre">nox</span></code>.</p>
 <p>If you wish to contribute by working on the guide book locally, you
@@ -566,7 +590,7 @@ will first need to</p>
 </section>
 </section>
 <section id="instructions-for-building-the-documentation-locally-on-your-computer">
-<h2>Instructions for building the documentation locally on your computer<a class="headerlink" href="#instructions-for-building-the-documentation-locally-on-your-computer" title="Permalink to this heading">#</a></h2>
+<h2>Instructions for building the documentation locally on your computer<a class="headerlink" href="#instructions-for-building-the-documentation-locally-on-your-computer" title="Link to this heading">#</a></h2>
 <p>The easiest way to build the documentation in this repository is to use <code class="docutils literal notranslate"><span class="pre">nox</span></code>,
 a tool for quickly building environments and running commands within them.
 Nox ensures that your environment has all the dependencies needed to build the documentation.</p>
@@ -596,7 +620,7 @@ nox -s docs-live
 <p>The <code class="docutils literal notranslate"><span class="pre">docs-live</span></code> command will provide ou with a url that you can enter into your
 browser to see the docs update as you make updates to files.</p>
 <section id="circleci-previews">
-<h3>CircleCI Previews<a class="headerlink" href="#circleci-previews" title="Permalink to this heading">#</a></h3>
+<h3>CircleCI Previews<a class="headerlink" href="#circleci-previews" title="Link to this heading">#</a></h3>
 <p>Each book is setup with a GitHub action redirect that will take you to a online
 build of the current pull request in CircleCI. To view the build:</p>
 <ul class="simple">
@@ -609,7 +633,7 @@ take you directly to CircleCi.</p></li>
 browser.</p>
 </section>
 <section id="website-build">
-<h3>Website build<a class="headerlink" href="#website-build" title="Permalink to this heading">#</a></h3>
+<h3>Website build<a class="headerlink" href="#website-build" title="Link to this heading">#</a></h3>
 <p>Our website is a <code class="docutils literal notranslate"><span class="pre">jekyll</span></code>/<code class="docutils literal notranslate"><span class="pre">markdown</span></code> driven site. Thus, you will need to install <code class="docutils literal notranslate"><span class="pre">ruby</span></code>, and the gems needed to build the website following the contributing guide in our pyopensci.github.io repository.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
@@ -623,19 +647,18 @@ browser.</p>
               
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="programs/index.html"
+       href="handbook/index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Programs</p>
+        <p class="prev-next-title">Organization Handbook</p>
       </div>
     </a>
     <a class="right-next"
@@ -647,10 +670,7 @@ browser.</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -659,11 +679,14 @@ browser.</p>
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
   <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> On this page
   </div>
-  <nav class="bd-toc-nav page-toc">
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#high-level-guidelines">High level guidelines</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributor-attributions">Contributor attributions</a></li>
@@ -681,6 +704,7 @@ browser.</p>
   </nav></div>
 
   <div class="sidebar-secondary-item">
+
   
   <div class="tocsection editthispage">
     <a href="https://github.com/pyopensci/governance/edit/main/CONTRIBUTING.md">
@@ -696,6 +720,7 @@ browser.</p>
 </div>
 
   <div class="sidebar-secondary-item">
+
   <div class="tocsection sourcelink">
     <a href="_sources/CONTRIBUTING.md.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
@@ -716,8 +741,8 @@ browser.</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -725,9 +750,10 @@ browser.</p>
     <div class="footer-items__start">
       
         <div class="footer-item">
+
   <p class="copyright">
     
-      © Copyright 2023, pyOpenSci.
+      © Copyright 2024, pyOpenSci.
       <br/>
     
   </p>
@@ -736,13 +762,6 @@ browser.</p>
     </div>
   
   
-    <div class="footer-items__end">
-      
-        <div class="footer-item"><p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
-</p></div>
-      
-    </div>
   
 </div>
 

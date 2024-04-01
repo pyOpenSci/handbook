@@ -58,12 +58,12 @@ https://hackmd.io/ixwWjxq7S2msYEZcZ3gV-Q
         * or a link to the issue
         * does rOpenSci do surveys??? followup on that -- followup with Steph B about this ??
 
-
+<div data-proofer-ignore>
 4. Go over the review steps
     * Review [overview/timeline](https://www.pyopensci.org/dev_guide/peer_review/peer_review_proc.html#review-timeline)
     * What is the editor's role? Editor [template](https://www.pyopensci.org/dev_guide/appendices/templates.html#editors-template) and [checklist](https://www.pyopensci.org/dev_guide/peer_review/editor_guide.html#editor-checklist)
     * How to review? Reviewer [template](https://www.pyopensci.org/dev_guide/appendices/templates.html#review-template) and [guide](https://www.pyopensci.org/dev_guide/peer_review/reviewer_guide.html)
-
+</div>
 
 JOSS potential issues
 * what packages they don't accept -- ie they don't accept API wrappers
