@@ -2,8 +2,10 @@ require "html-proofer"
 require "typhoeus"
 
 begin
-  directories = ['../_site']
-  status_codes = [0, 200, 301, 403, 429, 503, 999]
+  extensions = ['.html']
+  directories = ['../_build/html']
+  ignore_files = ['./_build/html/_static/webpack-macros.html']
+  status_codes = [0, 200, 301, 403, 410, 429, 503, 999]
   merge_base = %x(git merge-base origin/main HEAD).chomp
   diffable_files = %x(git diff -z --name-only --diff-filter=AC #{merge_base}).split("\0")
   diffable_files = diffable_files.select do |filename|
@@ -19,9 +21,11 @@ begin
   # Create a file to capture errors
   errors = StringIO.new
   HTMLProofer.check_directory(
-    "./_site",
+    "./_build/html",
     {
+      extensions: extensions,
       ignore_urls: diffable_files,
+      ignore_files: ignore_files,
       ignore_status_codes: status_codes,
       cache: {
         timeframe: {
