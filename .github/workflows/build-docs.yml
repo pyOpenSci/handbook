@@ -10,12 +10,12 @@ jobs:
   build-book:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Setup Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.10'
 
       - name: Upgrade pip
         run: |
@@ -26,7 +26,7 @@ jobs:
         run: echo "::set-output name=dir::$(pip cache dir)"
 
       - name: Cache dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ${{ steps.pip-cache.outputs.dir }}
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
@@ -37,16 +37,16 @@ jobs:
 
       - run: nox -s docs
 
-      - name: Check HTML using htmlproofer
-        uses: chabad360/htmlproofer@master
-        with:
-          directory: '_build/html'
-          arguments: |
-           --ignore-files "/.+\/_static\/.+/,/.+\/reference\/meeting-notes\/.+/"
-
       - name: Push to gh-pages branch for publication from main
         if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_build/html
+
+      - name: Check HTML using htmlproofer
+        uses: chabad360/htmlproofer@master
+        with:
+          directory: '_build/html'
+          arguments: |
+           --ignore-files "/.+\/_static\/.+/,/.+\/reference\/meeting-notes\/.+/"
