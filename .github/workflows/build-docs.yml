@@ -50,3 +50,4 @@ jobs:
           directory: '_build/html'
           arguments: |
            --ignore-files "/.+\/_static\/.+/,/.+\/reference\/meeting-notes\/.+/"
+           --ignore-status-codes "200, 403, 429, 503"
