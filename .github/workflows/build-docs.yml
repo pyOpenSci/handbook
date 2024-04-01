@@ -52,4 +52,4 @@ jobs:
           directory: '_build/html'
           arguments: |
             --ignore-files "/.+\/_static\/.+/,/genindex.html/,/.+\/reference\/.+/"
-            --ignore-status-codes "302, 404, 403, 429, 503"
+            --ignore-status-codes "200, 302, 404, 403, 429, 503"
