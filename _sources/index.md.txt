@@ -22,9 +22,9 @@ Learn more about the governance structure of pyOpenSci.
 ::::
 
 ::::{grid-item}
-:::{card} ✿ Community Handbook ✿
+:::{card} ✿ Community ✿
 :class-card: left-aligned
-:link: handbook/index
+:link: community/index
 :link-type: doc
 
 
@@ -92,9 +92,9 @@ Structure & Values <organization/index>
 
 :::{toctree}
 :hidden:
-:caption: Handbook
+:caption: Community
 
-Handbook <handbook/index>
+Community <community/index>
 :::
 
 :::{toctree}
