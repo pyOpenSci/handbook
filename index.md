@@ -87,7 +87,7 @@ programmers and researchers.
 :hidden:
 :caption: Mission, Leadership, Code of Conduct
 
-Structure & Values <organization/index>
+Governance & Values <governance/index>
 :::
 
 :::{toctree}
@@ -101,13 +101,14 @@ Community <community/index>
 :hidden:
 :caption: Mission, Leadership, Code of Conduct
 
-Code of Conduct <CODE_OF_CONDUCT.md>
+Organization <organization/index>
 :::
 
 :::{toctree}
 :hidden:
 :caption: Contributing
 
+Code of Conduct <CODE_OF_CONDUCT.md>
 Contributing <CONTRIBUTING.md>
 Changelog <CHANGELOG.md>
 :::
