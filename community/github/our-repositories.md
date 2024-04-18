@@ -22,10 +22,6 @@ any changes. This template's data are processed by a Python workflow, and even
 small modifications could disrupt the language processing.
 :::
 
-:::{todo}
-We could use a tutorial on how to submit a package to pyOpenSci. Although the
-form may change, the process will largely remain the same.
-:::
 
 ### Software-peer-review Guidebook Repository
 
