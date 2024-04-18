@@ -16,6 +16,4 @@ Slack <slack>
 
 GitHub <github/intro>
 Our Repos <github/our-repositories>
-Issues and Pull requests <github/issues-prs>
-CI <github/continuous-integration>
 :::
