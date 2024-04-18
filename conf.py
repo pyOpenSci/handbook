@@ -94,7 +94,7 @@ html_theme_options = {
         },
     ],
     "logo": {
-        "text": "Governance",
+        "text": "Handbook",
         "image_dark": "logo-dark-mode.png",
         "image_light": "logo-light-mode.png",
         "alt_text": "pyOpenSci Handbook. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower",
