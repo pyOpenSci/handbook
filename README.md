@@ -35,7 +35,7 @@ you are working through the content!
 
 ## How to setup
 
-This repository contains the source files for the [pyOpenSci governance](https://pyopensci.org/governance).
+This repository contains the source files for the [pyOpenSci governance handbook](https://pyopensci.org/handbook).
 
 ## Build the governance document locally
 
