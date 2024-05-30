@@ -17,3 +17,13 @@ Slack <slack>
 GitHub <github/intro>
 Our Repos <github/our-repositories>
 :::
+
+
+:::{toctree}
+:hidden:
+:caption: pyOpenSci Events
+
+Events <events/intro>
+pyOpenSci Sprints <events/sprints>
+
+:::
