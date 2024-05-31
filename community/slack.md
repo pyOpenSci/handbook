@@ -36,7 +36,7 @@ We have also strategically invited people with expertise in the field, including
 ### How we invite new community members
 Generally speaking, the Executive Director invites individuals who have not already contributed to pyOpenSci. These invitations are at their discretion, while package developers are usually invited by a pyOpenSci editor as part of the review process.
 * Whenever a new package is added to the pyOpenSci community, the pyOpenSci Community Manager double checks to ensure that all package authors have been added to Slack.
-* In instances where package developers have not yet been added, the Community Manager will send invites within three business days of the package being accepted.
+* In instances where package authors & reviewers have not yet been added, the Community Manager will send invites within three business days of the package being accepted.
 
 ## pyOpenSci Slack channels
 The pyOpenSci Slack space is also a central place for communicating with the pyOpenSci community. The community channels in our slack are as follows:
