@@ -97,3 +97,10 @@ Creating a theme was inspired by Chris Holdgraf's 2i2c Sphinx theme.
 **Platform:** Sphinx book running the pydata_sphinx_theme
 
 This is where we store our organization governance, code of conduct and processes around how we operate as an organization.
+
+## [pyosPackage repository](https://github.com/pyOpenSci/pyosPackage)
+
+The pyosPackage repo contains an example pure-Python package that compliments
+our package guide & tutorials. We will build this package example out over time
+for folks that just want to see a working package without creating one
+themselves.
