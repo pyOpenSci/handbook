@@ -1,4 +1,5 @@
 # Slack - Day to Day communication
+
 We use Slack to communicate both as paid staff and within our community organization. Slack is a valuable tool for both asynchronous, synchronous, and remote communication.
 
 We have automatic feeds setup in Slack to track various GitHub and Discourse activities as follows:
@@ -8,37 +9,49 @@ We have automatic feeds setup in Slack to track various GitHub and Discourse act
 * **#github-issues:** this channel was created to make it easier to follow issues and pull requests opened in our core Github repositories, as given the volume of activity it’s easy to miss new items.
 
 ## Setting up a Slack bot using Slack Workflows
+
 Administrators in the pyOpenSci Slack space can set up [workflows](https://slack.com/help/articles/16583775096083-Automations--What-is-a-Slack-workflow), which are automated bots that complete tasks based on automatic triggers. We currently use a workflow to onboard new members to the Slack space, and if there are additional bots you feel would be helpful, please reach out to Leah or Jesse.
 
 ## Setting up an automatic feed to post from GitHub into Slack:
-* First, grant permission to the Slack app from within GitHub. Then you can customize which Slack channels you want to use in order to track new activity on GitHub.
+
+* First, grant permission to the Slack app from within GitHub (this has been completed, and can be further configured [here](https://github.com/pyOpenSci/software-submission/settings/installations). The bot was initially added via the [Slack-GitHub integration](https://slack.github.com/)). Then you can customize which Slack channels you want to use in order to track new activity on GitHub. 
 * To use this integration, you can provide commands directly in the channel to connect it to a specific feed of events on GitHub. Some useful commands are:
     * **`/GitHub subscribe pyopensci/python-package-guide issues`** will allow you to subscribe to issues in the python-package-guide channel
     * **`/GitHub unsubscribe pyopensci/python-package-guide pulls`** will unsubscribe you
     * **`/GitHub help`** provides you with all of the options in terms of subscribing and unsubscribing
 
 ## Slack’s limitations - nonprofit plan
+
 pyOpenSci currently has a Slack paid plan that is provided at no cost for nonprofits. It allows up to 250 users and unlimited saved messages. While this solution currently meets our needs, it will become a challenge in the future as pyOpenSci continues to grow. The main concern is the loss of message history.
 
 We initially chose Slack as most of our community members already had organizations on Slack, and many did not like Discord. As we look ahead and consider our future needs, it’s worth noting that some of our partners have moved to platforms such as Mattermost and Zulip.
 
 ## Slack for pyOpenSci Community Discussion
+
 Slack is also used for broader pyOpenSci community discussion. However, it is currently invitation-only, which models the same processes used by rOpenSci. An invite-only model is important as pyOpenSci grows because:
 * It allows us to grow carefully and slowly
 * It allows us to create an inclusive environment that is evolving into a self-moderating community. This is significantly more challenging to do in an online community with large influxes of members.
 * Everyone invited to Slack has generally already contributed to pyOpenSci in some way, and therefore have a vested interest in the community upon joining.
+
 ### Who we invite to the community:
+
 We invite people to Slack who have contributed to pyOpenSci in some way. This can include attending and contributing via a sprint, submitting a package (normally this happens after the package has been accepted, but may occur earlier on an ad-hoc basis. Invites are rarely sent before the review is finished), being a reviewer or editor, contributing to a guidebook, or signing up to become involved. Often if someone signs up we meet with them prior to sending a Slack invitation.
 
-We also occasionally invite people that would be valuable contributors to our community in some way, even if they haven’t already contributed! These might be people who express interest in work we are doing and who want to learn more or get involved.
+We also occasionally invite people that would be valuable contributors to our community in some way, even if they haven’t already contributed! These might be people from a partner community, folks doing work that is mission aligned, or even those who express interest in the work we are doing and who want to learn more or get involved.
 
 We have also strategically invited people with expertise in the field, including core packaging experts, community members and others with knowledge that is incredibly valuable to our community’s development.
+
 ### How we invite new community members
+
 Generally speaking, the Executive Director invites individuals who have not already contributed to pyOpenSci. These invitations are at their discretion, while package developers are usually invited by a pyOpenSci editor as part of the review process.
+
 * Whenever a new package is added to the pyOpenSci community, the pyOpenSci Community Manager double checks to ensure that all package authors have been added to Slack.
 * In instances where package authors & reviewers have not yet been added, the Community Manager will send invites within three business days of the package being accepted.
 
+The Community Manager may also invite new members based on a variety of factors, including editor and reviewer recruitment.
+
 ## pyOpenSci Slack channels
+
 The pyOpenSci Slack space is also a central place for communicating with the pyOpenSci community. The community channels in our slack are as follows:
 
 * **#bug-bash:** when pyOpenSci runs bug bashes, we use this channel to announce them as well as discuss any questions people may have while working through the bug bash.
