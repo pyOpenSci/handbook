@@ -1,13 +1,11 @@
-# Our Repositories
+# pyOpenSci GitHub Repositories
 
 :::{todo}
 Add repositories from the pyOpenSci organization.
 :::
 
-## pyOpenSci GitHub Repository Overview
-
 pyOpenSci manages multiple GitHub repositories to support various community
-activities. Below is a description of each core repository.
+activities. Below is a description of each repository.
 
 ### [Software-review Repository](https://www.pyopensci.org/software-peer-review/)
 
@@ -22,32 +20,59 @@ any changes. This template's data are processed by a Python workflow, and even
 small modifications could disrupt the language processing.
 :::
 
+## Software-peer-review Guidebook Repository
 
-### Software-peer-review Guidebook Repository
-
-This repository hosts our [software peer review guide](https://www.pyopensci.org/software-peer-review/),
-which includes instructions and guidelines for authors, editors, the editor in
-chief, and the peer review triage team. It also details our peer review policies,
+This repository hosts our [software peer review guidebook](https://www.pyopensci.org/software-peer-review/),
+which documents the processes and guidelines for authors, editors, the editor in
+chief, and the peer review triage team as they manage our open peer review process. It also details our peer review policies,
 partnerships, and the templates used in the review process.
 
-### Python-package-guide Repository
+## Python-package-guide Repository
 
 The [python-package-guide repository](https://www.pyopensci.org/python-package-guide/)
 contains our community-developed guidelines and tutorials on Python packaging.
-These resources are beginner-friendly and reflect best practices.
+These resources are beginner-friendly and reflect Python packaging best practices.
 
-### [pyosMeta Repository](https://github.com/pyOpenSci/pyosMeta)
+## [pyosMeta Repository](https://github.com/pyOpenSci/pyosMeta)
 
-The pyosMeta repo contains a Python package published on PyPI that tracks our
+The pyosMeta repository contains a Python package published on PyPI that we use to track our
 package review and contributor data. This data is used in a GitHub action to
 update our website.
 
-### [pyopensci.github.io Repository](https://github.com/pyOpenSci/pyopensci.github.io)
+:::{todo}
+Add more information about the contributor data workflow ...
+:::
 
-Our website, [pyOpenSci](https://www.pyopensci.org/), is hosted on GitHub and
-uses the Jekyll Minimal Mistakes theme. The python packages page, contributor page and peer review team page are all updated automagically using a
-GitHub action workflow that is supported by the pyosMeta Python package. The workflow runs every other week but can be triggered manually as a **workflow
+## [pyopensci.github.io Repository](https://github.com/pyOpenSci/pyopensci.github.io)
+
+This repository contains code and content that builds and publishes our pyOpenSci website. The website, [pyOpenSci](https://www.pyopensci.org/), is hosted on GitHub and
+uses the Jekyll Minimal Mistakes theme. The Python packages page, contributor page and peer review team page are all updated automagically using a
+GitHub action workflow that is supported by the pyosMeta Python package discussed above. The workflow runs every other week but can be triggered manually as a **workflow
 dispatch**.
+
+### Critical CI workflows in this repository
+
+The [contributor workflow action](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/.github/workflows/update-contribs-reviews.yml) is a custom GitHub
+action that is used to update the following website pages:
+
+* contributor page
+* package listing page
+* editorial, advisory council and executive council listing
+
+It runs as a cron job every other week but also can be run manually as a workflow
+dispatch. If you need to update our package listing or contributor list  on
+the fly, please run this action.
+
+The action will:
+
+1. parse through all of our accepted pyOpenSci packages
+2. collect package names, authors, reviewers and editors
+3. collect metadata for the packages authors reviewers and editors using the GitHub (REST) API
+4. Create 2 output YAML files discussed below.
+
+The yaml output files and then used to populate content on the website.
+
+### Metadata stored in this repository
 
 1. **Packages.yml**: Updates the [Python Packages page](https://www.pyopensci.org/python-packages.html)
    by parsing reviews from software-review repository issues.
@@ -59,7 +84,16 @@ Update the website contributors guide with general CI and specific Jekyll
 information.
 :::
 
+## [pyOpenSci Sphinx Theme](https://github.com/pyOpenSci/pyos-sphinx-theme)
+
+**Platform:** Sphinx book template that builds on top of the pydata_sphinx_theme
+
+All of our pyOpenSci sphinx books (Handbook, packaging guide, software review guide ) have been customized to match our pyOpenSci branding. This repo contains the start of a sphinx theme that will incorporate all of our branding so we do not have to manually apply the branding and update the branding individually in each repo. Rather we can update branding in the theme and it will be applied across all of our repositories that use the theme.
+
+Creating a theme was inspired by Chris Holdgraf's 2i2c Sphinx theme.
+
 ## [Handbook Repository](https://github.com/pyOpenSci/handbook)
 
-The handbook repository hosts content that helps the community navigate our
-online resources and communication channels.
+**Platform:** Sphinx book running the pydata_sphinx_theme
+
+This is where we store our organization governance, code of conduct and processes around how we operate as an organization.
