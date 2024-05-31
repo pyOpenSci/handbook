@@ -25,7 +25,7 @@ The community manager will manage online “coms” and social media during an e
 
 In some cases an event might “pop up” last minute - such as an Open Space at pyCon. In this case, the person attending the event may want to modify and reuse graphics posted on social media to publicize the event.
 
-To support this case, we should also create an event folder in our online graphics platform, Canva (our online graphics platform). This event specific folder will be where we store all graphics used to promote an event both before during and after in one place. This will make it easier for the person at the event to make a quick change to a graphic, add a room number or a time for a pop up event or change in plans, as needed.
+To support this case, we should also create an event folder in our online graphics platform, Canva. This event specific folder will be where we store all graphics used to promote an event both before during and after in one place. This will make it easier for the person at the event to make a quick change to a graphic, add a room number or a time for a pop up event or change in plans, as needed.
 
 :::{admonition} Share the Canva folder with the pyopensci-canva-team
 :class: important
@@ -34,17 +34,13 @@ Be sure to share the Canva folder with the `pyOpensci-canva-team` on Canva to en
 Please also be sure to name files using expressive words that make them easy to find / use / reuse.
 :::
 
-**ADD IMAGE**
-
-Image showing a pycon-24 folders in canva for an event. You can share the entire folder with the team to ensure the team has access to all of the contents inside.
-
 ### Preparation prior to an event
 
-Prior to a, in-person sprint, you should have the following things created:
+Prior to an, in-person sprint, you should have the following things created:
 
 1. A template "sign up" form with data fields that we collect from participants. This allows us to track who attends and event and to followup with them after (if they wish to have communication with us after)
 1. A tabletop “card” that says pyOpenSci. You will need 2-3 cards on hand for any event in case participants are spread across a few tables. This card will be important for events like sprints, workshops and open spaces where pyOpenSci has one or more tables in a large room. It will signal to contributors that we are there and help people quickly find us.
- * The card should have a qr code that is dynamic (so we can update the url that it points to). This will allow us to have participants scan the code using their phones, and add their names as participants in the event. Following the event we can then send a thank message to each participant using a mail-merge system.
+ * The card should have a qr code that is dynamic (so we can update the url that it points to and reuse the cards). This will allow us to have participants scan the code using their phones, and add their names as participants in the event. Following the event we can then send a thank message to each participant using a mail-merge system.
 
 :::{todo}
 will this work for events as we will want an event name associated with it but it would be annoying to make a new card for every event? UNLESS we make a bunch at once for all events for the year?
