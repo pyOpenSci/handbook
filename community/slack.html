@@ -7,17 +7,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Slack" />
+<meta property="og:title" content="Slack - Day to Day communication" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.pyopensci.org/governance/community/slack.html" />
 <meta property="og:site_name" content="pyOpenSci Handbook" />
+<meta property="og:description" content="We use Slack to communicate both as paid staff and within our community organization. Slack is a valuable tool for both asynchronous, synchronous, and remote communication. We have automatic feeds ..." />
 <meta property="og:image:width" content="1146" />
 <meta property="og:image:height" content="600" />
-<meta property="og:image" content="https://www.pyopensci.org/governance/_images/social_previews/summary_community_slack_f73b91b8.png" />
-<meta property="og:image:alt" content="" />
+<meta property="og:image" content="https://www.pyopensci.org/governance/_images/social_previews/summary_community_slack_e9bec2b6.png" />
+<meta property="og:image:alt" content="We use Slack to communicate both as paid staff and within our community organization. Slack is a valuable tool for both asynchronous, synchronous, and remote..." />
+<meta name="description" content="We use Slack to communicate both as paid staff and within our community organization. Slack is a valuable tool for both asynchronous, synchronous, and remote communication. We have automatic feeds ..." />
 <meta name="twitter:card" content="summary_large_image" />
     <link href="https://www.pyopensci.org/images/favicon.ico" rel="icon" type="image/x-icon">
-    <title>Slack &#8212; pyOpenSci Governance</title>
+    <title>Slack - Day to Day communication &#8212; pyOpenSci Governance</title>
   
   
   
@@ -518,7 +520,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Organization Handbook</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Slack</li>
+    <li class="breadcrumb-item active" aria-current="page">Slack - Day...</li>
   </ul>
 </nav>
 </div>
@@ -535,8 +537,102 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="slack">
-<h1>Slack<a class="headerlink" href="#slack" title="Link to this heading">#</a></h1>
+  <section id="slack-day-to-day-communication">
+<h1>Slack - Day to Day communication<a class="headerlink" href="#slack-day-to-day-communication" title="Link to this heading">#</a></h1>
+<p>We use Slack to communicate both as paid staff and within our community organization. Slack is a valuable tool for both asynchronous, synchronous, and remote communication.</p>
+<p>We have automatic feeds setup in Slack to track various GitHub and Discourse activities as follows:</p>
+<ul class="simple">
+<li><p><strong>#discourse-updates:</strong> this channel flags new Discourse posts so that we can keep track of them in a single place. This channel also announces a new package when it’s posted in the Discourse pyOpenSci packages forum. The bot was built and maintained by Chiara Marmo.</p></li>
+<li><p><strong>#feed-software-review:</strong> this channel tracks new review submissions in our software-submission GitHub repo. This feed helps pyOpenSci staff and its editorial team keep track of the cadence of submissions in a centralized location.</p></li>
+<li><p><strong>#github-issues:</strong> this channel was created to make it easier to follow issues and pull requests opened in our core Github repositories, as given the volume of activity it’s easy to miss new items.</p></li>
+</ul>
+<section id="setting-up-a-slack-bot-using-slack-workflows">
+<h2>Setting up a Slack bot using Slack Workflows<a class="headerlink" href="#setting-up-a-slack-bot-using-slack-workflows" title="Link to this heading">#</a></h2>
+<p>Administrators in the pyOpenSci Slack space can set up <a class="reference external" href="https://slack.com/help/articles/16583775096083-Automations--What-is-a-Slack-workflow">workflows</a>, which are automated bots that complete tasks based on automatic triggers. We currently use a workflow to onboard new members to the Slack space, and if there are additional bots you feel would be helpful, please reach out to Leah or Jesse.</p>
+</section>
+<section id="setting-up-an-automatic-feed-to-post-from-github-into-slack">
+<h2>Setting up an automatic feed to post from GitHub into Slack:<a class="headerlink" href="#setting-up-an-automatic-feed-to-post-from-github-into-slack" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>First, grant permission to the Slack app from within GitHub (this has been completed, and can be further configured <a class="reference external" href="https://github.com/pyOpenSci/software-submission/settings/installations">here</a>. The bot was initially added via the <a class="reference external" href="https://slack.github.com/">Slack-GitHub integration</a>). Then you can customize which Slack channels you want to use in order to track new activity on GitHub.</p></li>
+<li><p>To use this integration, you can provide commands directly in the channel to connect it to a specific feed of events on GitHub. Some useful commands are:</p>
+<ul>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">/GitHub</span> <span class="pre">subscribe</span> <span class="pre">pyopensci/python-package-guide</span> <span class="pre">issues</span></code></strong> will allow you to subscribe to issues in the python-package-guide channel</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">/GitHub</span> <span class="pre">unsubscribe</span> <span class="pre">pyopensci/python-package-guide</span> <span class="pre">pulls</span></code></strong> will unsubscribe you</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">/GitHub</span> <span class="pre">help</span></code></strong> provides you with all of the options in terms of subscribing and unsubscribing</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="slacks-limitations-nonprofit-plan">
+<h2>Slack’s limitations - nonprofit plan<a class="headerlink" href="#slacks-limitations-nonprofit-plan" title="Link to this heading">#</a></h2>
+<p>pyOpenSci currently has a Slack paid plan that is provided at no cost for nonprofits. It allows up to 250 users and unlimited saved messages. While this solution currently meets our needs, it will become a challenge in the future as pyOpenSci continues to grow. The main concern is the loss of message history.</p>
+<p>We initially chose Slack as most of our community members already had organizations on Slack, and many did not like Discord. As we look ahead and consider our future needs, it’s worth noting that some of our partners have moved to platforms such as Mattermost and Zulip.</p>
+</section>
+<section id="slack-for-pyopensci-community-discussion">
+<h2>Slack for pyOpenSci Community Discussion<a class="headerlink" href="#slack-for-pyopensci-community-discussion" title="Link to this heading">#</a></h2>
+<p>Slack is also used for broader pyOpenSci community discussion. However, it is currently invitation-only, which models the same processes used by rOpenSci. An invite-only model is important as pyOpenSci grows because:</p>
+<ul class="simple">
+<li><p>It allows us to grow carefully and slowly</p></li>
+<li><p>It allows us to create an inclusive environment that is evolving into a self-moderating community. This is significantly more challenging to do in an online community with large influxes of members.</p></li>
+<li><p>Everyone invited to Slack has generally already contributed to pyOpenSci in some way, and therefore have a vested interest in the community upon joining.</p></li>
+</ul>
+<section id="who-we-invite-to-the-community">
+<h3>Who we invite to the community:<a class="headerlink" href="#who-we-invite-to-the-community" title="Link to this heading">#</a></h3>
+<p>We invite people to Slack who have contributed to pyOpenSci in some way. This can include attending and contributing via a sprint, submitting a package (normally this happens after the package has been accepted, but may occur earlier on an ad-hoc basis. Invites are rarely sent before the review is finished), being a reviewer or editor, contributing to a guidebook, or signing up to become involved. Often if someone signs up we meet with them prior to sending a Slack invitation.</p>
+<p>We also occasionally invite people that would be valuable contributors to our community in some way, even if they haven’t already contributed! These might be people from a partner community, folks doing work that is mission aligned, or even those who express interest in the work we are doing and who want to learn more or get involved.</p>
+<p>We have also strategically invited people with expertise in the field, including core packaging experts, community members and others with knowledge that is incredibly valuable to our community’s development.</p>
+</section>
+<section id="how-we-invite-new-community-members">
+<h3>How we invite new community members<a class="headerlink" href="#how-we-invite-new-community-members" title="Link to this heading">#</a></h3>
+<p>Generally speaking, the Executive Director invites individuals who have not already contributed to pyOpenSci. These invitations are at their discretion, while package developers are usually invited by a pyOpenSci editor as part of the review process.</p>
+<ul class="simple">
+<li><p>Whenever a new package is added to the pyOpenSci community, the pyOpenSci Community Manager double checks to ensure that all package authors have been added to Slack.</p></li>
+<li><p>In instances where package authors &amp; reviewers have not yet been added, the Community Manager will send invites within three business days of the package being accepted.</p></li>
+</ul>
+<p>The Community Manager may also invite new members based on a variety of factors, including editor and reviewer recruitment.</p>
+</section>
+</section>
+<section id="pyopensci-slack-channels">
+<h2>pyOpenSci Slack channels<a class="headerlink" href="#pyopensci-slack-channels" title="Link to this heading">#</a></h2>
+<p>The pyOpenSci Slack space is also a central place for communicating with the pyOpenSci community. The community channels in our slack are as follows:</p>
+<ul class="simple">
+<li><p><strong>#bug-bash:</strong> when pyOpenSci runs bug bashes, we use this channel to announce them as well as discuss any questions people may have while working through the bug bash.</p></li>
+<li><p><strong>#coding-help:</strong> community members can use this channel to ask questions related to code. This channel is helpful for members of all stages, and not only for beginners.</p></li>
+<li><p><strong>#community-announcements:</strong> community members can make announcements in this channel about future conference presentations, events, projects or collaborations that members are looking to create. Any community member can post in this channel.</p></li>
+<li><p><strong>#dei-accessibility:</strong> this channel is for discussion around issues related to diversity, equity, inclusion, and accessibility in open source.</p></li>
+<li><p><strong>#discourse-updates:</strong> a bot-generated channel that shares updates from the pyOpenSci Discourse forum.</p></li>
+<li><p><strong>#education-training:</strong> This is a channel to discuss learning materials, training events and other education-related topics.</p></li>
+<li><p><strong>#feed-software-review:</strong> this is a bot-generated feed of GitHub issues.</p></li>
+<li><p><strong>#food:</strong> why share your food photos on Instagram when you can share them here? We love to see what you’re making and eating!</p></li>
+<li><p><strong>#games-and-gaming:</strong> there are quite a few gamers in the pyOpenSci community, and this is a space to chat about all things games (board, video, tabletop, etc.)</p></li>
+<li><p><strong>#github-issues:</strong> the posts in this channel are bot-generated, and used to track activity in the pyOpenSci repositories.</p>
+<ul>
+<li><p>If this channel gets too noisy, you can run <code class="docutils literal notranslate"><span class="pre">/github</span> <span class="pre">unsubscribe</span> <span class="pre">pyopensci/python-package-guide</span> <span class="pre">deployments</span></code> to unsubscribe.</p></li>
+</ul>
+</li>
+<li><p><strong>#jobs:</strong>  this space is for sharing job listings that may be relevant to the pyOpenSci community.</p></li>
+<li><p><strong>#meetings:</strong> this space is for use during meetings to coordinate, and can be used to collaborate and communicate with any other pyOpenSci members that are also attending the same meeting. The meeting does not have to be related to pyOpenSci.</p></li>
+<li><p><strong>#open-source-general-chat:</strong> this channel is a fantastic resource for developing conversations with other members in the community.</p></li>
+<li><p><strong>#oss-work-life-mental-health-balance:</strong> this is a space to talk about mental health issues in science and tech.</p></li>
+<li><p><strong>#petzzz:</strong> show us your fur-babies! We love to see everyone’s pets, and this is the purrrfect place to show them off.</p></li>
+<li><p><strong>#private-editorial-team:</strong> this is a private channel for the editor team only. Here we have conversations about peer review, issues with review, etc. The community manager is also in this channel.</p>
+<ul>
+<li><p>When editors are off-boarded they are removed from this channel.</p></li>
+<li><p>Open, community-wide conversations about the review process occur in the <strong>#software-review channel</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>#pyos-socials:</strong> the community manager shares links to any social media posts from the pyOpenSci community in this channel.</p></li>
+<li><p><strong>#pyos-updates:</strong> here is where we communicate any updates from the pyOpenSci core team. Some of our editors also have permission to post here, for the purposes of announcing new packages as they join the pyOS ecosystem.</p></li>
+<li><p><strong>#python-packaging-maintenance:</strong> this is where we discuss best practices around maintaining python libraries; questions are occasionally asked here.</p></li>
+<li><p><strong>#random:</strong> as the name suggests, anything not covered in the other channels tends to take place here. This can range from social, getting-to-know-you conversations to sharing articles to updates on community events.</p></li>
+<li><p><strong>#software-review:</strong> This is where we openly discuss new reviews and review issues. Because this is a public channel, we only discuss items that are not  sensitive in nature. For individuals who have recently submitted a Python library for review, there are also helpful resources and feedback to be found here.</p></li>
+<li><p><strong>#welcome:</strong> this is where new members introduce themselves. When someone new enters Slack, we post here, welcome them and ask them to introduce themselves. There is a welcome bot maintained by the community manager that shares the pyOpenSci <a class="reference external" href="https://www.pyopensci.org/handbook/CODE_OF_CONDUCT.html">Code of Conduct</a>, and helps new members introduce themselves.</p>
+<ul>
+<li><p>The welcome bot is set up through a Slack workflow under the pyOpenSci organizational account.</p></li>
+</ul>
+</li>
+</ul>
+</section>
 </section>
 
 
@@ -576,6 +672,26 @@ document.write(`
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-a-slack-bot-using-slack-workflows">Setting up a Slack bot using Slack Workflows</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-an-automatic-feed-to-post-from-github-into-slack">Setting up an automatic feed to post from GitHub into Slack:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#slacks-limitations-nonprofit-plan">Slack’s limitations - nonprofit plan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#slack-for-pyopensci-community-discussion">Slack for pyOpenSci Community Discussion</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#who-we-invite-to-the-community">Who we invite to the community:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-we-invite-new-community-members">How we invite new community members</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyopensci-slack-channels">pyOpenSci Slack channels</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
 
