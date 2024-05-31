@@ -1,15 +1,23 @@
 # pyOpenSci sprints
 
+:::{todo}
 * TODO: https://github.com/actions/add-to-project?tab=readme-ov-file i think we want to set this up for all repos so this works for scipy.
+:::
 
-:::{admonition} TLDR
-* summary here??
+:::{admonition} TL;DR
 
-During sprint
+**Before sprint**
+* Go through the pyOPenSci repo issues and ensure all relevant help-wanted / sprintable issues have labels and are on the project board.
+* Also ensure all issues on the project board have enough specific information for a new user to follow and complete the task needed to be done.
 
-* label all issues as sprint-event, sprint-name-year
+**During sprint**
+
+* label all newly submitted issues as sprint-event, sprint-name-year
 * merge small pr's that are clearly typo fixies, easy to review things
 * add contributors as contributors to the repo using the all contributors bot @all-contributors add @githubusername for code, review (for an issue use review for a pr use code, review ). Merge each all contributor pr individually and immediately to avoid merge conflicts
+
+**After Sprint**
+
 :::
 
 
@@ -31,18 +39,28 @@ Sprints can span 1-4 days but are most often 1-2 days long.
 ### Tracking sprint contributions
 Sprints often result in numerous pull requests and issues being opened by contributors. It’s important for pyOpenSci to track information around:
 
-* who is attending,
-* where they are from (country, state etc) and
-* what contributions they make.
+* Who is attending,
+* Where they are from (country, state etc) and
+* What contributions they make.
 
 This information will support pyOpenSci's community impact and support and be
 beneficial when we write grants and solicit sponsorships.
 
-#### How we track sprint outcomes
-pyOpenSci tracks issues and pull requests created through community events using project boards. More on project board use is below. We track participation metrics
-using _____ TODO MORE HERE ____
+pyOpenSci uses a combination of GitHub project boards and user surveys to track participation and success metrics. More on that below.
 
-#### pyOpenSci sprints are accessible
+## Sprint Participant Motivations
+
+Sprint participants are often motivated by different things:
+
+* Some come to learn.
+* Some come to help and support a project they care about.
+* Some come to connect and build community.
+
+pyOpenSci supports and empowers all of these motivations, with an emphasis on
+empowering contributors who are newer to contributing while greatly benefiting
+from more experienced sprinters who can help move the organization forward.
+
+### pyOpenSci sprints are accessible
 
 It's important to pyOpenSci's mission that sprints are accessible to both new
 and seasoned contributors. We aim to ensure that all participants have a
@@ -55,22 +73,10 @@ open issues and the outcomes that pyOpenSci wants to see for issue solutions.
 Supporting all of these participants is crucial to our mission and can require
 significant effort during a sprint event.
 
-As such, it's important for anyone leading a sprint to come prepared!
-
-### Sprint Participant Motivations
-
-Sprint participants are often motivated by different things:
-
-* Some come to learn.
-* Some come to help and support a project they care about.
-* Some come to connect and build community.
-
-pyOpenSci supports and empowers all of these motivations, with an emphasis on
-empowering contributors who are newer to contributing while greatly benefiting
-from more experienced sprinters who can help move the organization forward.
+As such, it's important for anyone leading a sprint to come prepared! In some cases having community helpers will go along way to supporting beginner contributor success.
 
 
-### Sprint Infrastructure - GitHub Project Boards
+## Sprint Infrastructure - GitHub Project Boards
 
 To efficiently manage and track contributions during sprints, pyOpenSci utilizes
 GitHub project boards. These boards help us organize tasks that participants can work on. This ensures that
@@ -79,7 +85,7 @@ that suit their skills and interests. They also are used to track new contributi
 
 #### Help-Wanted Board
 
-The pyOpenSci **Help-Wanted project board** is a organization level GitHub project board that provides a central place where contributors can
+The pyOpenSci [**Help-Wanted project board**](https://github.com/orgs/pyOpenSci/projects/3) is a organization level GitHub project board that provides a central place where contributors can
 find tasks that pyOpenSci needs help with. We have two automated workflows setup
 for the help-wanted project board:
 
@@ -87,22 +93,24 @@ for the help-wanted project board:
 * When an issue or pull request is closed, it is automatically archived from the project board.
 
 Tasks on this board are ideally smaller, well-defined, and can be completed or significantly advanced within the
-duration of a sprint. The pyOpenSci Help-Wanted board is continuously updated to reflect
-the current needs of pyOpenSci projects, making it easier for contributors to
-jump in and start contributing.
+duration of a sprint. The pyOpenSci Help-Wanted board should be updated throughout the year as new issues are opened in our organization GitHub repositories. Continual updates makes it easier for:
+
+* Contributors to jump in and start contributing and
+* Sprint leaders to prepare for a sprint as the board will be more up to date.
 
 #### Annual Sprint Project Board
 
 At the start of each year, the pyOpenSci community manager creates a new Sprint
-GitHub Project Board. The board will have several columns or statuses each or wchih represents the name of a sprint event (example: pyconus-2024, scipy-2024, fall-festival-2024. This board is used to:
+GitHub Project Board. Here is an example of the [2024 sprint project board](https://github.com/orgs/pyOpenSci/projects/12).
+
+The board will have several columns or statuses each or which represents the name of a sprint event (example: pyconus-2024, scipy-2024, fall-festival-2024. This board is used to:
 
 * **Track issues and pull requests opened during a sprint event**
 * **Organize and Monitor Tasks**: Keep track of the progress of tasks during the sprint, ensuring clarity on which issues are being worked on and by whom.
 - **Manage the Triage Process**: Keep track of which pull requests have been addressed and merged and which ones still need attention.
 - **Calculate metrics**: Provide counts of activity that has occurred during a sprint event.
 
-By using these boards, pyOpenSci ensures that sprints are organized, efficient,
-and accessible to all participants.
+By using these boards, pyOpenSci staff can easily keep tabs of sprint activities and outcomes. It also helps us ensure that all sprint issues and pull requests are addressed in a timely manner.
 
 ### Year Round Sprint tasks
 
@@ -146,22 +154,23 @@ The current types of tasks in our board include:
 we should add content review and sphinx as a status options for people that review our guidebook, run through tutorials etc.
 :::
 
-:::{important}
-If you are creating a new `help-wanted` issue it's critical that you include as much detailed information in the issue as possible. Imagine someone else reading the issue (that is not you!). In reading the issue, does an outside contributor have:
+:::{admonition} Make sure issues contain specific detailed information before adding them to a project board
+:class: important
 
-* clearly understand the problem? (be specific, provide examples, links etc)
-* have enough information to solve the problem?
-* know exactly where the problem is occurring (provide links if you can or code examples )
-* have enough information needed to solve the problem?
+If you are creating a new `help-wanted` issue, it's important to include as much detailed information in the issue as possible. Imagine someone else reading the issue (that is not you!). In reading the issue, does an outside contributor have:
+
+* enough information to understand the problem? (be specific, provide examples, links runnable code, broken github action runs)
+* enough information to solve the problem?
+* know exactly where the problem is occurring (provide links if you can or code examples)
 
 When in doubt, more information is always better!
 :::
 
 Labeling issues with `help-wanted` / `sprintable` throughout the year as they are opened will save significant preparation time when a Sprint event arises. It will also make it easier for fly-by contributors to find things to help us with throughout the year.
 
-### Pre-Sprint Event Tasks
+## Pre-Sprint Event Tasks
 
-#### Triage (Help-Wanted) Issues Across the pyOpenSci Organization
+### Triage (Help-Wanted) Issues Across the pyOpenSci Organization
 
 Before a sprint begins, someone on the pyOpenSci team should go through and
 triage all of the open issues in the organization to determine:
@@ -169,6 +178,7 @@ triage all of the open issues in the organization to determine:
 * Whether some of them are sprintable.
 * Whether they have enough specific and detailed information for someone to work
   on the issue without too much help during a sprint.
+* Whether some open issues can be closed.
 
 This could be a small team exercise at a pre-meeting event held online for
 pyOpenSci staff and sprint community members (if there are any contributors
@@ -181,23 +191,37 @@ questions during the sprint. If you have a table of 10-20 people sprinting for
 pyOpenSci, this means the person running the sprint will have less to do on-site!
 Sprints are busy—please add as much specific information as you can to each issue!
 
-#### THIS LIKELY WON'T WORK Ensure issue and pull request templates are up to date
+### Ensure issue and pull request templates are up to date
 
-A challenge of a successful sprint is that there will be many issues and pull requests to triage after the sprint. To keep track of new issues and pr's, during an event, every pyOpenSci GitHub repository should have a sprint issue and pull request template. Adding this template only needs to be completed once, however
-if there is a new pyOpenSci Github repository (this rarely happens), make sure that repo has a template.
+A challenge of a successful sprint is that there will be many issues and pull requests to triage after the sprint. To keep track of new issues, during an event, every pyOpenSci GitHub repository should have a sprint issue template. Adding this template only needs to be completed once. However, if there is a new pyOpenSci Github repository (this rarely happens), make sure that repo has a sprint issue template.
 
-The sprint template will auto-populate a `sprint-event` label on the issue or pull request when it is opened. We will then setup a workflow on the sprint project board for that year to auto-add any issue or pull request with the `sprint-event` label on it to the sprint project board.
+The sprint template will auto-populate a `sprint-event` label on the issue or pull request when it is opened. We will then setup a GitHub action on the sprint project board for that year to auto-add any issue or pull request with the `sprint-event` label on it to the sprint project board.
 
+:::{todo}
+test this workflow: https://github.com/actions/add-to-project in a single repo
 NOTE - i'm not sure this will work. i forgot that pr templates are not as straight forward as issue templates are. issue templates are easier.
+:::
 
-### Tasks during a sprint
+### Create a participant signup form
+
+* create the form
+* create a dynamic qr code that we can update (the is placed on our table top cards ) OR get a card that we can add a sticker to with the code and replace the stickers...
+
+
+:::{todo}
+
+jesse will develop this process with whatever platform we end up using...
+:::
+
+
+## Tasks during a sprint
 
 Below are tasks that should occur during a spring event.
 
-#### Collect participant information
+### Collect participant information
 
 The person running the event should collect information from participants
-at the event via ______ **TODO insert how we do that here** _____.
+at the event via ______ **TODO insert how we do that here** _____ following the process Jesse creates above....
 
 * dynamic qr code... that people can scan. with small table top signs?
 * what do we collect?
@@ -212,11 +236,11 @@ Where are the contributors from (country, place of work, other things??)
 
 ### Update the sprint issue and pull request board
 
-During the event, the remote sprint support team (either community manager or a volunteer) , should
+During the event, the remote sprint support team (either Community Manager or a volunteer), should:
 
 * label all issues and pull requests as `sprint-event` and with the label for the event - e.g. `pyconus-24` as they are opened.
-* Once that the sprint-event label is applied to an issue or pr, they with automatically be added to the project sprint board.
-* Finally, once on the sprint board, they can then move each issue and pull request to the event name status on the sprint board.
+* Once that the `sprint-event` label is applied to an issue or pr, they with automatically be added to the project sprint board.
+* Finally, once on the sprint board, they can then move each issue and pull request to the event name status on the sprint board. (this also can be done from the issue itself. )
 
 This process, if done during the sprint, will make triaging issues and pull requests after the event, easier.
 
@@ -227,10 +251,14 @@ Jesse adds a label for the event and moves it to a column
 
 ### Review and triage pull requests and issues
 
-If you see small pull requests coming in that are clearly fixing things in a guidebook, please review them and approve if that makes sense. If
-you see an issue opened that makes sense to work on, feel free to comment on it.
+If you see small pull requests coming in that are clearly fixing things (typos, etc) in a guidebook, please review them and approve if that makes sense.  If
+you see an issue opened that makes sense to work on remotely with a participant, feel free to comment on it.
 
-## Acknowledge spring contirbutors - All-Contributors Bot
+:::{todo}
+We will need to feel some of this out at scipy.
+:::
+
+### Acknowledge sprint contributors - All-Contributors Bot
 
 pyOpenSci uses the [All-Contributors bot](https://allcontributors.org/docs/en/bot/usage)
 to recognize and celebrate the contributions of all our contributors. This bot
@@ -239,24 +267,39 @@ easier to maintain accurate records of everyone's efforts.
 
 To add contributors to the repository using the All-Contributors bot:
 
-1. **Use the Bot Command**: In a comment on an issue or pull request, use the following command to add a contributor as follows.
+**Use the Bot Command**: In a comment on an issue or pull request, use the following command to add a contributor as follows.
+
   `@all-contributors add @githubusername for <contribution types>`
 
-  if they have opened an issue only, or reviewed an open pr use:
+If they have opened an issue only, or reviewed an open pr use:
 
   `@all-contributors add @githubusername for review`
-  if they have opened a pull request use:
+
+If they have opened a pull request use:
   `@all-contributors add @githubusername for code, review`
 
 
-2. **Merge PRs Individually**: The bot will create a pull request to update the
-contributors list. Merge each All-Contributors PR individually and immediately
-to avoid merge conflicts.
+2. **Merge all-contributor bot Pull Requests Individually**: The bot will create a pull request to update the
+contributors list when you call the commands above. IMPORTANT: Merge each all-Contributors bot pull request individually and immediately before adding another contributor to avoid merge conflicts.
 
 By recognizing contributors for their efforts, we foster a positive and inclusive
 community, encouraging more participation and collaboration.
 
-## After a Sprint is complete
+## After a Sprint tasks
+
+### Issue and PR triage
+The biggest effort after a sprint will be triaging & addressing issues and pull requests that have been submitted during the sprint. This could take 1-2 weeks and up to a month depending on the scope of each change submitted.
+
+If there are new issues with no associated pull request, you can
+
+1. Invite the issue author to submit a pr if the change seems reasonable and they are up to the task.
+2. If the issue is one that we agree should be addressed, then label the issue with `help-wanted` / `sprintable`  so someone else can tackle it at our next pyOpenSci sprint.
+
+Review each pull request submitted (or invite community members to review) and determine if the pull request looks good as is or requires changes following the standard GitHub review process.
+
+Merge the pull request when it is complete and ready to be merged.
+
+### Followup thank you notes
 
 After a sprint, we will follow up with participants to show our appreciation
 and encourage continued engagement with the pyOpenSci community. Here are the key
@@ -279,8 +322,8 @@ steps to take:
    - **Upcoming Events**: Inform participants about upcoming sprints, webinars,
      workshops, or any other events they might be interested in.
 
-By taking these steps, you help maintain the momentum generated during the sprint,
-foster a sense of community, and encourage ongoing contributions to pyOpenSci projects.
+By thanking contributors you are helping to maintain the momentum generated during the sprint while also
+fostering a sense of community, and encourage ongoing contributions to pyOpenSci projects.
 
 
 
@@ -295,12 +338,15 @@ Community Content “owners”
 Related to above - help post event. We have a lot of issues and pr’s now. Can the community help with triage?
 
 
-## Meeting Metrics that pyOpenSci collects
 
-* Number of pr’s
-* Number of issues
-* Who contributed
+:::{admonition} Meeting metrics that pyOpenSci collects
+:class: info
+* Number of pull request submitted
+* Number of issues submitted
+* Number of contributors contributed
     * Where are the contributors from (country, place of work, other things??)
+:::
+
 
 :::{todo}
 SPRINTS: Collecting information during - sprints, etc - process so we can work together?
