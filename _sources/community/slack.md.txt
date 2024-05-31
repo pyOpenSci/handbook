@@ -14,7 +14,7 @@ Administrators in the pyOpenSci Slack space can set up [workflows](https://slack
 
 ## Setting up an automatic feed to post from GitHub into Slack:
 
-* First, grant permission to the Slack app from within GitHub (this has been completed, and can be further configured [here](https://github.com/pyOpenSci/software-submission/settings/installations). The bot was initially added via the [Slack-GitHub integration](https://slack.github.com/)). Then you can customize which Slack channels you want to use in order to track new activity on GitHub.
+* First, grant permission to the Slack app from within GitHub (this has been completed, and can be further configured [here](https://github.com/pyOpenSci/software-submission/settings/installations). The bot was initially added via the [Slack-GitHub integration](https://slack.github.com/)). Then you can customize which Slack channels you want to use in order to track new activity on GitHub. 
 * To use this integration, you can provide commands directly in the channel to connect it to a specific feed of events on GitHub. Some useful commands are:
     * **`/GitHub subscribe pyopensci/python-package-guide issues`** will allow you to subscribe to issues in the python-package-guide channel
     * **`/GitHub unsubscribe pyopensci/python-package-guide pulls`** will unsubscribe you
