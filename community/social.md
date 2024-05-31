@@ -1,5 +1,5 @@
 # pyOpenSci Social Media Platforms
-The 2024 North Star for pyOpenSci’s social media accounts is to raise general awareness of pyOpenSci in the broader open source community through both scheduled and ad hoc content that reflects our commitments to diversity and inclusion within the open source scientific Python community.
+The 2024 North Star for pyOpenSci’s social media accounts is to raise general awareness of pyOpenSci in the broader open source community through both scheduled and ad hoc content that reflects our commitments to diversity and inclusion within the open source scientific Python community. Through these efforts we will also be supporting our mission of empowering scientists to create better software, thereby supporting more open and reproducible science.
 
 Until 2024, pyOpenSci has had an on and off social media presence since its inception in 2018. Although we’ve previously used Buffer to manage posting across platforms, we currently post directly on each individual site. Our current efforts are localized to [LinkedIn](https://www.linkedin.com/company/pyopensci) and [Fosstodon](https://fosstodon.org/@pyOpenSci) (a Mastodon instance), although we are continuously evaluating other platforms and their compatibility with our community efforts.
 Social Accounts
