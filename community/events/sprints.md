@@ -2,6 +2,17 @@
 
 * TODO: https://github.com/actions/add-to-project?tab=readme-ov-file i think we want to set this up for all repos so this works for scipy.
 
+:::{admonition} TLDR
+* summary here??
+
+During sprint
+
+* label all issues as sprint-event, sprint-name-year
+* merge small pr's that are clearly typo fixies, easy to review things
+* add contributors as contributors to the repo using the all contributors bot @all-contributors add @githubusername for code, review (for an issue use review for a pr use code, review ). Merge each all contributor pr individually and immediately to avoid merge conflicts
+:::
+
+
 ## What is a sprint?
 A sprint is an open session where contributors come together to contribute to an open source project. Contributors may range from beginners, who are new to sprints, GitHub, and git, to experienced developers. Below we review how pyOpenSci runs sprints.
 
@@ -219,12 +230,62 @@ Jesse adds a label for the event and moves it to a column
 If you see small pull requests coming in that are clearly fixing things in a guidebook, please review them and approve if that makes sense. If
 you see an issue opened that makes sense to work on, feel free to comment on it.
 
+## Acknowledge spring contirbutors - All-Contributors Bot
+
+pyOpenSci uses the [All-Contributors bot](https://allcontributors.org/docs/en/bot/usage)
+to recognize and celebrate the contributions of all our contributors. This bot
+helps automate the process of adding contributors to the repository, making it
+easier to maintain accurate records of everyone's efforts.
+
+To add contributors to the repository using the All-Contributors bot:
+
+1. **Use the Bot Command**: In a comment on an issue or pull request, use the following command to add a contributor as follows.
+  `@all-contributors add @githubusername for <contribution types>`
+
+  if they have opened an issue only, or reviewed an open pr use:
+
+  `@all-contributors add @githubusername for review`
+  if they have opened a pull request use:
+  `@all-contributors add @githubusername for code, review`
 
 
-All-contributors bot
-Tagging issues and pr’s with sprint / event name
-Creating a project board for sprint events
-Writing this all up  (let’s test drive for scipy)
+2. **Merge PRs Individually**: The bot will create a pull request to update the
+contributors list. Merge each All-Contributors PR individually and immediately
+to avoid merge conflicts.
+
+By recognizing contributors for their efforts, we foster a positive and inclusive
+community, encouraging more participation and collaboration.
+
+## After a Sprint is complete
+
+After a sprint, we will follow up with participants to show our appreciation
+and encourage continued engagement with the pyOpenSci community. Here are the key
+steps to take:
+
+1. **Send a Thank You Email**: Send an email to all sprint participants thanking them for their contributions. Express gratitude for their time and effort, highlighting any significant achievements or milestones reached during the sprint.
+
+2. **Provide Feedback**: Include any relevant feedback or outcomes from the sprint. This could involve sharing metrics, such as the number of issues closed, pull requests merged, or any specific contributions that stood out.
+
+3. **Invite Continued Engagement**:
+   - **Newsletter**: Encourage participants to subscribe to the pyOpenSci newsletter
+     to stay updated on future events, news, and opportunities.
+   - **LinkedIn**: Invite them to follow pyOpenSci on LinkedIn for professional updates
+     and community highlights.
+   - **GitHub**: Remind them to continue following and contributing to pyOpenSci
+     repositories on GitHub.
+    - Discourse?
+
+4. **Stay Connected**:
+   - **Upcoming Events**: Inform participants about upcoming sprints, webinars,
+     workshops, or any other events they might be interested in.
+
+By taking these steps, you help maintain the momentum generated during the sprint,
+foster a sense of community, and encourage ongoing contributions to pyOpenSci projects.
+
+
+
+
+
 Help for sprint event triage after the event
 Event outputs
 Blog post(s)
@@ -232,12 +293,6 @@ Social
 Welcome new ppl to slack
 Community Content “owners”
 Related to above - help post event. We have a lot of issues and pr’s now. Can the community help with triage?
-
-### After a sprint
-
-* Followup with participants
-* Send out an email thanking people after
-* invite them to stay in touch / follow newsletter / follow linkedin,
 
 
 ## Meeting Metrics that pyOpenSci collects
