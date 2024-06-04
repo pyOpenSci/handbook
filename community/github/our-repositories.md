@@ -1,4 +1,4 @@
-# Our Repositories
+# 1. Our Repositories
 
 :::{todo}
 Add repositories from the pyOpenSci organization.

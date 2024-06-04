@@ -1,5 +1,12 @@
 # GitHub
 
+:::{toctree}
+:glob:
+:maxdepth: 2
+
+*
+:::
+
 :::{todo}
 1. for extra contributors - A pyOpenSci community member will review your post / contribution. you don't need to request a review.
 1.
