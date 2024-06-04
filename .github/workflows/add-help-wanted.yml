@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add issue to project
+        if: contains(github.event.label.name, 'help-wanted') || contains(github.event.label.name, 'sprintable')
         id: add-to-project
         uses: actions/add-to-project@v1.0.1
         with:
