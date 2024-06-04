@@ -22,7 +22,7 @@ free from errors or issues related to the specific checks that have passed.
 
 * **Red X's**: These indicate that the code has failed the associated CI checks. This means there are issues that need to be addressed before the code can be merged. The issues could be related to code style, formatting, tests, or other criteria specified by the CI configuration.
 
-#### If a CI check is red:
+#### If a CI check is red
 
 1. **Click on "Details"** next to the failed check to get more information about the failure.
 2. **Review the logs or output** provided to understand what went wrong.
@@ -39,7 +39,6 @@ If you don't know who to ping, no worries. Someone from the pyOpenSci organizati
 Generally we require a single passing approval in order to merge a pull request. However, in some cases, if you are a pyOpenSci staff member or community member with admin / write access, it could be the case that you need to merge something immediately (i.e. fixing a small piece of breaking code, a spelling error, or adding a new piece of content that has already been agreed upon).
 :::
 
-
 ## CI and outside contributors
 
 If someone from outside of the pyOpenSci organization submits a pull request, then someone within the organization needs to approve and run CI. If you
@@ -48,14 +47,15 @@ have those super powers, please go ahead and allow CI to run for new contributor
 Next to each CI step that was run, there is a details button. If you click on that link, it will give you more information about what has run / not run as expected in the build.
 
 ## Website CI checks
+
 All of our website repositories have several CI builds including:
 
 1. A link checker
 2. `htmlproofer`, which checks both links and alt tags, as well as images
 3. a CI build that shows you what the rendered site looks like when built online. Currently we are using [CircleCI](https://circleci.com/) for a live rendered build, as CircleCI allows for in-browser website build checks. GitHub requires you to download, unzip and view and archive with the build site locally.
 
-
 (pre-commit-ci)=
+
 ## About the Pre-Commit CI Bot
 
 The [Pre-commit CI bot](https://pre-commit.ci/) is a continuous integration service that automatically
@@ -100,7 +100,7 @@ To setup the bot in a new repository:
 
 1. **Enable pre-commit.ci** on your repository through the
    [pre-commit.ci website](https://pre-commit.ci/).
-2. The bot will automatically run checks and apply fixes on pull requests.
+2. The pre-commit.ci bot will automatically run checks and apply fixes on pull requests.
 3. Review the bot's output and ensure all checks pass before merging your code.
 
 This approach ensures that all contributions meet our pyOpenSci code and

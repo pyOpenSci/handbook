@@ -9,7 +9,7 @@ New pull requests should:
 * be created from a fork rather than the pyOpenSci owned parent repository.
 * never be submitted from the `main` branch of your fork.
 
-Authors of new pull requests should, whenever possible, do their best to create clean pull requests. 
+Authors of new pull requests should, whenever possible, do their best to create clean pull requests.
 
 A clean pull request:
 
@@ -21,9 +21,9 @@ A clean pull request:
 Review your own pull request before asking someone else to review it for you. You might be surprised that you notice things in the pull request that you didn't notice when working on the content locally.
 :::
 
-### Pull request content 
+### Pull request content
 
-Below are some guidelines for pull request content. Clean pull requests lead to simpler reviews & faster merging! 
+Below are some guidelines for pull request content. Clean pull requests lead to simpler reviews & faster merging!
 
 1. **Keep It Small**: Aim for one logical change per pull request to simplify review.
 1. **Create a descriptive PR Title and Summary**: Clearly state what the PR achieves and why, including any related issue numbers or discussions.
@@ -39,8 +39,9 @@ Below are some guidelines for pull request content. Clean pull requests lead to 
 1. **Keep your branch updated**: Regularly rebase your fork from the main branch (if possible) to avoid / clean up any merge conflicts and to keep your PR up to date.
 
 :::{info}
+
 * [tips for better pull requests](https://opensource.com/article/18/6/anatomy-perfect-pull-request)
-* pyOpenSci has also enabled an "update branch" feature in the pull request, which will update your branch to be in sync with main. In most cases, this creates a merge commit rather than a rebase. 
+* pyOpenSci has also enabled an "update branch" feature in the pull request, which will update your branch to be in sync with main. In most cases, this creates a merge commit rather than a rebase.
 :::
 
 ### Regular vs New Contributors
@@ -67,7 +68,6 @@ The above process is often implemented on a case-by-case basis depending on the 
 
 :::{todo}
 Did we address these questions above??
-
 
 What are the expectations for an external contributor?
 What should they have done locally?
@@ -102,14 +102,14 @@ specified style and format rules before it gets committed to the repository.
 We generally use the following hooks:
 
 * **Autoformat**: Makes sure files end in a newline and only a newline.
-  - `end-of-file-fixer`
+  * `end-of-file-fixer`
 * **Lint**: Check for files with names that would conflict on a
   case-insensitive filesystem like MacOS HFS+ or Windows FAT.
-  - `check-case-conflict`
+  * `check-case-conflict`
 * **Whitespace**: Clean up trailing white space at the end of individual lines.
-  - `trailing-whitespace`
+  * `trailing-whitespace`
 * **Spelling**: Check for spelling issues within the repository.
-  - `codespell`
+  * `codespell`
 
 Setting up pre-commit locally is optional because we have the pre-commit bot
 setup in our CI workflows. However, if you are a pyOpenSci staff member regularly contributes, we suggest that you set it up locally in our repos to ensure
@@ -124,16 +124,17 @@ To set up pre-commit locally, follow these steps:
    ```bash
    pip install pre-commit
    ```
+
 2. From the root of the pyOpenSci repository that you wish to run pre-commit
 hooks on, run
 
    ```bash
    pre-commit install
    ```
+
 This will install all of the hooks that pyOpenSci has setup for that repository.
 Most often there is a spell checker, and several markdown file formatters, which
 will remove excess white space.
-
 
 3. To run pre-commit on all files in the repository -
 
@@ -174,6 +175,7 @@ contributors across all of our GitHub repositories. Contributor information
 is then published on [our website](https://www.pyopensci.org/our-community/index.html#pyopensci-community-contributors).
 
 ### Who we acknowledge
+
 pyOpenSci is liberal in acknowledging all contributions, regardless of their size. When
 someone new submits an issue or PR, add them as a contributor to the repo using
 the bot.
@@ -193,17 +195,16 @@ When you add a user, the bot will open a pull request that can be squashed
 and merged. Once merged, their profile image and name will appear in the
 README file of that repository.
 
-
 pyOpenSci then has an automated build that will parse contributors across all of
 our repos, adding them to
 the contributor list and noting the type(s) of contributions that they have made
 (e.g., packaging guide, peer review guide).
 
 :::{todo}
+
 ## GitHub & CI
 
 * CI (Continuous integration) will be run on each new commit added to all of our public repositories (that have content).
-
 
 ### Permissions to run CI
 
