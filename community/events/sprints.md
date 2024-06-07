@@ -341,7 +341,9 @@ steps to take:
      and community highlights.
    - **GitHub**: Remind them to continue following and contributing to pyOpenSci
      [repositories on GitHub](https://github.com/pyopensci).
+:::{todo}
     - Discourse?
+:::
 
 4. **Stay Connected**:
    - **Upcoming Events**: Inform participants about upcoming sprints, webinars,
@@ -350,26 +352,29 @@ steps to take:
 By thanking contributors you are helping to maintain the momentum generated during the sprint, while also
 fostering a sense of community, and encourage ongoing contributions to pyOpenSci projects.
 
+### Final wrap up activities
 
+We will have several outcome tasks to do to wrap up a sprint. These
+are listed below:
 
+* Blog post about the event with stats around activity (number of participants, pull requests, issues, etc). This post might highlight wins both big and "small"!
+* Social media promoting the success of the event and above metrics
+* LinkedIn newsletter reusing that blog post content
 
+### Welcome new contributors to slack
 
-Help for sprint event triage after the event
-Event outputs
-Blog post(s)
-Social
-Welcome new ppl to slack
-Community Content “owners”
-Related to above - help post event. We have a lot of issues and pr’s now. Can the community help with triage?
-
-
+Because some participants come to sprints to learn, they may not stage engaged with pyOpenSci after a sprint event. As such it's best to invite
+people who continue to stay engaged with us either via GitHub or some
+other mechanism (becoming a reviewer, editor, submitting a package, etc).
 
 :::{admonition} Meeting metrics that pyOpenSci collects
 :class: info
 * Number of pull request submitted
 * Number of issues submitted
 * Number of contributors contributed
-    * Where are the contributors from (country, place of work, other things??)
+    * Where are the contributors from (country, place of work / organization)
+    * Type of user - student, professional, non profit/ public sector.
+    * Optional - demographics
 :::
 
 
