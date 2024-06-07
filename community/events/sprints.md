@@ -8,14 +8,14 @@
 
 **Before a sprint**
 
-* pyOpenSci staff go through the pyOpenSci repo issues and ensure all relevant **help-wanted** and/or **sprintable**  both have appropriated labels and have been added to the the project board in the appropriate column (beginner-friendly, python, dev-ops/ci, Python, Sphinx).
+* pyOpenSci staff go through the pyOpenSci repo issues and ensure all relevant **help-wanted** and/or **sprintable**  both have appropriated labels and have been added to the the [GitHub project](github-project) in the appropriate column (beginner-friendly, python, dev-ops/ci, Python, Sphinx).
 * pyOpenSci staff ensure all issues on the project board have enough **specific** information for a new user to follow and complete the task needed to be done. The more specific the issue is, the fewer questions a sprinter / contributor will ask during a sprint. This saves significant time and energy for both the sprint attendee and whomever is leading the sprint.
 
 **During a sprint**
 
 * Label all newly submitted issues as `sprint-event`, `sprint-name-year` (example: `sprint`, `pyconus-24`)
 * Merge small PRs that are clearly mergeable without significant review. Examples might include: typo fixes and other easy-to- review contributions.
-* For PRs, add contributors to the GitHub repository that they contributed to using the [All Contributors bot](https://allcontributors.org/) using the command: `@all-contributors add @githubusername for code, review` (if the contribution is a pull request) or  `@all-contributors add @githubusername for review` (if the contribution is an issue
+* For PRs, add contributors to the GitHub repository that they contributed to using the [All Contributors bot](https://allcontributors.org/) using the command: `@all-contributors add @githubusername for code, review` (if the contribution is a pull request) or  `@all-contributors add @githubusername for review` (if the contribution is an issue). [More on using the bot here.](all-contribs)
 * **IMPORTANT:** Merge each all-contributor-bot PR's individually and immediately after they have been opened to avoid merge conflicts
 
 **After a sprint**
@@ -88,6 +88,7 @@ significant effort during a sprint event.
 
 As such, it's important for anyone leading a sprint to come prepared! In most cases having community helpers will go along way to supporting beginner contributor success.
 
+(github-project)=
 ## Sprint infrastructure - GitHub projects
 
 To efficiently manage and track contributions during sprints, pyOpenSci utilizes
@@ -283,6 +284,7 @@ you see an issue opened that makes sense to work on remotely with a participant,
 We will need to feel some of this out at scipy.
 :::
 
+(all-contribs)=
 ### Acknowledge sprint contributors - All-Contributors Bot
 
 pyOpenSci uses the [All-Contributors bot](https://allcontributors.org/docs/en/bot/usage)
