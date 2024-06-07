@@ -15,5 +15,4 @@ Slack <slack>
 :caption: GitHub Section
 
 GitHub <github/intro>
-Our Repos <github/our-repositories>
 :::
