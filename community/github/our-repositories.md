@@ -23,8 +23,8 @@ small modifications could disrupt the language processing.
 ## Software-peer-review Guidebook Repository
 
 This repository hosts our [software peer review guidebook](https://www.pyopensci.org/software-peer-review/),
-which documents the processes and guidelines for authors, editors, the editor in
-chief, and the peer review triage team as they manage our open peer review process. It also details our peer review policies,
+which documents the processes and guidelines for authors, editors, the Editor in
+Chief, and the peer review triage team as they manage our open peer review process. It also details our peer review policies,
 partnerships, and the templates used in the review process.
 
 ## Python-package-guide Repository
@@ -46,7 +46,7 @@ Add more information about the contributor data workflow ...
 ## [pyopensci.github.io Repository](https://github.com/pyOpenSci/pyopensci.github.io)
 
 This repository contains code and content that builds and publishes our pyOpenSci website. The website, [pyOpenSci](https://www.pyopensci.org/), is hosted on GitHub and
-uses the Jekyll Minimal Mistakes theme. The Python packages page, contributor page and peer review team page are all updated automagically using a
+uses the [Jekyll Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme. The Python packages page, contributor page and peer review team page are all updated automagically using a
 GitHub action workflow that is supported by the pyosMeta Python package discussed above. The workflow runs every other week but can be triggered manually as a **workflow
 dispatch**.
 
@@ -70,7 +70,7 @@ The action will:
 3. collect metadata for the packages authors reviewers and editors using the GitHub (REST) API
 4. Create 2 output YAML files discussed below.
 
-The yaml output files and then used to populate content on the website.
+The YAML output files and then used to populate content on the website.
 
 ### Metadata stored in this repository
 
@@ -88,9 +88,9 @@ information.
 
 **Platform:** Sphinx book template that builds on top of the pydata_sphinx_theme
 
-All of our pyOpenSci sphinx books (Handbook, packaging guide, software review guide ) have been customized to match our pyOpenSci branding. This repo contains the start of a sphinx theme that will incorporate all of our branding so we do not have to manually apply the branding and update the branding individually in each repo. Rather we can update branding in the theme and it will be applied across all of our repositories that use the theme.
+All of our pyOpenSci Sphinx books (handbook, packaging guide, software review guide ) have been customized to match our pyOpenSci branding. This repo contains the start of a Sphinx theme that will incorporate all of our branding, so we do not have to manually apply the branding and update it individually in each repo. Instead, we can update branding in the theme and it will be applied across all of our repositories that use the theme.
 
-Creating a theme was inspired by Chris Holdgraf's 2i2c Sphinx theme.
+Creating a theme was inspired by [Chris Holdgraf's](https://chrisholdgraf.com/) 2i2c Sphinx theme.
 
 ## [Handbook Repository](https://github.com/pyOpenSci/handbook)
 
@@ -100,7 +100,7 @@ This is where we store our organization governance, code of conduct and processe
 
 ## [pyosPackage repository](https://github.com/pyOpenSci/pyosPackage)
 
-The pyosPackage repo contains an example pure-Python package that compliments
+The pyosPackage repo contains an example pure-Python package that complements
 our package guide & tutorials. We will build this package example out over time
 for folks that just want to see a working package without creating one
 themselves.
