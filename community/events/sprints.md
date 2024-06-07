@@ -6,7 +6,7 @@
 
 :::{admonition} TL;DR
 
-**Before sprint**
+**Before a sprint**
 * Go through the pyOPenSci repo issues and ensure all relevant help-wanted / sprintable issues have labels and are on the project board.
 * Also ensure all issues on the project board have enough specific information for a new user to follow and complete the task needed to be done.
 
