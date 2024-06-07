@@ -45,7 +45,7 @@ Prior to an in-person sprint, the following items should be created:
 :::{todo}
 will this work for events as we will want an event name associated with it but it would be annoying to make a new card for every event? UNLESS we make a bunch at once for all events for the year?
 
-We are currently pricing out a travel banner, to be used outside a space where pyOpenSci is running a workshop. 
+We are currently pricing out a travel banner, to be used outside a space where pyOpenSci is running a workshop.
 An example of the [base/holder for the table top card](https://www.officedepot.com/a/products/5760240/American-Metalcraft-Stainless-Steel-Harp-Style/). We'll initially test out metal, as they will be less likely to break in transit, however acrylic options are also available.
 
 Cards will be designed and printed, all of which will contain, at minimum, the pyOpenSci logo, website address, and a QR code that links to all of our socials/mailing list. this way it'll give people a visual cue as to where pyOS is congregating, as well as the option to interact with us directly.
