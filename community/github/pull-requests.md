@@ -4,7 +4,14 @@ When possible, pull request and issue submissions and reviews should follow stan
 
 ## Pull Requests
 
-Authors of new pull requests should whenever possible, do their best to create clean pull requests. A clean pull request:
+New pull requests should:
+
+* be created from a fork rather than the pyOpenSci owned parent repository.
+* never be submitted from the `main` branch of your fork.
+
+Authors of new pull requests should whenever possible, do their best to create clean pull requests. 
+
+A clean pull request:
 
 * is focused, and easy to review,
 * can be more quickly reviewed (and in turn merged) so it saves everyone time.
@@ -13,6 +20,10 @@ Authors of new pull requests should whenever possible, do their best to create c
 :::{tip}
 Review your own pull request before asking someone else to review it for you. You might be surprised that you notice things in the pull request that you didn't notice when working on the content locally.
 :::
+
+### Pull request content 
+
+Below are some guidelines for pull request content. Clean pull requests lead to simpler reviews & faster merging! 
 
 1. **Keep It Small**: Aim for one logical change per pull request to simplify review.
 1. **Create descriptive PR Title and Summary**: Clearly state what the PR achieves and why, including any related issue numbers or discussions.
@@ -29,6 +40,7 @@ Review your own pull request before asking someone else to review it for you. Yo
 
 :::{info}
 * [tips for better pull requests](https://opensource.com/article/18/6/anatomy-perfect-pull-request)
+* pyOpenSci has also enabled a "update branch" feature in the pull request which will update your branch to be in sync with main. It creates a merge commit rather than a rebase in most cases. 
 :::
 
 ### Regular vs New Contributors
