@@ -4,5 +4,5 @@
 :hidden:
 :caption: External Communications
 
-Email <email>
+External Communications <external-communications>
 :::
