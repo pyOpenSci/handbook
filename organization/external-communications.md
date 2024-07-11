@@ -75,3 +75,35 @@ All blog posts should be promoted, regardless of whether or not they were writte
 * Fosstodon
 
 In addition to pyOpenSci promotions, we monitor social media for any personal posts authors have created to promote their post, boost accordingly.
+
+## Newsletters
+
+We publish two newsletters:
+* A weekly newsletter on LinkedIn, published on Thursdays
+* A monthly newsletter published on LinkedIn and sent to all Mailchimp subscribers
+
+The weekly LinkedIn newsletter has three main categories:
+* The monthly round-up edition, sharing and celebrating pyOpenSci and community wins over the past month
+* A monthly "Community News" edition, which shares conversations, discussions, and decisions that have taken place in Slack as well as on Discourse and GitHub, that are relevant to the broader community
+* Re-posts of interesting pyOpenSci blog posts
+
+When a newsletter post is a re-post from the pyOpenSci blog, it's important to include text and a link back to the original blog post, indicating where the post was originally published. This prevents link cannibalisation, where different links with the same content compete for keyword rankings. We want all keyword rankings to be directed back to the pyOpenSci website wherever possible.
+
+## YouTube
+
+The [pyOpenSci YouTube channel](https://youtube.com/@pyopensci) is still under development, and currently only has one published video. While we are still in the process of developing a YouTube strategy, the best practices for YouTube videos include the following:
+* Provide accurate captions
+* Create an eye-catching thumbnail for each video, using a similar design aesthetic for videos that occur in a series
+* Use timestamps in the video description
+* Promote the video on socials within the first 20 minutes of the video launching
+* Use no more than two hashtags per video
+
+## Discourse
+
+pyOpenSci also maintains a [public Discourse forum](https://pyopensci.discourse.group/). Unlike Slack, which has restricted access, anyone is able to join and participate in Discourse. Discourse is a place to announce new packages in our ecosystem, to post memos to the community, as well as to announce meetings and other events. We also want the community to use it to ask questions around peer review and packaging.  
+
+At this point in time pyOpenSci has not developed a robust Discourse strategy for community engagement, but continues to discuss the platform and how we would like to use it in our quarterly social media strategy meetings.  
+
+## Zenodo
+
+Zenodo is a general-purpose research repository where any research output can be shared by its users, where pyOpenSci maintains a [community group](https://zenodo.org/communities/pyopensci?q=&l=list&p=1&s=10&sort=newest). When pyOpenSci staff give a presentation, they will update the community group with their talk materials. In addition, when community members give presentations, they have the option of adding them to the pyOpenSci Zenodo community group.
