@@ -1,12 +1,12 @@
 # pyOpenSci GitHub issue process
 
-When possible, pull request and issue submissions and reviews should follow
+When possible, pull requests, issue submissions and reviews should follow
 standard open source workflows. Below are guidelines for handling issues.
 
 ## Guidelines for New Issues
 
 
-**Issues in should be as specific as possible:** specifics within an issue help both our future selves and also outside contributors understand the goal or
+**Issues should be as specific as possible:** specifics within an issue help both our future selves and also outside contributors understand the goal or
 desired outcome associated with addressing the issue. This is important both internally and for issues that we tag as `help-wanted`, which we hope community members will address in pyOpenSci sprints.
 
 To ensure an issue is well-written and specific, include the following details:
@@ -19,15 +19,15 @@ To ensure an issue is well-written and specific, include the following details:
 
 - **Description:** A detailed explanation of the issue or feature request, including context, background information, and the reason for the request. Explain why the issue is important and what problem it solves.
 
-- **Screenshots/Code Samples:** Screenshots, code snippets, links, or any other relevant files that can help in understanding the issue better.
+- **Screenshots/Code Samples:** Include screenshots, code snippets, links, or any other relevant files that can help others in understanding the issue better.
 
-- **Possible Solutions/Recommendations:** Any ideas or suggestions for how to address the issue, which can help guide contributors towards a solution.
+- **Possible Solutions/Recommendations:** It's helpful to provide any ideas or suggestions for how to address the issue, which can help guide contributors towards a solution.
 
-- **Related Issues or Pull Requests:** References to any related issues or pull requests, providing additional context and understanding of the broader scope of the issue.
+- **Related Issues or Pull Requests:** Add references to any related issues or pull requests, which provides additional context and understanding of the broader scope of the issue.
 
 ### If you are reporting a code bug
 
-* **Steps to Reproduce (for bugs):** A step-by-step guide on how to reproduce the issue, including relevant code snippets, commands, or configurations.
+* **Steps to Reproduce (for bugs):** A step-by-step guide (generally a list or narrative) on how to reproduce the issue, including relevant code snippets, commands, or configurations.
 
 * **Expected vs. Actual Behavior (for bugs):** A description of what you expected to happen and what actually happened. This helps in understanding the discrepancy and the impact of the bug.
 
@@ -50,7 +50,7 @@ time they have available.
 Once the `help-wanted` or `sprintable` issue label is added, the issue will be
 automatically added to our
 [pyOpenSci help-wanted board](https://github.com/orgs/pyOpenSci/projects/3).
-This automation is implemented currently for a single repository (the packaging guide) but we plan to implement it for other repositories using the add-to-project GitHub action.
+This automation is implemented currently for a single repository (the packaging guide), but we plan to implement it for other repositories using the add-to-project GitHub action.
 
 
 :::{note}
@@ -77,6 +77,6 @@ Add section on labels
 ## Issue Maintenance
 
 Our goal at pyOpenSci is to keep our list of issues current and active.
-Quarterly issue cleanup sessions should be implemented to ensure issues are
-either being actively addressed or to assess whether older or stale issues can
-be potentially closed.
+Quarterly issue cleanup sessions are implemented to ensure issues are
+either being actively addressed, or to assess whether older or stale issues can
+potentially be closed.
