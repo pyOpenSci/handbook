@@ -24,7 +24,7 @@ pyOpenSci uses [EventBrite](https://eventbrite.com) to manage event sign-ups. An
 
 ## Linktree
 
-All of our active sites, platforms, and social media accounts are located in a Linktr.ee account, which is shared in the Description of our social media sites where applicable. 
+All of our active sites, platforms, and social media accounts are located in a Linktr.ee account, which is shared in the Description of our social media sites where applicable.
 
 Accessing and editing Linktr.ee:
 * Login at linktr.ee (credentials are in Bitwarden)
@@ -34,32 +34,32 @@ Accessing and editing Linktr.ee:
 
 ## Blog
 
-Our [blog lives on our website](https://www.pyopensci.org/blog), which is driven by Jekyll and hosted currently on GitHub pages. [The repo url is here](https://github.com/pyOpenSci/pyopensci.github.io).   
+Our [blog lives on our website](https://www.pyopensci.org/blog), which is driven by Jekyll and hosted currently on GitHub pages. [The repo url is here](https://github.com/pyOpenSci/pyopensci.github.io).
 
-### Blog goals  
+### Blog goals
 
-The goals of our blog include:  
-* Writing for the broader open science community  
-* Sharing news and updates related to pyOpenSci  
-* Build domain authority through SEO strategies  
+The goals of our blog include:
+* Writing for the broader open science community
+* Sharing news and updates related to pyOpenSci
+* Build domain authority through SEO strategies
 
-### How to add a new blog post 
+### How to add a new blog post
 
-There are two main groups of people who submit blog posts to the pyOpenSci blog: pyOpenSci employees, and package authors/maintainers for packages that have been accepted into the [pyOpenSci ecosystem](https://www.pyopensci.org/python-packages.html). If you are not in one of these two groups, but would like to submit a blog post to pyOpenSci, please reach out to us at [media@pyopensci.org](mailto:media@pyopensci.org) to discuss your post prior to writing it and submitting a PR.   
+There are two main groups of people who submit blog posts to the pyOpenSci blog: pyOpenSci employees, and package authors/maintainers for packages that have been accepted into the [pyOpenSci ecosystem](https://www.pyopensci.org/python-packages.html). If you are not in one of these two groups, but would like to submit a blog post to pyOpenSci, please reach out to us at [media@pyopensci.org](mailto:media@pyopensci.org) to discuss your post prior to writing it and submitting a PR.
 
-**Writing a blog post**  
+**Writing a blog post**
 
-The following processes for writing a blog post should be used by both pyOpenSci employees as well as guest posts:  
-1. Fork the pyOpenSci website repo: [https://github.com/pyOpenSci/pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io).  
-2. Work on your blog post locally. Be sure to include alt text as needed, and create an author page if you do not already have one.    
-3. Submit a pull request from your fork of the website repo to [https://github.com/pyOpenSci/pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io).  
-4. Make sure that the blog post passes CI checks that look for spelling errors, broken links and more. Please note that occasionally the `htmlproofer` check will fail because the URL does not exist yet. We have implemented a fix for this, but it occasionally does not work.   
-5. Request review of the blog post. A member of the pyOpenSci staff should always review any new content being added to the website.  
-6. Once you have an approving review, the pull request can be merged. In the case of guest blog posts, a member of the pyOpenSci team will merge your post.  
+The following processes for writing a blog post should be used by both pyOpenSci employees as well as guest posts:
+1. Fork the pyOpenSci website repo: [https://github.com/pyOpenSci/pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io).
+2. Work on your blog post locally. Be sure to include alt text as needed, and create an author page if you do not already have one.
+3. Submit a pull request from your fork of the website repo to [https://github.com/pyOpenSci/pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io).
+4. Make sure that the blog post passes CI checks that look for spelling errors, broken links and more. Please note that occasionally the `htmlproofer` check will fail because the URL does not exist yet. We have implemented a fix for this, but it occasionally does not work.
+5. Request review of the blog post. A member of the pyOpenSci staff should always review any new content being added to the website.
+6. Once you have an approving review, the pull request can be merged. In the case of guest blog posts, a member of the pyOpenSci team will merge your post.
 
-pyOpenSci has GitHub organization-wide policies in place that ensure all pull requests are generally reviewed prior to being merged. In some instances we may bypass those if the PR is a small fix or critical update. In most cases a review is preferred. Please contact the Executive Director and Founder, Leah Wasser, with any questions or needs for clarification.  
+pyOpenSci has GitHub organization-wide policies in place that ensure all pull requests are generally reviewed prior to being merged. In some instances we may bypass those if the PR is a small fix or critical update. In most cases a review is preferred. Please contact the Executive Director and Founder, Leah Wasser, with any questions or needs for clarification.
 
-**A note on guest blog posts**  
+**A note on guest blog posts**
 
 Anyone who has had their package accepted into the pyOpenSci ecosystem is encouraged to submit a blog post (or series of blog posts) about their review experience and/or their package. When submitting your blog post, please include the following YAML elements:
 
@@ -118,9 +118,9 @@ The [pyOpenSci YouTube channel](https://youtube.com/@pyopensci) is still under d
 
 ## Discourse
 
-pyOpenSci also maintains a [public Discourse forum](https://pyopensci.discourse.group/). Unlike Slack, which has restricted access, anyone is able to join and participate in Discourse. Discourse is a place to announce new packages in our ecosystem, to post memos to the community, as well as to announce meetings and other events. We also want the community to use it to ask questions around peer review and packaging.  
+pyOpenSci also maintains a [public Discourse forum](https://pyopensci.discourse.group/). Unlike Slack, which has restricted access, anyone is able to join and participate in Discourse. Discourse is a place to announce new packages in our ecosystem, to post memos to the community, as well as to announce meetings and other events. We also want the community to use it to ask questions around peer review and packaging.
 
-At this point in time pyOpenSci has not developed a robust Discourse strategy for community engagement, but continues to discuss the platform and how we would like to use it in our quarterly social media strategy meetings.  
+At this point in time pyOpenSci has not developed a robust Discourse strategy for community engagement, but continues to discuss the platform and how we would like to use it in our quarterly social media strategy meetings.
 
 ## Zenodo
 
