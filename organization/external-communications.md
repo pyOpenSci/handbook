@@ -61,9 +61,27 @@ pyOpenSci has GitHub organization-wide policies in place that ensure all pull re
 
 **A note on guest blog posts**  
 
-Anyone who has had their package accepted into the pyOpenSci ecosystem is encouraged to submit a blog post (or series of blog posts) about their review experience and/or their package. When reviewing a guest blog post, pyOpenSci staff will only make necessary edits for:
-* pyOpenSci branding
-* post clarity  
+Anyone who has had their package accepted into the pyOpenSci ecosystem is encouraged to submit a blog post (or series of blog posts) about their review experience and/or their package. When submitting your blog post, please include the following YAML elements:
+
+```
+layout: single
+title: "The title of your blog post"
+excerpt: "One to five sentences summarizing your post. This text will appear on our [blog landing page](https://pyopensci.org/blog)"
+author: "Your name"
+permalink: /blog/url-for-your-post.html
+header:
+  overlay_image: images/headers/your-blog-post-header-image.png
+  overlay_filter: rgba(20, 13, 36, 0.8)
+categories:
+  - blog-post
+  - community
+classes: wide
+toc: true
+comments: true
+---
+```
+
+For more information on how pyOpenSci uses GitHub, please refer to the [GitHub section of our handbook](https://www.pyopensci.org/handbook/community/github/intro.html).
 
 ### Promoting blog posts
 
