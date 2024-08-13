@@ -15,6 +15,8 @@ Slack <slack>
 GitHub <github/intro>
 Our Repos <github/our-repositories>
 GitHub Issue Guidelines <github/issues>
+Pull Requests <github/pull-requests>
+Continuous Integration (CI) <github/continuous-integration>
 :::
 
 :::{toctree}

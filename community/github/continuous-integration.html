@@ -7,19 +7,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="pyOpenSci GitHub Processes" />
+<meta property="og:title" content="3. Continuous integration" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.pyopensci.org/governance/community/github/intro.html" />
+<meta property="og:url" content="https://www.pyopensci.org/governance/community/github/continuous-integration.html" />
 <meta property="og:site_name" content="pyOpenSci Handbook" />
-<meta property="og:description" content="pyOpenSci has a suite of GitHub repositories (repos) that support pyOpenSci processes and content including: website content, tools that track contributors and keep the website up to date, peer rev..." />
+<meta property="og:description" content="What is CI?: Continuous Integration (CI) refers to checks and tests that are triggered by events that occur on GitHub such as commit pushes, pull requests, and even merges to a GitHub repository. I..." />
 <meta property="og:image:width" content="1146" />
 <meta property="og:image:height" content="600" />
-<meta property="og:image" content="https://www.pyopensci.org/governance/_images/social_previews/summary_community_github_intro_1539f156.png" />
-<meta property="og:image:alt" content="pyOpenSci has a suite of GitHub repositories (repos) that support pyOpenSci processes and content including: website content, tools that track contributors a..." />
-<meta name="description" content="pyOpenSci has a suite of GitHub repositories (repos) that support pyOpenSci processes and content including: website content, tools that track contributors and keep the website up to date, peer rev..." />
+<meta property="og:image" content="https://www.pyopensci.org/governance/_images/social_previews/summary_community_github_continuous-integration_5662e43f.png" />
+<meta property="og:image:alt" content="What is CI?: Continuous Integration (CI) refers to checks and tests that are triggered by events that occur on GitHub such as commit pushes, pull requests, a..." />
+<meta name="description" content="What is CI?: Continuous Integration (CI) refers to checks and tests that are triggered by events that occur on GitHub such as commit pushes, pull requests, and even merges to a GitHub repository. I..." />
 <meta name="twitter:card" content="summary_large_image" />
     <link href="https://www.pyopensci.org/images/favicon.ico" rel="icon" type="image/x-icon">
-    <title>pyOpenSci GitHub Processes &#8212; pyOpenSci Governance</title>
+    <title>3. Continuous integration &#8212; pyOpenSci Governance</title>
   
   
   
@@ -56,13 +56,13 @@
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'community/github/intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'community/github/continuous-integration';</script>
     <script src="../../_static/matomo.js?v=918da087"></script>
-    <link rel="canonical" href="https://www.pyopensci.org/governance/community/github/intro.html" />
+    <link rel="canonical" href="https://www.pyopensci.org/governance/community/github/continuous-integration.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="pyOpenSci GitHub repositories" href="our-repositories.html" />
-    <link rel="prev" title="Slack - Day to Day communication" href="../slack.html" />
+    <link rel="next" title="Meetings &amp; Events" href="../events/intro.html" />
+    <link rel="prev" title="2. pyOpenSci Pull Request Process" href="pull-requests.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -478,11 +478,11 @@ document.write(`
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">GitHub Processes</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">GitHub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="our-repositories.html">Our Repos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues.html">GitHub Issue Guidelines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pull-requests.html">Pull Requests</a></li>
-<li class="toctree-l1"><a class="reference internal" href="continuous-integration.html">Continuous Integration (CI)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Continuous Integration (CI)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">pyOpenSci Events</span></p>
 <ul class="nav bd-sidenav">
@@ -528,7 +528,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Organization Handbook</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">pyOpenSci...</li>
+    <li class="breadcrumb-item active" aria-current="page">3....</li>
   </ul>
 </nav>
 </div>
@@ -545,17 +545,150 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="pyopensci-github-processes">
-<h1>pyOpenSci GitHub Processes<a class="headerlink" href="#pyopensci-github-processes" title="Link to this heading">#</a></h1>
-<p>pyOpenSci has a suite of GitHub repositories (repos) that support pyOpenSci
-processes and content including:</p>
+  <section id="continuous-integration">
+<h1>3. Continuous integration<a class="headerlink" href="#continuous-integration" title="Link to this heading">#</a></h1>
+<section id="what-is-ci">
+<h2>What is CI?<a class="headerlink" href="#what-is-ci" title="Link to this heading">#</a></h2>
+<p>Continuous Integration (CI) refers to checks and tests that are triggered by
+events that occur on GitHub such as commit pushes, pull requests, and even
+merges to a GitHub repository. In the pyOpenSci organization, each commit
+triggers at least one or more automated CI workflows. For the <a class="reference external" href="https://www.pyopensci.org/">pyOpenSci
+website repository</a> and our online books such as
+the <a class="reference external" href="https://github.com/pyopensci/python-package-guide">Python packaging guidebook that is written using
+Sphinx</a>, this build will:</p>
 <ul class="simple">
-<li><p>website content</p></li>
-<li><p>tools that track contributors and keep the website up to date</p></li>
-<li><p>peer review</p></li>
+<li><p>Build the live rendered version of the online content with any changes added
+in the current commit(s) or pull requests.</p></li>
+<li><p>Check the text for spelling issues, check images for missing alt tags, and
+more.</p></li>
 </ul>
-<p>This section of the guidebook discusses our GitHub organization, and processes
-for adding and managing content and infrastructure across the organization.</p>
+<p>If the repository has code, it will check for code style.</p>
+<p>Having a CI setup on each pyOpenSci GitHub repository ensures that we detect
+issues such as bad links or broken code before they’re merged into the main
+repository.</p>
+<section id="what-do-the-green-and-red-checks-mean">
+<h3>What do the green and red checks mean?<a class="headerlink" href="#what-do-the-green-and-red-checks-mean" title="Link to this heading">#</a></h3>
+<p>The green and red checks in the CI block indicate the status of these automated
+checks:</p>
+<ul class="simple">
+<li><p><strong>Green checks</strong>: These indicate that the code has passed the CI checks.
+This means the code meets the project’s standards and is likely free from
+errors or issues related to the specific checks that have passed.</p></li>
+<li><p><strong>Red X’s</strong>: These indicate that the code has failed the associated CI
+checks. This means there are issues that need to be addressed before the code
+can be merged. The issues could be related to code style, formatting, tests,
+or other criteria specified by the CI configuration.</p></li>
+</ul>
+<section id="if-a-ci-check-is-red">
+<h4>If a CI check is red<a class="headerlink" href="#if-a-ci-check-is-red" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Click on “Details”</strong> next to the failed check to get more information
+about the failure.</p></li>
+<li><p><strong>Review the logs or output</strong> provided to understand what went wrong.</p></li>
+<li><p><strong>Make the necessary changes</strong> to fix the issue.</p></li>
+<li><p><strong>Push the updated code</strong> to the pull request to trigger the CI checks
+again.</p></li>
+</ol>
+<p>If something isn’t working as expected or you are having a hard time
+understanding why CI is failing (we’ve all been there!), please ping someone
+else in the organization for help. As a pyOpenSci community, we are always
+here to help each other.</p>
+<p>If all CI checks are green, you are good to go. Ping a pyOpenSci repository
+owner on GitHub to review your pull request. The pull request can be merged
+once you have approval from another repository owner.</p>
+<p>If you don’t know who to ping, no worries. Someone from the pyOpenSci
+organization will see your pull request and get back to you.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Generally, we require a single passing approval to merge a pull request.
+However, in some cases, if you are a pyOpenSci staff member or community
+member with admin/write access, it could be the case that you need to merge
+something immediately (i.e., fixing a small piece of breaking code, a spelling
+error, or adding a new piece of content that has already been agreed upon).</p>
+</div>
+</section>
+</section>
+</section>
+<section id="ci-and-outside-contributors">
+<h2>CI and outside contributors<a class="headerlink" href="#ci-and-outside-contributors" title="Link to this heading">#</a></h2>
+<p>If someone from outside of the pyOpenSci organization submits a pull request,
+then someone within the organization needs to approve and run CI. If you have
+those superpowers, please go ahead and allow CI to run for new contributors.
+You can’t break anything by running CI, so always feel confident in our repos
+when you click that button, assuming that the PR is legitimate and submitted
+from a valid user!</p>
+<p>Next to each CI step that was run, there is a details button. If you click on
+that link, it will give you more information about what has run/not run as
+expected in the build.</p>
+</section>
+<section id="website-ci-checks">
+<h2>Website CI checks<a class="headerlink" href="#website-ci-checks" title="Link to this heading">#</a></h2>
+<p>All of our website repositories have several CI builds, including:</p>
+<ol class="arabic simple">
+<li><p>A link checker.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">htmlproofer</span></code>, which checks both links and alt tags, as well as images.</p></li>
+<li><p>A CI build that shows you what the rendered site looks like when built
+online. Currently, we are using <a class="reference external" href="https://circleci.com/">CircleCI</a> for a
+live rendered build, as CircleCI allows for in-browser website build checks.
+GitHub requires you to download, unzip, and view an archive with the build
+site locally.</p></li>
+</ol>
+</section>
+<section id="about-the-pre-commit-ci-bot">
+<span id="pre-commit-ci"></span><h2>About the Pre-Commit CI Bot<a class="headerlink" href="#about-the-pre-commit-ci-bot" title="Link to this heading">#</a></h2>
+<p>The <a class="reference external" href="https://pre-commit.ci/">Pre-commit CI bot</a> is a continuous integration
+service that automatically runs pre-commit hooks on each pull request. This
+helps maintain code quality and consistency without requiring developers to
+run pre-commit locally.</p>
+<p>To run the bot on a PR, add the following command to a standalone comment:</p>
+<p><code class="docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">autofix</span></code></p>
+<p>When you do this, the bot will run all of the hooks that it can, adding a new
+commit to the pull request for you.</p>
+<section id="what-the-bot-can-fix">
+<h3>What the bot can fix<a class="headerlink" href="#what-the-bot-can-fix" title="Link to this heading">#</a></h3>
+<p>The bot can in-place fix many linting and style issues in our content,
+including:</p>
+<ul class="simple">
+<li><p>Automatically fixing formatting issues such as trailing whitespace and
+missing newlines.</p></li>
+<li><p>Applying code style adjustments as specified by hooks like
+<a class="reference external" href="https://github.com/psf/black"><code class="docutils literal notranslate"><span class="pre">black</span></code></a> and
+<a class="reference external" href="https://pycqa.github.io/isort/"><code class="docutils literal notranslate"><span class="pre">isort</span></code></a>.</p></li>
+</ul>
+</section>
+<section id="what-the-bot-cant-fix">
+<h3>What the bot can’t fix<a class="headerlink" href="#what-the-bot-cant-fix" title="Link to this heading">#</a></h3>
+<p>The bot can’t fix some things, such as:</p>
+<ul class="simple">
+<li><p>Logical errors or bugs in the code.</p></li>
+<li><p>Issues that require human judgment, such as resolving complex merge
+conflicts or making design decisions.</p></li>
+<li><p>Spelling errors.</p></li>
+</ul>
+<p>If the bot finds errors that it can’t fix, you will need to make those changes
+locally.</p>
+</section>
+<section id="using-the-bot-instead-of-pre-commit-hooks">
+<h3>Using the bot instead of pre-commit hooks<a class="headerlink" href="#using-the-bot-instead-of-pre-commit-hooks" title="Link to this heading">#</a></h3>
+<p>pyOpenSci contributors may prefer not to set up pre-commit locally. In that
+case, we can rely on the pre-commit.ci bot to fix things as needed.</p>
+</section>
+<section id="bot-setup">
+<h3>Bot setup<a class="headerlink" href="#bot-setup" title="Link to this heading">#</a></h3>
+<p>To set up the bot in a new repository:</p>
+<ol class="arabic simple">
+<li><p><strong>Enable pre-commit.ci</strong> on your repository through the
+<a class="reference external" href="https://pre-commit.ci/">pre-commit.ci website</a>.</p></li>
+<li><p>The pre-commit.ci bot will automatically run checks and apply fixes on
+pull requests.</p></li>
+<li><p>Review the bot’s output and ensure all checks pass before merging your
+code.</p></li>
+</ol>
+<p>This approach ensures that all contributions meet our pyOpenSci code and text
+quality standards without requiring each contributor to install and run
+pre-commit locally.</p>
+</section>
+</section>
 </section>
 
 
@@ -569,20 +702,20 @@ for adding and managing content and infrastructure across the organization.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../slack.html"
+       href="pull-requests.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Slack - Day to Day communication</p>
+        <p class="prev-next-title">2. pyOpenSci Pull Request Process</p>
       </div>
     </a>
     <a class="right-next"
-       href="our-repositories.html"
+       href="../events/intro.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">pyOpenSci GitHub repositories</p>
+        <p class="prev-next-title">Meetings &amp; Events</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -597,10 +730,37 @@ for adding and managing content and infrastructure across the organization.</p>
 
 
   <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-ci">What is CI?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-do-the-green-and-red-checks-mean">What do the green and red checks mean?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#if-a-ci-check-is-red">If a CI check is red</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ci-and-outside-contributors">CI and outside contributors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#website-ci-checks">Website CI checks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-pre-commit-ci-bot">About the Pre-Commit CI Bot</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-the-bot-can-fix">What the bot can fix</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-the-bot-cant-fix">What the bot can’t fix</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-bot-instead-of-pre-commit-hooks">Using the bot instead of pre-commit hooks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bot-setup">Bot setup</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/pyopensci/governance/edit/main/community/github/intro.md">
+    <a href="https://github.com/pyopensci/governance/edit/main/community/github/continuous-integration.md">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -615,7 +775,7 @@ for adding and managing content and infrastructure across the organization.</p>
   <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="../../_sources/community/github/intro.md.txt">
+    <a href="../../_sources/community/github/continuous-integration.md.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>

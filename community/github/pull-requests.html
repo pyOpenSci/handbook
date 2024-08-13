@@ -7,19 +7,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="pyOpenSci GitHub Processes" />
+<meta property="og:title" content="2. pyOpenSci Pull Request Process" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.pyopensci.org/governance/community/github/intro.html" />
+<meta property="og:url" content="https://www.pyopensci.org/governance/community/github/pull-requests.html" />
 <meta property="og:site_name" content="pyOpenSci Handbook" />
-<meta property="og:description" content="pyOpenSci has a suite of GitHub repositories (repos) that support pyOpenSci processes and content including: website content, tools that track contributors and keep the website up to date, peer rev..." />
+<meta property="og:description" content="When possible, pull request and issue submissions and reviews should follow standard open-source workflows. Below are guidelines for pull requests. Pull Requests: New pull requests should: Be creat..." />
 <meta property="og:image:width" content="1146" />
 <meta property="og:image:height" content="600" />
-<meta property="og:image" content="https://www.pyopensci.org/governance/_images/social_previews/summary_community_github_intro_1539f156.png" />
-<meta property="og:image:alt" content="pyOpenSci has a suite of GitHub repositories (repos) that support pyOpenSci processes and content including: website content, tools that track contributors a..." />
-<meta name="description" content="pyOpenSci has a suite of GitHub repositories (repos) that support pyOpenSci processes and content including: website content, tools that track contributors and keep the website up to date, peer rev..." />
+<meta property="og:image" content="https://www.pyopensci.org/governance/_images/social_previews/summary_community_github_pull-requests_7e62a6db.png" />
+<meta property="og:image:alt" content="When possible, pull request and issue submissions and reviews should follow standard open-source workflows. Below are guidelines for pull requests. Pull Requ..." />
+<meta name="description" content="When possible, pull request and issue submissions and reviews should follow standard open-source workflows. Below are guidelines for pull requests. Pull Requests: New pull requests should: Be creat..." />
 <meta name="twitter:card" content="summary_large_image" />
     <link href="https://www.pyopensci.org/images/favicon.ico" rel="icon" type="image/x-icon">
-    <title>pyOpenSci GitHub Processes &#8212; pyOpenSci Governance</title>
+    <title>2. pyOpenSci Pull Request Process &#8212; pyOpenSci Governance</title>
   
   
   
@@ -56,13 +56,13 @@
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'community/github/intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'community/github/pull-requests';</script>
     <script src="../../_static/matomo.js?v=918da087"></script>
-    <link rel="canonical" href="https://www.pyopensci.org/governance/community/github/intro.html" />
+    <link rel="canonical" href="https://www.pyopensci.org/governance/community/github/pull-requests.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="pyOpenSci GitHub repositories" href="our-repositories.html" />
-    <link rel="prev" title="Slack - Day to Day communication" href="../slack.html" />
+    <link rel="next" title="3. Continuous integration" href="continuous-integration.html" />
+    <link rel="prev" title="pyOpenSci GitHub issue process" href="issues.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -478,10 +478,10 @@ document.write(`
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">GitHub Processes</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">GitHub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="our-repositories.html">Our Repos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues.html">GitHub Issue Guidelines</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pull-requests.html">Pull Requests</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Pull Requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="continuous-integration.html">Continuous Integration (CI)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">pyOpenSci Events</span></p>
@@ -528,7 +528,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Organization Handbook</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">pyOpenSci...</li>
+    <li class="breadcrumb-item active" aria-current="page">2....</li>
   </ul>
 </nav>
 </div>
@@ -545,17 +545,248 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="pyopensci-github-processes">
-<h1>pyOpenSci GitHub Processes<a class="headerlink" href="#pyopensci-github-processes" title="Link to this heading">#</a></h1>
-<p>pyOpenSci has a suite of GitHub repositories (repos) that support pyOpenSci
-processes and content including:</p>
+  <section id="pyopensci-pull-request-process">
+<h1>2. pyOpenSci Pull Request Process<a class="headerlink" href="#pyopensci-pull-request-process" title="Link to this heading">#</a></h1>
+<p>When possible, pull request and issue submissions and reviews should follow
+standard open-source workflows. Below are guidelines for pull requests.</p>
+<section id="pull-requests">
+<h2>Pull Requests<a class="headerlink" href="#pull-requests" title="Link to this heading">#</a></h2>
+<p>New pull requests should:</p>
 <ul class="simple">
-<li><p>website content</p></li>
-<li><p>tools that track contributors and keep the website up to date</p></li>
-<li><p>peer review</p></li>
+<li><p>Be created from a fork rather than the pyOpenSci-owned parent repository.</p></li>
+<li><p>Never be submitted from the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch of your fork.</p></li>
 </ul>
-<p>This section of the guidebook discusses our GitHub organization, and processes
-for adding and managing content and infrastructure across the organization.</p>
+<p>Authors of new pull requests should, whenever possible, do their best to
+create clean pull requests.</p>
+<p>A clean pull request:</p>
+<ul class="simple">
+<li><p>Is focused on fixing or adding a single thing or a single related set of
+things.</p></li>
+<li><p>Is easy to review, meaning it doesn’t have too many files and too much
+new content.</p></li>
+<li><p>Can be more quickly reviewed (and in turn merged), saving everyone time.</p></li>
+<li><p>Closes an existing issue (with the exception of new content such as blog
+posts, which we manage internally using Asana).</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Review your own pull request before asking someone else to review it for you.
+You might be surprised that you notice things in the pull request that you
+didn’t notice when working on the content locally.</p>
+</div>
+<section id="pull-request-content">
+<h3>Pull Request Content<a class="headerlink" href="#pull-request-content" title="Link to this heading">#</a></h3>
+<p>Below are some guidelines for pull request content. Clean pull requests
+lead to simpler reviews and faster merging!</p>
+<ol class="arabic simple">
+<li><p><strong>Keep It Small</strong>: Aim for one logical change per pull request to
+simplify review.</p></li>
+<li><p><strong>Create a Descriptive PR Title and Summary</strong>: Clearly state what the
+PR achieves and why, including any related issue numbers or discussions.</p></li>
+<li><p><strong>Double-Check Files</strong>: Ensure the files committed clearly align with
+the changes in the pull request. For example, if a new guidebook page
+contains images, all new images should be included in the PR. Reuse
+existing images by linking to them rather than re-adding them.</p></li>
+<li><p><strong>Follow Coding/Style Guidelines</strong>: Stick to the project’s coding and
+style guidelines, if applicable. This is more relevant to code PRs
+than text.</p></li>
+<li><p><strong>Review Your Own PR First</strong>: Look over your PR critically before
+requesting reviews to catch mistakes early.</p></li>
+<li><p><strong>Respond Respectfully</strong>: Be open to feedback and discuss suggestions
+to improve the project.</p></li>
+<li><p><strong>Check CI for Any Red X’s</strong>: If your pull request returns a red X in
+the “checks/CI” section, try to figure out what is broken in the build.
+If you’re unsure, leave a note for the reviewer to help understand what
+needs fixing.</p></li>
+</ol>
+</section>
+<section id="highly-recommended">
+<h3>Highly Recommended<a class="headerlink" href="#highly-recommended" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Create Clear Commit Messages</strong>: Explain why changes are made, not
+just what was changed.</p></li>
+<li><p><strong>Keep Your Branch Updated</strong>: Regularly rebase your fork from the main
+branch (if possible) to avoid/clean up merge conflicts and keep your PR
+up to date.</p></li>
+</ol>
+</section>
+<section id="regular-vs-new-contributors">
+<h3>Regular vs. New Contributors<a class="headerlink" href="#regular-vs-new-contributors" title="Link to this heading">#</a></h3>
+<p>There is no right or wrong when it comes to building a website repository
+locally. pyOpenSci staff and regular contributors often opt to build
+resources locally for live interactive development and edits. Building
+locally is an ideal way for internal contributors to double-check website
+updates before pushing to GitHub and checking GitHub action updates.</p>
+<p>Contributors making less-regular contributions, or those submitting quick
+fixes to website pages, might opt to use our continuous integration (CI)
+checks as a way to double-check the website build and also to check for
+broken links, missing alt tags, and more within a pull request.</p>
+<p>A large volume of the content in our GitHub repositories is text-based
+documentation and tutorials. For text-based repositories, such as our
+website, packaging guide, and peer review guide, we have CI platforms set
+up that allow a contributor to submit a pull request with a change, without
+needing to build the site locally.</p>
+</section>
+<section id="supporting-new-contributors">
+<h3>Supporting New Contributors<a class="headerlink" href="#supporting-new-contributors" title="Link to this heading">#</a></h3>
+<p>pyOpenSci strives to support new and existing contributors in enhancing our
+online resources. We will support new contributors in this process. When a
+new pull request is submitted by someone, we will do the following:</p>
+<ul class="simple">
+<li><p>Evaluate the contributor’s background, where possible. If this is their
+first pull request submitted through a sprint, then we’ll support them
+by pointing out CI and providing specific line-by-line feedback.</p></li>
+<li><p>If fixes to the existing PR are straightforward, the reviewer can
+“suggest inline changes” on the pull request by highlighting one or more
+modified lines and suggesting edits in place. This approach is often a
+quick way to integrate feedback from a review.</p></li>
+<li><p>If fixes to the existing PR are more involved, clearly articulate what is
+wrong in the pull request and ask the contributor if they feel comfortable
+addressing it. If they don’t, then someone from the core pyOpenSci team
+can support them in getting their pull request edited, reviewed, and
+merged.</p></li>
+</ul>
+<p>The above process is often implemented on a case-by-case basis depending on
+the contributor’s background.</p>
+</section>
+</section>
+<section id="pull-requests-and-continuous-integration">
+<h2>Pull Requests and Continuous Integration<a class="headerlink" href="#pull-requests-and-continuous-integration" title="Link to this heading">#</a></h2>
+<p>At the bottom of every pull request is the Continuous Integration (CI) block.
+This block contains a set of checks that pyOpenSci has set up. Each check
+will have a red X or green check next to it.</p>
+</section>
+<section id="pre-commit-hooks-and-pre-commit-ci-bot">
+<h2>Pre-commit hooks and pre-commit.ci bot<a class="headerlink" href="#pre-commit-hooks-and-pre-commit-ci-bot" title="Link to this heading">#</a></h2>
+<p>pyOpenSci uses <a class="reference external" href="https://pre-commit.com/">pre-commit</a> and the <a class="reference external" href="https://pre-commit.ci/">precommit.ci bot</a> to style-check our repositories. This ensures our codebase remains clean, consistent, and free
+from common errors.</p>
+<p>For all repositories, we enable hooks that:</p>
+<ul class="simple">
+<li><p>Look for extra spaces at the end of files.</p></li>
+<li><p>Clean up trailing white space at the end of individual lines.</p></li>
+<li><p>Check for spelling issues within the repository.</p></li>
+</ul>
+<p>For code repositories, we have several additional checks including:</p>
+<ul class="simple">
+<li><p>Code format &amp; style checks (e.g. black, isort).</p></li>
+</ul>
+<section id="about-pre-commit">
+<h3>About Pre-commit<a class="headerlink" href="#about-pre-commit" title="Link to this heading">#</a></h3>
+<p><a class="reference external" href="https://pre-commit.com/">Pre-commit</a> is a framework for managing and
+maintaining multi-language pre-commit hooks. It ensures that code follows
+specified style and format rules before it gets committed to the repository.</p>
+<p>We generally use the following hooks:</p>
+<ul class="simple">
+<li><p><strong>Autoformat</strong>: Makes sure files end in a newline and only a newline.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">end-of-file-fixer</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>Lint</strong>: Check for files with names that would conflict on a
+case-insensitive filesystem like MacOS HFS+ or Windows FAT.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">check-case-conflict</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>Whitespace</strong>: Clean up trailing white space at the end of individual lines.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">trailing-whitespace</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>Spelling</strong>: Check for spelling issues within the repository.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">codespell</span></code></p></li>
+</ul>
+</li>
+</ul>
+<p>Setting up pre-commit locally is optional because we have the pre-commit bot
+setup in our CI workflows. However, if you are a pyOpenSci staff member
+regularly contributes, we suggest that you set it up locally in our repos to
+ensure spell check errors (that the pre-commit CI bot cannot fix in a PR) are
+addressed.</p>
+</section>
+<section id="setting-up-pre-commit-locally">
+<h3>Setting Up Pre-commit Locally<a class="headerlink" href="#setting-up-pre-commit-locally" title="Link to this heading">#</a></h3>
+<p>To set up pre-commit locally, follow these steps:</p>
+<ol class="arabic">
+<li><p><strong>Install pre-commit</strong> if it’s not already installed on your computer.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>pre-commit
+</pre></div>
+</div>
+</li>
+<li><p>From the root of the pyOpenSci repository that you wish to run pre-commit
+hooks on, run</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pre-commit<span class="w"> </span>install
+</pre></div>
+</div>
+</li>
+</ol>
+<p>This will install all of the hooks that pyOpenSci has setup for that repository.
+Most often there is a spell checker, and several markdown file formatters, which
+will remove excess white space.</p>
+<ol class="arabic simple" start="3">
+<li><p>To run pre-commit on all files in the repository -</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pre-commit<span class="w"> </span>run<span class="w"> </span>--all-files
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>pre-commit will run on all files that you modify</p></li>
+</ol>
+<p>pre-commit will run after you add and commit a change to the repository locally.
+Sometimes you may need to override pre-commit—for example if you have a
+spelling issue that you know is correct, but pre-commit thinks is wrong, you
+may want to force commit that change and ask for help in the repo when you
+open a pr.</p>
+<p>If you need to skip a local pre-commit check when you commit changes locally,
+use:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>commit<span class="w"> </span><span class="s2">&quot;commit message here&quot;</span><span class="w"> </span>--no-verify
+</pre></div>
+</div>
+</section>
+<section id="about-the-pre-commit-ci-bot">
+<h3>About the pre-commit CI bot<a class="headerlink" href="#about-the-pre-commit-ci-bot" title="Link to this heading">#</a></h3>
+<p>The <a class="reference external" href="https://pre-commit.ci/">Pre-commit CI</a> bot is a continuous integration
+service that automatically runs pre-commit hooks on each pull request. It
+also allows you to call the bot to fix any issues with the pull request
+(with the exception of misspelled words).</p>
+<p>This helps maintain code quality and consistency without requiring
+contributors to run pre-commit locally.</p>
+<p><a class="reference internal" href="continuous-integration.html#pre-commit-ci"><span class="std std-ref">Learn more about pre-commit CI in our CI section here</span></a>.</p>
+</section>
+<section id="acknowledging-new-contributors">
+<h3>Acknowledging new contributors<a class="headerlink" href="#acknowledging-new-contributors" title="Link to this heading">#</a></h3>
+<p>We use the <a class="reference external" href="https://allcontributors.org/">All-contributors bot</a> to
+acknowledge contributors across all of our GitHub repositories. Contributor
+information is then published on
+<a class="reference external" href="https://www.pyopensci.org/our-community/index.html#pyopensci-community-contributors">our website</a>.</p>
+</section>
+<section id="who-we-acknowledge">
+<h3>Who we acknowledge<a class="headerlink" href="#who-we-acknowledge" title="Link to this heading">#</a></h3>
+<p>pyOpenSci is liberal in acknowledging all contributions, regardless of
+their size. When someone new submits an issue or PR, add them as a
+contributor to the repo using the bot.</p>
+<ul class="simple">
+<li><p>It is okay if their name is already on our website as a contributor. If
+this is their first contribution to a different repo or a different type
+of contribution, add them. We will acknowledge the different types of
+contributions that our wonderful volunteers make.</p></li>
+<li><p>If they are already added as a contributor to the repo where the pull
+request is, that is okay too. The bot will inform you!</p></li>
+</ul>
+<p>To add a contributor, at the bottom of a pull request or an issue, call the
+following command:</p>
+<p><code class="docutils literal notranslate"><span class="pre">&#64;all-contributors</span> <span class="pre">please</span> <span class="pre">add</span> <span class="pre">&#64;kiersi</span> <span class="pre">for</span> <span class="pre">code,</span> <span class="pre">review</span></code></p>
+<p>Replace <code class="docutils literal notranslate"><span class="pre">&#64;kiersi</span></code> with <code class="docutils literal notranslate"><span class="pre">&#64;contributors-username</span></code>.</p>
+<p>When you add a user, the bot will open a pull request that can be squashed
+and merged. Once merged, their profile image and name will appear in the
+README file of that repository.</p>
+<p>pyOpenSci then has an automated build that will parse contributors across
+all of our repos, adding them to the contributor list and noting the type(s)
+of contributions that they have made (e.g., packaging guide, peer review
+guide).</p>
+</section>
+</section>
 </section>
 
 
@@ -569,20 +800,20 @@ for adding and managing content and infrastructure across the organization.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../slack.html"
+       href="issues.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Slack - Day to Day communication</p>
+        <p class="prev-next-title">pyOpenSci GitHub issue process</p>
       </div>
     </a>
     <a class="right-next"
-       href="our-repositories.html"
+       href="continuous-integration.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">pyOpenSci GitHub repositories</p>
+        <p class="prev-next-title">3. Continuous integration</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -597,10 +828,37 @@ for adding and managing content and infrastructure across the organization.</p>
 
 
   <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pull-requests">Pull Requests</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pull-request-content">Pull Request Content</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#highly-recommended">Highly Recommended</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regular-vs-new-contributors">Regular vs. New Contributors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#supporting-new-contributors">Supporting New Contributors</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pull-requests-and-continuous-integration">Pull Requests and Continuous Integration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-commit-hooks-and-pre-commit-ci-bot">Pre-commit hooks and pre-commit.ci bot</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#about-pre-commit">About Pre-commit</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-pre-commit-locally">Setting Up Pre-commit Locally</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-pre-commit-ci-bot">About the pre-commit CI bot</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledging-new-contributors">Acknowledging new contributors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#who-we-acknowledge">Who we acknowledge</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/pyopensci/governance/edit/main/community/github/intro.md">
+    <a href="https://github.com/pyopensci/governance/edit/main/community/github/pull-requests.md">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -615,7 +873,7 @@ for adding and managing content and infrastructure across the organization.</p>
   <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="../../_sources/community/github/intro.md.txt">
+    <a href="../../_sources/community/github/pull-requests.md.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
