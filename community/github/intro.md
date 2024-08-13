@@ -1,4 +1,4 @@
-# GitHub
+# pyOpenSci GitHub Processes
 
 pyOpenSci has a suite of GitHub repositories (repos) that support pyOpenSci
 processes and content including:
