@@ -3,6 +3,7 @@
 pyOpenSci uses a multitude of platforms for external communication, in order to both maintain communication with our current community, as well as grow our community. Our external communications fall under the broad categories of email, the pyOpenSci blog, pyOpenSci newsletters, and social media platforms. This section details each of those broad categories, as well as the specific platforms used within each, and provides relevant links and insights into the purpose, strategy, and associated processes for each platform.
 
 ## Email
+
 pyOpenSci does not send unsolicited bulk emails, and all emails contain an unsubscribe link. Emails from pyOpenSci are sent to communicate with potential volunteers, share the monthly version of the newsletter, and to keep registered event participants up-to-date on logistics. pyOpenSci will also reach out to event attendees with pre- and/or post-surveys, along with follow-up reminders, as needed.
 
 ### Mailchimp
@@ -49,15 +50,14 @@ There are two main groups of people who submit blog posts to the pyOpenSci blog:
 **Writing a blog post**  
 
 The following processes for writing a blog post should be used by both pyOpenSci employees as well as guest posts:  
-1. Fork the pyOpenSci website repo: https://github.com/pyOpenSci/pyopensci.github.io.  
+1. Fork the pyOpenSci website repo: [https://github.com/pyOpenSci/pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io).  
 2. Work on your blog post locally. Be sure to include alt text as needed, and create an author page if you do not already have one.    
-3. Submit a pull request from your fork of the website repo to https://github.com/pyOpenSci/pyopensci.github.io.  
+3. Submit a pull request from your fork of the website repo to [https://github.com/pyOpenSci/pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io).  
 4. Make sure that the blog post passes CI checks that look for spelling errors, broken links and more. Please note that occasionally the `htmlproofer` check will fail because the URL does not exist yet. We have implemented a fix for this, but it occasionally does not work.   
 5. Request review of the blog post. A member of the pyOpenSci staff should always review any new content being added to the website.  
 6. Once you have an approving review, the pull request can be merged. In the case of guest blog posts, a memember of the pyOpenSci team will merge your post.  
 
 pyOpenSci has GitHub organization-wide policies in place that ensure all pull requests are generally reviewed prior to being merged. In some instances we may bypass those if the PR is a small fix or critical update. In most cases a review is preferred. Please contact the Executive Director and Founder, Leah Wasser, with any questions or needs for clarification.  
-{: .notice }
 
 **A note on guest blog posts**  
 
