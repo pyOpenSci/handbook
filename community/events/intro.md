@@ -7,11 +7,12 @@ pyOpensci staff regularly attend community meetings (e.g. SciPy meeting, PyCon U
 In these instances, asynchronous communication and sharing of documents in an organized way is critical.
 
 ### Event documents
+
 For every meeting, pyOpenSci staff should create a Google Drive folder, located in our pyos-shared drive, where meeting documents will be stored. These documents may include talk and workshop proposals, attendee signup lists, graphics used in social media and outreach posts and more content related to the event.
 
-Before an event, pyOpenSci staff will make sure this folder is shared and supporting documents are added to it. Often the folder will be created prior to the event to store talk, Bof (birds of a feather), townhall and workshop proposals.
+Before an event, pyOpenSci staff will make sure this folder is shared and supporting documents are added to it. Often the folder will be created prior to the event to store talk, BoF (birds of a feather), Townhall and workshop proposals.
 
-:::{admonition} Team checkin prior to an event
+:::{admonition} Team check in prior to an event
 :class: note
 
 Staff should also have a short check-in prior to an event to ensure that all documents, and elements needed for the event, are shared in the right place, appropriate permissions are granted, remote support needs for the event are clarified, etc.
@@ -40,7 +41,8 @@ Prior to an in-person sprint, the following items should be created:
 
 1. A template "sign up" form, created in HubSpot and shared via a bit.ly shortlink, with data fields that we collect from participants. This allows us to track who attends and event and to followup with them after (if they wish to have communication with us after)
 1. A tabletop “card” that says pyOpenSci. You will need 2-3 cards on hand for any event in case participants are spread across a few tables. This card will be important for events like sprints, workshops and open spaces where pyOpenSci has one or more tables in a large room. It will signal to contributors that we are there and help people quickly find us.
- * The card should have a qr code that is dynamic (so we can update the url that it points to and reuse the cards). This will allow us to have participants scan the code using their phones, and add their names as participants in the event. Following the event we can then send a thank you message to each participant using MailChimp or HubSpot.
+
+* The card should have a qr code that is dynamic (so we can update the url that it points to and reuse the cards). This will allow us to have participants scan the code using their phones, and add their names as participants in the event. Following the event we can then send a thank you message to each participant using MailChimp or HubSpot.
 
 :::{todo}
 will this work for events as we will want an event name associated with it but it would be annoying to make a new card for every event? UNLESS we make a bunch at once for all events for the year?
