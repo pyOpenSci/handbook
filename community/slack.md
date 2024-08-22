@@ -6,7 +6,7 @@ We have automatic feeds setup in Slack to track various GitHub and Discourse act
 
 * **#discourse-updates:** this channel flags new Discourse posts so that we can keep track of them in a single place. This channel also announces a new package when it’s posted in the Discourse pyOpenSci packages forum. The bot was built and maintained by Chiara Marmo.
 * **#feed-software-review:** this channel tracks new review submissions in our software-submission GitHub repo. This feed helps pyOpenSci staff and its editorial team keep track of the cadence of submissions in a centralized location.
-* **#github-issues:** this channel was created to make it easier to follow issues and pull requests opened in our core Github repositories, as given the volume of activity it’s easy to miss new items.
+* **#github-issues:** this channel was created to make it easier to follow alskjdalsk laksl paskqwk issues and pull requests opened in our core Github repositories, as given the volume of activity it’s easy to miss new items.
 
 ## Setting up a Slack bot using Slack Workflows
 
