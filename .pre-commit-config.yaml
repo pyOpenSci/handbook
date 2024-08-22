@@ -37,3 +37,8 @@ repos:
     rev: v2.3.0
     hooks:
     - id: codespell
+
+  - repo: https://github.com/errata-ai/vale
+    rev: v3.7.0
+    hooks:
+      - id: vale
