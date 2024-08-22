@@ -1,14 +1,14 @@
-# Executive Council Minutes 2024
-
+# pyOpenSci Executive Council Minutes 2024
 
 ## 2024-05-13 Executive Council Meeting Minutes
+
 Present on 13 May 2024
 Karen Cranston, Tracy Teal, Leah Wasser
 
 Apologies
 None
 
-**Minutes for agenda items**
+### Minutes for agenda items
 
 * Update on package peer review
   * 17 packages in active review
