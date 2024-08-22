@@ -34,6 +34,9 @@ checks:
   can be merged. The issues could be related to code style, formatting, tests,
   or other criteria specified by the CI configuration.
 
+![When a CI check fails, you'll see a red 'X' next to the CI check that hasn't passed](/images/ci-images/contributor-ci-fail.png)
+
+
 #### If a CI check is red
 
 1. **Click on "Details"** next to the failed check to get more information
