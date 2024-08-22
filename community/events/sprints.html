@@ -471,7 +471,7 @@ document.write(`
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Social Media Section</span></p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Social Media</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../social.html">Social Media</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../slack.html">Slack</a></li>
@@ -526,7 +526,7 @@ document.write(`
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Organization Handbook</a></li>
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Community Handbook</a></li>
     
     <li class="breadcrumb-item active" aria-current="page">pyOpenSci Sprints</li>
   </ul>
@@ -551,24 +551,22 @@ document.write(`
 <p class="admonition-title">TL;DR</p>
 <p><strong>Before a sprint</strong></p>
 <ul class="simple">
-<li><p>pyOpenSci staff go through the pyOpenSci repo issues and ensure all relevant <strong>help-wanted</strong> and/or <strong>sprintable</strong>  both have appropriated labels and have been added to the the <a class="reference internal" href="#github-project"><span class="std std-ref">GitHub project</span></a> in the appropriate column (beginner-friendly, python, dev-ops/ci, Python, Sphinx).</p></li>
-<li><p>pyOpenSci staff ensure all issues on the project board have enough <strong>specific</strong> information for a new user to follow and complete the task needed to be done. The more specific the issue is, the fewer questions a sprinter / contributor will ask during a sprint. This saves significant time and energy for both the sprint attendee and whomever is leading the sprint.</p></li>
+<li><p>pyOpenSci staff go through the pyOpenSci repository issues and ensure all relevant <strong>help-wanted</strong> and <strong>printable</strong> have appropriated labels and have been added to the <a class="reference internal" href="#github-project"><span class="std std-ref">GitHub project</span></a> in the appropriate column (beginner-friendly, Python, dev-ops/ci, Python, Sphinx).</p></li>
+<li><p>pyOpenSci staff ensures all issues on the project board have enough <strong>specific</strong> information for a new user to follow and complete the task needed to be done. The more specific the issue is, the fewer questions a sprinter/contributor will ask during a sprint. This saves significant time and energy for both the sprint attendee and whoever is leading the sprint.</p></li>
 </ul>
 <p><strong>During a sprint</strong></p>
 <ul class="simple">
-<li><p>Label all newly submitted issues as <code class="docutils literal notranslate"><span class="pre">sprint-event</span></code>, <code class="docutils literal notranslate"><span class="pre">sprint-name-year</span></code> (example: <code class="docutils literal notranslate"><span class="pre">sprint</span></code>, <code class="docutils literal notranslate"><span class="pre">pyconus-24</span></code>)</p></li>
-<li><p>Merge small PRs that are clearly mergeable without significant review. Examples might include: typo fixes and other easy-to- review contributions.</p></li>
+<li><p>Label all newly submitted issues as <code class="docutils literal notranslate"><span class="pre">sprint-event</span></code></p></li>
+<li><p>Merge small PRs that are mergeable without significant review. Examples include typo fixes and other easy-to-review contributions.</p></li>
 <li><p>For PRs, add contributors to the GitHub repository that they contributed to using the <a class="reference external" href="https://allcontributors.org/">All Contributors bot</a> using the command: <code class="docutils literal notranslate"><span class="pre">&#64;all-contributors</span> <span class="pre">add</span> <span class="pre">&#64;githubusername</span> <span class="pre">for</span> <span class="pre">code,</span> <span class="pre">review</span></code> (if the contribution is a pull request) or  <code class="docutils literal notranslate"><span class="pre">&#64;all-contributors</span> <span class="pre">add</span> <span class="pre">&#64;githubusername</span> <span class="pre">for</span> <span class="pre">review</span></code> (if the contribution is an issue). <a class="reference internal" href="#all-contribs"><span class="std std-ref">More on using the bot here.</span></a></p></li>
-<li><p><strong>IMPORTANT:</strong> Merge each all-contributor-bot PR’s individually and immediately after they have been opened to avoid merge conflicts</p></li>
+<li><p><strong>IMPORTANT:</strong> Be sure to add all contributors to each repo they’ve contributed to using the all-contributors bot. Merge the PR immediately after it is opened  and before another contributor is added to avoid merge conflicts.</p></li>
 </ul>
 <p><strong>After a sprint</strong></p>
-<ul class="simple">
-<li><p>Triage issues and pull requests</p></li>
-<li><p>Make sure all contributors have been added to each repo they’ve contributed to using the all-contributors bot.</p></li>
-<li><p>Focus on replying, addressing and merging pull requests as we can. If an issue has a lingering TODO - consider tagging it with a <code class="docutils literal notranslate"><span class="pre">help-wanted</span></code> label for a future sprint.</p></li>
-<li><p>Send followup <em>thank you for participating</em> notes</p></li>
-<li><p>Collect / process / aggregate sprint metrics</p></li>
-</ul>
+<p>Triage issues and pull requests.
+• Ensure that all contributors are added to each repository they’ve contributed to using the all-contributors bot.
+• Prioritize replying to, addressing, and merging pull requests. If an issue has a lingering TODO, tag it with a help-wanted label for a future sprint.
+• Send follow-up thank you notes.
+• Collect, process, and aggregate sprint metrics.</p>
 </div>
 <section id="what-is-a-sprint">
 <h2>What is a sprint?<a class="headerlink" href="#what-is-a-sprint" title="Link to this heading">#</a></h2>
@@ -580,15 +578,15 @@ document.write(`
 <li><p><strong>Community-hosted Sprint Events</strong>: Contributors and community members host pyOpenSci sprint events at meetings they attend.</p></li>
 </ol>
 <p>During pyOpenSci sprints, contributors need tasks that are “sprintable.”
-Sprintable tasks are those that can be worked on and potentially completed (or
+<code class="docutils literal notranslate"><span class="pre">Sprintable</span></code> tasks can be worked on and potentially completed (or
 partially completed) in a single sitting, whether that time is a half-day or a full day.</p>
-<p>Sprints can span 1-4 days but are most often 1-2 days long.</p>
+<p>Sprints last 1-5 days but are usually 1-2 days long. PyCon US sprints last an entire week, and SciPy meeting sprints last two days on the weekend.</p>
 <section id="tracking-sprint-contributions">
 <h3>Tracking sprint contributions<a class="headerlink" href="#tracking-sprint-contributions" title="Link to this heading">#</a></h3>
-<p>Sprints often result in numerous pull requests and issues being opened by contributors. It’s important for pyOpenSci to track information around:</p>
+<p>Contributors frequently open numerous pull requests and issues during pyOpenSci sprint events. It’s essential for pyOpenSci to track information around the following:</p>
 <ul class="simple">
 <li><p>Who is attending,</p></li>
-<li><p>Where they are from (country, state etc) and</p></li>
+<li><p>Where they are from (country, state, etc.) and</p></li>
 <li><p>What contributions they make.</p></li>
 </ul>
 <p>This information will support pyOpenSci’s community impact and support and be
@@ -600,21 +598,17 @@ beneficial when we write grants and solicit sponsorships.</p>
 <h2>What motivates sprint participants?<a class="headerlink" href="#what-motivates-sprint-participants" title="Link to this heading">#</a></h2>
 <p>Sprint participants are often motivated by different things. Some come to:</p>
 <ul class="simple">
-<li><p>learn</p></li>
-<li><p>help and support a project they care about</p></li>
-<li><p>connect and build community</p></li>
+<li><p>Learn</p></li>
+<li><p>Help and support a project they care about</p></li>
+<li><p>Connect and build community</p></li>
 </ul>
-<p>pyOpenSci supports and empowers all of the above motivations. We thrive on empowering new
-empowering contributors to make their first (or second) contributions! This impact aligns well with our mission. We also greatly benefit
+<p>pyOpenSci supports and empowers all of the above motivations. We thrive on empowering new contributors to make their first (or second) contributions to open source! This impact aligns well with our mission. We also greatly benefit
 from more experienced sprinters who can help move the organization’s infrastructure and needs forward.</p>
 <p>Sprints are always a win/win for pyOpenSci.</p>
 <section id="pyopensci-sprints-are-accessible">
 <h3>pyOpenSci sprints are accessible<a class="headerlink" href="#pyopensci-sprints-are-accessible" title="Link to this heading">#</a></h3>
-<p>It’s important to pyOpenSci’s mission that sprints are accessible to both new
-and seasoned contributors. We aim to ensure that all participants have a
-successful experience with our community. Some participants are new and are
-submitting their first-ever issue and/or pull request to an open source project.
-These participants:</p>
+<p>PyOpenSci should always be accessible to new and seasoned contributors, aligning with our mission, vision, and values. We aim to ensure that all participants have a successful experience within our community. Some participants are new and may be submitting their first-ever issue or pull request to an open-source project.</p>
+<p>These participants:</p>
 <ul class="simple">
 <li><p>may need help using git and GitHub, or</p></li>
 <li><p>they may feel intimidated by their first contribution (but they want to try!).</p></li>
@@ -624,51 +618,46 @@ comfortable in a sprint environment but may have questions about more technical
 open issues and the outcomes that pyOpenSci wants to see in issue solutions.
 Supporting all of these participants is crucial to our mission and can require
 significant effort during a sprint event.</p>
-<p>As such, it’s important for anyone leading a sprint to come prepared! In most cases having community helpers will go along way to supporting beginner contributor success.</p>
+<p>As such, it’s essential for anyone leading a sprint to come prepared! In most cases, having community helpers will go a long way toward supporting beginner contributor success.</p>
 </section>
 </section>
 <section id="sprint-infrastructure-github-projects">
 <span id="github-project"></span><h2>Sprint infrastructure - GitHub projects<a class="headerlink" href="#sprint-infrastructure-github-projects" title="Link to this heading">#</a></h2>
 <p>To efficiently manage and track contributions during sprints, pyOpenSci utilizes
-<a class="reference external" href="https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects">GitHub projects</a>. We use projects to organize issues and pull requests that contributors could potentially address during or outside of a sprint. Tasks that are discrete enough to complete during a sprint are labeled with the <code class="docutils literal notranslate"><span class="pre">sprintable</span></code> label.</p>
+<a class="reference external" href="https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects">GitHub projects</a>. We use projects to organize issues and pull requests that contributors could potentially address during or outside of a sprint. Label any discrete task that someone could complete during a sprint as <code class="docutils literal notranslate"><span class="pre">sprintable</span></code>.</p>
 <p>An organized project ensures that
 contributors, whether new or experienced, can easily find and work on tasks
 that suit their skills and interests.</p>
 <section id="help-wanted-board">
 <h3>Help-wanted board<a class="headerlink" href="#help-wanted-board" title="Link to this heading">#</a></h3>
 <p>The pyOpenSci <a class="reference external" href="https://github.com/orgs/pyOpenSci/projects/3"><strong>help-wanted project board</strong></a> is an organization-level GitHub project board that provides a central place where contributors can
-find tasks that pyOpenSci needs help with. We have two automated workflows setup
-for the help-wanted project board:</p>
+find tasks that pyOpenSci needs help with. We have two automated workflows set up for the <a class="reference external" href="https://github.com/orgs/pyOpenSci/projects/3">help-wanted project board</a>:</p>
 <ul class="simple">
 <li><p>Any issue or pull request with the <code class="docutils literal notranslate"><span class="pre">help-wanted</span></code> label is automatically added to this board.</p></li>
 <li><p>When an issue or pull request is closed, it is automatically archived from the project board.</p></li>
 </ul>
 <p>Tasks on this board are ideally smaller, well-defined, and can be completed or significantly advanced within the
-duration of a sprint. The pyOpenSci help-wanted board should be updated throughout the year as new issues are opened in our organization GitHub repositories. Continual updates makes it easier for:</p>
+duration of a sprint. Someone on the pyOpenSci team should update the project board throughout the year as new issues are opened in our organization’s GitHub repositories. Continual updates make it easier for:</p>
 <ul class="simple">
 <li><p>Contributors to jump in and start contributing and</p></li>
-<li><p>Sprint leaders to prepare for a sprint as the board will be more up to date.</p></li>
+<li><p>Sprint leaders to prepare for a sprint as the board will be more up-to-date.</p></li>
 </ul>
 </section>
 <section id="tracking-annual-contributions-the-sprint-project-board">
 <h3>Tracking annual contributions: the sprint project board<a class="headerlink" href="#tracking-annual-contributions-the-sprint-project-board" title="Link to this heading">#</a></h3>
-<p>At the start of each year, the pyOpenSci community manager creates a new Sprint
-GitHub Project Board. Here is an example of the <a class="reference external" href="https://github.com/orgs/pyOpenSci/projects/12">2024 sprint project board</a>.</p>
-<p>The board will have several columns or statuses, each of which represents the name of a sprint event (example: pyconus-2024, scipy-2024, fall-festival-2024. This board is used to:</p>
+<p>At the start of each year, the pyOpenSci community manager creates a new Sprint GitHub Project Board. Here is an example of the <a class="reference external" href="https://github.com/orgs/pyOpenSci/projects/12">2024 sprint project board</a>.</p>
+<p>The board will have several columns or statuses, each of which represents the name of a sprint event (example: <code class="docutils literal notranslate"><span class="pre">pyconus-2024</span></code>, <code class="docutils literal notranslate"><span class="pre">scipy-2024</span></code>, <code class="docutils literal notranslate"><span class="pre">fall-festival-2024</span></code>. pyOpenSci uses this project board to:</p>
 <ul class="simple">
 <li><p><strong>Track issues and pull requests opened during a sprint event</strong></p></li>
 <li><p><strong>Organize and Monitor Tasks</strong>: Keep track of the progress of tasks during the sprint, ensuring clarity on which issues are being worked on and by whom.</p></li>
-</ul>
-<ul class="simple">
-<li><p><strong>Manage the Triage Process</strong>: Keep track of which pull requests have been addressed and merged and which ones still need attention.</p></li>
+<li><p><strong>Manage the Triage Process</strong>: Track which pull requests have been addressed and merged and which ones still need attention.</p></li>
 <li><p><strong>Calculate metrics</strong>: Provide counts of activity that has occurred during a sprint event.</p></li>
 </ul>
-<p>By using these boards, pyOpenSci staff can easily keep tabs of sprint activities and outcomes. It also helps us ensure that all sprint issues and pull requests are addressed in a timely manner.</p>
+<p>These boards allow pyOpenSci staff to easily monitor sprint activities and outcomes, enabling timely resolution of all sprint issues and pull requests.</p>
 </section>
 <section id="year-round-sprint-tasks">
-<h3>Year round sprint tasks<a class="headerlink" href="#year-round-sprint-tasks" title="Link to this heading">#</a></h3>
-<p>Below are tasks to stay on top of throughout the year. By working on
-these items as they pop up, you are saving time spent in preparing for a sprint.</p>
+<h3>Year-round sprint tasks<a class="headerlink" href="#year-round-sprint-tasks" title="Link to this heading">#</a></h3>
+<p>Below are tasks to stay on top of throughout the year. By adding “sprintable” and “help-wanted” issues to the help-wanted project board as they are opened, you save time spent preparing for a sprint.</p>
 <section id="maintain-the-pyopensci-help-wanted-project-board">
 <h4>Maintain the pyOpenSci help-wanted project board<a class="headerlink" href="#maintain-the-pyopensci-help-wanted-project-board" title="Link to this heading">#</a></h4>
 <p>pyOpenSci uses the GitHub <a class="reference external" href="https://github.com/orgs/pyOpenSci/projects/3">help-wanted project board</a>
@@ -691,13 +680,13 @@ update the status of the issue on the project board based on the type of skill
 needed.</p></li>
 </ol>
 <p>The current types of tasks in our board include:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>* Python packaging
-* Beginner friendly / non technical
-* Dev Ops / GitHub actions (Continuous Integration)
-* Python programming
-* Website - CSS or Ruby
-</pre></div>
-</div>
+<ul class="simple">
+<li><p>Python packaging</p></li>
+<li><p>Beginner friendly / non technical</p></li>
+<li><p>Dev Ops / GitHub actions (Continuous Integration)</p></li>
+<li><p>Python programming</p></li>
+<li><p>Website - CSS or Ruby</p></li>
+</ul>
 <div class="important admonition">
 <p class="admonition-title">Make sure issues contain specific, detailed information before adding them to a project board</p>
 <p>If you are creating a new <code class="docutils literal notranslate"><span class="pre">help-wanted</span></code> issue, it’s important to include as much detailed information in the issue as possible. Imagine someone else reading the issue (that is not you!). In reading the issue, does an outside contributor have:</p>
@@ -759,7 +748,7 @@ Sprints are busy—please add as much specific information as you can to each is
 </section>
 <section id="review-and-triage-pull-requests-and-issues">
 <h3>Review and triage pull requests and issues<a class="headerlink" href="#review-and-triage-pull-requests-and-issues" title="Link to this heading">#</a></h3>
-<p>If you see small pull requests coming in that are clearly fixing things (typos, etc) in a guidebook, please review them and approve if that makes sense.  If
+<p>If you see small pull requests coming in that are clearly fixing things (typos, etc) in a guidebook, please review them and approve if that makes sense. If
 you see an issue opened that makes sense to work on remotely with a participant, feel free to comment on it.</p>
 </section>
 <section id="acknowledge-sprint-contributors-all-contributors-bot">
@@ -791,7 +780,7 @@ community, encouraging more participation and collaboration.</p>
 <p>If there are new issues with no associated pull request, you can:</p>
 <ol class="arabic simple">
 <li><p>Invite the issue author to submit a PR if the change seems reasonable and they are up to the task.</p></li>
-<li><p>If the issue is one that we agree should be addressed, then label the issue with <code class="docutils literal notranslate"><span class="pre">help-wanted</span></code> / <code class="docutils literal notranslate"><span class="pre">sprintable</span></code>  so someone else can tackle it at our next pyOpenSci sprint.</p></li>
+<li><p>If the issue is one that we agree should be addressed, then label the issue with <code class="docutils literal notranslate"><span class="pre">help-wanted</span></code> / <code class="docutils literal notranslate"><span class="pre">sprintable</span></code> so someone else can tackle it at our next pyOpenSci sprint.</p></li>
 </ol>
 <p>Review each pull request submitted (or invite community members to review) and determine if the pull request looks good as is or requires changes following the standard GitHub review process.</p>
 <p>Merge the pull request when it is complete and ready to be merged.</p>
@@ -916,7 +905,7 @@ other mechanism (becoming a reviewer, editor, submitting a package, etc).</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sprint-infrastructure-github-projects">Sprint infrastructure - GitHub projects</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#help-wanted-board">Help-wanted board</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tracking-annual-contributions-the-sprint-project-board">Tracking annual contributions: the sprint project board</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#year-round-sprint-tasks">Year round sprint tasks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#year-round-sprint-tasks">Year-round sprint tasks</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#maintain-the-pyopensci-help-wanted-project-board">Maintain the pyOpenSci help-wanted project board</a></li>
 </ul>
 </li>
