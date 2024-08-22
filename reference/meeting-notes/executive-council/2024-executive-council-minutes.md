@@ -2,13 +2,13 @@
 
 
 ## 2024-05-13 Executive Council Meeting Minutes
-Present on 13 May 2024  
+Present on 13 May 2024
 Karen Cranston, Tracy Teal, Leah Wasser
 
-Apologies  
+Apologies
 None
 
-**Minutes for agenda items** 
+**Minutes for agenda items**
 
 * Update on package peer review
   * 17 packages in active review
@@ -18,9 +18,9 @@ None
   * Working to identify topic(s) for next workshop with this format
   * At scale training event in August that will run on Discord
   * Open source / open science event in Sept / Oct using gather, branded “Fall Festival”; paid event, looking for sponsors
-* Created strategy for sharing meeting notes publicly. 
-  * Tracy will create meeting minutes from meeting notes, share for review and approval from Karen. 
-  * We’ll publish the approved meeting minutes in the governance section of the handbook. 
-* pyOpenSci will begin to create an annual report each year. 
-  * We’ll start with a report for 2023, beginning to draft in July. 
-  * The report will be an interesting-to-read brief overview of the organization and its activities for the year. 
+* Created strategy for sharing meeting notes publicly.
+  * Tracy will create meeting minutes from meeting notes, share for review and approval from Karen.
+  * We’ll publish the approved meeting minutes in the governance section of the handbook.
+* pyOpenSci will begin to create an annual report each year.
+  * We’ll start with a report for 2023, beginning to draft in July.
+  * The report will be an interesting-to-read brief overview of the organization and its activities for the year.
