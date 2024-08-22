@@ -52,6 +52,9 @@ The Community Manager may also invite new members based on a variety of factors,
 
 ## pyOpenSci Slack channels
 
+
+
+
 The pyOpenSci Slack space is also a central place for communicating with the pyOpenSci community. The community channels in our slack are as follows:
 
 * **#bug-bash:** when pyOpenSci runs bug bashes, we use this channel to announce them as well as discuss any questions people may have while working through the bug bash.
@@ -80,3 +83,8 @@ The pyOpenSci Slack space is also a central place for communicating with the pyO
 * **#software-review:** This is where we openly discuss new reviews and review issues. Because this is a public channel, we only discuss items that are not  sensitive in nature. For individuals who have recently submitted a Python library for review, there are also helpful resources and feedback to be found here.
 * **#welcome:** this is where new members introduce themselves. When someone new enters Slack, we post here, welcome them and ask them to introduce themselves. There is a welcome bot maintained by the community manager that shares the pyOpenSci [Code of Conduct](https://www.pyopensci.org/handbook/CODE_OF_CONDUCT.html), and helps new members introduce themselves.
     * The welcome bot is set up through a Slack workflow under the pyOpenSci organizational account.
+
+
+
+
+
