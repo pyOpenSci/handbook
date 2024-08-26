@@ -1,15 +1,26 @@
-# Organization Handbook
+# Community Handbook
+
+pyOpenSci has built a vibrant open science community of practice. This
+community:
+
+1. helps scientists develop the open science skills needed to make their workflows more open and collaborative.
+2. runs a Python software peer review process that reviews scientific software.
+3. partners and leverage the work of other communities so we can learn and move forward together.
+
+In this section of the handbook, we describe the platforms, processes and
+approaches that we use to engage with both scientists and the broader
+scientific Python community.
 
 :::{toctree}
-:hidden:
-:caption: Social Media Section
+:maxdepth: 2
+:caption: Social Media
 
 Social Media <social>
 Slack <slack>
 :::
 
 :::{toctree}
-:hidden:
+:maxdepth: 2
 :caption: GitHub Processes
 
 GitHub <github/intro>
@@ -20,7 +31,7 @@ Continuous Integration (CI) <github/continuous-integration>
 :::
 
 :::{toctree}
-:hidden:
+:maxdepth: 2
 :caption: pyOpenSci Events
 
 Events <events/intro>
