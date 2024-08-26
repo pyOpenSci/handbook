@@ -72,6 +72,12 @@ You can’t break anything by running CI, so always feel confident in our repos
 when you click that button, assuming that the PR is legitimate and submitted
 from a valid user!
 
+```{figure} /images/ci-images/maintainer-approve-workflow.png
+:alt: A screenshot of the GitHub CI notifications for a sample pyOpenSci repository. There are four rows of information. The first row reads "1 workflow awaiting approval. This workflow requires approval from a maintainer. Learn more about approving workflows. 1 failing and 1 successful checks. Underneath this text is a button that says "Approve and run." To the far right of the row is linked text reading Hide all checks. The text Learn more about approving workflows is linked. The second row has a red x on the left, followed by the letter P in a gold square, and the text pre-commit.ci - pr -- checks completed with failures. To the far right is linked text reading Details. On the third row there is a green check mark followed by the Circle CI logo and the text ci/circleci: build_book -- Your tests passed on CircleCI! And to the far right there is linked text reading Details. The fourth and final row has a small white checkmark inside a large green circle with text reading This branch has no conflicts with the base branch. Only those with write access to this repository can merge pull requests. The text write access is linked.
+
+When a new contributor from outside of the pyOpenSci organization submits a pull request, this notification will appear. You can click the "Approve and run" button to approve and run continuous integration.
+```
+
 Next to each CI step that was run, there is a details button. If you click on
 that link, it will give you more information about what has run/not run as
 expected in the build.
