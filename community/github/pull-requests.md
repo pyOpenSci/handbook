@@ -43,8 +43,8 @@ The following checklist might be helpful in reviewing your own PR. This checklis
 This is what a PR to the `pyOpenSci/handbook` repository, made from an individual contributor's (kierisi) branch, `pr-checklist`, looks like. If this were from kierisi's main repository, the text in the far-right dropdown would read "main."
 ```
 
-* Check that all continuous integration checks have passed. If they haven't passed, identify and address the points of failure. 
-* Check the PR title to ensure that it describes what your PR is changing. 
+* Check that all continuous integration checks have passed. If they haven't passed, identify and address the points of failure.
+* Check the PR title to ensure that it describes what your PR is changing.
 
 ### Pull Request Content
 
