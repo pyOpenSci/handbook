@@ -29,6 +29,23 @@ You might be surprised that you notice things in the pull request that you
 didn't notice when working on the content locally.
 :::
 
+### Pull Request Checklist
+
+The following checklist might be helpful in reviewing your own PR. This checklist is what we use internally before submitting a PR, in order to help ensure things go as smoothly as possible:
+
+* Check that the files in the PR align with the files that you changed locally (or want to suggest changes to).
+* Review your own code and/or text changes for each file. Do the changes look correct to you?
+* Check that the PR is coming from a branch on your fork, and not your main repository.
+
+```{figure} /images/github-images/pr-comparison-branch.png
+:alt: A screenshot of a GitHub PR. The text reads: Open a pull request, and beneath that, Create a new pull request by comparing changes across two branches. If you need to, you can also compare across forks. Learn more about diff comparisons here. Beneath the text is a grey box with four dropdowns arranged in a single row. From left to right the dropdowns read: base repository:pyOpenSci/handbook, base: main, head repository: kierisi/handbook, and compare: pr-checklist. Underneath this box is more text which reads: Able to merge. These branches can be automatically merged.
+
+This is what a PR to the `pyOpenSci/handbook` repository, made from an individual contributor's (kierisi) branch, `pr-checklist`, looks like. If this were from kierisi's main repository, the text in the far-right dropdown would read "main."
+```
+
+* Check that all continuous integration checks have passed. If they haven't passed, identify and address the points of failure. 
+* Check the PR title to ensure that it describes what your PR is changing. 
+
 ### Pull Request Content
 
 Below are some guidelines for pull request content. Clean pull requests
