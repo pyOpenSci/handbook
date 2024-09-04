@@ -55,7 +55,7 @@ Where needed, please create additional folders in order to keep assets organized
 
 ### A note on Canva Project organization
 
-Canva allows you to create over 1,000 pages in a single project. This, however, can be difficult to navigate. Instead, try to keep the number of pages between 10--15, and using a strong naming schema to make it clear when two (or more) projects are related to one another. 
+Canva allows you to create over 1,000 pages in a single project. This, however, can be difficult to navigate. Instead, try to keep the number of pages between 10--15, and using a strong naming schema to make it clear when two (or more) projects are related to one another.
 
 It's also good practice to use good naming principles for each of the pages within a Canva project, to prevent a long list of `Untitled` files.
 
@@ -69,6 +69,6 @@ To add someone to Canva, click on the "Invite members" text in the bottom left o
 * Brand Designer: Can manage Brand Kits and Brand Templates
 * Member: Can only access team designs and folders
 
-When someone leaves pyOpenSci, they should be removed from the pyOpenSci Canva account. This is done by clicking on the Settings wheel from within Canva, and navigating to the People section of the pyopensci-canva-team menu on the left. From there, click the arrow next to an individual's Team role and select "Remove from team." 
+When someone leaves pyOpenSci, they should be removed from the pyOpenSci Canva account. This is done by clicking on the Settings wheel from within Canva, and navigating to the People section of the pyopensci-canva-team menu on the left. From there, click the arrow next to an individual's Team role and select "Remove from team."
 
 This action can only be performed by the account Owner and Administrators.
