@@ -25,9 +25,9 @@ A screenshot of the pyOpenSci color palette in Canva.
 
 ## Project organization within Canva
 
-Any Canva graphics you create are, by default, owned by your personal pyOpenSci Canva account. To ensure that the pyOpenSci team has access to all pyOpenSci graphics,  share any graphics you create with the pyopensci-canva-team. To share a graphic: 
+Any Canva graphics you create are, by default, owned by your personal pyOpenSci Canva account. To ensure that the pyOpenSci team has access to all pyOpenSci graphics,  share any graphics you create with the pyopensci-canva-team. To share a graphic:
 
-click the 'Share' button in the top right, 
+click the 'Share' button in the top right,
 select pyopensci-canva-team from the Collaboration Link dropdown.
 Once the above steps are complete, the entire team can access your graphic.
 
@@ -59,26 +59,26 @@ You can create additional folders in Canva to keep assets organized and easy to 
 
 ### Pages within a Canva project
 
-Canva allows you to create over 1,000 pages in a single project. However, storing this many pages in a single project will make it challenging to find graphics in the future. Instead, 
+Canva allows you to create over 1,000 pages in a single project. However, storing this many pages in a single project will make it challenging to find graphics in the future. Instead,
 Try to keep the number of pages for a project between 5 and 10
 Use an expressive naming schema to clarify when two (or more) projects are related.
-Also, use expressive naming principles for each page in a Canva project. Using expressive names for pages is particularly important for website images. When you download each page, the name of the output image will be the page's name. If the graphic is used for the website, ideally, the name of the page is the same as the graphic is called on our website. That graphic's name contributes to SEO (search engine optimization); choose words accordingly. 
+Also, use expressive naming principles for each page in a Canva project. Using expressive names for pages is particularly important for website images. When you download each page, the name of the output image will be the page's name. If the graphic is used for the website, ideally, the name of the page is the same as the graphic is called on our website. That graphic's name contributes to SEO (search engine optimization); choose words accordingly.
 
 ## Canva permissions and access
 
-Currently, the only individuals with access to the pyOpenSci Canva account are staff members, members of the pyOpenSci advisory council, and our graphic designer. However, pyOpenSci may choose to add more people to our Canva team in the future. If you'd like to add someone to the Canva team, start a group DM message with pyOpenSci staff. 
+Currently, the only individuals with access to the pyOpenSci Canva account are staff members, members of the pyOpenSci advisory council, and our graphic designer. However, pyOpenSci may choose to add more people to our Canva team in the future. If you'd like to add someone to the Canva team, start a group DM message with pyOpenSci staff.
 
 :::{note}
 The current Administrator and owner of the Canva organization is the pyOpenSci Executive Director.
 :::
 
-## How to add new members to Canva 
+## How to add new members to Canva
 
-To add someone to Canva, 
+To add someone to Canva,
 
-click on the "Invite members" text in the bottom left of the homepage, 
-enter the individual's email address, and 
-choose the correct level of access (Administrator, Brand Designer, or Member). 
+click on the "Invite members" text in the bottom left of the homepage,
+enter the individual's email address, and
+choose the correct level of access (Administrator, Brand Designer, or Member).
 
 By default, add any new member with "Member" level permissions. If you are unsure about the permission level for a new Canva member, then you can ask the pyOS staff in a Slack DM. The permissions for each level are:
 
@@ -86,18 +86,18 @@ By default, add any new member with "Member" level permissions. If you are unsur
 * Brand Designer: Can manage Brand Kits and Brand Templates
 * Member: Can only access team designs and folders
 
-## Staff membership on Canva 
+## Staff membership on Canva
 
-When a staff member leaves pyOpenSci, open a discussion with the core team about whether someone should remove them from the pyOpenSci Canva account. 
+When a staff member leaves pyOpenSci, open a discussion with the core team about whether someone should remove them from the pyOpenSci Canva account.
 
 To remove someone from Canva:
-Click on the Settings wheel from within Canva, and 
-Navigate to the People section of the **pyopensci-canva-team** menu on the left. 
+Click on the Settings wheel from within Canva, and
+Navigate to the People section of the **pyopensci-canva-team** menu on the left.
 Click the arrow next to an individual's Team role and select "Remove from team."
 
 Only account Owners and Administrators can remove a user from the pyOpenSci Canva organization.
 
 
 :::{todo}
-This page should link to offboarding, and off boarding for Canva should be included on that page. 
+This page should link to offboarding, and off boarding for Canva should be included on that page.
 :::
