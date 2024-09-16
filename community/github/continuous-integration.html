@@ -579,6 +579,12 @@ checks. This means there are issues that need to be addressed before the code
 can be merged. The issues could be related to code style, formatting, tests,
 or other criteria specified by the CI configuration.</p></li>
 </ul>
+<figure class="align-default" id="id1">
+<img alt="A screenshot of the GitHub CI notifications for a sample pyOpenSci repository. There are four rows of information. The first row reads &quot;1 workflow awaiting approval. This workflow requires approval from a maintainer. Learn more about approving workflows. 1 failing and 1 successful checks. To the far right of the row is linked text reading Hide all checks. The text Learn more about approving workflows is linked. The second row has a red x on the left, followed by the letter P in a gold square, and the text pre-commit.ci - pr -- checks completed with failures. To the far right is linked text reading Details. On the third row there is a green check mark followed by the Circle CI logo and the text ci/circleci: build_book -- Your tests passed on CircleCI! And to the far right there is linked text reading Details. The fourth and final row has a small white checkmark inside a large green circle with text reading This branch has no conflicts with the base branch. Only those with write access to this repository can merge pull requests. The text write access is linked." src="../../_images/contributor-ci-fail.png" />
+<figcaption>
+<p><span class="caption-text">When a CI check fails, you’ll see a red ‘X’ next to the CI check that hasn’t passed</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <section id="if-a-ci-check-is-red">
 <h4>If a CI check is red<a class="headerlink" href="#if-a-ci-check-is-red" title="Link to this heading">#</a></h4>
 <ol class="arabic simple">
@@ -617,10 +623,10 @@ those superpowers, please go ahead and allow CI to run for new contributors.
 You can’t break anything by running CI, so always feel confident in our repos
 when you click that button, assuming that the PR is legitimate and submitted
 from a valid user!</p>
-<figure class="align-default" id="id1">
+<figure class="align-default" id="id2">
 <img alt="A screenshot of the GitHub CI notifications for a sample pyOpenSci repository. There are four rows of information. The first row reads &quot;1 workflow awaiting approval. This workflow requires approval from a maintainer. Learn more about approving workflows. 1 failing and 1 successful checks. Underneath this text is a button that says &quot;Approve and run.&quot; To the far right of the row is linked text reading Hide all checks. The text Learn more about approving workflows is linked. The second row has a red x on the left, followed by the letter P in a gold square, and the text pre-commit.ci - pr -- checks completed with failures. To the far right is linked text reading Details. On the third row there is a green check mark followed by the Circle CI logo and the text ci/circleci: build_book -- Your tests passed on CircleCI! And to the far right there is linked text reading Details. The fourth and final row has a small white checkmark inside a large green circle with text reading This branch has no conflicts with the base branch. Only those with write access to this repository can merge pull requests. The text write access is linked." src="../../_images/maintainer-approve-workflow.png" />
 <figcaption>
-<p><span class="caption-text">When a new contributor from outside of the pyOpenSci organization submits a pull request, this notification will appear. You can click the “Approve and run” button to approve and run continuous integration.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-text">When a new contributor from outside of the pyOpenSci organization submits a pull request, this notification will appear. You can click the “Approve and run” button to approve and run continuous integration.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Next to each CI step that was run, there is a details button. If you click on
