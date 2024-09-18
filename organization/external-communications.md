@@ -57,7 +57,7 @@ The following processes for writing a blog post should be used by both pyOpenSci
 5. Request review of the blog post. A member of the pyOpenSci staff should always review any new content being added to the website.
 6. Once you have an approving review, the pull request can be merged. In the case of guest blog posts, a member of the pyOpenSci team will merge your post.
 
-pyOpenSci has GitHub organization-wide policies in place that ensure all pull requests are generally reviewed prior to being merged. In some instances we may bypass those if the PR is a small fix or critical update. In most cases a review is preferred. Please contact the Executive Director and Founder, Leah Wasser, with any questions or needs for clarification.
+pyOpenSci has GitHub organization-wide policies in place that require all pull requests are reviewed before being merged. In some instances, we may bypass those if the PR is a small fix or critical update. In most cases a review is preferred. 
 
 **A note on guest blog posts**
 
