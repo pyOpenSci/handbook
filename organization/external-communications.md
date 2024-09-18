@@ -34,7 +34,7 @@ Accessing and editing Linktr.ee:
 
 ## Blog
 
-Our [blog lives on our website](https://www.pyopensci.org/blog), which is driven by Jekyll and hosted currently on GitHub pages. [The repo url is here](https://github.com/pyOpenSci/pyopensci.github.io).
+Our [pyOpenSci blog lives on our website](https://www.pyopensci.org/blog), which is driven by Jekyll and hosted currently on GitHub pages. [The code for the website is in the GitHub repository, here](https://github.com/pyOpenSci/pyopensci.github.io).
 
 ### Blog goals
 
