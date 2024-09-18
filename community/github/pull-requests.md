@@ -31,7 +31,7 @@ didn't notice when working on the content locally.
 
 ### Pull Request Checklist
 
-The following checklist might be helpful in reviewing your own PR. This checklist is what we use internally before submitting a PR, in order to help ensure things go as smoothly as possible:
+Please follow this pull request review checklist when submitting a PR to the pyOpenSci GitHub repository. This checklist will both make the pull request review process easier both for you as the PR author and the repository maintainers. It also will make the pull request merge process more smooth and efficient. 
 
 * Check that the files in the PR align with the files that you changed locally (or want to suggest changes to).
 * Review your own code and/or text changes for each file. Do the changes look correct to you?
