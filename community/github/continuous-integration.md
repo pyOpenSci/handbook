@@ -135,9 +135,7 @@ When we expand the htmlproofer line, which reads Check HTML using htmlproofer, w
 A screenshot of the build-book jobs page in GitHub with htmlproofer expanded.
 ```
 
-Because everything ran smoothly on this PR, we don't see any errors. However, we're not always so lucky! Let's see what HTMLProofer returns when there are errors in some of our links:  
-
-
+Because everything ran smoothly on this PR, we don't see any errors. However, HTMLProofer is great at catching errors, and will display them for you here. We're working on getting screenshots of what this error looks like, and will update this section soon!
 
 (pre-commit-ci)=
 ## About the Pre-Commit CI Bot
