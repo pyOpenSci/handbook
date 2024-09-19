@@ -50,7 +50,7 @@ There are two groups of people who submit blog posts to the pyOpenSci blog: pyOp
 
 **How to submit a blog post to pyOpenSci**
 
-The pyOpenSci blog post submission process defined below should be used by everyone submitting a blog post. 
+The pyOpenSci blog post submission process defined below should be used by everyone submitting a blog post.
 1. Fork the pyOpenSci website GitHub repository: [https://github.com/pyOpenSci/pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io).
 2. Work on your blog post locally. Be sure to include alt text for all images submitted, and create an author page if you do not already have one.
 
@@ -71,10 +71,10 @@ To create an author page, submit a pull request from your fork of the pyOpenSci 
 5. Request review of the blog post. A member of the pyOpenSci staff should always review any new content being added to the website.
 6. Once you have an approving review, the pull request can be merged. In the case of guest blog posts, a member of pyOpenSci's staff or contributor team will merge your post.
 
-pyOpenSci has GitHub organization-wide policies in place that require all pull requests are reviewed before being merged. In some instances, we may bypass those if the PR is a small fix or critical update. In most cases a review is preferred. 
+pyOpenSci has GitHub organization-wide policies in place that require all pull requests are reviewed before being merged. In some instances, we may bypass those if the PR is a small fix or critical update. In most cases a review is preferred.
 
 :::{admonition} Yaml elements required for blog posts
-:class: tip 
+:class: tip
 
 All package authors, maintainers (and users) of a pyOpenSci-accepted package are welcome and encourage to submit a blog post (or series of blog posts) about their review experience and/or the use of the package. When submitting your blog post, please include the following YAML elements:
 
@@ -110,9 +110,9 @@ All blog posts should be promoted, regardless of whether or not they were writte
 
 In addition to pyOpenSci social outreach, we monitor social media for any personal posts that authors have created. To promote these posts, we will repost.
 
-### Blog post tone  
+### Blog post tone
 
-While we encourage guest authors to use a tone of voice that is authentic to them, the pyOpenSci blog uses a tone that is friendly, engaging, and curious. Although there are times when a post is written from the pyOpenSci perspective, and uses the terms "we" or even refers to pyOpenSci in the third person, it is more common for a post to be written from the author's perspective, and incorporate the use of "I."  
+While we encourage guest authors to use a tone of voice that is authentic to them, the pyOpenSci blog uses a tone that is friendly, engaging, and curious. Although there are times when a post is written from the pyOpenSci perspective, and uses the terms "we" or even refers to pyOpenSci in the third person, it is more common for a post to be written from the author's perspective, and incorporate the use of "I."
 
 An example of this is the [pyOpenSci @ SciPy 2024 - Python Packaging Tutorials, Talks and Community post](https://www.pyopensci.org/blog/pyos-scipy-2024-recap.html), which incorporates personal anecdotes with data, images, and the author's reflections on the experience.
 
@@ -135,9 +135,9 @@ When a newsletter post is a re-post from the pyOpenSci blog, it's important to i
 
 ### Newsletter success metrics
 
-Because pyOpenSci is still in the early days of its newsletter, our success metrics are focused primarily on growth and engagement rate. We are currently aiming for:  
+Because pyOpenSci is still in the early days of its newsletter, our success metrics are focused primarily on growth and engagement rate. We are currently aiming for:
 
-* 1.0% (or higher) monthly increase in newsletter subscribers 
+* 1.0% (or higher) monthly increase in newsletter subscribers
 * 3.0% (or higher) average monthly engagement rates
 
 ## YouTube
