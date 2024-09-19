@@ -31,7 +31,7 @@ didn't notice when working on the content locally.
 
 ### Pull Request Checklist
 
-Please follow this pull request review checklist when submitting a PR to the pyOpenSci GitHub repository. This checklist will both make the pull request review process easier both for you as the PR author and the repository maintainers. It also will make the pull request merge process more smooth and efficient. 
+Please follow this pull request review checklist when submitting a PR to the pyOpenSci GitHub repository. This checklist will both make the pull request review process easier both for you as the PR author and the repository maintainers. It also will make the pull request merge process more smooth and efficient.
 
 * Check that the files in the PR align with the files that you changed locally (or want to suggest changes to).
 * Review your own code and/or text changes for each file. Do the changes look correct to you?
@@ -43,8 +43,8 @@ Please follow this pull request review checklist when submitting a PR to the pyO
 This is what a PR to the `pyOpenSci/handbook` repository, made from an individual contributor's (kierisi) branch, `pr-checklist`, looks like. If this were from kierisi's main repository, the text in the far-right dropdown would read "main."
 ```
 
-* Check that all continuous integration checks have passed. If they haven't passed, identify and address the points of failure. 
-* Check the PR title to ensure that it describes what your PR is changing. 
+* Check that all continuous integration checks have passed. If they haven't passed, identify and address the points of failure.
+* Check the PR title to ensure that it describes what your PR is changing.
 
 ### Pull Request Content
 
