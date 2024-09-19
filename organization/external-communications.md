@@ -58,7 +58,7 @@ The pyOpenSci blog post submission process defined below should be used by every
 3. Submit a pull request from your fork of the website repo to [https://github.com/pyOpenSci/pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io).
 4. Make sure that the blog post passes CI checks that look for spelling errors, broken links and more. Please note that occasionally the `htmlproofer` check will fail because the URL does not exist yet. We have implemented a fix for this, but it occasionally does not work.
 5. Request review of the blog post. A member of the pyOpenSci staff should always review any new content being added to the website.
-6. Once you have an approving review, the pull request can be merged. In the case of guest blog posts, a member of the pyOpenSci team will merge your post.
+6. Once you have an approving review, the pull request can be merged. In the case of guest blog posts, a member of pyOpenSci's staff or contributor team will merge your post.
 
 pyOpenSci has GitHub organization-wide policies in place that require all pull requests are reviewed before being merged. In some instances, we may bypass those if the PR is a small fix or critical update. In most cases a review is preferred. 
 
