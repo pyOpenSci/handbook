@@ -80,7 +80,7 @@ All blog posts should be promoted, regardless of whether or not they were writte
 * LinkedIn
 * Fosstodon
 
-In addition to pyOpenSci promotions, we monitor social media for any personal posts authors have created to promote their post, boost accordingly.
+In addition to pyOpenSci social outreach, we monitor social media for any personal posts that authors have created. To promote these posts, we will repost.
 
 ## Newsletters
 
