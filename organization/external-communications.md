@@ -48,7 +48,7 @@ The goals of the pyOpenSci blog include:
 
 ### How to add a new blog post
 
-There are two main groups of people who submit blog posts to the pyOpenSci blog: pyOpenSci employees, and package authors/maintainers for packages that have been accepted into the [pyOpenSci ecosystem](https://www.pyopensci.org/python-packages.html). If you are not in one of these two groups, but would like to submit a blog post to pyOpenSci, please reach out to us at [media@pyopensci.org](mailto:media@pyopensci.org) to discuss your post prior to writing it and submitting a PR.
+There are two groups of people who submit blog posts to the pyOpenSci blog: pyOpenSci staff, and package authors/maintainers of [pyOpenSci packages](https://www.pyopensci.org/python-packages.html). If you are not in one of these two groups, but would like to submit a blog post to pyOpenSci, please reach out to us at [media@pyopensci.org](mailto:media@pyopensci.org) to discuss your post prior to writing it and submitting a PR.
 
 **Writing a blog post**
 
