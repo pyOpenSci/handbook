@@ -1,6 +1,6 @@
 # External Communications
 
-pyOpenSci uses a multitude of platforms for external communication, in order to both maintain communication with our current community, as well as grow our community. Our external communications fall under the broad categories of email, the pyOpenSci blog, pyOpenSci newsletters, and social media platforms. This section details each of those broad categories, as well as the specific platforms used within each, and provides relevant links and insights into the purpose, strategy, and associated processes for each platform.
+pyOpenSci uses a multitude of platforms for external communication, in order to both maintain communication with our current community, as well as grow our community. Our external communications fall under the broad categories of email, the pyOpenSci blog, pyOpenSci newsletters, and social media platforms. This section details each of those broad categories, as well as the specific platforms used within each. It also provides relevant links and insights into the purpose, strategy, and associated processes for each platform.
 
 ## Email
 
@@ -8,21 +8,21 @@ pyOpenSci does not send unsolicited bulk emails, and all emails contain an unsub
 
 ### EventBrite
 
-pyOpenSci uses [EventBrite](https://eventbrite.com) to manage event sign-ups. Anyone who has registered for a pyOpenSci event through EventBrite will be contacted through the EventBrite service regarding event updates and logistics. pyOpenSci may also upload EventBrite contacts to Mailchimp or SurveyMonkey for the purposes of sending out pre- and/or post-surveys.
+pyOpenSci uses [EventBrite](https://eventbrite.com) to manage event sign-ups. Anyone who has registered for a pyOpenSci event through EventBrite will be contacted through the EventBrite service regarding event updates and logistics. pyOpenSci may also upload EventBrite contacts to SurveyMonkey to send out pre- and/or post-surveys.
 
 ### SurveyMonkey
 
-[SurveyMonkey](https://www.surveymonkey.com/) is used to send out pre- and/or post-surveys to attendees of pyOpenSci events. This can include in-person or online events such as workshops, talks, and sprints. SurveyMonkey is used due to its ease of use, integration with HubSpot, and ability to send out survey reminder emails.
+[SurveyMonkey](https://www.surveymonkey.com/) is used to send  pre- and/or post-surveys to pyOpenSci events attendees. Events include workshops, talks, and sprints and may be in-person or online. SurveyMonkey is used due to its ease of use, integration with HubSpot, and ability to send out survey reminder emails.
 
 ### HubSpot
 
-[HubSpot](https://hubspot.com/) is pyOpenSci's customer relationship management (CRM) platform. pyOpenSci also uses HubSpot as as a catch-all bulk emailing service, for instance, to communicate with individuals who have signed up to volunteer as a [reviewer](https://forms.gle/Mps4UsRHTyF66cdg7) and/or [editor](https://forms.gle/aFAMBjrdU7f7zMP89) as part of our [open software peer review process](https://www.pyopensci.org/about-peer-review/index.html).
+[HubSpot](https://hubspot.com/) is pyOpenSci's customer relationship management (CRM) platform. pyOpenSci also uses HubSpot as a catch-all bulk emailing service, for instance, to communicate with individuals who have signed up to volunteer as a [reviewer](https://forms.gle/Mps4UsRHTyF66cdg7) and/or [editor](https://forms.gle/aFAMBjrdU7f7zMP89) as part of our [open software peer review process](https://www.pyopensci.org/about-peer-review/index.html).
 
 ## Linktree
 
 Linktree is a social media landing page that allows users to share multiple links from a single page, which is fantastic for social media sites with limited space.
 
-All of our active sites, platforms, and social media accounts are located in a Linktr.ee account, which is shared in the Description of our social media sites where applicable.
+All of our active sites, platforms, and social media accounts are located in a Linktr.ee account. The Linktr.ee link is shared in the **Description** of our social media sites where applicable.
 
 Accessing and editing Linktr.ee:
 * Login at linktr.ee (credentials are in [Bitwarden](./bitwarden.md))
@@ -32,7 +32,7 @@ Accessing and editing Linktr.ee:
 
 ## Blog
 
-Our [pyOpenSci blog lives on our website](https://www.pyopensci.org/blog), which is driven by Jekyll and hosted currently on GitHub pages. [The code for the website is in the GitHub repository, here](https://github.com/pyOpenSci/pyopensci.github.io).
+The [pyOpenSci blog lives on our website](https://www.pyopensci.org/blog), which is driven by Jekyll and hosted currently on GitHub pages. [The code for the website is in the GitHub repository, here](https://github.com/pyOpenSci/pyopensci.github.io).
 
 ### Blog goals
 
@@ -53,8 +53,6 @@ There are two groups of people who submit blog posts to the pyOpenSci blog: pyOp
 The pyOpenSci blog post submission process defined below should be used by everyone submitting a blog post.
 1. Fork the pyOpenSci website GitHub repository: [https://github.com/pyOpenSci/pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io).
 2. Work on your blog post locally. Be sure to include alt text for all images submitted, and create an author page if you do not already have one.
-
-To create alt text, we recommend using [MyST syntax](https://myst-parser.readthedocs.io/en/latest/syntax/images_and_figures.html):
 
 ```
 ```{figure} filepath/to/your/image.png
@@ -149,13 +147,13 @@ The [pyOpenSci YouTube channel](https://youtube.com/@pyopensci) is still under d
 * Promote the video on socials within the first 20 minutes of the video launching
 * Use no more than two hashtags per video
 
-At this point in time, there are no active goals or success metrics for the YouTube channel, however we'll be sure to update this section once we're regularly updating our channel!
+At this point in time, there are no active goals or success metrics for the YouTube channel. We'll be sure to update this section once we're regularly updating our channel!
 
 ## Discourse
 
 pyOpenSci also maintains a [public Discourse forum](https://pyopensci.discourse.group/). Unlike Slack, which has restricted access, anyone is able to join and participate in Discourse. Discourse is a place to announce new packages in our ecosystem, to post memos to the community, as well as to announce meetings and other events. We also want the community to use it to ask questions around peer review and packaging.
 
-At this point in time pyOpenSci has not developed a robust Discourse strategy for community engagement, but continues to discuss the platform and how we would like to use it in our quarterly social media strategy meetings.
+pyOpenSci is currently in the process of sunsetting Discourse as it has not proven to be a widely-used platform for our community. We are currently exploring the use of GitHub discussions.
 
 ## Zenodo
 
