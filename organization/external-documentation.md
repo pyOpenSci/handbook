@@ -146,4 +146,3 @@ At this point in time pyOpenSci has not developed a robust Discourse strategy fo
 ## Zenodo
 
 Zenodo is a general-purpose research repository where any research output can be shared by its users, where pyOpenSci maintains a [community group](https://zenodo.org/communities/pyopensci?q=&l=list&p=1&s=10&sort=newest). When pyOpenSci staff give a presentation, they will update the community group with their talk materials. In addition, when community members give presentations, they have the option of adding them to the pyOpenSci Zenodo community group.
-
