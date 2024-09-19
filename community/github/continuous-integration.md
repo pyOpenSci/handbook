@@ -101,55 +101,55 @@ All of our website repositories have several CI builds, including:
 
 ## About HTMLProofer
 
-[HTMLProofer](https://github.com/gjtorikian/html-proofer) is a set of tests that validates the HTML output in your code, including checks for:  
+[HTMLProofer](https://github.com/gjtorikian/html-proofer) is a set of tests that validates the HTML output in your code, including checks for:
 
 * legitimate image references
 * the presence of alt tags
-* working status of any internal links 
+* working status of any internal links
 
-For a full list of checks, please refer to the [HTMLProofer documentation](https://github.com/gjtorikian/html-proofer).  
+For a full list of checks, please refer to the [HTMLProofer documentation](https://github.com/gjtorikian/html-proofer).
 
-When using HTMLProofer in a pyOpenSci GitHub repository, you won't see it directly on the PR page. Instead, more information on HTMLProofer can be found by clicking on the Details section of the **Build Push github pages / build-book (pull_request)** line, which looks like this:  
+When using HTMLProofer in a pyOpenSci GitHub repository, you won't see it directly on the PR page. Instead, more information on HTMLProofer can be found by clicking on the Details section of the **Build Push github pages / build-book (pull_request)** line, which looks like this:
 
 ```{figure} /images/github-images/htmlproofer-pass.png
-:alt: A screenshot of the GitHub CI notifications for a sample pyOpenSci repository. There is a header that reads All checks have passed, with the text 3 successful checks beneath it. To the right side of the header is linked text reading Hide all checks. Below the header are three rows of information. The first row reads Build Push github pages / build-book (pull_request), the second reads ci/circleci: build_book -- Your tests passed on CircleCI!, and the third reads pre-commi.ci - pr -- checks completed successfully. There is a green checkmark next to each line of text. Beneath these rows is the text This branch has no conflicts with the base branch. Merging can be performed automatically. There is also a green Merge pull request button.  
+:alt: A screenshot of the GitHub CI notifications for a sample pyOpenSci repository. There is a header that reads All checks have passed, with the text 3 successful checks beneath it. To the right side of the header is linked text reading Hide all checks. Below the header are three rows of information. The first row reads Build Push github pages / build-book (pull_request), the second reads ci/circleci: build_book -- Your tests passed on CircleCI!, and the third reads pre-commi.ci - pr -- checks completed successfully. There is a green checkmark next to each line of text. Beneath these rows is the text This branch has no conflicts with the base branch. Merging can be performed automatically. There is also a green Merge pull request button.
 
 A screenshot from a GitHub PR where all checks have passed.
-```  
+```
 
-Once you click on Details, you'll be taken to the build-book jobs screen, which looks like this:  
+Once you click on Details, you'll be taken to the build-book jobs screen, which looks like this:
 
 ```{figure} /images/github-images/htmlproofer-build-book.png
 :alt: A screenshot of the build-book jobs page in GitHub. There's a white column to the left with the job name and run details, and a large black box to the right with all of the various dropdowns within the build-book job. The htmlproofer dropdown is just over halfway down the page.
 
 A screenshot of the build-book jobs page in GitHub.
-```    
+```
 
-When we expand the htmlproofer line, which reads Check HTML using htmlproofer, we see the following:   
+When we expand the htmlproofer line, which reads Check HTML using htmlproofer, we see the following:
 
 ```{figure} /images/github-images/htmlproofer-build-book.png
 :alt: A screenshot of the build-book jobs page in GitHub with htmlproofer expanded. There's a white column to the left with the job name and run details, and a large black box to the right with all of the various dropdowns within the build-book job. The htmlproofer dropdown is just over halfway down the page and expanded to reveal information such as the run details, which checks were run, how many links were checked, whether or not HTMLProofer was successful, and how long the run took.
 
 A screenshot of the build-book jobs page in GitHub with htmlproofer expanded.
-```  
+```
 
-Because everything ran smoothly on this PR, we don't see any errors. However, we're not always so lucky! Let's see what things look like when there's an error with HTMLProofer:  
+Because everything ran smoothly on this PR, we don't see any errors. However, we're not always so lucky! Let's see what things look like when there's an error with HTMLProofer:
 
 ```{figure} /images/github-images/htmlproofer-fail.png
-:alt: A screenshot of the GitHub CI notifications for a sample pyOpenSci repository. There is a header that reads All checks have passed, with the text 3 failing checks beneath it. To the right side of the header is linked text reading Hide all checks. Below the header are three rows of information. The first row reads Build Push github pages / build-book (pull_request), the second reads ci/circleci: build_book -- Your tests failed on CircleCI!, and the third reads pre-commi.ci - pr -- checks completed with failures. There is a red check next to each line of text. Beneath these rows is the text This branch has no conflicts with the base branch. Merging can be performed automatically. There is also a green Merge pull request button.  
+:alt: A screenshot of the GitHub CI notifications for a sample pyOpenSci repository. There is a header that reads All checks have passed, with the text 3 failing checks beneath it. To the right side of the header is linked text reading Hide all checks. Below the header are three rows of information. The first row reads Build Push github pages / build-book (pull_request), the second reads ci/circleci: build_book -- Your tests failed on CircleCI!, and the third reads pre-commi.ci - pr -- checks completed with failures. There is a red check next to each line of text. Beneath these rows is the text This branch has no conflicts with the base branch. Merging can be performed automatically. There is also a green Merge pull request button.
 
 A screenshot from a GitHub PR where all checks have passed.
-```   
+```
 
-There are a couple of things to note here. The first is that we can still merge, even with failed checks. There are very rare cases in which you would *actually* want to do this, and it's generally reserved for when a known bug has been identified, and is the only reason an error is being thrown. Another thing to note is that all three of our tests have failed, which means there's more going on here than just an error with HTMLProofer! But we know that our HTMLProofer information lives in the **Build Push github pages / build-book (pull_request)**, and sure enough, when we click on it we see this:  
+There are a couple of things to note here. The first is that we can still merge, even with failed checks. There are very rare cases in which you would *actually* want to do this, and it's generally reserved for when a known bug has been identified, and is the only reason an error is being thrown. Another thing to note is that all three of our tests have failed, which means there's more going on here than just an error with HTMLProofer! But we know that our HTMLProofer information lives in the **Build Push github pages / build-book (pull_request)**, and sure enough, when we click on it we see this:
 
 ```{figure} /images/github-images/htmlproofer-error-message.png
 :alt: A screenshot of the build-book jobs page in GitHub with htmlproofer expanded. There's a white column to the left with the job name and run details with a large red X next to build-book, and a large black box to the right with all of the various dropdowns within the build-book job. The htmlproofer dropdown has a red X next to it, and is just over halfway down the page. When expanded, it reveals information such as the run details, which checks were run, how many links were checked, whether or not HTMLProofer was successful, and how long the run took.
 
 A screenshot of the build-book jobs page in GitHub with htmlproofer expanded.
-```   
+```
 
-In this case, HTMLProofer told us that none of the images submit with this PR could be found! That's a sign that we need to go back and double check that the images are in the correct folder and that they're pathed correctly (in this case, the author forgot the leading forward slash in the image paths!)  
+In this case, HTMLProofer told us that none of the images submit with this PR could be found! That's a sign that we need to go back and double check that the images are in the correct folder and that they're pathed correctly (in this case, the author forgot the leading forward slash in the image paths!)
 
 Once all of the fixes outlined by HTMLProofer are made, you can re-run the tests to see if that clears the error(s). And if so, it's time to submit for review!
 
