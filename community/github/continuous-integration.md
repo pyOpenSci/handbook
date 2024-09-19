@@ -135,7 +135,7 @@ When we expand the htmlproofer line, which reads Check HTML using htmlproofer, w
 A screenshot of the build-book jobs page in GitHub with htmlproofer expanded.
 ```
 
-Because everything ran smoothly on this PR, we don't see any errors. However, if 
+Because everything ran smoothly on this PR, we don't see any errors. However, we're not always so lucky! Let's see what HTMLProofer returns when there are errors in some of our links:  
 
 
 
