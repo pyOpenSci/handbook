@@ -53,7 +53,7 @@ There are two groups of people who submit blog posts to the pyOpenSci blog: pyOp
 **How to submit a blog post to pyOpenSci**
 
 The pyOpenSci blog post submission process defined below should be used by everyone submitting a blog post. 
-1. Fork the pyOpenSci website repo: [https://github.com/pyOpenSci/pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io).
+1. Fork the pyOpenSci website GitHub repository: [https://github.com/pyOpenSci/pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io).
 2. Work on your blog post locally. Be sure to include alt text as needed, and create an author page if you do not already have one.
 3. Submit a pull request from your fork of the website repo to [https://github.com/pyOpenSci/pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io).
 4. Make sure that the blog post passes CI checks that look for spelling errors, broken links and more. Please note that occasionally the `htmlproofer` check will fail because the URL does not exist yet. We have implemented a fix for this, but it occasionally does not work.
