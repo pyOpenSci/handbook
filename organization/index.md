@@ -2,28 +2,17 @@
 
 :::{toctree}
 :hidden:
-:caption: Bitwarden
-
-Bitwarden <bitwarden>
-:::
-
-:::{toctree}
-:hidden:
-:caption: Canva
-
-Canva <canva>
-:::
-
-:::{toctree}
-:hidden:
-:caption: External Communication
-
-External Communication <external-communication>
-:::
-
-:::{toctree}
-:hidden:
-:caption: Internal Documentation
+:maxdepth: 2
+:caption: Communication & Documentation
 
 Google Drive <internal-documentation>
+External Communication <external-documentation>
+:::
+
+:::{toctree}
+:hidden:
+:caption: Platforms
+
+Bitwarden <bitwarden>
+Canva <canva>
 :::

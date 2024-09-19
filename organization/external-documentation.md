@@ -57,15 +57,11 @@ The pyOpenSci blog post submission process defined below should be used by every
 To create alt text, we recommend using [MyST syntax](https://myst-parser.readthedocs.io/en/latest/syntax/images_and_figures.html):
 
 ```
-
 ```{figure} filepath/to/your/image.png
 :scale: 100 %
 :alt: This text will appear as the alt text to your image.
 
-This text will appear as the caption to your image.
-
-```
-
+This text will appear as the caption to your image.```
 ```
 
 To create an author page, submit a pull request from your fork of the pyOpenSci website repository, with changes to the [authors.yml](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/authors.yml) file. If you would like to include a headshot, you can add it to the [`people` directory in the `images` directory.](https://github.com/pyOpenSci/pyopensci.github.io/tree/main/images/people)
@@ -99,7 +95,7 @@ toc: true
 comments: true
 ---
 ```
-
+:::
 
 For more information on how pyOpenSci uses GitHub, please refer to the [GitHub section of our handbook](https://www.pyopensci.org/handbook/community/github/intro.html).
 
