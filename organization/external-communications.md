@@ -50,7 +50,7 @@ The goals of the pyOpenSci blog include:
 
 There are two groups of people who submit blog posts to the pyOpenSci blog: pyOpenSci staff, and package authors/maintainers of [pyOpenSci packages](https://www.pyopensci.org/python-packages.html). If you are not in one of these two groups, but would like to submit a blog post to pyOpenSci, please reach out to us at [media@pyopensci.org](mailto:media@pyopensci.org) to discuss your post prior to writing it and submitting a PR.
 
-**Writing a blog post**
+**How to submit a blog post to pyOpenSci**
 
 The following processes for writing a blog post should be used by both pyOpenSci employees as well as guest posts:
 1. Fork the pyOpenSci website repo: [https://github.com/pyOpenSci/pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io).
