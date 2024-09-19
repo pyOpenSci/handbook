@@ -62,27 +62,12 @@ The following processes for writing a blog post should be used by both pyOpenSci
 
 pyOpenSci has GitHub organization-wide policies in place that require all pull requests are reviewed before being merged. In some instances, we may bypass those if the PR is a small fix or critical update. In most cases a review is preferred. 
 
-**A note on guest blog posts**
 
-Anyone who has had their package accepted into the pyOpenSci ecosystem is encouraged to submit a blog post (or series of blog posts) about their review experience and/or their package. When submitting your blog post, please include the following YAML elements:
+:::{admonition} Yaml elements required for blog posts
+:class: tip 
 
-```
-layout: single
-title: "The title of your blog post"
-excerpt: "One to five sentences summarizing your post. This text will appear on our [blog landing page](https://pyopensci.org/blog)"
-author: "Your name"
-permalink: /blog/url-for-your-post.html
-header:
-  overlay_image: images/headers/your-blog-post-header-image.png
-  overlay_filter: rgba(20, 13, 36, 0.8)
-categories:
-  - blog-post
-  - community
-classes: wide
-toc: true
-comments: true
----
-```
+All package authors, maintainers (and users) of a pyOpenSci-accepted package are welcome and encourage to submit a blog post (or series of blog posts) about their review experience and/or the use of the package. When submitting your blog post, please include the following YAML elements:
+
 
 For more information on how pyOpenSci uses GitHub, please refer to the [GitHub section of our handbook](https://www.pyopensci.org/handbook/community/github/intro.html).
 
