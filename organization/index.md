@@ -6,7 +6,7 @@
 :caption: Communication & Documentation
 
 Google Drive <internal-documentation>
-External Communication <external-documentation>
+External Communication <external-communication>
 :::
 
 :::{toctree}
