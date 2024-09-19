@@ -38,10 +38,13 @@ Our [pyOpenSci blog lives on our website](https://www.pyopensci.org/blog), which
 
 ### Blog goals
 
-The goals of our blog include:
-* Writing for the broader open science community
-* Sharing news and updates related to pyOpenSci
-* Build domain authority through SEO strategies
+The goals of the pyOpenSci blog include:
+
+* Promotion of pyOpenSci accepted scientific Python packages
+* Celebration and recognition of pyOpenSci community members
+* Discussion of modern topics, tools, and resources that are of use to the broader open science and scientific Python community
+* Share pyOpenSci news and updates related
+* Build domain authority around Python, open science and open source through search engine optimization (SEO)
 
 ### How to add a new blog post
 
