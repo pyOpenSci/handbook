@@ -1,14 +1,14 @@
 # The pyOpenSci brand
 
-The pyOpenSci brand is playful, curious, and integrates a calm color palette with illustrations and abstract primary shapes that are soft, round, and flowing.  
+The pyOpenSci brand is playful, curious, and integrates a calm color palette with illustrations and abstract primary shapes that are soft, round, and flowing.
 
 ## Logos, colors, and fonts
 
-pyOpenSci stores its logos, brand colors, and font information in [Canva](https://www.pyopensci.org/handbook/organization/canva.html). We also store logos in a [publicly-shared Drive folder](https://drive.google.com/drive/folders/1m4cG3JLonP0mQ8y3pBaULMulpja-As0l?usp=drive_link).  
+pyOpenSci stores its logos, brand colors, and font information in [Canva](https://www.pyopensci.org/handbook/organization/canva.html). We also store logos in a [publicly-shared Drive folder](https://drive.google.com/drive/folders/1m4cG3JLonP0mQ8y3pBaULMulpja-As0l?usp=drive_link).
 
 ### pyOpenSci logos
 
-pyOpenSci uses three variations on a floral logo: 
+pyOpenSci uses three variations on a floral logo:
 * pyOpenSci written horizontally, with a flower "blooming" over the "O" in pyOpenSci
 * a four- or five-petaled flower with pyOpenSci abbreviated as pyOS
 * a five-petaled flower icon
@@ -21,7 +21,7 @@ A screenshot of the pyOpenSci flower logos in Canva.
 
 ### pyOpenSci color palette
 
-pyOpenSci's main color is purple, with the additional pink, green, and cream colors to be used as accents.  
+pyOpenSci's main color is purple, with the additional pink, green, and cream colors to be used as accents.
 
 ```{figure} /images/canva-images/pyos-color-palette.png
 :alt: This is a series of color samples comprising the pyOpenSci color palette, which includes six equally-sized circles arranged in a single row. At the top of the image is the text 'Color palette.' The circles contain the following colors, with the corresponding hex code written beneath them: dark purple #33205C, medium purple #735FAB, light purple #BAB3D4, cream #F6F0DC, pink #BB92B0, and green #81C0AA.
@@ -29,13 +29,13 @@ pyOpenSci's main color is purple, with the additional pink, green, and cream col
 A screenshot of the pyOpenSci color palette in Canva.
 ```
 
-### pyOpenSci fonts 
+### pyOpenSci fonts
 
-pyOpenSci uses [Itim](https://fonts.google.com/specimen/Itim) and [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins) as its fonts. Itim is most commonly used as a header, while Poppins is used for the body of a text. Poppins is available in multiple weights, and at this time pyOpenSci uses the most appropriate weight for accessibility and readability, which varies by use case. Both of these fonts are available via [Google Fonts](https://fonts.google.com/).  
+pyOpenSci uses [Itim](https://fonts.google.com/specimen/Itim) and [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins) as its fonts. Itim is most commonly used as a header, while Poppins is used for the body of a text. Poppins is available in multiple weights, and at this time pyOpenSci uses the most appropriate weight for accessibility and readability, which varies by use case. Both of these fonts are available via [Google Fonts](https://fonts.google.com/).
 
 ## Diversity, Equity, Inclusion, and Accessibility
 
-pyOpenSci builds diverse community that supports free and open Python tools for processing scientific data. pyOpenSci accomplishes this through a combination of community building, mentorship, peer review of software and education and outreach. We are building the pyOpenSci community in a way that promotes fairness and justice for all, with a particular focus on supporting those from traditionally marginalized / underrepresented groups. We want every member of our community to thrive; we want to make a positive impact on our community members’ work and on the work of others. You can learn more about how this is put into action by reading through our [Code of Conduct](https://www.pyopensci.org/handbook/CODE_OF_CONDUCT.html).  
+pyOpenSci builds diverse community that supports free and open Python tools for processing scientific data. pyOpenSci accomplishes this through a combination of community building, mentorship, peer review of software and education and outreach. We are building the pyOpenSci community in a way that promotes fairness and justice for all, with a particular focus on supporting those from traditionally marginalized / underrepresented groups. We want every member of our community to thrive; we want to make a positive impact on our community members’ work and on the work of others. You can learn more about how this is put into action by reading through our [Code of Conduct](https://www.pyopensci.org/handbook/CODE_OF_CONDUCT.html).
 
 ### DEIA in [Peer Review](https://www.pyopensci.org/about-peer-review/index.html)
 
