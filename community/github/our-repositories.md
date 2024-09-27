@@ -123,3 +123,11 @@ The pyosPackage repo contains an example pure-Python package that complements
 our package guide & tutorials. We will build this package example out over time
 for folks that just want to see a working package without creating one
 themselves.
+
+## [peer-review-metrics repository](https://github.com/pyOpenSci/peer-review-metrics)
+
+The pyOpenSci peer review metrics repository contains the code for a dashboard created using [MyST Markdown](https://mystmd.org/). Myst-md is a community developed tool that makes it easier for scientists to create fully reproducible (and interactive) workflows and reports that are easily shared. 
+
+## [lessons repository](https://github.com/pyOpenSci/lessons)
+
+pyOpenSci is devoted to building diverse, supportive community around the Python open source tools that drive open science. The lessons repository contains the source files for all of the [pyOpenSci tutorials](https://github.com/pyOpenSci/lessons).
