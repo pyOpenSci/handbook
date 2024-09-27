@@ -46,4 +46,4 @@ To break this down into concrete actions:
 * We support people through individualized mentorship
 * When possible, we elevate people into leadership roles
 
-If you have any questions about pyOpenSci's DEIA efforts, please email us at: [media@pyopensci.org](mailto:pyopensci.org).
+If you have any questions about pyOpenSci's DEIA efforts, please email us at: [media@pyopensci.org](mailto:media@pyopensci.org).
