@@ -4,10 +4,16 @@
 :hidden:
 :caption: Canva
 
+Branding <branding>
+
+:::{toctree}
+:hidden:
+:caption: Canva
+
 Canva <canva>
 
 :::{toctree}
 :hidden:
 :caption: Internal Documentation
 
-Google Drive <internal-documentation>
+Internal Documentation <internal-documentation>
