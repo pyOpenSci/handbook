@@ -1,14 +1,21 @@
 # External Communications
 
-pyOpenSci uses a multitude of platforms for external communication, in order to both maintain communication with our current community, as well as grow our community. Our external communications fall under the broad categories of email, the pyOpenSci blog, pyOpenSci newsletters, and social media platforms. This section details each of those broad categories, as well as the specific platforms used within each. It also provides relevant links and insights into the purpose, strategy, and associated processes for each platform.
+pyOpenSci uses a multitude of platforms for external communication to maintain communication with our current community and grow it. Our external communications fall under the broad categories of 
 
-## Email
+* email, 
+* pyOpenSci blog,
+* pyOpenSci newsletters, and
+* social media platforms.
 
-pyOpenSci does not send unsolicited bulk emails, and all emails contain an unsubscribe link. Emails from pyOpenSci are sent to communicate with potential volunteers, share the monthly version of the newsletter, and to keep registered event participants up-to-date on logistics. pyOpenSci will also reach out to event attendees with pre- and/or post-surveys, along with follow-up reminders, as needed.
+This section provides an overview of theeach category's purpose and use. It also provides relevant links and insights into each platform's purpose, strategy, and associated processes# Email
+
+Emails from pyOpenSci are sent to communicate with potential volunteers, share the monthly version of the newsletter, and to keep registered event participants up-to-date on logistics. pyOpenSci will also reach out to event attendees with pre- and/or post-surveys, along with follow-up reminders, as needed.
+
+pyOpenSci does not send unsolicited bulk emails, and all emails contain an unsubscribe link. 
 
 ### EventBrite
 
-pyOpenSci uses [EventBrite](https://eventbrite.com) to manage event sign-ups. Anyone who has registered for a pyOpenSci event through EventBrite will be contacted through the EventBrite service regarding event updates and logistics. pyOpenSci may also upload EventBrite contacts to SurveyMonkey to send out pre- and/or post-surveys.
+pyOpenSci uses [EventBrite](https://eventbrite.com), which is provided by our fiscal sponsor, Community Initiatives, to manage event registration. Anyone who has registered for a pyOpenSci event through EventBrite will be contacted through the EventBrite service regarding event updates and logistics. pyOpenSci may also upload EventBrite contacts to SurveyMonkey to send out pre- and/or post-surveys.
 
 ### SurveyMonkey
 
@@ -32,7 +39,7 @@ Accessing and editing Linktr.ee:
 
 ## Blog
 
-The [pyOpenSci blog lives on our website](https://www.pyopensci.org/blog), which is driven by Jekyll and hosted currently on GitHub pages. [The code for the website is in the GitHub repository, here](https://github.com/pyOpenSci/pyopensci.github.io).
+The [pyOpenSci blog lives on our website](https://www.pyopensci.org/blog), which is driven by Jekyll and hosted on GitHub pages. [The code for the website is in the GitHub repository, here](https://github.com/pyOpenSci/pyopensci.github.io).
 
 ### Blog goals
 
@@ -41,12 +48,13 @@ The goals of the pyOpenSci blog include:
 * Promotion of pyOpenSci accepted scientific Python packages
 * Celebration and recognition of pyOpenSci community members
 * Discussion of modern topics, tools, and resources that are of use to the broader open science and scientific Python community
-* Share pyOpenSci news and updates related
+* Share pyOpenSci news and updates
+* Promote pyOpenSci events
 * Build domain authority around Python, open science and open source through search engine optimization (SEO)
 
 ### How to add a new blog post
 
-There are two groups of people who submit blog posts to the pyOpenSci blog: pyOpenSci staff, and package authors/maintainers of [pyOpenSci packages](https://www.pyopensci.org/python-packages.html). If you are not in one of these two groups, but would like to submit a blog post to pyOpenSci, please reach out to us at [media@pyopensci.org](mailto:media@pyopensci.org) to discuss your post prior to writing it and submitting a PR.
+Currently, there are several groups of people who submit blog posts to the pyOpenSci blog: pyOpenSci staff, package authors/maintainers of [pyOpenSci packages](https://www.pyopensci.org/python-packages.html) and pyOpenSci community members and friends who have participated in a pyOpenSci event. If you are interested in submitting a blog post to pyOpenSci, please reach out to us at [media@pyopensci.org](mailto:media@pyopensci.org) to discuss your post prior to writing it and submitting a PR.
 
 **How to submit a blog post to pyOpenSci**
 
