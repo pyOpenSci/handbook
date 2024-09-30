@@ -4,7 +4,7 @@
 
 Continuous Integration (CI) refers to checks and tests that are triggered by
 events that occur within a GitHub repository such as pushing a commit, opening a pull request, and
-merging a pull request. In the pyOpenSci organization, each commit that is pushed 
+merging a pull request. In the pyOpenSci organization, each commit that is pushed
 to a GitHub repository triggers at least one or more automated CI workflows. For the [pyOpenSci
 website repository](https://www.pyopensci.org/) and our online books such as
 the [Python packaging guidebook](https://github.com/pyopensci/python-package-guide), this build will:
@@ -108,7 +108,7 @@ All of our website repositories have several CI builds, including:
 
 For a full list of checks, please refer to the [HTMLProofer documentation](https://github.com/gjtorikian/html-proofer).
 
-The HTMLProofer tool is integrated into all pyOpenSci website GitHub repositories including the core website, the packaging guide, our peer review guide and this handbook that you are reading now. You can view the outputs from HTMLProofer on a pull request, by clicking on the Details section of CI build for each repository. 
+The HTMLProofer tool is integrated into all pyOpenSci website GitHub repositories including the core website, the packaging guide, our peer review guide and this handbook that you are reading now. You can view the outputs from HTMLProofer on a pull request, by clicking on the Details section of CI build for each repository.
 For all of our sphinx books, the CI build that you will need to check is called **Build Push github pages / build-book (pull_request)** line. It looks like this:
 
 ```{figure} /images/github-images/htmlproofer-pass.png
@@ -133,7 +133,7 @@ When you expand the htmlproofer line, which reads Check HTML using htmlproofer, 
 A screenshot of the build-book jobs page in GitHub with htmlproofer expanded.
 ```
 
-If all of the HTMLProofer checks pass, you won't see any errors. Instead, you will see a bright green checkmark. However, sometimes you may encounter an error. 
+If all of the HTMLProofer checks pass, you won't see any errors. Instead, you will see a bright green checkmark. However, sometimes you may encounter an error.
 Below is an image the shows a CI error associated with the build:
 
 ```{figure} /images/github-images/htmlproofer-fail.png
@@ -142,9 +142,9 @@ Below is an image the shows a CI error associated with the build:
 A screenshot from a GitHub PR where all checks have passed.
 ```
 
-When there is an error in the pyOpenSci CI build, there are a few things to consider. 
+When there is an error in the pyOpenSci CI build, there are a few things to consider.
 
-1. Are the CI errors unrelated to your pull request? pyOpenSci's CI builds run on all the files in the repository by default. Sometimes, a link might become broken simply because the website is down. And that break has nothing to do with your pull request! In that case, pyOpenSci repository maintainers can still merge the pull request, even if there are failed checks. 
+1. Are the CI errors unrelated to your pull request? pyOpenSci's CI builds run on all the files in the repository by default. Sometimes, a link might become broken simply because the website is down. And that break has nothing to do with your pull request! In that case, pyOpenSci repository maintainers can still merge the pull request, even if there are failed checks.
 2. There are also other CI checks that are happening within each repository in addition to HTML proofer. If more than one build fails, there may be more going on here than just an HTMLProofer error.
 
 Below is an example of a broken build due to HTMLProofer. When you click on the details for the build, you see this:
@@ -161,7 +161,7 @@ If you see a broken HTMLProofer build, you can continue to make updates to the p
 errors are returned by HTMLProofer. Once you have a green check next to the build, it's time to submit your pull request for review!
 
 :::{note}
-In some cases you may be unsure as to why HTMLProofer or any part of our pyOpenSci CI checks are failing. In these cases, feel free to ping a pyOpenSci 
+In some cases you may be unsure as to why HTMLProofer or any part of our pyOpenSci CI checks are failing. In these cases, feel free to ping a pyOpenSci
 repository maintainer for help. We understand that Continuous Integration (CI) can be confusing to navigate, even for seasoned GitHub users.
 :::
 
