@@ -11,12 +11,12 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.pyopensci.org/governance/community/github/continuous-integration.html" />
 <meta property="og:site_name" content="pyOpenSci Handbook" />
-<meta property="og:description" content="What is CI?: Continuous Integration (CI) refers to checks and tests that are triggered by events that occur on GitHub such as commit pushes, pull requests, and even merges to a GitHub repository. I..." />
+<meta property="og:description" content="What is CI?: Continuous Integration (CI) refers to checks and tests that are triggered by events that occur within a GitHub repository such as pushing a commit, opening a pull request, and merging ..." />
 <meta property="og:image:width" content="1146" />
 <meta property="og:image:height" content="600" />
-<meta property="og:image" content="https://www.pyopensci.org/governance/_images/social_previews/summary_community_github_continuous-integration_5662e43f.png" />
-<meta property="og:image:alt" content="What is CI?: Continuous Integration (CI) refers to checks and tests that are triggered by events that occur on GitHub such as commit pushes, pull requests, a..." />
-<meta name="description" content="What is CI?: Continuous Integration (CI) refers to checks and tests that are triggered by events that occur on GitHub such as commit pushes, pull requests, and even merges to a GitHub repository. I..." />
+<meta property="og:image" content="https://www.pyopensci.org/governance/_images/social_previews/summary_community_github_continuous-integration_c058e416.png" />
+<meta property="og:image:alt" content="What is CI?: Continuous Integration (CI) refers to checks and tests that are triggered by events that occur within a GitHub repository such as pushing a comm..." />
+<meta name="description" content="What is CI?: Continuous Integration (CI) refers to checks and tests that are triggered by events that occur within a GitHub repository such as pushing a commit, opening a pull request, and merging ..." />
 <meta name="twitter:card" content="summary_large_image" />
     <link href="https://www.pyopensci.org/images/favicon.ico" rel="icon" type="image/x-icon">
     <title>3. Continuous integration &#8212; pyOpenSci Governance</title>
@@ -550,17 +550,16 @@ document.write(`
 <section id="what-is-ci">
 <h2>What is CI?<a class="headerlink" href="#what-is-ci" title="Link to this heading">#</a></h2>
 <p>Continuous Integration (CI) refers to checks and tests that are triggered by
-events that occur on GitHub such as commit pushes, pull requests, and even
-merges to a GitHub repository. In the pyOpenSci organization, each commit
-triggers at least one or more automated CI workflows. For the <a class="reference external" href="https://www.pyopensci.org/">pyOpenSci
+events that occur within a GitHub repository such as pushing a commit, opening a pull request, and
+merging a pull request. In the pyOpenSci organization, each commit that is pushed
+to a GitHub repository triggers at least one or more automated CI workflows. For the <a class="reference external" href="https://www.pyopensci.org/">pyOpenSci
 website repository</a> and our online books such as
-the <a class="reference external" href="https://github.com/pyopensci/python-package-guide">Python packaging guidebook that is written using
-Sphinx</a>, this build will:</p>
+the <a class="reference external" href="https://github.com/pyopensci/python-package-guide">Python packaging guidebook</a>, this build will:</p>
 <ul class="simple">
 <li><p>Build the live rendered version of the online content with any changes added
 in the current commit(s) or pull requests.</p></li>
-<li><p>Check the text for spelling issues, check images for missing alt tags, and
-more.</p></li>
+<li><p>Check the text for spelling issues,</p></li>
+<li><p>Check images for missing alt tags, incorrect image paths and more.</p></li>
 </ul>
 <p>If the repository has code, it will check for code style.</p>
 <p>Having a CI setup on each pyOpenSci GitHub repository ensures that we detect
@@ -645,6 +644,66 @@ live rendered build, as CircleCI allows for in-browser website build checks.
 GitHub requires you to download, unzip, and view an archive with the build
 site locally.</p></li>
 </ol>
+</section>
+<section id="pyopensci-checks-for-broken-links-and-missing-alt-tags-htmlproofer">
+<h2>pyOpenSci checks for broken links and missing alt tags: HTMLProofer<a class="headerlink" href="#pyopensci-checks-for-broken-links-and-missing-alt-tags-htmlproofer" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://github.com/gjtorikian/html-proofer">HTMLProofer</a> is a ruby-based HTML validation tool that checks for:</p>
+<ul class="simple">
+<li><p>correct image references</p></li>
+<li><p>accessibility including alt tags for each image</p></li>
+<li><p>broken links.</p></li>
+</ul>
+<p>For a full list of checks, please refer to the <a class="reference external" href="https://github.com/gjtorikian/html-proofer">HTMLProofer documentation</a>.</p>
+<p>The HTMLProofer tool is integrated into all pyOpenSci website GitHub repositories including the core website, the packaging guide, our peer review guide and this handbook that you are reading now. You can view the outputs from HTMLProofer on a pull request, by clicking on the Details section of CI build for each repository.
+For all of our sphinx books, the CI build that you will need to check is called <strong>Build Push github pages / build-book (pull_request)</strong> line. It looks like this:</p>
+<figure class="align-default" id="id3">
+<img alt="A screenshot of the GitHub CI notifications for a sample pyOpenSci repository. There is a header that reads All checks have passed, with the text 3 successful checks beneath it. To the right side of the header is linked text reading Hide all checks. Below the header are three rows of information. The first row reads Build Push github pages / build-book (pull_request), the second reads ci/circleci: build_book -- Your tests passed on CircleCI!, and the third reads pre-commi.ci - pr -- checks completed successfully. There is a green checkmark next to each line of text. Beneath these rows is the text This branch has no conflicts with the base branch. Merging can be performed automatically. There is also a green Merge pull request button." src="../../_images/htmlproofer-pass.png" />
+<figcaption>
+<p><span class="caption-text">A screenshot from a GitHub PR where all checks have passed.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Once you click on the CI output Details, you’ll be taken to the <code class="docutils literal notranslate"><span class="pre">build-book</span></code> jobs screen, which looks like this:</p>
+<figure class="align-default" id="id4">
+<img alt="A screenshot of the build-book jobs page in GitHub. There's a white column to the left with the job name and run details, and a large black box to the right with all of the various dropdowns within the build-book job. The htmlproofer dropdown is just over halfway down the page." src="../../_images/htmlproofer-build-book.png" />
+<figcaption>
+<p><span class="caption-text">A screenshot of the build-book jobs page in GitHub.</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>When you expand the htmlproofer line, which reads Check HTML using htmlproofer, you will see the following:</p>
+<figure class="align-default" id="id5">
+<img alt="A screenshot of the build-book jobs page in GitHub with htmlproofer expanded. There's a white column to the left with the job name and run details, and a large black box to the right with all of the various dropdowns within the build-book job. The htmlproofer dropdown is just over halfway down the page and expanded to reveal information such as the run details, which checks were run, how many links were checked, whether or not HTMLProofer was successful, and how long the run took." src="../../_images/htmlproofer-build-book.png" />
+<figcaption>
+<p><span class="caption-text">A screenshot of the build-book jobs page in GitHub with htmlproofer expanded.</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>If all of the HTMLProofer checks pass, you won’t see any errors. Instead, you will see a bright green checkmark. However, sometimes you may encounter an error.
+Below is an image the shows a CI error associated with the build:</p>
+<figure class="align-default" id="id6">
+<img alt="A screenshot of the GitHub CI notifications for a sample pyOpenSci repository. There is a header that reads All checks have passed, with the text 3 failing checks beneath it. To the right side of the header is linked text reading Hide all checks. Below the header are three rows of information. The first row reads Build Push github pages / build-book (pull_request), the second reads ci/circleci: build_book -- Your tests failed on CircleCI!, and the third reads pre-commi.ci - pr -- checks completed with failures. There is a red check next to each line of text. Beneath these rows is the text This branch has no conflicts with the base branch. Merging can be performed automatically. There is also a green Merge pull request button." src="../../_images/htmlproofer-fail.png" />
+<figcaption>
+<p><span class="caption-text">A screenshot from a GitHub PR where all checks have passed.</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>When there is an error in the pyOpenSci CI build, there are a few things to consider.</p>
+<ol class="arabic simple">
+<li><p>Are the CI errors unrelated to your pull request? pyOpenSci’s CI builds run on all the files in the repository by default. Sometimes, a link might become broken simply because the website is down. And that break has nothing to do with your pull request! In that case, pyOpenSci repository maintainers can still merge the pull request, even if there are failed checks.</p></li>
+<li><p>There are also other CI checks that are happening within each repository in addition to HTML proofer. If more than one build fails, there may be more going on here than just an HTMLProofer error.</p></li>
+</ol>
+<p>Below is an example of a broken build due to HTMLProofer. When you click on the details for the build, you see this:</p>
+<figure class="align-default" id="id7">
+<img alt="A screenshot of the build-book jobs page in GitHub with htmlproofer expanded. There's a white column to the left with the job name and run details with a large red X next to build-book, and a large black box to the right with all of the various dropdowns within the build-book job. The htmlproofer dropdown has a red X next to it, and is just over halfway down the page. When expanded, it reveals information such as the run details, which checks were run, how many links were checked, whether or not HTMLProofer was successful, and how long the run took." src="../../_images/htmlproofer-error-message.png" />
+<figcaption>
+<p><span class="caption-text">A screenshot of the build-book jobs page in GitHub with htmlproofer expanded.</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In this case, HTMLProofer told you that none of the images submitted with this PR could be found. In this case you should go back and double check that the images are in the correct folder and that their paths’ are correct. In this case, the author forgot the leading forward slash in the image paths.</p>
+<p>If you see a broken HTMLProofer build, you can continue to make updates to the pull request either locally or through inline comments, until no
+errors are returned by HTMLProofer. Once you have a green check next to the build, it’s time to submit your pull request for review!</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In some cases you may be unsure as to why HTMLProofer or any part of our pyOpenSci CI checks are failing. In these cases, feel free to ping a pyOpenSci
+repository maintainer for help. We understand that Continuous Integration (CI) can be confusing to navigate, even for seasoned GitHub users.</p>
+</div>
 </section>
 <section id="about-the-pre-commit-ci-bot">
 <span id="pre-commit-ci"></span><h2>About the Pre-Commit CI Bot<a class="headerlink" href="#about-the-pre-commit-ci-bot" title="Link to this heading">#</a></h2>
@@ -758,6 +817,7 @@ pre-commit locally.</p>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ci-and-outside-contributors">CI and outside contributors</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#website-ci-checks">Website CI checks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyopensci-checks-for-broken-links-and-missing-alt-tags-htmlproofer">pyOpenSci checks for broken links and missing alt tags: HTMLProofer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-pre-commit-ci-bot">About the Pre-Commit CI Bot</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-the-bot-can-fix">What the bot can fix</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-the-bot-cant-fix">What the bot can’t fix</a></li>
