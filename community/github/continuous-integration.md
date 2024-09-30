@@ -144,7 +144,7 @@ A screenshot from a GitHub PR where all checks have passed.
 
 When there is an error in the pyOpenSci CI build, there are a few things to consider. 
 
-1. Are the CI errors are unrelated to your pull request? pyOpenSci's CI builds run on all of the files in the repository by default. In some cases, a link might become broken simply because of the website being down. And that break has nothing to do with your pull request! In that case pyOpenSci repository maintianers can still merge the pull request, even if there are failed checks. 
+1. Are the CI errors unrelated to your pull request? pyOpenSci's CI builds run on all the files in the repository by default. Sometimes, a link might become broken simply because the website is down. And that break has nothing to do with your pull request! In that case, pyOpenSci repository maintainers can still merge the pull request, even if there are failed checks. 
 2. There are also other CI checks that are happening within each repository in addition to HTML proofer. If more than one build fails, there may be more going on here than just an HTMLProofer error.
 
 Below is an example of a broken build due to HTMLProofer. When you click on the details for the build, you see this:
@@ -162,7 +162,7 @@ errors are returned by HTMLProofer. Once you have a green check next to the buil
 
 :::{note}
 In some cases you may be unsure as to why HTMLProofer or any part of our pyOpenSci CI checks are failing. In these cases, feel free to ping a pyOpenSci 
-repository maintianer for help. We understand that Continuout Integration (CI) can be confusing to navigate even for seasoned GitHub users.
+repository maintainer for help. We understand that Continuous Integration (CI) can be confusing to navigate, even for seasoned GitHub users.
 :::
 
 (pre-commit-ci)=
