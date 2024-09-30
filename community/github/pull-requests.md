@@ -31,12 +31,12 @@ didn't notice when working on the content locally.
 
 ### Pull Request Checklist
 
-Please follow this pull request review checklist when submitting a pull request to a pyOpenSci GitHub repository. 
-This checklist will make the pull request review process easier and more efficient for you as the pull request author and for the 
-repository maintainers. 
+Please follow this pull request review checklist when submitting a pull request to a pyOpenSci GitHub repository.
+This checklist will make the pull request review process easier and more efficient for you as the pull request author and for the
+repository maintainers.
 
 * Check that the files in the PR align with those you changed locally (or want to suggest changes to).
-* Review your own code and/or text changes for each file. Do the changes look correct to you? Are there typos? 
+* Review your own code and/or text changes for each file. Do the changes look correct to you? Are there typos?
 * Check that the pull is coming from a branch on your fork, and not the main of your repo fork.
 
 ```{figure} /images/github-images/pr-comparison-branch.png
