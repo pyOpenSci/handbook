@@ -3,17 +3,16 @@
 ## What is CI?
 
 Continuous Integration (CI) refers to checks and tests that are triggered by
-events that occur on GitHub such as commit pushes, pull requests, and even
-merges to a GitHub repository. In the pyOpenSci organization, each commit
-triggers at least one or more automated CI workflows. For the [pyOpenSci
+events that occur within a GitHub repository such as pushing a commit, opening a pull request, and
+merging a pull request. In the pyOpenSci organization, each commit that is pushed
+to a GitHub repository triggers at least one or more automated CI workflows. For the [pyOpenSci
 website repository](https://www.pyopensci.org/) and our online books such as
-the [Python packaging guidebook that is written using
-Sphinx](https://github.com/pyopensci/python-package-guide), this build will:
+the [Python packaging guidebook](https://github.com/pyopensci/python-package-guide), this build will:
 
 * Build the live rendered version of the online content with any changes added
   in the current commit(s) or pull requests.
-* Check the text for spelling issues, check images for missing alt tags, and
-  more.
+* Check the text for spelling issues,
+* Check images for missing alt tags, incorrect image paths and more.
 
 If the repository has code, it will check for code style.
 
@@ -98,6 +97,73 @@ All of our website repositories have several CI builds, including:
    live rendered build, as CircleCI allows for in-browser website build checks.
    GitHub requires you to download, unzip, and view an archive with the build
    site locally.
+
+## pyOpenSci checks for broken links and missing alt tags: HTMLProofer
+
+[HTMLProofer](https://github.com/gjtorikian/html-proofer) is a ruby-based HTML validation tool that checks for:
+
+* correct image references
+* accessibility including alt tags for each image
+* broken links.
+
+For a full list of checks, please refer to the [HTMLProofer documentation](https://github.com/gjtorikian/html-proofer).
+
+The HTMLProofer tool is integrated into all pyOpenSci website GitHub repositories including the core website, the packaging guide, our peer review guide and this handbook that you are reading now. You can view the outputs from HTMLProofer on a pull request, by clicking on the Details section of CI build for each repository.
+For all of our sphinx books, the CI build that you will need to check is called **Build Push github pages / build-book (pull_request)** line. It looks like this:
+
+```{figure} /images/github-images/htmlproofer-pass.png
+:alt: A screenshot of the GitHub CI notifications for a sample pyOpenSci repository. There is a header that reads All checks have passed, with the text 3 successful checks beneath it. To the right side of the header is linked text reading Hide all checks. Below the header are three rows of information. The first row reads Build Push github pages / build-book (pull_request), the second reads ci/circleci: build_book -- Your tests passed on CircleCI!, and the third reads pre-commi.ci - pr -- checks completed successfully. There is a green checkmark next to each line of text. Beneath these rows is the text This branch has no conflicts with the base branch. Merging can be performed automatically. There is also a green Merge pull request button.
+
+A screenshot from a GitHub PR where all checks have passed.
+```
+
+Once you click on the CI output Details, you'll be taken to the `build-book` jobs screen, which looks like this:
+
+```{figure} /images/github-images/htmlproofer-build-book.png
+:alt: A screenshot of the build-book jobs page in GitHub. There's a white column to the left with the job name and run details, and a large black box to the right with all of the various dropdowns within the build-book job. The htmlproofer dropdown is just over halfway down the page.
+
+A screenshot of the build-book jobs page in GitHub.
+```
+
+When you expand the htmlproofer line, which reads Check HTML using htmlproofer, you will see the following:
+
+```{figure} /images/github-images/htmlproofer-build-book.png
+:alt: A screenshot of the build-book jobs page in GitHub with htmlproofer expanded. There's a white column to the left with the job name and run details, and a large black box to the right with all of the various dropdowns within the build-book job. The htmlproofer dropdown is just over halfway down the page and expanded to reveal information such as the run details, which checks were run, how many links were checked, whether or not HTMLProofer was successful, and how long the run took.
+
+A screenshot of the build-book jobs page in GitHub with htmlproofer expanded.
+```
+
+If all of the HTMLProofer checks pass, you won't see any errors. Instead, you will see a bright green checkmark. However, sometimes you may encounter an error.
+Below is an image the shows a CI error associated with the build:
+
+```{figure} /images/github-images/htmlproofer-fail.png
+:alt: A screenshot of the GitHub CI notifications for a sample pyOpenSci repository. There is a header that reads All checks have passed, with the text 3 failing checks beneath it. To the right side of the header is linked text reading Hide all checks. Below the header are three rows of information. The first row reads Build Push github pages / build-book (pull_request), the second reads ci/circleci: build_book -- Your tests failed on CircleCI!, and the third reads pre-commi.ci - pr -- checks completed with failures. There is a red check next to each line of text. Beneath these rows is the text This branch has no conflicts with the base branch. Merging can be performed automatically. There is also a green Merge pull request button.
+
+A screenshot from a GitHub PR where all checks have passed.
+```
+
+When there is an error in the pyOpenSci CI build, there are a few things to consider.
+
+1. Are the CI errors unrelated to your pull request? pyOpenSci's CI builds run on all the files in the repository by default. Sometimes, a link might become broken simply because the website is down. And that break has nothing to do with your pull request! In that case, pyOpenSci repository maintainers can still merge the pull request, even if there are failed checks.
+2. There are also other CI checks that are happening within each repository in addition to HTML proofer. If more than one build fails, there may be more going on here than just an HTMLProofer error.
+
+Below is an example of a broken build due to HTMLProofer. When you click on the details for the build, you see this:
+
+```{figure} /images/github-images/htmlproofer-error-message.png
+:alt: A screenshot of the build-book jobs page in GitHub with htmlproofer expanded. There's a white column to the left with the job name and run details with a large red X next to build-book, and a large black box to the right with all of the various dropdowns within the build-book job. The htmlproofer dropdown has a red X next to it, and is just over halfway down the page. When expanded, it reveals information such as the run details, which checks were run, how many links were checked, whether or not HTMLProofer was successful, and how long the run took.
+
+A screenshot of the build-book jobs page in GitHub with htmlproofer expanded.
+```
+
+In this case, HTMLProofer told you that none of the images submitted with this PR could be found. In this case you should go back and double check that the images are in the correct folder and that their paths' are correct. In this case, the author forgot the leading forward slash in the image paths.
+
+If you see a broken HTMLProofer build, you can continue to make updates to the pull request either locally or through inline comments, until no
+errors are returned by HTMLProofer. Once you have a green check next to the build, it's time to submit your pull request for review!
+
+:::{note}
+In some cases you may be unsure as to why HTMLProofer or any part of our pyOpenSci CI checks are failing. In these cases, feel free to ping a pyOpenSci
+repository maintainer for help. We understand that Continuous Integration (CI) can be confusing to navigate, even for seasoned GitHub users.
+:::
 
 (pre-commit-ci)=
 ## About the Pre-Commit CI Bot
