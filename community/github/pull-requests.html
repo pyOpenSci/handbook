@@ -11,12 +11,12 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.pyopensci.org/governance/community/github/pull-requests.html" />
 <meta property="og:site_name" content="pyOpenSci Handbook" />
-<meta property="og:description" content="When possible, pull request and issue submissions and reviews should follow standard open-source workflows. Below are guidelines for pull requests. Pull Requests: New pull requests should: Be creat..." />
+<meta property="og:description" content="When possible, pull request (PR) and issue submissions and reviews of pull requests should follow standard open source workflows. Below are guidelines for pull requests submitted to pyOpenSci. Pull..." />
 <meta property="og:image:width" content="1146" />
 <meta property="og:image:height" content="600" />
-<meta property="og:image" content="https://www.pyopensci.org/governance/_images/social_previews/summary_community_github_pull-requests_7e62a6db.png" />
-<meta property="og:image:alt" content="When possible, pull request and issue submissions and reviews should follow standard open-source workflows. Below are guidelines for pull requests. Pull Requ..." />
-<meta name="description" content="When possible, pull request and issue submissions and reviews should follow standard open-source workflows. Below are guidelines for pull requests. Pull Requests: New pull requests should: Be creat..." />
+<meta property="og:image" content="https://www.pyopensci.org/governance/_images/social_previews/summary_community_github_pull-requests_746b2a96.png" />
+<meta property="og:image:alt" content="When possible, pull request (PR) and issue submissions and reviews of pull requests should follow standard open source workflows. Below are guidelines for pu..." />
+<meta name="description" content="When possible, pull request (PR) and issue submissions and reviews of pull requests should follow standard open source workflows. Below are guidelines for pull requests submitted to pyOpenSci. Pull..." />
 <meta name="twitter:card" content="summary_large_image" />
     <link href="https://www.pyopensci.org/images/favicon.ico" rel="icon" type="image/x-icon">
     <title>2. pyOpenSci Pull Request Process &#8212; pyOpenSci Governance</title>
@@ -547,14 +547,14 @@ document.write(`
                   
   <section id="pyopensci-pull-request-process">
 <h1>2. pyOpenSci Pull Request Process<a class="headerlink" href="#pyopensci-pull-request-process" title="Link to this heading">#</a></h1>
-<p>When possible, pull request and issue submissions and reviews should follow
-standard open-source workflows. Below are guidelines for pull requests.</p>
+<p>When possible, pull request (PR) and issue submissions and reviews of pull requests should follow
+standard open source workflows. Below are guidelines for pull requests submitted to pyOpenSci.</p>
 <section id="pull-requests">
 <h2>Pull Requests<a class="headerlink" href="#pull-requests" title="Link to this heading">#</a></h2>
 <p>New pull requests should:</p>
 <ul class="simple">
 <li><p>Be created from a fork rather than the pyOpenSci-owned parent repository.</p></li>
-<li><p>Never be submitted from the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch of your fork.</p></li>
+<li><p><a class="reference external" href="https://hynek.me/articles/pull-requests-branch/">Never be submitted from the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch of your fork.</a></p></li>
 </ul>
 <p>Authors of new pull requests should, whenever possible, do their best to
 create clean pull requests.</p>
@@ -570,10 +570,31 @@ posts, which we manage internally using Asana).</p></li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Review your own pull request before asking someone else to review it for you.
+<p>Please look over your own pull request before asking someone else to review it for you.
 You might be surprised that you notice things in the pull request that you
 didn’t notice when working on the content locally.</p>
 </div>
+<section id="pull-request-checklist">
+<h3>Pull Request Checklist<a class="headerlink" href="#pull-request-checklist" title="Link to this heading">#</a></h3>
+<p>Please follow this pull request review checklist when submitting a pull request to a pyOpenSci GitHub repository.
+This checklist will make the pull request review process easier and more efficient for you as the pull request author and for the
+repository maintainers.</p>
+<ul class="simple">
+<li><p>Check that the files in the PR align with those you changed locally (or want to suggest changes to).</p></li>
+<li><p>Review your own code and/or text changes for each file. Do the changes look correct to you? Are there typos?</p></li>
+<li><p>Check that the pull is coming from a branch on your fork, and not the main of your repo fork.</p></li>
+</ul>
+<figure class="align-default" id="id3">
+<img alt="A screenshot of a GitHub PR. The text reads: Open a pull request, and beneath that, Create a new pull request by comparing changes across two branches. If you need to, you can also compare across forks. Learn more about diff comparisons here. Beneath the text is a grey box with four dropdowns arranged in a single row. From left to right the dropdowns read: base repository:pyOpenSci/handbook, base: main, head repository: kierisi/handbook, and compare: pr-checklist. Underneath this box is more text which reads: Able to merge. These branches can be automatically merged." src="../../_images/pr-comparison-branch.png" />
+<figcaption>
+<p><span class="caption-text">This is what a PR to the <code class="docutils literal notranslate"><span class="pre">pyOpenSci/handbook</span></code> repository, made from an individual contributor’s (kierisi) branch, <code class="docutils literal notranslate"><span class="pre">pr-checklist</span></code>, looks like. If this were from kierisi’s main repository, the text in the far-right dropdown would read “main.”</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>Check that all continuous integration checks have passed. If they haven’t passed, identify and address the points of failure.</p></li>
+<li><p>Check the PR title to ensure that it describes what your PR is changing.</p></li>
+</ul>
+</section>
 <section id="pull-request-content">
 <h3>Pull Request Content<a class="headerlink" href="#pull-request-content" title="Link to this heading">#</a></h3>
 <p>Below are some guidelines for pull request content. Clean pull requests
@@ -836,6 +857,7 @@ guide).</p>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pull-requests">Pull Requests</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pull-request-checklist">Pull Request Checklist</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pull-request-content">Pull Request Content</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#highly-recommended">Highly Recommended</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#regular-vs-new-contributors">Regular vs. New Contributors</a></li>
