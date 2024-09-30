@@ -1,14 +1,14 @@
 # 2. pyOpenSci Pull Request Process
 
-When possible, pull request and issue submissions and reviews should follow
-standard open-source workflows. Below are guidelines for pull requests.
+When possible, pull request (PR) and issue submissions and reviews of pull requests should follow
+standard open source workflows. Below are guidelines for pull requests submitted to pyOpenSci.
 
 ## Pull Requests
 
 New pull requests should:
 
 * Be created from a fork rather than the pyOpenSci-owned parent repository.
-* Never be submitted from the `main` branch of your fork.
+* [Never be submitted from the `main` branch of your fork.](https://hynek.me/articles/pull-requests-branch/)
 
 Authors of new pull requests should, whenever possible, do their best to
 create clean pull requests.
@@ -24,18 +24,20 @@ A clean pull request:
   posts, which we manage internally using Asana).
 
 :::{tip}
-Review your own pull request before asking someone else to review it for you.
+Please look over your own pull request before asking someone else to review it for you.
 You might be surprised that you notice things in the pull request that you
 didn't notice when working on the content locally.
 :::
 
 ### Pull Request Checklist
 
-Please follow this pull request review checklist when submitting a PR to the pyOpenSci GitHub repository. This checklist will both make the pull request review process easier both for you as the PR author and the repository maintainers. It also will make the pull request merge process more smooth and efficient.
+Please follow this pull request review checklist when submitting a pull request to a pyOpenSci GitHub repository. 
+This checklist will make the pull request review process easier and more efficient for you as the pull request author and for the 
+repository maintainers. 
 
-* Check that the files in the PR align with the files that you changed locally (or want to suggest changes to).
-* Review your own code and/or text changes for each file. Do the changes look correct to you?
-* Check that the PR is coming from a branch on your fork, and not your main repository.
+* Check that the files in the PR align with those you changed locally (or want to suggest changes to).
+* Review your own code and/or text changes for each file. Do the changes look correct to you? Are there typos? 
+* Check that the pull is coming from a branch on your fork, and not the main of your repo fork.
 
 ```{figure} /images/github-images/pr-comparison-branch.png
 :alt: A screenshot of a GitHub PR. The text reads: Open a pull request, and beneath that, Create a new pull request by comparing changes across two branches. If you need to, you can also compare across forks. Learn more about diff comparisons here. Beneath the text is a grey box with four dropdowns arranged in a single row. From left to right the dropdowns read: base repository:pyOpenSci/handbook, base: main, head repository: kierisi/handbook, and compare: pr-checklist. Underneath this box is more text which reads: Able to merge. These branches can be automatically merged.
