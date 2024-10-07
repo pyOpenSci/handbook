@@ -23,7 +23,7 @@ repos:
 
   # Misc commit checks
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.6.0
+    rev: v5.0.0
     # ref: https://github.com/pre-commit/pre-commit-hooks#hooks-available
     hooks:
       # Autoformat: Makes sure files end in a newline and only a newline.
@@ -39,6 +39,6 @@ repos:
     - id: codespell
 
   - repo: https://github.com/errata-ai/vale
-    rev: v3.7.0
+    rev: v3.7.1
     hooks:
       - id: vale
