@@ -14,6 +14,8 @@ The software-review repository is where community package submissions are
 peer-reviewed. All submissions are made through GitHub Issues. [Learn more
 about our peer review process here.](https://www.pyopensci.org/software-peer-review/)
 
+Individuals and teams with access to this repository include: [the pyOpenSci Editorial Board](https://github.com/orgs/pyOpenSci/teams/editorial-board), [Bane Sullivan](https://github.com/banesullivan), [Derek Homeier](https://github.com/dhomeier), [Kelly L. Rowland](https://github.com/kellyrowland), [Filipe Fernandes](https://github.com/ocefpaf), [Simon Molinsky](https://github.com/SimonMolinsky), [Emily Jane McTavish](https://github.com/snacktavish), [Jonny Saunders](https://github.com/snacktavish), [Tetsuo Koyama](https://github.com/tkoyama010), and [Tom Russell](https://github.com/tomalrussell).
+
 :::{important}
 Important: If a pyOpenSci core member identifies an issue with the review
 submission template, consult both the editorial team and core team before
@@ -30,6 +32,8 @@ peer review triage team as they manage our open peer review process. It also
 details our peer review policies, partnerships, and the templates used in the
 review process.
 
+Individuals and teams with access to this repository include: [the pyOpenSci Editorial Board](https://github.com/orgs/pyOpenSci/teams/editorial-board) and [the pyOpenSci Repository Maintainers team](https://github.com/orgs/pyOpenSci/teams/pyos-repo-maintainers).
+
 ## Python-package-guide repository
 
 The [python-package-guide
@@ -37,11 +41,15 @@ repository](https://www.pyopensci.org/python-package-guide/) contains our
 community-developed guidelines and tutorials on Python packaging. These
 resources are beginner-friendly and reflect Python packaging best practices.
 
+Individuals and teams with access to this repository include: [the pyOpenSci Packaging Council](https://github.com/orgs/pyOpenSci/teams/packaging-council), [the pyOpenSci Repository Maintainers team](https://github.com/orgs/pyOpenSci/teams/pyos-repo-maintainers), [Alex Batisse](https://github.com/Batalex), [Felipe Moreno](https://github.com/flpm), [Jackson Burns](https://github.com/JacksonBurns), [Jeremy Paige](https://github.com/ucodery), and [Carol Willing](https://github.com/willingc).
+
 ## [pyosMeta repository](https://github.com/pyOpenSci/pyosMeta)
 
 The pyosMeta repository contains a Python package published on PyPI that we use
 to track our package review and contributor data. This data is used in a GitHub
 action to update our website.
+
+Individuals and teams with access to this repository include: [the pyOpenSci Repository Maintainers team](https://github.com/orgs/pyOpenSci/teams/pyos-repo-maintainers), [Steven Silvester](https://github.com/blink1073), [Mike Sarahan](https://github.com/msarahan), and [Carol Willing](https://github.com/willingc).
 
 :::{todo}
 Add more information about the contributor data workflow ...
@@ -57,6 +65,8 @@ packages page, contributor page, and peer review team page are all updated
 automatically using a GitHub action workflow that is supported by the pyosMeta
 Python package discussed above. The workflow runs every other week but can be
 triggered manually as a **workflow dispatch**.
+
+Individuals and teams with access to this repository include: [the pyOpenSci Editorial Board](https://github.com/orgs/pyOpenSci/teams/editorial-board), [the pyOpenSci Repository Maintainers team](https://github.com/orgs/pyOpenSci/teams/pyos-repo-maintainers), [Jesse Mostipal](https://github.com/kierisi), [Mike Sarahan](https://github.com/msarahan), [pyosbot](https://github.com/pyosbot), [Thomas J. Fan](https://github.com/thomasjpfan), [Carol Willing](https://github.com/willingc), and [Ivan Ogasawara](https://github.com/xmnlab).
 
 ### Critical CI workflows in this repository
 
@@ -110,6 +120,8 @@ of our repositories that use the theme.
 Creating a theme was inspired by the
 [2i2c Sphinx theme](https://sphinx-2i2c-theme.readthedocs.io/en/latest/).
 
+Individuals and teams with access to this repository include: [the pyOpenSci Repository Maintainers team](https://github.com/orgs/pyOpenSci/teams/pyos-repo-maintainers) and [Revathy Venugopal](https://github.com/Revathyvenugopal162).
+
 ## [Handbook repository](https://github.com/pyOpenSci/handbook)
 
 **Platform:** Sphinx book running the `pydata_sphinx_theme`
@@ -117,9 +129,25 @@ Creating a theme was inspired by the
 This is where we store our organization governance, code of conduct, and
 processes around how we operate as an organization.
 
+Individuals and teams with access to this repository include: [Karen Cranston](https://github.com/kcranston), [Jesse Mostipak](https://github.com/kierisi), [Tracy Teal](https://github.com/tracykteal), and [Carol Willing](https://github.com/willingc).
+
 ## [pyosPackage repository](https://github.com/pyOpenSci/pyosPackage)
 
 The pyosPackage repo contains an example pure-Python package that complements
 our package guide & tutorials. We will build this package example out over time
 for folks that just want to see a working package without creating one
 themselves.
+
+Individuals and teams with access to this repository include: [the pyOpenSci Packaging Council](https://github.com/orgs/pyOpenSci/teams/packaging-council).
+
+## [peer-review-metrics repository](https://github.com/pyOpenSci/peer-review-metrics)
+
+The pyOpenSci peer review metrics repository contains the code for a dashboard created using [MyST Markdown](https://mystmd.org/). Myst-md is a community developed tool that makes it easier for scientists to create fully reproducible (and interactive) workflows and reports that are easily shared.
+
+No individuals or teams have access to this repository.
+
+## [lessons repository](https://github.com/pyOpenSci/lessons)
+
+pyOpenSci is devoted to building diverse, supportive community around the Python open source tools that drive open science. The lessons repository contains the source files for all of the [pyOpenSci tutorials](https://github.com/pyOpenSci/lessons).
+
+No individuals or teams have access to this repository.
