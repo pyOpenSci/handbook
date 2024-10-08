@@ -53,6 +53,25 @@ We use a combination of **Asana** and **GitHub** to track and communicate about 
 
 We use GitHub to create issues around bugs and features we want to add to various content in our pyOpenSci GitHub organization. GitHub is public facing to our entire community.  
 
-**Important:** if a conversation comes up about something in slack where it’s clear we need better / additional documentation, turn that conversation into an issue (sometimes the community member involved might volunteer to do this as well). That way we can keep track of things that need to be updated, fixed etc as the output of a slack conversation. If we determine that the issue is high priority or time sensitive then we may also turn it into a linked asana task and assign it to someone on the core team.
+**Important:** if a conversation comes up about something in Slack where it’s clear we need better / additional documentation, turn that conversation into an issue (sometimes the community member involved might volunteer to do this as well). That way we can keep track of things that need to be updated, fixed etc as the output of a slack conversation. If we determine that the issue is high priority or time sensitive then we may also turn it into a linked asana task and assign it to someone on the core team.
 
 **Asana** is an internal tool we use as pyOpenSci staff. Within Asana, the general workflow is that we can assign each other tasks that need to be accomplished along with task deadlines. In our checkin’s we can review tasks, update deadlines as needed and discuss future efforts. Asana can also be used to build road maps for projects as needed. 
+
+### Tools we use 
+
+Asana  
+
+
+Buffer for posting (and issues with buffer) 
+
+
+Google Drive  
+
+
+Slack   
+
+
+Bitwarden for passwords (i think we can then MOVe bitwarden from it's own page to this section.)  
+
+
+Shared calendars  
