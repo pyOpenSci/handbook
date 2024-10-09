@@ -32,7 +32,7 @@ Linktree is a social media landing page that allows users to share multiple link
 All of our active sites, platforms, and social media accounts are located in a Linktr.ee account. The Linktr.ee link is shared in the **Description** of our social media sites where applicable.
 
 Accessing and editing Linktr.ee:
-* Login at linktr.ee (credentials are in [Bitwarden](./bitwarden.md))
+* Login at linktr.ee (credentials are in Bitwarden)
 * Click on “Admin”
 * Add new links by clicking on the “Add link” button, or edit existing links by clicking on the pencil next to the title and//or URL
 * Current linktr.ee: https://linktr.ee/pyopensci
