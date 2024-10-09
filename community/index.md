@@ -28,6 +28,7 @@ Our Repos <github/our-repositories>
 GitHub Issue Guidelines <github/issues>
 Pull Requests <github/pull-requests>
 Continuous Integration (CI) <github/continuous-integration>
+GitHub permissions <github/permissions>
 :::
 
 :::{toctree}
