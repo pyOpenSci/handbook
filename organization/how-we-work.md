@@ -31,45 +31,45 @@ On the pyOpenSci end of things:
     c. **Introductory blog post:** new hire writes a brief (500–1,000 words) blog post introducing themselves to the community. The post can include topics such as: their work background, hobbies, why they joined pyOS, and what they’ll be doing with pyOS.  
     d. **Social media:** Community Manager will draft announcements for each social channel for review by ED and new hire, then post according to social schedules.  
 
-## Shared Calendars & time tracking  
-
-* **[Calendly](https://calendly.com/):** we have a subscription to Calendly that can be used to schedule meetings. If the new hire wishes to use Calendly, then we can purchase another license. 
-* **Google Calendar:** We use google calendar given it’s a part of the Google workspace to keep track of schedules.  
-    * All employees should share Google calendars with the team - it’s helpful for us all to know where and when we are working.  
-    * If you have appointments that are confidential such as medical appointments please make them private so the team knows you are unavailable at that time. Work-related appointments should be public to the pyOpenSci team, unless they are confidential in nature.  
-* **[Don't interrupt](https://dontinterrupt.app/)**: Don’t interrupt is setup in Slack. Use this tool to link your calendar to slack so it’s easy to tell when you are online and available vs offline / on vacation, etc. This is invaluable particularly when working asynchronously.  
-
 ## Staff check-ins  
 
 When a new member joins the pyOpenSci team, they may need more up-front meeting time to adjust to the organization and our work environment. As such, when an employee starts, a standard weekly check-in time will be scheduled with their manager to discuss both current tasks and how things are going overall.  
 
 These meetings are a good time to ask for help or guidance, talk about challenges we face as a community, and suggest ways to improve our workflows. The meeting cadence can be flexible, accommodating each employee's needs. If we find that a bi-weekly meeting might be more productive we will move to that. If weekly meetings continue to be fruitful we will stick to that schedule.  
 
-## How we work  
-
-### Task management   
-
-We use a combination of **Asana** and **GitHub** to track and communicate about work tasks. Asana is used for general task management. Our Asana account is also connected to GitHub. 
-
-We use GitHub to create issues around bugs and features we want to add to various content in our pyOpenSci GitHub organization. GitHub is public facing to our entire community.  
-
-**Important:** if a conversation comes up about something in Slack where it’s clear we need better / additional documentation, turn that conversation into an issue (sometimes the community member involved might volunteer to do this as well). That way we can keep track of things that need to be updated, fixed etc as the output of a slack conversation. If we determine that the issue is high priority or time sensitive then we may also turn it into a linked asana task and assign it to someone on the core team.
-
-**Asana** 
+## How we work   
 
 ### Tools we use 
 
 #### Asana  
-[Asana](https://asana.com/) is an internal tool we use as pyOpenSci staff. Within Asana, the general workflow is that we can assign each other tasks that need to be accomplished along with task deadlines. In our checkin’s we can review tasks, update deadlines as needed and discuss future efforts. Asana can also be used to build road maps for projects as needed. 
+
+[Asana](https://asana.com/) is an internal tool we use as pyOpenSci staff for general task management. Within Asana, the general workflow is that we can assign each other tasks that need to be accomplished along with task deadlines. In our check-in’s we can review tasks, update deadlines as needed and discuss future efforts. Asana can also be used to build road maps for projects.   
 
 #### Buffer for posting (and issues with buffer) 
 
+[Buffer](https://buffer.com/) is a [social media](https://www.pyopensci.org/handbook/community/social.html) toolkit that makes it easy for us to schedule, track, and collaborate on social media posts. While Buffer supports a host of platforms, pyOpenSci currently uses Buffer for [Fosstodon](https://fosstodon.org/@pyOpenSci), [Bluesky](https://bsky.app/profile/pyopensci.bsky.social), and [LinkedIn](https://www.linkedin.com/company/pyOpenSci).  
+
+#### GitHub  
+
+[GitHub](https://github.com/) is used in a variety of ways at pyOpenSci, but specifically related to how we work, GitHub is used to create issues around bugs and features we want to add to various content in our pyOpenSci GitHub organization. GitHub is public facing to our entire community.   
+
+To learn more about GitHub processes at pyOpenSci, please refer to the [GitHub processes](https://www.pyopensci.org/handbook/community/github/intro.html) handbook page.  
 
 #### Google Drive  
 
+[Google Drive](https://drive.google.com/) is used to store all pyOpenSci documents, spreadsheets, google slides, photos, and graphics. Each pyOpenSci staff member has access to their own work-related Google Drive account, which should be used only for personal documents, while anything that needs to be shared at the organizational level should go in the appropriate folder on the shared drive.  
+
+Read more about how we use Google Drive on the corresponding [Google Drive](https://www.pyopensci.org/handbook/organization/internal-documentation.html) handbook page.  
 
 #### Slack   
 
+pyOpenSci uses Slack to communicate both as paid staff and within our community organization. Slack is a valuable tool for both asynchronous, synchronous, and remote communication.  
+
+When communicating internally, Slack is used for informal conversations, notifying other staff members of changes to scheduling, or other non-task-related conversations. Conversations related to projects and tasks should be held in the appropirate Asana issue or project.  
+
+Read more about how pyOpenSci uses Slack on the corresponding [Slack](https://www.pyopensci.org/handbook/community/slack.html) handbook page.  
+
+**Important:** if a conversation comes up about something in Slack where it’s clear we need better / additional documentation, turn that conversation into an issue (sometimes the community member involved might volunteer to do this as well). That way we can keep track of things that need to be updated, fixed etc as the output of a slack conversation. If we determine that the issue is high priority or time sensitive then we may also turn it into a linked asana task and assign it to someone on the core team.  
 
 #### Bitwarden
 
@@ -79,4 +79,10 @@ Individuals are encouraged to use Bitwarden to secure personal passwords related
 
 At the organizational level, Bitwarden is used for shared login access to a variety of accounts, such as Eventbrite and Buffer. This is done when only one organizational account is needed, and then accessed by pyOpenSci team members as needed.
  
-#### Shared calendars  
+#### Shared calendars & time tracking  
+
+* **[Calendly](https://calendly.com/):** we have a subscription to Calendly that can be used to schedule meetings. If the new hire wishes to use Calendly, then we can purchase another license. 
+* **Google Calendar:** We use google calendar given it’s a part of the Google workspace to keep track of schedules.  
+    * All employees should share Google calendars with the team - it’s helpful for us all to know where and when we are working.  
+    * If you have appointments that are confidential such as medical appointments please make them private so the team knows you are unavailable at that time. Work-related appointments should be public to the pyOpenSci team, unless they are confidential in nature.  
+* **[Don't interrupt](https://dontinterrupt.app/)**: Don’t interrupt is setup in Slack. Use this tool to link your calendar to slack so it’s easy to tell when you are online and available vs offline / on vacation, etc. This is invaluable particularly when working asynchronously.  
