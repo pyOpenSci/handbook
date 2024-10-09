@@ -1,25 +1,45 @@
-# pyOpenSci Social Media Platforms
-The 2024 North Star for pyOpenSci’s social media accounts is to raise general awareness of pyOpenSci in the broader open source community through both scheduled and ad hoc content that reflects our commitments to diversity and inclusion within the open source scientific Python community. Through these efforts we will also be supporting our mission of empowering scientists to create better software, thereby supporting more open and reproducible science.
+# pyOpenSci GitHub processes for translation teams 
 
-Until 2024, pyOpenSci has had an on and off social media presence since its inception in 2018. Although we’ve previously used Buffer to manage posting across platforms, we currently post directly on each individual site. Our current efforts are localized to [LinkedIn](https://www.linkedin.com/company/pyopensci) and [Fosstodon](https://fosstodon.org/@pyOpenSci) (a Mastodon instance), although we are continuously evaluating other platforms and their compatibility with our community efforts.
-Social Accounts
+This document outlines the process for managing translation of pyOpenSci content in our [python-package-guide](https://github.com/pyOpenSci/python-package-guide) repository. It covers:
 
-## Social Accounts
-* **[LinkedIn:](https://www.linkedin.com/company/pyopensci)** LinkedIn is our primary social media platform as of 2024, as it is the place where the majority of the pyOpenSci community can be found. In addition to posting regularly on LinkedIn, we send out a weekly newsletter on LinkedIn that has shown a promising amount of growth its first few weeks of publication.
-* **[Fosstodon:](https://fosstodon.org/@pyOpenSci)** the pyOpenSci Fosstodon account is active, and generally has the same information as what’s posted on our LinkedIn account (albeit in a truncated form). We continue to grow our community on Fosstodon, and intend to keep investing in it as a social media platform.
-* **[Bluesky:](https://bsky.app/profile/pyopensci.bsky.social)** we posted consistently on Bluesky during the first quarter of 2024, however were ineffective at growing a community on the site. We plan to keep the account active with occasional posts, but Bluesky is not a current priority for our social media outreach efforts.
-* **[X:](https://twitter.com/pyopensci)** although we maintain an account on X, we do not actively post on the platform at this point in time due to both the lack of inclusivity on the platform, as well as community members moving elsewhere.
+1. How teams are defined
+2. What roles and permissions a team has
+3. The review process for a translation PR
 
-## Post types: evergreen vs. *ad hoc* content
-pyOpenSci will run both evergreen content campaigns as well as ad hoc campaigns. One of the major keys to success on social media is publishing on a regular cadence across a series of platforms. Evergreen content allows pyOpenSci to be in constant dialogue on social platforms, in turn generating larger interest in ad hoc posts.
-* Evergreen content is any content that can be prepared well in advance and does not have a timeframe for posting. Examples of evergreen content include:
-    * Volunteer spotlights
-    * Package showcases
-    * Information about pyOpenSci
-    * Python packaging
-* *Ad hoc* content is any content that has a timing element to it, in that the content is only relevant for a specific amount of time. Examples of ad hoc content include:
-    * Calls for volunteers
-    * Live-posting at an event
-    * pyOpenSci content and event launches
+## Guidelines for a translation-related Pull Request
 
-It’s important to note that *ad hoc* content can become evergreen content! For example, when the Python Packaging Guide was released, we did a full social media product launch (*ad hoc*), and throughout the year we plan to also spend time highlighting various parts of the guide (evergreen).
+* When a translation-related PR has been submitted, it should be reviewed and ultimately approved by at least one other person (who is not the PR owner) on the language team associated with the submitted PR.   
+* A PR can not be merged without at least one approval from someone on the relevant code-owner team.  
+* All questions, errors, and suggestions must be addressed before the PR is merged.   
+
+These are the checks a reviewer should incorporate into their review.
+* Verify that the translation can be built in the PR branch without warnings
+    * Example for Spanish translation: `nox -s docs-live-lang -- es`  
+    * The command can be used for any language by swapping out the language tag at the end. A list of Sphinx language tags can be [found here](https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language).     
+* Go through the file and ensure that the translation makes sense, using the following checks:  
+    * There are no typos  
+    * Technical terms can be easily understood  
+    * Sentence structure makes sense for the target language  
+* Use suggestions for any errors that are found. This has two purposes:  
+    * It makes it easier for the contributor to make changes  
+    * It gives credit to the PR reviewer as a coauthor in the final commit to main  
+
+## GitHub infrastructure for the translation teams
+
+pyOpenSci will create and maintain a team for each language using CODEOWNERS files. This ensures that every time there is a PR, and some `*.po` files are modified, the appropriate team is requested to review the PR. All members of the translation team will have merge permissions.  
+
+The current translation teams consist of:  
+
+### Spanish
+* [Felipe Moreno](https://github.com/flpm)  
+* [Roberto Pastor Muela](https://github.com/RobPasMue)  
+
+### Japanese
+* [Tetsuo Koyama](https://github.com/tkoyama010)   
+* [Kozo Nishida](https://github.com/kozo2)  
+
+Current translation teams can expand their teams and add additional members by updating the CODEOWNERS file.
+
+## Additional automations for consideration
+
+Use CI to automatically tag the PR with the translation and the proper language tags.

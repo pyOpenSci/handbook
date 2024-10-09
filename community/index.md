@@ -42,5 +42,5 @@ pyOpenSci Sprints <events/sprints>
 :maxdepth: 2
 :caption: Translation
 
-Translation <translation>
+Translation Team Processes <translation>
 :::
