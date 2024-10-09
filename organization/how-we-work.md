@@ -55,23 +55,28 @@ We use GitHub to create issues around bugs and features we want to add to variou
 
 **Important:** if a conversation comes up about something in Slack where it’s clear we need better / additional documentation, turn that conversation into an issue (sometimes the community member involved might volunteer to do this as well). That way we can keep track of things that need to be updated, fixed etc as the output of a slack conversation. If we determine that the issue is high priority or time sensitive then we may also turn it into a linked asana task and assign it to someone on the core team.
 
-**Asana** is an internal tool we use as pyOpenSci staff. Within Asana, the general workflow is that we can assign each other tasks that need to be accomplished along with task deadlines. In our checkin’s we can review tasks, update deadlines as needed and discuss future efforts. Asana can also be used to build road maps for projects as needed. 
+**Asana** 
 
 ### Tools we use 
 
-Asana  
+#### Asana  
+[Asana](https://asana.com/) is an internal tool we use as pyOpenSci staff. Within Asana, the general workflow is that we can assign each other tasks that need to be accomplished along with task deadlines. In our checkin’s we can review tasks, update deadlines as needed and discuss future efforts. Asana can also be used to build road maps for projects as needed. 
+
+#### Buffer for posting (and issues with buffer) 
 
 
-Buffer for posting (and issues with buffer) 
+#### Google Drive  
 
 
-Google Drive  
+#### Slack   
 
 
-Slack   
+#### Bitwarden
 
+[Bitwarden](https://bitwarden.com/) is a password manager and passkey service. pyOpenSci uses Bitwarden at both an individual and account level.
 
-Bitwarden for passwords (i think we can then MOVe bitwarden from it's own page to this section.)  
+Individuals are encouraged to use Bitwarden to secure personal passwords related to their work at pyOpenSci, for example when using Google Workspaces services such as Drive and Gmail, as well as applications and platforms such as Slack and Canva.
 
-
-Shared calendars  
+At the organizational level, Bitwarden is used for shared login access to a variety of accounts, such as Eventbrite and Buffer. This is done when only one organizational account is needed, and then accessed by pyOpenSci team members as needed.
+ 
+#### Shared calendars  
