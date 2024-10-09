@@ -46,4 +46,8 @@ To break this down into concrete actions:
 * We support people through individualized mentorship
 * When possible, we elevate people into leadership roles
 
+pyOpenSci also incorporates DEIA throughout its content branding. This includes the use of alt tags in all figures, both on the pyOpenSci website as well as social media platforms and any other places pyOpenSci may share or produce content. We also have checks for the presence of alt tags as part of the [CI checks](https://www.pyopensci.org/handbook/community/github/continuous-integration.html) run on many of our GitHub repositories.     
+
+In addition, our web design is responsive, built with [WCAG guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/) in mind, and uses fonts and color designs that are accessible to both screen-readers and low-vision individuals.  
+
 If you have any questions about pyOpenSci's DEIA efforts, please email us at: [media@pyopensci.org](mailto:media@pyopensci.org).
