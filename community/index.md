@@ -37,3 +37,10 @@ Continuous Integration (CI) <github/continuous-integration>
 Events <events/intro>
 pyOpenSci Sprints <events/sprints>
 :::
+
+:::{toctree}
+:maxdepth: 2
+:caption: Translation
+
+Translation <translation>
+:::
