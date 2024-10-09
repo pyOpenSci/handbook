@@ -65,7 +65,7 @@ Read more about how we use Google Drive on the corresponding [Google Drive](http
 
 pyOpenSci uses Slack to communicate both as paid staff and within our community organization. Slack is a valuable tool for both asynchronous, synchronous, and remote communication.  
 
-When communicating internally, Slack is used for informal conversations, notifying other staff members of changes to scheduling, or other non-task-related conversations. Conversations related to projects and tasks should be held in the appropirate Asana issue or project.  
+When communicating internally, Slack is used for informal conversations, notifying other staff members of changes to scheduling, or other non-task-related conversations. Conversations related to projects and tasks should be held in the appropriate Asana issue or project.  
 
 Read more about how pyOpenSci uses Slack on the corresponding [Slack](https://www.pyopensci.org/handbook/community/slack.html) handbook page.  
 
