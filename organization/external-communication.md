@@ -175,6 +175,6 @@ pyOpenSci uses Zenodo as a way to provide citable entities for its GitHub org re
 
 When there are major updates to content such as the packaging guide, we create a new release, and Zenodo provides and updated DOI associated with those commits.  
 
-pyOpenSci also has a Zenodo communiy where people can add their presentations, blog posts, or any content related to pyOpenSci to. This allows the community member (or pyOpenSci staff) to gain a citable DOI for the element deposited in the community, while the original submitter still owns the addition.
+pyOpenSci also has a Zenodo community where people can add their presentations, blog posts, or any content related to pyOpenSci to. This allows the community member (or pyOpenSci staff) to gain a citable DOI for the element deposited in the community, while the original submitter still owns the addition.
 
 The pyOpenSci Zenodo community is moderated by pyOpenSci staff admins, so while anyone can suggest an addition, pyOpenSci staff admins moderate what is ultimately added.
