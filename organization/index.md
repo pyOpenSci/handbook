@@ -2,12 +2,17 @@
 
 :::{toctree}
 :hidden:
-:caption: Canva
+:maxdepth: 2
+:caption: Communication & Documentation
 
-Canva <canva>
+Google Drive <internal-documentation>
+External Communication <external-communication>
+:::
 
 :::{toctree}
 :hidden:
-:caption: Internal Documentation
+:caption: Platforms
 
-Google Drive <internal-documentation>
+Bitwarden <bitwarden>
+Canva <canva>
+:::
