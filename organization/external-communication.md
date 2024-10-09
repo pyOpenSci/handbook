@@ -1,8 +1,8 @@
 # External Communications
 
-pyOpenSci uses a multitude of platforms for external communication to maintain communication with our current community and grow it. Our external communications fall under the broad categories of 
+pyOpenSci uses a multitude of platforms for external communication to maintain communication with our current community and grow it. Our external communications fall under the broad categories of
 
-* email, 
+* email,
 * pyOpenSci blog,
 * pyOpenSci newsletters, and
 * social media platforms.
@@ -11,7 +11,7 @@ This section provides an overview of theeach category's purpose and use. It also
 
 Emails from pyOpenSci are sent to communicate with potential volunteers, share the monthly version of the newsletter, and to keep registered event participants up-to-date on logistics. pyOpenSci will also reach out to event attendees with pre- and/or post-surveys, along with follow-up reminders, as needed.
 
-pyOpenSci does not send unsolicited bulk emails, and all emails contain an unsubscribe link. 
+pyOpenSci does not send unsolicited bulk emails, and all emails contain an unsubscribe link.
 
 ### EventBrite
 
@@ -139,7 +139,7 @@ These posts are all structured as blog posts, using appropriate heading and subh
 
 When a newsletter post is a re-post from the pyOpenSci blog, it's important to include text and a link back to the original blog post, indicating where the post was originally published. This prevents link cannibalisation, where different links with the same content compete for keyword rankings. We want all keyword rankings to be directed back to the pyOpenSci website wherever possible.
 
-There are instances in which we publish content from another individual on our website, for example, Eric Ma's upcoming blog post for the [pyOpenSci Open Science Fall Festival 2024](https://www.pyopensci.org/events/pyopensci-2024-fall-festival.html). In these cases we'd want to include a canonical meta element in the HTML for the version being posted on the pyOpenSci blog. This can be accomplished by including the `<link rel="canonical" href="www.original-post-web-url.com">` tag in the header of the post.  
+There are instances in which we publish content from another individual on our website, for example, Eric Ma's upcoming blog post for the [pyOpenSci Open Science Fall Festival 2024](https://www.pyopensci.org/events/pyopensci-2024-fall-festival.html). In these cases we'd want to include a canonical meta element in the HTML for the version being posted on the pyOpenSci blog. This can be accomplished by including the `<link rel="canonical" href="www.original-post-web-url.com">` tag in the header of the post.
 
 ### Newsletter success metrics
 
@@ -148,7 +148,7 @@ Because pyOpenSci is still in the early days of its newsletter, our success metr
 * 1.0% (or higher) monthly increase in newsletter subscribers
 * 3.0% (or higher) average monthly engagement rates
 
-This data is obtained through the LinkedIn Analytics dashboard, which is accessed from the pyOpenSci LinkedIn account. Within the Newsletter tab, you can filter the dates and also view engagement and follower metrics.  
+This data is obtained through the LinkedIn Analytics dashboard, which is accessed from the pyOpenSci LinkedIn account. Within the Newsletter tab, you can filter the dates and also view engagement and follower metrics.
 
 ## YouTube
 
@@ -169,11 +169,11 @@ pyOpenSci is currently in the process of sunsetting Discourse as it has not prov
 
 ## Zenodo
 
-Zenodo is a general-purpose research repository where any research output can be shared by its users, where pyOpenSci maintains a [community group](https://zenodo.org/communities/pyopensci?q=&l=list&p=1&s=10&sort=newest). When pyOpenSci staff give a presentation, they will update the community group with their talk materials. In addition, when community members give presentations, they have the option of adding them to the pyOpenSci Zenodo community group.  
+Zenodo is a general-purpose research repository where any research output can be shared by its users, where pyOpenSci maintains a [community group](https://zenodo.org/communities/pyopensci?q=&l=list&p=1&s=10&sort=newest). When pyOpenSci staff give a presentation, they will update the community group with their talk materials. In addition, when community members give presentations, they have the option of adding them to the pyOpenSci Zenodo community group.
 
-pyOpenSci uses Zenodo as a way to provide citable entities for its GitHub org repos. pyOpenSci uses adds the Zenodo citation badge to the README of each repo, then adds the badge to the home page of content that is being tracked in Zenodo.  
+pyOpenSci uses Zenodo as a way to provide citable entities for its GitHub org repos. pyOpenSci uses adds the Zenodo citation badge to the README of each repo, then adds the badge to the home page of content that is being tracked in Zenodo.
 
-When there are major updates to content such as the packaging guide, we create a new release, and Zenodo provides and updated DOI associated with those commits.  
+When there are major updates to content such as the packaging guide, we create a new release, and Zenodo provides and updated DOI associated with those commits.
 
 pyOpenSci also has a Zenodo community where people can add their presentations, blog posts, or any content related to pyOpenSci to. This allows the community member (or pyOpenSci staff) to gain a citable DOI for the element deposited in the community, while the original submitter still owns the addition.
 
