@@ -98,11 +98,11 @@ An organized project ensures that
 contributors, whether new or experienced, can easily find and work on tasks
 that suit their skills and interests.
 
-:::{not}
+:::{note}
 We also are testing out using [event projects](https://github.com/orgs/pyOpenSci/projects/12) to track new contributions in the form of pull requests and issues that we receive during an event such as a PyCon US or SciPy sprint.
 :::
 
-#### Help-wanted board
+### Help-wanted board
 
 The pyOpenSci [**help-wanted project board**](https://github.com/orgs/pyOpenSci/projects/3) is an organization-level GitHub project board that provides a central place where contributors can
 find tasks that pyOpenSci needs help with. We have two automated workflows set up for the [help-wanted project board](https://github.com/orgs/pyOpenSci/projects/3):

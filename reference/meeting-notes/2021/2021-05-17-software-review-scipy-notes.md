@@ -1,7 +1,5 @@
 # Meeting Notes 17 May 2021
 
-###### tags: `Meeting`
-
 - **Date:** Nov 1, 2030 2:30 PM (CET)
 - **Agenda**
 
@@ -43,15 +41,16 @@
 - LW: close older issues w/invitation to submit
 - LW: will get back to simon about PyMedPhys
 - DN: add suggestion to editor guide to update initial comment w/reviewers etc. so it's right at top of issue
-- DN: post on twitter asking for reviewrs for devicely
+- DN: post on twitter asking for reviewers for devicely
 - DN: figure out if there's overlap for phylup
 - DN: follow up w/LW + IO about mentored sprints at SciPy
 
 ## SciPy Mentored Sprints (David) - Tania Allard
 
-* they are doing these springs at pycon
+- they are doing these springs at pycon
   - <https://mentored-sprints.netlify.app/>
   - <https://www.youtube.com/watch?v=SGUHyP8ki_Q>
+
 - could we use pyOpenSci maintainers to participate in the mentored sprints?
   - Have them bring friends who can contribute to the sprints?
   - maintainers would need to identify things to fix
@@ -65,12 +64,13 @@
     - ask them to do things that aren't code contributions like run through a tutorial and raise issues, etc.
   - Open science labs - they do hae training materials already in (spanish?)
 
-Challenges with mentored sprints
-- getting envt setup
+Challenges with mentored sprints:
+
+- getting environment setup
 - knowing what issue to work on
 
 ## Outcomes
 
-we will go to scipy and SPY
+We will go to scipy and SPY
 
 ducky app for video chat?!
