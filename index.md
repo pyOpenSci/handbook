@@ -3,8 +3,7 @@
 This guide is designed to define the structure and processes
 that support operations of pyOpenSci.
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/governance?color=purple&display_name=tag&style=plastic)  [![DOI](https://zenodo.org/badge/161679308.svg)](https://zenodo.org/badge/latestdoi/161679308) [![All Contributors](https://img.shields.io/badge/all_contributors-3-blue.svg?style=flat-square)]()
-
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/governance?color=purple&display_name=tag&style=plastic) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7120880.svg)](https://doi.org/10.5281/zenodo.7120880) [![All Contributors](https://img.shields.io/badge/all_contributors-4-blue.svg?style=flat-square)](https://github.com/pyopensci/handbook/?tab=readme-ov-file#contributors-)
 
 :::::{grid} 1 1 3 3
 :class-container: text-center
@@ -16,7 +15,6 @@ that support operations of pyOpenSci.
 :link: organization/index
 :link-type: doc
 
-
 Learn more about the governance structure of pyOpenSci.
 :::
 ::::
@@ -26,7 +24,6 @@ Learn more about the governance structure of pyOpenSci.
 :class-card: left-aligned
 :link: community/index
 :link-type: doc
-
 
 Learn more our community.
 :::
@@ -66,7 +63,7 @@ we were developing and founding pyOpenSci.
 ::::{grid-item}
 :::{card} ✿ See our peer review guide ✨
 :class-card: left-aligned
-:link: https://www.pyopensci.org/software-peer-review/
+:link: <https://www.pyopensci.org/software-peer-review/>
 
 This guide will walk you through the editorial process.
 :::

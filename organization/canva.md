@@ -1,6 +1,7 @@
 # pyOpenSci uses Canva as a shared graphic platform
 
 pyOpenSci has a nonprofit Pro license for [Canva](https://www.canva.com/), and uses the platform for:
+
 * Asset creation
 * Diagramming
 * Creative strategy work
@@ -18,7 +19,7 @@ A screenshot of the pyOpenSci flower logos in Canva.
 ```
 
 ```{figure} /images/canva-images/pyos-color-palette.png
-:alt: This is a series of color samples comprising the pyOpenSci color palette, which includes six equally-sized circles arranged in a single row. At the top of the image is the text 'Color palette.' The circles contain the following colors, with the corresponding hex code written beneath them: dark purple #33205C, medium purple #735FAB, light purple #BAB3D4, cream #F6F0DC, pink #BB92B0, and green #81C0AA.
+:alt: This is a series of color samples comprising the pyOpenSci color palette, which includes six equally-sized circles arranged in a single row. At the top of the image is the text 'Color palette.' The circles contain the following colors, with the corresponding hex code written beneath them: dark purple hex 33205C, medium purple hex 735FAB, light purple hex BAB3D4, cream hex F6F0DC, pink hex BB92B0, and green hex 81C0AA.
 
 A screenshot of the pyOpenSci color palette in Canva.
 ```
@@ -96,7 +97,6 @@ Navigate to the People section of the **pyopensci-canva-team** menu on the left.
 Click the arrow next to an individual's Team role and select "Remove from team."
 
 Only account Owners and Administrators can remove a user from the pyOpenSci Canva organization.
-
 
 :::{todo}
 This page should link to offboarding, and off boarding for Canva should be included on that page.

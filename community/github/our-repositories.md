@@ -1,6 +1,5 @@
 # pyOpenSci GitHub repositories
 
-
 :::{todo}
 Add repositories from the pyOpenSci organization.
 :::
@@ -8,7 +7,7 @@ Add repositories from the pyOpenSci organization.
 pyOpenSci manages multiple GitHub repositories to support various community
 activities. Below is a description of each repository.
 
-### [Software-review repository](https://www.pyopensci.org/software-peer-review/)
+## [Software-review repository](https://www.pyopensci.org/software-peer-review/)
 
 The software-review repository is where community package submissions are
 peer-reviewed. All submissions are made through GitHub Issues. [Learn more
