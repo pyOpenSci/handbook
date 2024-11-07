@@ -144,9 +144,6 @@ sitemap_url_scheme = "{link}"
 
 # -- Options for HTML output -------------------------------------------------
 
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
-#
 html_theme = "pyos_sphinx_theme"
 html_title = "pyOpenSci Handbook"
 html_js_files = ["matomo.js"]
@@ -161,5 +158,5 @@ html_static_path = ["_static"]
 ogp_site_url = "https://www.pyopensci.org/governance/"
 ogp_social_cards = {
     "line_color": "#6D597A",
-    "image": "_static/pyopensci-logo-package-guide.png",
+    "image": "_static/logo-dark-mode.png",
 }
