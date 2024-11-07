@@ -81,7 +81,7 @@ lead to simpler reviews and faster merging!
    branch (if possible) to avoid/clean up merge conflicts and keep your PR
    up to date.
 
-:::{info}
+:::{note}
 
 * [Tips for Better Pull Requests](https://opensource.com/article/18/6/anatomy-perfect-pull-request)
 * pyOpenSci has also enabled an "update branch" feature in the pull request,

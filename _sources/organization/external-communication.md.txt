@@ -9,7 +9,7 @@ pyOpenSci uses a multitude of communication platforms to maintain and grow our c
 
 This section provides an overview of each category's purpose and use. It also provides relevant links and insights into each platform's purpose, strategy, and associated processes.
 
-### Email
+## Email
 
 Emails from pyOpenSci are sent to communicate with potential volunteers, share the monthly version of the newsletter, and keep registered event participants up-to-date on logistics. pyOpenSci also contacts event attendees with pre and post-event surveys and follow-up reminders, as needed. We use SurveyMonkey to develop and send surveys to our event participants.
 
@@ -17,18 +17,17 @@ Emails from pyOpenSci are sent to communicate with potential volunteers, share t
 pyOpenSci does not send unsolicited bulk emails; all emails contain an unsubscribe link following GDPR guidelines.
 :::
 
-### SurveyMonkey
+## SurveyMonkey
 
 pyOpenSci uses [SurveyMonkey](https://www.surveymonkey.com/) to develop and send pre and post-surveys to pyOpenSci event attendees. Events include workshops, talks, and sprints, which may be in-person or online. SurveyMonkey is used due to its ease of use, integration with other platforms, and ability to send out survey reminder emails.
 
-### EventBrite
+## EventBrite
 
 pyOpenSci uses [EventBrite](https://eventbrite.com), which is provided by our fiscal sponsor, Community Initiatives, to manage event registration. Anyone who has registered for a pyOpenSci event through EventBrite will be contacted through the EventBrite service regarding event updates and logistics. pyOpenSci may also upload EventBrite contacts to SurveyMonkey to send out pre- and post-event surveys.
 
-
 :::{todo}
 
-### HubSpot
+## HubSpot
 
 [HubSpot](https://hubspot.com/) is pyOpenSci's customer relationship management (CRM) platform. pyOpenSci also uses HubSpot as a catch-all bulk emailing service, for instance, to communicate with individuals who have signed up to volunteer as a [reviewer](https://forms.gle/Mps4UsRHTyF66cdg7) and/or [editor](https://forms.gle/aFAMBjrdU7f7zMP89) as part of our [open software peer review process](https://www.pyopensci.org/about-peer-review/index.html).
 
@@ -73,7 +72,6 @@ The pyOpenSci blog post submission process defined below should be used by every
 1. Fork the pyOpenSci website GitHub repository: [https://github.com/pyOpenSci/pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io).
 2. Work on your blog post locally.
     * Be sure to include alt text for all images submitted as a part of your blog post
-
 
 ````markdown
 ```{figure} filepath/to/your/image.png
@@ -195,6 +193,7 @@ pyOpenSci is currently in the process of sunsetting Discourse as it has not prov
 Zenodo is a general-purpose research repository where anyone can publish outputs and receive a citable DOI (digital object identifier).
 
 pyOpenSci uses Zenodo to create citable entries for:
+
 * GitHub software repositories
 * Presentations by pyOpenSci staff and community members
 * Online educational resources, like our [Packaging guide](https://www.pyopensci.org/python-package-guide/)

@@ -6,7 +6,7 @@ we maintain.
 
 pyOpenSci develops and maintains numerous community resources including:
 
-- [Python packaging guide]()
+- [Python packaging guide](https://github.com/pyOpenSci/python-package-guide)
 - Python [software peer review guide](https://github.com/pyOpenSci/software-peer-review)
 - Our [pyopensci.org website](https://github.com/pyOpenSci/pyopensci.github.io)
 - Our [software review repo](https://github.com/pyOpenSci/software-submission): contains templates templates for software submission and a small ci build
