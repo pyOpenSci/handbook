@@ -147,11 +147,9 @@ sitemap_url_scheme = "{link}"
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "pydata_sphinx_theme"
-html_title = "pyOpenSci Governance"
-html_logo = "_static/logo.png"
+html_theme = "pyos_sphinx_theme"
+html_title = "pyOpenSci Handbook"
 html_js_files = ["matomo.js"]
-html_css_files = ["pyos.css"]
 
 
 # Add any paths that contain custom static files (such as style sheets) here,
