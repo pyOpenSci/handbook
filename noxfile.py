@@ -1,4 +1,3 @@
-import os
 import pathlib
 
 import nox
@@ -47,15 +46,15 @@ def docs(session):
 def docs_live(session):
     session.install("-e", ".")
 
-    AUTOBUILD_IGNORE = [
-        "_build",
-        "build_assets",
-        "tmp",
+    cmd = [
+        SPHINX_AUTO_BUILD,
+        *BUILD_PARAMETERS,
+        SOURCE_DIR,
+        OUTPUT_DIR,
+        *session.posargs,
     ]
-    cmd = ["sphinx-autobuild"]
     for folder in AUTOBUILD_IGNORE:
         cmd.extend(["--ignore", f"*/{folder}/*"])
-    cmd.extend(build_command + session.posargs)
     session.run(*cmd)
 
 
@@ -75,6 +74,3 @@ def docs_test(session):
         OUTPUT_DIR,
         *session.posargs,
     )
-    # When building the guide with additional parameters, also build the translations in RELEASE_LANGUAGES
-    # with those same parameters.
-    session.notify("build-translations", ["release-build", *TEST_PARAMETERS])
