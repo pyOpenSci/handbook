@@ -13,6 +13,9 @@ The software-review repository is where community package submissions are
 peer-reviewed. All submissions are made through GitHub Issues. [Learn more
 about our peer review process here.](https://www.pyopensci.org/software-peer-review/)
 
+Teams with access to this repository:
+* [the pyOpenSci Editorial Board](https://github.com/orgs/pyOpenSci/teams/editorial-board)
+
 :::{important}
 Important: If a pyOpenSci core member identifies an issue with the review
 submission template, consult both the editorial team and core team before
@@ -29,6 +32,10 @@ peer review triage team as they manage our open peer review process. It also
 details our peer review policies, partnerships, and the templates used in the
 review process.
 
+Individuals and teams with access to this repository include:
+* [the pyOpenSci Editorial Board](https://github.com/orgs/pyOpenSci/teams/editorial-board)
+* [the pyOpenSci Repository Maintainers team](https://github.com/orgs/pyOpenSci/teams/pyos-repo-maintainers).
+
 ## Python-package-guide repository
 
 The [python-package-guide
@@ -36,11 +43,18 @@ repository](https://www.pyopensci.org/python-package-guide/) contains our
 community-developed guidelines and tutorials on Python packaging. These
 resources are beginner-friendly and reflect Python packaging best practices.
 
+Teams with access to this repository:
+* [the pyOpenSci Packaging Council](https://github.com/orgs/pyOpenSci/teams/packaging-council)
+* [the pyOpenSci Repository Maintainers team](https://github.com/orgs/pyOpenSci/teams/pyos-repo-maintainers)
+
 ## [pyosMeta repository](https://github.com/pyOpenSci/pyosMeta)
 
 The pyosMeta repository contains a Python package published on PyPI that we use
 to track our package review and contributor data. This data is used in a GitHub
 action to update our website.
+
+Teams with access to this repository:
+* [the pyOpenSci Repository Maintainers team](https://github.com/orgs/pyOpenSci/teams/pyos-repo-maintainers)
 
 :::{todo}
 Add more information about the contributor data workflow ...
@@ -56,6 +70,10 @@ packages page, contributor page, and peer review team page are all updated
 automatically using a GitHub action workflow that is supported by the pyosMeta
 Python package discussed above. The workflow runs every other week but can be
 triggered manually as a **workflow dispatch**.
+
+Teams with access to this repository:
+* [the pyOpenSci Editorial Board](https://github.com/orgs/pyOpenSci/teams/editorial-board)
+* [the pyOpenSci Repository Maintainers team](https://github.com/orgs/pyOpenSci/teams/pyos-repo-maintainers)
 
 ### Critical CI workflows in this repository
 
@@ -109,6 +127,9 @@ of our repositories that use the theme.
 Creating a theme was inspired by the
 [2i2c Sphinx theme](https://sphinx-2i2c-theme.readthedocs.io/en/latest/).
 
+Teams with access to this repository:
+* [the pyOpenSci Repository Maintainers team](https://github.com/orgs/pyOpenSci/teams/pyos-repo-maintainers)
+
 ## [Handbook repository](https://github.com/pyOpenSci/handbook)
 
 **Platform:** Sphinx book running the `pydata_sphinx_theme`
@@ -116,9 +137,26 @@ Creating a theme was inspired by the
 This is where we store our organization governance, code of conduct, and
 processes around how we operate as an organization.
 
+The [pyOpenSci Executive Council](https://www.pyopensci.org/our-community/index.html#executive-council-leadership--staff) has access to this repo.
+
 ## [pyosPackage repository](https://github.com/pyOpenSci/pyosPackage)
 
 The pyosPackage repo contains an example pure-Python package that complements
 our package guide & tutorials. We will build this package example out over time
 for folks that just want to see a working package without creating one
 themselves.
+
+Teams with access to this repository:
+* [the pyOpenSci Packaging Council](https://github.com/orgs/pyOpenSci/teams/packaging-council).
+
+## [peer-review-metrics repository](https://github.com/pyOpenSci/peer-review-metrics)
+
+The pyOpenSci peer review metrics repository contains the code for a dashboard created using [MyST Markdown](https://mystmd.org/). Myst-md is a community developed tool that makes it easier for scientists to create fully reproducible (and interactive) workflows and reports that are easily shared.
+
+Only pyOpenSci GitHub organization admins have direct access to modify this repository.
+
+## [lessons repository](https://github.com/pyOpenSci/lessons)
+
+pyOpenSci is devoted to building diverse, supportive community around the Python open source tools that drive open science. The lessons repository contains the source files for all of the [pyOpenSci tutorials](https://github.com/pyOpenSci/lessons).
+
+The [pyOpenSci Lesson Development Team](https://github.com/orgs/pyOpenSci/teams/lesson-development) has access to this repo.
