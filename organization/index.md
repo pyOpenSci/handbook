@@ -1,7 +1,7 @@
-# Organization
+# pyOpenSci Organization Processes & Structure
 
 :::{toctree}
-:hidden:
+:maxdepth: 2
 :caption: Platforms
 
 Canva <canva>
@@ -10,11 +10,10 @@ Bitwarden <bitwarden>
 :::
 
 :::{toctree}
-:hidden:
 :caption: Internal Documentation
+:maxdepth: 2
 
-
-Google Drive <internal-documentation>
+Internal Platforms <internal-documentation>
 External Communication <external-communication>
 
 :::

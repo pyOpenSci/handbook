@@ -1,36 +1,20 @@
 # <img src="https://www.pyopensci.org/handbook/_static/logo-dark-mode.png" width=150 /> pyOpenSci Handbook
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/governance?color=purple&display_name=tag&style=plastic)
-
-[![DOI](https://zenodo.org/badge/161679308.svg)](https://zenodo.org/badge/latestdoi/161679308)
-
-[![CircleCI](https://circleci.com/gh/pyOpenSci/contributing-guide.svg?style=svg)](https://circleci.com/gh/pyOpenSci/contributing-guide)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)  ![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/governance?color=purple&display_name=tag&style=plastic)  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7120880.svg)](https://doi.org/10.5281/zenodo.7120880)
+[![CircleCI](https://circleci.com/gh/pyOpenSci/handbook.svg?style=svg)](https://circleci.com/gh/pyOpenSci/handbook)
 
 ## What is pyOpenSci?
 
-pyOpenSci is devoted to building diverse, supportive community around
-the Python open source tools that drive open science. We do this through:
+pyOpenSci is a vibrant and diverse open science and open source community of practice. We are file down open science and open source pain points associated with sharing and writing better, more maintainable code and software.
 
-* open peer review
-* mentorship and
-* training.
+Our community runs several programs:
+
+* [Open peer review of scientific Python software](https://www.pyopensci.org/about-peer-review/index.html)
+* [Development of open online education resources for anyone to use.](https://www.pyopensci.org/learn.html)
+* [online and in-person training events](https://www.pyopensci.org/events/index.html).
 
 pyOpenSci is an independent organization, fiscally sponsored by Community
 Initiatives.
-
-We draw inspiration from [rOpenSci](https://ropensci.org/), a
-community to help promote, teach, and grow best-practices in software development
-for the Scientific `R` stack.
-
-:construction: Construction note :construction:
-
-This repository is currently under heavy construction. So please note that if
-you are working through the content!
-
-## Contributing statement
 
 
 ## How to setup
@@ -39,23 +23,24 @@ This repository contains the source files for the [pyOpenSci governance handbook
 
 ## Build the governance document locally
 
-Our governance documentation is built with [Sphinx](https://sphinx-doc.org) which is a documentation tool.
+Our governance documentation is built with [Sphinx](https://sphinx-doc.org), a documentation tool.
 
-The easiest way to build our documentationis to use [the `nox` automation tool](https://nox.thea.codes/), a tool for quickly building environments and running commands within them.
+The easiest way to build our documentation is to use [`nox`](https://nox.thea.codes/), a tool for quickly building environments and running commands within them.
 Using `nox` ensures that your environment has all the dependencies needed to build the documentation.
 
 To build, follow these steps:
 
 1. Install `nox`
 
-   ```console
-   $ pip install nox
-   ```
+```console
+$ pip install nox
+```
+
 2. Build the documentation:
 
-   ```console
-   $ nox -s docs
-   ```
+```console
+$ nox -s docs
+```
 
 This should create a local environment in a `.nox` folder, build the documentation (as specified in the `noxfile.py` configuration), and the output will be in `_build/html`.
 
@@ -64,11 +49,11 @@ To build live documentation that updates when you update local files, run the fo
 ```console
 $ nox -s docs-live
 ```
-The governance page should automatically open in a new browser window. If it does not, check your terminal for the text "Serving on http://XXX.X.X.X:XXXX". The HTTP address is a link that you can click (or copy and paste into your browser) in order to open the governance page for live editing.
+The governance page should automatically open in a new browser window. If it does not, check your terminal for the text "Serving on http://XXX.X.X.X:XXXX". The HTTP address is a link that you can click (or copy and paste into your browser) to open the handbook page for live editing.
 
 ## Contributing to this guide
 
-We welcome and issues and pull-requests to improve the content of this guide.
+We welcome issues and pull requests to improve the content of this guide.
 If you'd like to see an improvement, please [open an issue](https://github.com/pyOpenSci/governance/issues/new/choose).
 
 ## Contributors ✨
@@ -94,4 +79,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
