@@ -1,10 +1,11 @@
 # The pyOpenSci brand
 
 The pyOpenSci brand is playful and curious. It integrates a calm, gender-neutral color palette with illustrations and abstract primary shapes that are soft, round, and flowing.
+All of the elements that support our brand can be found in our Canva organization.
 
 ## Logos, colors, and fonts
 
-pyOpenSci stores its logos, brand colors, and font information in [Canva](https://www.pyopensci.org/handbook/organization/canva.html). However, we also store some of our logos and brand assets in a [publicly-shared Drive folder](https://drive.google.com/drive/folders/1m4cG3JLonP0mQ8y3pBaULMulpja-As0l?usp=drive_link) for community members to use as needed.
+pyOpenSci stores its logos, brand colors, and font information in [Canva](pyos-canva). However, we also store some of our logos and brand assets in a [publicly-shared Drive folder](https://drive.google.com/drive/folders/1m4cG3JLonP0mQ8y3pBaULMulpja-As0l?usp=drive_link) for community members to use as needed.
 
 ### pyOpenSci logos
 
