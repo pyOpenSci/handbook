@@ -1,4 +1,5 @@
-# pyOpenSci uses Canva as a shared graphic platform
+(pyos-canva)=
+# pyOpenSci uses Canva
 
 pyOpenSci has a nonprofit Pro license for [Canva](https://www.canva.com/), and uses the platform for:
 
