@@ -34,6 +34,13 @@ GitHub permissions <github/permissions>
 
 :::{toctree}
 :maxdepth: 2
+:caption: Translation workflows
+
+Events <translation>
+:::
+
+:::{toctree}
+:maxdepth: 2
 :caption: pyOpenSci Events
 
 Events <events/intro>
