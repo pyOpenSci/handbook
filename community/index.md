@@ -17,6 +17,7 @@ scientific Python community.
 
 Social Media <social>
 Slack <slack>
+Zenodo & Citation <zenodo>
 :::
 
 :::{toctree}

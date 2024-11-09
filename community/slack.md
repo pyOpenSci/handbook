@@ -1,3 +1,4 @@
+(pyos-slack)=
 # Slack - Day to Day communication
 
 We use Slack to communicate both as paid staff and within our community organization. Slack is a valuable tool for both asynchronous, synchronous, and remote communication.
