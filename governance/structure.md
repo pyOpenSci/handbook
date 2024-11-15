@@ -1,4 +1,4 @@
-# Structure and leadership
+# Organization Structure and Leadership
 
 This page describes the organizational structure of pyOpenSci as they
 related to governance and operations.
@@ -16,6 +16,7 @@ The Executive Director (discussed below) is a voting member of the executive cou
 
 [Click here to view current executive council members](https://www.pyopensci.org/our-community/#executive-council--leadership)
 
+(advisory-council)=
 ### pyOpenSci advisory council
 
 [Click here to view current advisory council members.](https://www.pyopensci.org/our-community/#pyopensci-advisory-council)
@@ -36,6 +37,7 @@ on high level goals of pyOpenSci programs.
 
 ## Staff roles within the organization
 
+(executive-director)=
 ### Executive Director
 
 The Executive Director creates and oversees the execution of the mission and

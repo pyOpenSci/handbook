@@ -24,6 +24,7 @@ GitHub is public-facing to our entire community.
 
 To learn more about GitHub processes at pyOpenSci, please refer to the [GitHub processes](github-intro) handbook page.
 
+(google-drive)=
 ### Google Drive
 
 [Google Drive](https://drive.google.com/), part of the pyOpenSci Google Workspace, is used to store all internal pyOpenSci documents, spreadsheets, slides, photos, and graphics essential for our operations. Each pyOpenSci staff member has a personal, work-related Google Drive account for individual documents, while shared resources are stored in designated folders on the organizational shared drive.
