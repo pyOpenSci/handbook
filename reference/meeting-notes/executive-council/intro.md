@@ -1,3 +1,4 @@
+(ec-minutes)=
 # pyOpenSci Executive Council Minutes
 
 :::{toctree}

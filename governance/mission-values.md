@@ -1,4 +1,4 @@
-# Mission and values
+# Mission, Vision and Values
 
 The mission of pyOpenSci is to support diverse community around the free, open
 python tools that drive open, reproducible scientific workflows.
