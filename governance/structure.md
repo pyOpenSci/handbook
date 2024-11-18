@@ -4,13 +4,13 @@ This page describes the organizational structure of pyOpenSci as they
 related to governance and operations.
 
 There are two levels of leadership described below.
-The first is organizational level. The second is program level.
+The first is the organizational level. The second is program level.
 
 ## Governing Committees
 
 ### Executive Council
 
-The Executive Council defines and steers the high-level
+The [Executive Council](executive-council) defines and steers the high-level
 mission, vision and values of pyOpenSci. It also sets the strategic direction and vision for the organization.
 The Executive Director (discussed below) is a voting member of the executive council.
 
@@ -21,9 +21,9 @@ The Executive Director (discussed below) is a voting member of the executive cou
 
 [Click here to view current advisory council members.](https://www.pyopensci.org/our-community/#pyopensci-advisory-council)
 
-The advisory council is comprised of leaders in the Python scientific
+The Advisory Council is comprised of leaders in the Python scientific
 open source ecosystem. This council advises the executive director
-in both organization level and day to day decision making around
+in both organization level and day-to-day decision-making around
 
 - Python packaging guidelines
 - Peer review processes and guidelines
@@ -32,8 +32,8 @@ in both organization level and day to day decision making around
 
 Most of the communication supporting advisory council activities
 happens in the pyOpenSci slack. The executive director will also
-organize several executive council meetings a year that will focus
-on high level goals of pyOpenSci programs.
+organize monthly [Executive Council](executive-council) meetings that  focus
+on the high-level goals of pyOpenSci programs.
 
 ## Staff roles within the organization
 
@@ -44,40 +44,39 @@ The Executive Director creates and oversees the execution of the mission and
 strategy of pyOpenSci supported by the Advisory Committee. The Executive Director
 also:
 
-- is the the primary interface to the organization's fiscal sponsor;
-- coordinates day to day activities
-- develops programs that drive the organizations mission
+- is the primary interface to the organization's fiscal sponsor;
+- coordinates day-to-day activities
+- develops programs that drive the organization's mission
 - oversees staff and volunteers
-- makes tie-breaking decisions if they are at an impasse in decision-making.
+- makes tie-breaking decisions if they are at an impasse.
 
-The Executive Director reports to the Advisory Committee.
+The Executive Director reports to the Executive Council.
 
-In the early stages of the organization's development the Executive Director
+In the early stages of the organization's development, the Executive Director
 will take on other responsibilities including:
 
-- Managing the community in Slack and twitter
+- Managing the community in Slack and on social media
 - Serving as the defacto Software Peer Review Lead (below) until that position is funded.
 
-### Community manager
+:::{todo}
+### Community Manager
 
 The Community Manager is a future position to be created within the pyOpenSci
 organization. This position will:
 
 - Oversee social media communications
 - Create strategic communication plans
-- Write and oversee writing of blogs
+- Write and oversee blog writing
 - Manage website content
-- Support communications within our online communication platforms (e.g. Slack, discourse, etc)
+- Support communications within our online communication platforms (e.g. Slack, Discourse, Discord etc.)
 
 The Community Manager is a paid position in the pyOpenSci organization.
+:::
 
-## Open Peer Review Program: Program level leadership structure
+## Open peer review program: Program-level leadership structure
 
-The peer review process is driven by several roles and groups:
+Several roles and groups drive the peer review process:
 
-% <TODO: right now the leadership of peer review is kind of clear in my head
-% but not clear in the documentation for peer review. Fix this. Add a
-% Peer review structure document or section somewhere... >
 
 ### Software review lead
 
