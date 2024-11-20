@@ -1,37 +1,36 @@
 # Contributing Guide for pyOpenSci
 
-This guide is a high level contributing guide that provide guidelines for
-contributing to resources across our organization. You will find specific contributing guidelines in each of the repositories that
+This guide provides high-level contributing guidelines for resources across our organization. You will find specific contributing guidelines in each repository that
 we maintain.
 
-pyOpenSci develops and maintains numerous community resources including:
+pyOpenSci develops and maintains numerous community resources, including:
 
 - [Python packaging guide](https://github.com/pyOpenSci/python-package-guide)
 - Python [software peer review guide](https://github.com/pyOpenSci/software-peer-review)
 - Our [pyopensci.org website](https://github.com/pyOpenSci/pyopensci.github.io)
-- Our [software review repo](https://github.com/pyOpenSci/software-submission): contains templates templates for software submission and a small ci build
+- Our [software review repo](https://github.com/pyOpenSci/software-submission): contains templates templates for software submission and a small CI (Continuous Integration) build
 
 This document applies to any of our online content that you
 contribute to. Most of our content lives in the [pyOpenSci
 GitHub organization](https://github.com/pyopensci).
 
-## High level guidelines
+## High-level guidelines
 
 1. Anyone contributing to pyOpenSci must follow our [organization-wide code of conduct](https://www.pyopensci.org/governance/CODE_OF_CONDUCT.html).
-2. Please open an issue before submitting a pull request with new or revised content. Issues will allow us to discussed the changes with you before they are submitted. Submitting an issue first will expedite the speed at which your pull request is merged.
+2. Please open an issue before submitting a pull request with new or revised content. Issues will allow us to discuss the changes with you before submitting them. Submitting an issue first will expedite the speed at which your pull request is merged.
 
 - In some instances, if your pull request is a simple fix of a link or typo, we may accept it without an issue being opened.
 
-3. If you submit a pull request please be sure to use a branch in your fork. Do not use the `main` branch from your fork to submit a pull request.
-4. Please try to spell check and editor pull requests before opening them in our repository. This will save us time when reviewing your suggested change(s)!
+3. If you submit a pull request, please be sure to use a branch in your fork. Do not use your fork's `main` branch to submit a pull request.
+4. Please try to spell check and editor pull requests before opening them in our repository. This will save us time when reviewing your suggested change(s).
 
 ## Contributor attributions
 
 We welcome and value contributions of all kinds. Some ways that
-you can contribute to pyOpenSci include:
+you can contribute to pyOpenSci, include:
 
-- Identifying typos / issues in our online documentation
-- Fixing bad urls and references in our issue and peer review templates
+- Identifying typos/issues in our online documentation
+- Fixing bad URLs and references in our issue and peer-review templates
 - Opening issues about content in our peer review and packaging guides
 - Reviewing pull requests that update content on our website
 - Contributing to the peer review process
@@ -108,12 +107,12 @@ To build live documentation that updates when you update local files, run::
     nox -s docs-live
     ```
 
-The `docs-live` command will provide ou with a url that you can enter into your
-browser to see the docs update as you make updates to files.
+The `docs-live` command will provide you with a URL that you can enter into your
+browser to see the docs update as you update files.
 
 ### CircleCI Previews
 
-Each book is setup with a GitHub action redirect that will take you to a online
+Each book is set up with a GitHub action redirect that will take you to an online
 build of the current pull request in CircleCI. To view the build:
 
 - Click on the GitHub action called `ci/circleci: build_book` after it has run at the bottom of your pull request. This will
@@ -128,7 +127,3 @@ browser.
 ### Website build
 
 Our website is a `jekyll`/`markdown` driven site. Thus, you will need to install `ruby`, and the gems needed to build the website following the contributing guide in our pyopensci.github.io repository.
-
-```
-
-```
