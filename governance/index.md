@@ -1,6 +1,7 @@
 # Governance, Structure & Values
 
 ## About
+
 pyOpenSci is a fiscally sponsored nonprofit organization whose mission is to build diverse,
 supportive community around the free and open Python tools that drive open
 science.
@@ -11,7 +12,6 @@ pyOpenSci supports open science through
 * **Mentorship:** We will build out a community program where diverse community members are mentored in skills needed to contribute to open source software, which in turn will propel their open science skills forward.
 * **Training:** pyOpenSci will provide training in skills needed to contribute to open source software.
 
-
 ```{toctree}
 :hidden:
 :caption: Organization Structure
@@ -19,10 +19,8 @@ pyOpenSci supports open science through
 Home <self>
 mission-values
 structure
-content-development-process
 Code of Conduct <../CODE_OF_CONDUCT.md>
 ```
-
 
 ```{toctree}
 :hidden:
