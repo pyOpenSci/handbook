@@ -13,7 +13,7 @@ scientific Python community.
 
 :::{toctree}
 :maxdepth: 2
-:caption: Social Media
+:caption: Community Platforms & Channels
 
 Social Media <social>
 Slack <slack>
@@ -34,8 +34,9 @@ GitHub permissions <github/permissions>
 
 :::{toctree}
 :maxdepth: 2
-:caption: pyOpenSci Events
+:caption: Events & Content Development
 
 Events <events/intro>
 pyOpenSci Sprints <events/sprints>
+Content Development <content-development-process>
 :::
