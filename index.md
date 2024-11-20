@@ -1,9 +1,14 @@
 # pyOpenSci Handbook & Governance
 
 This guide is designed to define the structure and processes
-that support operations of pyOpenSci.
+that support pyOpenSci operations.
 
+<<<<<<< Updated upstream
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/governance?color=purple&display_name=tag&style=plastic) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7120880.svg)](https://doi.org/10.5281/zenodo.7120880) [![All Contributors](https://img.shields.io/badge/all_contributors-4-blue.svg?style=flat-square)](https://github.com/pyopensci/handbook/?tab=readme-ov-file#contributors-)
+=======
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/governance?color=purple&display_name=tag&style=plastic)](https://github.com/pyOpenSci/handbook/releases) [![DOI](https://zenodo.org/badge/161679308.svg)](https://zenodo.org/badge/latestdoi/161679308) [![All Contributors](https://img.shields.io/badge/all_contributors-3-blue.svg?style=flat-square)](https://github.com/pyOpenSci/handbook?tab=readme-ov-file#contributors-)
+
+>>>>>>> Stashed changes
 
 :::::{grid} 1 1 3 3
 :class-container: text-center

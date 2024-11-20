@@ -7,4 +7,8 @@ tmp/
 __pycache__
 
 /.luarc.json
+<<<<<<< Updated upstream
  .ipynb_checkpoints/
+=======
+**/.ipynb_checkpoints
+>>>>>>> Stashed changes
