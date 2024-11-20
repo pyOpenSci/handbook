@@ -109,7 +109,7 @@ The editors oversee 3-4 packages a year.
 
 The Editor in Chief role is a rotating position
 that is held by someone on the editorial board. [More on this position can be
-found in the contributing guide here.](https://www.pyopensci.org/software-peer-review/how-to/editor-in-chief-guide.html).
+found in the pyOpenSci software peer review guide here.](https://www.pyopensci.org/software-peer-review/how-to/editor-in-chief-guide.html)
 
 ### Volunteer reviewers
 
