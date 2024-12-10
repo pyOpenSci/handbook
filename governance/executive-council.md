@@ -1,4 +1,4 @@
-(executive-council)=
+(pyos-executive-council)=
 # pyOpenSci Executive Council
 
 The pyOpenSci Executive Council (EC) has four primary functions:
