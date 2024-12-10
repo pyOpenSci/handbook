@@ -11,7 +11,7 @@ The first is the organizational level. The second is program level.
 
 ### Executive Council
 
-The [Executive Council](executive-council) defines and steers the high-level
+The [Executive Council](pyos-executive-council) defines and steers the high-level
 mission, vision and values of pyOpenSci. It also sets the strategic direction and vision for the organization.
 The Executive Director (discussed below) is a voting member of the executive council.
 
@@ -33,7 +33,7 @@ in both organization level and day-to-day decision-making around
 
 Most of the communication supporting advisory council activities
 happens in the pyOpenSci slack. The executive director will also
-organize monthly [Executive Council](executive-council) meetings that  focus
+organize monthly [Executive Council](pyos-executive-council) meetings that  focus
 on the high-level goals of pyOpenSci programs.
 
 ## Staff roles within the organization
