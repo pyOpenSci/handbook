@@ -1,3 +1,4 @@
+(external-comms)=
 # External Communication
 
 pyOpenSci uses a multitude of communication platforms to maintain and grow our community. Our external communications fall under the broad categories of:

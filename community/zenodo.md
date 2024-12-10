@@ -1,3 +1,4 @@
+(pyos-zenodo)=
 # Zenodo
 
 :::{admonition} How to cite pyOpenSci

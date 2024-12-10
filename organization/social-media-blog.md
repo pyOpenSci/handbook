@@ -1,3 +1,4 @@
+(social-platforms)=
 # External Communication & Social Media
 
 pyOpenSci uses several popular social channels and platforms to connect with the
