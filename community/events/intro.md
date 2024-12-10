@@ -1,3 +1,4 @@
+(pyos-events)=
 # Meetings & Events
 
 ## pyOpenSci meetings
