@@ -1,3 +1,4 @@
+(pyos-structure)=
 # Organization Structure and Leadership
 
 This page describes the organizational structure of pyOpenSci as they

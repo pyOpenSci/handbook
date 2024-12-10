@@ -1,3 +1,4 @@
+(how-we-work)=
 # How we work
 
 pyOpenSci uses various platforms to work collaboratively internally and with the broader community, including:

@@ -1,3 +1,4 @@
+(pyos-brand)=
 # The pyOpenSci brand
 
 The pyOpenSci brand is playful and curious. It integrates a calm, gender-neutral color palette with illustrations and abstract primary shapes that are soft, round, and flowing.

@@ -1,3 +1,4 @@
+(mission-vision)=
 # Mission, Vision and Values
 
 The mission of pyOpenSci is to support diverse community around the free, open
