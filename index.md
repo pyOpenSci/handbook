@@ -24,7 +24,6 @@ Learn more about pyOpenSci's:
 
 ::::{grid-item}
 :::{card} <i class="fa-solid fa-screwdriver-wrench"></i> Our Organization <i class="fa-solid fa-screwdriver-wrench"></i>
-:link: organization/index
 
 Learn about [how we work](how-we-work) at pyOpenSci.
 
@@ -37,8 +36,6 @@ Learn about [how we work](how-we-work) at pyOpenSci.
 ::::{grid-item}
 :::{card} <i class="fa-solid fa-hand-sparkles"></i> Our Community <i class="fa-solid fa-hand-sparkles"></i>
 :class-card: left-aligned
-:link: community/index
-:link-type: doc
 
 Learn more about the vibrant pyOpenSci community of practice.
 
@@ -61,7 +58,6 @@ Learn more about the vibrant pyOpenSci community of practice.
 ::::{grid-item}
 :::{card}  Meeting Archives <i class="fa-solid fa-pencil"></i>
 :class-card: left-aligned
-:link: reference/index.html
 
 These are notes taken during 2018-2021 - the early meetings when
 we were developing and founding pyOpenSci.
