@@ -7,4 +7,4 @@ tmp/
 __pycache__
 
 /.luarc.json
- .ipynb_checkpoints/
+**/.ipynb_checkpoints

@@ -1,8 +1,12 @@
+import os
 import pathlib
 
 import nox
 
-nox.options.reuse_existing_virtualenvs = True
+# Sphinx output and source directories
+BUILD_DIR = "_build"
+OUTPUT_DIR = pathlib.Path(BUILD_DIR, "html")
+SOURCE_DIR = pathlib.Path(".")
 
 # Sphinx output and source directories
 BUILD_DIR = "_build"
@@ -42,9 +46,32 @@ def docs(session):
     )
 
 
+@nox.session(name="docs-test")
+def docs_test(session):
+    """
+    Build the packaging guide with more restricted parameters.
+
+    Note: this is the session used in CI/CD to release the guide.
+    """
+    session.install("-e", ".")
+    session.run(
+        SPHINX_BUILD,
+        *BUILD_PARAMETERS,
+        *TEST_PARAMETERS,
+        SOURCE_DIR,
+        OUTPUT_DIR,
+        *session.posargs,
+    )
+    # When building the guide with additional parameters, also build the translations in RELEASE_LANGUAGES
+    # with those same parameters.
+    session.notify("build-translations", ["release-build", *TEST_PARAMETERS])
+
+
 @nox.session(name="docs-live")
 def docs_live(session):
-    session.install("-e", ".")
+    session.install("-e", ".[dev]")
+    if not os.path.exists(OUTPUT_DIR):
+        os.makedirs(OUTPUT_DIR)
 
     cmd = [
         SPHINX_AUTO_BUILD,
@@ -55,6 +82,7 @@ def docs_live(session):
     ]
     for folder in AUTOBUILD_IGNORE:
         cmd.extend(["--ignore", f"*/{folder}/*"])
+
     session.run(*cmd)
 
 
