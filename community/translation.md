@@ -15,7 +15,7 @@ This document outlines the process for managing translation of pyOpenSci content
 These are the checks a reviewer should incorporate into their review.
 * Verify that the translation can be built in the PR branch without warnings
     * Example for Spanish translation: `nox -s docs-live-lang -- es`
-    * The command can be used for any language by swapping out the language tag at the end. A list of Sphinx language tags can be [found here](https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language).
+    * The command can be used for any language by swapping out the language tag at the end. The current list of languages that are being actively worked on can be found in the [Packaging Guide noxfile.py](https://github.com/pyOpenSci/python-package-guide/blob/d0c05fac6c28097e60b7206e1ba5314ab869804c/noxfile.py#L45) file. A complete list of Sphinx language tags can be [found here](https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language).
 * Go through the file and ensure that the translation makes sense, using the following checks:
     * There are no typos
     * Technical terms can be easily understood
@@ -42,4 +42,5 @@ Current translation teams can expand their teams and add additional members by u
 
 ## Additional automations for consideration
 
-Use CI to automatically tag the PR with the translation and the proper language tags.
+- Use CI to automatically tag the PR with the translation and the proper language tags.
+- Use CI to automatically keep the translation files updated once a translation has been released (work in progress [PR #397](https://github.com/pyOpenSci/python-package-guide/pull/397))
