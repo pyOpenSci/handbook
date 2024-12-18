@@ -56,8 +56,9 @@ Learn more about the vibrant pyOpenSci community of practice.
 
 
 ::::{grid-item}
-:::{card}  Meeting Archives <i class="fa-solid fa-pencil"></i>
+:::{card} Meeting Archives <i class="fa-solid fa-pencil"></i>
 :class-card: left-aligned
+:link: reference/index.html
 
 These are notes taken during 2018-2021 - the early meetings when
 we were developing and founding pyOpenSci.
