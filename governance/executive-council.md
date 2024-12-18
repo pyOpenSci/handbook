@@ -36,20 +36,25 @@ Each Executive Council (EC) member dedicates no more than **four to six hours pe
   - Communicating with the Executive Director (ED) via Slack.
   - Providing timely reviews of materials and documents.
   - Connecting the Executive Director with potential funding opportunities.
-- Evaluate the performance of the Executive Director on a yearly basis.
+- Evaluate the performance of the Executive Director every year.
 - Approve expense reports.
 - Take meeting minutes and ensure they are [published in this Handbook](ec-minutes).
 
-The Executive Council is currently led by the Executive Council Chair, who approves the Executive Director’s time off requests and sick leave.
+The Executive Council is led by the Executive Council Chair, who approves the Executive Director’s time off requests and sick leave.
 
 :::{note}
-While travel is not explicitly required, members may have opportunities to attend meetings on behalf of pyOpenSci. Travel may be supported by pyOpenSci if needed.
+While travel is not explicitly required, members may have opportunities to attend meetings on behalf of pyOpenSci; pyOpenSci may support this travel as necessary.
 :::
 
 
 ## How the Executive Council makes decisions
 
-The Executive Council is required to review and approve decisions affecting the fiduciary aspects of the organization; this includes mission/vision/values, governance policies, budget, Executive Director compensation, and significant new strategic initiatives. The Executive Council also supports the Executive Director by serving as a resource for input when needed.
+:::{important}
+All decisions made by the Executive Council must align with the legal
+obligations and policies of pyOpenSci’s fiscal sponsor—[Community Initiatives](https://communityin.org/).
+:::
+
+The Executive Council must review and approve decisions affecting the organization's fiduciary aspects. This includes the mission/vision/values, governance policies, budget, Executive Director compensation, and significant new strategic initiatives. The Executive Council also supports the Executive Director by serving as a resource for input when needed.
 
 All decisions made by the Executive Council must align with the legal
 obligations and policies of pyOpenSci’s fiscal sponsor—[Community Initiatives](https://communityinitiatives.org/).
@@ -59,7 +64,7 @@ responsibilities.
 
 ### Decisions requiring an Executive Council vote
 
-The Executive Council (EC) defines and directs pyOpenSci’s strategy and major
+The Executive Council (EC) defines and directs pyOpenSci’s strategy and primary
 organizational direction. The EC approves significant decisions
 that strongly impact pyOpenSci’s strategy, governance, or financial well-being.
 Generally, items with legal or fiduciary implications require a formal vote,
@@ -88,23 +93,25 @@ feedback and input upon request.
 
 ### Decision-making process
 
-The topics above require a motion and a vote for approval. Motions and approval can be made in Executive Council meetings or asynchronously via email or Slack. Motions and votes will be noted in the EC meeting minutes.
+The topics above require a motion and a vote for approval. Motions and votes can be made in Executive Council meetings or via email or Slack. Motions and votes will be noted in the Executive Council meeting minutes.
 
-:::{important}
-All decisions made by the Executive Council must align with the legal
-obligations and policies of pyOpenSci’s fiscal sponsor—[Community Initiatives](https://communityin.org/).
+:::{admonition} Executive Council Approval
+:class: important
+
+The above governance for the Executive Council was last updated, voted on, and approved on **insert-date-here**. All content below this section can be modified as needed and does not require a vote.
 :::
 
-## Collaboration between the Executive Director and the Executive Council
+## Executive Council operations
+
+### Collaboration between the Executive Director and the Executive Council
 
 The Executive Director may request feedback
-from the Executive Council on significant or public-facing decisions; these types of decisions do not require a formal vote. These discussions should
-occur in the **executive-council** Slack channel to ensure transparency and
+from the Executive Council on significant or public-facing decisions; these decisions do not require a formal vote. These discussions generally
+occur in the **executive-council** Slack channel to ensure
 collaborative input. Examples include:
 
 * Significant public-facing changes to the pyOpenSci website.
-* Decisions impacting staff or human resources (e.g., hiring or termination).
-* Operational policies for staff (unless they carry major financial implications).
+* Operational policies for staff (unless they carry significant financial implications).
 * Strategic decisions about pursuing proposals or writing grants.
 * Substantial changes to pyOpenSci programs.
 * Strategic decisions about pursuing proposals or writing grants.
@@ -113,24 +120,23 @@ collaborative input. Examples include:
 By maintaining open communication, the Executive Council and Executive Director ensure that pyOpenSci’s
 decisions align with its mission and strategic goals.
 
-### Lazy consensus for decisions that don't require a vote
+#### Lazy consensus for decisions that don't require a vote
 
 Lazy consensus is applied for decisions such as those listed above that do not require a formal vote.
 
 Lazy consensus means that decisions are approved by default unless a member of
-the Executive Council explicitly raises an objection within a predefined period.
+the Executive Council explicitly objects within a predefined period.
 This allows decisions to move forward efficiently while providing an
 opportunity for discussion.
 
 When objections are raised, further discussion occurs. This ensures decisions reflect the collective agreement of the Council
 while minimizing unnecessary delays.
 
+### How the Executive Council meets and communicates
 
-## How the Executive Council meets and communicates
+#### Monthly meetings
 
-### Monthly meetings
-
-The Executive Council holds **monthly meetings** (typically 1.5 hours) to discuss key topics, review updates, and make decisions by consensus. During these meetings, the Executive Director (ED) provides updates on the organization’s development, growth, and operations and may request feedback on specific issues. This time is also used for strategic planning and discussion
+The Executive Council holds **monthly meetings** (typically 1.5 hours) to discuss key topics, review updates, and make decisions by consensus. During these meetings, the Executive Director (ED) provides updates on the organization’s development, growth, and operations and may request feedback on specific issues. This time is also used for strategic planning and discussion.
 
 During these meetings, Council members take notes. These notes are summarized and published in the [Executive Council Minutes section of this Handbook](https://github.com/pyOpenSci/handbook/tree/main/reference/meeting-notes/executive-council).  Once the notes are merged, they are [publicly available in this Handbook](https://www.pyopensci.org/handbook/reference/meeting-notes/executive-council/intro.html).
 
@@ -140,9 +146,9 @@ During these meetings, Council members take notes. These notes are summarized an
 **Executive Director--Executive Council Chair meetings:** The Executive Director also meets regularly with the pyOpenSci Board Chair to ensure alignment on key issues and strategic direction.
 
 
-## EC communication platforms & tools
+### Communication platforms & tools
 
-### Slack: primary communication platform
+#### Slack: primary communication platform
 
 The **[Executive Council Slack channel](pyos-slack)** is the primary tool for communication between monthly meetings. All updates, discussions, and requests for input happen here; email is rarely used for EC communications.
 EC members are expected to check Slack semi-regularly to stay informed.
@@ -150,17 +156,17 @@ EC members are expected to check Slack semi-regularly to stay informed.
 - **Feedback requests:** It is understood that EC members have jobs and lives outside of their EC responsibilities. As such, when the Executive Director (ED) requests input on Slack, they will specify what feedback is needed and provide clear response timelines and areas to focus on.
 - **Transparency:** The Slack channel is also used to share updates about changes that occur outside of formal monthly meetings. Examples of such updates include new hires, event updates, and celebrating successes.
 
-### Google Drive: document sharing and collaboration
+#### Google Drive: document sharing and collaboration
 
 The pyOpenSci Executive Council uses a shared **[Google Drive](google-drive)** within the pyOpenSci Google Workspace to store and share documents. This includes meeting notes, agendas, and other important materials. Members are encouraged to access and update shared resources using the shared Drive.
 
-## Selection of Executive Council members
+### Selection of Executive Council members
 
 The Executive Council and the Executive Director are responsible for selecting and appointing new council members.
 This process ensures the Council has the skills and expertise necessary to meet
 the evolving pyOpenSci needs.
 
-### Executive Council selection process
+#### Executive Council selection process
 
 1. **Identify organization needs**:
    - The Council first evaluates its current composition to identify areas where
@@ -183,7 +189,7 @@ the evolving pyOpenSci needs.
      outlined in this document.
 
 
-### Terms and evaluation
+#### Terms and evaluation
 
 - Executive Council members are expected to serve for 2–3 years.
 - At the end of each 2-year term, members may choose to step down or renew their
@@ -192,7 +198,7 @@ the evolving pyOpenSci needs.
 As needed, the Executive Council may conduct periodic evaluations to ensure its composition continues
 to meet the organization’s needs.
 
-## Onboarding and offboarding Executive Council members
+### Onboarding and offboarding Executive Council members
 
 The onboarding and offboarding of Executive Council (EC) members ensure:
 
@@ -200,7 +206,7 @@ The onboarding and offboarding of Executive Council (EC) members ensure:
 * that new members are set up for success and
 * that departing members are appropriately transitioned out of their roles.
 
-### Onboarding a new Executive Council member
+#### Onboarding a new Executive Council member
 
 When a new member joins the Executive Council, the following steps should be
 completed to integrate them into the team:
@@ -224,9 +230,9 @@ completed to integrate them into the team:
 
 4. **Welcome and integration**:
    - Introduce the new member to the Executive Council during a meeting and to the pyOpenSci community through Slack
-     announcement. Highlight the the new member's expertise and how it complements the community and Executive Council’s needs.
+     announcement. Highlight the new member's expertise and how it complements the community and Executive Council’s needs.
 
-## Offboarding an Executive Council member
+### Offboarding an Executive Council member
 
 When a member leaves the Executive Council, the following steps should be taken
 to ensure a smooth transition:
@@ -255,7 +261,7 @@ practices.
 :::{admonition} Terms
 :class: tip
 
-* [Fiscal Sponsorship](https://en.wikipedia.org/wiki/Fiscal_sponsorship) refers to nonprofit organizations offering their legal and tax-exempt status to groups—typically projects—engaged in activities related to the sponsoring organization's mission. It involves a fee-based contractual arrangement between a project and an established non-profit.
-* [Non-Profit Organization](https://en.wikipedia.org/wiki/Nonprofit_organization): A legal entity organized and operated for a collective, public or social benefit, in contrast with an entity that operates as a business aiming to generate a profit for its owners.
+* [Fiscal Sponsorship](https://en.wikipedia.org/wiki/Fiscal_sponsorship) refers to nonprofit organizations offering their legal and tax-exempt status to groups—typically projects—engaged in activities related to the sponsoring organization's mission. It involves a fee-based contractual arrangement between a project and an established nonprofit.
+* [Nonprofit Organization](https://en.wikipedia.org/wiki/Nonprofit_organization): A legal entity organized and operated for a collective, public, or social benefit, in contrast with an entity that operates as a business aiming to generate a profit for its owners.
 * [501(c)(3) Organization](https://en.wikipedia.org/wiki/501(c)(3)_organization): a United States corporation, trust, unincorporated association, or other type of organization exempt from federal income tax under section 501(c)(3) of Title 26 of the United States Code.
 :::
