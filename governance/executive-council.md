@@ -51,7 +51,7 @@ While travel is not explicitly required, members may have opportunities to atten
 
 :::{important}
 All decisions made by the Executive Council must align with the legal
-obligations and policies of pyOpenSci’s fiscal sponsor—[Community Initiatives](https://communityin.org/).
+obligations and policies of pyOpenSci’s fiscal sponsor—[Community Initiatives](https://communityinitiatives.org/).
 :::
 
 The Executive Council must review and approve decisions affecting the organization's fiduciary aspects. This includes the mission/vision/values, governance policies, budget, Executive Director compensation, and significant new strategic initiatives. The Executive Council also supports the Executive Director by serving as a resource for input when needed.

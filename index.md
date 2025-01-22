@@ -5,7 +5,6 @@ that support pyOpenSci operations.
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/governance?color=purple&display_name=tag&style=plastic)](https://github.com/pyOpenSci/handbook/releases) [![DOI](https://zenodo.org/badge/161679308.svg)](https://zenodo.org/badge/latestdoi/161679308) [![All Contributors](https://img.shields.io/badge/all_contributors-3-blue.svg?style=flat-square)](https://github.com/pyOpenSci/handbook?tab=readme-ov-file#contributors-)
 
-
 :::::{grid} 1 1 2 2
 :class-container: text-center
 :gutter: 3
@@ -41,7 +40,8 @@ Learn more about the vibrant pyOpenSci community of practice.
 
 * [How we use GitHub](github-intro)
 * [About our events](pyos-events)
-* Community platforms that we use which include [Slack](pyos-slack) and [Zenodo](pyos-zenodo).
+* [Translation & internationalization](translation)
+* Community platforms that we use: [Slack](pyos-slack),  [Zenodo](pyos-zenodo), etc.
 
 :::
 ::::
@@ -53,7 +53,6 @@ Learn more about the vibrant pyOpenSci community of practice.
 * Our [Contributing guide](CONTRIBUTING) will help you get oriented to contributing to pyOpenSci.
 :::
 ::::
-
 
 ::::{grid-item}
 :::{card} Meeting Archives <i class="fa-solid fa-pencil"></i>

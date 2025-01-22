@@ -1,4 +1,5 @@
 (pyos-structure)=
+
 # Organization Structure and Leadership
 
 This page describes the organizational structure of pyOpenSci as they
@@ -18,6 +19,7 @@ The Executive Director (discussed below) is a voting member of the executive cou
 [Click here to view current executive council members](https://www.pyopensci.org/our-community/#executive-council--leadership)
 
 (advisory-council)=
+
 ### pyOpenSci advisory council
 
 [Click here to view current advisory council members.](https://www.pyopensci.org/our-community/#pyopensci-advisory-council)
@@ -39,6 +41,7 @@ on the high-level goals of pyOpenSci programs.
 ## Staff roles within the organization
 
 (executive-director)=
+
 ### Executive Director
 
 The Executive Director creates and oversees the execution of the mission and
@@ -60,6 +63,7 @@ will take on other responsibilities including:
 - Serving as the defacto Software Peer Review Lead (below) until that position is funded.
 
 :::{todo}
+
 ### Community Manager
 
 The Community Manager is a future position to be created within the pyOpenSci
@@ -77,7 +81,6 @@ The Community Manager is a paid position in the pyOpenSci organization.
 ## Open peer review program: Program-level leadership structure
 
 Several roles and groups drive the peer review process:
-
 
 ### Software review lead
 
@@ -121,7 +124,7 @@ The review process is supported by volunteer reviewers.
 ## Fiscal sponsorship
 
 pyOpenSci is a fiscally sponsored project of [Community
-Initiatives](https://www.communityin.org).
+Initiatives](https://communityinitiatives.org).
 
 pyOpenSci does not have its own standalone non-profit status. Instead,
 it inherits this status by being a fiscally sponsored project. This
