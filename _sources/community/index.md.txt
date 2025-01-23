@@ -34,6 +34,13 @@ GitHub permissions <github/permissions>
 
 :::{toctree}
 :maxdepth: 2
+:caption: Translation & Internationalization workflows
+
+Translation process <translation>
+:::
+
+:::{toctree}
+:maxdepth: 2
 :caption: Events & Content Development
 
 Events <events/intro>
