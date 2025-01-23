@@ -1,3 +1,5 @@
+(translation)=
+
 # pyOpenSci GitHub processes for translation teams
 
 This document outlines the process for managing translation of pyOpenSci content in our [python-package-guide](https://github.com/pyOpenSci/python-package-guide) repository. It covers:
@@ -13,16 +15,17 @@ This document outlines the process for managing translation of pyOpenSci content
 * All questions, errors, and suggestions must be addressed before the PR is merged.
 
 These are the checks a reviewer should incorporate into their review.
+
 * Verify that the translation can be built in the PR branch without warnings
-    * Example for Spanish translation: `nox -s docs-live-lang -- es`
-    * The command can be used for any language by swapping out the language tag at the end. The current list of languages that are being actively worked on can be found in the [Packaging Guide noxfile.py](https://github.com/pyOpenSci/python-package-guide/blob/d0c05fac6c28097e60b7206e1ba5314ab869804c/noxfile.py#L45) file. A complete list of Sphinx language tags can be [found here](https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language).
+  * Example for Spanish translation: `nox -s docs-live-lang -- es`
+  * The command can be used for any language by swapping out the language tag at the end. The current list of languages that are being actively worked on can be found in the [Packaging Guide noxfile.py](https://github.com/pyOpenSci/python-package-guide/blob/d0c05fac6c28097e60b7206e1ba5314ab869804c/noxfile.py#L45) file. A complete list of Sphinx language tags can be [found here](https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language).
 * Go through the file and ensure that the translation makes sense, using the following checks:
-    * There are no typos
-    * Technical terms can be easily understood
-    * Sentence structure makes sense for the target language
+  * There are no typos
+  * Technical terms can be easily understood
+  * Sentence structure makes sense for the target language
 * Use suggestions for any errors that are found. This has two purposes:
-    * It makes it easier for the contributor to make changes
-    * It gives credit to the PR reviewer as a coauthor in the final commit to main
+  * It makes it easier for the contributor to make changes
+  * It gives credit to the PR reviewer as a coauthor in the final commit to main
 
 ## GitHub infrastructure for the translation teams
 
@@ -31,10 +34,12 @@ pyOpenSci will create and maintain a team for each language using CODEOWNERS fil
 The current translation teams consist of:
 
 ### Spanish
+
 * [Felipe Moreno](https://github.com/flpm)
 * [Roberto Pastor Muela](https://github.com/RobPasMue)
 
 ### Japanese
+
 * [Tetsuo Koyama](https://github.com/tkoyama010)
 * [Kozo Nishida](https://github.com/kozo2)
 
@@ -42,5 +47,5 @@ Current translation teams can expand their teams and add additional members by u
 
 ## Additional automations for consideration
 
-- Use CI to automatically tag the PR with the translation and the proper language tags.
-- Use CI to automatically keep the translation files updated once a translation has been released (work in progress [PR #397](https://github.com/pyOpenSci/python-package-guide/pull/397))
+* Use CI to automatically tag the PR with the translation and the proper language tags.
+* Use CI to automatically keep the translation files updated once a translation has been released (work in progress [PR #397](https://github.com/pyOpenSci/python-package-guide/pull/397))

@@ -19,6 +19,7 @@ pyOpenSci supports open science through
 Home <self>
 mission-values
 structure
+Executive Council <executive-council>
 Code of Conduct <../CODE_OF_CONDUCT.md>
 ```
 
