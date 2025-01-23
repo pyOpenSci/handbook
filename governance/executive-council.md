@@ -134,7 +134,7 @@ The topics above require a motion and a vote for approval. Motions and votes can
 :::{admonition} Executive Council Approval
 :class: important
 
-The above governance for the Executive Council was last updated, voted on, and approved on **insert-date-here**. All content below this section can be modified as needed and does not require a vote.
+The above governance for the Executive Council was last updated, voted on, and approved on **23 January 2025**. All content below this section can be modified as needed and does not require a vote.
 :::
 
 ## Executive Council operations
