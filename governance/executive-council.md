@@ -150,8 +150,6 @@ collaborative input. Examples include:
 - Operational policies for staff (unless they carry significant financial implications).
 - Strategic decisions about pursuing proposals or writing grants.
 - Substantial changes to pyOpenSci programs.
-- Strategic decisions about pursuing proposals or writing grants.
-- Substantial changes to pyOpenSci programs.
 
 By maintaining open communication, the Executive Council and Executive Director ensure that pyOpenSci’s
 decisions align with its mission and strategic goals.
