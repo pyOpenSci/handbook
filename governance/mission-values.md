@@ -1,43 +1,37 @@
 (mission-vision)=
 # Mission, Vision and Values
 
-The mission of pyOpenSci is to support diverse community around the free, open
-python tools that drive open, reproducible scientific workflows.
+pyOpenSci's mission is:
 
-We support our mission by:
+> pyOpenSci broadens participation in scientific open source by breaking down social and technical barriers.
 
-* building community capacity to contribute to open software
-* Creating community
-* Open peer review
-* Training and mentorship
+Who we are:
 
-## Why do we support open science?
+> We are a community of novice to expert Pythonistas; together, we make creating, finding, sharing, and contributing to reusable code more accessible to everyone everywhere, supporting open science and advancing discovery
 
-Science is now data-driven. And as such, data science supports scientists
-processing the data that they need to address critical questions.
+To support our mission we:
 
-We value open science workflows because they allow scientists to build upon each
-others work rather than recreating already developed workflows. Building on
-top of existing workflows supports science developing and evolving at a quicker pace.
+* Build an inclusive community of practice
 
-## Why is (free) and open source so important?
+* Run [open software peer review of scientific software](https://www.pyopensci.org/about-peer-review/index.html) and offer [mentorship](https://www.pyopensci.org/#broadening-participation-in-scientific-open-source) for new reviewers and editors
+* Develop accessible education resources and run training and sprint events
 
-Open source software refers to the tools that scientists (and others) use to
-process data. Free and open software is critical to science as it allows
-scientists to freely access the tools that they need to process their data.
-If the tools are free and open, then it lowers barriers for others to use them
-without having to pay costly subscription fees.
+## Why open science?
 
-This free and open source software is critical to supporting development of
-open scientific workflows
+Open science ensures that every part of the scientific workflow—including data, code, and methods—is openly available. This **promotes transparency**, fosters collaboration, and allows scientists to build upon each other's work. By sharing data and tools, open science **accelerates discovery** and makes research more reproducible.
 
+## Why is free and open source software important?
 
-## pyOpenSci Values
+A key part of open science is using **open source software**, which provides scientists with the tools to access, process, analyze, and visualize data. **Free software makes workflows reusable and ensures more equitable access.**
+
+<i class="fa-solid fa-book"></i> **Open source software is essential for building fully reproducible scientific workflows.** By ensuring that research tools remain accessible to all, we support more transparent and inclusive scientific research.
+
+## pyOpenSci values
 
 Some of our core values include:
 
 * pyOpenSci values supportive, diverse community members
-* pyOpenSci values empowerment community members through training and mentorship
+* pyOpenSci values empowerment through training and mentorship
 * pyOpenSci values collaboration with existing communities
 * pyOpenSci values open reproducible science
 
