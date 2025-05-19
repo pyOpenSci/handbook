@@ -7,19 +7,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Meetings & Events" />
+<meta property="og:title" content="pyOpenSci Infrastructure Overview" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.pyopensci.org/handbook/community/events/intro.html" />
+<meta property="og:url" content="https://www.pyopensci.org/handbook/community/github/data-process.html" />
 <meta property="og:site_name" content="pyOpenSci Python Package Guide" />
-<meta property="og:description" content="pyOpenSci meetings: pyOpensci staff regularly attend community meetings (e.g. SciPy meeting, PyCon US, etc). If the meeting is in person, some of the staff may be in person at the event while the c..." />
+<meta property="og:description" content="This page will help you understand how we collect and process peer review and contributor data to: Highlight pyOpenSci contributors, Track our peer review process, Showcase peer-reviewed Python pac..." />
 <meta property="og:image:width" content="1146" />
 <meta property="og:image:height" content="600" />
-<meta property="og:image" content="https://www.pyopensci.org/handbook/_images/social_previews/summary_community_events_intro_1acbb12b.png" />
-<meta property="og:image:alt" content="pyOpenSci meetings: pyOpensci staff regularly attend community meetings (e.g. SciPy meeting, PyCon US, etc). If the meeting is in person, some of the staff may be in person at the event while the c..." />
-<meta name="description" content="pyOpenSci meetings: pyOpensci staff regularly attend community meetings (e.g. SciPy meeting, PyCon US, etc). If the meeting is in person, some of the staff may be in person at the event while the c..." />
+<meta property="og:image" content="https://www.pyopensci.org/handbook/_images/social_previews/summary_community_github_data-process_c6678a21.png" />
+<meta property="og:image:alt" content="This page will help you understand how we collect and process peer review and contributor data to: Highlight pyOpenSci contributors, Track our peer review process, Showcase peer-reviewed Python pac..." />
+<meta name="description" content="This page will help you understand how we collect and process peer review and contributor data to: Highlight pyOpenSci contributors, Track our peer review process, Showcase peer-reviewed Python pac..." />
 <meta name="twitter:card" content="summary_large_image" />
     <link href="https://www.pyopensci.org/images/favicon.ico" rel="icon" type="image/x-icon">
-    <title>Meetings &amp; Events &#8212; pyOpenSci Handbook</title>
+    <title>pyOpenSci Infrastructure Overview &#8212; pyOpenSci Handbook</title>
   
   
   
@@ -60,14 +60,22 @@
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'community/events/intro';</script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.1.4/dist/mermaid-layout-elk.esm.min.mjs"></script>
+    <script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs";import elkLayouts from "https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.1.4/dist/mermaid-layout-elk.esm.min.mjs";mermaid.registerLayoutLoaders(elkLayouts);mermaid.initialize({startOnLoad:false});</script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs";
+window.addEventListener("load", () => mermaid.run());
+</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'community/github/data-process';</script>
     <script src="../../_static/matomo.js?v=918da087"></script>
-    <link rel="canonical" href="https://www.pyopensci.org/handbook/community/events/intro.html" />
+    <link rel="canonical" href="https://www.pyopensci.org/handbook/community/github/data-process.html" />
     <link rel="icon" href="https://www.pyopensci.org/images/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="pyOpenSci Sprints" href="sprints.html" />
-    <link rel="prev" title="pyOpenSci GitHub processes for translation teams" href="../translation.html" />
+    <link rel="next" title="pyOpenSci GitHub processes for translation teams" href="../translation.html" />
+    <link rel="prev" title="pyOpenSci GitHub Permissions" href="permissions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -452,23 +460,23 @@
 <li class="toctree-l1"><a class="reference internal" href="../zenodo.html">Zenodo &amp; Citation</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">GitHub Processes</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../github/intro.html">GitHub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../github/our-repositories.html">Our Repos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../github/issues.html">GitHub Issue Guidelines</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../github/pull-requests.html">Pull Requests</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../github/continuous-integration.html">Continuous Integration (CI)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../github/permissions.html">GitHub permissions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../github/data-process.html">Data Workflows</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="our-repositories.html">Our Repos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">GitHub Issue Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull-requests.html">Pull Requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="continuous-integration.html">Continuous Integration (CI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="permissions.html">GitHub permissions</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Data Workflows</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Translation &amp; Internationalization workflows</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../translation.html">Translation process</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Events &amp; Content Development</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Events</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sprints.html">pyOpenSci Sprints</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../events/intro.html">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../events/sprints.html">pyOpenSci Sprints</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../content-development-process.html">Content Development</a></li>
 </ul>
 </div>
@@ -508,7 +516,7 @@
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Community Handbook</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Meetings &amp; Events</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">pyOpenSci Infrastructure Overview</span></li>
   </ul>
 </nav>
 </div>
@@ -525,45 +533,94 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="meetings-events">
-<span id="pyos-events"></span><h1>Meetings &amp; Events<a class="headerlink" href="#meetings-events" title="Link to this heading">#</a></h1>
-<section id="pyopensci-meetings">
-<h2>pyOpenSci meetings<a class="headerlink" href="#pyopensci-meetings" title="Link to this heading">#</a></h2>
-<p>pyOpensci staff regularly attend community meetings (e.g. SciPy meeting, PyCon US, etc). If the meeting is in person, some of the staff may be in person at the event while the community manager / others might be supporting the event remotely.</p>
-<p>In these instances, asynchronous communication and sharing of documents in an organized way is critical.</p>
-<section id="event-documents">
-<h3>Event documents<a class="headerlink" href="#event-documents" title="Link to this heading">#</a></h3>
-<p>For every meeting, pyOpenSci staff should create a Google Drive folder, located in our pyos-shared drive, where meeting documents will be stored. These documents may include talk and workshop proposals, attendee signup lists, graphics used in social media and outreach posts and more content related to the event.</p>
-<p>Before an event, pyOpenSci staff will make sure this folder is shared and supporting documents are added to it. Often the folder will be created prior to the event to store talk, BoF (birds of a feather), Townhall and workshop proposals.</p>
-<div class="note admonition">
-<p class="admonition-title">Team check in prior to an event</p>
-<p>Staff should also have a short check-in prior to an event to ensure that all documents, and elements needed for the event, are shared in the right place, appropriate permissions are granted, remote support needs for the event are clarified, etc.</p>
-<p>Because the internet might be an issue sometimes at an event, whomever is leading the event should always bring a pen and paper.</p>
-</div>
-</section>
-</section>
-<section id="event-social-media-and-graphics">
-<h2>Event social media and graphics<a class="headerlink" href="#event-social-media-and-graphics" title="Link to this heading">#</a></h2>
-<p>The community manager will manage online “comms” and social media during an event. However, it is important for whomever is attending the event in person to be in asynchronous communication via the pyOpenSci Slack about key activities, findings, new cool things, etc. to be posting about, promoting and highlighting.</p>
-<p>In some cases, an event might “pop up” last minute–such as an Open Space at PyCon. In this case, the person attending the event may want to modify and reuse graphics posted on social media to publicize the event.</p>
-<p>To support this case, an event folder in our online graphics platform, Canva, should be created prior to the event and shared with the pyOpenSci team. This event-specific folder will be where all graphics used to promote an event, both before, during and after, are stored. Using Canva as a central location for graphics makes it easier for the person at the event to make a quick change to a graphic, add a room number or a time for a pop up event, notify of any change in plans, etc. as needed.</p>
-<div class="important admonition">
-<p class="admonition-title">Share the Canva folder with the pyopensci-canva-team</p>
-<p>Be sure to share the Canva folder with the <code class="docutils literal notranslate"><span class="pre">pyOpensci-canva-team</span></code> on Canva to ensure that the entire team has edit access to the graphics and can make last minute changes as needed!
-Please also be sure to name files using expressive words that make them easy to find / use / reuse.</p>
-</div>
-<section id="preparation-prior-to-an-event">
-<h3>Preparation prior to an event<a class="headerlink" href="#preparation-prior-to-an-event" title="Link to this heading">#</a></h3>
-<p>Prior to an in-person sprint, the following items should be created:</p>
-<ol class="arabic simple">
-<li><p>A template “sign up” form, created in HubSpot and shared via a bit.ly shortlink, with data fields that we collect from participants. This allows us to track who attends and event and to followup with them after (if they wish to have communication with us after)</p></li>
-<li><p>A tabletop “card” that says pyOpenSci. You will need 2-3 cards on hand for any event in case participants are spread across a few tables. This card will be important for events like sprints, workshops and open spaces where pyOpenSci has one or more tables in a large room. It will signal to contributors that we are there and help people quickly find us.</p></li>
-</ol>
+  <section id="pyopensci-infrastructure-overview">
+<h1>pyOpenSci Infrastructure Overview<a class="headerlink" href="#pyopensci-infrastructure-overview" title="Link to this heading">#</a></h1>
+<p>This page will help you understand how we collect and process peer review and contributor data to:</p>
 <ul class="simple">
-<li><p>The card should have a qr code that is dynamic (so we can update the url that it points to and reuse the cards). This will allow us to have participants scan the code using their phones, and add their names as participants in the event. Following the event we can then send a thank you message to each participant using MailChimp or HubSpot.</p></li>
+<li><p>Highlight pyOpenSci contributors</p></li>
+<li><p>Track our peer review process</p></li>
+<li><p>Showcase peer-reviewed Python packages</p></li>
+</ul>
+<section id="how-it-works">
+<h2>How it works<a class="headerlink" href="#how-it-works" title="Link to this heading">#</a></h2>
+<p>We use a Python package called <code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code> to <strong>extract and transform contributor and peer review data</strong> into machine-readable formats (<code class="docutils literal notranslate"><span class="pre">.yml</span></code> and <code class="docutils literal notranslate"><span class="pre">.csv</span></code>).</p>
+<p>This data allows us to <strong>automatically update</strong>:</p>
+<ul class="simple">
+<li><p>our <a class="reference external" href="https://www.pyopensci.org/our-community/index.html">public website contributor listing</a></p></li>
+<li><p>our <a class="reference external" href="https://www.pyopensci.org/python-packages.html">website accepted package listing</a></p></li>
+<li><p>our <a class="reference external" href="https://www.pyopensci.org/metrics">metrics dashboard</a></p></li>
+</ul>
+<p>with up-to-date contributor and review information, directly from GitHub.</p>
+</section>
+<section id="data-collection-and-processing">
+<h2>Data collection and processing<a class="headerlink" href="#data-collection-and-processing" title="Link to this heading">#</a></h2>
+<p>We collect two types of data from GitHub:</p>
+<ol class="arabic simple">
+<li><p><strong>Contributor data</strong>
+Parsed from <a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/blob/main/.all-contributorsrc">All Contributors bot config files</a> found in each pyOpenSci repo.</p></li>
+<li><p><strong>Peer review submission data</strong>
+Extracted from <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues">issues in the software-submission repo</a>, including:</p>
+<ul class="simple">
+<li><p>package name and repo URL</p></li>
+<li><p>editor and reviewers</p></li>
+<li><p>maintainers and authors</p></li>
+</ul>
+</li>
+</ol>
+<p>This data is processed by <code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code>, which generates:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">_data/contributors.yml</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">_data/packages.yml</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.csv</span></code> files for metrics</p></li>
 </ul>
 </section>
+<section id="where-the-data-goes">
+<h2>Where the data goes<a class="headerlink" href="#where-the-data-goes" title="Link to this heading">#</a></h2>
+<p>The processed data files are used in two main parts of our website:</p>
+<ul class="simple">
+<li><p><strong>Website GitHub Repo</strong></p>
+<ul>
+<li><p>A cron job reads the <code class="docutils literal notranslate"><span class="pre">.yml</span></code> files to populate our
+👉 <a class="reference external" href="https://www.pyopensci.org/our-community/index.html#pyopensci-community-contributors">Contributors page</a>
+👉 <a class="reference external" href="https://www.pyopensci.org/python-packages.html">Packages page</a></p></li>
+</ul>
+</li>
+<li><p><strong>Metrics GitHub Repo</strong></p>
+<ul>
+<li><p>A cron job reads <code class="docutils literal notranslate"><span class="pre">.csv</span></code> files to generate the
+👉 <a class="reference external" href="https://www.pyopensci.org/metrics/peer-review/current-review-status.html">Peer review status dashboard</a></p></li>
+</ul>
+</li>
+</ul>
 </section>
+<section id="workflow-diagram">
+<h2>Workflow diagram<a class="headerlink" href="#workflow-diagram" title="Link to this heading">#</a></h2>
+<p>The diagram below explains the basic workflow that we use.</p>
+<pre  class="mermaid">
+        graph TD
+    subgraph Sources
+        A1[All Contributors Bot]
+        A2[Peer Review Submissions *GitHub Issues*]
+    end
+
+    subgraph pyosmeta
+        A3[pyosmeta]
+    end
+
+    A1 --&gt; A3
+    A2 --&gt; A3
+
+    A3 --&gt;|DATA:
+    _data/contributors.yml,
+    _data/packages.yml| B1[Website GitHub Repo]
+    A3 --&gt;|DATA:
+    _/*.CSV | B2[Metrics GitHub Repo]
+
+    B1 --&gt;|Cron job reads YAML| C1[🔗 Contributor listing page]
+    B2 --&gt;|Cron job reads CSV| C2[Generate metric plots]
+
+    click C1 &quot;https://www.pyopensci.org/our-community/index.html#pyopensci-community-contributors&quot; &quot;View pyOpenSci Contributor Page&quot;
+    </pre></section>
 </section>
 
 
@@ -577,20 +634,20 @@ Please also be sure to name files using expressive words that make them easy to 
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../translation.html"
+       href="permissions.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">pyOpenSci GitHub processes for translation teams</p>
+        <p class="prev-next-title">pyOpenSci GitHub Permissions</p>
       </div>
     </a>
     <a class="right-next"
-       href="sprints.html"
+       href="../translation.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">pyOpenSci Sprints</p>
+        <p class="prev-next-title">pyOpenSci GitHub processes for translation teams</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -613,14 +670,10 @@ Please also be sure to name files using expressive words that make them easy to 
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyopensci-meetings">pyOpenSci meetings</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#event-documents">Event documents</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#event-social-media-and-graphics">Event social media and graphics</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preparation-prior-to-an-event">Preparation prior to an event</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-it-works">How it works</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-collection-and-processing">Data collection and processing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#where-the-data-goes">Where the data goes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-diagram">Workflow diagram</a></li>
 </ul>
   </nav></div>
 
@@ -628,7 +681,7 @@ Please also be sure to name files using expressive words that make them easy to 
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/pyopensci/handbook/edit/main/community/events/intro.md">
+    <a href="https://github.com/pyopensci/handbook/edit/main/community/github/data-process.md">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -643,7 +696,7 @@ Please also be sure to name files using expressive words that make them easy to 
   <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="../../_sources/community/events/intro.md.txt">
+    <a href="../../_sources/community/github/data-process.md.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
