@@ -30,6 +30,7 @@ GitHub Issue Guidelines <github/issues>
 Pull Requests <github/pull-requests>
 Continuous Integration (CI) <github/continuous-integration>
 GitHub permissions <github/permissions>
+Data Workflows <github/data-process>
 :::
 
 :::{toctree}

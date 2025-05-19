@@ -39,6 +39,7 @@ extensions = [
     "sphinx_sitemap",
     "sphinxext.opengraph",
     "sphinx_favicon",
+    "sphinxcontrib.mermaid",
 ]
 
 # colon fence for card support in md
