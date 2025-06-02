@@ -1,10 +1,10 @@
 # New Hire Onboarding
 
-The following needs to happen when a new team member joins pyOpenSci’s staff as core staff.
+The following needs to happen when a new team member join the pyOpenSci’s team.
 
 ## Community Initiatives Onboarding
 
-The new hire needs to meet with Community Initiatives HR and complete any training, fill out any paperwork that is required by Community Initiatives.
+To be actually onboarded and eligle hired, the new hire first needs to meet with Community Initiatives Human Resources department.  and complete any training, fill out any paperwork that is required by Community Initiatives.
 
 ## pyOpenSci onboarding process
 
