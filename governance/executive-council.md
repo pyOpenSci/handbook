@@ -192,7 +192,7 @@ When a new member joins the Executive Council, the following steps should be
 completed to integrate them into the team:
 
 1. **Access to tools and resources**:
-   - Add the new member to the pyOpenSci Executive Council shared [Google Drive](google-drive).
+   - Add the new member to the pyOpenSci Executive Council shared [Google Drive](google-workspace).
      This drive is where we share meeting notes,
      agendas, budgets and other resources.
    - Add the new member to the Executive Council Slack channel, the primary
@@ -251,7 +251,7 @@ EC members are expected to check Slack semi-regularly to stay informed.
 
 #### Google Drive: document sharing and collaboration
 
-The pyOpenSci Executive Council uses a shared **[Google Drive](google-drive)** within the pyOpenSci Google Workspace to store and share documents. This includes meeting notes, agendas, and other important materials. Members are encouraged to access and update shared resources using the shared Drive.
+The pyOpenSci Executive Council uses a shared **[Google Drive](google-workspace)** within the pyOpenSci Google Workspace to store and share documents. This includes meeting notes, agendas, and other important materials. Members are encouraged to access and update shared resources using the shared Drive.
 
 :::{admonition} Terms
 :class: tip
