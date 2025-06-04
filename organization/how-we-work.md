@@ -12,9 +12,10 @@ For information on how we onboard new staff, see the [New Hire Onboarding](onboa
 
 For daily operations, primarily use:
 
-* GitHub
-* Google Workspace
-* Slack
+* [GitHub](github)
+* [Google Workspace](google-workspace)
+* [Slack](slack)
+* [Asana](asana)
 
 (github)=
 ## GitHub
