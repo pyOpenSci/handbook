@@ -40,6 +40,7 @@ extensions = [
     "sphinxext.opengraph",
     "sphinx_favicon",
     "sphinxcontrib.mermaid",
+    "sphinx_last_updated_by_git",
 ]
 
 # colon fence for card support in md
@@ -96,6 +97,7 @@ html_theme_options = {
     "github_url": "https://github.com/pyopensci/handbook",
     "footer_start": ["copyright"],
     "footer_end": [],
+    "article_footer_items":["last-updated.html"],
 }
 
 # html_theme_options["analytics"] = {
