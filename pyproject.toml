@@ -21,6 +21,7 @@ dependencies = [
     "sphinxext-opengraph",
     "sphinx-inline-tabs",
     "sphinxcontrib-mermaid",
+    "sphinx-last-updated-by-git",
     # for project cards
     "matplotlib"
 ]
