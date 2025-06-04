@@ -9,7 +9,7 @@ community including:
 * A blog on our [organization's website](https://www.pyopensci.org/blog)
 * YouTube
 
-
+(buffer)=
 ## Buffer for scheduled social media posts
 
 [Buffer](https://buffer.com/) is a [social media](https://www.pyopensci.org/handbook/community/social.html) platform that makes it easy to schedule, track, and collaborate on social media posts. While Buffer supports a host of platforms, pyOpenSci currently uses Buffer for
@@ -42,7 +42,7 @@ Accessing and editing Linktr.ee:
 
 ## pyOpenSci blog
 
-The [pyOpenSci blog lives on our website](https://www.pyopensci.org/blog). The website is driven by Jekyll and hosted on GitHub pages. [The code for the website is stored in pyopensci.github.io GitHub repository](https://github.com/pyOpenSci/pyopensci.github.io).
+The [pyOpenSci blog lives on our website](https://www.pyopensci.org/blog). The website is driven by Jekyll and hosted on GitHub Pages. [The code for the website is stored in pyopensci.github.io GitHub repository](https://github.com/pyOpenSci/pyopensci.github.io).
 
 ### Blog goals
 
