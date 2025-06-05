@@ -7,20 +7,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="pyOpenSci GitHub issue process" />
+<meta property="og:title" content="pyOpenSci Infrastructure Overview" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.pyopensci.org/handbook/community/github/issues.html" />
+<meta property="og:url" content="https://www.pyopensci.org/handbook/community/infrastructure/data-process.html" />
 <meta property="og:site_name" content="pyOpenSci Python Package Guide" />
-<meta property="og:description" content="When possible, GitHub pull requests, issue submissions, and reviews should follow standard open source workflows. Below are guidelines for handling issues in the pyOpenSci GitHub organization. Guid..." />
+<meta property="og:description" content="This page will help you understand how we collect and process peer review and contributor data to: Highlight pyOpenSci contributors, Track our peer review process, Showcase peer-reviewed Python pac..." />
 <meta property="og:image:width" content="1146" />
 <meta property="og:image:height" content="600" />
-<meta property="og:image" content="https://www.pyopensci.org/handbook/_images/social_previews/summary_community_github_issues_0c1205cc.png" />
-<meta property="og:image:alt" content="When possible, GitHub pull requests, issue submissions, and reviews should follow standard open source workflows. Below are guidelines for handling issues in the pyOpenSci GitHub organization. Guid..." />
-<meta name="description" content="When possible, GitHub pull requests, issue submissions, and reviews should follow standard open source workflows. Below are guidelines for handling issues in the pyOpenSci GitHub organization. Guid..." />
+<meta property="og:image" content="https://www.pyopensci.org/handbook/_images/social_previews/summary_community_infrastructure_data-process_c6678a21.png" />
+<meta property="og:image:alt" content="This page will help you understand how we collect and process peer review and contributor data to: Highlight pyOpenSci contributors, Track our peer review process, Showcase peer-reviewed Python pac..." />
+<meta name="description" content="This page will help you understand how we collect and process peer review and contributor data to: Highlight pyOpenSci contributors, Track our peer review process, Showcase peer-reviewed Python pac..." />
 <meta name="twitter:card" content="summary_large_image" />
     <link href="https://www.pyopensci.org/images/favicon.ico" rel="icon" type="image/x-icon">
-    <meta property="article:modified_time" content="2024-09-04T19:49:11+00:00" />
-    <title>pyOpenSci GitHub issue process &#8212; pyOpenSci Handbook</title>
+    <meta property="article:modified_time" content="2025-06-05T21:33:58+00:00" />
+    <title>pyOpenSci Infrastructure Overview &#8212; pyOpenSci Handbook</title>
   
   
   
@@ -61,18 +61,26 @@
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'community/github/issues';</script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.1.4/dist/mermaid-layout-elk.esm.min.mjs"></script>
+    <script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs";import elkLayouts from "https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.1.4/dist/mermaid-layout-elk.esm.min.mjs";mermaid.registerLayoutLoaders(elkLayouts);mermaid.initialize({startOnLoad:false});</script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script type="module">
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs";
+window.addEventListener("load", () => mermaid.run());
+</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'community/infrastructure/data-process';</script>
     <script src="../../_static/matomo.js?v=918da087"></script>
-    <link rel="canonical" href="https://www.pyopensci.org/handbook/community/github/issues.html" />
+    <link rel="canonical" href="https://www.pyopensci.org/handbook/community/infrastructure/data-process.html" />
     <link rel="icon" href="https://www.pyopensci.org/images/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="2. pyOpenSci Pull Request Process" href="pull-requests.html" />
-    <link rel="prev" title="pyOpenSci GitHub repositories" href="our-repositories.html" />
+    <link rel="next" title="pyOpenSci GitHub processes for translation teams" href="../translation.html" />
+    <link rel="prev" title="pyOpenSci GitHub Permissions" href="permissions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-    <meta name="docbuild:last-update" content="Sep 04, 2024"/>
+    <meta name="docbuild:last-update" content="Jun 05, 2025"/>
   </head>
   
   
@@ -457,11 +465,11 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="intro.html">GitHub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="our-repositories.html">Our Repos</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">GitHub Issue Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="issues.html">GitHub Issue Guidelines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pull-requests.html">Pull Requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="continuous-integration.html">Continuous Integration (CI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="permissions.html">GitHub permissions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-process.html">Data Workflows</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Data Workflows</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Translation &amp; Internationalization workflows</span></p>
 <ul class="nav bd-sidenav">
@@ -510,7 +518,7 @@
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Community Handbook</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">pyOpenSci GitHub issue process</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">pyOpenSci Infrastructure Overview</span></li>
   </ul>
 </nav>
 </div>
@@ -527,95 +535,94 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="pyopensci-github-issue-process">
-<h1>pyOpenSci GitHub issue process<a class="headerlink" href="#pyopensci-github-issue-process" title="Link to this heading">#</a></h1>
-<p>When possible, GitHub pull requests, issue submissions, and reviews should follow
-standard open source workflows. Below are guidelines for handling issues in the
-pyOpenSci GitHub organization.</p>
-<section id="guidelines-for-new-issues">
-<h2>Guidelines for new issues<a class="headerlink" href="#guidelines-for-new-issues" title="Link to this heading">#</a></h2>
-<p><strong>Issues should be as specific as possible:</strong> Specificity within an issue helps
-both our future selves and outside contributors understand the goal or desired
-outcome associated with addressing the issue. This is important both internally
-and for issues tagged as <code class="docutils literal notranslate"><span class="pre">help-wanted</span></code>, which we hope community members will
-address in pyOpenSci sprints.</p>
-<p>To ensure an issue is well-written and specific, include the following details:</p>
+  <section id="pyopensci-infrastructure-overview">
+<h1>pyOpenSci Infrastructure Overview<a class="headerlink" href="#pyopensci-infrastructure-overview" title="Link to this heading">#</a></h1>
+<p>This page will help you understand how we collect and process peer review and contributor data to:</p>
 <ul class="simple">
-<li><p><strong>Clear title:</strong> A concise and descriptive title summarizing the issue or
-feature request helps us scan through issues and understand what each issue is
-about. Below are some example titles that are specific:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">Bug:</span> <span class="pre">broken</span> <span class="pre">link</span> <span class="pre">in</span> <span class="pre">link-to-page-here</span> <span class="pre">/</span> <span class="pre">name</span> <span class="pre">of</span> <span class="pre">page</span> <span class="pre">/</span> <span class="pre">document</span> <span class="pre">etc</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Fix:</span> <span class="pre">confusing</span> <span class="pre">paragraph</span> <span class="pre">on</span> <span class="pre">Python</span> <span class="pre">packaging</span> <span class="pre">with</span> <span class="pre">Hatch</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Add:</span> <span class="pre">page</span> <span class="pre">on</span> <span class="pre">using</span> <span class="pre">pixi</span> <span class="pre">for</span> <span class="pre">dependencies</span></code></p></li>
+<li><p>Highlight pyOpenSci contributors</p></li>
+<li><p>Track our peer review process</p></li>
+<li><p>Showcase peer-reviewed Python packages</p></li>
+</ul>
+<section id="how-it-works">
+<h2>How it works<a class="headerlink" href="#how-it-works" title="Link to this heading">#</a></h2>
+<p>We use a Python package called <code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code> to <strong>extract and transform contributor and peer review data</strong> into machine-readable formats (<code class="docutils literal notranslate"><span class="pre">.yml</span></code> and <code class="docutils literal notranslate"><span class="pre">.csv</span></code>).</p>
+<p>This data allows us to <strong>automatically update</strong>:</p>
+<ul class="simple">
+<li><p>our <a class="reference external" href="https://www.pyopensci.org/our-community/index.html">public website contributor listing</a></p></li>
+<li><p>our <a class="reference external" href="https://www.pyopensci.org/python-packages.html">website accepted package listing</a></p></li>
+<li><p>our <a class="reference external" href="https://www.pyopensci.org/metrics">metrics dashboard</a></p></li>
+</ul>
+<p>with up-to-date contributor and review information, directly from GitHub.</p>
+</section>
+<section id="data-collection-and-processing">
+<h2>Data collection and processing<a class="headerlink" href="#data-collection-and-processing" title="Link to this heading">#</a></h2>
+<p>We collect two types of data from GitHub:</p>
+<ol class="arabic simple">
+<li><p><strong>Contributor data</strong>
+Parsed from <a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/blob/main/.all-contributorsrc">All Contributors bot config files</a> found in each pyOpenSci repo.</p></li>
+<li><p><strong>Peer review submission data</strong>
+Extracted from <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues">issues in the software-submission repo</a>, including:</p>
+<ul class="simple">
+<li><p>package name and repo URL</p></li>
+<li><p>editor and reviewers</p></li>
+<li><p>maintainers and authors</p></li>
 </ul>
 </li>
-<li><p><strong>Description:</strong> A detailed explanation of the issue or feature request,
-including context, background information, and the reason for the request.
-Explain why the issue is important and what problem it solves.</p></li>
-<li><p><strong>Screenshots/code samples:</strong> Include screenshots, code snippets, links, or
-any other relevant files that can help others in understanding the issue
-better.</p></li>
-<li><p><strong>Possible solutions/recommendations:</strong> It’s helpful to provide any ideas or
-suggestions for how to address the issue, which can help guide contributors
-towards a solution.</p></li>
-<li><p><strong>Related issues or pull requests:</strong> Add references to any related issues or
-pull requests, which provides additional context and understanding of the
-broader scope of the issue.</p></li>
-</ul>
-<section id="if-you-are-reporting-a-code-bug">
-<h3>If you are reporting a code bug<a class="headerlink" href="#if-you-are-reporting-a-code-bug" title="Link to this heading">#</a></h3>
+</ol>
+<p>This data is processed by <code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code>, which generates:</p>
 <ul class="simple">
-<li><p><strong>Steps to reproduce (for bugs):</strong> A step-by-step guide (generally a list or
-narrative) on how to reproduce the issue, including relevant code snippets,
-commands, or configurations.</p></li>
-<li><p><strong>Expected vs. actual behavior (for bugs):</strong> A description of what you
-expected to happen and what actually happened. This helps in understanding
-the discrepancy and the impact of the bug.</p></li>
-<li><p><strong>Environment details (for bugs):</strong> Details about the environment where the
-issue was observed, such as operating system, Python version, library
-versions, and any other relevant software/hardware details.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">_data/contributors.yml</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">_data/packages.yml</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.csv</span></code> files for metrics</p></li>
 </ul>
 </section>
-<section id="if-you-have-permissions-label-the-issue">
-<h3>If you have permissions, label the issue<a class="headerlink" href="#if-you-have-permissions-label-the-issue" title="Link to this heading">#</a></h3>
-<p>While outside contributors will not have permission to label issues, pyOpenSci
-core team members and volunteers will. Be sure to add appropriate labels to
-issues to make them easier to triage.</p>
+<section id="where-the-data-goes">
+<h2>Where the data goes<a class="headerlink" href="#where-the-data-goes" title="Link to this heading">#</a></h2>
+<p>The processed data files are used in two main parts of our website:</p>
+<ul class="simple">
+<li><p><strong>Website GitHub Repo</strong></p>
+<ul>
+<li><p>A cron job reads the <code class="docutils literal notranslate"><span class="pre">.yml</span></code> files to populate our
+👉 <a class="reference external" href="https://www.pyopensci.org/our-community/index.html#pyopensci-community-contributors">Contributors page</a>
+👉 <a class="reference external" href="https://www.pyopensci.org/python-packages.html">Packages page</a></p></li>
+</ul>
+</li>
+<li><p><strong>Metrics GitHub Repo</strong></p>
+<ul>
+<li><p>A cron job reads <code class="docutils literal notranslate"><span class="pre">.csv</span></code> files to generate the
+👉 <a class="reference external" href="https://www.pyopensci.org/metrics/peer-review/current-review-status.html">Peer review status dashboard</a></p></li>
+</ul>
+</li>
+</ul>
 </section>
-</section>
-<section id="help-wanted-sprintable-issues">
-<h2>Help-wanted / sprintable issues<a class="headerlink" href="#help-wanted-sprintable-issues" title="Link to this heading">#</a></h2>
-<p>If an issue is something that anyone in the community could potentially address,
-it’s ideal to label the issue with <code class="docutils literal notranslate"><span class="pre">help-wanted</span></code> and/or <code class="docutils literal notranslate"><span class="pre">sprintable</span></code>. A
-sprintable issue refers to an issue that could be completed or worked on during
-a 1-2 day sprint, thus it should be smaller and more confined in scope. A
-help-wanted issue is one that anyone is welcome to work on during whatever time
-they have available.</p>
-<p>Once the <code class="docutils literal notranslate"><span class="pre">help-wanted</span></code> or <code class="docutils literal notranslate"><span class="pre">sprintable</span></code> issue label is added, the issue will be
-automatically added to our
-<a class="reference external" href="https://github.com/orgs/pyOpenSci/projects/3">pyOpenSci help-wanted board</a>.
-This automation is implemented currently for a single repository (the packaging
-guide), but we plan to implement it for other repositories using the
-add-to-project GitHub action.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The issue will be archived from the project board once it is closed.</p>
-</div>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p><a class="reference internal" href="../events/sprints.html"><span class="doc std std-doc">Learn more about pyOpenSci sprint events.</span></a></p>
-</div>
-<p>If an issue is unclear, a pyOpenSci staff member or designated community member
-can ask the issue author to provide more information.</p>
-</section>
-<section id="issue-maintenance">
-<h2>Issue maintenance<a class="headerlink" href="#issue-maintenance" title="Link to this heading">#</a></h2>
-<p>Our goal at pyOpenSci is to keep our list of issues current and active.
-Quarterly issue cleanup sessions are implemented to ensure issues are either
-being actively addressed or to assess whether older or stale issues can
-potentially be closed.</p>
-</section>
+<section id="workflow-diagram">
+<h2>Workflow diagram<a class="headerlink" href="#workflow-diagram" title="Link to this heading">#</a></h2>
+<p>The diagram below explains the basic workflow that we use.</p>
+<pre  class="mermaid">
+        graph TD
+    subgraph Sources
+        A1[All Contributors Bot]
+        A2[Peer Review Submissions *GitHub Issues*]
+    end
+
+    subgraph pyosmeta
+        A3[pyosmeta]
+    end
+
+    A1 --&gt; A3
+    A2 --&gt; A3
+
+    A3 --&gt;|DATA:
+    _data/contributors.yml,
+    _data/packages.yml| B1[Website GitHub Repo]
+    A3 --&gt;|DATA:
+    _/*.CSV | B2[Metrics GitHub Repo]
+
+    B1 --&gt;|Cron job reads YAML| C1[🔗 Contributor listing page]
+    B2 --&gt;|Cron job reads CSV| C2[Generate metric plots]
+
+    click C1 &quot;https://www.pyopensci.org/our-community/index.html#pyopensci-community-contributors&quot; &quot;View pyOpenSci Contributor Page&quot;
+    </pre></section>
 </section>
 
 
@@ -627,7 +634,7 @@ potentially be closed.</p>
                   <div class="footer-article-items footer-article__inner">
   
     <div class="footer-article-item"><hr>
-<p style="font-size: small; color: #888;">Last updated: Sep 04, 2024</p></div>
+<p style="font-size: small; color: #888;">Last updated: Jun 05, 2025</p></div>
   
 </div>
                 </footer>
@@ -638,20 +645,20 @@ potentially be closed.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="our-repositories.html"
+       href="permissions.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">pyOpenSci GitHub repositories</p>
+        <p class="prev-next-title">pyOpenSci GitHub Permissions</p>
       </div>
     </a>
     <a class="right-next"
-       href="pull-requests.html"
+       href="../translation.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">2. pyOpenSci Pull Request Process</p>
+        <p class="prev-next-title">pyOpenSci GitHub processes for translation teams</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -674,13 +681,10 @@ potentially be closed.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#guidelines-for-new-issues">Guidelines for new issues</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#if-you-are-reporting-a-code-bug">If you are reporting a code bug</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#if-you-have-permissions-label-the-issue">If you have permissions, label the issue</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#help-wanted-sprintable-issues">Help-wanted / sprintable issues</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#issue-maintenance">Issue maintenance</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-it-works">How it works</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-collection-and-processing">Data collection and processing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#where-the-data-goes">Where the data goes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-diagram">Workflow diagram</a></li>
 </ul>
   </nav></div>
 
@@ -688,7 +692,7 @@ potentially be closed.</p>
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/pyopensci/handbook/edit/main/community/github/issues.md">
+    <a href="https://github.com/pyopensci/handbook/edit/main/community/infrastructure/data-process.md">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -703,7 +707,7 @@ potentially be closed.</p>
   <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="../../_sources/community/github/issues.md.txt">
+    <a href="../../_sources/community/infrastructure/data-process.md.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
