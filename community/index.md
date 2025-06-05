@@ -24,13 +24,13 @@ Zenodo & Citation <zenodo>
 :maxdepth: 2
 :caption: GitHub Processes
 
-GitHub <github/intro>
-Our Repos <github/our-repositories>
-GitHub Issue Guidelines <github/issues>
-Pull Requests <github/pull-requests>
-Continuous Integration (CI) <github/continuous-integration>
-GitHub permissions <github/permissions>
-Data Workflows <github/data-process>
+GitHub <infrastructure/intro>
+Our Repos <infrastructure/our-repositories>
+GitHub Issue Guidelines <infrastructure/issues>
+Pull Requests <infrastructure/pull-requests>
+Continuous Integration (CI) <infrastructure/continuous-integration>
+GitHub permissions <infrastructure/permissions>
+Data Workflows <infrastructure/data-process>
 :::
 
 :::{toctree}
