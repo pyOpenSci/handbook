@@ -8,7 +8,7 @@ This section outlines the essential processes and structures that guide the oper
 
 External Communication <external-communication>
 Branding <branding>
-Social Media <social-media-blog>
+Communications <social-media-blog>
 Canva <canva>
 :::
 
