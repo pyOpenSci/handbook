@@ -21,33 +21,45 @@ Before pyOpenSci onboarding begins, the new hire is guided through the onboardin
 
 Once Community Initiatives onboarding is complete, all core pyOpenSci staff receive the following:
 
-**Google Workspace account**
-- A pyOpenSci email (`name@pyopensci.org`) will be created.
+### 1. Create a Google Workspace account
 
-**Google Drive access**
-- Added to `pyos-shared` and other relevant shared drives.
+A pyOpenSci email (`name@pyopensci.org`) will be created for staff / salaried employees.
 
-**pyOpenSci GitHub organization access**
-- Added to the pyOpenSci GitHub organization.
+### 2. Provide Google Drive access
+
+Add the employee to the `pyos-shared` Google Drive and any other relevant shared drives that support their work for pyOpenSci.
+
+### 3. Provide pyOpenSci GitHub organization access
+
+The employee will be added to the pyOpenSci GitHub organization.
+
 As part of the onboarding process, New staff are given the freedom to choose their preferred GitHub account. Depending on their role and personal preference, they may opt to use their existing personal account or create a new one specifically for their work with pyOpenSci.
 
 [Learn more about how we use GitHub.](github)
 
-**Access to Asana**
+### 4. Add employee to the pyOpenSci Operations Asana Team
 
-- [We use Asana to track and manage tasks.](asana). All pyOpenSci employees will be added to the pyOpenSci Operations Asana team.
+[We use Asana to track and manage tasks.](asana) All pyOpenSci employees will be added to the pyOpenSci Operations Asana team.
 
-**Slack**
-- Invited to Slack workspace for day-to-day communication.
+### 5. Add employee to the pyOpenSci Slack
+
+Invite to the pyOpenSci Slack workspace for day-to-day communication.
 - [Learn more about how we use Slack.](https://www.pyopensci.org/handbook/community/slack.html)
 
-**Discord**
-- Invited to our Discord workspace, which we use for events.
+### 6. Invite employee to the pyOpenSci Discord
 
-**Access to social media and content platforms (as needed)**
-- Access to LinkedIn, Mastodon, BlueSky, YouTube, Buffer as needed, depending on the position.
+* Invited to our [Discord workspace](https://discord.gg/FDKVrSB4), which we use for events.
+
+### 7. Provide access to social media and content platforms (as needed)
+
+Access to LinkedIn, [Mastodon](https://fosstodon.org/@pyOpenSci), BlueSky, YouTube, Buffer as needed, depending on the position. **media at pyopensci.org** email is used for these accounts.
+
 - [Learn more about how we use Buffer for social posting.](buffer)
 
+### 7. Provide access to BitWarden for media and admin account credentials
+
+We use [BitWarden](bitwarden) for administration accounts and social. Provide the employee
+with access to BitWarden to access these accounts.
 
 ## Onboarding for flexible project-based positions
 
@@ -57,33 +69,44 @@ Typically, project-based roles involve a weekly time commitment of 5-20 hours, w
 
 Unless they are hired as an outside contractor, project-based employees complete onboarding with Community Initiatives and report time using Community Initiatives' Paylocity platform.
 
-**Google Workspace account**
-- We will create a Google Workspace account if there is a clear business need for the role (for example, external communications or another specific role).
+### 1. Create Google Workspace account (as needed)
+
+We will create a Google Workspace account if there is a clear business need for the role (for example, external communications or another specific role).
 - [Learn more about how we use GitHub.](google-workspace)
 
-**Google Drive access**
+### 2. Provide access to Google Drive
+
 - Granted access to relevant shared folders as needed.
 
-**GitHub**
-- Added to the pyOpenSci organization or granted repo-specific access based on project needs.
+### 3. Add to the pyOpenSci GitHub Organization
+
+Added to the pyOpenSci organization or granted repo-specific access based on project needs.
 - [Learn more about how we use GitHub.](github)
 
-**Slack**
-- All pyOpenSci contributors and staff are invited to join the Slack community.
+### 4. Slack
+
+All pyOpenSci contributors and staff are invited to join the Slack community.
 - [Learn more about how we use Slack.](slack)
 
-**Discord**
-- Invited to our Discord workspace, which we use for events.
+### 5. Discord
 
-**Access to social media and content platforms (as needed)**
-- Access to LinkedIn, Mastodon, BlueSky, YouTube, Buffer as needed, depending on the position.
+Invited to our Discord workspace, which we use for events.
+
+### 6. Access to social media and content platforms (as needed)
+
+Access to LinkedIn, Mastodon, BlueSky, YouTube, Buffer as required, depending on the position. **media at pyopensci.org** Email is used for these accounts.
 - [Learn more about how we use Buffer for social posting.](buffer)
+
+### 7. Provide access to BitWarden for media and admin account credentials as needed
+
+We use [BitWarden](bitwarden) for administration accounts and social. Provide the employee
+with access to BitWarden to access these accounts.
 
 ## Email groups
 
 pyOpenSci staff may be added to one or more email groups to support their role as needed:
 
-- [admin@pyopensci.org](mailto:admin@pyopensci.org): used for administration tasks such as hiring calls.
+- [admin@pyopensci.org](mailto:admin@pyopensci.org): used for administration tasks such as meetighns calls.
 - [media@pyopensci.org](mailto:media@pyopensci.org): used for general social media work.
 
 ## Engaging with the community
@@ -95,7 +118,7 @@ Once a new staff member is onboarded, they are introduced to the pyOpenSci commu
 - **Introductory blog post**: New hires write a brief blog post introducing themselves to the community. Topics may include work background, hobbies, why they joined pyOpenSci, and their role.
 - **Social media**: Post the hire announcement on pyOpenSci social channels.
 
-## New Hire evaluation and support
+## New hire evaluation and support
 
 At pyOpenSci, we aim to ensure a supportive transition for new team members. To foster this, we conduct formal evaluations at both three and six months during the initial employment period. These check-ins provide an opportunity to discuss progress, address challenges, and identify any additional support that may be needed. They also serve as a chance to assess whether the role and expectations remain a good fit for both the team member and pyOpenSci.
 
