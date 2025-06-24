@@ -9,13 +9,15 @@ Wherever possible, we use open, collaborative tools such as GitHub and Google Dr
 For information on how we onboard new staff, see the [New Hire Onboarding](onboarding) page.
 :::
 
-
-For daily operations, primarily use:
+For daily operations, we use:
 
 * [GitHub](github)
 * [Google Workspace](google-workspace)
 * [Slack](slack)
 * [Asana](asana)
+* [BitWarden](bitwarden)
+
+We use Canva for shared graphic development.
 
 (github)=
 ## GitHub
@@ -71,7 +73,6 @@ Storing documents in the shared drive also supports continuity, as documents are
 
 Employees can save personal documents such as 1-on-1 agendas, personal notes, and other information that does not need to be shared at the organizational level in their personal pyOpenSci Drive and share them with other team members as needed.
 
-
 (slack)=
 ### Slack
 
@@ -90,7 +91,7 @@ If a conversation in Slack highlights the need for updated or new documentation,
 (asana)=
 ### Asana
 
-[Asana](https://asana.com/) is an internal tool we use as pyOpenSci staff for general task management. Within Asana, we assign tasks to one another that need to be accomplished, along with their respective deadlines. In staff check-ins, we review tasks, update deadlines as needed, and discuss future efforts. Asana can also be used to build road maps for projects.
+[Asana](https://asana.com/) is an internal tool we use as pyOpenSci staff for general task management. Within Asana, we assign tasks to one another that need to be accomplished, along with their respective deadlines. During staff check-ins, we review tasks, update deadlines as necessary, and discuss upcoming efforts. Asana can also be used to build road maps for projects.
 
 Asana is also connected to GitHub, which allows us to track open issues and pull requests as needed.
 
@@ -113,4 +114,4 @@ Asana is connected to GitHub, allowing us to track relevant issues and pull requ
 
 * **For individuals:** Team members are encouraged to use Bitwarden to securely store passwords related to their pyOpenSci work, including access to Google Workspace services, Slack, and Canva.
 
-* **For the organization:** Bitwarden manages shared login access to accounts where only one organizational account is needed, such as Eventbrite and Buffer. Authorized team members can access these shared credentials as necessary.
+* **For the organization:** Bitwarden is used to manage pyOpenSci accounts where only one organizational account is needed, such as Eventbrite, Buffer, and social media accounts. pyOpenSci has an organization account in BitWarden that staff can be added to for access to these shared accounts.

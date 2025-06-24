@@ -1,13 +1,13 @@
 (social-platforms)=
-# External Communication & Social Media
+# Communication & Social Media
 
 pyOpenSci uses several popular social channels and platforms to connect with the
 community including:
 
-* social media accounts on BlueSky and Mastodon
-* LinkedIn
+* Social media accounts on [BlueSky](https://bsky.app/profile/pyopensci.org) and [Mastodon](https://fosstodon.org/@pyOpenSci)
+* LinkedIn: https://www.linkedin.com/company/pyOpenSci
 * A blog on our [organization's website](https://www.pyopensci.org/blog)
-* YouTube
+* [YouTube](https://www.youtube.com/@pyopensci)
 
 (buffer)=
 ## Buffer for scheduled social media posts
@@ -15,7 +15,7 @@ community including:
 [Buffer](https://buffer.com/) is a [social media](https://www.pyopensci.org/handbook/community/social.html) platform that makes it easy to schedule, track, and collaborate on social media posts. While Buffer supports a host of platforms, pyOpenSci currently uses Buffer for
 * [Fosstodon](https://fosstodon.org/@pyOpenSci),
 * [Bluesky](https://bsky.app/profile/pyopensci.bsky.social), and
-* [LinkedIn](https://www.linkedin.com/company/pyOpenSci).
+* LinkedIn: https://www.linkedin.com/company/pyOpenSci
 
 Buffer is great for tracking some analtics and scheduling posts. However, generally, Buffer also has some challenges
 
@@ -26,10 +26,9 @@ Buffer is generally a great time-saving tool for pyOpenSci, especially when we d
 
 [Learn more about our social platforms here.](community-social)
 
-
 ## Linktree
 
-Linktree is a social media landing page that allows users to share multiple links from a single page, which is useful for landing pages on social media sites that provide limited space for external links.
+Linktree is a social media landing page that enables users to share multiple links from a single page, making it particularly useful for landing pages on social media sites that offer limited space for external links.
 
 Our active sites, platforms, and social media accounts are documented in a Linktr.ee account. The [Linktr.ee link](https://linktr.ee/pyopensci) is shared in the **Description** of our social media sites.
 
