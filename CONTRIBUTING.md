@@ -16,7 +16,7 @@ GitHub organization](https://github.com/pyopensci).
 
 ## High-level guidelines
 
-1. Anyone contributing to pyOpenSci must follow our [organization-wide code of conduct](https://www.pyopensci.org/governance/CODE_OF_CONDUCT.html).
+1. Anyone contributing to pyOpenSci must follow our [organization-wide code of conduct](https://www.pyopensci.org/handbook/CODE_OF_CONDUCT.html).
 2. Please open an issue before submitting a pull request with new or revised content. Issues will allow us to discuss the changes with you before submitting them. Submitting an issue first will expedite the speed at which your pull request is merged.
 
 - In some instances, if your pull request is a simple fix of a link or typo, we may accept it without an issue being opened.
@@ -67,7 +67,7 @@ in the `CONTRIBUTING.md` file for that specific repository.
 
 ### Development guide our guidebooks
 
-This repo (governance), our peer review guide and python packaging guidebook are built using the `pydata_sphinx_theme`. We have created builds
+This repo (handbook), our peer review guide and python packaging guidebook are built using the `pydata_sphinx_theme`. We have created builds
 for those repositories using `nox`.
 
 If you wish to contribute by working on the guide book locally, you
