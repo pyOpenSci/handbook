@@ -8,9 +8,9 @@ related to governance and operations.
 There are two levels of leadership described below.
 The first is the organizational level. The second is program level.
 
-## Governing Committees
+## Governing committees
 
-### Executive Council
+### Executive council
 
 The [Executive Council](pyos-executive-council) defines and steers the high-level
 mission, vision and values of pyOpenSci. It also sets the strategic direction and vision for the organization.
@@ -42,7 +42,7 @@ on the high-level goals of pyOpenSci programs.
 
 (executive-director)=
 
-### Executive Director
+### Executive director
 
 The Executive Director creates and oversees the execution of the mission and
 strategy of pyOpenSci supported by the Advisory Committee. The Executive Director
@@ -64,7 +64,7 @@ will take on other responsibilities including:
 
 :::{todo}
 
-### Community Manager
+### Community manager
 
 The Community Manager is a future position to be created within the pyOpenSci
 organization. This position will:
@@ -82,15 +82,20 @@ The Community Manager is a paid position in the pyOpenSci organization.
 
 Several roles and groups drive the peer review process:
 
-### Software review lead
+### Peer review lead
 
-This role is responsible for overseeing the entire software review process. They are responsible for:
+The peer review lead is responsible for overseeing the entire software review process. They are responsible for:
 
-- ensuring a diverse and active editorial board infrastructure development to support peer review
-- Maintaining the contributing guide
+- Ensuring a diverse and active [editorial board](peer-review-editorial-board)
+- Onboarding and offboarding new editors
+- Maintaining the [pyOpenSci Software Peer Review Guide](https://www.pyopensci.org/software-peer-review/)
+- Updating [software peer review policies](https://www.pyopensci.org/software-peer-review/our-process/policies.html) as needed
+- Helping editors find reviewers as necessary.
 
 This role will also help manage conflict if it arises in the peer review process.
+The peer review lead role is currently held by the pyOpenSci Executive Director
 
+(peer-review-editorial-board)=
 ### Peer review editorial board
 
 [Click here to view the current editorial board](https://www.pyopensci.org/about-peer-review/#our-editorial-board)
