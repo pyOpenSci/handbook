@@ -19,7 +19,7 @@
 <meta name="description" content="This page describes the organizational structure of pyOpenSci as they related to governance and operations. There are two levels of leadership described below. The first is the organizational level..." />
 <meta name="twitter:card" content="summary_large_image" />
     <link href="https://www.pyopensci.org/images/favicon.ico" rel="icon" type="image/x-icon">
-    <meta property="article:modified_time" content="2025-08-20T23:38:17+00:00" />
+    <meta property="article:modified_time" content="2025-12-17T22:24:15+00:00" />
     <title>Organization Structure and Leadership &#8212; pyOpenSci Handbook</title>
   
   
@@ -72,7 +72,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-    <meta name="docbuild:last-update" content="Aug 20, 2025"/>
+    <meta name="docbuild:last-update" content="Dec 17, 2025"/>
   </head>
   
   
@@ -566,8 +566,8 @@
 related to governance and operations.</p>
 <p>There are two levels of leadership described below.
 The first is the organizational level. The second is program level.</p>
-<section id="governing-committees">
-<h2>Governing committees<a class="headerlink" href="#governing-committees" title="Link to this heading">#</a></h2>
+<section id="governing-councils">
+<h2>Governing councils<a class="headerlink" href="#governing-councils" title="Link to this heading">#</a></h2>
 <section id="executive-council">
 <h3>Executive council<a class="headerlink" href="#executive-council" title="Link to this heading">#</a></h3>
 <p>The <a class="reference internal" href="executive-council.html#pyos-executive-council"><span class="std std-ref">Executive Council</span></a> defines and steers the high-level
@@ -616,24 +616,89 @@ will take on other responsibilities including:</p>
 </ul>
 </section>
 </section>
+<section id="infrastructure-and-operations-teams">
+<h2>Infrastructure and operations teams<a class="headerlink" href="#infrastructure-and-operations-teams" title="Link to this heading">#</a></h2>
+<p>The roles in this section are largely volunteer roles with a few leadership
+positions becoming stipend based.</p>
+<section id="pyopensci-repository-maintainers">
+<span id="pyopensci-maintainers"></span><h3>pyOpenSci repository maintainers<a class="headerlink" href="#pyopensci-repository-maintainers" title="Link to this heading">#</a></h3>
+<p>The pyOpenSci maintainers team is responsible for the day-to-day
+operational maintenance of pyOpenSci’s infrastructure and repositories.
+This team:</p>
+<ul class="simple">
+<li><p>Triage open issues across pyOpenSci repositories</p></li>
+<li><p>Approve and merge routine updates including:</p>
+<ul>
+<li><p>Dependabot pull requests</p></li>
+<li><p>Pre-commit CI updates</p></li>
+</ul>
+</li>
+<li><p>Approve and merge automated data file updates:</p>
+<ul>
+<li><p>Automated data file updates. Our <a class="reference external" href="https://www.pyopensci.org/metrics">metrics</a> and <a class="reference external" href="https://github.com/pyopensci.github.io/">website</a> are updated automatically using a GitHub action workflow that is supported by the pyosMeta Python package discussed above. A cron job runs this workflow daily to weekly and opens a pr. These pr’s can be updated at whatever frequency is needed but should be updated at least once or twice a month.</p></li>
+</ul>
+</li>
+<li><p>Ensure the smooth operation of pyOpenSci’s technical infrastructure</p></li>
+</ul>
+<section id="triaging-issues-and-pull-requests">
+<h4>Triaging issues and pull requests<a class="headerlink" href="#triaging-issues-and-pull-requests" title="Link to this heading">#</a></h4>
+<p>Maintainers can triage open issues and pull requests as they have time.
+When triaging issues:</p>
+<ul class="simple">
+<li><p><strong>High priority items</strong>: Flag high-priority issues with an appropriate
+priority label (e.g., <code class="docutils literal notranslate"><span class="pre">priority:</span> <span class="pre">high</span></code>).</p></li>
+<li><p><strong>Community-contributable issues</strong>: For issues that community members
+could work on:</p>
+<ul>
+<li><p>Add the <code class="docutils literal notranslate"><span class="pre">help-wanted</span></code> label if the issue is suitable for community
+contribution</p></li>
+<li><p>Add the <code class="docutils literal notranslate"><span class="pre">sprintable</span></code> label if the issue is suitable for sprint events</p></li>
+<li><p>Add the issue to the <a class="reference external" href="https://github.com/orgs/pyOpenSci/projects/3">pyOpenSci help-wanted project
+board</a></p></li>
+<li><p>Post about the issue in the <code class="docutils literal notranslate"><span class="pre">#open-source-general-chat</span></code> Slack channel
+to bring community attention to it</p></li>
+</ul>
+</li>
+</ul>
+<p>Issues with the <code class="docutils literal notranslate"><span class="pre">help-wanted</span></code> or <code class="docutils literal notranslate"><span class="pre">sprintable</span></code> labels are automatically
+added to the help-wanted project board, which serves as a central location
+for community members to find opportunities to contribute.</p>
+<p>For information about GitHub team membership and repository access,
+see the <a class="reference internal" href="../community/infrastructure/permissions.html#pyopensci-maintainers-permissions"><span class="std std-ref">pyOpenSci maintainers team section</span></a>
+in our permissions documentation.</p>
+<p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/pyopensci-repository-maintainers">Click here to view the pyOpenSci maintainers GitHub
+team</a></p>
+</section>
+</section>
+</section>
 <section id="open-peer-review-program-program-level-leadership-structure">
-<h2>Open peer review program: Program-level leadership structure<a class="headerlink" href="#open-peer-review-program-program-level-leadership-structure" title="Link to this heading">#</a></h2>
+<h2>Open peer review program: program-level leadership structure<a class="headerlink" href="#open-peer-review-program-program-level-leadership-structure" title="Link to this heading">#</a></h2>
 <p>Several roles and groups drive the peer review process:</p>
 <section id="peer-review-lead">
-<h3>Peer review lead<a class="headerlink" href="#peer-review-lead" title="Link to this heading">#</a></h3>
-<p>The peer review lead is responsible for overseeing the entire software review process. They are responsible for:</p>
+<span id="id3"></span><h3>Peer review lead<a class="headerlink" href="#peer-review-lead" title="Link to this heading">#</a></h3>
+<p>The peer review lead is responsible for overseeing the entire software
+review process. They are responsible for:</p>
 <ul class="simple">
 <li><p>Ensuring a diverse and active <a class="reference internal" href="#peer-review-editorial-board"><span class="std std-ref">editorial board</span></a></p></li>
 <li><p>Onboarding and offboarding new editors</p></li>
-<li><p>Maintaining the <a class="reference external" href="https://www.pyopensci.org/software-peer-review/">pyOpenSci Software Peer Review Guide</a></p></li>
-<li><p>Updating <a class="reference external" href="https://www.pyopensci.org/software-peer-review/our-process/policies.html">software peer review policies</a> as needed</p></li>
-<li><p>Helping editors find reviewers as necessary.</p></li>
+<li><p>Maintaining the <a class="reference external" href="https://www.pyopensci.org/software-peer-review/">pyOpenSci Software Peer Review
+Guide</a></p></li>
+<li><p>Updating <a class="reference external" href="https://www.pyopensci.org/software-peer-review/our-process/policies.html">software peer review
+policies</a>
+as needed</p></li>
+<li><p>Helping editors find reviewers as necessary</p></li>
+<li><p>Keeping the review process moving forward by checking in on stalled
+reviews and supporting the editorial team</p></li>
+<li><p>Managing conflicts that may arise in the software peer review process</p></li>
 </ul>
-<p>This role will also help manage conflict if it arises in the peer review process.
-The peer review lead role is currently held by the pyOpenSci Executive Director</p>
+<p>The peer review lead role is currently held by the pyOpenSci Executive
+Director.</p>
+<p><a class="reference external" href="https://www.pyopensci.org/software-peer-review/how-to/peer-review-lead.html">More detailed guidance for the peer review lead role can be found in
+the pyOpenSci Software Peer Review
+Guide</a>.</p>
 </section>
 <section id="peer-review-editorial-board">
-<span id="id3"></span><h3>Peer review editorial board<a class="headerlink" href="#peer-review-editorial-board" title="Link to this heading">#</a></h3>
+<span id="id4"></span><h3>Peer review editorial board<a class="headerlink" href="#peer-review-editorial-board" title="Link to this heading">#</a></h3>
 <p><a class="reference external" href="https://www.pyopensci.org/about-peer-review/#our-editorial-board">Click here to view the current editorial board</a></p>
 <p>The peer review editorial board is a group of volunteers who are
 advocates for open source software peer review. This
@@ -650,7 +715,7 @@ These decisions including but are not limited to:</p>
 <a class="reference external" href="https://www.pyopensci.org/about-peer-review/#our-editorial-board">editorial board can be found here.</a></p>
 </section>
 <section id="editor-in-chief">
-<h3>Editor in Chief<a class="headerlink" href="#editor-in-chief" title="Link to this heading">#</a></h3>
+<h3>Editor in chief<a class="headerlink" href="#editor-in-chief" title="Link to this heading">#</a></h3>
 <p>The Editor in Chief role is a rotating position
 that is held by someone on the editorial board. <a class="reference external" href="https://www.pyopensci.org/software-peer-review/how-to/editor-in-chief-guide.html">More on this position can be
 found in the pyOpenSci software peer review guide here.</a></p>
@@ -681,7 +746,7 @@ legal services, including 501(c)(3) status and financial management.</p>
                   <div class="footer-article-items footer-article__inner">
   
     <div class="footer-article-item"><hr>
-<p style="font-size: small; color: #888;">Last updated: Aug 20, 2025</p></div>
+<p style="font-size: small; color: #888;">Last updated: Dec 17, 2025</p></div>
   
 </div>
                 </footer>
@@ -728,7 +793,7 @@ legal services, including 501(c)(3) status and financial management.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#governing-committees">Governing committees</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#governing-councils">Governing councils</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#executive-council">Executive council</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyopensci-advisory-council">pyOpenSci advisory council</a></li>
 </ul>
@@ -737,10 +802,17 @@ legal services, including 501(c)(3) status and financial management.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#executive-director">Executive director</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-peer-review-program-program-level-leadership-structure">Open peer review program: Program-level leadership structure</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#infrastructure-and-operations-teams">Infrastructure and operations teams</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyopensci-repository-maintainers">pyOpenSci repository maintainers</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#triaging-issues-and-pull-requests">Triaging issues and pull requests</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-peer-review-program-program-level-leadership-structure">Open peer review program: program-level leadership structure</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#peer-review-lead">Peer review lead</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#peer-review-editorial-board">Peer review editorial board</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editor-in-chief">Editor in Chief</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editor-in-chief">Editor in chief</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#volunteer-reviewers">Volunteer reviewers</a></li>
 </ul>
 </li>

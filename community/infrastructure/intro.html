@@ -11,15 +11,15 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.pyopensci.org/handbook/community/infrastructure/intro.html" />
 <meta property="og:site_name" content="pyOpenSci Python Package Guide" />
-<meta property="og:description" content="pyOpenSci uses GitHub to manage almost all of its infrastructure, from community processes to website rendering. This page provides an overview of our core repositories, how they work together, and..." />
+<meta property="og:description" content="pyOpenSci uses GitHub to manage almost all of its infrastructure, from community processes to website rendering. This page provides a high-level overview of our infrastructure, focusing on how our ..." />
 <meta property="og:image:width" content="1146" />
 <meta property="og:image:height" content="600" />
-<meta property="og:image" content="https://www.pyopensci.org/handbook/_images/social_previews/summary_community_infrastructure_intro_8a5338e1.png" />
-<meta property="og:image:alt" content="pyOpenSci uses GitHub to manage almost all of its infrastructure, from community processes to website rendering. This page provides an overview of our core repositories, how they work together, and..." />
-<meta name="description" content="pyOpenSci uses GitHub to manage almost all of its infrastructure, from community processes to website rendering. This page provides an overview of our core repositories, how they work together, and..." />
+<meta property="og:image" content="https://www.pyopensci.org/handbook/_images/social_previews/summary_community_infrastructure_intro_fcdd53c8.png" />
+<meta property="og:image:alt" content="pyOpenSci uses GitHub to manage almost all of its infrastructure, from community processes to website rendering. This page provides a high-level overview of our infrastructure, focusing on how our ..." />
+<meta name="description" content="pyOpenSci uses GitHub to manage almost all of its infrastructure, from community processes to website rendering. This page provides a high-level overview of our infrastructure, focusing on how our ..." />
 <meta name="twitter:card" content="summary_large_image" />
     <link href="https://www.pyopensci.org/images/favicon.ico" rel="icon" type="image/x-icon">
-    <meta property="article:modified_time" content="2025-06-05T21:33:58+00:00" />
+    <meta property="article:modified_time" content="2025-12-17T22:24:15+00:00" />
     <title>pyOpenSci Infrastructure &#8212; pyOpenSci Handbook</title>
   
   
@@ -61,14 +61,6 @@
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.1.4/dist/mermaid-layout-elk.esm.min.mjs"></script>
-    <script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs";import elkLayouts from "https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0.1.4/dist/mermaid-layout-elk.esm.min.mjs";mermaid.registerLayoutLoaders(elkLayouts);mermaid.initialize({startOnLoad:false});</script>
-    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
-    <script type="module">
-import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.2.0/dist/mermaid.esm.min.mjs";
-window.addEventListener("load", () => mermaid.run());
-</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'community/infrastructure/intro';</script>
     <script src="../../_static/matomo.js?v=918da087"></script>
     <link rel="canonical" href="https://www.pyopensci.org/handbook/community/infrastructure/intro.html" />
@@ -80,7 +72,7 @@ window.addEventListener("load", () => mermaid.run());
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-    <meta name="docbuild:last-update" content="Jun 05, 2025"/>
+    <meta name="docbuild:last-update" content="Dec 17, 2025"/>
   </head>
   
   
@@ -538,44 +530,57 @@ window.addEventListener("load", () => mermaid.run());
   <section id="pyopensci-infrastructure">
 <span id="github-intro"></span><h1>pyOpenSci Infrastructure<a class="headerlink" href="#pyopensci-infrastructure" title="Link to this heading">#</a></h1>
 <p>pyOpenSci uses GitHub to manage almost all of its infrastructure, from community processes to website rendering.
-This page provides an overview of our core repositories, how they work together, and how they contribute to the website and community operations.</p>
-<p><a class="reference internal" href="our-repositories.html#github-repos-overview"><span class="std std-ref">Learn more about all of our repos here.</span></a></p>
-<pre  class="mermaid">
-        %%{ init: { &quot;theme&quot;: &quot;default&quot;, &quot;themeVariables&quot;: { &quot;fontSize&quot;: &quot;200%&quot; } } }%%
-
-flowchart TD
-
-    %% Note above Software Review
-    Note[&quot;Peer review happens&lt;br&gt;in GitHub issues&quot;]
-
-    %% Top: software-review repo
-    A(&lt;b&gt;Software Review&lt;/b&gt;&lt;br&gt;&lt;sub&gt;github.com/pyOpenSci/software-review&lt;/sub&gt;) --&gt; B{{pyosMeta&lt;br&gt;&lt;sub&gt;github.com/pyOpenSci/pyosMeta&lt;/sub&gt;&lt;br&gt;&lt;i&gt;A Python package that processes review&lt;br&gt;and contributor data and creates YML files&lt;/i&gt;}}
-    C(&lt;b&gt;pyOpenSci Website&lt;/b&gt;&lt;br&gt;&lt;sub&gt;pyopensci.github.io&lt;/sub&gt;)
-    A --&gt; |&quot;pyosMeta parses review issues&lt;br&gt;and contributor metadata&lt;br&gt;to create YAML files&quot;| B
-    B --&gt; |&quot;_data/contributors.yml &amp; packages.yml are used to populate website package and contributor pages.&quot;| C
-
-    %% Website outputs to 4 child &quot;books&quot;
-    C --&gt; D1(Handbook&lt;br&gt;&lt;sub&gt;github.com/pyOpenSci/handbook&lt;br&gt;SPHINX&lt;/sub&gt;)
-    C --&gt; D2(Python Package Guide&lt;br&gt;&lt;sub&gt;github.com/pyOpenSci/python-package-guide&lt;br&gt;SPHINX&lt;/sub&gt;)
-    C --&gt; D3(Software Peer Review Guide&lt;br&gt;&lt;sub&gt;github.com/pyOpenSci/software-peer-review-guidebook&lt;br&gt;SPHINX&lt;/sub&gt;)
-    C --&gt; D4(Lessons&lt;br&gt;&lt;sub&gt;github.com/pyOpenSci/software-peer-review-guidebook&lt;br&gt;SPHINX&lt;/sub&gt;)
-    C --&gt; D5(Peer Review Metrics&lt;br&gt;&lt;sub&gt;github.com/pyOpenSci/peer-review-metrics&lt;br&gt;QUARTO&lt;/sub&gt;)
-
-    %% Style for Website box (light purple)
-    style C fill:#f3e8ff,stroke:#7e22ce,stroke-width:1px
-    style B fill:#fef9c3,stroke:#ca8a04,stroke-width:1px
-    style Note fill:#f3f4f6,stroke:#9ca3af,stroke-width:1px
-
-    </pre><section id="pyopensci-data-flow-and-continuous-integration">
-<h2>pyOpenSci data flow and continuous integration<a class="headerlink" href="#pyopensci-data-flow-and-continuous-integration" title="Link to this heading">#</a></h2>
+This page provides a <strong>high-level overview</strong> of our infrastructure, focusing on how our core repositories work together and contribute to the website and community operations.</p>
+<p>For detailed information about specific infrastructure components, see the <a class="reference internal" href="#learn-more">Learn more</a> section below.</p>
+<section id="what-is-pyopensci-infrastructure">
+<h2>What is pyOpenSci infrastructure?<a class="headerlink" href="#what-is-pyopensci-infrastructure" title="Link to this heading">#</a></h2>
+<p>pyOpenSci infrastructure encompasses:</p>
+<ul class="simple">
+<li><p><strong>GitHub repositories:</strong> All code, content, and documentation repositories</p></li>
+<li><p><strong>Website and documentation:</strong> Main website and sub-sites (handbook, guides, lessons)</p></li>
+<li><p><strong>Data processing:</strong> Automated collection and processing of contributor and peer review data</p></li>
+<li><p><strong>Continuous Integration (CI):</strong> GitHub Actions workflows for testing, building, and deploying</p></li>
+<li><p><strong>Access and permissions:</strong> Repository access management and team structures</p></li>
+<li><p><strong>Issue and pull request workflows:</strong> Processes for managing contributions and reviews</p></li>
+</ul>
+</section>
+<section id="infrastructure-overview-diagrams">
+<h2>Infrastructure overview diagrams<a class="headerlink" href="#infrastructure-overview-diagrams" title="Link to this heading">#</a></h2>
+<p>The diagrams below illustrate two key aspects of our infrastructure:</p>
+<section id="data-flow-and-processing">
+<h3>Data flow and processing<a class="headerlink" href="#data-flow-and-processing" title="Link to this heading">#</a></h3>
+<p>The first diagram shows how peer review data is extracted from GitHub issues through our automated processing system to update the website:</p>
+<figure class="align-default" id="website-diagram">
+<img alt="../../_images/website-diagram.svg" src="../../_images/website-diagram.svg" />
+<figcaption>
+<p><span class="caption-text">pyOpenSci infrastructure data flow diagram showing how peer review issues are processed through pyosMeta to update the website.</span><a class="headerlink" href="#website-diagram" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>This diagram illustrates the automated workflow: peer review happens in GitHub issues, which are parsed by scripts in the <code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code> package to generate YAML files that automatically update the website’s package and contributor pages.</p>
+</section>
+<section id="website-structure">
+<h3>Website structure<a class="headerlink" href="#website-structure" title="Link to this heading">#</a></h3>
+<p>The second diagram shows how the main pyOpenSci website connects to its sub-sites:</p>
+<figure class="align-default" id="website-repositories-structure">
+<img alt="../../_images/website-repositories-structure.svg" src="../../_images/website-repositories-structure.svg" />
+<figcaption>
+<p><span class="caption-text">pyOpenSci website structure diagram showing the main website and its sub-sites (Handbook, Python Package Guide, Software Peer Review Guide, Lessons, and Metrics).</span><a class="headerlink" href="#website-repositories-structure" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>All sub-sites are built separately but served under the <code class="docutils literal notranslate"><span class="pre">pyopensci.org</span></code> domain, with the main website (<code class="docutils literal notranslate"><span class="pre">pyopensci.github.io</span></code>) serving as the central hub.</p>
+</section>
+</section>
+<section id="data-flow-and-continuous-integration">
+<h2>Data flow and continuous integration<a class="headerlink" href="#data-flow-and-continuous-integration" title="Link to this heading">#</a></h2>
+<p>In simple terms: pyOpenSci uses automated workflows to collect data from GitHub and automatically update our website.</p>
 <p>pyOpenSci uses a set of <strong>Continuous Integration (CI)</strong> jobs (GitHub Actions) to:</p>
 <ul class="simple">
 <li><p>Collect data from our open peer review process</p></li>
 <li><p>Collect contributor data from across all of our GitHub repositories</p></li>
 </ul>
 <p>The <a class="reference external" href="https://github.com/pyOpenSci/pyosMeta"><code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code></a> package is a Python package that <strong>parses review and contributor data</strong> and transforms it into <strong>machine-readable YAML files</strong> used by our website.</p>
-<section id="summary-of-flow">
-<h3>Summary of flow<a class="headerlink" href="#summary-of-flow" title="Link to this heading">#</a></h3>
+<section id="how-data-flows-through-our-system">
+<h3>How data flows through our system<a class="headerlink" href="#how-data-flows-through-our-system" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code> parses the <strong>Markdown data</strong> within review issues in the <a class="reference external" href="https://github.com/pyOpenSci/software-review"><code class="docutils literal notranslate"><span class="pre">software-review</span></code></a> GitHub repository. It:</p>
 <ul>
@@ -598,15 +603,28 @@ flowchart TD
 </ul>
 </li>
 </ul>
+<p>For more detailed information about data collection and processing, see the <a class="reference internal" href="data-process.html"><span class="doc std std-doc">Data Workflows</span></a> page.</p>
 </section>
-<section id="sphinx-books-and-publishing">
-<h3>Sphinx books and publishing<a class="headerlink" href="#sphinx-books-and-publishing" title="Link to this heading">#</a></h3>
+<section id="website-publishing">
+<h3>Website publishing<a class="headerlink" href="#website-publishing" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>The <strong>Python Package Guide</strong>, <strong>Peer Review Guide</strong>, and <strong>Handbook</strong> are all <strong>Sphinx books</strong> that use the <code class="docutils literal notranslate"><span class="pre">pydata_sphinx_theme</span></code>. These books are built separately but are served under the <code class="docutils literal notranslate"><span class="pre">pyopensci.org</span></code> domain.</p></li>
 <li><p>All Sphinx books use the <a class="reference external" href="https://github.com/pyOpenSci/pyos-sphinx-theme%60"><code class="docutils literal notranslate"><span class="pre">pyos-sphinx-theme</span></code></a>, which is a Sphinx theme built on top of <code class="docutils literal notranslate"><span class="pre">pydata_sphinx_theme</span></code>.</p></li>
 <li><p>The final site is published at <a class="reference external" href="https://www.pyopensci.org">pyopensci.org</a> using <strong>GitHub Pages</strong>.</p></li>
 </ul>
 </section>
+</section>
+<section id="learn-more">
+<h2>Learn more<a class="headerlink" href="#learn-more" title="Link to this heading">#</a></h2>
+<p>This page provides a high-level overview. For detailed information about specific infrastructure components, see:</p>
+<ul class="simple">
+<li><p><strong><a class="reference internal" href="our-repositories.html"><span class="doc std std-doc">All repositories</span></a>:</strong> Complete list and description of all pyOpenSci GitHub repositories</p></li>
+<li><p><strong><a class="reference internal" href="data-process.html"><span class="doc std std-doc">Data workflows</span></a>:</strong> Detailed information about data collection and processing</p></li>
+<li><p><strong><a class="reference internal" href="continuous-integration.html"><span class="doc std std-doc">Continuous Integration</span></a>:</strong> CI/CD workflows and GitHub Actions</p></li>
+<li><p><strong><a class="reference internal" href="permissions.html"><span class="doc std std-doc">Permissions</span></a>:</strong> Repository access management and team structures</p></li>
+<li><p><strong><a class="reference internal" href="pull-requests.html"><span class="doc std std-doc">Pull requests</span></a>:</strong> How to work with pull requests in pyOpenSci repos</p></li>
+<li><p><strong><a class="reference internal" href="issues.html"><span class="doc std std-doc">Issues</span></a>:</strong> Issue management and labeling workflows</p></li>
+</ul>
 </section>
 </section>
 
@@ -619,7 +637,7 @@ flowchart TD
                   <div class="footer-article-items footer-article__inner">
   
     <div class="footer-article-item"><hr>
-<p style="font-size: small; color: #888;">Last updated: Jun 05, 2025</p></div>
+<p style="font-size: small; color: #888;">Last updated: Dec 17, 2025</p></div>
   
 </div>
                 </footer>
@@ -666,11 +684,18 @@ flowchart TD
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyopensci-data-flow-and-continuous-integration">pyOpenSci data flow and continuous integration</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-of-flow">Summary of flow</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sphinx-books-and-publishing">Sphinx books and publishing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-pyopensci-infrastructure">What is pyOpenSci infrastructure?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#infrastructure-overview-diagrams">Infrastructure overview diagrams</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-flow-and-processing">Data flow and processing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#website-structure">Website structure</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-flow-and-continuous-integration">Data flow and continuous integration</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-data-flows-through-our-system">How data flows through our system</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#website-publishing">Website publishing</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
 </ul>
   </nav></div>
 
