@@ -2,9 +2,28 @@
 # pyOpenSci Infrastructure
 
 pyOpenSci uses GitHub to manage almost all of its infrastructure, from community processes to website rendering.
-This page provides an overview of our core repositories, how they work together, and how they contribute to the website and community operations.
+This page provides a **high-level overview** of our infrastructure, focusing on how our core repositories work together and contribute to the website and community operations.
 
-[Learn more about all of our repos here.](github-repos-overview)
+For detailed information about specific infrastructure components, see the [Learn more](#learn-more) section below.
+
+## What is pyOpenSci infrastructure?
+
+pyOpenSci infrastructure encompasses:
+
+* **GitHub repositories:** All code, content, and documentation repositories
+* **Website and documentation:** Main website and sub-sites (handbook, guides, lessons)
+* **Data processing:** Automated collection and processing of contributor and peer review data
+* **Continuous Integration (CI):** GitHub Actions workflows for testing, building, and deploying
+* **Access and permissions:** Repository access management and team structures
+* **Issue and pull request workflows:** Processes for managing contributions and reviews
+
+## Infrastructure overview diagrams
+
+The diagrams below illustrate two key aspects of our infrastructure:
+
+### Data flow and processing
+
+The first diagram shows how peer review data is extracted from GitHub issues through our automated processing system to update the website:
 
 ```{figure} /images/diagrams/website-diagram.svg
 :name: website-diagram
@@ -12,13 +31,23 @@ This page provides an overview of our core repositories, how they work together,
 pyOpenSci infrastructure data flow diagram showing how peer review issues are processed through pyosMeta to update the website.
 ```
 
+This diagram illustrates the automated workflow: peer review happens in GitHub issues, which are parsed by scripts in the `pyosMeta` package to generate YAML files that automatically update the website's package and contributor pages.
+
+### Website structure
+
+The second diagram shows how the main pyOpenSci website connects to its sub-sites:
+
 ```{figure} /images/diagrams/website-repositories-structure.svg
 :name: website-repositories-structure
 
 pyOpenSci website structure diagram showing the main website and its sub-sites (Handbook, Python Package Guide, Software Peer Review Guide, Lessons, and Metrics).
 ```
 
-## pyOpenSci data flow and continuous integration
+All sub-sites are built separately but served under the `pyopensci.org` domain, with the main website (`pyopensci.github.io`) serving as the central hub.
+
+## Data flow and continuous integration
+
+In simple terms: pyOpenSci uses automated workflows to collect data from GitHub and automatically update our website.
 
 pyOpenSci uses a set of **Continuous Integration (CI)** jobs (GitHub Actions) to:
 
@@ -27,7 +56,7 @@ pyOpenSci uses a set of **Continuous Integration (CI)** jobs (GitHub Actions) to
 
 The [`pyosMeta`](https://github.com/pyOpenSci/pyosMeta) package is a Python package that **parses review and contributor data** and transforms it into **machine-readable YAML files** used by our website.
 
-### Summary of flow
+### How data flows through our system
 
 * `pyosMeta` parses the **Markdown data** within review issues in the [`software-review`](https://github.com/pyOpenSci/software-review) GitHub repository. It:
   * Gathers review editors, reviewers, and maintainers’ GitHub usernames, and uses the GitHub API to retrieve contributor names, emails, and other public GitHub profile information
@@ -43,8 +72,21 @@ The [`pyosMeta`](https://github.com/pyOpenSci/pyosMeta) package is a Python pack
   * The **Our Community** page
   * The **Packages** page
 
-### Sphinx books and publishing
+For more detailed information about data collection and processing, see the [Data Workflows](infrastructure/data-process) page.
+
+### Website publishing
 
 * The **Python Package Guide**, **Peer Review Guide**, and **Handbook** are all **Sphinx books** that use the `pydata_sphinx_theme`. These books are built separately but are served under the `pyopensci.org` domain.
 * All Sphinx books use the [`pyos-sphinx-theme`](https://github.com/pyOpenSci/pyos-sphinx-theme`), which is a Sphinx theme built on top of `pydata_sphinx_theme`.
 * The final site is published at [pyopensci.org](https://www.pyopensci.org) using **GitHub Pages**.
+
+## Learn more
+
+This page provides a high-level overview. For detailed information about specific infrastructure components, see:
+
+* **[All repositories](infrastructure/our-repositories):** Complete list and description of all pyOpenSci GitHub repositories
+* **[Data workflows](infrastructure/data-process):** Detailed information about data collection and processing
+* **[Continuous Integration](infrastructure/continuous-integration):** CI/CD workflows and GitHub Actions
+* **[Permissions](infrastructure/permissions):** Repository access management and team structures
+* **[Pull requests](infrastructure/pull-requests):** How to work with pull requests in pyOpenSci repos
+* **[Issues](infrastructure/issues):** Issue management and labeling workflows
