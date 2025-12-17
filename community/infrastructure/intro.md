@@ -6,58 +6,16 @@ This page provides an overview of our core repositories, how they work together,
 
 [Learn more about all of our repos here.](github-repos-overview)
 
-```{mermaid}
-%%{ init: { "theme": "default", "themeVariables": { "fontSize": "240%", "fontFamily": "Poppins, sans-serif", "primaryColor": "#ffffff", "primaryTextColor": "#ffffff", "primaryBorderColor": "#33205c", "lineColor": "#33205c", "secondaryColor": "#ffffff", "tertiaryColor": "#ffffff", "background": "#ffffff", "mainBkgColor": "#ffffff", "secondBkgColor": "#ffffff", "edgeLabelBackground": "#ffffff" } } }%%
+```{figure} /images/diagrams/website-diagram.svg
+:name: website-diagram
 
-flowchart TD
-
-    %% Note above Software Review - larger box with grey background
-    Note["<div style='min-width: 400px; padding: 12px;'><span style='font-size:1.2em'><b>Peer review happens<br>in GitHub issues</b></span></div>"]
-
-    %% Top: software-review repo - using wider format (40% increase)
-    A["<div style='min-width: 525px; padding: 12px;'><span style='font-size:1.3em'><b>Software Review/</b></span><br><span style='font-size:1.1em'>/software-review</span></div>"]
-    B["<div style='min-width: 588px; padding: 12px;'><span style='font-size:1.3em'><b>pyosMeta</b></span><br><span style='font-size:1.1em'>/pyosMeta</span><br><span style='font-size:1.05em'><i>Processes review & contributor data<br>Creates YAML files</i></span></div>"]
-    C["<div style='min-width: 588px; padding: 12px;'><span style='font-size:1.3em'><b>pyOpenSci Website</b></span><br><span style='font-size:1.1em'>pyopensci.github.io</span></div>"]
-
-    Note -.->|"<span style='font-size:1.15em'><b>Peer review process</b></span>"| A
-    A --> |"<span style='font-size:1.15em'><b>Parses review issues<br>& contributor metadata</b></span>"| B
-    B --> |"<span style='font-size:1.15em'><b>Generates YAML files:<br>contributors.yml & packages.yml</b></span>"| C
-
-    %% Styling - white boxes with dark purple borders and text
-    style C fill:#ffffff,stroke:#33205c,stroke-width:3px,color:#33205c
-    style B fill:#ffffff,stroke:#33205c,stroke-width:3px,color:#33205c
-    style A fill:#ffffff,stroke:#33205c,stroke-width:3px,color:#33205c
-    style Note fill:#9ca3af,stroke:#6b7280,stroke-width:3px,color:#1f2937
-
+pyOpenSci infrastructure data flow diagram showing how peer review issues are processed through pyosMeta to update the website.
 ```
 
-```{mermaid}
-%%{ init: { "theme": "default", "themeVariables": { "fontSize": "240%", "fontFamily": "Poppins, sans-serif" } } }%%
+```{figure} /images/diagrams/website-repositories-structure.svg
+:name: website-repositories-structure
 
-flowchart LR
-
-    %% Website on the left
-    C["<div style='min-width: 350px; padding: 8px;'><span style='font-size:1.3em'><b>pyOpenSci Website</b></span><br><span style='font-size:1.08em'><sub>pyopensci.github.io</sub></span></div>"]
-
-    %% Website outputs to 5 child "books" on the right - wider boxes
-    C --> D1["<div style='min-width: 300px; padding: 8px;'><span style='font-size:1.3em'><b>Handbook</b></span><br><span style='font-size:1.08em'><sub>handbook</sub><br>SPHINX</span></div>"]
-    C --> D2["<div style='min-width: 370px; padding: 8px;'><span style='font-size:1.3em'><b>Python Package Guide</b></span><br><span style='font-size:1.08em'><sub>python-package-guide</sub><br>SPHINX</span></div>"]
-    C --> D3["<div style='min-width: 410px; padding: 8px;'><span style='font-size:1.3em'><b>Software Peer Review Guide</b></span><br><span style='font-size:1.08em'><sub>software-peer-review</sub><br>SPHINX</span></div>"]
-    C --> D4["<div style='min-width: 270px; padding: 8px;'><span style='font-size:1.3em'><b>Lessons</b></span><br><span style='font-size:1.08em'><sub>lessons</sub><br>SPHINX</span></div>"]
-    C --> D5["<div style='min-width: 270px; padding: 8px;'><span style='font-size:1.3em'><b>Metrics</b></span><br><span style='font-size:1.08em'><sub>metrics</sub><br>QUARTO</span></div>"]
-
-    %% Styling - Website box (brand purple)
-    style C fill:#bab3d4,stroke:#33205c,stroke-width:3px,color:#1f2937
-
-    %% Styling - Sphinx books (brand purple)
-    style D1 fill:#bab3d4,stroke:#735fab,stroke-width:2px,color:#1f2937
-    style D2 fill:#bab3d4,stroke:#735fab,stroke-width:2px,color:#1f2937
-    style D3 fill:#bab3d4,stroke:#735fab,stroke-width:2px,color:#1f2937
-    style D4 fill:#bab3d4,stroke:#735fab,stroke-width:2px,color:#1f2937
-
-    %% Styling - Quarto (brand magenta to distinguish)
-    style D5 fill:#bb82b0,stroke:#735fab,stroke-width:2px,color:#1f2937
-
+pyOpenSci website structure diagram showing the main website and its sub-sites (Handbook, Python Package Guide, Software Peer Review Guide, Lessons, and Metrics).
 ```
 
 ## pyOpenSci data flow and continuous integration
