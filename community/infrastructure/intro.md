@@ -72,7 +72,7 @@ The [`pyosMeta`](https://github.com/pyOpenSci/pyosMeta) package is a Python pack
   * The **Our Community** page
   * The **Packages** page
 
-For more detailed information about data collection and processing, see the [Data Workflows](infrastructure/data-process) page.
+For more detailed information about data collection and processing, see the [Data Workflows](data-process) page.
 
 ### Website publishing
 
@@ -84,9 +84,9 @@ For more detailed information about data collection and processing, see the [Dat
 
 This page provides a high-level overview. For detailed information about specific infrastructure components, see:
 
-* **[All repositories](infrastructure/our-repositories):** Complete list and description of all pyOpenSci GitHub repositories
-* **[Data workflows](infrastructure/data-process):** Detailed information about data collection and processing
-* **[Continuous Integration](infrastructure/continuous-integration):** CI/CD workflows and GitHub Actions
-* **[Permissions](infrastructure/permissions):** Repository access management and team structures
-* **[Pull requests](infrastructure/pull-requests):** How to work with pull requests in pyOpenSci repos
-* **[Issues](infrastructure/issues):** Issue management and labeling workflows
+* **[All repositories](our-repositories):** Complete list and description of all pyOpenSci GitHub repositories
+* **[Data workflows](data-process):** Detailed information about data collection and processing
+* **[Continuous Integration](continuous-integration):** CI/CD workflows and GitHub Actions
+* **[Permissions](permissions):** Repository access management and team structures
+* **[Pull requests](pull-requests):** How to work with pull requests in pyOpenSci repos
+* **[Issues](issues):** Issue management and labeling workflows
