@@ -29,17 +29,6 @@ pyOpenSci uses [SurveyMonkey](https://www.surveymonkey.com/) to develop and send
 
 pyOpenSci uses [EventBrite](https://eventbrite.com), which is provided by our fiscal sponsor, Community Initiatives, to manage event registration. Anyone who has registered for a pyOpenSci event through EventBrite will be contacted through the EventBrite service regarding event updates and logistics. pyOpenSci may also upload EventBrite contacts to SurveyMonkey to send out pre- and post-event surveys.
 
-
-## Discourse
-
-pyOpenSci also maintains a [public Discourse forum](https://pyopensci.discourse.group/). Unlike Slack, which has restricted access, anyone can join and participate in Discourse. Discourse is a place to announce new packages in our ecosystem, to post messages to the community, as well as to announce meetings and other events. We also want the community to use it to ask questions about peer review and packaging.
-
-:::{important}
-pyOpenSci is currently in the process of sunsetting Discourse as it has not proven to be a heavily used platform for our community. We are currently exploring the use of GitHub discussions.
-:::
-
-
-
 :::{todo}
 
 ## HubSpot
