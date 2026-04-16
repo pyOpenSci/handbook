@@ -8,7 +8,7 @@ pyOpenSci develops and maintains numerous community resources, including:
 - [Python packaging guide](https://github.com/pyOpenSci/python-package-guide)
 - Python [software peer review guide](https://github.com/pyOpenSci/software-peer-review)
 - Our [pyopensci.org website](https://github.com/pyOpenSci/pyopensci.github.io)
-- Our [software review repo](https://github.com/pyOpenSci/software-submission): contains templates templates for software submission and a small CI (Continuous Integration) build
+- Our [software review repo](https://github.com/pyOpenSci/software-submission): contains templates for software submission and a small CI (Continuous Integration) build
 
 This document applies to any of our online content that you
 contribute to. Most of our content lives in the [pyOpenSci
@@ -22,7 +22,7 @@ GitHub organization](https://github.com/pyopensci).
 - In some instances, if your pull request is a simple fix of a link or typo, we may accept it without an issue being opened.
 
 3. If you submit a pull request, please be sure to use a branch in your fork. Do not use your fork's `main` branch to submit a pull request.
-4. Please try to spell check and editor pull requests before opening them in our repository. This will save us time when reviewing your suggested change(s).
+4. Please try to spell-check and edit pull requests before opening them in our repository. This will save us time when reviewing your suggested change(s).
 
 ## Contributor attributions
 
@@ -44,15 +44,15 @@ list](https://www.pyopensci.org/our-community/#pyopensci-community-contributors)
 ## Contributor authorship
 
 We are deeply thankful to everyone who has helped develop and review the pyOpenSci
-online documentation. here, we establish guidelines
+online documentation. Here, we establish guidelines
 for giving credit to contributors for their work.
 
 Our [peer-review-guide](https://zenodo.org/record/7101778) and [packaging-guide](https://zenodo.org/record/7786869) can be cited using a
 Zenodo DOI. As such, we periodically update authorship for those documents prior to a new release.
 
-Every time we make a release, we will review our .zenodo file and contributors for both reviews, edits and other contributions to our content. In many cases because discussions around content happen in other forums - discourse, discord, slack, email, we will do our best to capture all contributors.
+Every time we make a release, we will review our `.zenodo` file and contributors for reviews, edits, and other contributions to our content. In many cases, because discussions around content happen in other forums (Discourse, Discord, Slack, and email), we will do our best to capture all contributors.
 
-Those who have contributed directly to updating the content will be added as authors. Otherwise you will be added as a contributor. Both categories are listed in the zenodo citation.
+Those who have contributed directly to updating the content will be added as authors. Otherwise, you will be added as a contributor. Both categories are listed in the Zenodo citation.
 
 Every time we make a release, everyone who has made a commit to the repository since the previous release will be mentioned in the changelog entry using their GitHub handle. This is a way of saying "Thank you".
 
@@ -65,9 +65,9 @@ Some of our online content may need to be built locally.
 On this general contributing guidelines page, you will only find general contribution guidelines. Each repository contains instructions for local development setup
 in the `CONTRIBUTING.md` file for that specific repository.
 
-### Development guide our guidebooks
+### Development guide for our guidebooks
 
-This repo (handbook), our peer review guide and python packaging guidebook are built using the `pydata_sphinx_theme`. We have created builds
+This repo (handbook), our peer review guide, and Python packaging guidebook are built using the `pydata_sphinx_theme`. We have created builds
 for those repositories using `nox`.
 
 If you wish to contribute by working on the guide book locally, you
@@ -83,7 +83,7 @@ The easiest way to build the documentation in this repository is to use `nox`,
 a tool for quickly building environments and running commands within them.
 Nox ensures that your environment has all the dependencies needed to build the documentation.
 
-If you plan to submit a pull request with changes to the guide, you can chose to submit a pr and view the associated build online in Circle CI. Or you can choose to build the documentation locally to test a pull request.
+If you plan to submit a pull request with changes to the guide, you can choose to submit a PR and view the associated build online in CircleCI. Or you can choose to build the documentation locally to test a pull request.
 
 To build locally, follow these steps:
 
@@ -101,7 +101,7 @@ This should create a local environment in a `.nox` folder, build the documentati
    nox -s docs
    ```
 
-To build live documentation that updates when you update local files, run::
+To build live documentation that updates when you update local files, run:
 
     ```
     nox -s docs-live
@@ -110,14 +110,14 @@ To build live documentation that updates when you update local files, run::
 The `docs-live` command will provide you with a URL that you can enter into your
 browser to see the docs update as you update files.
 
-### CircleCI Previews
+### CircleCI previews
 
 Each book is set up with a GitHub action redirect that will take you to an online
 build of the current pull request in CircleCI. To view the build:
 
 - Click on the GitHub action called `ci/circleci: build_book` after it has run at the bottom of your pull request. This will
-  take you directly to CircleCi.
-- Once in CircleCi, click on the artifacts tab. The home page of the guidebook will be called:
+  take you directly to CircleCI.
+- Once in CircleCI, click on the Artifacts tab. The home page of the guidebook will be called:
 
 `output/index.html`
 
@@ -126,4 +126,4 @@ browser.
 
 ### Website build
 
-Our website is a `jekyll`/`markdown` driven site. Thus, you will need to install `ruby`, and the gems needed to build the website following the contributing guide in our pyopensci.github.io repository.
+Our website is a `Jekyll`/`markdown` driven site. Thus, you will need to install `ruby`, and the gems needed to build the website following the contributing guide in our pyopensci.github.io repository.

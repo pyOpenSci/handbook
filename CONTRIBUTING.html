@@ -19,7 +19,7 @@
 <meta name="description" content="This guide provides high-level contributing guidelines for resources across our organization. You will find specific contributing guidelines in each repository that we maintain. pyOpenSci develops ..." />
 <meta name="twitter:card" content="summary_large_image" />
     <link href="https://www.pyopensci.org/images/favicon.ico" rel="icon" type="image/x-icon">
-    <meta property="article:modified_time" content="2025-07-21T19:54:51+00:00" />
+    <meta property="article:modified_time" content="2026-04-16T17:55:55+00:00" />
     <title>Contributing Guide for pyOpenSci &#8212; pyOpenSci Handbook</title>
   
   
@@ -67,12 +67,12 @@
     <link rel="icon" href="https://www.pyopensci.org/images/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Change Log" href="CHANGELOG.html" />
+    <link rel="next" title="Changelog" href="CHANGELOG.html" />
     <link rel="prev" title="Employee &amp; Contractor Onboarding Process" href="organization/employee-onboarding.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-    <meta name="docbuild:last-update" content="Jul 21, 2025"/>
+    <meta name="docbuild:last-update" content="Apr 16, 2026"/>
   </head>
   
   
@@ -507,7 +507,7 @@ we maintain.</p>
 <li><p><a class="reference external" href="https://github.com/pyOpenSci/python-package-guide">Python packaging guide</a></p></li>
 <li><p>Python <a class="reference external" href="https://github.com/pyOpenSci/software-peer-review">software peer review guide</a></p></li>
 <li><p>Our <a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io">pyopensci.org website</a></p></li>
-<li><p>Our <a class="reference external" href="https://github.com/pyOpenSci/software-submission">software review repo</a>: contains templates templates for software submission and a small CI (Continuous Integration) build</p></li>
+<li><p>Our <a class="reference external" href="https://github.com/pyOpenSci/software-submission">software review repo</a>: contains templates for software submission and a small CI (Continuous Integration) build</p></li>
 </ul>
 <p>This document applies to any of our online content that you
 contribute to. Most of our content lives in the <a class="reference external" href="https://github.com/pyopensci">pyOpenSci
@@ -523,7 +523,7 @@ GitHub organization</a>.</p>
 </ul>
 <ol class="arabic simple" start="3">
 <li><p>If you submit a pull request, please be sure to use a branch in your fork. Do not use your fork’s <code class="docutils literal notranslate"><span class="pre">main</span></code> branch to submit a pull request.</p></li>
-<li><p>Please try to spell check and editor pull requests before opening them in our repository. This will save us time when reviewing your suggested change(s).</p></li>
+<li><p>Please try to spell-check and edit pull requests before opening them in our repository. This will save us time when reviewing your suggested change(s).</p></li>
 </ol>
 </section>
 <section id="contributor-attributions">
@@ -546,12 +546,12 @@ list</a>.</p>
 <section id="contributor-authorship">
 <h2>Contributor authorship<a class="headerlink" href="#contributor-authorship" title="Link to this heading">#</a></h2>
 <p>We are deeply thankful to everyone who has helped develop and review the pyOpenSci
-online documentation. here, we establish guidelines
+online documentation. Here, we establish guidelines
 for giving credit to contributors for their work.</p>
 <p>Our <a class="reference external" href="https://zenodo.org/record/7101778">peer-review-guide</a> and <a class="reference external" href="https://zenodo.org/record/7786869">packaging-guide</a> can be cited using a
 Zenodo DOI. As such, we periodically update authorship for those documents prior to a new release.</p>
-<p>Every time we make a release, we will review our .zenodo file and contributors for both reviews, edits and other contributions to our content. In many cases because discussions around content happen in other forums - discourse, discord, slack, email, we will do our best to capture all contributors.</p>
-<p>Those who have contributed directly to updating the content will be added as authors. Otherwise you will be added as a contributor. Both categories are listed in the zenodo citation.</p>
+<p>Every time we make a release, we will review our <code class="docutils literal notranslate"><span class="pre">.zenodo</span></code> file and contributors for reviews, edits, and other contributions to our content. In many cases, because discussions around content happen in other forums (Discourse, Discord, Slack, and email), we will do our best to capture all contributors.</p>
+<p>Those who have contributed directly to updating the content will be added as authors. Otherwise, you will be added as a contributor. Both categories are listed in the Zenodo citation.</p>
 <p>Every time we make a release, everyone who has made a commit to the repository since the previous release will be mentioned in the changelog entry using their GitHub handle. This is a way of saying “Thank you”.</p>
 <blockquote>
 <div><p><strong>Note</strong>: These policies may be adapted or changed to
@@ -563,9 +563,9 @@ accommodate the growth of our organization and the preferences of our community 
 <p>Some of our online content may need to be built locally.
 On this general contributing guidelines page, you will only find general contribution guidelines. Each repository contains instructions for local development setup
 in the <code class="docutils literal notranslate"><span class="pre">CONTRIBUTING.md</span></code> file for that specific repository.</p>
-<section id="development-guide-our-guidebooks">
-<h3>Development guide our guidebooks<a class="headerlink" href="#development-guide-our-guidebooks" title="Link to this heading">#</a></h3>
-<p>This repo (handbook), our peer review guide and python packaging guidebook are built using the <code class="docutils literal notranslate"><span class="pre">pydata_sphinx_theme</span></code>. We have created builds
+<section id="development-guide-for-our-guidebooks">
+<h3>Development guide for our guidebooks<a class="headerlink" href="#development-guide-for-our-guidebooks" title="Link to this heading">#</a></h3>
+<p>This repo (handbook), our peer review guide, and Python packaging guidebook are built using the <code class="docutils literal notranslate"><span class="pre">pydata_sphinx_theme</span></code>. We have created builds
 for those repositories using <code class="docutils literal notranslate"><span class="pre">nox</span></code>.</p>
 <p>If you wish to contribute by working on the guide book locally, you
 will first need to</p>
@@ -581,7 +581,7 @@ will first need to</p>
 <p>The easiest way to build the documentation in this repository is to use <code class="docutils literal notranslate"><span class="pre">nox</span></code>,
 a tool for quickly building environments and running commands within them.
 Nox ensures that your environment has all the dependencies needed to build the documentation.</p>
-<p>If you plan to submit a pull request with changes to the guide, you can chose to submit a pr and view the associated build online in Circle CI. Or you can choose to build the documentation locally to test a pull request.</p>
+<p>If you plan to submit a pull request with changes to the guide, you can choose to submit a PR and view the associated build online in CircleCI. Or you can choose to build the documentation locally to test a pull request.</p>
 <p>To build locally, follow these steps:</p>
 <ol class="arabic">
 <li><p>Install <code class="docutils literal notranslate"><span class="pre">nox</span></code> into the environment where you plan to work. Nox will create a virtual environment that you can use to build the docs.</p>
@@ -598,7 +598,7 @@ Nox ensures that your environment has all the dependencies needed to build the d
 </div>
 </li>
 </ol>
-<p>To build live documentation that updates when you update local files, run::</p>
+<p>To build live documentation that updates when you update local files, run:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>```
 nox -s docs-live
 ```
@@ -607,13 +607,13 @@ nox -s docs-live
 <p>The <code class="docutils literal notranslate"><span class="pre">docs-live</span></code> command will provide you with a URL that you can enter into your
 browser to see the docs update as you update files.</p>
 <section id="circleci-previews">
-<h3>CircleCI Previews<a class="headerlink" href="#circleci-previews" title="Link to this heading">#</a></h3>
+<h3>CircleCI previews<a class="headerlink" href="#circleci-previews" title="Link to this heading">#</a></h3>
 <p>Each book is set up with a GitHub action redirect that will take you to an online
 build of the current pull request in CircleCI. To view the build:</p>
 <ul class="simple">
 <li><p>Click on the GitHub action called <code class="docutils literal notranslate"><span class="pre">ci/circleci:</span> <span class="pre">build_book</span></code> after it has run at the bottom of your pull request. This will
-take you directly to CircleCi.</p></li>
-<li><p>Once in CircleCi, click on the artifacts tab. The home page of the guidebook will be called:</p></li>
+take you directly to CircleCI.</p></li>
+<li><p>Once in CircleCI, click on the Artifacts tab. The home page of the guidebook will be called:</p></li>
 </ul>
 <p><code class="docutils literal notranslate"><span class="pre">output/index.html</span></code></p>
 <p>Click on that item to view the built online version of the guidebook in your
@@ -621,7 +621,7 @@ browser.</p>
 </section>
 <section id="website-build">
 <h3>Website build<a class="headerlink" href="#website-build" title="Link to this heading">#</a></h3>
-<p>Our website is a <code class="docutils literal notranslate"><span class="pre">jekyll</span></code>/<code class="docutils literal notranslate"><span class="pre">markdown</span></code> driven site. Thus, you will need to install <code class="docutils literal notranslate"><span class="pre">ruby</span></code>, and the gems needed to build the website following the contributing guide in our pyopensci.github.io repository.</p>
+<p>Our website is a <code class="docutils literal notranslate"><span class="pre">Jekyll</span></code>/<code class="docutils literal notranslate"><span class="pre">markdown</span></code> driven site. Thus, you will need to install <code class="docutils literal notranslate"><span class="pre">ruby</span></code>, and the gems needed to build the website following the contributing guide in our pyopensci.github.io repository.</p>
 </section>
 </section>
 </section>
@@ -635,7 +635,7 @@ browser.</p>
                   <div class="footer-article-items footer-article__inner">
   
     <div class="footer-article-item"><hr>
-<p style="font-size: small; color: #888;">Last updated: Jul 21, 2025</p></div>
+<p style="font-size: small; color: #888;">Last updated: Apr 16, 2026</p></div>
   
 </div>
                 </footer>
@@ -659,7 +659,7 @@ browser.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Change Log</p>
+        <p class="prev-next-title">Changelog</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -686,11 +686,11 @@ browser.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributor-attributions">Contributor attributions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributor-authorship">Contributor authorship</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-local-development">Instructions for local development</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#development-guide-our-guidebooks">Development guide our guidebooks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#development-guide-for-our-guidebooks">Development guide for our guidebooks</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-building-the-documentation-locally-on-your-computer">Instructions for building the documentation locally on your computer</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circleci-previews">CircleCI Previews</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circleci-previews">CircleCI previews</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#website-build">Website build</a></li>
 </ul>
 </li>
