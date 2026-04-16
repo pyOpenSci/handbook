@@ -9,7 +9,7 @@
 
 **Before a sprint**
 
-* pyOpenSci staff go through the pyOpenSci repository issues and ensure all relevant **help-wanted** and **printable** have appropriated labels and have been added to the [GitHub project](GitHub-project) in the appropriate column (beginner-friendly, Python, dev-ops/ci, Python, Sphinx).
+* pyOpenSci staff go through the pyOpenSci repository issues and ensure all relevant **help-wanted** and **sprintable** have appropriate labels and have been added to the [GitHub project](GitHub-project) in the appropriate column (beginner-friendly, Python, dev-ops/ci, Python, Sphinx).
 * pyOpenSci staff ensures all issues on the project board have enough **specific** information for a new user to follow and complete the task needed to be done. The more specific the issue is, the fewer questions a sprinter/contributor will ask during a sprint. This saves significant time and energy for both the sprint attendee and whoever is leading the sprint.
 
 **During a sprint**
@@ -162,8 +162,8 @@ If the issue is something that someone else in the community could do:
 The current types of tasks in our board include:
 
 * Python packaging
-* Beginner friendly / non technical
-* Dev Ops / GitHub actions (Continuous Integration)
+* Beginner friendly / non-technical
+* DevOps / GitHub actions (Continuous Integration)
 * Python programming
 * Website - CSS or Ruby
 
@@ -212,10 +212,10 @@ Sprints are busy—please add as much specific information as you can to each is
 
 One challenge of a successful sprint is that there will be many issues and pull requests to triage after the sprint. To keep track of new issues during an event, every pyOpenSci GitHub repository should have a sprint issue template. Adding this template only needs to be completed once. However, if there is a new pyOpenSci Github repository (this rarely happens), make sure that repo has a sprint issue template.
 
-The sprint template will auto-populate a `sprint-event` label on the issue or pull request when it is opened. We will then setup a GitHub action on the sprint project board for that year to auto-add any issue or pull request with the `sprint-event` label on it to the sprint project board.
+The sprint template will auto-populate a `sprint-event` label on the issue or pull request when it is opened. We will then set up a GitHub action on the sprint project board for that year to auto-add any issue or pull request with the `sprint-event` label on it to the sprint project board.
 
 :::{todo}
-NOTE: i have setup this workflow <https://github.com/actions/add-to-project> on most (but not all) of our repos now. so it does handle moving help-wanted issues to the project. BUT it is hard to think about events. This is because there is no easy to use pull request template. so while we could automagically update a workflow before an event we'd have to do it for every event AND it would only work on issues - not pull requests. As such my idea of automating event tags won't work.
+NOTE: i have set up this workflow <https://github.com/actions/add-to-project> on most (but not all) of our repos now. so it does handle moving help-wanted issues to the project. BUT it is hard to think about events. This is because there is no easy to use pull request template. so while we could automagically update a workflow before an event we'd have to do it for every event AND it would only work on issues - not pull requests. As such my idea of automating event tags won't work.
 
 For now - we should do that manually during the event. It would be an easy enough thing for jesse to do remotely i think? or i could do it IF the sprint slows down. it really didn't at pycon this year (2024)
 :::
@@ -227,9 +227,8 @@ Jesse will flesh this out when it's ready!
 ### Create a participant signup form
 
 * create the form
-* create a dynamic qr code that we can update (the is placed on our table top cards ) OR get a card that we can add a sticker to with the code and replace the stickers...
+* create a dynamic qr code that we can update (this is placed on our table top cards ) OR get a card that we can add a sticker to with the code and replace the stickers...
 
-jesse will develop this process with whatever platform we end up using...
 :::
 
 ## Tasks during a sprint
@@ -241,11 +240,11 @@ Below are tasks that should occur during a sprint event.
 *This section will be fleshed out soon...*
 :::{todo}
 The person running the event should collect information from participants
-at the event via ______ **TODO insert how we do that here** _____ following the process Jesse creates above....
+at the event via ______**TODO insert how we do that here**
 
 * dynamic qr code... that people can scan. with small table top signs?
 * what do we collect?
-* how do they opt out of future coms?
+* how do they opt out of future communications?
 
 What Metrics do we collect and how?
 Number of PRs
@@ -266,7 +265,7 @@ During the event, the remote sprint support team (either Community Manager or a 
 This process, if done during the sprint, will make triaging issues and pull requests after the event, easier.
 
 :::{todo}
-We create one issue and pull requesttemplate that we can use across all our repos  – it has a label that automatically will be added to the board with "no status"
+We create one issue and pull request template that we can use across all our repos  – it has a label that automatically will be added to the board with "no status"
 Jesse adds a label for the event and moves it to a column
 :::
 
@@ -362,18 +361,18 @@ are listed below:
 
 ### Welcome new contributors to slack
 
-Because some participants come to sprints to learn, they may not stage engaged with pyOpenSci after a sprint event. As such it's best to invite
+Because some participants come to sprints to learn, they may not stay engaged with pyOpenSci after a sprint event. As such it's best to invite
 people who continue to stay engaged with us either via GitHub or some
 other mechanism (becoming a reviewer, editor, submitting a package, etc).
 
 :::{admonition} Meeting metrics that pyOpenSci collects
 :class: info
 
-* Number of pull request submitted
+* Number of pull requests submitted
 * Number of issues submitted
-* Number of contributors contributed
+* Number of contributors (participants who contributed)
   * Where are the contributors from (country, place of work / organization)
-  * Type of user - student, professional, non profit/ public sector.
+  * Type of user - student, professional, non-profit/ public sector.
   * Optional - demographics
 :::
 
