@@ -41,7 +41,7 @@ Learn more about the vibrant pyOpenSci community of practice.
 * [How we use GitHub](github-intro)
 * [About our events](pyos-events)
 * [Translation & internationalization](translation)
-* Community platforms that we use: [Slack](pyos-slack),  [Zenodo](pyos-zenodo), etc.
+* Community platforms that we use: [Slack](pyos-slack), [Zenodo](pyos-zenodo), etc.
 
 :::
 ::::
@@ -49,7 +49,7 @@ Learn more about the vibrant pyOpenSci community of practice.
 ::::{grid-item}
 :::{card} ✿ Code of Conduct & Contributing ✿
 
-* Our [code of conduct](CODE_OF_CONDUCT) applies to all members of the pyOpenSci community. And to those participating in pyOpenSci-supported events.
+* Our [code of conduct](CODE_OF_CONDUCT) applies to all members of the pyOpenSci community, and to those participating in pyOpenSci-supported events.
 * Our [Contributing guide](CONTRIBUTING) will help you get oriented to contributing to pyOpenSci.
 :::
 ::::

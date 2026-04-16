@@ -1,6 +1,6 @@
 # pyOpenSci Community Code of Conduct
 
-pyOpensci is dedicated to creating a welcoming, supportive and diverse
+pyOpenSci is dedicated to creating a welcoming, supportive and diverse
 community around the open source Python tools that drive open
 science. We do this through a combination of community building,
 mentorship, peer review of software and education and outreach.
@@ -42,7 +42,7 @@ The following types of behavior are unacceptable in pyOpenSci spaces, both onlin
 #### Blatant acts and micro-aggressions
 Blatant micro-aggressions involve making statements that assume
 negative characteristics in a blanket fashion because of someone's identification
-with a particular group. We take micro-aggressions seriously,  especially
+with a particular group. We take micro-aggressions seriously, especially
 important when they target traditionally marginalized groups (e.g.,
 explicitly racist, sexist, homophobic, or transphobic statements).
 
@@ -71,8 +71,6 @@ Being especially or repeatedly unpleasant: for example, if we’ve received
 reports from multiple pyOpenSci users, team members, or collaborators of
 agitating, rude, or especially distracting behavior over an extended period of
 time.
-
-
 ## Scope in which the pyOpenSci code of conduct is applied
 
 pyOpenSci community members are held to the standards outlined in this
@@ -95,7 +93,7 @@ impact on the individual community members involved as well as the impact
 on the community at large.
 
 ```{note}
-When in doubt, please report unacceptable behavior to us. If someone's behavior make you feel unsafe within the pyOpenSci space, we want to support and help you.
+When in doubt, please report unacceptable behavior to us. If someone's behavior makes you feel unsafe within the pyOpenSci space, we want to support and help you.
 ```
 
 ## Enforcement
@@ -129,10 +127,10 @@ The pyOpenSci Executive Director and the Executive Council will use the steps
 below to respond to reports of code of conduct violations.
 
 1. The report will be read carefully
-2. We will followup with the person who reported the violation
-3. We will followup with the community member whose behavior was reported as violating the code of conduct
+2. We will follow up with the person who reported the violation
+3. We will follow up with the community member whose behavior was reported as violating the code of conduct
 
-Based upon the above steps, we will to determine whether there has been a code
+Based upon the above steps, we will determine whether there has been a code
 of conduct violation
 
 ## Reporting code of conduct violations
@@ -144,7 +142,7 @@ acting as a Code of Conduct Steward (see below for details). Alternatively, if
 you wish to report to one of the Code of Conduct stewards specifically, email
 them directly.
 
-### Current COC stewards:
+### Current CoC stewards
 You can email the entire COC steward committee at:
 
 coc at pyopensci.org
@@ -154,14 +152,13 @@ Or you can directly contact one of us below:
 * Leah Wasser, pyOpenSci Executive Director (EMAIL: leah at pyopensci.org)
 * Ivan Ogasawara, pyOpenSci Advisory Council Member (ivan.ogasawara at gmail.com)
 
+### Why should I report code of conduct violations?
 
-###  Why should I report code of conduct violations?
+* You are a part of the pyOpenSci community. Everyone in this community has a shared responsibility for making pyOpenSci a safe and comfortable space. The pyOpenSci Team and Executive Council members are active in the community, but given our community's size and the number of online spaces that we manage, it is easy to miss an incident that violates the code of conduct. We thus need your help to enforce the code of conduct.
 
-* You are a part of the pyOpenSci community. Everyone in this community has a shared responsibility for making pyOpenSci a safe and comfortable space. The pyOpenSci Team and Executive Council members are active in the community, but given our communities size and the number of online spaces that we manage, it is easy to miss an incident that violates of code of conduct. We thus need your help to enforce the code of conduct.
+* The consequences to our community of not reporting bad behavior outweigh the consequences for one person of reporting it. We sometimes hear “I don’t want X person to face consequences because I told someone about their bad behavior.” You were likely not the only one impacted by this event. Consider the potential impact on others if this behavior continues! We thank you in advance for reporting it to us.
 
-* The consequences to our community, of not reporting bad behavior outweigh the consequences for one person of reporting it. We sometimes hear “I don’t want X person to face consequences because I told someone about their bad behavior.” You were likely not the only one impacted by this even. Consider the potential impact on others if this behavior continues! We thank you in advance for reporting it to us.
-
-* pyOpenSci is an open, participatory, community-driven community. Our community depends upon shared trust between community members. Reporting code of conduct violations helps us identify when this trust is broken. Your report helps us prevent the behavior from happening again.
+* pyOpenSci is an open, participatory, community-driven organization. Our community depends upon shared trust between community members. Reporting code of conduct violations helps us identify when this trust is broken. Your report helps us prevent the behavior from happening again.
 
 ## Code of conduct related notes
 
@@ -179,4 +176,4 @@ We arrived at these policies by a combination of:
 ## License
 The pyOpenSci code of conduct is available under the terms of the CC0 license.
 
-Significant parts of this code of conduct are adapted from the [2i2c Code of Conduct](https://team-compass.2i2c.org/en/latest/code-of-conduct/index.html) which is under the [CCO license](https://creativecommons.org/share-your-work/public-domain/cc0/).
+Significant parts of this code of conduct are adapted from the [2i2c Code of Conduct](https://team-compass.2i2c.org/en/latest/code-of-conduct/index.html) which is under the [CC0 license](https://creativecommons.org/share-your-work/public-domain/cc0/).
