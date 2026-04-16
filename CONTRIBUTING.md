@@ -50,7 +50,7 @@ for giving credit to contributors for their work.
 Our [peer-review-guide](https://zenodo.org/record/7101778) and [packaging-guide](https://zenodo.org/record/7786869) can be cited using a
 Zenodo DOI. As such, we periodically update authorship for those documents prior to a new release.
 
-Every time we make a release, we will review our .zenodo file and contributors for reviews, edits, and other contributions to our content. In many cases, because discussions around content happen in other forums (Discourse, Discord, Slack, and email), we will do our best to capture all contributors.
+Every time we make a release, we will review our `.zenodo` file and contributors for reviews, edits, and other contributions to our content. In many cases, because discussions around content happen in other forums (Discourse, Discord, Slack, and email), we will do our best to capture all contributors.
 
 Those who have contributed directly to updating the content will be added as authors. Otherwise, you will be added as a contributor. Both categories are listed in the Zenodo citation.
 
