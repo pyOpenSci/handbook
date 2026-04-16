@@ -27,7 +27,7 @@ growing pyOpenSci community.
 The Council employs flexible and adaptive practices to ensure decisions are made efficiently while fostering thoughtful
 dialogue and collective alignment.
 
-## Executive Council roles & responsibilities
+## Executive Council roles and responsibilities
 
 Each Executive Council (EC) member dedicates no more than **four to six hours per month** to pyOpenSci activities, including meeting attendance. Executive Council members are expected to fulfill the following responsibilities:
 
@@ -56,8 +56,6 @@ obligations and policies of pyOpenSci’s fiscal sponsor—[Community Initiative
 
 The Executive Council must review and approve decisions affecting the organization's fiduciary aspects. This includes the mission/vision/values, governance policies, budget, Executive Director compensation, and significant new strategic initiatives. The Executive Council also supports the Executive Director by serving as a resource for input when needed.
 
-All decisions made by the Executive Council must align with the legal
-obligations and policies of pyOpenSci’s fiscal sponsor—[Community Initiatives](https://communityinitiatives.org/).
 This ensures compliance with overarching governance structures and financial
 responsibilities.
 
@@ -94,7 +92,7 @@ feedback and input upon request.
 
 The Executive Council and the Executive Director are responsible for selecting and appointing new council members.
 This process ensures the Council has the skills and expertise necessary to meet
-the evolving pyOpenSci needs.
+the evolving needs of pyOpenSci.
 
 ### Executive Council selection process steps
 
@@ -114,7 +112,7 @@ the evolving pyOpenSci needs.
      meeting or through the Executive Council Slack channel. After nomination, the Executive Director
      will contact the candidate to see if they are interested/available.
 
-5. **Onboard the new candidate**:
+4. **Onboard the new candidate**:
    - Once approved, new members are onboarded following the onboarding process
      outlined in this document.
 
@@ -129,7 +127,7 @@ to meet the organization’s needs.
 
 ### Decision-making process
 
-The topics above require a motion and a vote for approval. Motions and votes can be made in Executive Council meetings or via email, Slack of GitHub. Motions and votes will be noted in the Executive Council meeting minutes.
+The topics above require a motion and a vote for approval. Motions and votes can be made in Executive Council meetings or via email, Slack, or GitHub. Motions and votes will be noted in the Executive Council meeting minutes.
 
 :::{admonition} Executive Council Approval
 :class: important
@@ -172,7 +170,7 @@ while minimizing unnecessary delays.
 
 The Executive Council holds **monthly meetings** (typically 1.5 hours) to discuss key topics, review updates, and make decisions by consensus. During these meetings, the Executive Director (ED) provides updates on the organization’s development, growth, and operations and may request feedback on specific issues. This time is also used for strategic planning and discussion.
 
-During these meetings, Council members take notes. These notes are summarized and published in the [Executive Council Minutes section of this Handbook](https://github.com/pyOpenSci/handbook/tree/main/reference/meeting-notes/executive-council).  Once the notes are merged, they are [publicly available in this Handbook](https://www.pyopensci.org/handbook/reference/meeting-notes/executive-council/intro.html).
+During these meetings, Council members take notes. These notes are summarized and published in the [Executive Council Minutes section of this Handbook](https://github.com/pyOpenSci/handbook/tree/main/reference/meeting-notes/executive-council). Once the notes are merged, they are [publicly available in this Handbook](https://www.pyopensci.org/handbook/reference/meeting-notes/executive-council/intro.html).
 
 **Ad hoc Executive Council meetings** are scheduled as needed to address pressing issues.
 
@@ -217,10 +215,10 @@ completed to integrate them into the team:
 When a member leaves the Executive Council, the following steps should be taken
 to ensure a smooth transition:
 
-- **Remove Access**:
-  - Remove the departing member from the pyOpenSci Executive Council shared
+1. **Remove access**:
+   - Remove the departing member from the pyOpenSci Executive Council shared
      Google Drive to ensure that sensitive information remains secure.
-  - Remove the member from the Executive Council Slack channel.
+   - Remove the member from the Executive Council Slack channel.
 
 2. **Notifications**:
    - Inform the Fiscal Sponsor (Community Initiatives) of any changes to the
@@ -230,6 +228,7 @@ to ensure a smooth transition:
    - If the departing member held specific responsibilities or roles (e.g.,
      chair, budget oversight), ensure that these responsibilities are transitioned
      to another member of the Council.
+
 4. **Acknowledgment and thanks**:
    - Publicly thank the departing member for their contributions to pyOpenSci,
      either during a meeting or through a Slack message. Celebrate their impact

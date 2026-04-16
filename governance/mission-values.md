@@ -1,5 +1,5 @@
 (mission-vision)=
-# Mission, Vision and Values
+# Mission, vision, and values
 
 pyOpenSci's mission is:
 
@@ -7,9 +7,9 @@ pyOpenSci's mission is:
 
 Who we are:
 
-> We are a community of novice to expert Pythonistas; together, we make creating, finding, sharing, and contributing to reusable code more accessible to everyone everywhere, supporting open science and advancing discovery
+> We are a community of novice to expert Pythonistas; together, we make creating, finding, sharing, and contributing to reusable code more accessible to everyone everywhere, supporting open science and advancing discovery.
 
-To support our mission we:
+To support our mission, we:
 
 * Build an inclusive community of practice
 
@@ -34,6 +34,5 @@ Some of our core values include:
 * pyOpenSci values empowerment through training and mentorship
 * pyOpenSci values collaboration with existing communities
 * pyOpenSci values open reproducible science
-
 
 Members of the pyOpenSci editorial team have diverse backgrounds. We welcome editors from academia, government, and industry. We especially welcome applications from prospective editors who will contribute to the diversity (ethnic, gender, disciplinary, and geographical) of our board. We also value having a range of junior and senior editors.
