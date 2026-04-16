@@ -5,21 +5,21 @@
 
 ## What is pyOpenSci?
 
-pyOpenSci is a vibrant and diverse open science and open source community of practice. We are file down open science and open source pain points associated with sharing and writing better, more maintainable code and software.
+pyOpenSci is a vibrant and diverse open science and open source community of practice. We work to break down open science and open source pain points associated with sharing and writing better, more maintainable code and software.
 
 Our community runs several programs:
 
 * [Open peer review of scientific Python software](https://www.pyopensci.org/about-peer-review/index.html)
 * [Development of open online education resources for anyone to use.](https://www.pyopensci.org/learn.html)
-* [online and in-person training events](https://www.pyopensci.org/events/index.html).
+* [Online and in-person training events](https://www.pyopensci.org/events/index.html).
 
 pyOpenSci is an independent organization, fiscally sponsored by Community
 Initiatives.
 
 
-## How to setup
+## How to set up
 
-This repository contains the source files for the [pyOpenSci governance handbook](https://pyopensci.org/handbook).
+This repository contains the source files for the [pyOpenSci handbook](https://pyopensci.org/handbook).
 
 ## Build the governance document locally
 
@@ -49,7 +49,7 @@ To build live documentation that updates when you update local files, run the fo
 ```console
 $ nox -s docs-live
 ```
-The governance page should automatically open in a new browser window. If it does not, check your terminal for the text "Serving on http://XXX.X.X.X:XXXX". The HTTP address is a link that you can click (or copy and paste into your browser) to open the handbook page for live editing.
+The handbook page should automatically open in a new browser window. If it does not, check your terminal for the text "Serving on http://XXX.X.X.X:XXXX". The HTTP address is a link that you can click (or copy and paste into your browser) to open the handbook page for live editing.
 
 ## Contributing to this guide
 
