@@ -11,9 +11,10 @@ pyOpenSci stores its logos, brand colors, and font information in [Canva](pyos-c
 ### pyOpenSci logos
 
 The pyOpenSci logo combines the idea of openness with growth using an open flower petal
-with lines and spokes that represent "connection".
+with lines and spokes that represent "connection."
 
 pyOpenSci uses three variations on a floral logo:
+
 * pyOpenSci written horizontally, with a flower "opening" over the "O" in pyOpenSci
 * a four- or five-petaled flower with pyOpenSci abbreviated as pyOS
 * a five-petaled flower icon

@@ -5,19 +5,20 @@ pyOpenSci uses several popular social channels and platforms to connect with the
 community including:
 
 * Social media accounts on [BlueSky](https://bsky.app/profile/pyopensci.org) and [Mastodon](https://fosstodon.org/@pyOpenSci)
-* LinkedIn: https://www.linkedin.com/company/pyOpenSci
+* LinkedIn: <https://www.linkedin.com/company/pyOpenSci>
 * A blog on our [organization's website](https://www.pyopensci.org/blog)
 * [YouTube](https://www.youtube.com/@pyopensci)
 
 (buffer)=
 ## Buffer for scheduled social media posts
 
-[Buffer](https://buffer.com/) is a [social media](https://www.pyopensci.org/handbook/community/social.html) platform that makes it easy to schedule, track, and collaborate on social media posts. While Buffer supports a host of platforms, pyOpenSci currently uses Buffer for
+[Buffer](https://buffer.com/) is a [social media](https://www.pyopensci.org/handbook/community/social.html) platform that makes it easy to schedule, track, and collaborate on social media posts. While Buffer supports a host of platforms, pyOpenSci currently uses Buffer for:
+
 * [Fosstodon](https://fosstodon.org/@pyOpenSci),
 * [Bluesky](https://bsky.app/profile/pyopensci.bsky.social), and
-* LinkedIn: https://www.linkedin.com/company/pyOpenSci
+* LinkedIn: <https://www.linkedin.com/company/pyOpenSci>
 
-Buffer is great for tracking some analtics and scheduling posts. However, generally, Buffer also has some challenges
+Buffer is great for tracking some analytics and scheduling posts. However, Buffer also has some challenges:
 
 1. On some platforms, Buffer can't tag users (e.g., `@username`). So, if you want to tag someone, you must edit the post on the platform itself, which isn't ideal.
 2. Because some of the platforms we use (e.g., Bluesky) are newer, not all analytics and other features are available.
@@ -36,7 +37,7 @@ Accessing and editing Linktr.ee:
 
 * Login at [linktr.ee](https://linktr.ee/)
 * Click on “Admin”
-* Add new links by clicking on the “Add link” button, or edit existing links by clicking on the pencil next to the title and//or URL
+* Add new links by clicking on the “Add link” button, or edit existing links by clicking on the pencil next to the title and/or URL
 * Current linktr.ee: <https://linktr.ee/pyopensci>
 
 ## pyOpenSci blog
@@ -75,13 +76,13 @@ This text will appear as the caption to your image.
 ```
 ````
 
-3. Next, create an entry in the [authors.yml file](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/authors.yml) if you do not already have one.
+1. Next, create an entry in the [authors.yml file](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/authors.yml) if you do not already have one.
 To create an author page, submit a pull request from your fork of the pyOpenSci website repository, with changes to the [authors.yml](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/authors.yml) file. If you would like to include a headshot, you can add it to the [`people` directory in the `images` directory.](https://github.com/pyOpenSci/pyopensci.github.io/tree/main/images/people)
 
-3. Submit a pull request from your fork of the website repo to [https://github.com/pyOpenSci/pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io).
-4. Ensure the blog post passes CI (continuous integration) checks that look for spelling errors, broken links, and more. Please note that occasionally the `htmlproofer` check will fail because your new blog post URL does not exist yet online.
-5. Once your post and the pull request adding it to our website is complete, request a review on GitHub. A member of the pyOpenSci team should always review any new content being added to the website.
-6. Your pull request can be merged once you have an approving review. A member of pyOpenSci's staff or contributor team will merge your post.
+2. Submit a pull request from your fork of the website repo to [https://github.com/pyOpenSci/pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io).
+3. Ensure the blog post passes CI (continuous integration) checks that look for spelling errors, broken links, and more. Please note that occasionally the `htmlproofer` check will fail because your new blog post URL does not exist yet online.
+4. Once your post and the pull request adding it to our website is complete, request a review on GitHub. A member of the pyOpenSci team should always review any new content being added to the website.
+5. Your pull request can be merged once you have an approving review. A member of pyOpenSci's staff or contributor team will merge your post.
 
 :::{note}
 pyOpenSci has GitHub organization-wide policies in place that require all pull requests are reviewed before being merged. Sometimes, we may bypass those if the PR is a small fix or critical update. In most cases a review is preferred.
@@ -92,7 +93,7 @@ pyOpenSci has GitHub organization-wide policies in place that require all pull r
 
 All package authors, maintainers (and users) of a pyOpenSci-accepted package are welcome and encouraged to submit a blog post (or series of blog posts) about their review experience and/or the use of the package. When submitting your blog post, please include the following YAML elements:
 
-```
+```yaml
 layout: single
 title: "The title of your blog post"
 excerpt: "One to three sentences summarizing your post. This text will appear on our [blog landing page](https://pyopensci.org/blog)"
@@ -144,7 +145,6 @@ The [pyOpenSci YouTube channel](https://youtube.com/@pyopensci) is still under d
 * Use no more than two hashtags per video
 
 At this point in time, there are no active goals or success metrics for the YouTube channel. We'll be sure to update this section once we're regularly updating our channel!
-
 
 ## Newsletters
 

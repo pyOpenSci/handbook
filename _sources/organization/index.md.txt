@@ -1,6 +1,6 @@
-# pyOpenSci Organization Processes & Structure
+# pyOpenSci organization processes and structure
 
-This section outlines the essential processes and structures that guide the operation of pyOpenSci. You’ll find information on our workflow, the platforms we use for collaboration, our approach to branding, and tools like Canva for maintaining a consistent visual identity. This guide provides a comprehensive overview to help team members and community contributors understand and engage with pyOpenSci’s organizational practices.
+This section outlines the essential processes and structures that guide pyOpenSci operations. You’ll find information on our workflow, the platforms we use for collaboration, our approach to branding, and tools like Canva for maintaining a consistent visual identity. This guide provides a comprehensive overview to help team members and community contributors understand and engage with pyOpenSci’s organizational practices.
 
 :::{toctree}
 :caption: External Communication
@@ -10,13 +10,12 @@ External Communication <external-communication>
 Branding <branding>
 Communications <social-media-blog>
 Canva <canva>
-:::
-
+::::
 
 :::{toctree}
 :caption: How we work
 :maxdepth: 2
 
-How We Work <how-we-work>
-Employee Onboarding <employee-onboarding>
-:::
+How we work <how-we-work>
+Employee onboarding <employee-onboarding>
+::::
