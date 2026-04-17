@@ -3,9 +3,8 @@
 
 We use Slack to communicate both as paid staff and within our community organization. Slack is a valuable tool for both asynchronous, synchronous, and remote communication.
 
-We have automatic feeds setup in Slack to track various GitHub and Discourse activities as follows:
+We have automatic feeds setup in Slack to track various GitHub activities as follows:
 
-* **#discourse-updates:** this channel flags new Discourse posts so that we can keep track of them in a single place. This channel also announces a new package when it’s posted in the Discourse pyOpenSci packages forum. The bot was built and maintained by Chiara Marmo.
 * **#feed-software-review:** this channel tracks new review submissions in our software-submission GitHub repo. This feed helps pyOpenSci staff and its editorial team keep track of the cadence of submissions in a centralized location.
 * **#github-issues:** this channel was created to make it easier to follow issues and pull requests opened in our core Github repositories, as given the volume of activity it’s easy to miss new items.
 
@@ -59,7 +58,6 @@ The pyOpenSci Slack space is also a central place for communicating with the pyO
 * **#coding-help:** community members can use this channel to ask questions related to code. This channel is helpful for members of all stages, and not only for beginners.
 * **#community-announcements:** community members can make announcements in this channel about future conference presentations, events, projects or collaborations that members are looking to create. Any community member can post in this channel.
 * **#dei-accessibility:** this channel is for discussion around issues related to diversity, equity, inclusion, and accessibility in open source.
-* **#discourse-updates:** a bot-generated channel that shares updates from the pyOpenSci Discourse forum.
 * **#education-training:** This is a channel to discuss learning materials, training events and other education-related topics.
 * **#feed-software-review:** this is a bot-generated feed of GitHub issues.
 * **#food:** why share your food photos on Instagram when you can share them here? We love to see what you’re making and eating!
