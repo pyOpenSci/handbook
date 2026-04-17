@@ -12,7 +12,7 @@ None
 
 * Update on package peer review
   * 35 accepted, 16 in review, 2 presubmissions.
-  * Packages are staying in the review stage longer. Now that more packages have been through review, there’s an opportunity to re-visit the peer review process, and identify which are the most important items and which might be more streamlined.
+  * Packages are staying in the review stage longer. Now that more packages have been through review, there’s an opportunity to revisit the peer review process, and identify which are the most important items and which might be more streamlined.
 * Update on training and events
   * Received positive feedback on PyCon sprint on LinkedIn, months after the event.
   * Fall Festival is an opportunity to pilot a larger event approach versus smaller ones for sustainability planning and access for learners.
@@ -20,8 +20,6 @@ None
   * Engagement on packaging guide continues to be high.
   * A donation page is now live, through Community Initiatives donation platform.
 * Discussion of funding opportunities within government programs and private foundations and through training events or short-form videos.
-
-
 
 ## 2024-08-12 Executive Council Meeting Minutes
 
@@ -43,7 +41,7 @@ None
   * Growth in visits to pyOpenSci website and resources over the last year.
   * The packaging guide is the most visited.
   * Active work from the community on translations of the packaging guide into Japanese and Spanish.
-* Budget for Fiscal Year 2025 July 2024 - June 2025 approved.
+* Budget for fiscal year 2025 (July 2024-June 2025) approved.
   * Summary budgets will be shared publicly as a part of yearly reporting.
 * Discussion of funding opportunities within government programs and private foundations.
 
@@ -62,9 +60,8 @@ None
 * Update on training and events
   * Workshop and sprint planned for SciPy in July.
   * Planning fall festival for September or October.
-* Discussion of budget and framework for sharing, review and approval from the Executive Council.
+* Discussion of budget and framework for sharing, review, and approval from the Executive Council.
 * Discussion of funding opportunities within government programs and private foundations.
-
 
 ## 2024-05-13 Executive Council Meeting Minutes
 
