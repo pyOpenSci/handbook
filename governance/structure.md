@@ -1,19 +1,19 @@
 (pyos-structure)=
 # Organization Structure and Leadership
 
-This page describes the organizational structure of pyOpenSci as they
-related to governance and operations.
+This page describes the organizational structure of pyOpenSci as it
+relates to governance and operations.
 
 There are two levels of leadership described below.
-The first is the organizational level. The second is program level.
+The first is the organizational level. The second is the program level.
 
 ## Governing councils
 
 ### Executive council
 
 The [Executive Council](pyos-executive-council) defines and steers the high-level
-mission, vision and values of pyOpenSci. It also sets the strategic direction and vision for the organization.
-The Executive Director (discussed below) is a voting member of the executive council.
+mission, vision, and values of pyOpenSci. It also sets the strategic direction and vision for the organization.
+The Executive Director (discussed below) is a voting member of the Executive Council.
 
 [Click here to view current executive council members](https://www.pyopensci.org/our-community/#executive-council--leadership)
 
@@ -24,8 +24,8 @@ The Executive Director (discussed below) is a voting member of the executive cou
 [Click here to view current advisory council members.](https://www.pyopensci.org/our-community/#pyopensci-advisory-council)
 
 The Advisory Council is comprised of leaders in the Python scientific
-open source ecosystem. This council advises the executive director
-in both organization level and day-to-day decision-making around
+open source ecosystem. This council advises the Executive Director
+in both organization-level and day-to-day decision-making around
 
 * Python packaging guidelines
 * Peer review processes and guidelines
@@ -33,8 +33,8 @@ in both organization level and day-to-day decision-making around
 * Community engagement
 
 Most of the communication supporting advisory council activities
-happens in the pyOpenSci slack. The executive director will also
-organize monthly [Executive Council](pyos-executive-council) meetings that  focus
+happens in the pyOpenSci Slack. The Executive Director will also
+organize monthly [Executive Council](pyos-executive-council) meetings that focus
 on the high-level goals of pyOpenSci programs.
 
 ## Staff roles within the organization
@@ -58,8 +58,8 @@ The Executive Director reports to the Executive Council.
 In the early stages of the organization's development, the Executive Director
 will take on other responsibilities including:
 
-* Managing the community in Slack and on social media
-* Serving as the defacto Software Peer Review Lead (below) until that position is funded.
+* Managing the community in Slack and on social media.
+* Serving as the de facto Software Peer Review Lead (below).
 
 :::{todo}
 
@@ -94,7 +94,7 @@ This team:
   * Dependabot pull requests
   * Pre-commit CI updates
 * Approve and merge automated data file updates:
-  * Automated data file updates. Our [metrics](https://www.pyopensci.org/metrics) and [website](https://github.com/pyopensci.github.io/) are updated automatically using a GitHub action workflow that is supported by the pyosMeta Python package discussed above. A cron job runs this workflow daily to weekly and opens a pr. These pr's can be updated at whatever frequency is needed but should be updated at least once or twice a month.
+  * Automated data file updates. Our [metrics](https://www.pyopensci.org/metrics) and [website](https://github.com/pyopensci.github.io/) are updated automatically using a GitHub Actions workflow that is supported by the pyosMeta Python package discussed above. A cron job runs this workflow daily to weekly and opens a PR. These PRs can be updated at whatever frequency is needed but should be updated at least once or twice a month.
 * Ensure the smooth operation of pyOpenSci's technical infrastructure
 
 #### Triaging issues and pull requests
@@ -147,9 +147,6 @@ review process. They are responsible for:
   reviews and supporting the editorial team
 * Managing conflicts that may arise in the software peer review process
 
-The peer review lead role is currently held by the pyOpenSci Executive
-Director.
-
 [More detailed guidance for the peer review lead role can be found in
 the pyOpenSci Software Peer Review
 Guide](https://www.pyopensci.org/software-peer-review/how-to/peer-review-lead.html).
@@ -161,8 +158,8 @@ Guide](https://www.pyopensci.org/software-peer-review/how-to/peer-review-lead.ht
 
 The peer review editorial board is a group of volunteers who are
 advocates for open source software peer review. This
-group helps pyOpenSci make decisions about it's open peer review process.
-These decisions including but are not limited to:
+group helps pyOpenSci make decisions about its open peer review process.
+These decisions include, but are not limited to:
 
 * Decisions about the scope of packages accepted into the ecosystem
 * Decisions about how we enforce / support ongoing maintenance of accepted packages.
@@ -172,7 +169,7 @@ These decisions including but are not limited to:
 Volunteers on the editorial board will serve for 1-2 years.
 
 The editors oversee 3-4 packages a year.
-[editorial board can be found here.](https://www.pyopensci.org/about-peer-review/#our-editorial-board)
+[The editorial board can be found here.](https://www.pyopensci.org/about-peer-review/#our-editorial-board)
 
 ### Editor in chief
 
