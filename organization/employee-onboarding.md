@@ -1,5 +1,5 @@
 (onboarding)=
-# Employee & Contractor Onboarding Process
+# Employee and contractor onboarding process
 
 :::{admonition} about
 :class: note
@@ -33,7 +33,7 @@ Add the employee to the `pyos-shared` Google Drive and any other relevant shared
 
 The employee will be added to the pyOpenSci GitHub organization.
 
-As part of the onboarding process, New staff are given the freedom to choose their preferred GitHub account. Depending on their role and personal preference, they may opt to use their existing personal account or create a new one specifically for their work with pyOpenSci.
+As part of the onboarding process, new staff are given the freedom to choose their preferred GitHub account. Depending on their role and personal preference, they may opt to use their existing personal account or create a new one specifically for their work with pyOpenSci.
 
 [Learn more about how we use GitHub.](github)
 
@@ -44,11 +44,12 @@ As part of the onboarding process, New staff are given the freedom to choose the
 ### 5. Add employee to the pyOpenSci Slack
 
 Invite to the pyOpenSci Slack workspace for day-to-day communication.
+
 - [Learn more about how we use Slack.](https://www.pyopensci.org/handbook/community/slack.html)
 
 ### 6. Invite employee to the pyOpenSci Discord
 
-* Invited to our [Discord workspace](https://discord.gg/FDKVrSB4), which we use for events.
+- Invited to our [Discord workspace](https://discord.gg/FDKVrSB4), which we use for events.
 
 ### 7. Provide access to social media and content platforms (as needed)
 
@@ -56,7 +57,7 @@ Access to LinkedIn, [Mastodon](https://fosstodon.org/@pyOpenSci), BlueSky, YouTu
 
 - [Learn more about how we use Buffer for social posting.](buffer)
 
-### 7. Provide access to BitWarden for media and admin account credentials
+### 8. Provide access to BitWarden for media and admin account credentials
 
 We use [BitWarden](bitwarden) for administration accounts and social. Provide the employee
 with access to BitWarden to access these accounts.
@@ -72,7 +73,8 @@ Unless they are hired as an outside contractor, project-based employees complete
 ### 1. Create Google Workspace account (as needed)
 
 We will create a Google Workspace account if there is a clear business need for the role (for example, external communications or another specific role).
-- [Learn more about how we use GitHub.](google-workspace)
+
+- [Learn more about how we use Google Workspace.](google-workspace)
 
 ### 2. Provide access to Google Drive
 
@@ -81,11 +83,13 @@ We will create a Google Workspace account if there is a clear business need for 
 ### 3. Add to the pyOpenSci GitHub Organization
 
 Added to the pyOpenSci organization or granted repo-specific access based on project needs.
+
 - [Learn more about how we use GitHub.](github)
 
 ### 4. Slack
 
 All pyOpenSci contributors and staff are invited to join the Slack community.
+
 - [Learn more about how we use Slack.](slack)
 
 ### 5. Discord
@@ -94,7 +98,8 @@ Invited to our Discord workspace, which we use for events.
 
 ### 6. Access to social media and content platforms (as needed)
 
-Access to LinkedIn, Mastodon, BlueSky, YouTube, Buffer as required, depending on the position. **media at pyopensci.org** Email is used for these accounts.
+Access to LinkedIn, Mastodon, BlueSky, YouTube, Buffer as required, depending on the position. **media at pyopensci.org** email is used for these accounts.
+
 - [Learn more about how we use Buffer for social posting.](buffer)
 
 ### 7. Provide access to BitWarden for media and admin account credentials as needed
@@ -106,7 +111,7 @@ with access to BitWarden to access these accounts.
 
 pyOpenSci staff may be added to one or more email groups to support their role as needed:
 
-- [admin@pyopensci.org](mailto:admin@pyopensci.org): used for administration tasks such as meetighns calls.
+- [admin@pyopensci.org](mailto:admin@pyopensci.org): used for administration tasks such as meeting calls.
 - [media@pyopensci.org](mailto:media@pyopensci.org): used for general social media work.
 
 ## Engaging with the community
@@ -114,7 +119,7 @@ pyOpenSci staff may be added to one or more email groups to support their role a
 Once a new staff member is onboarded, they are introduced to the pyOpenSci community as follows:
 
 - **Announce in Slack**: New staff will be introduced in the `#pyos-updates` Slack channel and invited to share a bit about themselves.
-- **Add to website**: Update the [contributors.yml file](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml) in our pyopensci.github.io, which will add them to the ["Our pyOpenSci" ](https://www.pyopensci.org/our-community/index.html#executive-council-leadership--staff) community page.
+- **Add to website**: Update the [contributors.yml file](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml) in our pyopensci.github.io repository, which will add them to the ["Our pyOpenSci"](https://www.pyopensci.org/our-community/index.html#executive-council-leadership--staff) community page.
 - **Introductory blog post**: New hires write a brief blog post introducing themselves to the community. Topics may include work background, hobbies, why they joined pyOpenSci, and their role.
 - **Social media**: Post the hire announcement on pyOpenSci social channels.
 

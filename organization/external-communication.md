@@ -25,14 +25,6 @@ pyOpenSci does not send unsolicited bulk emails; all emails contain an unsubscri
 
 pyOpenSci uses [SurveyMonkey](https://www.surveymonkey.com/) to develop and send pre and post-surveys to pyOpenSci event attendees. Events include workshops, talks, and sprints, which may be in-person or online. SurveyMonkey is used due to its ease of use, integration with other platforms, and ability to send out survey reminder emails.
 
-### EventBrite
+### Eventbrite
 
-pyOpenSci uses [EventBrite](https://eventbrite.com), which is provided by our fiscal sponsor, Community Initiatives, to manage event registration. Anyone who has registered for a pyOpenSci event through EventBrite will be contacted through the EventBrite service regarding event updates and logistics. pyOpenSci may also upload EventBrite contacts to SurveyMonkey to send out pre- and post-event surveys.
-
-:::{todo}
-
-## HubSpot
-
-[HubSpot](https://hubspot.com/) is pyOpenSci's customer relationship management (CRM) platform. pyOpenSci also uses HubSpot as a catch-all bulk emailing service, for instance, to communicate with individuals who have signed up to volunteer as a [reviewer](https://forms.gle/Mps4UsRHTyF66cdg7) and/or [editor](https://forms.gle/aFAMBjrdU7f7zMP89) as part of our [open software peer review process](https://www.pyopensci.org/about-peer-review/index.html).
-
-:::
+pyOpenSci uses [Eventbrite](https://eventbrite.com), which is provided by our fiscal sponsor, Community Initiatives, to manage event registration. Anyone who has registered for a pyOpenSci event through Eventbrite will be contacted through the Eventbrite service regarding event updates and logistics. pyOpenSci may also upload Eventbrite contacts to SurveyMonkey to send out pre- and post-event surveys.

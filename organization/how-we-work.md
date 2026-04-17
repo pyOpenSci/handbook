@@ -91,10 +91,6 @@ If a conversation in Slack highlights the need for updated or new documentation,
 (asana)=
 ### Asana
 
-[Asana](https://asana.com/) is an internal tool we use as pyOpenSci staff for general task management. Within Asana, we assign tasks to one another that need to be accomplished, along with their respective deadlines. During staff check-ins, we review tasks, update deadlines as necessary, and discuss upcoming efforts. Asana can also be used to build road maps for projects.
-
-Asana is also connected to GitHub, which allows us to track open issues and pull requests as needed.
-
 [Asana](https://asana.com/) is an internal tool we use as pyOpenSci staff for general task management. Within Asana, we assign tasks to one another, along with their respective deadlines. During staff check-ins, we review tasks, update deadlines as needed, and discuss future efforts. Asana can also be used to build project roadmaps.
 
 Asana is connected to GitHub, allowing us to track relevant issues and pull requests as needed.
@@ -114,4 +110,4 @@ Asana is connected to GitHub, allowing us to track relevant issues and pull requ
 
 * **For individuals:** Team members are encouraged to use Bitwarden to securely store passwords related to their pyOpenSci work, including access to Google Workspace services, Slack, and Canva.
 
-* **For the organization:** Bitwarden is used to manage pyOpenSci accounts where only one organizational account is needed, such as Eventbrite, Buffer, and social media accounts. pyOpenSci has an organization account in BitWarden that staff can be added to for access to these shared accounts.
+* **For the organization:** Bitwarden is used to manage pyOpenSci accounts where only one organizational account is needed, such as Eventbrite, Buffer, and social media accounts. pyOpenSci has an organization account in Bitwarden that staff can be added to for access to these shared accounts.
