@@ -72,7 +72,7 @@ organization. This position will:
 * Create strategic communication plans
 * Write and oversee blog writing
 * Manage website content
-* Support communications within our online communication platforms (e.g. Slack, Discourse, Discord etc.)
+* Support communications within our online communication platforms (e.g. Slack, Discord, GitHub Discussions, etc.)
 
 The Community Manager is a paid position in the pyOpenSci organization.
 :::

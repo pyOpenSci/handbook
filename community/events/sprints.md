@@ -340,9 +340,6 @@ steps to take:
      [repositories on GitHub](https://github.com/pyopensci).
 :::{todo}
 
-* Discourse?
-:::
-
 4. **Stay Connected**:
    * **Upcoming Events**: Inform participants about upcoming sprints, webinars,
  workshops, or any other events they might be interested in.
