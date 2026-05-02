@@ -118,15 +118,14 @@ For more information on how pyOpenSci uses GitHub, please refer to the [GitHub s
 
 ### Promoting blog posts
 
-All blog posts should be promoted, regardless of whether or not they were written by a guest or a pyOpenSci employee! For promotion, coordinate with the Community Manager to ensure that there’s a tailored message for each of the following platforms:
+All blog posts should be promoted, regardless of whether or not they were written by a guest or a pyOpenSci employee. For promotion, coordinate with the Community Manager to ensure that there’s a tailored message for each of the following platforms:
 
 * Slack
-* Discourse
 * BlueSky
 * LinkedIn
 * Fosstodon
 
-In addition to pyOpenSci social outreach, we monitor social media for any personal posts that authors have created. To promote these posts, we will repost.
+In addition to pyOpenSci own social media outreach, we monitor social media for any personal posts that authors have created. To promote these posts, we will repost.
 
 ### Blog post tone
 
@@ -158,7 +157,7 @@ We publish two newsletters:
 The weekly LinkedIn newsletter has three main categories:
 
 * The monthly round-up edition, sharing and celebrating pyOpenSci and community wins over the past month
-* A monthly "Community News" edition, which shares conversations, discussions, and decisions that have taken place in Slack as well as on Discourse and GitHub, that are relevant to the broader community
+* A monthly "Community News" edition, which shares conversations, discussions, and decisions that have taken place in Slack as well as on GitHub, that are relevant to the broader community
 * Re-posts of interesting pyOpenSci blog posts
 
 These posts are all structured as blog posts, using appropriate heading and subheading formats within LinkedIn. In fact, all of our newsletters are first published on the pyOpenSci blog, and should follow the same tone and format.
