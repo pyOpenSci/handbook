@@ -20,7 +20,6 @@ Anyone who participates in a pyOpenSci activity either online or in person is ex
 
 * in GitHub repositories
 * in our Slack channel
-* in our Discourse online forum
 * during in-person events,
 * when representing pyOpenSci in public,
 * or in any event online or in person where pyOpenSci is leading the event.
