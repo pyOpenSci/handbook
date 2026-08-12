@@ -71,7 +71,7 @@ html_theme_options = {
             "name": "Packaging Guide",
         },
         {
-            "url": "https://pyopensci.org/peer-review-guide",
+            "url": "https://www.pyopensci.org/software-peer-review/",
             "name": "Peer Review Guide",
         },
     ],
