@@ -74,6 +74,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/InessaPawson"><img src="https://avatars.githubusercontent.com/u/43481325?v=4?s=100" width="100px;" alt="Inessa Pawson"/><br /><sub><b>Inessa Pawson</b></sub></a><br /><a href="https://github.com/pyOpenSci/handbook/commits?author=InessaPawson" title="Documentation">📖</a> <a href="https://github.com/pyOpenSci/handbook/issues?q=author%3AInessaPawson" title="Bug reports">🐛</a> <a href="https://github.com/pyOpenSci/handbook/commits?author=InessaPawson" title="Code">💻</a> <a href="https://github.com/pyOpenSci/handbook/pulls?q=is%3Apr+reviewed-by%3AInessaPawson" title="Reviewed Pull Requests">👀</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://willingconsulting.com"><img src="https://avatars.githubusercontent.com/u/2680980?v=4?s=100" width="100px;" alt="Carol Willing"/><br /><sub><b>Carol Willing</b></sub></a><br /><a href="https://github.com/pyOpenSci/handbook/pulls?q=is%3Apr+reviewed-by%3Awillingc" title="Reviewed Pull Requests">👀</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://tbyhdgs.info"><img src="https://avatars.githubusercontent.com/u/9694524?v=4?s=100" width="100px;" alt="Toby Hodges"/><br /><sub><b>Toby Hodges</b></sub></a><br /><a href="https://github.com/pyOpenSci/handbook/commits?author=tobyhodges" title="Documentation">📖</a> <a href="https://github.com/pyOpenSci/handbook/issues?q=author%3Atobyhodges" title="Bug reports">🐛</a></td>
+    </tr>
   </tbody>
 </table>
 
