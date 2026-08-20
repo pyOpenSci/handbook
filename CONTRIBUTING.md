@@ -83,7 +83,9 @@ The easiest way to build the documentation in this repository is to use `nox`,
 a tool for quickly building environments and running commands within them.
 Nox ensures that your environment has all the dependencies needed to build the documentation.
 
-If you plan to submit a pull request with changes to the guide, you can choose to submit a PR and view the associated build online in CircleCI. Or you can choose to build the documentation locally to test a pull request.
+If you plan to submit a pull request with changes to the guide, you can
+choose to submit a PR and view the associated deploy preview, or build the
+documentation locally.
 
 To build locally, follow these steps:
 
@@ -110,19 +112,15 @@ To build live documentation that updates when you update local files, run:
 The `docs-live` command will provide you with a URL that you can enter into your
 browser to see the docs update as you update files.
 
-### CircleCI previews
+### Pull request previews
 
-Each book is set up with a GitHub action redirect that will take you to an online
-build of the current pull request in CircleCI. To view the build:
+This handbook uses [Netlify](https://www.netlify.com/) deploy previews. After
+the Netlify check finishes on a pull request, click **Details** next to the
+deploy-preview status to open a live build with your changes.
 
-- Click on the GitHub action called `ci/circleci: build_book` after it has run at the bottom of your pull request. This will
-  take you directly to CircleCI.
-- Once in CircleCI, click on the Artifacts tab. The home page of the guidebook will be called:
-
-`output/index.html`
-
-Click on that item to view the built online version of the guidebook in your
-browser.
+Our other Sphinx books still use CircleCI artifacts. To view those, open
+`ci/circleci: build_book`, then the **Artifacts** tab, and click
+`html/index.html`.
 
 ### Website build
 
