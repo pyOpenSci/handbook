@@ -1,0 +1,10 @@
+# Netlify deploy previews for the pyOpenSci handbook (Sphinx).
+# Production remains GitHub Pages: https://www.pyopensci.org/handbook/
+
+[build]
+  command = "bash scripts/netlify-build.sh"
+  publish = "_build/html"
+
+[build.environment]
+  PYTHON_VERSION = "3.12"
+  MPLBACKEND = "Agg"
