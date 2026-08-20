@@ -19,7 +19,7 @@
 <meta name="description" content="This guide provides high-level contributing guidelines for resources across our organization. You will find specific contributing guidelines in each repository that we maintain. pyOpenSci develops ..." />
 <meta name="twitter:card" content="summary_large_image" />
     <link href="https://www.pyopensci.org/images/favicon.ico" rel="icon" type="image/x-icon">
-    <meta property="article:modified_time" content="2026-06-08T21:43:16+00:00" />
+    <meta property="article:modified_time" content="2026-08-20T15:55:54+00:00" />
     <title>Contributing Guide for pyOpenSci &#8212; pyOpenSci Handbook</title>
   
   
@@ -72,7 +72,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-    <meta name="docbuild:last-update" content="Jun 08, 2026"/>
+    <meta name="docbuild:last-update" content="Aug 20, 2026"/>
   </head>
   
   
@@ -581,7 +581,9 @@ will first need to</p>
 <p>The easiest way to build the documentation in this repository is to use <code class="docutils literal notranslate"><span class="pre">nox</span></code>,
 a tool for quickly building environments and running commands within them.
 Nox ensures that your environment has all the dependencies needed to build the documentation.</p>
-<p>If you plan to submit a pull request with changes to the guide, you can choose to submit a PR and view the associated build online in CircleCI. Or you can choose to build the documentation locally to test a pull request.</p>
+<p>If you plan to submit a pull request with changes to the guide, you can
+choose to submit a PR and view the associated deploy preview, or build the
+documentation locally.</p>
 <p>To build locally, follow these steps:</p>
 <ol class="arabic">
 <li><p>Install <code class="docutils literal notranslate"><span class="pre">nox</span></code> into the environment where you plan to work. Nox will create a virtual environment that you can use to build the docs.</p>
@@ -606,18 +608,14 @@ nox -s docs-live
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">docs-live</span></code> command will provide you with a URL that you can enter into your
 browser to see the docs update as you update files.</p>
-<section id="circleci-previews">
-<h3>CircleCI previews<a class="headerlink" href="#circleci-previews" title="Link to this heading">#</a></h3>
-<p>Each book is set up with a GitHub action redirect that will take you to an online
-build of the current pull request in CircleCI. To view the build:</p>
-<ul class="simple">
-<li><p>Click on the GitHub action called <code class="docutils literal notranslate"><span class="pre">ci/circleci:</span> <span class="pre">build_book</span></code> after it has run at the bottom of your pull request. This will
-take you directly to CircleCI.</p></li>
-<li><p>Once in CircleCI, click on the Artifacts tab. The home page of the guidebook will be called:</p></li>
-</ul>
-<p><code class="docutils literal notranslate"><span class="pre">output/index.html</span></code></p>
-<p>Click on that item to view the built online version of the guidebook in your
-browser.</p>
+<section id="pull-request-previews">
+<h3>Pull request previews<a class="headerlink" href="#pull-request-previews" title="Link to this heading">#</a></h3>
+<p>This handbook uses <a class="reference external" href="https://www.netlify.com/">Netlify</a> deploy previews. After
+the Netlify check finishes on a pull request, click <strong>Details</strong> next to the
+deploy-preview status to open a live build with your changes.</p>
+<p>Our other Sphinx books still use CircleCI artifacts. To view those, open
+<code class="docutils literal notranslate"><span class="pre">ci/circleci:</span> <span class="pre">build_book</span></code>, then the <strong>Artifacts</strong> tab, and click
+<code class="docutils literal notranslate"><span class="pre">html/index.html</span></code>.</p>
 </section>
 <section id="website-build">
 <h3>Website build<a class="headerlink" href="#website-build" title="Link to this heading">#</a></h3>
@@ -635,7 +633,7 @@ browser.</p>
                   <div class="footer-article-items footer-article__inner">
   
     <div class="footer-article-item"><hr>
-<p style="font-size: small; color: #888;">Last updated: Jun 08, 2026</p></div>
+<p style="font-size: small; color: #888;">Last updated: Aug 20, 2026</p></div>
   
 </div>
                 </footer>
@@ -690,7 +688,7 @@ browser.</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-building-the-documentation-locally-on-your-computer">Instructions for building the documentation locally on your computer</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circleci-previews">CircleCI previews</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pull-request-previews">Pull request previews</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#website-build">Website build</a></li>
 </ul>
 </li>
