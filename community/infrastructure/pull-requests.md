@@ -135,7 +135,7 @@ Did we address these questions above??
 
 What are the expectations for an external contributor?
 What should they have done locally?
-Do we expect someone to have done all the wrangling with Ruby and Jekyll?
+Do we expect someone to have installed Hugo and built the website locally?
 :::
 
 ## Pull Requests and Continuous Integration

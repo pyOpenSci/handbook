@@ -21,6 +21,8 @@ Initiatives.
 
 This repository contains the source files for the [pyOpenSci handbook](https://pyopensci.org/handbook).
 
+Curious how our website, data workflows, and metrics fit together? Start with the [infrastructure overview](https://www.pyopensci.org/handbook/community/infrastructure/intro.html). It links to each page below it.
+
 ## Build the governance document locally
 
 Our governance documentation is built with [Sphinx](https://sphinx-doc.org), a documentation tool.
