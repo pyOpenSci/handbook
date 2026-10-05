@@ -12,6 +12,8 @@ Behind the scenes, we use a Python package called [`pyosMeta`](https://github.co
 
 You don't need to run `pyosMeta` yourself. Workflows in the [pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io) repository run it for you on a weekly schedule (sometimes called a "cron job"), and you can also start any of them by hand whenever you need to. Each time a workflow runs, it opens a pull request with the updated data. Once you (or another team member) merge that pull request, the website updates.
 
+The PR's are generally merged by our [pyOpenSci infrastructure team](https://github.com/orgs/pyOpenSci/teams/pyopensci-repository-maintainers) who work on and maintain repositories across the organizations. If you have questions about something not getting updated, you can post in the `#pyos-maintainers-infrastructure` channel in our slack.
+
 ## What each page uses
 
 | Page | File | Workflow | When it runs |
