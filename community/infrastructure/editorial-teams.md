@@ -73,7 +73,7 @@ You need permission to:
 * Change editorial team membership (an organization owner or a [team maintainer](https://docs.github.com/en/organizations/organizing-members-into-teams/assigning-the-team-maintainer-role-to-a-team-member) of the editorial teams).
 * Merge pull requests in `pyopensci.github.io`, and run workflows there if you want the website to update right away (write access).
 
-The Editor in Chief team and the Software Review Lead usually hold both. If you're missing one, ask the [pyOpenSci repository maintainers](pyopensci-maintainers-permissions).
+The Editor in Chief team and the Software Review Lead usually hold all the above permissions. If you're missing one, ask the [pyOpenSci repository maintainers](pyopensci-maintainers-permissions).
 
 ## Learn more
 
