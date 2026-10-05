@@ -119,7 +119,7 @@ pyOpenSci staff may be added to one or more email groups to support their role a
 Once a new staff member is onboarded, they are introduced to the pyOpenSci community as follows:
 
 - **Announce in Slack**: New staff will be introduced in the `#pyos-updates` Slack channel and invited to share a bit about themselves.
-- **Add to website**: Update the [contributors.yml file](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml) in our pyopensci.github.io repository, which will add them to the ["Our pyOpenSci"](https://www.pyopensci.org/our-community/index.html#executive-council-leadership--staff) community page.
+- **Add to website**: Update the [contributors.yml file](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/data/contributors.yml) in our pyopensci.github.io repository, which will add them to the ["Our pyOpenSci"](https://www.pyopensci.org/our-community/index.html#executive-council-leadership--staff) community page.
 - **Introductory blog post**: New hires write a brief blog post introducing themselves to the community. Topics may include work background, hobbies, why they joined pyOpenSci, and their role.
 - **Social media**: Post the hire announcement on pyOpenSci social channels.
 
