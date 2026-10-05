@@ -63,7 +63,7 @@ Both website workflows live in [`pyopensci.github.io`](https://github.com/pyOpen
 
 ## How our websites are built
 
-* The main website ([`pyopensci.github.io`](https://github.com/pyOpenSci/pyopensci.github.io)) is built with **Hugo**.
+* The main website ([`pyopensci.github.io`](https://github.com/pyOpenSci/pyopensci.github.io)) is built with [**Hugo**.](https://gohugo.io/)
 * The **Python Package Guide**, **Peer Review Guide**, **Handbook**, and **Lessons** are **Sphinx books**. Most use the [`pyos-sphinx-theme`](https://github.com/pyOpenSci/pyos-sphinx-theme), our branded theme built on top of `pydata_sphinx_theme`.
 * The [metrics dashboards](https://www.pyopensci.org/metrics) are built with **Quarto**.
 * Each site is built separately and published under the [pyopensci.org](https://www.pyopensci.org) domain using **GitHub Pages**.
