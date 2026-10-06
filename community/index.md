@@ -30,6 +30,7 @@ GitHub Issue Guidelines <infrastructure/issues>
 Pull Requests <infrastructure/pull-requests>
 Continuous Integration (CI) <infrastructure/continuous-integration>
 GitHub permissions <infrastructure/permissions>
+Editorial teams <infrastructure/editorial-teams>
 Data Workflows <infrastructure/data-process>
 :::
 
