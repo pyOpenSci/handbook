@@ -4,7 +4,7 @@ pyOpenSci develops and maintains several online resources, including:
 
 * a [Python packaging guidebook](https://www.pyopensci.org/python-package-guide/) that provides
 recommendations and best practices for creating and sharing Python code.
-* [online lessons](https://www.pyopensci.org/lessons) teach scientists critical open science skills including packaging, [writing cleaner code](https://www.pyopensci.org/lessons/clean-modular-code/intro-clean-code.html#intro-clean-code), [sharing code](https://www.pyopensci.org/lessons/publish-share-code/intro.html) and [collaborating on Github](https://www.pyopensci.org/lessons/github-git/intro.html) and making their work open and [citable](https://www.pyopensci.org/lessons/publish-share-code/cite-code.html).
+* [online lessons](https://www.pyopensci.org/lessons) teach scientists critical open science skills including packaging, [writing cleaner code](https://www.pyopensci.org/lessons/write-better-code/clean-modular-code/index.html#intro-clean-code), [sharing code](https://www.pyopensci.org/lessons/package-share-code/publish-share-code/index.html) and [collaborating on Github](https://www.pyopensci.org/lessons/contribute-open-source/index.html) and making their work open and [citable](https://www.pyopensci.org/lessons/package-share-code/publish-share-code/cite-code.html).
 
 A core value of pyOpenSci is making science more inclusive by ensuring our content is accessible and beginner-friendly. This commitment allows more people to participate in science.
 

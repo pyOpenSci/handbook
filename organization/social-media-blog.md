@@ -112,7 +112,7 @@ comments: true
 
 :::
 
-For more information on how pyOpenSci uses GitHub, please refer to the [GitHub section of our handbook](https://www.pyopensci.org/handbook/community/github/intro.html).
+For more information on how pyOpenSci uses GitHub, please refer to the [GitHub section of our handbook](../community/infrastructure/intro).
 
 ### Promoting blog posts
 

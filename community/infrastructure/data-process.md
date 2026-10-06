@@ -5,7 +5,7 @@ Ever wondered how a new editor shows up on our website, or how a newly accepted 
 :::{tip}
 **In a hurry?** If you just changed an editorial team on GitHub and want the website to show it now, go to the **Actions** tab in [`pyopensci.github.io`](https://github.com/pyOpenSci/pyopensci.github.io/actions/workflows/update-editorial-board.yml), choose **Update editorial board**, and select **Run workflow**. Then review and merge the pull request it opens. That's it!
 
-Adding or removing an editor? Start with the [onboarding guide](https://www.pyopensci.org/software-peer-review/how-to/onboard-editors.html#onboarding-a-new-editor). The [editorial teams](editorial-teams) page will help you pick the right GitHub team. This page explains what happens behind the scenes.
+Adding or removing an editor? Start with the [onboarding guide](https://www.pyopensci.org/software-peer-review/how-to/onboarding-guide.html#onboarding-a-new-editor). The [editorial teams](editorial-teams) page will help you pick the right GitHub team. This page explains what happens behind the scenes.
 :::
 
 Behind the scenes, we use a Python package called [`pyosMeta`](https://github.com/pyOpenSci/pyosMeta) to gather data from GitHub, such as peer review issues and team membership. `pyosMeta` saves that data as [YAML](https://yaml.org/) files, a plain-text format that our website and dashboards can read.

@@ -3,7 +3,7 @@
 
 This page is for you if you're the Editor in Chief, the Software Review Lead, or anyone else who adds or removes editors. It explains which GitHub team to use and what each team does.
 
-Looking for the full process of welcoming or thanking an editor, including Slack and the Community Manager? Use the [onboarding guide](https://www.pyopensci.org/software-peer-review/how-to/onboard-editors.html#onboarding-a-new-editor). This page covers the GitHub side.
+Looking for the full process of welcoming or thanking an editor, including Slack and the Community Manager? Use the [onboarding guide](https://www.pyopensci.org/software-peer-review/how-to/onboarding-guide.html#onboarding-a-new-editor). This page covers the GitHub side.
 
 ## What teams control
 
@@ -50,7 +50,7 @@ Someone can hold more than one role, such as editor and triage. Add them to ever
 
 ## Add or remove an editor
 
-The step-by-step process for adding and offboarding editors is in the [onboarding guide](https://www.pyopensci.org/software-peer-review/how-to/onboard-editors.html#onboarding-a-new-editor). Use the table above to pick the right teams, then [update the website right away](data-process.md#update-the-website-right-away) if you don't want to wait for the next scheduled run.
+The step-by-step process for adding and offboarding editors is in the [onboarding guide](https://www.pyopensci.org/software-peer-review/how-to/onboarding-guide.html#onboarding-a-new-editor). Use the table above to pick the right teams, then [update the website right away](data-process.md#update-the-website-right-away) if you don't want to wait for the next scheduled run.
 
 ## Guest editors
 
@@ -77,6 +77,6 @@ The Editor in Chief team and the Software Review Lead usually hold all the above
 
 ## Learn more
 
-* [Onboarding guide](https://www.pyopensci.org/software-peer-review/how-to/onboard-editors.html): the full process, including Slack and introductions
+* [Onboarding guide](https://www.pyopensci.org/software-peer-review/how-to/onboarding-guide.html): the full process, including Slack and introductions
 * [Data workflows](data-process): schedules, files, and what to do if a workflow fails
 * [GitHub permissions](permissions): repository access for every team
