@@ -19,7 +19,7 @@
 <meta name="description" content="pyOpenSci uses GitHub to manage almost all of its infrastructure, from community processes to website rendering. This page provides a high-level overview of our infrastructure, focusing on how our ..." />
 <meta name="twitter:card" content="summary_large_image" />
     <link href="https://www.pyopensci.org/images/favicon.ico" rel="icon" type="image/x-icon">
-    <meta property="article:modified_time" content="2026-10-05T22:46:51+00:00" />
+    <meta property="article:modified_time" content="2026-10-06T00:34:24+00:00" />
     <title>pyOpenSci Infrastructure &#8212; pyOpenSci Handbook</title>
   
   
@@ -61,6 +61,364 @@
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.12.1/dist/mermaid.esm.min.mjs";
+
+
+
+
+
+const initStyles = () => {
+    const defaultStyle = document.createElement('style');
+    defaultStyle.textContent = "pre.mermaid {\n    /* Same as .mermaid-container > pre */\n    display: block;\n    width: 100%;\n}\n\npre.mermaid > svg {\n    /* Same as .mermaid-container > pre > svg */\n    height: 500px;\n    width: 100%;\n    max-width: 100% !important;\n}";
+    document.head.appendChild(defaultStyle);
+
+    const fullscreenStyle = document.createElement('style');
+    fullscreenStyle.textContent = ".mermaid-container {\n    position: relative;\n    display: flex;\n    flex-direction: row;\n    width: 100%;\n}\n\n.mermaid-container > pre {\n    display: block;\n    width: 100%;\n}\n\n.mermaid-container > pre > svg {\n    height: 500px;\n    width: 100%;\n    max-width: 100% !important;\n}\n\n.mermaid-fullscreen-btn {\n    position: absolute;\n    width: 28px;\n    height: 28px;\n    background: rgba(255, 255, 255, 0.95);\n    border: 1px solid rgba(0, 0, 0, 0.3);\n    border-radius: 4px;\n    cursor: pointer;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    transition: all 0.2s;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);\n    font-size: 14px;\n    line-height: 1;\n    padding: 0;\n    color: #333;\n}\n\n.mermaid-fullscreen-btn:hover {\n    opacity: 100% !important;\n    background: rgba(255, 255, 255, 1);\n    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);\n    transform: scale(1.1);\n}\n\n.mermaid-fullscreen-btn.dark-theme {\n    background: rgba(50, 50, 50, 0.95);\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    color: #e0e0e0;\n}\n\n.mermaid-fullscreen-btn.dark-theme:hover {\n    background: rgba(60, 60, 60, 1);\n    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2);\n}\n\n.mermaid-fullscreen-modal {\n    display: none;\n    position: fixed !important;\n    top: 0 !important;\n    left: 0 !important;\n    width: 95vw;\n    height: 100vh;\n    background: rgba(255, 255, 255, 0.98);\n    z-index: 9999;\n    padding: 20px;\n    overflow: auto;\n}\n\n.mermaid-fullscreen-modal.dark-theme {\n    background: rgba(0, 0, 0, 0.98);\n}\n\n.mermaid-fullscreen-modal.active {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.mermaid-container-fullscreen {\n    position: relative;\n    width: 95vw;\n    height: 90vh;\n    max-width: 95vw;\n    max-height: 90vh;\n    background: white;\n    border-radius: 8px;\n    padding: 20px;\n    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);\n    overflow: auto;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.mermaid-container-fullscreen.dark-theme {\n    background: #1a1a1a;\n    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);\n}\n\n.mermaid-container-fullscreen pre.mermaid {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.mermaid-container-fullscreen .mermaid svg {\n    height: 100% !important;\n    width: 100% !important;\n    cursor: grab;\n}\n\n.mermaid-fullscreen-close {\n    position: fixed !important;\n    top: 20px !important;\n    right: 20px !important;\n    width: 40px;\n    height: 40px;\n    background: rgba(255, 255, 255, 0.95);\n    border: 1px solid rgba(0, 0, 0, 0.2);\n    border-radius: 50%;\n    cursor: pointer;\n    z-index: 10000;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);\n    transition: all 0.2s;\n    font-size: 24px;\n    line-height: 1;\n    color: #333;\n}\n\n.mermaid-fullscreen-close:hover {\n    background: white;\n    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);\n    transform: scale(1.1);\n}\n\n.mermaid-fullscreen-close.dark-theme {\n    background: rgba(50, 50, 50, 0.95);\n    border: 1px solid rgba(255, 255, 255, 0.2);\n    color: #e0e0e0;\n}\n\n.mermaid-fullscreen-close.dark-theme:hover {\n    background: rgba(60, 60, 60, 1);\n    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2);\n}\n\n.mermaid-fullscreen-modal .mermaid-fullscreen-btn {\n    display: none !important;\n}";
+    document.head.appendChild(fullscreenStyle);
+}
+
+// Detect if page has dark background
+const isDarkTheme = () => {
+    // We use a set of heuristics:
+    // 1. Check for common dark mode classes or attributes
+    // 2. Check computed background color brightness
+    if (document.documentElement.classList.contains('dark') ||
+        document.documentElement.getAttribute('data-theme') === 'dark' ||
+        document.body.classList.contains('dark') ||
+        document.body.getAttribute('data-theme') === 'dark') {
+        // console.log("Dark theme detected via class/attribute");
+        return true;
+    }
+    if (document.documentElement.classList.contains('light') ||
+        document.documentElement.getAttribute('data-theme') === 'light' ||
+        document.body.classList.contains('light') ||
+        document.body.getAttribute('data-theme') === 'light') {
+        // console.log("Light theme detected via class/attribute");
+        return false;
+    }
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // console.log("Dark theme detected via prefers-color-scheme");
+        return true;
+    }
+    const bgColor = window.getComputedStyle(document.body).backgroundColor;
+    const match = bgColor.match(/rgb\((\d+),\s*(\d+),\s*(\d+)/);
+    if (match) {
+        const r = parseInt(match[1]);
+        const g = parseInt(match[2]);
+        const b = parseInt(match[3]);
+        const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+        // console.log("Background color brightness:", brightness);
+        return brightness < 128;
+    }
+    // console.log("No dark or light theme detected, defaulting to light theme");
+    return false;
+};
+
+let darkTheme = isDarkTheme();
+let modal = null;
+let modalContent = null;
+let previousScrollOffset = [window.scrollX, window.scrollY];
+let _lazyObserver = null;
+let _renderQueue = Promise.resolve();
+let closeModal = () => {};
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal?.classList.contains('active')) {
+        closeModal();
+    }
+});
+
+// Apply d3 zoom to each SVG. Idempotent: an SVG already wrapped is skipped,
+// so this is safe to call both for the initial batch and for diagrams that
+// render lazily once they become visible.
+const addZoomToSvgs = (svgs) => {
+    svgs.each(function() {
+        if (this.getAttribute('data-zoom-applied') === 'true') return;
+        var svg = d3.select(this);
+        svg.html("<g class='wrapper'>" + svg.html() + "</g>");
+        var inner = svg.select("g");
+        var zoom = d3.zoom().on("zoom", function(event) {
+            inner.attr("transform", event.transform);
+        });
+        svg.call(zoom);
+        this.setAttribute('data-zoom-applied', 'true');
+    });
+};
+
+const runMermaid = async (rerun) => {
+    console.log("Running mermaid diagrams, rerun =", rerun);
+    // clear all existing mermaid charts
+    let all_mermaids = document.querySelectorAll(".mermaid");
+
+    if (rerun) {
+        // Disconnect any previous lazy rendering observer
+        if (_lazyObserver) {
+            _lazyObserver.disconnect();
+            _lazyObserver = null;
+        }
+
+        all_mermaids.forEach((el) => {
+            el.removeAttribute('data-mermaid-deferred');
+            el.removeAttribute('data-mermaid-render-failed');
+            if(!el.hasAttribute("data-original-code")) {
+                // store original code
+                // console.log(`Storing original code for first run: `, el.innerHTML);
+                el.setAttribute('data-original-code', el.innerHTML);
+            }
+            if(el.getAttribute("data-processed") === "true") {
+                // remove and restore original
+                el.removeAttribute("data-processed");
+                // console.log(`Restoring original code for re-run: `, el.getAttribute('data-original-code'));
+                el.innerHTML = el.getAttribute('data-original-code');
+            } else {
+                // store original code
+                // console.log(`Storing original code for re-run: `, el.innerHTML);
+                el.setAttribute('data-original-code', el.innerHTML);
+            }
+        });
+
+        // Separate visible and hidden elements. Mermaid's layout engine measures
+        // text dimensions via the DOM, which fails for elements hidden by a parent
+        // (e.g., Reveal.js non-active slides, sphinx-design unopened tabs),
+        // producing broken SVGs. Render visible elements now, defer hidden ones.
+        const visible = [];
+        const hidden = [];
+        all_mermaids.forEach((el) => {
+            // offsetParent is null for display:none ancestors.
+            // getClientRects().length > 0 catches position:fixed elements
+            // (which also have null offsetParent but are still visible).
+            if (el.offsetParent !== null || el.getClientRects().length > 0) {
+                visible.push(el);
+            } else {
+                hidden.push(el);
+                el.setAttribute('data-mermaid-deferred', 'true');
+            }
+        });
+
+        if (visible.length > 0) {
+            try {
+                await mermaid.run({ nodes: visible });
+            } catch (e) {
+                console.error("Mermaid rendering failed:", e);
+            }
+        }
+
+        // Lazily render hidden elements when they become visible.
+        // Uses a promise chain (_renderQueue) to serialize rendering,
+        // since IntersectionObserver may report multiple entries at once
+        // and mermaid.run() is not safe to call concurrently.
+        if (hidden.length > 0) {
+            if (typeof IntersectionObserver === 'undefined') {
+                console.warn("IntersectionObserver not available; hidden mermaid diagrams will not render.");
+            } else {
+                _renderQueue = Promise.resolve();
+                _lazyObserver = new IntersectionObserver((entries) => {
+                    for (const entry of entries) {
+                        if (entry.isIntersecting && entry.target.getAttribute("data-processed") !== "true") {
+                            _lazyObserver.unobserve(entry.target);
+                            const el = entry.target;
+                            _renderQueue = _renderQueue.then(async () => {
+                                try {
+                                    await mermaid.run({ nodes: [el] });
+                                    el.removeAttribute('data-mermaid-deferred');
+                                    // Apply zoom to the now-rendered diagram, matching
+                                    // the decoration visible diagrams receive.
+                                    if (false) {
+                                        addZoomToSvgs(d3.selectAll("").select(function() {
+                                            return this.querySelector("svg");
+                                        }));
+                                    }
+                                } catch (e) {
+                                    console.error("Mermaid deferred rendering failed:", e);
+                                    el.removeAttribute('data-mermaid-deferred');
+                                    el.setAttribute('data-mermaid-render-failed', 'true');
+                                }
+                            });
+                        }
+                    }
+                });
+                hidden.forEach((el) => _lazyObserver.observe(el));
+            }
+        }
+    }
+
+    all_mermaids = document.querySelectorAll(".mermaid");
+    // Exclude deferred (hidden) and render-failed elements from completion checks
+    const mermaids_active = document.querySelectorAll(".mermaid:not([data-mermaid-deferred]):not([data-mermaid-render-failed])");
+    const mermaids_processed = document.querySelectorAll(".mermaid:not([data-mermaid-deferred]):not([data-mermaid-render-failed])[data-processed='true']");
+
+    if (false) {
+        const mermaids_to_add_zoom = 0 === -1 ? mermaids_active.length : 0;
+        if(mermaids_to_add_zoom > 0) {
+            var svgs = d3.selectAll("").select(function() {
+                return this.querySelector("svg");
+            });
+            // Wait until every active (visible) diagram has rendered. Deferred
+            // diagrams are excluded, so a fixed d3_node_count that counts a
+            // hidden diagram no longer loops forever waiting for its SVG.
+            if(mermaids_active.length !== mermaids_processed.length) {
+                setTimeout(() => runMermaid(false), 200);
+                return;
+            }
+            addZoomToSvgs(svgs);
+        }
+    } else if(mermaids_active.length !== mermaids_processed.length) {
+        // Wait for mermaid to process all diagrams
+        setTimeout(() => runMermaid(false), 200);
+        return;
+    }
+
+    // Stop here if not adding fullscreen capability
+    if (!true) return;
+
+    if (modal !== null ) {
+        // Destroy existing modal
+        modal.remove();
+        modal = null;
+        modalContent = null;
+    }
+
+    modal = document.createElement('div');
+    modal.className = 'mermaid-fullscreen-modal' + (darkTheme ? ' dark-theme' : '');
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
+    modal.setAttribute('aria-label', 'Fullscreen diagram viewer');
+    modal.innerHTML = `
+        <button class="mermaid-fullscreen-close${darkTheme ? ' dark-theme' : ''}" aria-label="Close fullscreen">✕</button>
+        <div class="mermaid-container-fullscreen${darkTheme ? ' dark-theme' : ''}"></div>
+    `;
+    document.body.appendChild(modal);
+
+    modalContent = modal.querySelector('.mermaid-container-fullscreen');
+    const closeBtn = modal.querySelector('.mermaid-fullscreen-close');
+
+    closeModal = () => {
+        modal.classList.remove('active');
+        modalContent.innerHTML = '';
+        document.body.style.overflow = ''
+        window.scrollTo({left: previousScrollOffset[0], top: previousScrollOffset[1], behavior: 'instant'});
+    };
+
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+    });
+    document.querySelectorAll('.mermaid').forEach((mermaidDiv) => {
+        if (mermaidDiv.parentNode.classList.contains('mermaid-container') ||
+            mermaidDiv.closest('.mermaid-fullscreen-modal')) {
+            // Already processed, adjust button class if needed
+            const existingBtn = mermaidDiv.parentNode.querySelector('.mermaid-fullscreen-btn');
+            if (existingBtn) {
+                existingBtn.className = 'mermaid-fullscreen-btn' + (darkTheme ? ' dark-theme' : '');
+            }
+            return;
+        }
+
+        const container = document.createElement('div');
+        container.className = 'mermaid-container';
+        mermaidDiv.parentNode.insertBefore(container, mermaidDiv);
+        container.appendChild(mermaidDiv);
+
+        const fullscreenBtn = document.createElement('button');
+        fullscreenBtn.className = 'mermaid-fullscreen-btn' + (darkTheme ? ' dark-theme' : '');
+        fullscreenBtn.setAttribute('aria-label', 'View diagram in fullscreen');
+        fullscreenBtn.textContent = "\u26f6";
+        fullscreenBtn.style.opacity = "50%";
+
+        // Calculate dynamic position based on diagram's margin and padding
+        const diagramStyle = window.getComputedStyle(mermaidDiv);
+        const marginTop = parseFloat(diagramStyle.marginTop) || 0;
+        const marginRight = parseFloat(diagramStyle.marginRight) || 0;
+        const paddingTop = parseFloat(diagramStyle.paddingTop) || 0;
+        const paddingRight = parseFloat(diagramStyle.paddingRight) || 0;
+        fullscreenBtn.style.top = `${marginTop + paddingTop + 4}px`;
+        fullscreenBtn.style.right = `${marginRight + paddingRight + 4}px`;
+
+        fullscreenBtn.addEventListener('click', () => {
+            previousScrollOffset = [window.scrollX, window.scrollY];
+            const clone = mermaidDiv.cloneNode(true);
+            modalContent.innerHTML = '';
+            modalContent.appendChild(clone);
+
+            const svg = clone.querySelector('svg');
+            if (svg) {
+                svg.removeAttribute('width');
+                svg.removeAttribute('height');
+                svg.style.width = '100%';
+                svg.style.height = 'auto';
+                svg.style.maxWidth = '100%';
+                svg.style.display = 'block';
+
+                if (false) {
+                    setTimeout(() => {
+                        const g = svg.querySelector('g');
+                        if (g) {
+                            var svgD3 = d3.select(svg);
+                            svgD3.html("<g class='wrapper'>" + svgD3.html() + "</g>");
+                            var inner = svgD3.select("g");
+                            var zoom = d3.zoom().on("zoom", function(event) {
+                                inner.attr("transform", event.transform);
+                            });
+                            svgD3.call(zoom);
+                        }
+                    }, 100);
+                }
+            }
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+        container.appendChild(fullscreenBtn);
+    });
+};
+
+
+
+const load = async () => {
+    initStyles();
+
+
+    await runMermaid(true);
+
+    const reRunIfThemeChanges = async () => {
+        const newDarkTheme = isDarkTheme();
+        if (newDarkTheme !== darkTheme) {
+            darkTheme = newDarkTheme;
+            console.log("Theme change detected, re-running mermaid with", darkTheme ? "dark" : "default", "theme");
+            await mermaid.initialize(
+                {...{"startOnLoad": false},
+                ...{ darkMode: darkTheme, theme: darkTheme ? "dark" : "default" },
+                }
+            );
+            await runMermaid(true);
+        }
+    };
+
+    // Update theme classes when theme changes
+    const themeObserver = new MutationObserver(reRunIfThemeChanges);
+    themeObserver.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['class', 'style', 'data-theme']
+    });
+    themeObserver.observe(document.body, {
+        attributes: true,
+        attributeFilter: ['class', 'style', 'data-theme']
+    });
+};
+
+
+
+
+
+console.log("Initializing mermaid with", darkTheme ? "dark" : "default", "theme");
+mermaid.initialize(
+    {...{"startOnLoad": false},
+    ...{ darkMode: darkTheme, theme: darkTheme ? "dark" : "default" },
+    }
+);
+
+window.addEventListener("load", load);
+window.runMermaid = runMermaid;</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'community/infrastructure/intro';</script>
     <script src="../../_static/matomo.js?v=918da087"></script>
     <link rel="canonical" href="https://www.pyopensci.org/handbook/community/infrastructure/intro.html" />
@@ -72,7 +430,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-    <meta name="docbuild:last-update" content="Oct 05, 2026"/>
+    <meta name="docbuild:last-update" content="Oct 06, 2026"/>
   </head>
   
   
@@ -461,6 +819,7 @@
 <li class="toctree-l1"><a class="reference internal" href="pull-requests.html">Pull Requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="continuous-integration.html">Continuous Integration (CI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="permissions.html">GitHub permissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editorial-teams.html">Editorial teams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-process.html">Data Workflows</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Translation &amp; Internationalization workflows</span></p>
@@ -538,7 +897,7 @@ This page provides a <strong>high-level overview</strong> of our infrastructure,
 <ul class="simple">
 <li><p><strong>GitHub repositories:</strong> All code, content, and documentation repositories</p></li>
 <li><p><strong>Website and documentation:</strong> Main website and sub-sites (handbook, guides, lessons)</p></li>
-<li><p><strong>Data processing:</strong> Automated collection and processing of contributor and peer review data</p></li>
+<li><p><strong>Data processing:</strong> Automated collection and processing of contributor, peer review, and editorial board data</p></li>
 <li><p><strong>Continuous Integration (CI):</strong> GitHub Actions workflows for testing, building, and deploying</p></li>
 <li><p><strong>Access and permissions:</strong> Repository access management and team structures</p></li>
 <li><p><strong>Issue and pull request workflows:</strong> Processes for managing contributions and reviews</p></li>
@@ -549,14 +908,17 @@ This page provides a <strong>high-level overview</strong> of our infrastructure,
 <p>The diagrams below illustrate two key aspects of our infrastructure:</p>
 <section id="data-flow-and-processing">
 <h3>Data flow and processing<a class="headerlink" href="#data-flow-and-processing" title="Link to this heading">#</a></h3>
-<p>The first diagram shows how peer review data is extracted from GitHub issues through our automated processing system to update the website:</p>
-<figure class="align-default" id="website-diagram">
-<img alt="../../_images/website-diagram.svg" src="../../_images/website-diagram.svg" />
-<figcaption>
-<p><span class="caption-text">pyOpenSci infrastructure data flow diagram showing how peer review issues are processed through pyosMeta to update the website.</span><a class="headerlink" href="#website-diagram" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<p>This diagram illustrates the automated workflow: peer review happens in GitHub issues, which are parsed by scripts in the <code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code> package to generate YAML files that automatically update the website’s package and contributor pages.</p>
+<p>The first diagram shows how contributor, peer review, and editorial data move from GitHub to the website and metrics:</p>
+<pre  class="mermaid">
+        flowchart LR
+  Contrib[All Contributors files] --&gt; Meta[pyosMeta]
+  Issues[Peer review issues in software-submission] --&gt; Meta
+  Teams[GitHub editorial teams] --&gt; Meta
+  Meta --&gt; PR[Pull request with updated YAML files]
+  PR --&gt;|merged| Website[Website pages]
+  Website -.-&gt;|editorial dashboard reads board data| Metrics[Metrics dashboards]
+  Issues -.-&gt;|review data| Metrics
+    </pre><p>Scheduled workflows run <code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code> to collect data from GitHub and write it to YAML files. Each run opens a pull request, and the website updates once you merge it. The metrics dashboards run on their own schedule and read the data that’s already on the website’s <code class="docutils literal notranslate"><span class="pre">main</span></code> branch.</p>
 </section>
 <section id="website-structure">
 <h3>Website structure<a class="headerlink" href="#website-structure" title="Link to this heading">#</a></h3>
@@ -570,58 +932,35 @@ This page provides a <strong>high-level overview</strong> of our infrastructure,
 <p>All sub-sites are built separately but served under the <code class="docutils literal notranslate"><span class="pre">pyopensci.org</span></code> domain, with the main website (<code class="docutils literal notranslate"><span class="pre">pyopensci.github.io</span></code>) serving as the central hub.</p>
 </section>
 </section>
-<section id="data-flow-and-continuous-integration">
-<h2>Data flow and continuous integration<a class="headerlink" href="#data-flow-and-continuous-integration" title="Link to this heading">#</a></h2>
-<p>In simple terms: pyOpenSci uses automated workflows to collect data from GitHub and automatically update our website.</p>
-<p>pyOpenSci uses a set of <strong>Continuous Integration (CI)</strong> jobs (GitHub Actions) to:</p>
+<section id="where-each-page-s-data-comes-from">
+<h2>Where each page’s data comes from<a class="headerlink" href="#where-each-page-s-data-comes-from" title="Link to this heading">#</a></h2>
+<p>The <a class="reference external" href="https://github.com/pyOpenSci/pyosMeta"><code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code></a> package is a Python package that <strong>parses review, contributor, and editorial data</strong> and turns it into <strong>machine-readable YAML files</strong>. Here’s where each public page gets its data:</p>
 <ul class="simple">
-<li><p>Collect data from our open peer review process</p></li>
-<li><p>Collect contributor data from across all of our GitHub repositories</p></li>
+<li><p><strong><a class="reference external" href="https://www.pyopensci.org/our-community/index.html">Our Community</a> and <a class="reference external" href="https://www.pyopensci.org/python-packages.html">Packages</a> pages.</strong> The <strong>Update Contribs &amp; reviewers</strong> workflow reads the All Contributors files (<code class="docutils literal notranslate"><span class="pre">.all-contributorsrc</span></code>) in our repositories and the review issues in <a class="reference external" href="https://github.com/pyOpenSci/software-submission"><code class="docutils literal notranslate"><span class="pre">software-submission</span></code></a>.</p></li>
+<li><p><strong><a class="reference external" href="https://www.pyopensci.org/about-peer-review/index.html#meet-our-editorial-board">Editorial board page</a>.</strong> The <strong>Update editorial board</strong> workflow reads the GitHub teams under <code class="docutils literal notranslate"><span class="pre">peer-review-team</span></code>, plus a <a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/blob/main/data/manual-editorial-roster.yml">small manual roster</a> for people who can’t join the organization. If you add or remove editors, see <a class="reference internal" href="editorial-teams.html"><span class="doc std std-doc">editorial teams</span></a>.</p></li>
+<li><p><strong><a class="reference external" href="https://www.pyopensci.org/metrics">Metrics dashboards</a>.</strong> The metrics repository has its own workflow. It reads review data from GitHub and the editorial board files from the website’s <code class="docutils literal notranslate"><span class="pre">main</span></code> branch.</p></li>
+<li><p><strong>Pull request checks.</strong> Every repository runs checks when you open a pull request. See <a class="reference internal" href="continuous-integration.html"><span class="doc std std-doc">continuous integration</span></a>.</p></li>
 </ul>
-<p>The <a class="reference external" href="https://github.com/pyOpenSci/pyosMeta"><code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code></a> package is a Python package that <strong>parses review and contributor data</strong> and transforms it into <strong>machine-readable YAML files</strong> used by our website.</p>
-<section id="how-data-flows-through-our-system">
-<h3>How data flows through our system<a class="headerlink" href="#how-data-flows-through-our-system" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code> parses the <strong>Markdown data</strong> within review issues in the <a class="reference external" href="https://github.com/pyOpenSci/software-review"><code class="docutils literal notranslate"><span class="pre">software-review</span></code></a> GitHub repository. It:</p>
-<ul>
-<li><p>Gathers review editors, reviewers, and maintainers’ GitHub usernames, and uses the GitHub API to retrieve contributor names, emails, and other public GitHub profile information</p></li>
-<li><p>Extracts the GitHub URL of each reviewed package and retrieves basic repository statistics (number of forks, stars, contributors)</p></li>
-<li><p>Stores this peer review information in <code class="docutils literal notranslate"><span class="pre">packages.yml</span></code></p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code> also parses <strong>contributor data</strong> from across all pyOpenSci repositories. It:</p>
-<ul>
-<li><p>Parses <code class="docutils literal notranslate"><span class="pre">all-contributors</span></code> bot files to compile a list of contributors and their associated repositories/projects</p></li>
-<li><p>Parses peer review metadata to populate roles such as reviewers, editors, and other contributor roles within our organization</p></li>
-<li><p>Stores this contributor information in <code class="docutils literal notranslate"><span class="pre">contributors.yml</span></code></p></li>
-</ul>
-</li>
-<li><p>The <code class="docutils literal notranslate"><span class="pre">packages.yml</span></code> and <code class="docutils literal notranslate"><span class="pre">contributors.yml</span></code> files generated by <code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code> are updated <strong>daily</strong> via a GitHub Action <strong>cron job</strong> in the <a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/tree/main/data"><code class="docutils literal notranslate"><span class="pre">pyopensci.github.io</span></code></a> repository. This data is used to populate:</p>
-<ul>
-<li><p>The <strong>Our Community</strong> page</p></li>
-<li><p>The <strong>Packages</strong> page</p></li>
-</ul>
-</li>
-</ul>
-<p>For more detailed information about data collection and processing, see the <a class="reference internal" href="data-process.html"><span class="doc std std-doc">Data Workflows</span></a> page.</p>
+<p>Both website workflows live in <a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io"><code class="docutils literal notranslate"><span class="pre">pyopensci.github.io</span></code></a>. For schedules, the files each one writes, and what to do when one fails, see <a class="reference internal" href="data-process.html"><span class="doc std std-doc">data workflows</span></a>.</p>
 </section>
-<section id="website-publishing">
-<h3>Website publishing<a class="headerlink" href="#website-publishing" title="Link to this heading">#</a></h3>
+<section id="how-our-websites-are-built">
+<h2>How our websites are built<a class="headerlink" href="#how-our-websites-are-built" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>The <strong>Python Package Guide</strong>, <strong>Peer Review Guide</strong>, and <strong>Handbook</strong> are all <strong>Sphinx books</strong> that use the <code class="docutils literal notranslate"><span class="pre">pydata_sphinx_theme</span></code>. These books are built separately but are served under the <code class="docutils literal notranslate"><span class="pre">pyopensci.org</span></code> domain.</p></li>
-<li><p>All Sphinx books use the <a class="reference external" href="https://github.com/pyOpenSci/pyos-sphinx-theme%60"><code class="docutils literal notranslate"><span class="pre">pyos-sphinx-theme</span></code></a>, which is a Sphinx theme built on top of <code class="docutils literal notranslate"><span class="pre">pydata_sphinx_theme</span></code>.</p></li>
-<li><p>The final site is published at <a class="reference external" href="https://www.pyopensci.org">pyopensci.org</a> using <strong>GitHub Pages</strong>.</p></li>
+<li><p>The main website (<a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io"><code class="docutils literal notranslate"><span class="pre">pyopensci.github.io</span></code></a>) is built with <a class="reference external" href="https://gohugo.io/"><strong>Hugo</strong>.</a></p></li>
+<li><p>The <strong>Python Package Guide</strong>, <strong>Peer Review Guide</strong>, <strong>Handbook</strong>, and <strong>Lessons</strong> are <strong>Sphinx books</strong>. Most use the <a class="reference external" href="https://github.com/pyOpenSci/pyos-sphinx-theme"><code class="docutils literal notranslate"><span class="pre">pyos-sphinx-theme</span></code></a>, our branded theme built on top of <code class="docutils literal notranslate"><span class="pre">pydata_sphinx_theme</span></code>.</p></li>
+<li><p>The <a class="reference external" href="https://www.pyopensci.org/metrics">metrics dashboards</a> are built with <strong>Quarto</strong>.</p></li>
+<li><p>Each site is built separately and published under the <a class="reference external" href="https://www.pyopensci.org">pyopensci.org</a> domain using <strong>GitHub Pages</strong>.</p></li>
 </ul>
-</section>
 </section>
 <section id="learn-more">
 <h2>Learn more<a class="headerlink" href="#learn-more" title="Link to this heading">#</a></h2>
-<p>This page provides a high-level overview. For detailed information about specific infrastructure components, see:</p>
+<p>For details on each part of our infrastructure, see:</p>
 <ul class="simple">
 <li><p><strong><a class="reference internal" href="our-repositories.html"><span class="doc std std-doc">All repositories</span></a>:</strong> Complete list and description of all pyOpenSci GitHub repositories</p></li>
-<li><p><strong><a class="reference internal" href="data-process.html"><span class="doc std std-doc">Data workflows</span></a>:</strong> Detailed information about data collection and processing</p></li>
-<li><p><strong><a class="reference internal" href="continuous-integration.html"><span class="doc std std-doc">Continuous Integration</span></a>:</strong> CI/CD workflows and GitHub Actions</p></li>
+<li><p><strong><a class="reference internal" href="data-process.html"><span class="doc std std-doc">Data workflows</span></a>:</strong> Schedules, files, and troubleshooting for contributor, package, and editorial data</p></li>
+<li><p><strong><a class="reference internal" href="continuous-integration.html"><span class="doc std std-doc">Continuous integration</span></a>:</strong> CI/CD workflows and GitHub Actions</p></li>
 <li><p><strong><a class="reference internal" href="permissions.html"><span class="doc std std-doc">Permissions</span></a>:</strong> Repository access management and team structures</p></li>
+<li><p><strong><a class="reference internal" href="editorial-teams.html"><span class="doc std std-doc">Editorial teams</span></a>:</strong> Which GitHub team to use when you add or remove an editor</p></li>
 <li><p><strong><a class="reference internal" href="pull-requests.html"><span class="doc std std-doc">Pull requests</span></a>:</strong> How to work with pull requests in pyOpenSci repos</p></li>
 <li><p><strong><a class="reference internal" href="issues.html"><span class="doc std std-doc">Issues</span></a>:</strong> Issue management and labeling workflows</p></li>
 </ul>
@@ -637,7 +976,7 @@ This page provides a <strong>high-level overview</strong> of our infrastructure,
                   <div class="footer-article-items footer-article__inner">
   
     <div class="footer-article-item"><hr>
-<p style="font-size: small; color: #888;">Last updated: Oct 05, 2026</p></div>
+<p style="font-size: small; color: #888;">Last updated: Oct 06, 2026</p></div>
   
 </div>
                 </footer>
@@ -690,11 +1029,8 @@ This page provides a <strong>high-level overview</strong> of our infrastructure,
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#website-structure">Website structure</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-flow-and-continuous-integration">Data flow and continuous integration</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-data-flows-through-our-system">How data flows through our system</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#website-publishing">Website publishing</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#where-each-page-s-data-comes-from">Where each page’s data comes from</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-our-websites-are-built">How our websites are built</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
 </ul>
   </nav></div>

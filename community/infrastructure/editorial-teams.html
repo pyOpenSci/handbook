@@ -7,20 +7,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="pyOpenSci data workflows" />
+<meta property="og:title" content="Editorial teams" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.pyopensci.org/handbook/community/infrastructure/data-process.html" />
+<meta property="og:url" content="https://www.pyopensci.org/handbook/community/infrastructure/editorial-teams.html" />
 <meta property="og:site_name" content="pyOpenSci Python Package Guide" />
-<meta property="og:description" content="Ever wondered how a new editor shows up on our website, or how a newly accepted package lands on our packages page? This page walks you through it. You’ll learn which GitHub Actions workflow keeps ..." />
+<meta property="og:description" content="This page is for you if you’re the Editor in Chief, the Software Review Lead, or anyone else who adds or removes editors. It explains which GitHub team to use and what each team does. Looking for t..." />
 <meta property="og:image:width" content="1146" />
 <meta property="og:image:height" content="600" />
-<meta property="og:image" content="https://www.pyopensci.org/handbook/_images/social_previews/summary_community_infrastructure_data-process_37b995c3.png" />
-<meta property="og:image:alt" content="Ever wondered how a new editor shows up on our website, or how a newly accepted package lands on our packages page? This page walks you through it. You’ll learn which GitHub Actions workflow keeps ..." />
-<meta name="description" content="Ever wondered how a new editor shows up on our website, or how a newly accepted package lands on our packages page? This page walks you through it. You’ll learn which GitHub Actions workflow keeps ..." />
+<meta property="og:image" content="https://www.pyopensci.org/handbook/_images/social_previews/summary_community_infrastructure_editorial-teams_60ff4176.png" />
+<meta property="og:image:alt" content="This page is for you if you’re the Editor in Chief, the Software Review Lead, or anyone else who adds or removes editors. It explains which GitHub team to use and what each team does. Looking for t..." />
+<meta name="description" content="This page is for you if you’re the Editor in Chief, the Software Review Lead, or anyone else who adds or removes editors. It explains which GitHub team to use and what each team does. Looking for t..." />
 <meta name="twitter:card" content="summary_large_image" />
     <link href="https://www.pyopensci.org/images/favicon.ico" rel="icon" type="image/x-icon">
     <meta property="article:modified_time" content="2026-10-06T00:34:24+00:00" />
-    <title>pyOpenSci data workflows &#8212; pyOpenSci Handbook</title>
+    <title>Editorial teams &#8212; pyOpenSci Handbook</title>
   
   
   
@@ -419,14 +419,14 @@ mermaid.initialize(
 
 window.addEventListener("load", load);
 window.runMermaid = runMermaid;</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'community/infrastructure/data-process';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'community/infrastructure/editorial-teams';</script>
     <script src="../../_static/matomo.js?v=918da087"></script>
-    <link rel="canonical" href="https://www.pyopensci.org/handbook/community/infrastructure/data-process.html" />
+    <link rel="canonical" href="https://www.pyopensci.org/handbook/community/infrastructure/editorial-teams.html" />
     <link rel="icon" href="https://www.pyopensci.org/images/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="pyOpenSci GitHub processes for translation teams" href="../translation.html" />
-    <link rel="prev" title="Editorial teams" href="editorial-teams.html" />
+    <link rel="next" title="pyOpenSci data workflows" href="data-process.html" />
+    <link rel="prev" title="pyOpenSci GitHub permissions" href="permissions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -819,8 +819,8 @@ window.runMermaid = runMermaid;</script>
 <li class="toctree-l1"><a class="reference internal" href="pull-requests.html">Pull Requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="continuous-integration.html">Continuous Integration (CI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="permissions.html">GitHub permissions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="editorial-teams.html">Editorial teams</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Data Workflows</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Editorial teams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-process.html">Data Workflows</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Translation &amp; Internationalization workflows</span></p>
 <ul class="nav bd-sidenav">
@@ -869,7 +869,7 @@ window.runMermaid = runMermaid;</script>
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Community Handbook</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">pyOpenSci data workflows</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Editorial teams</span></li>
   </ul>
 </nav>
 </div>
@@ -886,94 +886,127 @@ window.runMermaid = runMermaid;</script>
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="pyopensci-data-workflows">
-<h1>pyOpenSci data workflows<a class="headerlink" href="#pyopensci-data-workflows" title="Link to this heading">#</a></h1>
-<p>Ever wondered how a new editor shows up on our website, or how a newly accepted package lands on our packages page? This page walks you through it. You’ll learn which GitHub Actions workflow keeps each page on our website (and our peer review metrics dashboards) up to date, and how you can get a change onto the site right away instead of waiting.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><strong>In a hurry?</strong> If you just changed an editorial team on GitHub and want the website to show it now, go to the <strong>Actions</strong> tab in <a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/actions/workflows/update-editorial-board.yml"><code class="docutils literal notranslate"><span class="pre">pyopensci.github.io</span></code></a>, choose <strong>Update editorial board</strong>, and select <strong>Run workflow</strong>. Then review and merge the pull request it opens. That’s it!</p>
-<p>Adding or removing an editor? Start with the <a class="reference external" href="https://www.pyopensci.org/software-peer-review/how-to/onboard-editors.html#onboarding-a-new-editor">onboarding guide</a>. The <a class="reference internal" href="editorial-teams.html"><span class="doc std std-doc">editorial teams</span></a> page will help you pick the right GitHub team. This page explains what happens behind the scenes.</p>
-</div>
-<p>Behind the scenes, we use a Python package called <a class="reference external" href="https://github.com/pyOpenSci/pyosMeta"><code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code></a> to gather data from GitHub, such as peer review issues and team membership. <code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code> saves that data as <a class="reference external" href="https://yaml.org/">YAML</a> files, a plain-text format that our website and dashboards can read.</p>
-<p>You don’t need to run <code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code> yourself. Workflows in the <a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io">pyopensci.github.io</a> repository run it for you on a weekly schedule (sometimes called a “cron job”), and you can also start any of them by hand whenever you need to. Each time a workflow runs, it opens a pull request with the updated data. Once you (or another team member) merge that pull request, the website updates.</p>
-<p>The PR’s are generally merged by our <a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/pyopensci-repository-maintainers">pyOpenSci infrastructure team</a> who work on and maintain repositories across the organizations. If you have questions about something not getting updated, you can post in the <code class="docutils literal notranslate"><span class="pre">#pyos-maintainers-infrastructure</span></code> channel in our slack.</p>
-<section id="what-each-page-uses">
-<h2>What each page uses<a class="headerlink" href="#what-each-page-uses" title="Link to this heading">#</a></h2>
-<div class="pst-scrollable-table-container"><table class="table">
+  <section id="editorial-teams">
+<span id="editorial-roles"></span><h1>Editorial teams<a class="headerlink" href="#editorial-teams" title="Link to this heading">#</a></h1>
+<p>This page is for you if you’re the Editor in Chief, the Software Review Lead, or anyone else who adds or removes editors. It explains which GitHub team to use and what each team does.</p>
+<p>Looking for the full process of welcoming or thanking an editor, including Slack and the Community Manager? Use the <a class="reference external" href="https://www.pyopensci.org/software-peer-review/how-to/onboard-editors.html#onboarding-a-new-editor">onboarding guide</a>. This page covers the GitHub side.</p>
+<section id="what-teams-control">
+<h2>What teams control<a class="headerlink" href="#what-teams-control" title="Link to this heading">#</a></h2>
+<p>When you add someone to a team, two separate things happen:</p>
+<ul class="simple">
+<li><p><strong>Repository access.</strong> Editorial board members get repository access through this team. Membership lets them lead reviews and edit our peer review guide. Only <code class="docutils literal notranslate"><span class="pre">editorial-board</span></code> and <code class="docutils literal notranslate"><span class="pre">eic-team</span></code> grant it.</p></li>
+<li><p><strong>The public listing.</strong> It decides who appears on the <a class="reference external" href="https://www.pyopensci.org/about-peer-review/index.html#meet-our-editorial-board">editorial board page</a> and in the editorial dashboard in our <a class="reference external" href="https://www.pyopensci.org/metrics">metrics</a>. Every editorial team affects it. Two scheduled workflows read team membership to build the listing (see <a class="reference internal" href="data-process.html"><span class="doc std std-doc">data workflows</span></a>).</p></li>
+</ul>
+</section>
+<section id="which-team-to-add-someone-to">
+<h2>Which team to add someone to<a class="headerlink" href="#which-team-to-add-someone-to" title="Link to this heading">#</a></h2>
+<p>All editorial teams sit under the parent
+<a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/peer-review-team"><code class="docutils literal notranslate"><span class="pre">peer-review-team</span></code></a>.
+Add the person to <strong>every team that matches their role</strong>. Being on the parent
+team alone doesn’t list them.</p>
+<pre  class="mermaid">
+        flowchart TB
+  PR[peer-review-team]
+  PR --&gt; EB[editorial-board]
+  PR --&gt; EIC[eic-team]
+  PR --&gt; PRL[peer-review-lead]
+  PR --&gt; TRI[triage-team]
+  PR --&gt; EE[emeritus-editors]
+  PR --&gt; EEIC[emeritus-editor-in-chief]
+  PR --&gt; EPRL[emeritus-peer-review-lead]
+  PR --&gt; ETRI[emeritus-triage-team]
+    </pre><div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p>Page</p></th>
-<th class="head"><p>File</p></th>
-<th class="head"><p>Workflow</p></th>
-<th class="head"><p>When it runs</p></th>
+<tr class="row-odd"><th class="head"><p>Role</p></th>
+<th class="head"><p>Add them to</p></th>
+<th class="head"><p>Repository access</p></th>
+<th class="head"><p>Listed on the website as</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference external" href="https://www.pyopensci.org/our-community/index.html#pyopensci-community-contributors">Our Community</a></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">data/contributors.yml</span></code></p></td>
-<td><p><a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/actions/workflows/update-contribs-reviews.yml">Update Contribs &amp; reviewers</a></p></td>
-<td><p>Mondays, 03:21 UTC</p></td>
+<tr class="row-even"><td><p>Guest editor (first review, or one ad hoc review)</p></td>
+<td><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/editorial-board"><code class="docutils literal notranslate"><span class="pre">editorial-board</span></code></a>, only while they’re editing</p></td>
+<td><p>Yes</p></td>
+<td><p>Editor, while on the team</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://www.pyopensci.org/python-packages.html">Python packages</a></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">data/packages.yml</span></code></p></td>
-<td><p>Update Contribs &amp; reviewers</p></td>
-<td><p>Mondays, 03:21 UTC</p></td>
+<tr class="row-odd"><td><p>Editor</p></td>
+<td><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/editorial-board"><code class="docutils literal notranslate"><span class="pre">editorial-board</span></code></a></p></td>
+<td><p>Yes</p></td>
+<td><p>Editor</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference external" href="https://www.pyopensci.org/about-peer-review/index.html#meet-our-editorial-board">Editorial board</a></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">data/editorial-board.yml</span></code>, <code class="docutils literal notranslate"><span class="pre">data/emeritus-editors.yml</span></code>, and the editorial fields in <code class="docutils literal notranslate"><span class="pre">data/contributors.yml</span></code></p></td>
-<td><p><a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/actions/workflows/update-editorial-board.yml">Update editorial board</a>. Monday’s workflow refreshes these files too.</p></td>
-<td><p>Wednesdays at 04:21 UTC, or any time you run it by hand</p></td>
+<tr class="row-even"><td><p>Editor in Chief</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">editorial-board</span></code> and <a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/eic-team"><code class="docutils literal notranslate"><span class="pre">eic-team</span></code></a></p></td>
+<td><p>Yes</p></td>
+<td><p>Editor in Chief</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference external" href="https://www.pyopensci.org/metrics">Metrics dashboards</a></p></td>
-<td><p>CSVs in the <a class="reference external" href="https://github.com/pyOpenSci/metrics">metrics</a> repository</p></td>
-<td><p><a class="reference external" href="https://github.com/pyOpenSci/metrics/actions/workflows/update-pr-data.yml">Update issue, pr and contrib metadata</a></p></td>
-<td><p>05:00 UTC on the 2nd, the 16th, and every Monday, plus December 31</p></td>
+<tr class="row-odd"><td><p>Software Review Lead</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">editorial-board</span></code> and <a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/peer-review-lead"><code class="docutils literal notranslate"><span class="pre">peer-review-lead</span></code></a></p></td>
+<td><p>Yes, through <code class="docutils literal notranslate"><span class="pre">editorial-board</span></code></p></td>
+<td><p>Software Review Lead</p></td>
+</tr>
+<tr class="row-even"><td><p>Triage volunteer</p></td>
+<td><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/triage-team"><code class="docutils literal notranslate"><span class="pre">triage-team</span></code></a></p></td>
+<td><p>No, unless they’re also on <code class="docutils literal notranslate"><span class="pre">editorial-board</span></code></p></td>
+<td><p>Peer review triage</p></td>
+</tr>
+<tr class="row-odd"><td><p>Emeritus editor</p></td>
+<td><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/emeritus-editors"><code class="docutils literal notranslate"><span class="pre">emeritus-editors</span></code></a></p></td>
+<td><p>No</p></td>
+<td><p>Emeritus editor</p></td>
+</tr>
+<tr class="row-even"><td><p>Emeritus Editor in Chief</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">emeritus-editors</span></code> and <a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/emeritus-editor-in-chief"><code class="docutils literal notranslate"><span class="pre">emeritus-editor-in-chief</span></code></a></p></td>
+<td><p>No</p></td>
+<td><p>Emeritus Editor in Chief</p></td>
+</tr>
+<tr class="row-odd"><td><p>Emeritus Software Review Lead</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">emeritus-editors</span></code> and <a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/emeritus-peer-review-lead"><code class="docutils literal notranslate"><span class="pre">emeritus-peer-review-lead</span></code></a></p></td>
+<td><p>No</p></td>
+<td><p>Emeritus Software Review Lead</p></td>
+</tr>
+<tr class="row-even"><td><p>Emeritus triage volunteer</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">emeritus-editors</span></code> and <a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/emeritus-triage-team"><code class="docutils literal notranslate"><span class="pre">emeritus-triage-team</span></code></a></p></td>
+<td><p>No</p></td>
+<td><p>Emeritus peer review triage</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>A few things that are helpful to know:</p>
-<ul class="simple">
-<li><p><strong>Changed an editorial team member? Use the Update editorial board workflow .</strong> It only looks at team membership, so it runs quickly and opens a small, easy-to-review pull request.</p></li>
-<li><p><strong>Update Contribs &amp; reviewers does a lot more.</strong> It checks every repository and review issue, so it takes longer and opens a much larger pull request.</p></li>
-<li><p><strong>The metrics dashboards update on their own schedule.</strong> The editorial charts read the website’s YAML files from the <code class="docutils literal notranslate"><span class="pre">data/</span></code> directory on the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch. A separate <a class="reference external" href="https://github.com/pyOpenSci/metrics/actions/workflows/deploy.yml">deploy workflow</a> rebuilds the dashboards every Sunday at 00:00 UTC using whatever has been merged by then, so you may see a short delay there.</p></li>
-<li><p><strong>Please don’t edit the generated files by hand.</strong> The workflows overwrite them each time they run, so your changes would be lost. The one exception is <a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/blob/main/data/manual-editorial-roster.yml"><code class="docutils literal notranslate"><span class="pre">data/manual-editorial-roster.yml</span></code></a>, which is for editors who can’t join our GitHub organization (and so can’t be added to an editorial team).</p></li>
-</ul>
-<p>And also we do allow you to update someones NAME in the contributors.yml file because the name on GitHub is not always their preferred name. That should never be overwritten.</p>
+<p>Someone can hold more than one role, such as editor and triage. Add them to every team that applies.</p>
+<p><strong>Active membership wins over emeritus.</strong> If someone is on both an active team and an emeritus team, the website lists them as active. To make them emeritus, remove them from the active team.</p>
 </section>
-<section id="where-the-data-comes-from">
-<h2>Where the data comes from<a class="headerlink" href="#where-the-data-comes-from" title="Link to this heading">#</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code> collects three kinds of data from GitHub:</p>
-<ol class="arabic simple">
-<li><p><strong>Contributor data</strong> comes from the <a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/blob/main/.all-contributorsrc">All Contributors files</a> in each pyOpenSci repository.</p></li>
-<li><p><strong>Peer review data</strong> comes from the <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues">review issues in software-submission</a>. This includes the package name and repository URL, the editor and reviewers, and the maintainers and authors. <code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code> reads the text people type into the review issue template. People fill out templates in all sorts of creative ways, so a missing field or an extra line can sometimes trip it up. If you notice that an action is failing please do the following:</p>
-<ul class="simple">
-<li><p>Post in the <code class="docutils literal notranslate"><span class="pre">#pyos-maintainers-infrastructure</span></code> channel in slack. the error is likely already there via a slack automation but a post from you helps us elevate the importance of fixing it. Include a link to the logs. Sometimes that logs tell you what package it failed on - and if that is the case - look at the issue yaml at the top and see if you notice any quirks in the text! For example sometimes people put text in quotes <code class="docutils literal notranslate"><span class="pre">&quot;like</span> <span class="pre">this&quot;</span></code> that will break our ability to parse the text correctly.</p></li>
-</ul>
-</li>
-<li><p><strong>Editorial team membership</strong> comes from our <a class="reference internal" href="editorial-teams.html"><span class="doc std std-doc">GitHub teams</span></a>. Team membership decides whether someone is listed as a current or emeritus editor. Some teams also give their members access to the repositories they need for their peer review role.</p></li>
-</ol>
-<pre  class="mermaid">
-        flowchart TD
-  Contrib[All Contributors Bot files] --&gt; Meta[pyosMeta]
-  Issues[Peer review issues] --&gt; Meta
-  Teams[GitHub editorial team listings] --&gt; Meta
-  Meta --&gt; Website[YAML files in pyopensci.github.io] --&gt; Pages[Contributor, package, community and editorial listings]
-  Website --&gt; Dash[Metrics editorial dashboard]
-    </pre></section>
-<section id="update-the-website-right-away">
-<span id="id1"></span><h2>Update the website right away<a class="headerlink" href="#update-the-website-right-away" title="Link to this heading">#</a></h2>
-<p>You don’t have to wait for the next scheduled run. If you have write access to <code class="docutils literal notranslate"><span class="pre">pyopensci.github.io</span></code> (the Editor in Chief team and the Software Review Lead do), you can run any of these workflows yourself:</p>
-<ol class="arabic simple">
-<li><p>Open the <strong>Actions</strong> tab in <code class="docutils literal notranslate"><span class="pre">pyopensci.github.io</span></code>.</p></li>
-<li><p>Choose the workflow you need. If you changed an editorial team, pick <strong>Update editorial board</strong>. For contributor or package updates, pick <strong>Update Contribs &amp; reviewers</strong>.</p></li>
-<li><p>Select <strong>Run workflow</strong>.</p></li>
-<li><p>When the pull request opens, take a quick look, and merge it if everything looks right.</p></li>
-</ol>
-<p>Not sure whether you can change a team or run a workflow? The <a class="reference internal" href="editorial-teams.html"><span class="doc std std-doc">editorial teams</span></a> page explains who can do what.</p>
+<section id="add-or-remove-an-editor">
+<h2>Add or remove an editor<a class="headerlink" href="#add-or-remove-an-editor" title="Link to this heading">#</a></h2>
+<p>The step-by-step process for adding and offboarding editors is in the <a class="reference external" href="https://www.pyopensci.org/software-peer-review/how-to/onboard-editors.html#onboarding-a-new-editor">onboarding guide</a>. Use the table above to pick the right teams, then <a class="reference internal" href="data-process.html#id1"><span class="std std-ref">update the website right away</span></a> if you don’t want to wait for the next scheduled run.</p>
 </section>
-<section id="if-something-breaks">
-<h2>If something breaks<a class="headerlink" href="#if-something-breaks" title="Link to this heading">#</a></h2>
-<p>Don’t worry, you won’t break anything by running a workflow. If one fails, a message is posted automatically to the <code class="docutils literal notranslate"><span class="pre">#pyos-maintainers-infrastructure</span></code> Slack channel. If you get stuck, post there too, and the <a class="reference internal" href="permissions.html#pyopensci-maintainers-permissions"><span class="std std-ref">pyOpenSci repository maintainers</span></a> will be happy to help. If you’d like to dig in yourself, the <code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code> <a class="reference external" href="https://github.com/pyOpenSci/pyosMeta/blob/main/development.md">development guide</a> explains the tokens and permissions the workflows use.</p>
+<section id="guest-editors">
+<h2>Guest editors<a class="headerlink" href="#guest-editors" title="Link to this heading">#</a></h2>
+<p>A guest editor leads one review, either as a new editor’s first review or as an ad hoc editor. Add them to <code class="docutils literal notranslate"><span class="pre">editorial-board</span></code> for the length of their review. They get repository access and are listed on the website while they’re on the team. Remove them when the review ends. Don’t move them to emeritus unless they later serve on the board and step down.</p>
+</section>
+<section id="if-someone-can-t-join-the-organization">
+<h2>If someone can’t join the organization<a class="headerlink" href="#if-someone-can-t-join-the-organization" title="Link to this heading">#</a></h2>
+<p>Add them to
+<a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/blob/main/data/manual-editorial-roster.yml"><code class="docutils literal notranslate"><span class="pre">data/manual-editorial-roster.yml</span></code></a>
+in the website repository through a pull request. It’s the only editorial file you ever edit by hand. If the person is later added to a team, their team membership wins. The <code class="docutils literal notranslate"><span class="pre">pyosMeta</span></code> <a class="reference external" href="https://github.com/pyOpenSci/pyosMeta/blob/main/development.md">development guide</a> lists the keys the roster accepts.</p>
+<p>Don’t hand-edit <code class="docutils literal notranslate"><span class="pre">editorial-board.yml</span></code>, <code class="docutils literal notranslate"><span class="pre">emeritus-editors.yml</span></code>, or the editorial fields in <code class="docutils literal notranslate"><span class="pre">contributors.yml</span></code>. The workflows overwrite them.</p>
+</section>
+<section id="who-can-make-these-changes">
+<h2>Who can make these changes<a class="headerlink" href="#who-can-make-these-changes" title="Link to this heading">#</a></h2>
+<p>You need permission to:</p>
+<ul class="simple">
+<li><p>Invite people to the pyOpenSci organization, if the editor you want to add is not currently a pyOpenSci member. Only organization owners can do this.</p></li>
+<li><p>Change editorial team membership (an organization owner or a <a class="reference external" href="https://docs.github.com/en/organizations/organizing-members-into-teams/assigning-the-team-maintainer-role-to-a-team-member">team maintainer</a> of the editorial teams).</p></li>
+<li><p>Merge pull requests in <code class="docutils literal notranslate"><span class="pre">pyopensci.github.io</span></code>, and run workflows there if you want the website to update right away (write access).</p></li>
+</ul>
+<p>The Editor in Chief team and the Software Review Lead usually hold all the above permissions. If you’re missing one, ask the <a class="reference internal" href="permissions.html#pyopensci-maintainers-permissions"><span class="std std-ref">pyOpenSci repository maintainers</span></a>.</p>
+</section>
+<section id="learn-more">
+<h2>Learn more<a class="headerlink" href="#learn-more" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.pyopensci.org/software-peer-review/how-to/onboard-editors.html">Onboarding guide</a>: the full process, including Slack and introductions</p></li>
+<li><p><a class="reference internal" href="data-process.html"><span class="doc std std-doc">Data workflows</span></a>: schedules, files, and what to do if a workflow fails</p></li>
+<li><p><a class="reference internal" href="permissions.html"><span class="doc std std-doc">GitHub permissions</span></a>: repository access for every team</p></li>
+</ul>
 </section>
 </section>
 
@@ -997,20 +1030,20 @@ window.runMermaid = runMermaid;</script>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="editorial-teams.html"
+       href="permissions.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Editorial teams</p>
+        <p class="prev-next-title">pyOpenSci GitHub permissions</p>
       </div>
     </a>
     <a class="right-next"
-       href="../translation.html"
+       href="data-process.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">pyOpenSci GitHub processes for translation teams</p>
+        <p class="prev-next-title">pyOpenSci data workflows</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1033,10 +1066,13 @@ window.runMermaid = runMermaid;</script>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-each-page-uses">What each page uses</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#where-the-data-comes-from">Where the data comes from</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-website-right-away">Update the website right away</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-something-breaks">If something breaks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-teams-control">What teams control</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#which-team-to-add-someone-to">Which team to add someone to</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-or-remove-an-editor">Add or remove an editor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#guest-editors">Guest editors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-someone-can-t-join-the-organization">If someone can’t join the organization</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#who-can-make-these-changes">Who can make these changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
 </ul>
   </nav></div>
 
@@ -1044,7 +1080,7 @@ window.runMermaid = runMermaid;</script>
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/pyopensci/handbook/edit/main/community/infrastructure/data-process.md">
+    <a href="https://github.com/pyopensci/handbook/edit/main/community/infrastructure/editorial-teams.md">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -1059,7 +1095,7 @@ window.runMermaid = runMermaid;</script>
   <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="../../_sources/community/infrastructure/data-process.md.txt">
+    <a href="../../_sources/community/infrastructure/editorial-teams.md.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>

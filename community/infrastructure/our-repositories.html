@@ -19,7 +19,7 @@
 <meta name="description" content="pyOpenSci manages multiple GitHub repositories to support various community activities. Below is a description of each repository organized by program area. Website: pyopensci.github.io: This repos..." />
 <meta name="twitter:card" content="summary_large_image" />
     <link href="https://www.pyopensci.org/images/favicon.ico" rel="icon" type="image/x-icon">
-    <meta property="article:modified_time" content="2025-12-17T22:24:15+00:00" />
+    <meta property="article:modified_time" content="2026-10-06T00:34:24+00:00" />
     <title>pyOpenSci GitHub repositories &#8212; pyOpenSci Handbook</title>
   
   
@@ -72,7 +72,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
-    <meta name="docbuild:last-update" content="Dec 17, 2025"/>
+    <meta name="docbuild:last-update" content="Oct 06, 2026"/>
   </head>
   
   
@@ -461,6 +461,7 @@
 <li class="toctree-l1"><a class="reference internal" href="pull-requests.html">Pull Requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="continuous-integration.html">Continuous Integration (CI)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="permissions.html">GitHub permissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editorial-teams.html">Editorial teams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-process.html">Data Workflows</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Translation &amp; Internationalization workflows</span></p>
@@ -536,76 +537,76 @@ activities. Below is a description of each repository organized by program area.
 <section id="pyopensci-github-io">
 <h3><a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io">pyopensci.github.io</a><a class="headerlink" href="#pyopensci-github-io" title="Link to this heading">#</a></h3>
 <p>This repository contains code and content that builds and publishes our
-pyOpenSci website. The website, <a class="reference external" href="https://www.pyopensci.org/">pyOpenSci</a>, is
-hosted on GitHub and uses the <a class="reference external" href="https://mmistakes.github.io/minimal-mistakes/">Jekyll Minimal
-Mistakes</a> theme. The Python
-packages page, contributor page, and peer review team page are all updated
-automatically using a GitHub action workflow that is supported by the pyosMeta
-Python package discussed above. The workflow runs every other week but can be
-triggered manually as a <strong>workflow dispatch</strong>.</p>
+pyOpenSci website, <a class="reference external" href="https://www.pyopensci.org/">pyopensci.org</a>. The website is
+built with <a class="reference external" href="https://gohugo.io/">Hugo</a> and hosted on GitHub Pages. The Python
+packages page, contributor page, and editorial board listing are updated by
+scheduled GitHub Actions workflows that run the
+<a class="reference internal" href="#pyosmeta">pyosMeta</a> Python package.</p>
 <p>Teams with access to this repository:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/editorial-board">the pyOpenSci Editorial Board</a></p></li>
-<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/pyos-repo-maintainers">the pyOpenSci Repository Maintainers team</a></p></li>
+<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/eic-team">the Editor in Chief team</a></p></li>
+<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/pyopensci-repository-maintainers">the pyOpenSci Repository Maintainers team</a></p></li>
 </ul>
 <section id="critical-ci-workflows-in-this-repository">
 <h4>Critical CI workflows in this repository<a class="headerlink" href="#critical-ci-workflows-in-this-repository" title="Link to this heading">#</a></h4>
-<p>The <a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/blob/main/.github/workflows/update-contribs-reviews.yml">contributor workflow
-action</a>
-is a custom GitHub action that is used to update the following website pages:</p>
+<p>Two scheduled workflows keep the website’s data up to date. Each one opens a
+pull request, and the website changes once you merge it. You can also run
+either one by hand.</p>
 <ul class="simple">
-<li><p>contributor page</p></li>
-<li><p>package listing page</p></li>
-<li><p>editorial, advisory council, and executive council listing</p></li>
+<li><p><a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/actions/workflows/update-contribs-reviews.yml"><strong>Update Contribs &amp; reviewers</strong></a>
+updates the contributor and package listings from All Contributors files
+and peer review issues. The same job also refreshes the editorial board
+listing.</p></li>
+<li><p><a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/actions/workflows/update-editorial-board.yml"><strong>Update editorial board</strong></a>
+only reads editorial team membership, so it’s much faster. Run this one
+after you change an editorial team.</p></li>
 </ul>
-<p>It runs as a cron job every other week but also can be run manually as a
-workflow dispatch. If you need to update our package listing or contributor
-list on the fly, please run this action.</p>
-<p>The action will:</p>
-<ol class="arabic simple">
-<li><p>Parse through all of our accepted pyOpenSci packages.</p></li>
-<li><p>Collect package names, authors, reviewers, and editors.</p></li>
-<li><p>Collect metadata for the package authors, reviewers, and editors using the
-GitHub (REST) API.</p></li>
-<li><p>Create 2 output YAML files discussed below.</p></li>
-</ol>
-<p>The YAML output files are then used to populate content on the website.</p>
+<p>For when each one runs, which files it writes, and who can run them, see
+<a class="reference internal" href="data-process.html"><span class="doc std std-doc">data workflows</span></a>.</p>
 </section>
 <section id="metadata-stored-in-this-repository">
 <h4>Metadata stored in this repository<a class="headerlink" href="#metadata-stored-in-this-repository" title="Link to this heading">#</a></h4>
 <ol class="arabic simple">
-<li><p><strong>Packages.yml</strong>: Updates the <a class="reference external" href="https://www.pyopensci.org/python-packages.html">Python Packages
+<li><p><strong>packages.yml</strong>: Updates the <a class="reference external" href="https://www.pyopensci.org/python-packages.html">Python Packages
 page</a> by parsing reviews
-from software-review repository issues.</p></li>
-<li><p><strong>Contributors.yml</strong>: Updates the <a class="reference external" href="https://www.pyopensci.org/our-community/index.html">Our Community
+from software-submission repository issues.</p></li>
+<li><p><strong>contributors.yml</strong>: Updates the <a class="reference external" href="https://www.pyopensci.org/our-community/index.html">Our Community
 page</a> by parsing data
 from all organization repositories.</p></li>
+<li><p><strong>editorial-board.yml</strong> and <strong>emeritus-editors.yml</strong>: Update the
+<a class="reference external" href="https://www.pyopensci.org/about-peer-review/index.html#meet-our-editorial-board">editorial board
+listing</a>
+from our GitHub editorial teams.</p></li>
+<li><p><strong>manual-editorial-roster.yml</strong>: The only editorial file edited by hand,
+for someone who can’t join the GitHub organization.</p></li>
 </ol>
 </section>
 </section>
 <section id="handbook">
 <h3><a class="reference external" href="https://github.com/pyOpenSci/handbook">handbook</a><a class="headerlink" href="#handbook" title="Link to this heading">#</a></h3>
-<p><strong>Platform:</strong> Sphinx book running the <code class="docutils literal notranslate"><span class="pre">pydata_sphinx_theme</span></code></p>
+<p><strong>Platform:</strong> Sphinx book running the <a class="reference internal" href="#pyos-sphinx-theme"><code class="docutils literal notranslate"><span class="pre">pyos-sphinx-theme</span></code></a></p>
 <p>This is where we store our organization governance, code of conduct, and
 processes around how we operate as an organization.</p>
 <p>The <a class="reference external" href="https://www.pyopensci.org/our-community/index.html#executive-council-leadership--staff">pyOpenSci Executive Council</a> has access to this repo.</p>
 </section>
 <section id="metrics">
-<h3><a class="reference external" href="https://github.com/pyOpenSci/peer-review-metrics">metrics</a><a class="headerlink" href="#metrics" title="Link to this heading">#</a></h3>
-<p>The pyOpenSci peer review metrics repository contains the code for a dashboard
-created using <a class="reference external" href="https://mystmd.org/">MyST Markdown</a>. Myst-md is a community
-developed tool that makes it easier for scientists to create fully
-reproducible (and interactive) workflows and reports that are easily shared.
-This repository has a cron job that runs weekly to update review status
-metrics.</p>
-<p>Only pyOpenSci GitHub organization admins have direct access to modify this
-repository.</p>
+<h3><a class="reference external" href="https://github.com/pyOpenSci/metrics">metrics</a><a class="headerlink" href="#metrics" title="Link to this heading">#</a></h3>
+<p>The pyOpenSci metrics repository contains the code for our <a class="reference external" href="https://www.pyopensci.org/metrics">metrics
+dashboards</a>, built with
+<a class="reference external" href="https://quarto.org/">Quarto</a>. Scheduled workflows refresh the peer review
+data and rebuild the site. The editorial dashboard reads the editorial board
+files from the website repository. See <a class="reference internal" href="data-process.html"><span class="doc std std-doc">data workflows</span></a> for
+details.</p>
+<p>Teams with access to this repository:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/eic-team">the Editor in Chief team</a></p></li>
+<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/pyopensci-repository-maintainers">the pyOpenSci Repository Maintainers team</a></p></li>
+</ul>
 </section>
 <section id="lessons">
 <h3><a class="reference external" href="https://github.com/pyOpenSci/lessons">lessons</a><a class="headerlink" href="#lessons" title="Link to this heading">#</a></h3>
-<p>pyOpenSci is devoted to building diverse, supportive community around the
-Python open source tools that drive open science. The lessons repository
-contains the source files for all of the <a class="reference external" href="https://github.com/pyOpenSci/lessons">pyOpenSci
+<p>The lessons repository contains the source files for all of the <a class="reference external" href="https://www.pyopensci.org/lessons/">pyOpenSci
 tutorials</a>.</p>
 <p>The <a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/lesson-development">pyOpenSci Lesson Development Team</a> has access to this repo.</p>
 </section>
@@ -621,7 +622,7 @@ resources are beginner-friendly and reflect Python packaging best practices.</p>
 <p>Teams with access to this repository:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/packaging-council">the pyOpenSci Packaging Council</a></p></li>
-<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/pyos-repo-maintainers">the pyOpenSci Repository Maintainers team</a></p></li>
+<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/pyopensci-repository-maintainers">the pyOpenSci Repository Maintainers team</a></p></li>
 </ul>
 </section>
 <section id="pyos-package-template">
@@ -659,6 +660,8 @@ about our peer review process here.</a></p>
 <p>Teams with access to this repository:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/editorial-board">the pyOpenSci Editorial Board</a></p></li>
+<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/eic-team">the Editor in Chief team</a></p></li>
+<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/pyopensci-repository-maintainers">the pyOpenSci Repository Maintainers team</a></p></li>
 </ul>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -679,7 +682,8 @@ the review process.</p>
 <p>Individuals and teams with access to this repository include:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/editorial-board">the pyOpenSci Editorial Board</a></p></li>
-<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/pyos-repo-maintainers">the pyOpenSci Repository Maintainers team</a></p></li>
+<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/eic-team">the Editor in Chief team</a></p></li>
+<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/pyopensci-repository-maintainers">the pyOpenSci Repository Maintainers team</a></p></li>
 </ul>
 </section>
 </section>
@@ -688,27 +692,26 @@ the review process.</p>
 <section id="pyosmeta">
 <h3><a class="reference external" href="https://github.com/pyOpenSci/pyosMeta">pyosMeta</a><a class="headerlink" href="#pyosmeta" title="Link to this heading">#</a></h3>
 <p>The pyosMeta repository contains a Python package published on PyPI that we
-use to track our package review and contributor data. This data is used in a
-GitHub action to update our website.</p>
+use to track our package review, contributor, and editorial board data. The
+website’s scheduled workflows use it to update our website. See
+<a class="reference internal" href="data-process.html"><span class="doc std std-doc">data workflows</span></a> for how the data moves.</p>
 <p>Teams with access to this repository:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/pyos-repo-maintainers">the pyOpenSci Repository Maintainers team</a></p></li>
+<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/pyopensci-repository-maintainers">the pyOpenSci Repository Maintainers team</a></p></li>
 </ul>
 </section>
 <section id="pyos-sphinx-theme">
 <h3><a class="reference external" href="https://github.com/pyOpenSci/pyos-sphinx-theme">pyos-sphinx-theme</a><a class="headerlink" href="#pyos-sphinx-theme" title="Link to this heading">#</a></h3>
 <p><strong>Platform:</strong> Sphinx book template that builds on top of the pydata_sphinx_theme</p>
-<p>All of our pyOpenSci Sphinx books (handbook, packaging guide, software review
-guide) have been customized to match our pyOpenSci branding. This repo
-contains the start of a Sphinx theme that will incorporate all of our
-branding, so we do not have to manually apply the branding and update it
-individually in each repo. Instead, we can update branding in the theme, and
-it will be applied across all of our repositories that use the theme.</p>
+<p>This repo contains our branded Sphinx theme, which the handbook and software
+peer review guide use. Because the branding lives in one theme, we can update
+it in one place instead of in each repository, and the change applies
+everywhere the theme is used.</p>
 <p>Creating a theme was inspired by the
 <a class="reference external" href="https://sphinx-2i2c-theme.readthedocs.io/en/latest/">2i2c Sphinx theme</a>.</p>
 <p>Teams with access to this repository:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/pyos-repo-maintainers">the pyOpenSci Repository Maintainers team</a></p></li>
+<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/pyopensci-repository-maintainers">the pyOpenSci Repository Maintainers team</a></p></li>
 </ul>
 </section>
 </section>
@@ -723,7 +726,7 @@ it will be applied across all of our repositories that use the theme.</p>
                   <div class="footer-article-items footer-article__inner">
   
     <div class="footer-article-item"><hr>
-<p style="font-size: small; color: #888;">Last updated: Dec 17, 2025</p></div>
+<p style="font-size: small; color: #888;">Last updated: Oct 06, 2026</p></div>
   
 </div>
                 </footer>
