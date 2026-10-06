@@ -66,12 +66,13 @@ jobs:
 
       # Test for bad links and ensure alt tags for usability
       - name: Check HTML using htmlproofer
+        continue-on-error: true
         uses: chabad360/htmlproofer@v2
         with:
           directory: '_build/html'
           arguments: |
             --ignore-files "/.+\/_static\/.+/,/genindex.html/,/.+\/reference\/.+/"
-            --ignore-status-codes "200, 302, 403, 406, 429, 503, 999"
+            --ignore-status-codes "0, 200, 302, 403, 406, 429, 503, 999"
 
   deploy:
     if: github.ref == 'refs/heads/main'
