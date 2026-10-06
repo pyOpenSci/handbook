@@ -77,7 +77,7 @@ For more detailed information about data collection and processing, see the [Dat
 ### Website publishing
 
 * The **Python Package Guide**, **Peer Review Guide**, and **Handbook** are all **Sphinx books** that use the `pydata_sphinx_theme`. These books are built separately but are served under the `pyopensci.org` domain.
-* All Sphinx books use the [`pyos-sphinx-theme`](https://github.com/pyOpenSci/pyos-sphinx-theme`), which is a Sphinx theme built on top of `pydata_sphinx_theme`.
+* All Sphinx books use the [`pyos-sphinx-theme`](https://github.com/pyOpenSci/pyos-sphinx-theme), which is a Sphinx theme built on top of `pydata_sphinx_theme`.
 * The final site is published at [pyopensci.org](https://www.pyopensci.org) using **GitHub Pages**.
 
 ## Learn more

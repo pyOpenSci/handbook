@@ -58,9 +58,9 @@ members. When we see a contributor actively engaging, we add them to the
 appropriate teams.
 
 To learn more about how pyOpenSci uses GitHub, please refer to our
-[GitHub processes page](https://www.pyopensci.org/handbook/community/github/intro.html),
+[GitHub processes page](intro),
 in particular the [GitHub Issue
-Guidelines](https://www.pyopensci.org/handbook/community/github/issues.html)
+Guidelines](issues)
 and [Pull
-Requests](https://www.pyopensci.org/handbook/community/github/pull-requests.html)
+Requests](pull-requests)
 sections.

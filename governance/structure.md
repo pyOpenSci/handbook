@@ -94,7 +94,7 @@ This team:
   * Dependabot pull requests
   * Pre-commit CI updates
 * Approve and merge automated data file updates:
-  * Automated data file updates. Our [metrics](https://www.pyopensci.org/metrics) and [website](https://github.com/pyopensci.github.io/) are updated automatically using a GitHub Actions workflow that is supported by the pyosMeta Python package discussed above. A cron job runs this workflow daily to weekly and opens a PR. These PRs can be updated at whatever frequency is needed but should be updated at least once or twice a month.
+  * Automated data file updates. Our [metrics](https://github.com/pyOpenSci/metrics) and [website](https://github.com/pyOpenSci/pyopensci.github.io) are updated automatically using a GitHub Actions workflow that is supported by the pyosMeta Python package discussed above. A cron job runs this workflow daily to weekly and opens a PR. These PRs can be updated at whatever frequency is needed but should be updated at least once or twice a month.
 * Ensure the smooth operation of pyOpenSci's technical infrastructure
 
 #### Triaging issues and pull requests

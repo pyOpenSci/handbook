@@ -111,7 +111,7 @@ tutorial](https://www.pyopensci.org/python-package-guide/tutorials/intro.html).
 This template can be used with [copier](https://copier.readthedocs.io) to
 initialize a new Python package project structure following the practices
 outlined in the [pyOpenSci pure Python packaging
-tutorial](https://www.pyopensci.org/python-package-guide/tutorials/installable-code.html).
+tutorial](https://www.pyopensci.org/python-package-guide/tutorials/create-python-package.html).
 
 Teams with access to this repository:
 
