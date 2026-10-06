@@ -68,7 +68,8 @@
         "doc",
         "bug",
         "code",
-        "review"
+        "review",
+        "maintenance"
       ]
     },
     {

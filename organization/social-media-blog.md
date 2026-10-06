@@ -76,9 +76,7 @@ This text will appear as the caption to your image.
 ```
 ````
 
-1. Next, create an entry in the [authors.yml file](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/authors.yml) if you do not already have one.
-To create an author page, submit a pull request from your fork of the pyOpenSci website repository, with changes to the [authors.yml](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/authors.yml) file. If you would like to include a headshot, you can add it to the [`people` directory in the `images` directory.](https://github.com/pyOpenSci/pyopensci.github.io/tree/main/images/people)
-
+1. Add your name to the `author` field in your post's front matter (for example, `author: "Your Name"`). If your post includes photos of people, add them to the [`static/images/people` directory](https://github.com/pyOpenSci/pyopensci.github.io/tree/main/static/images/people).
 2. Submit a pull request from your fork of the website repo to [https://github.com/pyOpenSci/pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io).
 3. Ensure the blog post passes CI (continuous integration) checks that look for spelling errors, broken links, and more. Please note that occasionally the `htmlproofer` check will fail because your new blog post URL does not exist yet online.
 4. Once your post and the pull request adding it to our website is complete, request a review on GitHub. A member of the pyOpenSci team should always review any new content being added to the website.
