@@ -12,7 +12,7 @@ pyOpenSci infrastructure encompasses:
 
 * **GitHub repositories:** All code, content, and documentation repositories
 * **Website and documentation:** Main website and sub-sites (handbook, guides, lessons)
-* **Data processing:** Automated collection and processing of contributor and peer review data
+* **Data processing:** Automated collection and processing of contributor, peer review, and editorial board data
 * **Continuous Integration (CI):** GitHub Actions workflows for testing, building, and deploying
 * **Access and permissions:** Repository access management and team structures
 * **Issue and pull request workflows:** Processes for managing contributions and reviews
@@ -23,15 +23,20 @@ The diagrams below illustrate two key aspects of our infrastructure:
 
 ### Data flow and processing
 
-The first diagram shows how peer review data is extracted from GitHub issues through our automated processing system to update the website:
+The first diagram shows how contributor, peer review, and editorial data move from GitHub to the website and metrics:
 
-```{figure} /images/diagrams/website-diagram.svg
-:name: website-diagram
+:::{mermaid}
+flowchart LR
+  Contrib[All Contributors files] --> Meta[pyosMeta]
+  Issues[Peer review issues in software-submission] --> Meta
+  Teams[GitHub editorial teams] --> Meta
+  Meta --> PR[Pull request with updated YAML files]
+  PR -->|merged| Website[Website pages]
+  Website -.->|editorial dashboard reads board data| Metrics[Metrics dashboards]
+  Issues -.->|review data| Metrics
+:::
 
-pyOpenSci infrastructure data flow diagram showing how peer review issues are processed through pyosMeta to update the website.
-```
-
-This diagram illustrates the automated workflow: peer review happens in GitHub issues, which are parsed by scripts in the `pyosMeta` package to generate YAML files that automatically update the website's package and contributor pages.
+Scheduled workflows run `pyosMeta` to collect data from GitHub and write it to YAML files. Each run opens a pull request, and the website updates once you merge it. The metrics dashboards run on their own schedule and read the data that's already on the website's `main` branch.
 
 ### Website structure
 
@@ -45,48 +50,32 @@ pyOpenSci website structure diagram showing the main website and its sub-sites (
 
 All sub-sites are built separately but served under the `pyopensci.org` domain, with the main website (`pyopensci.github.io`) serving as the central hub.
 
-## Data flow and continuous integration
+## Where each page's data comes from
 
-In simple terms: pyOpenSci uses automated workflows to collect data from GitHub and automatically update our website.
+The [`pyosMeta`](https://github.com/pyOpenSci/pyosMeta) package is a Python package that **parses review, contributor, and editorial data** and turns it into **machine-readable YAML files**. Here's where each public page gets its data:
 
-pyOpenSci uses a set of **Continuous Integration (CI)** jobs (GitHub Actions) to:
+* **[Our Community](https://www.pyopensci.org/our-community/index.html) and [Packages](https://www.pyopensci.org/python-packages.html) pages.** The **Update Contribs & reviewers** workflow reads the All Contributors files (`.all-contributorsrc`) in our repositories and the review issues in [`software-submission`](https://github.com/pyOpenSci/software-submission).
+* **[Editorial board page](https://www.pyopensci.org/about-peer-review/index.html#meet-our-editorial-board).** The **Update editorial board** workflow reads the GitHub teams under `peer-review-team`, plus a [small manual roster](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/data/manual-editorial-roster.yml) for people who can't join the organization. If you add or remove editors, see [editorial teams](editorial-teams).
+* **[Metrics dashboards](https://www.pyopensci.org/metrics).** The metrics repository has its own workflow. It reads review data from GitHub and the editorial board files from the website's `main` branch.
+* **Pull request checks.** Every repository runs checks when you open a pull request. See [continuous integration](continuous-integration).
 
-* Collect data from our open peer review process
-* Collect contributor data from across all of our GitHub repositories
+Both website workflows live in [`pyopensci.github.io`](https://github.com/pyOpenSci/pyopensci.github.io). For schedules, the files each one writes, and what to do when one fails, see [data workflows](data-process).
 
-The [`pyosMeta`](https://github.com/pyOpenSci/pyosMeta) package is a Python package that **parses review and contributor data** and transforms it into **machine-readable YAML files** used by our website.
+## How our websites are built
 
-### How data flows through our system
-
-* `pyosMeta` parses the **Markdown data** within review issues in the [`software-review`](https://github.com/pyOpenSci/software-review) GitHub repository. It:
-  * Gathers review editors, reviewers, and maintainers’ GitHub usernames, and uses the GitHub API to retrieve contributor names, emails, and other public GitHub profile information
-  * Extracts the GitHub URL of each reviewed package and retrieves basic repository statistics (number of forks, stars, contributors)
-  * Stores this peer review information in `packages.yml`
-
-* `pyosMeta` also parses **contributor data** from across all pyOpenSci repositories. It:
-  * Parses `all-contributors` bot files to compile a list of contributors and their associated repositories/projects
-  * Parses peer review metadata to populate roles such as reviewers, editors, and other contributor roles within our organization
-  * Stores this contributor information in `contributors.yml`
-
-* The `packages.yml` and `contributors.yml` files generated by `pyosMeta` are updated **daily** via a GitHub Action **cron job** in the [`pyopensci.github.io`](https://github.com/pyOpenSci/pyopensci.github.io/tree/main/data) repository. This data is used to populate:
-  * The **Our Community** page
-  * The **Packages** page
-
-For more detailed information about data collection and processing, see the [Data Workflows](data-process) page.
-
-### Website publishing
-
-* The **Python Package Guide**, **Peer Review Guide**, and **Handbook** are all **Sphinx books** that use the `pydata_sphinx_theme`. These books are built separately but are served under the `pyopensci.org` domain.
-* All Sphinx books use the [`pyos-sphinx-theme`](https://github.com/pyOpenSci/pyos-sphinx-theme`), which is a Sphinx theme built on top of `pydata_sphinx_theme`.
-* The final site is published at [pyopensci.org](https://www.pyopensci.org) using **GitHub Pages**.
+* The main website ([`pyopensci.github.io`](https://github.com/pyOpenSci/pyopensci.github.io)) is built with [**Hugo**.](https://gohugo.io/)
+* The **Python Package Guide**, **Peer Review Guide**, **Handbook**, and **Lessons** are **Sphinx books**. Most use the [`pyos-sphinx-theme`](https://github.com/pyOpenSci/pyos-sphinx-theme), our branded theme built on top of `pydata_sphinx_theme`.
+* The [metrics dashboards](https://www.pyopensci.org/metrics) are built with **Quarto**.
+* Each site is built separately and published under the [pyopensci.org](https://www.pyopensci.org) domain using **GitHub Pages**.
 
 ## Learn more
 
-This page provides a high-level overview. For detailed information about specific infrastructure components, see:
+For details on each part of our infrastructure, see:
 
 * **[All repositories](our-repositories):** Complete list and description of all pyOpenSci GitHub repositories
-* **[Data workflows](data-process):** Detailed information about data collection and processing
-* **[Continuous Integration](continuous-integration):** CI/CD workflows and GitHub Actions
+* **[Data workflows](data-process):** Schedules, files, and troubleshooting for contributor, package, and editorial data
+* **[Continuous integration](continuous-integration):** CI/CD workflows and GitHub Actions
 * **[Permissions](permissions):** Repository access management and team structures
+* **[Editorial teams](editorial-teams):** Which GitHub team to use when you add or remove an editor
 * **[Pull requests](pull-requests):** How to work with pull requests in pyOpenSci repos
 * **[Issues](issues):** Issue management and labeling workflows
