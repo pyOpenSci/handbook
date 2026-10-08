@@ -70,6 +70,25 @@ Being especially or repeatedly unpleasant: for example, if we’ve received
 reports from multiple pyOpenSci users, team members, or collaborators of
 agitating, rude, or especially distracting behavior over an extended period of
 time.
+
+#### Misuse of AI tools
+
+Our [generative AI policy](generative-ai-policy) explains how we use AI
+tools in pyOpenSci spaces. Using AI to draft, translate, or check
+grammar is welcome when you review what you send.
+
+The following are unwelcoming behavior because they shift work onto
+volunteers and erode trust:
+
+* Communicating through automated agents or bots on your behalf
+* Sending unreviewed AI-generated messages, or automated or bulk
+  comments
+* Continuing any of the above after being asked to stop
+
+A first, unintentional instance is handled as a conversation about the
+AI policy. Repeated behavior is a code of conduct violation, handled
+under the process for unwelcome behavior below.
+
 ## Scope in which the pyOpenSci code of conduct is applied
 
 pyOpenSci community members are held to the standards outlined in this
@@ -77,7 +96,8 @@ code of conduct when interacting in the pyOpenSci Slack or GitHub
 repositories, when interacting in-person at events where they could
 represent pyOpenSci (this is most professional events), in physical spaces
 with other pyOpenSci team members or collaborators, or in any Community
-Initiatives (our fiscal sponsor) space.
+Initiatives (our fiscal sponsor) space. Our
+[generative AI policy](generative-ai-policy) also applies in these spaces.
 
 In addition, the pyOpenSci community and experience often extends outside
 those spaces—pyOpenSci community members may go on walks together to get
