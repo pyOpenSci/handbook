@@ -21,6 +21,7 @@ mission-values
 structure
 Executive Council <executive-council>
 Code of Conduct <../CODE_OF_CONDUCT.md>
+Generative AI policy <generative-ai-policy>
 ```
 
 ```{toctree}
