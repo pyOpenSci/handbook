@@ -18,6 +18,7 @@ Learn more about pyOpenSci's:
 * [Mission, vision, and values](mission-vision)
 * [Organization and structure](pyos-structure)
 * [Executive council & leadership structure](pyos-executive-council)
+* [Generative AI policy](generative-ai-policy)
 :::
 ::::
 
