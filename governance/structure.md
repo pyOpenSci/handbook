@@ -21,7 +21,10 @@ The Executive Director (discussed below) is a voting member of the Executive Cou
 
 ### pyOpenSci advisory council
 
-[Click here to view current advisory council members.](https://www.pyopensci.org/our-community/#pyopensci-advisory-council)
+[Click here to view current advisory council members.](https://www.pyopensci.org/our-community/#advisory-council)
+
+The core team updates that listing by hand. See
+[Update the advisory council](update-the-advisory-council).
 
 The Advisory Council is comprised of leaders in the Python scientific
 open source ecosystem. This council advises the Executive Director

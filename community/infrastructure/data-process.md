@@ -28,9 +28,12 @@ A few things that are helpful to know:
 * **Changed an editorial team member? Use the Update editorial board workflow .** It only looks at team membership, so it runs quickly and opens a small, easy-to-review pull request.
 * **Update Contribs & reviewers does a lot more.** It checks every repository and review issue, so it takes longer and opens a much larger pull request.
 * **The metrics dashboards update on their own schedule.** The editorial charts read the website's YAML files from the `data/` directory on the `main` branch. A separate [deploy workflow](https://github.com/pyOpenSci/metrics/actions/workflows/deploy.yml) rebuilds the dashboards every Sunday at 00:00 UTC using whatever has been merged by then, so you may see a short delay there.
-* **Please don't edit the generated files by hand.** The workflows overwrite them each time they run, so your changes would be lost. The one exception is [`data/manual-editorial-roster.yml`](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/data/manual-editorial-roster.yml), which is for editors who can't join our GitHub organization (and so can't be added to an editorial team).
-
-And also we do allow you to update someones NAME in the contributors.yml file because the name on GitHub is not always their preferred name. That should never be overwritten.
+* **You can update some fields in [`data/contributors.yml`](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/data/contributors.yml) by hand.** The Monday workflow keeps these once they are on `main`:
+  * **Advisory status** (`advisory`). See [Update the advisory council](update-the-advisory-council).
+  * **Leadership status** (`board`). Set this to `true` to list someone under Executive Council, Leadership & Staff.
+  * **Title** (`title`), the role shown on their card. Editor titles still come from the [editorial workflow](editorial-teams). Other titles, such as Advisory Council or Executive Director, stay as you write them.
+  * **Name** (`name`). Some people have no name on GitHub. Add their name here so the community page can list them. If a name is already in the file, the workflow does not replace it.
+* [`data/manual-editorial-roster.yml`](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/data/manual-editorial-roster.yml) is also edited by hand, for editors who can't join our GitHub organization. The workflows overwrite `data/packages.yml`, `data/editorial-board.yml`, and `data/emeritus-editors.yml`.
 
 ## Where the data comes from
 
@@ -61,6 +64,43 @@ You don't have to wait for the next scheduled run. If you have write access to `
 4. When the pull request opens, take a quick look, and merge it if everything looks right.
 
 Not sure whether you can change a team or run a workflow? The [editorial teams](editorial-teams) page explains who can do what.
+
+(update-the-advisory-council)=
+## Update the advisory council
+
+The [Advisory Council](https://www.pyopensci.org/our-community/#advisory-council) on the Our Community page is maintained by the core team. There is no GitHub team for it, and no workflow to run. Edit [`data/contributors.yml`](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/data/contributors.yml) in the website repository, open a pull request, and merge it. The page updates on the next website deploy.
+
+The website lists current members alphabetically by first name. Names in the file are stored as first name, then last name. You do not set `sort` for this section.
+
+### Add a current member
+
+Find the person in `data/contributors.yml`. If they are not in the file yet, add an entry for them. Set:
+
+* `advisory: true`
+* `emeritus_advisory: false`
+* `title: Advisory Council`
+
+If they already have a title, such as an editor title, make `title` a list and include `Advisory Council` as one item.
+
+A new entry also needs:
+
+* `name`, with the first name first
+* `github_username`
+* `github_image_id`, the numeric GitHub user id used for their photo. Read the `id` field from `https://api.github.com/users/USERNAME`
+
+### When someone steps down
+
+Set:
+
+* `advisory: false`
+* `emeritus_advisory: true`
+* `title: Emeritus Advisory Council`
+
+`emeritus_advisory: true` is what places someone in the Emeritus Leadership section. That section also includes other emeritus leadership, such as emeritus Executive Council. Leave the flag in place for anyone who should stay in that section.
+
+### Keep the Monday workflow from dropping the change
+
+Merge your pull request before Monday's **Update Contribs & reviewers** run. If that pull request is already open, add your edit to it. Merging an older bot pull request after your edit can drop it. After the change is on `main`, later runs keep advisory status, leadership status, title, and name.
 
 ## If something breaks
 
