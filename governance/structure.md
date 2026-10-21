@@ -21,7 +21,6 @@ The core team updates that listing by hand. See
 [Fields you edit by hand](edit-contributors-by-hand).
 
 (advisory-council)=
-
 ### pyOpenSci advisory council
 
 [Click here to view current advisory council members.](https://www.pyopensci.org/our-community/#advisory-council)
