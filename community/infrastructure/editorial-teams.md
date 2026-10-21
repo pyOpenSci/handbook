@@ -51,7 +51,7 @@ Someone can hold more than one role, such as editor and triage. Add them to ever
 
 ## Add or remove an editor
 
-The step-by-step process for adding and offboarding editors is in the [onboarding guide](https://www.pyopensci.org/software-peer-review/how-to/onboarding-guide.html#onboarding-a-new-editor). Use the table above to pick the right teams, then [update the website right away](data-process.md#update-the-website-right-away) if you don't want to wait for the next scheduled run.
+The step-by-step process for adding and offboarding editors is in the [onboarding guide](https://www.pyopensci.org/software-peer-review/how-to/onboarding-guide.html#onboarding-a-new-editor). Use the table above to pick the right teams, then [update the website right away](update-the-website-right-away) if you don't want to wait for the next scheduled run.
 
 ## Guest editors
 
