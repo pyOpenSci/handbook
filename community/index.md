@@ -24,8 +24,8 @@ Zenodo & Citation <zenodo>
 :maxdepth: 2
 :caption: Our infrastructure
 
-GitHub <infrastructure/intro>
-Our repos <infrastructure/our-repositories>
+Our Website <infrastructure/intro>
+Our GitHub repositories <infrastructure/our-repositories>
 Website & metrics data <infrastructure/data-process>
 Editorial teams <infrastructure/editorial-teams>
 GitHub permissions <infrastructure/permissions>

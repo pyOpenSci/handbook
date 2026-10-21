@@ -15,8 +15,11 @@ For details on each part of our infrastructure, see the
 
 The pyOpenSci website at [pyopensci.org](https://www.pyopensci.org) is
 built from six repositories. Each one is built separately and published
-under the `pyopensci.org` domain using GitHub Pages with Netlify setup for
-previews:
+under the `pyopensci.org` domain using GitHub Pages.
+[Netlify](https://www.netlify.com/) builds a preview of each pull request
+so you can see changes before they are merged.
+
+The six repositories are:
 
 * **Core website:** [`pyopensci.github.io`](https://github.com/pyOpenSci/pyopensci.github.io),
   built with [Hugo](https://gohugo.io/). It is the central hub that links
@@ -69,7 +72,7 @@ The diagram below shows how this data moves from GitHub to the website
 and metrics dashboards:
 
 :::{mermaid}
-flowchart LR
+flowchart TD
   Contrib[All Contributors files] --> Meta[pyosMeta]
   Issues[Peer review issues in software-submission] --> Meta
   Teams[GitHub editorial teams] --> Meta
@@ -100,4 +103,4 @@ To contribute to our repositories, see:
 
 * **[Issues](issues):** Issue management and labeling workflows
 * **[Pull requests](pull-requests):** How to work with pull requests in pyOpenSci repos
-* **[Continuous integration](continuous-integration):** CI/CD workflows and GitHub Actions
+* **[Continuous integration](continuous-integration):** The automated checks that run on every pull request, and what to do when one fails

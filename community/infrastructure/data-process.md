@@ -1,11 +1,20 @@
 # Update website and metrics data
 
+:::{note}
+This page is for editors, staff, and repository maintainers who keep our
+website and dashboards up to date. You don't need it to contribute to
+pyOpenSci. To learn how our websites and data fit together, see the
+[infrastructure overview](github-intro).
+:::
+
 This page explains how community, package, and editorial data get updated on
 the [pyOpenSci website](https://www.pyopensci.org) and our [metrics dashboards](https://www.pyopensci.org/metrics), and how you can update
 the data yourself when needed. We use a Python package called [`pyosMeta`][pyosmeta] to collect data about
-our peer review process and community contributors. It runs in GitHub Actions,
-which saves this data as [YAML](https://yaml.org/) files, a plain-text format that our website and metrics dashboards can read. GitHub Actions workflows run `pyosMeta` every week on a schedule (a cron job), but you can also trigger a
-run manually using the "workflow dispatch" option in GitHub.
+our peer review process and community contributors. `pyosMeta` saves this
+data as [YAML](https://yaml.org/) files, a plain-text format that our website
+and metrics dashboards can read. The action it runs in then creates a pull request with the updated data. GitHub Actions workflows run `pyosMeta` every
+week on a schedule (a cron job), but you can also
+[run a workflow by hand](update-the-website-right-away) whenever you need to.
 The workflows live in two repositories:
 
 * **Website:** the workflows are in the [pyopensci.github.io][website-repo]
@@ -24,17 +33,29 @@ requests. If something isn't updating, post in the
 
 `pyosMeta` collects three kinds of data from GitHub:
 
-1. **Contributor data** comes from the [All Contributors files](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/.all-contributorsrc) in each pyOpenSci repository.
-2. **Peer review data** comes from the [review issues in software-submission](https://github.com/pyOpenSci/software-submission/issues). This includes the package name and repository URL, the editor and reviewers, and the maintainers and authors.
-3. **Editorial team membership** comes from our [GitHub teams](editorial-teams). Team membership decides whether someone is listed as a current or emeritus editor.
+* **Peer review data.** `pyosMeta` parses the
+  [peer review issues](https://github.com/pyOpenSci/software-submission/issues)
+  in `software-submission`. It pulls out metadata such as the package
+  name, repository URL, editor, reviewers, and maintainers. That data
+  feeds the [Python packages page][page-packages].
+* **Peer review roles.** We track editors, the Editor in Chief, and the
+  triage team using GitHub teams. `pyosMeta` reads team membership to
+  build the [editorial board listing][page-editorial], including who is
+  current and who is emeritus. See [editorial teams](editorial-teams).
+* **Contributors.** We use the [All Contributors bot](https://allcontributors.org/)
+  to track contributors across our repositories. `pyosMeta` parses each
+  repository's [All Contributors file](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/.all-contributorsrc)
+  to build the contributor list on the [Our Community page][page-community].
 
 :::{mermaid}
 flowchart TD
-  Contrib[All Contributors Bot files] --> Meta[pyosMeta]
-  Issues[Peer review issues] --> Meta
-  Teams[GitHub editorial team listings] --> Meta
-  Meta --> Website[YAML files in pyopensci.github.io] --> Pages[Contributor, package, community and editorial listings]
-  Website --> Dash[Metrics editorial dashboard]
+  Contrib[All Contributors files] --> Meta[pyosMeta]
+  Issues[Peer review issues in software-submission] --> Meta
+  Teams[GitHub editorial teams] --> Meta
+  Meta --> PR[Pull request with updated YAML files]
+  PR -->|merged| Website[Website pages]
+  Website -.->|editorial dashboard reads board data| Metrics[Metrics dashboards]
+  Issues -.->|review data| Metrics
 :::
 
 ## Which workflow updates which page
@@ -97,7 +118,9 @@ access to the repository, you can run any of its workflows yourself.
 ### Update the website
 
 The website workflows are in `pyopensci.github.io`. The Editor in Chief
-team and the Software Review Lead have write access there.
+team, the Software Review Lead, and the
+[repository maintainers team](pyopensci-maintainers-permissions) have
+write access there.
 
 1. Open the **Actions** tab in [pyopensci.github.io][website-repo].
 2. Choose the workflow you need. If you changed an editorial team, pick
