@@ -1,4 +1,4 @@
-# 3. Continuous integration
+# Continuous integration
 
 ## What is CI?
 

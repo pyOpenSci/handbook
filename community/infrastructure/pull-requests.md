@@ -1,4 +1,4 @@
-# 2. pyOpenSci Pull Request Process
+# pyOpenSci Pull Request Process
 
 When possible, pull request (PR) and issue submissions and reviews of pull requests should follow
 standard open source workflows. Below are guidelines for pull requests submitted to pyOpenSci.

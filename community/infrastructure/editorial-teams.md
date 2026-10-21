@@ -10,7 +10,7 @@ Looking for the full process of welcoming or thanking an editor, including Slack
 When you add someone to a team, two separate things happen:
 
 * **Repository access.** Editorial board members get repository access through this team. Membership lets them lead reviews and edit our peer review guide. Only `editorial-board` and `eic-team` grant it.
-* **The public listing.** It decides who appears on the [editorial board page](https://www.pyopensci.org/about-peer-review/index.html#meet-our-editorial-board) and in the editorial dashboard in our [metrics](https://www.pyopensci.org/metrics). Every editorial team affects it. Two scheduled workflows read team membership to build the listing (see [data workflows](data-process)).
+* **The public listing.** It decides who appears on the [editorial board page](https://www.pyopensci.org/about-peer-review/index.html#meet-our-editorial-board) and in the editorial dashboard in our [metrics](https://www.pyopensci.org/metrics). Every editorial team affects it. Two scheduled workflows read team membership to build the listing (see [website & metrics data](data-process)).
 
 ## Which team to add someone to
 
@@ -20,7 +20,8 @@ Add the person to **every team that matches their role**. Being on the parent
 team alone doesn't list them.
 
 :::{mermaid}
-flowchart TB
+flowchart LR
+  classDef default font-size:18px
   PR[peer-review-team]
   PR --> EB[editorial-board]
   PR --> EIC[eic-team]
@@ -78,5 +79,5 @@ The Editor in Chief team and the Software Review Lead usually hold all the above
 ## Learn more
 
 * [Onboarding guide](https://www.pyopensci.org/software-peer-review/how-to/onboarding-guide.html): the full process, including Slack and introductions
-* [Data workflows](data-process): schedules, files, and what to do if a workflow fails
+* [Website & metrics data](data-process): schedules, files, and what to do if a workflow fails
 * [GitHub permissions](permissions): repository access for every team

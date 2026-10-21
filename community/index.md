@@ -22,16 +22,22 @@ Zenodo & Citation <zenodo>
 
 :::{toctree}
 :maxdepth: 2
-:caption: GitHub Processes
+:caption: Our infrastructure
 
 GitHub <infrastructure/intro>
 Our Repos <infrastructure/our-repositories>
+Website & metrics data <infrastructure/data-process>
+Editorial teams <infrastructure/editorial-teams>
+GitHub permissions <infrastructure/permissions>
+:::
+
+:::{toctree}
+:maxdepth: 2
+:caption: Contributing on GitHub
+
 GitHub Issue Guidelines <infrastructure/issues>
 Pull Requests <infrastructure/pull-requests>
 Continuous Integration (CI) <infrastructure/continuous-integration>
-GitHub permissions <infrastructure/permissions>
-Editorial teams <infrastructure/editorial-teams>
-Data Workflows <infrastructure/data-process>
 :::
 
 :::{toctree}

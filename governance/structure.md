@@ -17,6 +17,9 @@ The Executive Director (discussed below) is a voting member of the Executive Cou
 
 [Click here to view current executive council members](https://www.pyopensci.org/our-community/#executive-council--leadership)
 
+The core team updates that listing by hand. See
+[Fields you edit by hand](edit-contributors-by-hand).
+
 (advisory-council)=
 
 ### pyOpenSci advisory council
@@ -97,7 +100,7 @@ This team:
   * Dependabot pull requests
   * Pre-commit CI updates
 * Approve and merge automated data file updates:
-  * Automated data file updates. Our [metrics](https://github.com/pyOpenSci/metrics) and [website](https://github.com/pyOpenSci/pyopensci.github.io) are updated automatically using a GitHub Actions workflow that is supported by the pyosMeta Python package discussed above. A cron job runs this workflow daily to weekly and opens a PR. These PRs can be updated at whatever frequency is needed but should be updated at least once or twice a month.
+  * Automated data file updates. Our [metrics](https://github.com/pyOpenSci/metrics) and [website](https://github.com/pyOpenSci/pyopensci.github.io) are updated automatically using GitHub Actions workflows that run the [pyosMeta](https://github.com/pyOpenSci/pyosMeta) Python package. These workflows run on a schedule and open a PR. See [Website & metrics data](../community/infrastructure/data-process.md) for schedules and how to run them. These PRs can be updated at whatever frequency is needed but should be updated at least once or twice a month.
 * Ensure the smooth operation of pyOpenSci's technical infrastructure
 
 #### Triaging issues and pull requests

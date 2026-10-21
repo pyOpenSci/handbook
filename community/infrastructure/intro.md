@@ -59,7 +59,7 @@ The [`pyosMeta`](https://github.com/pyOpenSci/pyosMeta) package is a Python pack
 * **[Metrics dashboards](https://www.pyopensci.org/metrics).** The metrics repository has its own workflow. It reads review data from GitHub and the editorial board files from the website's `main` branch.
 * **Pull request checks.** Every repository runs checks when you open a pull request. See [continuous integration](continuous-integration).
 
-Both website workflows live in [`pyopensci.github.io`](https://github.com/pyOpenSci/pyopensci.github.io). For schedules, the files each one writes, and what to do when one fails, see [data workflows](data-process).
+Both website workflows live in [`pyopensci.github.io`](https://github.com/pyOpenSci/pyopensci.github.io). For schedules, the files each one writes, and what to do when one fails, see [website & metrics data](data-process).
 
 ## How our websites are built
 
@@ -73,9 +73,12 @@ Both website workflows live in [`pyopensci.github.io`](https://github.com/pyOpen
 For details on each part of our infrastructure, see:
 
 * **[All repositories](our-repositories):** Complete list and description of all pyOpenSci GitHub repositories
-* **[Data workflows](data-process):** Schedules, files, and troubleshooting for contributor, package, and editorial data
-* **[Continuous integration](continuous-integration):** CI/CD workflows and GitHub Actions
-* **[Permissions](permissions):** Repository access management and team structures
+* **[Website & metrics data](data-process):** Schedules, files, and troubleshooting for contributor, package, and editorial data
 * **[Editorial teams](editorial-teams):** Which GitHub team to use when you add or remove an editor
-* **[Pull requests](pull-requests):** How to work with pull requests in pyOpenSci repos
+* **[Permissions](permissions):** Repository access management and team structures
+
+To contribute to our repositories, see:
+
 * **[Issues](issues):** Issue management and labeling workflows
+* **[Pull requests](pull-requests):** How to work with pull requests in pyOpenSci repos
+* **[Continuous integration](continuous-integration):** CI/CD workflows and GitHub Actions
