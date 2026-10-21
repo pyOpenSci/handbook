@@ -25,7 +25,7 @@ Zenodo & Citation <zenodo>
 :caption: Our infrastructure
 
 GitHub <infrastructure/intro>
-Our Repos <infrastructure/our-repositories>
+Our repos <infrastructure/our-repositories>
 Website & metrics data <infrastructure/data-process>
 Editorial teams <infrastructure/editorial-teams>
 GitHub permissions <infrastructure/permissions>
@@ -35,9 +35,9 @@ GitHub permissions <infrastructure/permissions>
 :maxdepth: 2
 :caption: Contributing on GitHub
 
-GitHub Issue Guidelines <infrastructure/issues>
-Pull Requests <infrastructure/pull-requests>
-Continuous Integration (CI) <infrastructure/continuous-integration>
+GitHub issue guidelines <infrastructure/issues>
+Pull requests <infrastructure/pull-requests>
+Continuous integration (CI) <infrastructure/continuous-integration>
 :::
 
 :::{toctree}

@@ -166,7 +166,7 @@ repository maintainer for help. We understand that Continuous Integration (CI) c
 :::
 
 (pre-commit-ci)=
-## About the Pre-Commit CI Bot
+## About the pre-commit CI bot
 
 The [Pre-commit CI bot](https://pre-commit.ci/) is a continuous integration
 service that automatically runs pre-commit hooks on each pull request. This

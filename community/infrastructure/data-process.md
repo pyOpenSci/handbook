@@ -20,7 +20,7 @@ The [infrastructure team][infra-team] usually merges these pull
 requests. If something isn't updating, post in the
 `#pyos-maintainers-infrastructure` channel in Slack.
 
-### Where the data comes from
+## Where the data comes from
 
 `pyosMeta` collects three kinds of data from GitHub:
 

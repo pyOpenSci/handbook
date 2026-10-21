@@ -1,29 +1,72 @@
 (github-intro)=
-# pyOpenSci Infrastructure
+# pyOpenSci website infrastructure
 
-pyOpenSci uses GitHub to manage almost all of its infrastructure, from community processes to website rendering.
-This page provides a **high-level overview** of our infrastructure, focusing on how our core repositories work together and contribute to the website and community operations.
+pyOpenSci uses GitHub to manage almost all of its infrastructure, from
+community processes to website rendering. This page gives a high-level
+overview of how our repositories work together to build our websites
+and keep community data up to date.
 
-For detailed information about specific infrastructure components, see the [Learn more](#learn-more) section below.
+:::{note}
+For details on each part of our infrastructure, see the
+[Learn more](#learn-more) section below.
+:::
 
-## What is pyOpenSci infrastructure?
+## How our websites fit together
 
-pyOpenSci infrastructure encompasses:
+The pyOpenSci website at [pyopensci.org](https://www.pyopensci.org) is
+built from six repositories. Each one is built separately and published
+under the `pyopensci.org` domain using GitHub Pages with Netlify setup for
+previews:
 
-* **GitHub repositories:** All code, content, and documentation repositories
-* **Website and documentation:** Main website and sub-sites (handbook, guides, lessons)
-* **Data processing:** Automated collection and processing of contributor, peer review, and editorial board data
-* **Continuous Integration (CI):** GitHub Actions workflows for testing, building, and deploying
-* **Access and permissions:** Repository access management and team structures
-* **Issue and pull request workflows:** Processes for managing contributions and reviews
+* **Core website:** [`pyopensci.github.io`](https://github.com/pyOpenSci/pyopensci.github.io),
+  built with [Hugo](https://gohugo.io/). It is the central hub that links
+  to every sub-site.
+* **Sphinx books:** the [Python Package Guide](https://github.com/pyOpenSci/python-package-guide),
+  [Software Peer Review Guide](https://github.com/pyOpenSci/software-peer-review),
+  [Handbook](https://github.com/pyOpenSci/handbook), and
+  [Lessons](https://github.com/pyOpenSci/lessons). Most use our branded
+  [`pyos-sphinx-theme`](https://github.com/pyOpenSci/pyos-sphinx-theme).
+* **Metrics dashboards:** [`metrics`](https://github.com/pyOpenSci/metrics),
+  built with [Quarto](https://quarto.org/).
 
-## Infrastructure overview diagrams
+```{figure} /images/diagrams/website-repositories-structure.svg
+:name: website-repositories-structure
 
-The diagrams below illustrate two key aspects of our infrastructure:
+pyOpenSci website structure diagram showing the main website and its
+sub-sites (Handbook, Python Package Guide, Software Peer Review Guide,
+Lessons, and Metrics).
+```
 
-### Data flow and processing
+## How data flows from our community programs to the website
 
-The first diagram shows how contributor, peer review, and editorial data move from GitHub to the website and metrics:
+Some parts of our websites update automatically using data from GitHub.
+This includes the peer review numbers in our
+[metrics dashboards](https://www.pyopensci.org/metrics), and the package
+listings, community contributors, and editorial board on the main Hugo
+website.
+
+We wrote a Python package called
+[`pyosMeta`](https://github.com/pyOpenSci/pyosMeta) to collect this data.
+It saves the data as YAML files, a plain-text format that our websites
+can read. `pyosMeta` collects three kinds of data:
+
+* **Peer review data.** `pyosMeta` parses the
+  [peer review issues](https://github.com/pyOpenSci/software-submission/issues)
+  in `software-submission`. It pulls out metadata such as the package
+  name, repository URL, editor, reviewers, and maintainers. That data
+  feeds the [Python packages page](https://www.pyopensci.org/python-packages.html).
+* **Peer review roles.** We track editors, the Editor in Chief, and the
+  triage team using GitHub teams. `pyosMeta` reads team membership to
+  build the
+  [editorial board listing](https://www.pyopensci.org/about-peer-review/index.html#meet-our-editorial-board).
+  See [editorial teams](editorial-teams).
+* **Contributors.** We use the [All Contributors bot](https://allcontributors.org/)
+  to track contributors across our repositories. `pyosMeta` parses each
+  repository's All Contributors file to build the contributor list on
+  the [Our Community page](https://www.pyopensci.org/our-community/index.html).
+
+The diagram below shows how this data moves from GitHub to the website
+and metrics dashboards:
 
 :::{mermaid}
 flowchart LR
@@ -36,37 +79,13 @@ flowchart LR
   Issues -.->|review data| Metrics
 :::
 
-Scheduled workflows run `pyosMeta` to collect data from GitHub and write it to YAML files. Each run opens a pull request, and the website updates once you merge it. The metrics dashboards run on their own schedule and read the data that's already on the website's `main` branch.
-
-### Website structure
-
-The second diagram shows how the main pyOpenSci website connects to its sub-sites:
-
-```{figure} /images/diagrams/website-repositories-structure.svg
-:name: website-repositories-structure
-
-pyOpenSci website structure diagram showing the main website and its sub-sites (Handbook, Python Package Guide, Software Peer Review Guide, Lessons, and Metrics).
-```
-
-All sub-sites are built separately but served under the `pyopensci.org` domain, with the main website (`pyopensci.github.io`) serving as the central hub.
-
-## Where each page's data comes from
-
-The [`pyosMeta`](https://github.com/pyOpenSci/pyosMeta) package is a Python package that **parses review, contributor, and editorial data** and turns it into **machine-readable YAML files**. Here's where each public page gets its data:
-
-* **[Our Community](https://www.pyopensci.org/our-community/index.html) and [Packages](https://www.pyopensci.org/python-packages.html) pages.** The **Update Contribs & reviewers** workflow reads the All Contributors files (`.all-contributorsrc`) in our repositories and the review issues in [`software-submission`](https://github.com/pyOpenSci/software-submission). Advisory Council membership is a core-team edit in `data/contributors.yml`. See [Update the advisory council](update-the-advisory-council).
-* **[Editorial board page](https://www.pyopensci.org/about-peer-review/index.html#meet-our-editorial-board).** The **Update editorial board** workflow reads the GitHub teams under `peer-review-team`, plus a [small manual roster](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/data/manual-editorial-roster.yml) for people who can't join the organization. If you add or remove editors, see [editorial teams](editorial-teams).
-* **[Metrics dashboards](https://www.pyopensci.org/metrics).** The metrics repository has its own workflow. It reads review data from GitHub and the editorial board files from the website's `main` branch.
-* **Pull request checks.** Every repository runs checks when you open a pull request. See [continuous integration](continuous-integration).
-
-Both website workflows live in [`pyopensci.github.io`](https://github.com/pyOpenSci/pyopensci.github.io). For schedules, the files each one writes, and what to do when one fails, see [website & metrics data](data-process).
-
-## How our websites are built
-
-* The main website ([`pyopensci.github.io`](https://github.com/pyOpenSci/pyopensci.github.io)) is built with [**Hugo**.](https://gohugo.io/)
-* The **Python Package Guide**, **Peer Review Guide**, **Handbook**, and **Lessons** are **Sphinx books**. Most use the [`pyos-sphinx-theme`](https://github.com/pyOpenSci/pyos-sphinx-theme), our branded theme built on top of `pydata_sphinx_theme`.
-* The [metrics dashboards](https://www.pyopensci.org/metrics) are built with **Quarto**.
-* Each site is built separately and published under the [pyopensci.org](https://www.pyopensci.org) domain using **GitHub Pages**.
+Scheduled workflows run `pyosMeta` and open a pull request with the
+updated YAML files. The website updates once that pull request is merged.
+The metrics dashboards run on their own schedule. A few fields, such as
+[Advisory Council](update-the-advisory-council) and leadership roles,
+are [edited by hand](edit-contributors-by-hand). For
+schedules, how to run a workflow, and hand-edited fields, see
+[website & metrics data](data-process).
 
 ## Learn more
 
