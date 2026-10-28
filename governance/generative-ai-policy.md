@@ -16,7 +16,7 @@ there are *additional requirements* for software review and communication in the
 * Thoughtful use of AI tools is welcome when it helps you review your own work.
 * AI can assist you, but you own what you share. Review every output,
   and make sure you understand it before you send or submit it.
-* Be transparent. Disclose if you used AI tools and where (for authoring, reviewing, exploration/learning, grammar polishing or otherwise).
+* Be transparent. AI disclosure is required in the scenarios outlined below, or on other non-negligible use.
 * Protect our community of volunteers.
 * Do not create extra work for volunteers creating verbose outputs using an AI tool.
 * [Do not expose private of confidential information](confidential-information) (confidential information includes chats, emails, phone numbers, photos, anything that is shared in our private slack which is not public).
