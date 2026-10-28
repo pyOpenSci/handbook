@@ -8,7 +8,7 @@ documentation, lessons, the website, GitHub, Slack, Discord, social
 media, and meetings.
 
 If you are submitting a package to our software peer review program,
-there are additional requirements in the
+there are *additional requirements* for software review and communication in the
 [generative AI policy in the software peer review guide](https://www.pyopensci.org/software-peer-review/our-process/generative-ai-policy.html).
 
 ## Principles
