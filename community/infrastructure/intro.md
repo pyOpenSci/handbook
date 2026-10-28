@@ -14,8 +14,9 @@ For details on each part of our infrastructure, see the
 ## How our websites fit together
 
 The pyOpenSci website at [pyopensci.org](https://www.pyopensci.org) is
-built from six repositories. Each one is built separately and published
-under the `pyopensci.org` domain using GitHub Pages.
+built from six repositories, in three groups. Each repository is built
+separately and published under the `pyopensci.org` domain using GitHub
+Pages.
 [Netlify](https://www.netlify.com/) builds a preview of each pull request
 so you can see changes before they are merged.
 
@@ -84,11 +85,11 @@ flowchart TD
 
 Scheduled workflows run `pyosMeta` and open a pull request with the
 updated YAML files. The website updates once that pull request is merged.
-The metrics dashboards run on their own schedule. A few fields, such as
-[Advisory Council](update-the-advisory-council) and leadership roles,
-are [edited by hand](edit-contributors-by-hand). For
-schedules, how to run a workflow, and hand-edited fields, see
-[website & metrics data](data-process).
+The metrics dashboards run on their own schedule. A few fields, including
+[advisory council](update-the-advisory-council) membership and leadership
+roles, are [edited by hand](edit-contributors-by-hand). Schedules, how to
+run a workflow, and the full list of hand-edited fields are on
+[website and metrics data](data-process).
 
 ## Learn more
 

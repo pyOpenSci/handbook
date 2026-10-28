@@ -98,8 +98,15 @@ This team:
 * Approve and merge routine updates including:
   * Dependabot pull requests
   * Pre-commit CI updates
-* Approve and merge automated data file updates:
-  * Automated data file updates. Our [metrics](https://github.com/pyOpenSci/metrics) and [website](https://github.com/pyOpenSci/pyopensci.github.io) are updated automatically using GitHub Actions workflows that run the [pyosMeta](https://github.com/pyOpenSci/pyosMeta) Python package. These workflows run on a schedule and open a PR. See [Website & metrics data](../community/infrastructure/data-process.md) for schedules and how to run them. These PRs can be updated at whatever frequency is needed but should be updated at least once or twice a month.
+* Approve and merge automated data file updates. Our
+  [metrics](https://github.com/pyOpenSci/metrics) dashboards and
+  [website](https://github.com/pyOpenSci/pyopensci.github.io) are updated
+  by GitHub Actions workflows that run the
+  [pyosMeta](https://github.com/pyOpenSci/pyosMeta) Python package. These
+  workflows run on a schedule and open a pull request. See
+  [website and metrics data](../community/infrastructure/data-process)
+  for the schedules and how to run them. Merge these pull requests at
+  least once or twice a month.
 * Ensure the smooth operation of pyOpenSci's technical infrastructure
 
 #### Triaging issues and pull requests

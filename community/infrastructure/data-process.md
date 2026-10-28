@@ -3,28 +3,30 @@
 :::{note}
 This page is for editors, staff, and repository maintainers who keep our
 website and dashboards up to date. You don't need it to contribute to
-pyOpenSci. To learn how our websites and data fit together, see the
+pyOpenSci. To learn how our websites fit together, see the
 [infrastructure overview](github-intro).
 :::
 
 This page explains how community, package, and editorial data get updated on
-the [pyOpenSci website](https://www.pyopensci.org) and our [metrics dashboards](https://www.pyopensci.org/metrics), and how you can update
-the data yourself when needed. We use a Python package called [`pyosMeta`][pyosmeta] to collect data about
-our peer review process and community contributors. `pyosMeta` saves this
-data as [YAML](https://yaml.org/) files, a plain-text format that our website
-and metrics dashboards can read. The action it runs in then creates a pull request with the updated data. GitHub Actions workflows run `pyosMeta` every
-week on a schedule (a cron job), but you can also
+the [pyOpenSci website](https://www.pyopensci.org) and our
+[metrics dashboards](https://www.pyopensci.org/metrics), and how you can
+update the data yourself when needed. We use a Python package called
+[`pyosMeta`][pyosmeta] to collect data about our peer review process and
+community contributors. `pyosMeta` saves this data as
+[YAML](https://yaml.org/) files, a plain-text format that our website and
+metrics dashboards can read. GitHub Actions workflows run `pyosMeta` every
+week on a schedule (a cron job). Each run opens a pull request with the
+updated data. You can also
 [run a workflow by hand](update-the-website-right-away) whenever you need to.
 The workflows live in two repositories:
 
 * **Website:** the workflows are in the [pyopensci.github.io][website-repo]
   repository. They update the pages on pyopensci.org.
 * **Metrics dashboards:** the workflows are in the
-  [metrics][metrics-repo] repository. They update the dashboards. 
-  (The dashboards are the subsection of the site found at [pyopensci.org/metrics](https://www.pyopensci.org/metrics/).
+  [metrics][metrics-repo] repository. They update the dashboards at
+  [pyopensci.org/metrics](https://www.pyopensci.org/metrics/).
 
-Each run opens a pull request with the updated data. Once that pull
-request is merged, the website or dashboards update.
+Once that pull request is merged, the website or dashboards update.
 
 The [infrastructure team][infra-team] usually merges these pull
 requests. If something isn't updating, post in the
@@ -152,9 +154,9 @@ Not sure whether you can change a team or run a workflow? The
 The workflows overwrite `data/packages.yml`, `data/editorial-board.yml`,
 and `data/emeritus-editors.yml`, so don't edit those by hand.
 
-You can edit some fields by hand; the Monday workflow keeps them once they are on main.
-You can edit these fields in
-[`data/contributors.yml`][contributors-yml]:
+You can edit some fields in
+[`data/contributors.yml`][contributors-yml] by hand. Once those edits are
+on `main`, the Monday workflow keeps them:
 
 * **Advisory status** (`advisory`). See
   [Update the advisory council](update-the-advisory-council).
@@ -180,25 +182,92 @@ an older bot pull request after your edit can drop your change.
 (update-the-advisory-council)=
 ### Update the advisory council
 
-The [Advisory Council](https://www.pyopensci.org/our-community/#advisory-council) on the Our Community page is maintained by the core team. There is no GitHub team for it, and no workflow to run. Edit [`data/contributors.yml`][contributors-yml] in the website repository, open a pull request, and merge it. The page updates on the next website deploy.
+The [Advisory Council](https://www.pyopensci.org/our-community/#advisory-council)
+on the Our Community page is maintained by the core team. There is no
+GitHub team for it, and no workflow to run. Edit
+[`data/contributors.yml`][contributors-yml] in the website repository,
+open a pull request, and merge it. The page updates on the next website
+deploy.
 
-The website lists current members alphabetically by first name. Names in the file are stored as first name, then last name. You do not set `sort` for this section.
+The website lists current members alphabetically by first name. Names in
+the file are stored as first name, then last name. You do not set `sort`
+for this section.
 
 #### Add a current member
 
-Find the person in `data/contributors.yml`. If they are not in the file yet, add an entry for them. Set:
+Find the person in `data/contributors.yml`. Before `advisory`,
+`emeritus_advisory`, and `title` are set, the entry looks like this:
 
-* `advisory: true`
-* `emeritus_advisory: false`
-* `title: Advisory Council`
+```yaml
+- name: Jane Doe
+  github_username: janedoe
+  github_image_id: 1234567
+  title:
+  sort:
+  bio:
+  organization:
+  date_added: '2024-01-15'
+  editorial_board: false
+  emeritus_editor: false
+  advisory: false
+  emeritus_advisory: false
+  twitter:
+  mastodon:
+  orcidid:
+  partners:
+  website:
+  board: false
+  contributor_type:
+    - community
+  packages_eic:
+  packages_editor:
+  packages_submitted:
+  packages_reviewed:
+  location:
+  email:
+```
 
-If they already have a title, such as an editor title, make `title` a list and include `Advisory Council` as one item.
+If they are not in the file yet, add an entry for them with the same fields
+as the other entries. Then set `advisory`, `emeritus_advisory`, and `title`:
+
+```yaml
+- name: Jane Doe
+  github_username: janedoe
+  github_image_id: 1234567
+  title: Advisory Council
+  sort:
+  bio:
+  organization:
+  date_added: '2024-01-15'
+  editorial_board: false
+  emeritus_editor: false
+  advisory: true
+  emeritus_advisory: false
+  twitter:
+  mastodon:
+  orcidid:
+  partners:
+  website:
+  board: false
+  contributor_type:
+    - community
+  packages_eic:
+  packages_editor:
+  packages_submitted:
+  packages_reviewed:
+  location:
+  email:
+```
+
+If they already have a title, such as an editor title, make `title` a list
+and include `Advisory Council` as one item.
 
 A new entry also needs:
 
 * `name`, with the first name first
 * `github_username`
-* `github_image_id`, the numeric GitHub user id used for their photo. Read the `id` field from `https://api.github.com/users/USERNAME`
+* `github_image_id`, the numeric GitHub user id used for their photo.
+  Read the `id` field from `https://api.github.com/users/USERNAME`
 
 #### When someone steps down
 
@@ -208,18 +277,33 @@ Set:
 * `emeritus_advisory: true`
 * `title: Emeritus Advisory Council`
 
-`emeritus_advisory: true` is what places someone in the Emeritus Leadership section. That section also includes other emeritus leadership, such as emeritus Executive Council. Leave the flag in place for anyone who should stay in that section.
+`emeritus_advisory: true` places someone in the Emeritus Leadership
+section. That section also includes other emeritus leadership, such as
+emeritus Executive Council. Leave the flag in place for anyone who should
+stay in that section.
 
 ## If something breaks
 
-Don't worry, you won't break anything by running a workflow. If one fails, a message is posted automatically to the `#pyos-maintainers-infrastructure` Slack channel. If you get stuck, post there too, and the [pyOpenSci repository maintainers](pyopensci-maintainers-permissions) will be happy to help. If you'd like to dig in yourself, the `pyosMeta` [development guide](https://github.com/pyOpenSci/pyosMeta/blob/main/development.md) explains the tokens and permissions the workflows use.
+Don't worry, you won't break anything by running a workflow. If one fails,
+a message is posted automatically to the `#pyos-maintainers-infrastructure`
+Slack channel. If you get stuck, post there too, and the
+[pyOpenSci repository maintainers](pyopensci-maintainers-permissions) will
+be happy to help. If you'd like to dig in yourself, the `pyosMeta`
+[development guide](https://github.com/pyOpenSci/pyosMeta/blob/main/development.md)
+explains the tokens and permissions the workflows use.
 
 ### Review issues that don't parse
 
-`pyosMeta` reads the text people type into the review issue template. People fill out templates in all sorts of creative ways, so a missing field or an extra line can trip it up. If a workflow fails:
+`pyosMeta` reads the text people type into the review issue template.
+People fill out templates in all sorts of creative ways, so a missing
+field or an extra line can trip it up. If a workflow fails:
 
-* Post a link to the logs in `#pyos-maintainers-infrastructure`. The error may already be there from the Slack automation, but a post from you helps us prioritize the fix.
-* Check the logs for the package it failed on. Then look at the YAML at the top of that review issue for quirks. For example, text in quotes `"like this"` can break parsing.
+* Post a link to the logs in `#pyos-maintainers-infrastructure`. The error
+  may already be there from the Slack automation, but a post from you
+  helps us prioritize the fix.
+* Check the logs for the package it failed on. Then look at the YAML at
+  the top of that review issue for quirks. For example, text in quotes
+  `"like this"` can break parsing.
 
 [pyosmeta]: https://github.com/pyOpenSci/pyosMeta
 [website-repo]: https://github.com/pyOpenSci/pyopensci.github.io
