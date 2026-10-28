@@ -90,6 +90,16 @@
         "doc",
         "bug"
       ]
+    },
+    {
+      "login": "shaunagm",
+      "name": "Shauna Gordon-McKeon",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1179362?v=4",
+      "profile": "http://www.shaunagm.net",
+      "contributions": [
+        "doc",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,

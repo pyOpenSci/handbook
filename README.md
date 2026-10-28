@@ -78,6 +78,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://tbyhdgs.info"><img src="https://avatars.githubusercontent.com/u/9694524?v=4?s=100" width="100px;" alt="Toby Hodges"/><br /><sub><b>Toby Hodges</b></sub></a><br /><a href="https://github.com/pyOpenSci/handbook/commits?author=tobyhodges" title="Documentation">📖</a> <a href="https://github.com/pyOpenSci/handbook/issues?q=author%3Atobyhodges" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://www.shaunagm.net"><img src="https://avatars.githubusercontent.com/u/1179362?v=4?s=100" width="100px;" alt="Shauna Gordon-McKeon"/><br /><sub><b>Shauna Gordon-McKeon</b></sub></a><br /><a href="https://github.com/pyOpenSci/handbook/commits?author=shaunagm" title="Documentation">📖</a> <a href="https://github.com/pyOpenSci/handbook/pulls?q=is%3Apr+reviewed-by%3Ashaunagm" title="Reviewed Pull Requests">👀</a></td>
     </tr>
   </tbody>
 </table>
