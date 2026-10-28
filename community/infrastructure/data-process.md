@@ -20,7 +20,8 @@ The workflows live in two repositories:
 * **Website:** the workflows are in the [pyopensci.github.io][website-repo]
   repository. They update the pages on pyopensci.org.
 * **Metrics dashboards:** the workflows are in the
-  [metrics][metrics-repo] repository. They update the dashboards.
+  [metrics][metrics-repo] repository. They update the dashboards. 
+  (The dashboards are the subsection of the site found at [pyopensci.org/metrics](https://www.pyopensci.org/metrics/).
 
 Each run opens a pull request with the updated data. Once that pull
 request is merged, the website or dashboards update.
