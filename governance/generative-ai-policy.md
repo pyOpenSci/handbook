@@ -56,7 +56,7 @@ polished text that no one reviewed.
 
 ## Communication in pyOpenSci spaces
 
-Communication in pyOpenSci spaces must come from you. This includes
+Communication in pyOpenSci spaces must come from humans. This includes
 comments on GitHub, messages in Slack or Discord, and posts on social
 media. AI can help you draft or polish your words, but you review them
 and stand behind them.
