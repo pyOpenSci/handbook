@@ -179,10 +179,13 @@ Teams with access to this repository:
 
 **Platform:** Sphinx book template that builds on top of the pydata_sphinx_theme
 
-This repo contains our branded Sphinx theme, which the handbook and software
-peer review guide use. Because the branding lives in one theme, we can update
-it in one place instead of in each repository, and the change applies
-everywhere the theme is used.
+This repo contains our branded Sphinx theme. It is built on
+[pydata-sphinx-theme](https://pydata-sphinx-theme.readthedocs.io/), the
+Sphinx theme maintained by the PyData community. We add pyOpenSci branding
+on top of that theme. The handbook and software peer review guide use it.
+Because the branding lives in one theme, we can update it in one place
+instead of in each repository, and the change applies everywhere the theme
+is used.
 
 Creating a theme was inspired by the
 [2i2c Sphinx theme](https://sphinx-2i2c-theme.readthedocs.io/en/latest/).

@@ -30,6 +30,11 @@ The six repositories are:
   [Handbook](https://github.com/pyOpenSci/handbook), and
   [Lessons](https://github.com/pyOpenSci/lessons). Most use our branded
   [`pyos-sphinx-theme`](https://github.com/pyOpenSci/pyos-sphinx-theme).
+  That theme is built on
+  [pydata-sphinx-theme](https://pydata-sphinx-theme.readthedocs.io/),
+  the Sphinx theme maintained by the PyData community. We add pyOpenSci
+  colors, type, and layout on top of it, so the books share one look and
+  a branding change happens in one repository.
 * **Metrics dashboards:** [`metrics`](https://github.com/pyOpenSci/metrics),
   built with [Quarto](https://quarto.org/).
 
@@ -57,7 +62,8 @@ can read. `pyosMeta` collects three kinds of data:
 * **Peer review data.** `pyosMeta` parses the
   [peer review issues](https://github.com/pyOpenSci/software-submission/issues)
   in `software-submission`. It pulls out metadata such as the package
-  name, repository URL, editor, reviewers, and maintainers. That data
+  name, repository URL, editor, reviewers, maintainers, and authors.
+  Maintainers and authors are different people. That data
   feeds the [Python packages page](https://www.pyopensci.org/python-packages.html).
 * **Peer review roles.** We track editors, the Editor in Chief, and the
   triage team using GitHub teams. `pyosMeta` reads team membership to

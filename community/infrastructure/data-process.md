@@ -39,7 +39,8 @@ requests. If something isn't updating, post in the
 * **Peer review data.** `pyosMeta` parses the
   [peer review issues](https://github.com/pyOpenSci/software-submission/issues)
   in `software-submission`. It pulls out metadata such as the package
-  name, repository URL, editor, reviewers, and maintainers. That data
+  name, repository URL, editor, reviewers, maintainers, and authors.
+  Maintainers and authors are different people. That data
   feeds the [Python packages page][page-packages].
 * **Peer review roles.** We track editors, the Editor in Chief, and the
   triage team using GitHub teams. `pyosMeta` reads team membership to
@@ -165,9 +166,9 @@ on `main`, the Monday workflow keeps them:
 * **Title** (`title`), the role shown on their card. Editor titles still
   come from the [editorial workflow](editorial-teams). Other titles, such
   as Advisory Council or Executive Director, stay as you write them.
-* **Name** (`name`). Some people have no name on GitHub. Add their name
-  here so the community page can list them. If a name is already in the
-  file, the workflow does not replace it.
+* **Name** (`name`). A users name on GitHub is sometimes missing and also not
+  always someone's preferred name, so you can update it here.
+  Our data procedss workflow never overwrites a name that is already in the file.
 
 Editors who can't join our GitHub organization go in
 [`data/manual-editorial-roster.yml`][manual-roster]. See
