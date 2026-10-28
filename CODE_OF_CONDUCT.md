@@ -166,10 +166,8 @@ You can email the entire COC steward committee at:
 
 coc at pyopensci.org
 
-Or you can directly contact one of us below:
-
-* Leah Wasser, pyOpenSci Executive Director (EMAIL: leah at pyopensci.org)
-* Ivan Ogasawara, pyOpenSci Advisory Council Member (ivan.ogasawara at gmail.com)
+Your email will be shared with the Code of Conduct Steward committee and we will follow up with you as soon as possible. We take these
+reports seriously and will investigate them thoroughly.
 
 ### Why should I report code of conduct violations?
 

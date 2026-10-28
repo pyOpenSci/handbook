@@ -17,33 +17,10 @@ there are *additional requirements* for software review and communication in the
 * AI can assist you, but you own what you share. Review every output,
   and make sure you understand it before you send or submit it.
 * Be transparent. Disclose if you used AI tools and where (for authoring, reviewing, exploration/learning, grammar polishing or otherwise).
-* Protect our community. Do not create extra work for volunteers, and do
-  not expose private information.
-
-## How we use AI at pyOpenSci
-
-### Meeting notes
-
-We use Google Meet with Gemini to take notes in pyOpenSci meetings. We
-find it efficient and effective for this purpose.
-
-* The meeting host asks for consent before turning on note-taking.
-* If anyone objects, we do not turn it on.
-* Notes are shared with all attendees after the meeting.
-* Attendees can ask for corrections or removals.
-* No other AI note-takers or bots may join pyOpenSci meetings.
-
-### Grammar and writing tools
-
-Many of us use tools such as Grammarly to check grammar and clarity. We
-welcome this. Always review suggestions and outputs before you send
-anything.
-
-### Translation and drafting
-
-You can use AI tools for translation, grammar, and drafting. Review the
-result before you share it. We prefer clear, honest language over
-polished text that no one reviewed.
+* Protect our community of volunteers.
+* Do not create extra work for volunteers creating verbose outputs using an AI tool.
+* [Do not expose private of confidential information](confidential-information) (confidential information includes chats, emails, phone numbers, photos, anything that is shared in our private slack which is not public).
+* Be mindful of inclusion. AI tools can reflect and amplify existing biases.
 
 ## What we do not allow
 
@@ -53,6 +30,29 @@ polished text that no one reviewed.
   comments that others then have to sort through.
 * **AI tools in our community Slack.** We have turned off all AI tools
   in our community Slack to protect our community from unwanted data capture and usage.
+
+## How we use AI at pyOpenSci
+
+### Meeting notes
+
+We use Google Meet supported by Gemini to take notes in pyOpenSci meetings. We
+find it efficient and effective for this purpose. However, we only will turn it on with explicit consent from everyone in the meeting and we will not share the notes that are not fully anonmized with anyone who was not present in the meeting.
+
+* The meeting host should always ask for explicit consent from everyone in the meeting before turning on note-taking.
+* If anyone objects, we do not turn it on.
+* Notes are shared with all attendees after the meeting.
+* Attendees can ask for corrections or removals.
+* No other AI note-takers or bots may join pyOpenSci meetings.
+
+### Grammar support and writing tools
+
+Our community is global and comprised of people from many different backgrounds and includes non-native English speakers. You don't need to use tools such as Grammarly to review your English grammar when communicating with us! However, if you do choose to use such a tool, always review suggestions that it provides and outputs carefully before submitting or sending any content to another community member within any of our communication channels including GitHub, Slack, Discord, social media, and meetings and other events and platforms.
+
+### Translation and drafting
+
+You can use AI tools for translation, grammar, and drafting. Review the
+result before you share it. We prefer clear, honest language over
+polished text that no one reviewed.
 
 ## Communication in pyOpenSci spaces
 
@@ -86,15 +86,18 @@ This section covers images, video, audio, and other media.
   person without their consent.
 * Review media for accuracy, bias, and licensing before you share it.
 
+(confidential-information)=
 ## Confidential information
 
-Do not put private, confidential, or unpublished material into public
-generative AI tools. This includes:
+Do not share private or confidential pyOpenSci and/or community information or communications into public generative AI
+tools. This includes:
 
 * Personal information about community members
-* Unpublished peer review comments and submissions
-* Member, funder, and financial data
-* Private messages and unpublished drafts
+* Peer review content that is not public on GitHub, such as reviewer comments
+  and editor discussions
+* Funder, member, and financial data
+* Private communications and unpublished drafts, including but not limited to Slack messages, DMs,
+  and emails
 
 ## Software peer review
 
