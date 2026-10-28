@@ -110,6 +110,16 @@
         "doc",
         "review"
       ]
+    },
+    {
+      "login": "yeelauren",
+      "name": "Lauren Yee",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12127746?v=4",
+      "profile": "http://www.laurenyee.ca",
+      "contributions": [
+        "doc",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
