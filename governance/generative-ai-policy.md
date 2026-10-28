@@ -16,7 +16,7 @@ there are additional requirements in the
 * Thoughtful use of AI tools is welcome when it helps you review your own work.
 * AI can assist you, but you own what you share. Review every output,
   and make sure you understand it before you send or submit it.
-* Be transparent. Disclose AI use where this policy asks you to.
+* Be transparent. Disclose if you used AI tools and where (for authoring, reviewing, exploration/learning, grammar polishing or otherwise).
 * Protect our community. Do not create extra work for volunteers, and do
   not expose private information.
 
