@@ -52,7 +52,7 @@ polished text that no one reviewed.
 * **Automated or bulk comments.** Do not send automated or bulk
   comments that others then have to sort through.
 * **AI tools in our community Slack.** We have turned off all AI tools
-  in our community Slack to protect our community.
+  in our community Slack to protect our community from unwanted data capture and usage.
 
 ## Communication in pyOpenSci spaces
 
