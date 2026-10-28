@@ -152,9 +152,9 @@ Not sure whether you can change a team or run a workflow? The
 The workflows overwrite `data/packages.yml`, `data/editorial-board.yml`,
 and `data/emeritus-editors.yml`, so don't edit those by hand.
 
+You can edit some fields by hand; the Monday workflow keeps them once they are on main.
 You can edit these fields in
-[`data/contributors.yml`][contributors-yml]. The Monday workflow keeps
-them once they are on `main`:
+[`data/contributors.yml`][contributors-yml]:
 
 * **Advisory status** (`advisory`). See
   [Update the advisory council](update-the-advisory-council).
