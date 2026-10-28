@@ -130,6 +130,16 @@
         "doc",
         "review"
       ]
+    },
+    {
+      "login": "isabelizimm",
+      "name": "Isabel Zimmerman",
+      "avatar_url": "https://avatars.githubusercontent.com/u/54685329?v=4",
+      "profile": "http://isabelizimm.me",
+      "contributions": [
+        "doc",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
