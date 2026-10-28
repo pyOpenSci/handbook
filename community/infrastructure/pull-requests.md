@@ -1,9 +1,9 @@
-# 2. pyOpenSci Pull Request Process
+# pyOpenSci pull request process
 
 When possible, pull request (PR) and issue submissions and reviews of pull requests should follow
 standard open source workflows. Below are guidelines for pull requests submitted to pyOpenSci.
 
-## Pull Requests
+## Pull requests
 
 New pull requests should:
 
@@ -29,7 +29,7 @@ You might be surprised that you notice things in the pull request that you
 didn't notice when working on the content locally.
 :::
 
-### Pull Request Checklist
+### Pull request checklist
 
 Please follow this pull request review checklist when submitting a pull request to a pyOpenSci GitHub repository.
 This checklist will make the pull request review process easier and more efficient for you as the pull request author and for the
@@ -48,7 +48,7 @@ This is what a PR to the `pyOpenSci/handbook` repository, made from an individua
 * Check that all continuous integration checks have passed. If they haven't passed, identify and address the points of failure.
 * Check the PR title to ensure that it describes what your PR is changing.
 
-### Pull Request Content
+### Pull request content
 
 Below are some guidelines for pull request content. Clean pull requests
 lead to simpler reviews and faster merging!
@@ -73,7 +73,7 @@ lead to simpler reviews and faster merging!
    If you're unsure, leave a note for the reviewer to help understand what
    needs fixing.
 
-### Highly Recommended
+### Highly recommended
 
 1. **Create Clear Commit Messages**: Explain why changes are made, not
    just what was changed.
@@ -89,7 +89,7 @@ lead to simpler reviews and faster merging!
   this creates a merge commit rather than a rebase.
 :::
 
-### Regular vs. New Contributors
+### Regular vs. new contributors
 
 There is no right or wrong when it comes to building a website repository
 locally. pyOpenSci staff and regular contributors often opt to build
@@ -108,7 +108,7 @@ website, packaging guide, and peer review guide, we have CI platforms set
 up that allow a contributor to submit a pull request with a change, without
 needing to build the site locally.
 
-### Supporting New Contributors
+### Supporting new contributors
 
 pyOpenSci strives to support new and existing contributors in enhancing our
 online resources. We will support new contributors in this process. When a
@@ -138,7 +138,7 @@ What should they have done locally?
 Do we expect someone to have installed Hugo and built the website locally?
 :::
 
-## Pull Requests and Continuous Integration
+## Pull requests and continuous integration
 
 At the bottom of every pull request is the Continuous Integration (CI) block.
 This block contains a set of checks that pyOpenSci has set up. Each check
@@ -159,7 +159,7 @@ For code repositories, we have several additional checks including:
 
 * Code format & style checks (e.g. black, isort).
 
-### About Pre-commit
+### About pre-commit
 
 [Pre-commit](https://pre-commit.com/) is a framework for managing and
 maintaining multi-language pre-commit hooks. It ensures that code follows
@@ -183,7 +183,7 @@ regularly contributes, we suggest that you set it up locally in our repos to
 ensure spell check errors (that the pre-commit CI bot cannot fix in a PR) are
 addressed.
 
-### Setting Up Pre-commit Locally
+### Setting up pre-commit locally
 
 To set up pre-commit locally, follow these steps:
 

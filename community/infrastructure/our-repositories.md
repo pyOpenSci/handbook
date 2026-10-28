@@ -36,7 +36,7 @@ either one by hand.
   after you change an editorial team.
 
 For when each one runs, which files it writes, and who can run them, see
-[data workflows](data-process).
+[website & metrics data](data-process).
 
 #### Metadata stored in this repository
 
@@ -73,7 +73,7 @@ The pyOpenSci metrics repository contains the code for our [metrics
 dashboards](https://www.pyopensci.org/metrics), built with
 [Quarto](https://quarto.org/). Scheduled workflows refresh the peer review
 data and rebuild the site. The editorial dashboard reads the editorial board
-files from the website repository. See [data workflows](data-process) for
+files from the website repository. See [website & metrics data](data-process) for
 details.
 
 Teams with access to this repository:
@@ -169,7 +169,7 @@ Individuals and teams with access to this repository include:
 The pyosMeta repository contains a Python package published on PyPI that we
 use to track our package review, contributor, and editorial board data. The
 website's scheduled workflows use it to update our website. See
-[data workflows](data-process) for how the data moves.
+[website & metrics data](data-process) for how the data moves.
 
 Teams with access to this repository:
 
@@ -179,10 +179,13 @@ Teams with access to this repository:
 
 **Platform:** Sphinx book template that builds on top of the pydata_sphinx_theme
 
-This repo contains our branded Sphinx theme, which the handbook and software
-peer review guide use. Because the branding lives in one theme, we can update
-it in one place instead of in each repository, and the change applies
-everywhere the theme is used.
+This repo contains our branded Sphinx theme. It is built on
+[pydata-sphinx-theme](https://pydata-sphinx-theme.readthedocs.io/), the
+Sphinx theme maintained by the PyData community. We add pyOpenSci branding
+on top of that theme. The handbook and software peer review guide use it.
+Because the branding lives in one theme, we can update it in one place
+instead of in each repository, and the change applies everywhere the theme
+is used.
 
 Creating a theme was inspired by the
 [2i2c Sphinx theme](https://sphinx-2i2c-theme.readthedocs.io/en/latest/).

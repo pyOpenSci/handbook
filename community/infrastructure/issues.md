@@ -58,7 +58,7 @@ While outside contributors will not have permission to label issues, pyOpenSci
 core team members and volunteers will. Be sure to add appropriate labels to
 issues to make them easier to triage.
 
-## Help-wanted / sprintable issues
+## Help-wanted and sprintable issues
 
 If an issue is something that anyone in the community could potentially address,
 it's ideal to label the issue with `help-wanted` and/or `sprintable`. A

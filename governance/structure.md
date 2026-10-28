@@ -17,11 +17,16 @@ The Executive Director (discussed below) is a voting member of the Executive Cou
 
 [Click here to view current executive council members](https://www.pyopensci.org/our-community/#executive-council--leadership)
 
-(advisory-council)=
+The core team updates that listing by hand. See
+[Fields you edit by hand](edit-contributors-by-hand).
 
+(advisory-council)=
 ### pyOpenSci advisory council
 
-[Click here to view current advisory council members.](https://www.pyopensci.org/our-community/#pyopensci-advisory-council)
+[Click here to view current advisory council members.](https://www.pyopensci.org/our-community/#advisory-council)
+
+The core team updates that listing by hand. See
+[Update the advisory council](update-the-advisory-council).
 
 The Advisory Council is comprised of leaders in the Python scientific
 open source ecosystem. This council advises the Executive Director
@@ -93,8 +98,15 @@ This team:
 * Approve and merge routine updates including:
   * Dependabot pull requests
   * Pre-commit CI updates
-* Approve and merge automated data file updates:
-  * Automated data file updates. Our [metrics](https://github.com/pyOpenSci/metrics) and [website](https://github.com/pyOpenSci/pyopensci.github.io) are updated automatically using a GitHub Actions workflow that is supported by the pyosMeta Python package discussed above. A cron job runs this workflow daily to weekly and opens a PR. These PRs can be updated at whatever frequency is needed but should be updated at least once or twice a month.
+* Approve and merge automated data file updates. Our
+  [metrics](https://github.com/pyOpenSci/metrics) dashboards and
+  [website](https://github.com/pyOpenSci/pyopensci.github.io) are updated
+  by GitHub Actions workflows that run the
+  [pyosMeta](https://github.com/pyOpenSci/pyosMeta) Python package. These
+  workflows run on a schedule and open a pull request. See
+  [website and metrics data](../community/infrastructure/data-process)
+  for the schedules and how to run them. Merge these pull requests at
+  least once or twice a month.
 * Ensure the smooth operation of pyOpenSci's technical infrastructure
 
 #### Triaging issues and pull requests
